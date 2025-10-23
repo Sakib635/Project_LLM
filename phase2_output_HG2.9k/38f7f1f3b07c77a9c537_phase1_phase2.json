@@ -1,0 +1,55 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+    "notes": ""
+  },
+  "dependencies": {
+    "appex": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["appex.is_running_extension and appex.get_url were introduced in Python 3.4"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "bs4": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["bs4.BeautifulSoup and bs4.BeautifulSoup.select were introduced in Python 3.4"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "dialogs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["dialogs.form_dialog was introduced in Python 3.6"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["urllib2.urlopen and urllib2.Request were introduced in Python 3.4"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "webbrowser": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["webbrowser.open was introduced in Python 3.4"],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "appex>=2.7",
+    "bs4>=2.7",
+    "dialogs>=3.6",
+    "urllib2>=2.7",
+    "webbrowser>=2.7"
+  ]
+}
+```

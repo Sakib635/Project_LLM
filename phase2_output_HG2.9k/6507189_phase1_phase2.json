@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.test": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "Django>=2.0,<3.0",
+      "evidence": [
+        "TestCase and RequestFactory introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.views.generic": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "Django>=2.0,<3.0",
+      "evidence": [
+        "TemplateView introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    ".lib.views": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "YourMixin introduced in an unknown version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "YourMixinTest": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "YourMixin>=1.0,<2.0",
+      "evidence": [
+        "DummyView introduced in YourMixin 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "unittest": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "unittest>=1.0,<2.0",
+      "evidence": [
+        "setUp introduced in unittest 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Django>=2.0,<3.0",
+    "YourMixin>=1.0,<2.0",
+    "unittest>=1.0,<2.0"
+  ]
+}

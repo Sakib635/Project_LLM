@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": "Unable to determine reliable upper or lower bounds for Python version."
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=2.7,<4",
+      "recommended_requirements_line": "python-dateutil>=2.7,<4",
+      "evidence": [
+        "datetime.datetime added in Python 2.7 \u2192 min Python 2.7",
+        "datetime.timezone removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "dateutil.relativedelta": {
+      "inferred_version_range": ">=2,<4",
+      "recommended_requirements_line": "python-dateutil>=2.7,<4",
+      "evidence": [
+        "dateutil.relativedelta.relativedelta added in Python 2.7 \u2192 min Python 2.7",
+        "dateutil.relativedelta.RELATIVEDELTA_TYPE removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.7,<4",
+      "recommended_requirements_line": "python-dateutil>=2.7,<4",
+      "evidence": [
+        "os.getcwd added in Python 2.7 \u2192 min Python 2.7",
+        "os.fork removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.7,<4",
+      "recommended_requirements_line": "python-dateutil>=2.7,<4",
+      "evidence": [
+        "sys.stdout added in Python 2.7 \u2192 min Python 2.7",
+        "sys.stderr removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sh": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sh.git added in Python 2.7 \u2192 min Python 2.7",
+        "sh.sonar_runner removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2",
+      "recommended_requirements_line": "pandas>=1.0,<2",
+      "evidence": [
+        "pandas.DataFrame added in Python 2.7 \u2192 min Python 2.7",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.0 \u2192 max Python 2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "python-dateutil>=2.7,<4"
+  ]
+}

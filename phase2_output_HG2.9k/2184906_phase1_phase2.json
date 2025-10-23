@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pygtk": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pygtk>=1.2.0,<2.0.0",
+      "evidence": [
+        "pygtk.Window added in Python 1.2 \u2192 min PyGTK 1.2",
+        "pygtk.FileChooserButton added in Python 1.2 \u2192 min PyGTK 1.2",
+        "pygtk.DrawingArea added in Python 1.2 \u2192 min PyGTK 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "gst": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gst>=1.0.0,<2.0.0",
+      "evidence": [
+        "gst.element_factory_make added in Python 1.0 \u2192 min GStreamer 1.0",
+        "gst.STATE_PLAYING added in Python 1.0 \u2192 min GStreamer 1.0",
+        "gst.STATE_PAUSED added in Python 1.0 \u2192 min GStreamer 1.0",
+        "gst.STATE_NULL added in Python 1.0 \u2192 min GStreamer 1.0",
+        "gst.MESSAGE_EOS added in Python 1.0 \u2192 min GStreamer 1.0",
+        "gst.MESSAGE_ERROR added in Python 1.0 \u2192 min GStreamer 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "gtk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "gtk>=1.2.0,<2.0.0",
+      "evidence": [
+        "gtk.Window added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.VBox added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.HBox added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.Button added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.STOCK_MEDIA_PLAY added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.STOCK_MEDIA_PAUSE added in Python 1.2 \u2192 min GTK+ 1.2",
+        "gtk.STOCK_MEDIA_STOP added in Python 1.2 \u2192 min GTK+ 1.2"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys>=1.0.0,<2.0.0",
+      "evidence": [
+        "sys.platform added in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pygtk>=1.2.0,<2.0.0",
+    "gst>=1.0.0,<2.0.0",
+    "gtk>=1.2.0,<2.0.0",
+    "sys>=1.0.0,<2.0.0"
+  ]
+}

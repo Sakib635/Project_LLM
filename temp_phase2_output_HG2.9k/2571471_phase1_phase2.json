@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv added in Python 2.5 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "signals>=1.0,<2.0",
+      "evidence": [
+        "signal.SIGINT added in Python 1.4 \u2192 min version 1.0",
+        "signal.SIG_DFL added in Python 1.5 \u2192 max version 1.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "webkit2png": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "webkit2png.WebkitRenderer added in Python 3.1 \u2192 min version 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PyQt4.QtCore": {
+      "inferred_version_range": ">=4.5.0,<5.0.0",
+      "recommended_requirements_line": "PyQt4>=4.5.0,<5.0.0",
+      "evidence": [
+        "QApplication added in PyQt4 4.5.1 \u2192 min version 4.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PyQt4.QtGui": {
+      "inferred_version_range": ">=4.5.0,<5.0.0",
+      "recommended_requirements_line": "PyQt4>=4.5.0,<5.0.0",
+      "evidence": [
+        "QWebPage added in PyQt4 4.5.1 \u2192 min version 4.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PyQt4.QtWebKit": {
+      "inferred_version_range": ">=4.5.0,<5.0.0",
+      "recommended_requirements_line": "PyQt4>=4.5.0,<5.0.0",
+      "evidence": [
+        "QWebPage.render_to_file added in PyQt4 4.5.1 \u2192 min version 4.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sys>=2.5.0,<3.0.0",
+    "signals>=1.0,<2.0",
+    "PyQt4>=4.5.0,<5.0.0"
+  ]
+}

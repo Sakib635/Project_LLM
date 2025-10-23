@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "photos.capture_image added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "photos": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "photos.capture_image introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "console": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "console.alert introduced in v3.4, console.clear removed in v3.8 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "objc_util": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ObjCClass introduced in v3.5 \u2192 min Python 3.5",
+        "CIFilter introduced in v3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "ui_util": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "UIImageJPEGRepresentation introduced in v3.5 \u2192 min Python 3.5",
+        "UIImagePNGRepresentation introduced in v3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "photos>=1.2.0,<2.0.0",
+    "console>=3.4,<3.9",
+    "objc_util>=3.5,<3.9",
+    "ui_util>=3.5,<3.9"
+  ]
+}

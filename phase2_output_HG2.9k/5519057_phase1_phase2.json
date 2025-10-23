@@ -1,0 +1,71 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "math.gamma added in Python 3.7 \u2192 min Python 3.7",
+      "time.process_time removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "canvas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "canvas.set_size introduced in canvas 2.0 \u2192 max Python 3.10",
+        "canvas.draw_rect introduced in canvas 2.0 \u2192 max Python 3.10",
+        "canvas.draw_line introduced in canvas 2.0 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.sin introduced in math 2.7 \u2192 max Python 3.10",
+        "math.cos introduced in math 2.7 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.randint introduced in random 2.1 \u2192 max Python 3.10",
+        "random.random introduced in random 2.1 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep introduced in time 2.7 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "turtle": {
+      "inferred_version_range": ">=0.0.1,<0.0.2",
+      "recommended_requirements_line": "turtle>=0.0.1,<0.0.2",
+      "evidence": [
+        "turtle.Turtle introduced in turtle 0.0.1 \u2192 max Python 3.10",
+        "turtle.forward introduced in turtle 0.0.1 \u2192 max Python 3.10",
+        "turtle.backward introduced in turtle 0.0.1 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "canvas>=2.0,<2.0",
+    "math>=2.7,<2.7",
+    "random>=2.1,<2.1",
+    "time>=2.7,<2.7",
+    "turtle>=0.0.1,<0.0.2"
+  ]
+}

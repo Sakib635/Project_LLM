@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "snippet.py", line 40, in <module>
+    main()
+  File "snippet.py", line 34, in main
+    checkout_repo_at(repo_path, dt=date)
+  File "snippet.py", line 11, in checkout_repo_at
+    sha = sh.git('rev-list', '-n', '1', '--before="{0}"'.format(dt.isoformat()), 'origin/master', _cwd=path)
+  File "/usr/local/lib/python2.7/site-packages/sh.py", line 1520, in __call__
+    return RunningCommand(cmd, call_args, stdin, stdout, stderr)
+  File "/usr/local/lib/python2.7/site-packages/sh.py", line 784, in __init__
+    self.wait()
+  File "/usr/local/lib/python2.7/site-packages/sh.py", line 841, in wait
+    self.handle_command_exit_code(exit_code)
+  File "/usr/local/lib/python2.7/site-packages/sh.py", line 865, in handle_command_exit_code
+    raise exc
+sh.ErrorReturnCode_128: 
+
+  RAN: /usr/bin/git rev-list -n 1 '--before="2012-01-01T00:00:00"' origin/master
+
+  STDOUT:
+
+
+  STDERR:
+fatal: not a git repository (or any of the parent directories): .git
+

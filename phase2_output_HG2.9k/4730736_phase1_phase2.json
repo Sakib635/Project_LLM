@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyramid.compat": {
+      "inferred_version_range": ">=1.8,<2.0",
+      "recommended_requirements_line": "pyramid.compat>=1.8,<2.0",
+      "evidence": [
+        "configparser introduced in pyramid.compat 1.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyramid.util": {
+      "inferred_version_range": ">=1.9,<2.0",
+      "recommended_requirements_line": "pyramid.util>=1.9,<2.0",
+      "evidence": [
+        "DottedNameResolver introduced in pyramid.util 1.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyramid.paster": {
+      "inferred_version_range": ">=1.8,<2.0",
+      "recommended_requirements_line": "pyramid.paster>=1.8,<2.0",
+      "evidence": [
+        "bootstrap introduced in pyramid.paster 1.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyramid.compat>=1.8,<2.0",
+    "pyramid.util>=1.9,<2.0",
+    "pyramid.paster>=1.8,<2.0"
+  ]
+}

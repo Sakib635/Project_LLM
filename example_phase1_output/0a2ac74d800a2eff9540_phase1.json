@@ -1,0 +1,30 @@
+{
+  "sqlalchemy": [
+    "sqlalchemy.create_engine",
+    "sqlalchemy.engine.Engine.execute"
+  ],
+  "redis": [
+    "redis.StrictRedis",
+    "redis.StrictRedis.pubsub",
+    "redis.client.PubSub.subscribe",
+    "redis.client.PubSub.get_message"
+  ],
+  "time": [
+    "time.clock",
+    "time.sleep"
+  ],
+  "requests": [
+    "requests.Session",
+    "requests.Session.headers.update",
+    "requests.sessions.Session.get",
+    "requests.models.Response.json"
+  ],
+  "datetime": [
+    "datetime.datetime.utcnow",
+    "datetime.datetime.strftime"
+  ],
+  "memcache": [
+    "memcache.Client",
+    "memcache.Client.set"
+  ]
+}

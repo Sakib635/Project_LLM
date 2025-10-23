@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["os.path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "numpy>=1.0,<2.0",
+"evidence": ["numpy.array introduced in v1.0 → v1.9, removed in v2.0"],
+"confidence": 1,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "pandas>=1.0,<2.0",
+"evidence": ["pandas.DataFrame introduced in v1.0 → v1.9, removed in v2.0"],
+"confidence": 1,
+"notes": ""
+},
+"PIL": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["PIL.Image introduced in PIL 1.1.7 → v1.2.0", "PIL.ImageOps introduced in PIL 3.4.0 → v5.3.0"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": ["numpy>=1.0,<2.0", "pandas>=1.0,<2.0"]
+},
+"requirements.txt": [
+"numpy>=1.0,<2.0",
+"pandas>=1.0,<2.0"
+]
+}

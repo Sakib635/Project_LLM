@@ -1,0 +1,4 @@
+(declare-fun PyYAML () String)
+(declare-fun imagesize () String)
+(assert (and (or (= imagesize "1.2.0")) (or (= PyYAML "5.3.1") (= PyYAML "5.3b1"))))
+(check-sat)

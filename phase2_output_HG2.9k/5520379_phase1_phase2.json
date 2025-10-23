@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "ghost": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ghost.Ghost introduced",
+        "ghost.Ghost.open introduced",
+        "ghost.Ghost.click introduced",
+        "ghost.Ghost.evaluate introduced",
+        "ghost.Ghost.fill introduced",
+        "ghost.Ghost.fire_on introduced",
+        "ghost.Ghost.set_field_value introduced"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "functools.wraps introduced"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ghost>=0.0.1",
+    "functools>=1.0.0"
+  ]
+}

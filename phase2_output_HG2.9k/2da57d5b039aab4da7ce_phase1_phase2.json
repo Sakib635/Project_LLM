@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "dpkt.socket.inet_aton added in Python 3.5 \u2192 min Python 3.5",
+      "sys.argv removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dpkt": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dpkt.ethernet.Ethernet introduced, depricated, removed or changed in any version",
+        "dpkt.ip.IP_PROTO_UDP introduced, depricated, removed or changed in any version"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "bencode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "bdecode >= 1.2.0, < 3.0.0",
+      "evidence": [
+        "bencode.bdecode introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pcapy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pcapy >= 0.13, < 2.0",
+      "evidence": [
+        "pcapy.open_live introduced in version 0.13"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "socket >= 3.5, < 4.0",
+      "evidence": [
+        "socket.inet_aton introduced in Python 3.5 \u2192 min Python 3.5",
+        "socket.inet_ntoa introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys >= 3.5, < 4.0",
+      "evidence": [
+        "sys.argv introduced in Python 3.5 \u2192 min Python 3.5",
+        "sys.exit introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dpkt>=1.2.0,<2.0.0",
+    "bencode >= 1.2.0, < 3.0.0",
+    "pcapy >= 0.13, < 2.0.0",
+    "socket >= 3.5, <4.0",
+    "sys >= 3.5, <4.0"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "bpy": [
+    "bpy.context.window_manager.keyconfigs.default",
+    "bpy.context.window_manager.keyconfigs.addon",
+    "bpy.context.window_manager.keyconfigs.user",
+    "bpy.context.window_manager.keyconfigs.active",
+    "bpy.ops.text.new",
+    "bpy.data.texts[added_texts.pop()]",
+    "bpy.data.texts.name = 'keyconfigs.html'",
+    "bpy.data.texts.from_string(html1 + kcjson + html2)"
+  ],
+  "bpy_extras": [
+    "bpy_extras.keyconfig_utils.keyconfig_export"
+  ]
+}

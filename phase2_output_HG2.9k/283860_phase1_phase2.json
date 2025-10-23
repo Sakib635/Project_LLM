@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "osgeo.ogr added in Python 3.7 \u2192 min Python 3.7",
+      "math.u removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "geopy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "geopy.distance.VincentyDistance added in geopy 1.23.0",
+        "geopy.distance.ELLIPSOID added in geopy 1.23.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "osgeo": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "osgeo.ogr.Open added in osgeo 1.23.0",
+        "osgeo.ogr.GetLayer added in osgeo 1.23.0",
+        "osgeo.ogr.GetFeatureCount added in osgeo 1.23.0",
+        "osgeo.ogr.GetFeature added in osgeo 1.23.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "shapely": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "shapely.geometry.Point added in shapely 1.6.0",
+        "shapely.geometry.MultiPolygon added in shapely 1.6.0",
+        "shapely.wkt.dumps added in shapely 1.6.0",
+        "shapely.wkt.loads added in shapely 1.6.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "geopy>=1.23.0",
+    "osgeo>=1.23.0",
+    "shapely>=1.6.0"
+  ]
+}

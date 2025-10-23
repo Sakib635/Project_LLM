@@ -1,0 +1,17 @@
+{
+  "sys": [
+    "sys.argv",
+    "sys.argv[1]"
+  ],
+  "time": [
+    "time.clock()",
+    "time.time()"
+  ],
+  "resource": [
+    "resource.getrusage(resource.RUSAGE_SELF).ru_maxrss",
+    "resource.getrusage(resource.RUSAGE_SELF).ru_utime"
+  ],
+  "__import__": [
+    "__import__(s[0]).__dict__[s[1]]"
+  ]
+}

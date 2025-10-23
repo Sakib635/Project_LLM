@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "jieba": {
+      "inferred_version_range": ">=0.25,<1.0",
+      "recommended_requirements_line": "jieba>=0.25,<1.0",
+      "evidence": [
+        "jieba.cut introduced in v0.25"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.15,<2.0",
+      "recommended_requirements_line": "numpy>=1.15,<2.0",
+      "evidence": [
+        "numpy.asarray introduced in v1.15",
+        "numpy.linalg.norm introduced in v1.15"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.feature_extraction.text": {
+      "inferred_version_range": ">=0.20,<1.0",
+      "recommended_requirements_line": "sklearn.feature_extraction.text>=0.20,<1.0",
+      "evidence": [
+        "sklearn.feature_extraction.text.HashingVectorizer introduced in v0.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.naive_bayes": {
+      "inferred_version_range": ">=0.20,<1.0",
+      "recommended_requirements_line": "sklearn.naive_bayes>=0.20,<1.0",
+      "evidence": [
+        "sklearn.naive_bayes.MultinomialNB introduced in v0.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": ">=0.20,<1.0",
+      "recommended_requirements_line": "sklearn.metrics>=0.20,<1.0",
+      "evidence": [
+        "sklearn.metrics.precision_score introduced in v0.20",
+        "sklearn.metrics.recall_score introduced in v0.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "stopwords": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "set introduced in Python 3.0"
+      ],
+      "confidence": 0.8,
+      "notes": "The 'set' module is part of the standard library, so it cannot be used to infer a version range."
+    }
+  },
+  "requirements.txt": [
+    "jieba>=0.25,<1.0",
+    "numpy>=1.15,<2.0",
+    "sklearn.feature_extraction.text>=0.20,<1.0",
+    "sklearn.naive_bayes>=0.20,<1.0",
+    "sklearn.metrics>=0.20,<1.0"
+  ]
+}

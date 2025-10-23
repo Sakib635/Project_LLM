@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "http.server.HTTPRequestHandler added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "socketserver": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "socketserver>=1.0.0,<2.0.0",
+      "evidence": [
+        "socketserver.TCPServer introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.0.0,<2.0.0",
+      "evidence": [
+        "os.chdir introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "sys>=1.0.0,<2.0.0",
+      "evidence": [
+        "sys.exit introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "socketserver>=1.0.0,<2.0.0",
+    "os>=1.0.0,<2.0.0",
+    "sys>=1.0.0,<2.0.0"
+  ]
+}

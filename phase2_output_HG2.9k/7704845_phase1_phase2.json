@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "null",
+    "evidence": [
+      "rtmidi.MidiIn added in Python 3.5 \u2192 min Python 3.4",
+      "time.sleep added in Python 3.7 \u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rtmidi": {
+      "inferred_version_range": ">=0.1,<1.0",
+      "recommended_requirements_line": "rtmidi>=0.1,<1.0",
+      "evidence": [
+        "rtmidi.MidiIn introduced in v0.1, depricated, removed or changed in v1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.5,<3.9",
+      "recommended_requirements_line": "time>=2.5,<3.9",
+      "evidence": [
+        "time.sleep introduced in v2.7, depricated, removed or changed in v3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "rtmidi>=0.1,<1.0",
+    "time>=2.5,<3.9"
+  ]
+}

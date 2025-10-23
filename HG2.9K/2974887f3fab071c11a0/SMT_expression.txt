@@ -1,0 +1,4 @@
+(declare-fun selenium () String)
+(declare-fun boto () String)
+(assert (and (or (= boto "2.49.0")) (or (= selenium "3.141.0"))))
+(check-sat)

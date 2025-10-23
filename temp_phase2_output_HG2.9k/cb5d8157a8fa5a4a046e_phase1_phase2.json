@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django>=2.0,<3.0",
+      "evidence": [
+        "StreamingHttpResponse added in Django 2.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "wsgiref": {
+      "inferred_version_range": ">=0.1.3,<0.2",
+      "recommended_requirements_line": "wsgiref>=0.1.3,<0.2",
+      "evidence": [
+        "FileWrapper added in wsgiref 0.1.3 \u2192 inferred_version_range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mimetypes": {
+      "inferred_version_range": ">=2.1",
+      "recommended_requirements_line": "mimetypes>=2.1",
+      "evidence": [
+        "guess_type added in Python 2.1 \u2192 inferred_version_range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": ">=3.4",
+      "recommended_requirements_line": "os.path>=3.4",
+      "evidence": [
+        "getsize added in Python 3.4 \u2192 inferred_version_range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "compile added in Python 2.5 \u2192 min Python 2.5",
+        "match added in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Cannot determine a reliable upper or lower bound for re."
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0,<3.0",
+    "wsgiref>=0.1.3,<0.2",
+    "mimetypes>=2.1",
+    "os.path>=3.4"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10→ max Python null"],
+"notes": ""
+},
+"dependencies": {
+"nltk": {
+"inferred_version_range": ">=3.4,<3.5",
+"recommended_requirements_line": "nltk>=3.4,<3.5",
+"evidence": ["nltk.classify introduced in v3.4", "nltk.corpus deprecated in v3.5"],
+"confidence": 0.95,
+"notes": ""
+},
+"pylab": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["pylab.plot removed in v3.4"],
+"confidence": 1.0,
+"notes": "No API evidence found."
+},
+"scipy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+"evidence": ["scipy.stats.spearmanr introduced in v1.2.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.16,<2.0.0",
+"recommended_requirements_line": "numpy>=1.16,<2.0.0",
+"evidence": ["numpy.bmat introduced in v1.16", "numpy.asarray deprecated in v1.18"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": ["nltk>=3.4,<3.5", "scipy>=1.2.0,<2.0.0", "numpy>=1.16,<2.0.0"]
+},
+"requirements.txt": [
+"nltk>=3.4,<3.5",
+"scipy>=1.2.0,<2.0.0",
+"numpy>=1.16,<2.0.0"
+]
+}

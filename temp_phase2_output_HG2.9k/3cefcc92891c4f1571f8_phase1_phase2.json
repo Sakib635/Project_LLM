@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "graphlab": {
+      "inferred_version_range": ">=3.5,<3.6",
+      "recommended_requirements_line": "graphlab==3.5",
+      "evidence": [
+        "GraphLab Create was introduced in version 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "boosted_trees_classifier": {
+      "inferred_version_range": ">=3.5,<3.6",
+      "recommended_requirements_line": "graphlab-create==3.5",
+      "evidence": [
+        "GraphLab Create was introduced in version 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas==1.2.0",
+      "evidence": [
+        "Pandas DataFrame was introduced in version 1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy==1.18.0",
+      "evidence": [
+        "NumPy array was introduced in version 1.18.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "graphlab==3.5",
+    "pandas==1.2.0",
+    "numpy==1.18.0"
+  ]
+}

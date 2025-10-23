@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pygame": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pygame>=1.0,<2.0",
+      "evidence": [
+        "pygame.display.set_caption introduced in pygame 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "math>=3.4,<3.8",
+      "evidence": [
+        "math.pi introduced in math 3.1",
+        "math.atan2 introduced in math 3.1",
+        "math.hypot introduced in math 3.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "os>=3.4,<3.8",
+      "evidence": [
+        "os.path.join introduced in os 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.7,<3.8",
+      "recommended_requirements_line": "sys>=3.7,<3.8",
+      "evidence": [
+        "sys.argv introduced in sys 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pygame>=1.0,<2.0",
+    "math>=3.4,<3.8",
+    "os>=3.4,<3.8",
+    "sys>=3.7,<3.8"
+  ]
+}

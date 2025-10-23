@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "win32com.client": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32com.client>=1.0.0,<2.0.0",
+      "evidence": [
+        "constants and Dispatch APIs introduced in win32com.client v1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Excel.Application": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32com.client>=1.0.0,<2.0.0",
+      "evidence": [
+        "Visible and Quit APIs introduced in Excel.Application v1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "workbook": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32com.client>=1.0.0,<2.0.0",
+      "evidence": [
+        "SaveAs and Close APIs introduced in workbook v1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "worksheet": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32com.client>=1.0.0,<2.0.0",
+      "evidence": [
+        "Activate, Cells, Font, and Range APIs introduced in worksheet v1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "chart": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32com.client>=1.0.0,<2.0.0",
+      "evidence": [
+        "SetSource, SetType, SetPlotBy, SetCategoryTitle, SetValueTitle, SetCategoryLabels, SetSeriesLabels, and CreateChart APIs introduced in chart v1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "win32com.client>=1.0.0,<2.0.0",
+    "Excel.Application>=1.0.0,<2.0.0",
+    "workbook>=1.0.0,<2.0.0",
+    "worksheet>=1.0.0,<2.0.0",
+    "chart>=1.0.0,<2.0.0"
+  ]
+}

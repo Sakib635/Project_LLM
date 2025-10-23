@@ -1,0 +1,13 @@
+{
+  "celery": [
+    "celery.backends.redis.RedisBackend"
+  ],
+  "kombu": [
+    "kombu.transport.redis.Transport",
+    "kombu.utils.cached_property"
+  ],
+  "redis": [
+    "redis.Redis",
+    "redis.sentinel.Sentinel"
+  ]
+}

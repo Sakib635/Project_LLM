@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.strftime added in Python 3.7 \u2192 min Python 3.7",
+      "sys.argv added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.timedelta introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "RPi.GPIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "RPi.GPIO.setmode introduced in Python 3.7 \u2192 min Python 3.7",
+        "RPi.GPIO.setup introduced in Python 3.7 \u2192 min Python 3.7",
+        "RPi.GPIO.input introduced in Python 3.7 \u2192 min Python 3.7",
+        "RPi.GPIO.output introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Adafruit_7Segment": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SevenSegment introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Adafruit_LEDBackpack": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Adafruit_LEDBackpack.setColon introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "datetime>=3.7,<4.0",
+    "RPi.GPIO>=3.7,<4.0",
+    "Adafruit_7Segment>=3.7,<4.0",
+    "Adafruit_LEDBackpack>=3.7,<4.0"
+  ]
+}

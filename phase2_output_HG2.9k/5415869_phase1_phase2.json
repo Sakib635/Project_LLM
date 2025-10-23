@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide.QtCore": {
+      "inferred_version_range": ">=5.12,<6.0",
+      "recommended_requirements_line": "pyside-qtcore>=5.12,<6.0",
+      "evidence": [
+        "QAbstractItemView introduced in version 5.12",
+        "QStandardItemModel and QStandardItem introduced in versions 5.12"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PySide.QtGui": {
+      "inferred_version_range": ">=5.12,<6.0",
+      "recommended_requirements_line": "pyside-qtgui>=5.12,<6.0",
+      "evidence": [
+        "QApplication introduced in version 5.12",
+        "QTreeView introduced in versions 5.12"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements_txt": [
+    "pyside-qtcore>=5.12,<6.0",
+    "pyside-qtgui>=5.12,<6.0"
+  ]
+}

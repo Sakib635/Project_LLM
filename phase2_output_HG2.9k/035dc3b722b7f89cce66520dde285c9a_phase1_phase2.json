@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ArgumentParser API introduced in argparse module."
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "swift.common.direct_client": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "swift-common-direct-client>=1.2.0,<2.0.0",
+      "evidence": [
+        "direct_get_suffix_hashes API introduced in swift.common.direct_client 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "swift.common.storage_policy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "swift-common-storage-policy>=1.2.0,<2.0.0",
+      "evidence": [
+        "POLICIES API introduced in swift.common.storage_policy 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse",
+    "swift-common-direct-client>=1.2.0,<2.0.0",
+    "swift-common-storage-policy>=1.2.0,<2.0.0"
+  ]
+}

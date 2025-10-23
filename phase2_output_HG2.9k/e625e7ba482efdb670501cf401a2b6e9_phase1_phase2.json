@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "mpl.pyplot added in Python 3.5 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "matplotlib": {
+      "inferred_version_range": ">=3.1,<4",
+      "recommended_requirements_line": "matplotlib>=3.1,<4",
+      "evidence": [
+        "plt.figure introduced in v3.1",
+        "plt.subplot deprecated in v3.3"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18,<2",
+      "recommended_requirements_line": "numpy>=1.18,<2",
+      "evidence": [
+        "np.log2 introduced in v1.16.2",
+        "np.asarray deprecated in v1.20.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements_txt": [
+    "matplotlib>=3.1,<4",
+    "numpy>=1.18,<2"
+  ]
+}

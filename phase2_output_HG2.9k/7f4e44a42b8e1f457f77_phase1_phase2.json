@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "matplotlib": {
+      "inferred_version_range": ">=2.1.0,<2.2.0",
+      "recommended_requirements_line": "matplotlib>=2.1.0,<2.2.0",
+      "evidence": [
+        "matplotlib.pyplot added in v2.1.0, matplotlib.backends.backend_qt4agg introduced in v2.1.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<1.9.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<1.9.0",
+      "evidence": [
+        "numpy.arange added in v1.7.0, numpy.sin introduced in v1.7.0",
+        "numpy.cos introduced in v1.8.0, numpy.linalg.norm introduced in v1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "matplotlib>=2.1.0,<2.2.0",
+    "numpy>=1.7.0,<1.9.0"
+  ]
+}

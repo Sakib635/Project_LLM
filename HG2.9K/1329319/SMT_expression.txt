@@ -1,0 +1,4 @@
+(declare-fun redis () String)
+(declare-fun pylibmc () String)
+(assert (and (or (= pylibmc "1.6.1")) (or (= redis "3.5.3"))))
+(check-sat)

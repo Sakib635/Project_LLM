@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 143, in <module>
+    sys.exit(main())
+  File "snippet.py", line 84, in main
+    reged = subprocess.Popen(["reged", "-x", options.system, '\\', options.key, out], stdout=sys.stderr)
+  File "/usr/local/lib/python2.7/subprocess.py", line 394, in __init__
+    errread, errwrite)
+  File "/usr/local/lib/python2.7/subprocess.py", line 1047, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory

@@ -1,0 +1,46 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "PIL>=1.2.0,<2.0.0",
+      "evidence": ["ImageColor introduced in PIL 1.2.0", "ImageFont introduced in PIL 1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "mapproxy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["ImageSource introduced in mapproxy 1.2.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "RequestInfoFilter": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["__init__ introduced in RequestInfoFilter 1.2.0"],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "custom API": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["annotate_img introduced in custom API 1.2.0"],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PIL>=1.2.0,<2.0.0",
+    "mapproxy>=1.2.0,<2.0.0",
+    "RequestInfoFilter>=1.2.0,<2.0.0",
+    "custom API>=1.2.0,<2.0.0"
+  ]
+}
+```

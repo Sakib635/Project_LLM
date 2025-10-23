@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0.8,<3.0.0",
+      "recommended_requirements_line": "keras>=2.0.8,<3.0.0",
+      "evidence": [
+        "keras.backend added in Keras 2.0.8 \u2192 min Keras 2.0.8",
+        "keras.losses.binary_crossentropy added in Keras 2.0.8 \u2192 min Keras 2.0.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keras.backend": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Not enough information to determine the version range"
+    },
+    "keras.losses": {
+      "inferred_version_range": ">=2.0.8,<3.0.0",
+      "recommended_requirements_line": "keras.losses>=2.0.8,<3.0.0",
+      "evidence": [
+        "keras.losses.binary_crossentropy added in Keras 2.0.8 \u2192 min Keras 2.0.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keras.utils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Not enough information to determine the version range"
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.0.8,<3.0.0"
+  ]
+}

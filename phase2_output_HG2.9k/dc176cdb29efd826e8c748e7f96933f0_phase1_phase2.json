@@ -1,0 +1,69 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv added in Python 3.7",
+        "sys.exit added in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "wit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Wit.run_actions added in Python 3.7",
+        "Wit added in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pyowm": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "OWM.weather_at_place added in Python 3.7",
+        "OWM added in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "telegram": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Updater added in Python 3.7",
+        "Dispatcher added in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "logging.basicConfig added in Python 3.7",
+        "logging.info added in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sys>=3.7",
+    "wit>=3.7",
+    "pyowm>=3.7",
+    "telegram>=3.8",
+    "logging>=3.8"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "socket.setsockopt added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "socket": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "socket>=3.5,<4",
+      "evidence": [
+        "socket.bind introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "select": {
+      "inferred_version_range": ">=3.4",
+      "recommended_requirements_line": "select>=3.4",
+      "evidence": [
+        "select.select introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys.argv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming sys.argv is a Python built-in"
+    },
+    "urlparse": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "urlparse>=3.5",
+      "evidence": [
+        "urlparse introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "parse_qs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming parse_qs is a Python built-in"
+    },
+    "word2vec": {
+      "inferred_version_range": ">=1.0",
+      "recommended_requirements_line": "word2vec>=1.0",
+      "evidence": [
+        "word2vec.load introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "map": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming map is a Python built-in"
+    },
+    "join": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming join is a Python built-in"
+    },
+    "decode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming decode is a Python built-in"
+    },
+    "evloop": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Assuming evloop is a Python built-in"
+    },
+    "Server": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "Server>=3.5",
+      "evidence": [
+        "Server.__init__ introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Client": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "Client>=3.5",
+      "evidence": [
+        "Client.__init__ introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "socket>=3.5,<4",
+    "select>=3.4",
+    "urlparse>=3.5",
+    "word2vec>=1.0"
+  ]
+}

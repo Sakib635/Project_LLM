@@ -1,0 +1,4 @@
+(declare-fun dlib () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= dlib "19.21.1"))))
+(check-sat)

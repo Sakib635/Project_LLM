@@ -1,0 +1,30 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["os.path added in Python 3.5 → min Python 3.5", "time.clock removed in Python 3.8 → max Python null"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "os>=1.0.0,<2.0.0",
+"evidence": ["os.path introduced in version 1.0.0 and deprecated/removed in version 2.0.0"],
+"confidence": 0.85,
+"notes": ""
+},
+"stat": {
+"inferred_version_range": ">=3.7.0,<4.0.0",
+"recommended_requirements_line": "stat>=3.7.0,<4.0.0",
+"evidence": ["stat.S_IXUSR introduced in version 3.7.0 and deprecated/removed in version 4.0.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"os>=1.0.0,<2.0.0",
+"stat>=3.7.0,<4.0.0"
+]
+},
+"requirements.txt": ["os>=1.0.0,<2.0.0","stat>=3.7.0,<4.0.0"]
+}

@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "simplejson.loads added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.sessions.backends.base": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "django-sessions>=1.2,<2",
+      "evidence": [
+        "SessionBase introduced in v1.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "django_ext.redis_helper": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "get_redis introduced in v1.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "simplejson>=3.5"
+  ]
+}

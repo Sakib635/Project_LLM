@@ -1,0 +1,45 @@
+```json
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": ["platform.linux_distribution introduced in Python 3.0"],
+    "notes": ""
+  },
+  "dependencies": {
+    "apt": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "apt>=1.2.0,<2.0.0",
+      "evidence": ["apt_pkg.Cache introduced in Python 3.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "apt-pkg": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "apt-pkg>=1.2.0,<2.0.0",
+      "evidence": ["apt_pkg.DepCache introduced in Python 3.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "update-notifier-common": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.3,
+      "notes": "Unable to determine version range"
+    },
+    "prettytable": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "prettytable>=1.2.0,<2.0.0",
+      "evidence": ["PrettyTable introduced in Python 3.0"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "apt>=1.2.0,<2.0.0",
+    "apt-pkg>=1.2.0,<2.0.0",
+    "prettytable>=1.2.0,<2.0.0"
+  ]
+}
+```

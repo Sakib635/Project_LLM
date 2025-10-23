@@ -1,0 +1,115 @@
+[PYTHON]
+import json
+
+def get_version_range(extracted_apis):
+    # Initialize an empty dictionary to store the version range for each package
+    package_version_ranges = {}
+
+    # Iterate over each package in the extracted APIs
+    for package, apis in extracted_apis.items():
+        # Initialize a variable to store the minimum and maximum Python versions for this package
+        min_py_ver = None
+        max_py_ver = None
+
+        # Iterate over each API for this package
+        for api in apis:
+            # Check if the API has been deprecated or removed
+            if api.deprecated or api.removed:
+                # If so, set the maximum Python version to the version when it was deprecated/removed
+                max_py_ver = api.deprecated_in or api.removed_in
+
+            # Check if the API has been added or changed
+            elif api.added or api.changed:
+                # If so, set the minimum Python version to the version when it was added/changed
+                min_py_ver = api.added_in or api.changed_in
+
+        # If a minimum and maximum Python version have been found for this package, add them to the dictionary
+        if min_py_ver and max_py_ver:
+            package_version_ranges[package] = (min_py_ver, max_py_ver)
+
+    return package_version_ranges
+
+def get_recommended_requirements(extracted_apis):
+    # Initialize an empty list to store the recommended requirements lines for each package
+    requirements_lines = []
+
+    # Iterate over each package in the extracted APIs
+    for package, apis in extracted_apis.items():
+        # Initialize a variable to store the minimum and maximum Python versions for this package
+        min_py_ver = None
+        max_py_ver = None
+
+        # Iterate over each API for this package
+        for api in apis:
+            # Check if the API has been deprecated or removed
+            if api.deprecated or api.removed:
+                # If so, set the maximum Python version to the version when it was deprecated/removed
+                max_py_ver = api.deprecated_in or api.removed_in
+
+            # Check if the API has been added or changed
+            elif api.added or api.changed:
+                # If so, set the minimum Python version to the version when it was added/changed
+                min_py_ver = api.added_in or api.changed_in
+
+        # If a minimum and maximum Python version have been found for this package, add a recommended requirements line to the list
+        if min_py_ver and max_py_ver:
+            requirements_lines.append(f"{package}>={min_py_ver},<{max_py_ver}")
+
+    return requirements_lines
+
+# Get the extracted APIs for each package in the project
+extracted_apis = {
+    "os": [
+        "os.environ"
+    ],
+    "MySQLdb": [
+        "mysql.connect",
+        "mysql.cursor",
+        "mysql.execute"
+    ],
+    "unicodecsv": [
+        "unicodecsv.writer"
+    ],
+    "jinja2": [
+        "jinja2.Template",
+        "jinja2.render"
+    ],
+    "pandas": [
+        "pandas.DataFrame",
+        "pandas.DataFrame.to_numpy",
+        "pandas.DataFrame.ix"
+    ],
+    "numpy": [
+        "numpy.array",
+        "numpy.linalg.norm"
+    ]
+}
+
+# Get the version range for each package
+package_version_ranges = get_version_range(extracted_apis)
+
+# Get the recommended requirements lines for each package
+recommended_requirements_lines = get_recommended_requirements(extracted_apis)
+
+# Create a JSON object with the version range and recommended requirements lines for each package
+output = {
+    "python_version": {
+        "min": min_py_ver,
+        "max": max_py_ver,
+        "evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+        "notes": ""
+    },
+    "dependencies": {
+        package: {
+            "inferred_version_range": package_version_ranges.get(package),
+            "recommended_requirements_line": recommended_requirements_lines[i] if i < len(recommended_requirements_lines) else None,
+            "evidence": ["API X introduced, depricated, removed or changed in vM.N.P"],
+            "confidence": 0.0,
+            "notes": ""
+        } for i, package in enumerate(extracted_apis)
+    },
+    "requirements.txt": recommended_requirements_lines
+}
+
+print(json.dumps(output, indent=2))
+[/PYTHON]

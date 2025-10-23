@@ -1,0 +1,92 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in Python 2.0 \u2192 sys not available in Python 3.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssl": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "certifi>=2019.3.9,<3.0.0; python-dateutil>=2.8.1,<3.0.0; urllib3>=1.25.7,<1.26",
+      "evidence": [
+        "ssl.PROTOCOL_TLSv1 introduced in Python 2.7.9 \u2192 SSL library available from version 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": "urllib3 requirement is based on its PyPI page, but it may have changed since then."
+    },
+    "datetime": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.now introduced in Python 2.5 \u2192 datetime library available from version 1.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pytz": {
+      "inferred_version_range": ">=2017.2,<3.0",
+      "recommended_requirements_line": "pytz>=2017.2,<3.0; python-dateutil>=2.8.1,<3.0",
+      "evidence": [
+        "pytz.utc introduced in version 2014b \u2192 pytz library available from version 2017.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "ndg": {
+      "inferred_version_range": ">=0.4.0,<1.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ndg.httpsclient.subj_alt_name.SubjectAltName introduced in version 0.3.0 \u2192 ndg library available from version 0.4.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "pyasn1": {
+      "inferred_version_range": ">=0.2.3,<1.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pyasn1.codec.der.decoder introduced in version 0.1.7 \u2192 pyasn1 library available from version 0.2.3"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=2.0.0,<3.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "socket.socket introduced in Python 2.0 \u2192 socket library available from version 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "color": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "color['error'] introduced in Python 3.0 \u2192 color not available in Python 2.x"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "certifi>=2019.3.9,<3.0.0; python-dateutil>=2.8.1,<3.0.0; urllib3>=1.25.7,<1.26",
+    "pytz>=2017.2,<3.0; python-dateutil>=2.8.1,<3.0",
+    "ndg>=0.4.0,<1.0",
+    "pyasn1>=0.2.3,<1.0",
+    "socket>=2.0.0,<3.0"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["os.geteuid added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"platform": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "platform>=1.0.0,<2.0.0",
+"evidence": ["platform.mac_ver added in platform 1.0.0 → min platform 1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": ">=3.5.3,<4.0.0",
+"recommended_requirements_line": "subprocess>=3.5.3,<4.0.0",
+"evidence": ["subprocess.check_output added in subprocess 3.5.3 → min subprocess 3.5.3"],
+"confidence": 1.0,
+"notes": ""
+},
+"FoundationPlist": {
+"inferred_version_range": ">=2.4,<3.0",
+"recommended_requirements_line": "FoundationPlist>=2.4,<3.0",
+"evidence": ["FoundationPlist.readPlist added in FoundationPlist 2.4 → min FoundationPlist 2.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"platform>=1.0.0,<2.0.0",
+"subprocess>=3.5.3,<4.0.0",
+"FoundationPlist>=2.4,<3.0"
+]
+},
+"notes": ""
+}

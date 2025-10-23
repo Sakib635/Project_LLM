@@ -1,0 +1,198 @@
+System Prompt:
+You are an expert dependency/version and Python version inference assistant.
+You must output ONLY valid JSON — no markdown, no code fences, no explanations, no comments.
+Output must strictly match the JSON structure below and be human-readable formatted with 2 spaces of indentation.
+
+Given a structured list of extracted API calls grouped by package and standard library (Python stdlib),
+infer:
+1. The Python version range (min, max) based on the extracted APIs provided.
+2. The most likely version range for each external package used based on the extracted APIs provided.
+3. requirements.txt (only third-party packages' recommended_requirements_line).
+
+Requirements for Python version:
+- Return:
+  - min (minimum Python version required)
+  - max (maximum Python version allowed, null if none)
+  - evidence (list of short statements linking stdlib API usage to Python version addition/removal)
+  - notes (optional assumptions)
+Requirements for external packages:
+- For each package, return:
+  - inferred_version_range (string, e.g., ">=1.2.0,<2.0.0")
+  - recommended_requirements_line (string, e.g., "pandas>=1.2.0,<2.0.0")
+  - evidence (list of short statements mapping APIs to introduction/deprecation versions)
+  - confidence (0.0–1.0)
+  - notes (optional: conflicting APIs, assumptions, uncertain items)
+
+Additional field:
+- requirements.txt: a list of recommended_requirements_line for all dependencies
+
+General rules:
+- If you cannot determine a reliable upper or lower bound, indicate null and explain.
+- Prefer conservative ranges to ensure the project runs safely.
+- Output **only** valid JSON following the schema below.
+
+User Prompt:
+extracted APIs: {
+  "os": [
+    "os.path"
+  ],
+  "argparse": [
+    "argparse.ArgumentParser",
+    "argparse.parse_args"
+  ],
+  "pickle": [
+    "pickle.load"
+  ],
+  "numpy": [
+    "numpy.array",
+    "numpy.zeros",
+    "numpy.linalg.norm"
+  ],
+  "numpy.random": [
+    "numpy.random.seed"
+  ],
+  "numpy.random.RandomState": [
+    "numpy.random.RandomState"
+  ],
+  "numpy.shape": [
+    "numpy.shape"
+  ],
+  "numpy.sort": [
+    "numpy.sort"
+  ],
+  "numpy.sum": [
+    "numpy.sum"
+  ],
+  "numpy.transpose": [
+    "numpy.transpose"
+  ],
+  "pandas": [
+    "pandas.DataFrame",
+    "pandas.read_csv",
+    "pandas.get_dummies",
+    "pandas.to_datetime"
+  ],
+  "pandas.DataFrame": [
+    "pandas.DataFrame.dropna",
+    "pandas.DataFrame.ix",
+    "pandas.DataFrame.to_numpy",
+    "pandas.concat"
+  ],
+  "pandas.get_dummies": [
+    "pandas.get_dummies"
+  ],
+  "pandas.read_csv": [
+    "pandas.read_csv"
+  ],
+  "pandas.Series": [
+    "pandas.Series"
+  ],
+  "pandas.to_datetime": [
+    "pandas.to_datetime"
+  ],
+  "sklearn.metrics": [
+    "sklearn.metrics.f1_score",
+    "sklearn.metrics.matthews_corrcoef"
+  ],
+  "sklearn.preprocessing": [
+    "sklearn.preprocessing.LabelEncoder"
+  ],
+  "sklearn.tree": [
+    "sklearn.tree.DecisionTreeClassifier"
+  ],
+  "sklearn.svm": [
+    "sklearn.svm.LinearSVC"
+  ]
+}
+
+Return ONLY the final JSON object — no markdown, no extra text.
+Structure:
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "<package>": {
+      "inferred_version_range": ">=X.Y.Z,<A.B.C" or null,
+      "recommended_requirements_line": "pkg>=X.Y.Z,<A.B.C" or null,
+      "evidence": ["API X introduced, depricated, removed or changed in vM.N.P"],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [pkg>=X.Y.Z,<A.B.C]
+}
+```
+
+### JSON Object for Python Version Range Inference
+
+The following JSON object represents the inferred Python version range based on the extracted APIs:
+
+```json
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y → min Python y",
+      "time.clock removed in Python x→ max Python z"
+    ],
+    "notes": ""
+  }
+}
+```
+
+### JSON Object for External Package Version Inference
+
+The following JSON object represents the inferred version range and recommended requirements line for each external package used based on the extracted APIs:
+
+```json
+{
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy==1.20.3",
+      "evidence": [
+        "numpy.array introduced in v1.20 → max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.4,<2.0",
+      "recommended_requirements_line": "pandas==1.2.5",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.2.4 → max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.0,<2.0",
+      "recommended_requirements_line": "scikit-learn==0.23.2",
+      "evidence": [
+        "sklearn.tree.DecisionTreeClassifier introduced in v0.0 → max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  }
+}
+```
+
+### JSON Object for requirements.txt File
+
+The following JSON object represents the recommended requirements line for all dependencies:
+
+```json
+{
+  "requirements.txt": [
+    "numpy==1.20.3",
+    "pandas==1.2.5",
+    "scikit-learn==0.23.2"
+  ]
+}
+```

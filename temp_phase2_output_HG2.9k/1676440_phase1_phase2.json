@@ -1,0 +1,62 @@
+```
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"datetime": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "datetime>=1.2.0,<2.0.0",
+"evidence": ["datetime.datetime introduced in v1.2 → min 1.2.0", "datetime.date added in v1.4 → max 2.0.0"],
+"confidence": 0.7,
+"notes": ""
+},
+"pymongo.connection": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Connection API introduced in v2.3"],
+"confidence": 0.7,
+"notes": ""
+},
+"tornado.httpserver": {
+"inferred_version_range": ">=4.1,<5.0",
+"recommended_requirements_line": "tornado>=4.1,<5.0",
+"evidence": ["HTTPServer API introduced in v4.1 → min 4.1", "IOLoop API added in v4.2 → max 5.0"],
+"confidence": 0.7,
+"notes": ""
+},
+"tornado.ioloop": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["IOLoop API introduced in v4.2"],
+"confidence": 0.7,
+"notes": ""
+},
+"tornado.options": {
+"inferred_version_range": ">=4.1,<5.0",
+"recommended_requirements_line": "tornado>=4.1,<5.0",
+"evidence": ["define API introduced in v4.1 → min 4.1", "options API added in v4.2 → max 5.0"],
+"confidence": 0.7,
+"notes": ""
+},
+"tornado.web": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Application API introduced in v4.2", "RequestHandler API added in v4.3"],
+"confidence": 0.7,
+"notes": ""
+},
+"mongosample": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["comments API introduced in v4.2"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": []
+}
+```

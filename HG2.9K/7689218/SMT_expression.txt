@@ -1,0 +1,4 @@
+(declare-fun launchpadlib () String)
+(declare-fun httplib2 () String)
+(assert (and (or (= httplib2 "0.18.1")) (or (= launchpadlib "1.10.13"))))
+(check-sat)

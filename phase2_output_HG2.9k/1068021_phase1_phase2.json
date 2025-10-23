@@ -1,0 +1,26 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9.0",
+    "evidence": [
+      "Python 2.7 support dropped in version 3.0",
+      "Python 3.0 introduced typing module"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "MySQLdb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MySQLdb.connect() introduced in version 1.2.4",
+        "MySQLdb.cursor.execute() deprecated since version 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "MySQLdb>=1.2.4"
+  ]
+}

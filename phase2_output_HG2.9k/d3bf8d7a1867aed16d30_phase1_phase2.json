@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "os.path added in Python 3.4 \u2192 min Python 3.4",
+      "sys.argv removed in Python 3.10 \u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "fuse": {
+      "inferred_version_range": ">=2.8,<3.0",
+      "recommended_requirements_line": "fuse==2.8",
+      "evidence": [
+        "FUSE introduced in Python 2.8 \u2192 min FUSE 2.8",
+        "LoggingMixIn removed in Python 3.10 \u2192 max FUSE"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=2.7,<3.10",
+      "recommended_requirements_line": "logging==2.7",
+      "evidence": [
+        "basicConfig introduced in Python 2.7 \u2192 min logging 2.7",
+        "warning removed in Python 3.10 \u2192 max logging"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.6,<3.10",
+      "recommended_requirements_line": "sys==2.6",
+      "evidence": [
+        "argv introduced in Python 2.6 \u2192 min sys 2.6",
+        "exit removed in Python 3.10 \u2192 max sys"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "fuse==2.8",
+    "logging==2.7",
+    "sys==2.6"
+  ]
+}

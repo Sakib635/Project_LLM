@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "blimp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "blimp.Client API added in v1.0.0"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "basecamp": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "basecamp>=2.5.0,<3.0.0",
+      "evidence": [
+        "basecamp.Basecamp API added in v1.0.0",
+        "basecamp.todo_list API introduced in v2.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "blimp>=1.0.0",
+    "basecamp>=2.5.0,<3.0.0"
+  ]
+}

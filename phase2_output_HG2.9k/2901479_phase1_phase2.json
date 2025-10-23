@@ -1,0 +1,74 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "null",
+    "evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.5,<3.6",
+      "recommended_requirements_line": null,
+      "evidence": ["os.environ introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "flask>=1.2.0,<2.0.0",
+      "evidence": ["Flask introduced in Python 3.5 → min Python 3.5", "secret_key and debug deprecated in Python 3.6 → max Python 3.6"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "flask_heroku": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["Heroku introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "flask_sslify": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["SSLify introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "raven.contrib.flask": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["Sentry introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "flask.ext.celery": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["Celery introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["DataFrame introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": ["array introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask>=1.2.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}
+```

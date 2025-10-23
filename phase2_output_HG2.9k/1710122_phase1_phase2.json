@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "SessionInterface added in Python 3.6 \u2192 min Python 3.6",
+      "LockingClient added in Python 2.0 \u2192 max Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask.sessions": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SessionInterface added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "werkzeug.contrib.cache": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MemcachedCache added in Python 2.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "memcache": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "LockingClient added in Python 2.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask-sessions>=3.6",
+    "werkzeug-contrib-cache>=2.0",
+    "memcache>=2.0"
+  ]
+}

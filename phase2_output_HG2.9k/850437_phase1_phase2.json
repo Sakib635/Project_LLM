@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "math.sin added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.14.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.0,<2.0.0",
+      "evidence": [
+        "numpy.linspace introduced in v1.14.0",
+        "numpy.random.randn introduced in v1.14.0",
+        "numpy.sum introduced in v1.14.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "scipy.linalg.solve introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.14.0,<2.0.0",
+    "scipy>=1.2.0,<2.0.0"
+  ]
+}

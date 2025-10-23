@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "google_api_python_client": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "appengine_rpc_httplib2.HttpRpcServerOauth2 introduced in v1.4.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "yaml": {
+      "inferred_version_range": ">=5.1,<6.0",
+      "recommended_requirements_line": "yaml>=5.1,<6.0",
+      "evidence": [
+        "safe_load introduced in v3.12.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "google-api-python-client>=1.4.0",
+    "yaml>=5.1"
+  ]
+}

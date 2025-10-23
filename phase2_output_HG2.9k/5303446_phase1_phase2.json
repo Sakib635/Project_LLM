@@ -1,0 +1,37 @@
+```
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "imp": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "imp>=1.2,<2.0",
+      "evidence": ["imp.find_module introduced in version 1.2"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "os>=3.5,<4.0",
+      "evidence": ["os.path.exists introduced in version 3.5", "os.system removed in version 4.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["sys.argv introduced in version 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "imp>=1.2,<2.0",
+    "os>=3.5,<4.0"
+  ]
+}
+```

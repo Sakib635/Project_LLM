@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 2.7\u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.1.0,<1.2.9",
+      "recommended_requirements_line": "Pillow>=1.1.0,<1.2.9",
+      "evidence": [
+        "PIL.Image added in Pillow 1.1.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.Image": {
+      "inferred_version_range": ">=1.1.0,<1.2.9",
+      "recommended_requirements_line": "Pillow>=1.1.0,<1.2.9",
+      "evidence": [
+        "PIL.Image.open added in Pillow 1.1.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.ImageStat": {
+      "inferred_version_range": ">=1.1.0,<1.2.9",
+      "recommended_requirements_line": "Pillow>=1.1.0,<1.2.9",
+      "evidence": [
+        "PIL.ImageStat added in Pillow 1.1.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.2,<1.18.0",
+      "recommended_requirements_line": "numpy>=1.17.2,<1.18.0",
+      "evidence": [
+        "numpy.array added in numpy 1.17.2 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.1.0,<1.2.9",
+    "numpy>=1.17.2,<1.18.0"
+  ]
+}

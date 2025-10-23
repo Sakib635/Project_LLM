@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "multiprocessing.Queue added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cv>=1.2.0,<2.0.0",
+      "evidence": [
+        "cv.CaptureFromCAM introduced in v1.2.0 \u2192 min version 1.2.0",
+        "cv.QueryFrame deprecated in v2.0.0 \u2192 max version 2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cPickle": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cPickle>=1.2.0,<2.0.0",
+      "evidence": [
+        "cPickle.dumps introduced in v1.2.0 \u2192 min version 1.2.0",
+        "cPickle.loads deprecated in v2.0.0 \u2192 max version 2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "time>=3.0.0,<4.0.0",
+      "evidence": [
+        "time.time introduced in v3.0.0 \u2192 min version 3.0.0",
+        "time.sleep removed in v4.0.0 \u2192 max version 4.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv>=1.2.0,<2.0.0",
+    "cPickle>=1.2.0,<2.0.0",
+    "time>=3.0.0,<4.0.0"
+  ]
+}

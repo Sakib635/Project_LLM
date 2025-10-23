@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Bio": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Bio>=1.2.0,<2.0.0",
+      "evidence": [
+        "SeqIO introduced in Bio 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "sys>=3.7.0,<4.0.0",
+      "evidence": [
+        "argv introduced in sys 3.7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "readDict": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs found"
+      ],
+      "confidence": 0.3,
+      "notes": "Package not found in API extraction"
+    },
+    "SeqRecord": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "SeqRecord>=1.2.0,<2.0.0",
+      "evidence": [
+        "id introduced in SeqRecord 1.2.0",
+        "description introduced in SeqRecord 1.2.0",
+        "seq introduced in SeqRecord 1.2.0",
+        "quality introduced in SeqRecord 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Bio>=1.2.0,<2.0.0",
+    "sys>=3.7.0,<4.0.0"
+  ]
+}

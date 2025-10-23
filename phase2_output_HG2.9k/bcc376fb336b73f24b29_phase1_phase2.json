@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.14.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.14.0,<2.0.0",
+      "evidence": [
+        "placeholder introduced in 1.14.0, softmax and matmul deprecated in 2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "array introduced in 1.16.0, genfromtxt deprecated in 1.19.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.20.0,<0.23.0",
+      "recommended_requirements_line": "sklearn>=0.20.0,<0.23.0",
+      "evidence": [
+        "train_test_split introduced in 0.20.0, LabelBinarizer deprecated in 0.22.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.14.0,<2.0.0",
+    "numpy>=1.16.0,<2.0.0",
+    "sklearn>=0.20.0,<0.23.0"
+  ]
+}

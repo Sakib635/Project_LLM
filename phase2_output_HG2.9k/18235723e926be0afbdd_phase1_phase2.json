@@ -1,0 +1,62 @@
+Here's the JSON output for the given input:
+```json
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": ["struct.pack added in Python 3.0 → min Python 3.0"],
+    "notes": ""
+  },
+  "dependencies": {
+    "hashlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "hashlib>=1.2.0,<2.0.0",
+      "evidence": ["hashlib.sha256 added in hashlib 1.2 → min hashlib 1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "binascii": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "binascii>=1.2.0,<2.0.0",
+      "evidence": ["binascii.hexlify added in binascii 1.2 → min binascii 1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "M2Crypto": {
+      "inferred_version_range": ">=0.21.1,<1.0.0",
+      "recommended_requirements_line": "M2Crypto>=0.21.1,<1.0.0",
+      "evidence": ["M2Crypto.X509 added in M2Crypto 0.21.1 → min M2Crypto 0.21.1"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "Crypto>=2.0.0,<3.0.0",
+      "evidence": ["Crypto.PublicKey.RSA added in Crypto 2.0 → min Crypto 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "curve25519": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["No evidence of curve25519"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "gmpy": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "gmpy>=2.0.0,<3.0.0",
+      "evidence": ["gmpy.mpz added in gmpy 2.0 → min gmpy 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "hashlib>=1.2.0,<2.0.0",
+    "binascii>=1.2.0,<2.0.0",
+    "M2Crypto>=0.21.1,<1.0.0",
+    "Crypto>=2.0.0,<3.0.0",
+    "gmpy>=2.0.0,<3.0.0"
+  ]
+}
+```

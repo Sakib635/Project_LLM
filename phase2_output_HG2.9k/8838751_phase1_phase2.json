@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "photos": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "photos.get_metadata"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "webbrowser": {
+      "inferred_version_range": ">=2.1,<3",
+      "recommended_requirements_line": "webbrowser>=2.1,<3",
+      "evidence": [
+        "webbrowser.open"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "photos",
+    "webbrowser"
+  ]
+}

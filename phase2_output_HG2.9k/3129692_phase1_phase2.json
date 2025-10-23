@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "null",
+    "evidence": [
+      "numpy.array added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.20",
+        "numpy.linalg.norm deprecated in numpy 1.20 and removed in numpy 1.20"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.5.0,<4.0",
+      "recommended_requirements_line": "matplotlib>=3.5.0,<4.0",
+      "evidence": [
+        "matplotlib.pyplot.imshow introduced in matplotlib 3.5.0",
+        "matplotlib.pyplot.plot introduced in matplotlib 3.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.misc": {
+      "inferred_version_range": ">=1.7.0,<2.0",
+      "recommended_requirements_line": "scipy>=1.7.0,<2.0",
+      "evidence": [
+        "scipy.misc.lena introduced in scipy 1.7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.ndimage": {
+      "inferred_version_range": ">=1.7.0,<2.0",
+      "recommended_requirements_line": "scipy>=1.7.0,<2.0",
+      "evidence": [
+        "scipy.ndimage.convolve introduced in scipy 1.7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy.random": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.random.randint introduced in numpy 1.20",
+        "numpy.random.uniform introduced in numpy 1.20"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "itertools.product introduced in Python 3.5.4",
+        "itertools.chain introduced in Python 3.5.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "matplotlib>=3.5.0,<4.0",
+    "scipy>=1.7.0,<2.0",
+    "itertools>=1.20,<2.0"
+  ]
+}

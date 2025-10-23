@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.ndarray added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.19.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.2,<2.0.0",
+      "evidence": [
+        "numpy.ndarray introduced in v1.19.2"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.5.4,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.5.4,<2.0.0",
+      "evidence": [
+        "scipy.ndimage.interpolation.map_coordinates introduced in v1.5.4",
+        "scipy.ndimage.filters.gaussian_filter introduced in v1.5.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19.2,<2.0.0",
+    "scipy>=1.5.4,<2.0.0"
+  ]
+}

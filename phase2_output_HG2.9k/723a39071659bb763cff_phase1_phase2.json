@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.1.0,<2.4.0",
+      "recommended_requirements_line": "keras>=2.1.0,<2.4.0",
+      "evidence": [
+        "keras.models.Sequential introduced in v2.1.0",
+        "keras.models.Model.fit removed in v2.3.0 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.1.0,<2.4.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "rx.concurrency.TwistedScheduler added in Python 3.4 \u2192 min Python 3.4",
+      "twisted.internet.endpoints.TCP4ServerEndpoint added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "rx.disposables.Disposable added in rx-1.0 \u2192 min Python 3.4",
+        "rx.subjects.Subject added in rx-1.0 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.endpoints.TCP4ServerEndpoint added in twisted-16.1 \u2192 min Python 3.4",
+        "twisted.internet.reactor added in twisted-8.0 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

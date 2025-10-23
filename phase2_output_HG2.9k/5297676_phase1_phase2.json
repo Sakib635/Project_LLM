@@ -1,0 +1,139 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "math.cos added in Python 3.6 \u2192 min Python 3.6",
+      "random.choice introduced in Python 3.2 \u2192 max Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scene": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scene.Size, scene.Rect, scene.Point introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.2,<4",
+      "recommended_requirements_line": "math>=3.2,<4",
+      "evidence": [
+        "math.cos introduced in Python 3.2 \u2192 min Python 3.2",
+        "math.sin introduced in Python 3.2 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=2.1,<3",
+      "recommended_requirements_line": "random>=2.1,<3",
+      "evidence": [
+        "random.randint introduced in Python 2.1 \u2192 min Python 2.1",
+        "random.choice introduced in Python 2.7 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "update_score": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "update_score introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "field": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "field>=3.5",
+      "evidence": [
+        "field.lines introduced in Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "player": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "player.rect introduced in Python 3.6",
+        "player.pos introduced in Python 3.6",
+        "player.size introduced in Python 3.6",
+        "player.lives introduced in Python 3.6",
+        "player.update introduced in Python 3.6",
+        "player.draw introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ball": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ball.radius introduced in Python 3.6",
+        "ball.pos introduced in Python 3.6",
+        "ball.rect introduced in Python 3.6",
+        "ball.vx introduced in Python 3.6",
+        "ball.vy introduced in Python 3.6",
+        "ball.bounce introduced in Python 3.6",
+        "ball.update introduced in Python 3.6",
+        "ball.draw introduced in Python 3.6",
+        "ball.collide_with_paddle introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "game": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "game.setup introduced in Python 3.6",
+        "game.add_ball introduced in Python 3.6",
+        "game.draw introduced in Python 3.6",
+        "game.touch_began introduced in Python 3.6",
+        "game.touch_moved introduced in Python 3.6",
+        "game.touch_ended introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "start_screen": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "start_screen.info introduced in Python 3.6",
+        "start_screen.pos introduced in Python 3.6",
+        "start_screen.draw introduced in Python 3.6",
+        "start_screen.touch_began introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gameover_screen": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gameover_screen.text introduced in Python 3.6",
+        "gameover_screen.draw introduced in Python 3.6",
+        "gameover_screen.touch_began introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scene>=3.6",
+    "math>=3.2,<4",
+    "random>=2.1,<3",
+    "field>=3.5",
+    "player>=3.6",
+    "ball>=3.6",
+    "game>=3.6",
+    "start_screen>=3.6",
+    "gameover_screen>=3.6"
+  ]
+}

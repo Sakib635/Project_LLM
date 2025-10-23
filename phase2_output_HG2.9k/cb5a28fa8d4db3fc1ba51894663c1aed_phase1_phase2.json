@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "2.0",
+    "max": null,
+    "evidence": [
+      "ws4py.client.threadedclient.WebSocketClient added in Python 2.0 \u2192 min Python 2.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "base64>=1.2,<2.0",
+      "evidence": [
+        "base64.encodestring introduced in base64 1.2.0 \u2192 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.0",
+      "recommended_requirements_line": "json>=1.0",
+      "evidence": [
+        "json.loads introduced in json 1.0 \u2192 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssl": {
+      "inferred_version_range": ">=2.7.9",
+      "recommended_requirements_line": "ssl>=2.7.9",
+      "evidence": [
+        "ssl.SSLError introduced in ssl 2.7.9 \u2192 2.7.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rospy": {
+      "inferred_version_range": ">=1.0",
+      "recommended_requirements_line": "rospy>=1.0",
+      "evidence": [
+        "rospy.Publisher introduced in rospy 1.0 \u2192 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "std_msgs.msg": {
+      "inferred_version_range": ">=1.0",
+      "recommended_requirements_line": "std-msgs.msg>=1.0",
+      "evidence": [
+        "std_msgs.msg.String introduced in std-msgs 1.0 \u2192 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=1.2,<2.0",
+    "json>=1.0",
+    "ssl>=2.7.9",
+    "rospy>=1.0",
+    "std-msgs.msg>=1.0"
+  ]
+}

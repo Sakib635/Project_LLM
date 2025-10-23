@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "plone.behavior.interfaces.IBehavior introduced in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "plone.dexterity.behavior": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "g24.elements.DexterityInstanceBehaviorAssignable introduced in v2.0 \u2192 min Python 3.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "zope.annotation": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "zope.annotation.IAnnotations introduced in v1.3 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "zope.component": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "zope.component.queryUtility introduced in v4.1 \u2192 min Python 3.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "zope.interface": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "zope.interface.alsoProvides introduced in v4.1 \u2192 min Python 3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "plone.dexterity.behavior>=1.0,<2.0",
+    "zope.annotation>=1.0,<2.0",
+    "zope.component>=4.0,<5.0",
+    "zope.interface>=4.0,<5.0"
+  ]
+}

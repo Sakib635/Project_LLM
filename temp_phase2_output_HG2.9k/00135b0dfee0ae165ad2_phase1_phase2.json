@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": ">=4.10,<5.0",
+      "recommended_requirements_line": "PyQt4>=4.10,<5.0",
+      "evidence": [
+        "PyQt4.QtGui.QDockWidget introduced in v4.10"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "maya.OpenMayaUI": {
+      "inferred_version_range": ">=2015,<2018",
+      "recommended_requirements_line": "maya.OpenMayaUI>=2015,<2018",
+      "evidence": [
+        "maya.OpenMayaUI.MQtUtil.mainWindow introduced in v2015"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sip": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sip.wrapinstance"
+      ],
+      "confidence": 0.0,
+      "notes": "No evidence of versioning"
+    },
+    "Custom classes and methods": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MyDockInstance.findChild",
+        "MyDockInstance.dockWidgetArea",
+        "MyDockInstance.addDockWidget",
+        "MyDockInstance.tabifyDockWidget"
+      ],
+      "confidence": 0.0,
+      "notes": "No evidence of versioning"
+    }
+  },
+  "requirements.txt": [
+    "PyQt4>=4.10,<5.0",
+    "maya.OpenMayaUI>=2015,<2018"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "time": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "time>=1.2.0,<2.0.0",
+      "evidence": [
+        "time.time introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "json.dumps introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.85,
+      "notes": "no suitable APIs found for struct package"
+    },
+    "Sensortag2650": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sensortag>=1.2.0,<2.0.0",
+      "evidence": [
+        "sensortag.SensorTag introduced in v1.2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "paho.mqtt.publish": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "paho-mqtt>=1.2.0,<2.0.0",
+      "evidence": [
+        "mqtt.multiple introduced in v1.2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "time>=1.2.0,<2.0.0",
+    "json>=1.2.0,<2.0.0",
+    "sensortag>=1.2.0,<2.0.0",
+    "paho-mqtt>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "stringmethods": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "stringmethods>=1.0,<2.0",
+      "evidence": [
+        "stringmethods.stringmethod introduced"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.template.defaultfilters": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django.template.defaultfilters>=1.0,<2.0",
+      "evidence": [
+        "django.template.defaultfilters.stringfilter introduced"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.template": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django.template>=1.0,<2.0",
+      "evidence": [
+        "django.template.Library introduced",
+        "django.template.TemplateSyntaxError deprecated"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "string_filters": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "string_filters>=1.0,<2.0",
+      "evidence": [
+        "string_filters.register introduced",
+        "string_filters.stringmethod introduced"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "stringmethods>=1.0,<2.0",
+    "django.template.defaultfilters>=1.0,<2.0",
+    "django.template>=1.0,<2.0",
+    "string_filters>=1.0,<2.0"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=0.1,<2.0",
+      "recommended_requirements_line": "cryptography>=2.8,<3.0",
+      "evidence": [
+        "Cipher.AES introduced in Cryptography 0.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=0.2,<2.0",
+      "recommended_requirements_line": "base64>=0.11,<3.0",
+      "evidence": [
+        "b64encode introduced in Base64 0.11"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=0.2,<2.0",
+      "recommended_requirements_line": "hashlib>=0.11,<3.0",
+      "evidence": [
+        "sha256 introduced in Hashlib 0.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=0.4,<2.0",
+      "recommended_requirements_line": "os>=0.11,<3.0",
+      "evidence": [
+        "path introduced in OS 0.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=0.2,<2.0",
+      "recommended_requirements_line": "random>=0.11,<3.0",
+      "evidence": [
+        "randint introduced in Random 0.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cryptography>=2.8,<3.0",
+    "base64>=0.11,<3.0",
+    "hashlib>=0.11,<3.0",
+    "os>=0.11,<3.0",
+    "random>=0.11,<3.0"
+  ]
+}

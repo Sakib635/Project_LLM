@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.GraphDef added in v1.3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.protobuf": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "google-protobuf>=3.6.0,<4.0.0",
+      "evidence": [
+        "text_format.Merge introduced in v3.6.0",
+        "text_format.ParseFromString introduced in v3.8.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tensorflow.python.platform": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gfile.FastGFile added in v1.4.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow.train": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "write_graph added in v1.8.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

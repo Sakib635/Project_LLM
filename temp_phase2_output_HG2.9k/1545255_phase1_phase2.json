@@ -1,0 +1,37 @@
+[PYTHON]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.auth.models": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": ["Group model added in Django 1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "djangorestframework.permissions": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "djangorestframework>=3.0,<4.0",
+      "evidence": ["IsAuthenticated permission added in DRF 3.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "api.group_permissions": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["GroupAPIGETPermission and GroupAPIPOSTPermission not found in DRF"],
+      "confidence": 0.0,
+      "notes": "No evidence of external package usage"
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "djangorestframework>=3.0,<4.0"
+  ]
+}
+[/PYTHON]

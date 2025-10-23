@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": null,
+"max": null,
+"evidence": ["time.clock removed in Python x→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=2.7.0,<3.0.0",
+"recommended_requirements_line": "os>=2.7.0,<3.0.0",
+"evidence": ["os.path introduced in Python 2.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=2.7.0,<3.0.0",
+"recommended_requirements_line": "re>=2.7.0,<3.0.0",
+"evidence": ["re.compile introduced in Python 2.5", "re.match introduced in Python 2.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": ">=2.6.0,<3.0.0",
+"recommended_requirements_line": "subprocess>=2.6.0,<3.0.0",
+"evidence": ["subprocess.call introduced in Python 2.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"time": {
+"inferred_version_range": ">=2.6.0,<3.0.0",
+"recommended_requirements_line": "time>=2.6.0,<3.0.0",
+"evidence": ["time.sleep introduced in Python 2.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"Levenshtein": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.5,
+"notes": "Levenshtein is not a standard library module."
+}
+},
+"requirements.txt": [
+"os>=2.7.0,<3.0.0",
+"re>=2.7.0,<3.0.0",
+"subprocess>=2.6.0,<3.0.0",
+"time>=2.6.0,<3.0.0"
+]
+},
+"notes": ""
+}

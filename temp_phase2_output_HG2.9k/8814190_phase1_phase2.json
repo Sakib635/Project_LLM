@@ -1,0 +1,67 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.frombuffer introduced in v1.2.0",
+        "numpy.arange introduced in v1.2.0",
+        "numpy.column_stack introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pylab": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pylab.plot introduced in v3.4",
+        "not found in any version of pylab"
+      ],
+      "confidence": 0.2,
+      "notes": ""
+    },
+    "visa": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "not found in any version of visa"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.4",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep introduced in v3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.serial introduced in v3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "visa>=X.Y.Z,<A.B.C",
+    "pylab>=3.4,<3.8",
+    "time>=3.4"
+  ]
+}

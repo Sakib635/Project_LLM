@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["JSONWebSignatureSerializer introduced in Python 3.7 → min Python 3.7", "datetime.utctimetuple added in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"itsdangerous": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "itsdangerous>=1.2.0,<2.0.0",
+"evidence": ["JSONWebSignatureSerializer introduced in itsdangerous v1.2.0 → v1.3.0"],
+"confidence": 0.85,
+"notes": ""
+},
+"datetime": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "python-dateutil>=2.8.0,<3.0.0",
+"evidence": ["calendar.timegm introduced in python-dateutil v2.6 → v2.7"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": ["itsdangerous>=1.2.0,<2.0.0", "python-dateutil>=2.8.0,<3.0.0"]
+}
+}

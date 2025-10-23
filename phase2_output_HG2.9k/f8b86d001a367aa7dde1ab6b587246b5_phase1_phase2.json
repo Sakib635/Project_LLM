@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "keras.models.Model introduced in v2.3.0",
+        "keras.layers.Input introduced in v2.3.0",
+        "keras.layers.Dense introduced in v2.3.0",
+        "keras.layers.Flatten introduced in v2.3.0",
+        "keras.layers.merge.Merge introduced in v2.3.0",
+        "keras.layers.Lambda introduced in v2.3.0",
+        "keras.regularizers.l2 introduced in v2.3.0",
+        "keras.backend.K introduced in v2.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.3.0"
+  ]
+}

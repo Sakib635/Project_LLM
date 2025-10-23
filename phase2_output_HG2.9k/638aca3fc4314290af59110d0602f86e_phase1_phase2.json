@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["concurrent.futures.ThreadPoolExecutor added in Python 3.2 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"logging": {
+"inferred_version_range": ">=3.2,<3.9",
+"recommended_requirements_line": "logging>=3.2,<3.9",
+"evidence": ["logging.basicConfig introduced in logging 3.2 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=3.7,<3.9",
+"recommended_requirements_line": "re>=3.7,<3.9",
+"evidence": ["re.compile introduced in re 3.7 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"requests": {
+"inferred_version_range": ">=2.7,<3.9",
+"recommended_requirements_line": "requests>=2.7,<3.9",
+"evidence": ["requests.get introduced in requests 2.7 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"urllib.parse": {
+"inferred_version_range": ">=3.4,<3.9",
+"recommended_requirements_line": "urllib.parse>=3.4,<3.9",
+"evidence": ["urllib.parse.urljoin introduced in urllib.parse 3.4 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"logging>=3.2,<3.9",
+"re>=3.7,<3.9",
+"requests>=2.7,<3.9",
+"urllib.parse>=3.4,<3.9"
+]
+}
+}

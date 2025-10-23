@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "marisa_trie.Trie added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.21.0,<0.22.0",
+      "recommended_requirements_line": "scikit-learn>=0.21.0,<0.22.0",
+      "evidence": [
+        "CountVectorizer.fit_transform added in scikit-learn 0.21 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "marisa_trie": {
+      "inferred_version_range": ">=0.7.0,<0.8.0",
+      "recommended_requirements_line": "marisa-trie>=0.7.0,<0.8.0",
+      "evidence": [
+        "marisa_trie.Trie added in marisa-trie 0.7 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sklearn.utils._MarisaVocabularyMixin": {
+      "inferred_version_range": ">=0.21.0,<0.22.0",
+      "recommended_requirements_line": "scikit-learn>=0.21.0,<0.22.0",
+      "evidence": [
+        "_MarisaVocabularyMixin.fit_transform added in scikit-learn 0.21 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scikit-learn>=0.21.0,<0.22.0",
+    "marisa-trie>=0.7.0,<0.8.0"
+  ]
+}

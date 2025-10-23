@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "logging.getLogger() introduced in Python 2.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.path.insert() introduced in Python 2.3"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.core.management.setup_environ() introduced in Django 1.8",
+        "settings() introduced in Django 1.9"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    },
+    "yourapp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "from yourapp.models import YourModel() introduced in Python 3.0"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

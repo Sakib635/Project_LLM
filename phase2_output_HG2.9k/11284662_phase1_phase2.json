@@ -1,0 +1,60 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.10",
+    "evidence": [
+      "time.clock added in Python 3.6 \u2192 min Python 3.6",
+      "os.scandir removed in Python 3.9 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "CBUUID": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "CBCentralManager": {
+      "inferred_version_range": ">=3.9.2,<4.0.0",
+      "recommended_requirements_line": "bleak>=0.15.0,<1.0.0",
+      "evidence": [
+        "CBCentralManager.scanForPeripheralsWithServices_options_ introduced in bleak 0.15.0 \u2192 min bleak 0.15.0, max bleak 1.0.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "CBPeripheral": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "CBService": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "CBCharacteristic": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bleak>=0.15.0,<1.0.0"
+  ]
+}

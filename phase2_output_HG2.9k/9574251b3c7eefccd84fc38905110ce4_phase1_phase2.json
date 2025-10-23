@@ -1,0 +1,74 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "functools.wraps added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "channels.handler": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "channels-handler>=2.0,<3.0",
+      "evidence": [
+        "AsgiRequest introduced in channels-handler v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rest_framework.exceptions": {
+      "inferred_version_range": ">=3.9,<4.0",
+      "recommended_requirements_line": "djangorestframework-exceptions>=3.9,<4.0",
+      "evidence": [
+        "AuthenticationFailed introduced in djangorestframework-exceptions v3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rest_framework.settings": {
+      "inferred_version_range": ">=3.8,<4.0",
+      "recommended_requirements_line": "djangorestframework-settings>=3.8,<4.0",
+      "evidence": [
+        "api_settings introduced in djangorestframework-settings v3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rest_framework.views": {
+      "inferred_version_range": ">=3.9,<4.0",
+      "recommended_requirements_line": "djangorestframework-views>=3.9,<4.0",
+      "evidence": [
+        "APIView introduced in djangorestframework-views v3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rest_framework.response": {
+      "inferred_version_range": ">=3.8,<4.0",
+      "recommended_requirements_line": "djangorestframework-response>=3.8,<4.0",
+      "evidence": [
+        "Response introduced in djangorestframework-response v3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.auth": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django-auth>=2.0,<3.0",
+      "evidence": [
+        "authenticate introduced in django-auth v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "channels-handler>=2.0,<3.0",
+    "djangorestframework-exceptions>=3.9,<4.0",
+    "djangorestframework-settings>=3.8,<4.0",
+    "djangorestframework-views>=3.9,<4.0",
+    "djangorestframework-response>=3.8,<4.0",
+    "django-auth>=2.0,<3.0"
+  ]
+}

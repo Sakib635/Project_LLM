@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "tornado.platform.twisted.TwistedIOLoop introduced in Python 3.4 \u2192 min Python 3.4",
+      "tornado.httpserver.HTTPServer removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tornado>=4.5.3",
+      "evidence": [
+        "tornado.httpserver.HTTPServer introduced in tornado 4.5.3 \u2192 min tornado 4.5.3"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": ">=18.9.0",
+      "recommended_requirements_line": "twisted>=18.9.0",
+      "evidence": [
+        "twisted.internet.threads introduced in twisted 18.9.0 \u2192 min twisted 18.9.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado>=4.5.3",
+    "twisted>=18.9.0"
+  ]
+}

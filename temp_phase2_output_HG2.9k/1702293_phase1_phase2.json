@@ -1,0 +1,59 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "tastypie": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.fields.ListField introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "ModelResource": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.resources.ModelResource introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "build_filters": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.resources.ModelResource.build_filters introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "super": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.resources.ModelResource.build_filters introduced in tastypie 0.12", "tastypie.resources.ModelResource.dehydrate_tags introduced in tastypie 0.12", "tastypie.resources.ModelResource.save_m2m introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "dehydrate_tags": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.resources.ModelResource.dehydrate_tags introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "save_m2m": {
+      "inferred_version_range": ">=0.12,<0.14",
+      "recommended_requirements_line": "tastypie>=0.12,<0.14",
+      "evidence": ["tastypie.resources.ModelResource.save_m2m introduced in tastypie 0.12"],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tastypie>=0.12,<0.14",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}
+```

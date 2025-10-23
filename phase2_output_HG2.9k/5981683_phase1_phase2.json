@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pcapy.open_live added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dpkt": {
+      "inferred_version_range": ">=1.9,<2.0",
+      "recommended_requirements_line": "dpkt>=1.9,<2.0",
+      "evidence": [
+        "dpkt.ethernet.Ethernet added in v1.9 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "docopt": {
+      "inferred_version_range": ">=0.6,<0.7",
+      "recommended_requirements_line": "docopt>=0.6,<0.7",
+      "evidence": [
+        "docopt.docopt added in v0.6 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "socket>=3.6,<4.0",
+      "evidence": [
+        "socket.inet_ntoa added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dpkt>=1.9,<2.0",
+    "docopt>=0.6,<0.7",
+    "socket>=3.6,<4.0"
+  ]
+}

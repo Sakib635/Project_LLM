@@ -1,0 +1,40 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": ">=19.7.0,<20.0.0",
+      "recommended_requirements_line": "twisted>=19.7.0,<20.0.0",
+      "evidence": [
+        "defer introduced in twisted 19.7.0",
+        "endpoints introduced in twisted 19.7.0",
+        "protocol introduced in twisted 19.7.0",
+        "reactor introduced in twisted 19.7.0",
+        "task introduced in twisted 19.7.0",
+        "log introduced in twisted 19.7.0",
+        "irc introduced in twisted 19.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.0,<2.0.0",
+    "twisted>=19.7.0,<20.0.0"
+  ]
+}

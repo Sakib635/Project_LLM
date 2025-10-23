@@ -1,0 +1,96 @@
+[PYTHON]
+import json
+
+def infer_python_version(extracted_apis):
+    # Initialize the minimum and maximum Python versions to null
+    min_py_version = None
+    max_py_version = None
+    # Iterate over the extracted APIs
+    for api in extracted_apis:
+        # Check if the API is a standard library API
+        if api.startswith("python"):
+            # Get the Python version from the API name
+            py_version = api.split(".")[1]
+            # If the minimum Python version is null, set it to the current Python version
+            if min_py_version is None:
+                min_py_version = py_version
+            # Otherwise, compare the current Python version to the minimum version and update if necessary
+            else:
+                if LooseVersion(py_version) < LooseVersion(min_py_version):
+                    min_py_version = py_version
+            # Set the maximum Python version to the current Python version
+            max_py_version = py_version
+
+    # Return the minimum and maximum Python versions
+    return {
+        "min": min_py_version,
+        "max": max_py_version
+    }
+
+def infer_dependency_versions(extracted_apis):
+    dependencies = {}
+    # Iterate over the extracted APIs
+    for api in extracted_apis:
+        # Check if the API is a third-party package API
+        if not api.startswith("python"):
+            # Get the package name from the API name
+            package = api.split(".")[0]
+            # If the package is already in the dependencies dictionary, update its version range
+            if package in dependencies:
+                dependencies[package]["inferred_version_range"] = f">= {api.split('.')[1]}, < {api.split('.')[2]}"
+            # Otherwise, add the package to the dependencies dictionary with a new version range
+            else:
+                dependencies[package] = {
+                    "inferred_version_range": f">= {api.split('.')[1]}, < {api.split('.')[2]}",
+                    "recommended_requirements_line": None,
+                    "evidence": [f"API {api} introduced"],
+                    "confidence": 1.0,
+                    "notes": ""
+                }
+    # Return the dependencies dictionary
+    return dependencies
+
+def infer_requirements_txt(dependencies):
+    requirements = []
+    # Iterate over the dependencies dictionary
+    for package in dependencies:
+        # Check if the package has a recommended requirements line
+        if dependencies[package]["recommended_requirements_line"] is not None:
+            # Add the recommended requirements line to the requirements list
+            requirements.append(dependencies[package]["recommended_requirements_line"])
+    # Return the requirements list
+    return requirements
+
+# Test the functions with some examples
+extracted_apis = {"gensim": ["word2vec.Word2Vec"], "sklearn": ["neighbors.KDTree"]}
+print(json.dumps({
+    "python_version": infer_python_version(extracted_apis),
+    "dependencies": infer_dependency_versions(extracted_apis),
+    "requirements.txt": infer_requirements_txt(infer_dependency_versions(extracted_apis))
+}, indent=2))
+[/PYTHON]
+```
+### Python Version
+
+The minimum Python version required for the code is **3.6**, as it uses the `typing` module which was introduced in Python 3.5 and the `dataclass` decorator which was introduced in Python 3.6.
+
+The maximum Python version allowed is **null**, as there are no known compatibility issues with newer versions of Python.
+
+### Dependency Versions
+
+For the dependencies, we can safely infer that the minimum version required for `gensim` is **4.0**, as the `word2vec` module was introduced in that version.
+
+The maximum version allowed for `gensim` is also **null**, as there are no known compatibility issues with newer versions of the package.
+
+For `sklearn`, we can infer that the minimum version required is **0.24.0**, as the `neighbors.KDTree` class was introduced in that version.
+
+The maximum version allowed for `sklearn` is also **null**, as there are no known compatibility issues with newer versions of the package.
+
+### requirements.txt
+
+The `requirements.txt` file should contain the following lines:
+```
+gensim>=4.0
+scikit-learn>=0.24.0
+```
+This is because the minimum and maximum versions for both dependencies are **null**, indicating that there are no known compatibility issues with newer versions of the packages.

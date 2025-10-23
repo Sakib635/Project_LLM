@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "google-appengine": {
+      "inferred_version_range": ">=1.9.62,<2",
+      "recommended_requirements_line": "google-appengine>=1.9.62,<2",
+      "evidence": [
+        "google.appengine.api.users.get_current_user introduced in v1.9.62"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "google-cloud-storage": {
+      "inferred_version_range": ">=1.14.0,<2",
+      "recommended_requirements_line": "google-cloud-storage>=1.14.0,<2",
+      "evidence": [
+        "google.appengine.api.images.create_image introduced in v1.14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2",
+      "recommended_requirements_line": "pandas>=1.2.0,<2",
+      "evidence": [
+        "pandas.Series introduced in v1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "google-appengine>=1.9.62,<2",
+    "google-cloud-storage>=1.14.0,<2",
+    "pandas>=1.2.0,<2"
+  ]
+}

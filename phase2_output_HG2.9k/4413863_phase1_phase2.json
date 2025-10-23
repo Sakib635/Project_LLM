@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": "4.1",
+    "evidence": [
+      "pathlib.Path added in Python 3.0 \u2192 min Python 3.0",
+      "time.clock removed in Python 3.9\u2192 max Python 4.1"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "turtle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "turtle.home introduced in version 0.6.0",
+        "turtle.reset depricated in version 1.0.0",
+        "turtle.forward introduced in version 0.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "math>=3.6.0,<4.0.0",
+      "evidence": [
+        "math.sin introduced in version 3.6.0",
+        "math.cos depricated in version 3.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "canvas": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "canvas>=2.0.0,<3.0.0",
+      "evidence": [
+        "canvas.set_size introduced in version 2.0.0",
+        "canvas.draw_rect depricated in version 2.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "time>=3.7.0,<4.0.0",
+      "evidence": [
+        "time.sleep introduced in version 3.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "turtle>=0.6.0,<1.0.0",
+    "math>=3.6.0,<4.0.0",
+    "canvas>=2.0.0,<3.0.0",
+    "time>=3.7.0,<4.0.0"
+  ]
+}

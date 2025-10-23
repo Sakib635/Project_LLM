@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "pip.index.PackageFinder added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pip": {
+      "inferred_version_range": ">=18.1",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pip.req.InstallRequirement introduced in pip 8.1.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "__future__": {
+      "inferred_version_range": ">=3.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "print_function introduced in Python 3.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pip>=18.1",
+    "__future__>=3.0"
+  ]
+}

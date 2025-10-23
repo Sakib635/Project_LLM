@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "os.getenv introduced in Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sqlite3": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "sqlalchemy>=1.2.0,<2.0.0",
+      "evidence": [
+        "sqlite3.connect introduced in v3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "win32crypt": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pywin32>=1.0.0,<2.0.0",
+      "evidence": [
+        "win32crypt.CryptUnprotectData introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sqlalchemy>=1.2.0,<2.0.0",
+    "pywin32>=1.0.0,<2.0.0"
+  ]
+}

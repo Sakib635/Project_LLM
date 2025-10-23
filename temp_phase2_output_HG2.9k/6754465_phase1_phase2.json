@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image",
+        "PIL.Image.open",
+        "PIL.Image.resize",
+        "PIL.Image.save"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array",
+        "numpy.linalg.norm"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.5 \u2192 min Python 3.5",
+      "pandas.DataFrame introduced in Python 0.19.0 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.13.0 \u2192 min Python 3.5",
+        "numpy.linalg.norm introduced in numpy 1.8.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 0.19.0 \u2192 min Python 3.5",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.0.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn.datasets": {
+      "inferred_version_range": ">=0.20.0,<0.21.0",
+      "recommended_requirements_line": "scikit-learn>=0.20.0,<0.21.0",
+      "evidence": [
+        "sklearn.datasets.fetch_mldata introduced in scikit-learn 0.20.0 \u2192 min Python 3.5",
+        "sklearn.datasets.fetch_openml added in scikit-learn 0.20.3 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn.ensemble": {
+      "inferred_version_range": ">=0.21.0,<0.22.0",
+      "recommended_requirements_line": "scikit-learn>=0.21.0,<0.22.0",
+      "evidence": [
+        "sklearn.ensemble.RandomForestClassifier introduced in scikit-learn 0.21.0 \u2192 min Python 3.6",
+        "sklearn.ensemble.ExtraTreesClassifier introduced in scikit-learn 0.20.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "xgboost": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "xgboost>=1.0.0,<2.0.0",
+      "evidence": [
+        "xgboost.XGBClassifier introduced in xgboost 1.0.0 \u2192 min Python 3.6",
+        "xgboost.XGBClassifier.max_depth introduced in xgboost 1.1.0 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "scikit-learn>=0.20.0,<0.21.0",
+    "scikit-learn>=0.21.0,<0.22.0",
+    "xgboost>=1.0.0,<2.0.0"
+  ]
+}

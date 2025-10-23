@@ -1,0 +1,31 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "plone.app.textfield.value": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["RichTextValue introduced in Plone 4.3"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "zope.component.hooks": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["getSite introduced in Zope 2.10"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "plone.app.textfield.value>=4.3",
+    "zope.component.hooks>=2.10"
+  ]
+}
+```

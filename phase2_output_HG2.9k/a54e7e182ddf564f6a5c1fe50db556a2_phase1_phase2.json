@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.21,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.21,<0.24",
+      "evidence": [
+        "TfidfVectorizer introduced in v0.21",
+        "CountVectorizer introduced in v0.21",
+        "NMF introduced in v0.23",
+        "LatentDirichletAllocation introduced in v0.23"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.25,<1.0",
+      "recommended_requirements_line": "pandas>=0.25,<1.0",
+      "evidence": [
+        "DataFrame introduced in v0.25",
+        "DataFrame.to_numpy introduced in v0.25",
+        "DataFrame.ix introduced in v0.24"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18,<2.0",
+      "recommended_requirements_line": "numpy>=1.18,<2.0",
+      "evidence": [
+        "array introduced in v1.18",
+        "linalg.norm introduced in v1.18"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scikit-learn>=0.21,<0.24",
+    "pandas>=0.25,<1.0",
+    "numpy>=1.18,<2.0"
+  ]
+}

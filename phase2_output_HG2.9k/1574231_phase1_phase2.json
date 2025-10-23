@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "scrapy.xlib.pydispatch.dispatcher added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scrapy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "scrapy>=1.2,<2.0",
+      "evidence": [
+        "scrapy.signals introduced in v1.2 \u2192 inferred version range",
+        "scrapy.exceptions.DropItem removed in v2.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "carrot": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "carrot.connection.BrokerConnection introduced in v0.9 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": "No APIs found for this package."
+    },
+    "twisted.internet.threads": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.threads.deferToThread introduced in v16.2 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "No APIs found for this package."
+    }
+  },
+  "requirements.txt": [
+    "scrapy>=1.2,<2.0",
+    "carrot>=0.9,<1.0",
+    "twisted.internet.threads>=16.2,<17.0"
+  ]
+}

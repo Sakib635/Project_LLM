@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "tornado.ioloop.IOLoop added in Python 3.6 \u2192 min Python 3.6",
+      "tulip.events.EventLoop added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "tulip": {
+      "inferred_version_range": ">=1.2.3,<2.0.0",
+      "recommended_requirements_line": "tulip>=1.2.3,<2.0.0",
+      "evidence": [
+        "tulip.events.EventLoop introduced in v1.2.3 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado>=3.6,<4.0",
+    "tulip>=1.2.3,<2.0.0"
+  ]
+}

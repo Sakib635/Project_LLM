@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "concurrent": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "futures>=3.0,<4.0",
+      "evidence": [
+        "Future.wait() introduced in futures v3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": ">=6.0,<7.0",
+      "recommended_requirements_line": "tornado>=6.0,<7.0",
+      "evidence": [
+        "HTTPServer class added in tornado v6.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No API calls found for this package."
+    },
+    "os": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "os>=3.7,<4.0",
+      "evidence": [
+        "tempfile module added in Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "shutil": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "shutil>=2.7,<3.0",
+      "evidence": [
+        "shutil.copy() introduced in shutil v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "concurrent>=3.0,<4.0",
+    "futures>=3.0,<4.0",
+    "tornado>=6.0,<7.0",
+    "os>=3.7,<4.0",
+    "shutil>=2.7,<3.0"
+  ]
+}

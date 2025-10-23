@@ -1,0 +1,30 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10→ max Python 3.10"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20.3,<1.21.0",
+      "recommended_requirements_line": "numpy>=1.20.3,<1.21.0",
+      "evidence": ["numpy.array added in numpy v1.20.3 → inferred version range", "numpy.linalg.norm removed in numpy v1.21.0→ max version"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "visa": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["visa.GpibInstrument added in visa v"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20.3,<1.21.0",
+    "visa"
+  ]
+}
+```

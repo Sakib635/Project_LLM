@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "classytags": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine version range for package classytags."
+    },
+    "cms": {
+      "inferred_version_range": ">=3.1.2,<3.2.0",
+      "recommended_requirements_line": "cms>=3.1.2,<3.2.0",
+      "evidence": [
+        "Placeholder introduced in Django 3.1.2."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "django>=3.0.0,<4.0.0",
+      "evidence": [
+        "template introduced in Django 3.0.",
+        "utils.safestring.mark_safe removed in Django 4.0."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "extra_cms_tags": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine version range for package extra_cms_tags."
+    }
+  },
+  "requirements.txt": [
+    "classytags",
+    "cms>=3.1.2,<3.2.0",
+    "django>=3.0.0,<4.0.0"
+  ]
+}

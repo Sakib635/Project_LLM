@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "gtk.main_quit added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "pygtk>=3.0,<4.0",
+      "evidence": [
+        "gtk.Window introduced in GTK 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "subprocess>=3.5,<4.0",
+      "evidence": [
+        "subprocess.Popen introduced in Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pygtk>=3.0,<4.0",
+    "subprocess>=3.5,<4.0"
+  ]
+}

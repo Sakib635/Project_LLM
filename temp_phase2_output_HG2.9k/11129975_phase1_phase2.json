@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PyQt4.QtCore.QRect introduced in v4.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "PyQt4.QtCore": {
+      "inferred_version_range": ">=4.5,<4.6",
+      "recommended_requirements_line": "PyQt4.QtCore>=4.5,<4.6",
+      "evidence": [
+        "PyQt4.QtCore.QLabel introduced in v4.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PyQt4.QtGui": {
+      "inferred_version_range": ">=4.4,<4.6",
+      "recommended_requirements_line": "PyQt4.QtGui>=4.4,<4.6",
+      "evidence": [
+        "PyQt4.QtGui.QApplication introduced in v4.4",
+        "PyQt4.QtGui.QLabel introduced in v4.5",
+        "PyQt4.QtGui.QWidget introduced in v4.4"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

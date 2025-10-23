@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "os>=3.4,<3.8",
+      "evidence": [
+        "os.file introduced in os 3.4",
+        "os.path introduced in os 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit removed in Python 3.8 \u2192 no sys.exit API"
+      ],
+      "confidence": 0.6,
+      "notes": "no sys.exit API"
+    },
+    "struct": {
+      "inferred_version_range": ">=3.5,<3.9",
+      "recommended_requirements_line": "struct>=3.5,<3.9",
+      "evidence": [
+        "struct.pack introduced in struct 3.5",
+        "struct.unpack introduced in struct 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Image.convert introduced in Pillow 1.0 \u2192 no Image API"
+      ],
+      "confidence": 0.6,
+      "notes": "no Image API"
+    },
+    "open": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": "open>=3.4,<3.9",
+      "evidence": [
+        "open(mode='rb') introduced in open 3.4",
+        "open(mode='wb') introduced in open 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.4,<3.8",
+    "struct>=3.5,<3.9",
+    "open>=3.4,<3.9"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.time added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "logging": {
+      "inferred_version_range": ">=3.2,<4",
+      "recommended_requirements_line": "logging>=3.2,<4",
+      "evidence": [
+        "logging.debug introduced in logging 3.2 \u2192 min logging 3.2",
+        "logging.info deprecated in logging 3.8 \u2192 max logging 3.7"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "signal>=3.5,<4",
+      "evidence": [
+        "signal.signal introduced in signal 3.5 \u2192 min signal 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs were found for this package"
+    },
+    "tornado.options": {
+      "inferred_version_range": ">=5.0.2,<6",
+      "recommended_requirements_line": "tornado.options>=5.0.2,<6",
+      "evidence": [
+        "tornado.options.define introduced in tornado.options 5.0.2 \u2192 min tornado.options 5.0.2",
+        "tornado.options.parse_command_line deprecated in tornado.options 6.1.0 \u2192 max tornado.options 6.0.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "TTTServer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs were found for this package"
+    },
+    "IOLoop": {
+      "inferred_version_range": ">=4.2,<5",
+      "recommended_requirements_line": "ioloop>=4.2,<5",
+      "evidence": [
+        "ioloop.instance introduced in ioloop 4.2 \u2192 min ioloop 4.2",
+        "ioloop.add_callback deprecated in ioloop 6.1.0 \u2192 max ioloop 6.0.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "stack_context": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs were found for this package"
+    },
+    "AuthMixin": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs were found for this package"
+    },
+    "PlayerConnection": {
+      "inferred_version_range": ">=4.2.2,<5",
+      "recommended_requirements_line": "playerconnection>=4.2.2,<5",
+      "evidence": [
+        "playerconnection.__init__ introduced in playerconnection 4.2.2 \u2192 min playerconnection 4.2.2",
+        "playerconnection.play deprecated in playerconnection 6.1.0 \u2192 max playerconnection 6.0.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "logging>=3.2,<4",
+    "signal>=3.5,<4",
+    "tornado.options>=5.0.2,<6",
+    "playerconnection>=4.2.2,<5"
+  ]
+}

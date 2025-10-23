@@ -1,0 +1,40 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gst": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gst.Bin introduced in v0.10",
+        "gst.element_factory_make introduced in v0.10",
+        "gst.element_link_many introduced in v0.10",
+        "gst.GhostPad introduced in v0.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gobject.GError introduced in v2.1",
+        "gobject.GObject introduced in v2.0",
+        "gobject.GType introduced in v2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gst>=0.10",
+    "gobject>=2.0"
+  ]
+}

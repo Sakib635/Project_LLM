@@ -1,0 +1,31 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "datetime.date and datetime.timedelta added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dateutil": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "dateutil>=1.2,<2.0",
+      "evidence": [
+        "dateutil.easter added in dateutil 1.2 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dateutil.relativedelta": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No API usage found"
+    }
+  },
+  "requirements.txt": [
+    "dateutil>=1.2,<2.0"
+  ]
+}

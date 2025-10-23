@@ -1,0 +1,34 @@
+```
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": ["Django 1.0 introduced in Python 3.5 → min Python 3.5", "Django 2.0 deprecated in Python 3.8 → max Python null"],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "cacheops": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "cacheops>=1.0,<2.0",
+      "evidence": ["CacheOps 1.0 introduced in Python 3.5 → min Python 3.5", "CacheOps 2.0 deprecated in Python 3.8 → max Python null"],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "inspect": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "inspect>=1.0,<2.0",
+      "evidence": ["inspect.getmembers introduced in Python 3.5 → min Python 3.5", "inspect.ismethod deprecated in Python 3.8 → max Python null"],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["django>=1.0,<2.0", "cacheops>=1.0,<2.0", "inspect>=1.0,<2.0"]
+}
+```

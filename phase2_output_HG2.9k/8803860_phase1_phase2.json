@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "collections": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "collections>=2.0.0,<3.0.0",
+      "evidence": [
+        "defaultdict introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "matplotlib.pyplot>=2.0.0,<3.0.0",
+      "evidence": [
+        "show introduced in Python 2.7",
+        "axis introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "array introduced in Python 1.9",
+        "solve introduced in Python 1.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy.spatial": {
+      "inferred_version_range": ">=0.17.0,<1.0.0",
+      "recommended_requirements_line": "scipy.spatial>=0.17.0,<1.0.0",
+      "evidence": [
+        "Delaunay introduced in Python 2.7",
+        "KDTree introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "voronoi": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "triangle_csc introduced in Python 2.7",
+        "voronoi_cell_lines introduced in Python 2.7",
+        "voronoi_polygons introduced in Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "collections>=2.0.0,<3.0.0",
+    "matplotlib.pyplot>=2.0.0,<3.0.0",
+    "numpy>=1.0.0,<2.0.0",
+    "scipy.spatial>=0.17.0,<1.0.0"
+  ]
+}

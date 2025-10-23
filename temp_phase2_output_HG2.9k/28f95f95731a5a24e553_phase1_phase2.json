@@ -1,0 +1,42 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ImageCms.createProfile added in PIL 5.1.0 \u2192 min PIL 5.1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ImageCms.buildTransformFromOpenProfiles added in PIL 5.1.0 \u2192 min PIL 5.1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "ImageCms": {
+      "inferred_version_range": ">=5.1.0,<6.0.0",
+      "recommended_requirements_line": "PIL>=5.1.0,<6.0.0",
+      "evidence": [
+        "ImageCms.createProfile added in PIL 5.1.0 \u2192 min PIL 5.1.0",
+        "ImageCms.buildTransformFromOpenProfiles added in PIL 5.1.0 \u2192 min PIL 5.1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

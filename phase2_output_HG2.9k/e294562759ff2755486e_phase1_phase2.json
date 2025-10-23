@@ -1,0 +1,71 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "M2Crypto": {
+      "inferred_version_range": ">=0.21.1,<0.25.0",
+      "recommended_requirements_line": "M2Crypto>=0.21.1,<0.25.0",
+      "evidence": [
+        "M2Crypto.X509 introduced in v0.21.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "base64.b64decode introduced in Python 3.2 \u2192 max Python 3.1"
+      ],
+      "confidence": 0.5,
+      "notes": "Requires version range adjustment due to potential API changes"
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "re.match introduced in Python 3.1 \u2192 max Python 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Requires version range adjustment due to potential API changes"
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.environ introduced in Python 3.3 \u2192 max Python 3.2"
+      ],
+      "confidence": 0.5,
+      "notes": "Requires version range adjustment due to potential API changes"
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib2.urlopen introduced in Python 3.0 \u2192 max Python 2.6"
+      ],
+      "confidence": 0.5,
+      "notes": "Requires version range adjustment due to potential API changes"
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.loads introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Requires version range adjustment due to potential API changes"
+    }
+  },
+  "requirements.txt": [
+    "M2Crypto>=0.21.1,<0.25.0",
+    "urllib2>=0.0.0,<3.0.0",
+    "json>=0.0.0,<3.0.0"
+  ]
+}

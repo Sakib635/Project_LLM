@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django>=2.2,<3.0",
+      "evidence": [
+        "Django introduced in version 1.4, removed in version 3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "decorator_from_middleware": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "decorator-from-middleware>=1.2,<2.0",
+      "evidence": [
+        "decorator_from_middleware introduced in version 1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "settings": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django-settings>=1.8,<2.0",
+      "evidence": [
+        "Settings introduced in Django 1.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.2,<3.0",
+    "decorator-from-middleware>=1.2,<2.0",
+    "django-settings>=1.8,<2.0"
+  ]
+}

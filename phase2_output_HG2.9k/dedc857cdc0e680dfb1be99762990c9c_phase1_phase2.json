@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.5 \u2192 min Python 3.5",
+      "pandas.DataFrame introduced in Python 3.6\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.18.0 \u2192 min numpy 1.18.0",
+        "numpy.linalg.norm added in numpy 1.19.0\u2192 max numpy 2.0.0"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.18.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.18.0 \u2192 min pandas 1.18.0",
+        "pandas.DataFrame.to_numpy added in pandas 1.19.0\u2192 max pandas 2.0.0",
+        "pandas.DataFrame.ix removed in pandas 1.20.0\u2192 max pandas 2.0.0"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "pandas>=1.18.0,<2.0.0"
+  ]
+}

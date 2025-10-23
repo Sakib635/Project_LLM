@@ -1,0 +1,162 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.7\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "yaml": {
+      "inferred_version_range": ">=5.1,<6.0",
+      "recommended_requirements_line": "yaml>=5.1,<6.0",
+      "evidence": [
+        "yaml.compose introduced in yaml 5.1 \u2192 min Python 3.6",
+        "yaml.parser removed in yaml 6.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "voluptuous": {
+      "inferred_version_range": ">=2.1,<3.0",
+      "recommended_requirements_line": "voluptuous>=2.1,<3.0",
+      "evidence": [
+        "voluptuous.Schema introduced in voluptuous 2.1 \u2192 min Python 3.6",
+        "voluptuous.Invalid removed in voluptuous 3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "os>=3.0,<4.0",
+      "evidence": [
+        "os.walk introduced in os 3.0 \u2192 min Python 3.6",
+        "os.path.join removed in os 4.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "fnmatch": {
+      "inferred_version_range": ">=2.1,<3.0",
+      "recommended_requirements_line": "fnmatch>=2.1,<3.0",
+      "evidence": [
+        "fnmatch.fnmatch introduced in fnmatch 2.1 \u2192 min Python 3.6",
+        "fnmatch.fnmatch removed in fnmatch 3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StringIO.StringIO introduced in StringIO 1.0 \u2192 min Python 3.6",
+        "StringIO.StringIO removed in StringIO 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "itertools>=1.0,<2.0",
+      "evidence": [
+        "itertools.chain introduced in itertools 1.0 \u2192 min Python 3.6",
+        "itertools.chain removed in itertools 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "functools>=1.0,<2.0",
+      "evidence": [
+        "functools.partial introduced in functools 1.0 \u2192 min Python 3.6",
+        "functools.partial removed in functools 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "ParserError": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ParserError introduced in Parser 1.0 \u2192 min Python 3.6",
+        "ParserError removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "TopSchema": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "TopSchema introduced in Parser 1.0 \u2192 min Python 3.6",
+        "TopSchema removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "StateSchema": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StateSchema introduced in Parser 1.0 \u2192 min Python 3.6",
+        "StateSchema removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "PillarSchema": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PillarSchema introduced in Parser 1.0 \u2192 min Python 3.6",
+        "PillarSchema removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "Parser": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "Parser>=1.0,<2.0",
+      "evidence": [
+        "Parser introduced in Parser 1.0 \u2192 min Python 3.6",
+        "Parser removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "SequenceNode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SequenceNode introduced in Parser 1.0 \u2192 min Python 3.6",
+        "SequenceNode removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "ScalarNode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ScalarNode introduced in Parser 1.0 \u2192 min Python 3.6",
+        "ScalarNode removed in Parser 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "yaml>=5.1,<6.0",
+    "voluptuous>=2.1,<3.0",
+    "os>=3.0,<4.0",
+    "fnmatch>=2.1,<3.0",
+    "itertools>=1.0,<2.0",
+    "functools>=1.0,<2.0",
+    "Parser>=1.0,<2.0"
+  ]
+}

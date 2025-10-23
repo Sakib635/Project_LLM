@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gevent": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "gevent>=1.0,<2.0",
+      "evidence": [
+        "gevent.core.EVENTS",
+        "gevent.core.READ",
+        "gevent.core.WRITE",
+        "gevent.hub.Waiter"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pycurl": {
+      "inferred_version_range": ">=7.16.0,<8.0.0",
+      "recommended_requirements_line": "pycurl>=7.16.0,<8.0.0",
+      "evidence": [
+        "pycurl.CurlMulti",
+        "pycurl.E_CALL_MULTI_PERFORM",
+        "pycurl.M_SOCKETFUNCTION",
+        "pycurl.M_TIMERFUNCTION",
+        "pycurl.POLL_REMOVE",
+        "pycurl.SOCKET_TIMEOUT"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": ">=5.1,<6.0",
+      "recommended_requirements_line": "tornado>=5.1,<6.0",
+      "evidence": [
+        "tornado.curl_httpclient.GeventCurl._set_socket",
+        "tornado.curl_httpclient.GeventCurl._set_timeout",
+        "tornado.curl_httpclient.GeventCurl._handle_events",
+        "tornado.curl_httpclient.GeventCurl._finish_pending_requests"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gevent>=1.0,<2.0",
+    "pycurl>=7.16.0,<8.0.0",
+    "tornado>=5.1,<6.0"
+  ]
+}

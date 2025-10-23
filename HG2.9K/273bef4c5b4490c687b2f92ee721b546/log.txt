@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "snippet.py", line 1, in <module>
+    import mxnet as mx
+  File "/usr/local/lib/python2.7/site-packages/mxnet/__init__.py", line 23, in <module>
+    from .context import Context, current_context, cpu, gpu, cpu_pinned
+  File "/usr/local/lib/python2.7/site-packages/mxnet/context.py", line 23, in <module>
+    from .base import classproperty, with_metaclass, _MXClassPropertyMetaClass
+  File "/usr/local/lib/python2.7/site-packages/mxnet/base.py", line 29, in <module>
+    import numpy as _np
+  File "/usr/local/lib/python2.7/site-packages/mxnet/numpy/__init__.py", line 21, in <module>
+    from . import random
+  File "/usr/local/lib/python2.7/site-packages/mxnet/numpy/random.py", line 20, in <module>
+    from ..ndarray import numpy as _mx_nd_np
+  File "/usr/local/lib/python2.7/site-packages/mxnet/ndarray/__init__.py", line 20, in <module>
+    from . import _internal, contrib, linalg, op, random, sparse, utils, image, ndarray, numpy
+  File "/usr/local/lib/python2.7/site-packages/mxnet/ndarray/_internal.py", line 35, in <module>
+    from .._ctypes.ndarray import NDArrayBase, CachedOp
+  File "/usr/local/lib/python2.7/site-packages/mxnet/_ctypes/ndarray.py", line 25, in <module>
+    from ..base import _LIB
+ImportError: cannot import name _LIB

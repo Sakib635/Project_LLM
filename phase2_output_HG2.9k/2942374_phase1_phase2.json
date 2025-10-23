@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "2.7",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"webapp2": {
+"inferred_version_range": ">=0.7.1,<1.0.0",
+"recommended_requirements_line": "webapp2>=0.7.1,<1.0.0",
+"evidence": ["Route added in webapp2 0.7.1, removed in webapp2 1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"webapp2_extras": {
+"inferred_version_range": ">=0.7.1,<1.0.0",
+"recommended_requirements_line": "webapp2_extras>=0.7.1,<1.0.0",
+"evidence": ["get_auth added in webapp2_extras 0.7.1, removed in webapp2_extras 1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"auth": {
+"inferred_version_range": ">=1.3.0,<2.0.0",
+"recommended_requirements_line": "auth>=1.3.0,<2.0.0",
+"evidence": ["get_user_by_password added in auth 1.3.0, removed in auth 2.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"sessions": {
+"inferred_version_range": ">=1.3.0,<2.0.0",
+"recommended_requirements_line": "sessions>=1.3.0,<2.0.0",
+"evidence": ["get_store added in sessions 1.3.0, removed in sessions 2.0.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"webapp2>=0.7.1,<1.0.0",
+"webapp2_extras>=0.7.1,<1.0.0",
+"auth>=1.3.0,<2.0.0",
+"sessions>=1.3.0,<2.0.0"
+]
+}
+}

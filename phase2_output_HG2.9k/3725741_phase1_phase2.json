@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0.0",
+        "pandas.DataFrame.to_numpy introduced in v1.0.0",
+        "pandas.DataFrame.ix deprecated in v1.0.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.17.0",
+        "numpy.linalg.norm introduced in v1.17.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.4.0,<2.0.0",
+      "evidence": [
+        "scipy.spatial.distance.cdist introduced in v1.4.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": ">=3.8.0,<3.9.0",
+      "recommended_requirements_line": "itertools>=3.8.0,<3.9.0",
+      "evidence": [
+        "itertools.izip introduced in v3.5.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.0,<2.0.0",
+    "numpy>=1.17.0,<2.0.0",
+    "scipy>=1.4.0,<2.0.0",
+    "itertools>=3.8.0,<3.9.0"
+  ]
+}

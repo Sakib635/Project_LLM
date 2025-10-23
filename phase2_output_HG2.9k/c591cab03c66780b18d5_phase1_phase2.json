@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.16.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.2,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.16.2 and deprecated in numpy 1.18.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0.3,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.3,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.0.3 and deprecated in pandas 1.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.1.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib.pyplot>=3.1.0,<4.0.0",
+      "evidence": [
+        "matplotlib.pyplot.plot introduced in matplotlib 3.1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn.cluster": {
+      "inferred_version_range": ">=0.20.0,<0.21.0",
+      "recommended_requirements_line": "sklearn.cluster>=0.20.0,<0.21.0",
+      "evidence": [
+        "sklearn.cluster.KMeans introduced in scikit-learn 0.20.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn.decomposition": {
+      "inferred_version_range": ">=0.20.0,<0.21.0",
+      "recommended_requirements_line": "sklearn.decomposition>=0.20.0,<0.21.0",
+      "evidence": [
+        "sklearn.decomposition.PCA introduced in scikit-learn 0.20.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.16.2,<2.0.0",
+    "pandas>=1.0.3,<2.0.0",
+    "matplotlib.pyplot>=3.1.0,<4.0.0",
+    "sklearn.cluster>=0.20.0,<0.21.0",
+    "sklearn.decomposition>=0.20.0,<0.21.0"
+  ]
+}

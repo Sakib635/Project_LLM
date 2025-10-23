@@ -1,0 +1,38 @@
+Here is the JSON output for the given extracted APIs:
+```json
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.0 → min Python 3.0"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyglet": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pyglet>=1.2.0,<2.0.0",
+      "evidence": ["pyglet.resource.image introduced in v1.2.0", "pyglet.window.Window introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["math.cos introduced in Python 3.0", "math.acos deprecated in Python 3.5"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyglet>=1.2.0,<2.0.0",
+    "math"
+  ]
+}
+```
+The JSON output includes the following fields:
+
+* `python_version`: The minimum and maximum Python versions required based on the extracted APIs. In this case, the minimum version is 3.0 and the maximum version is null (i.e., no upper bound).
+* `dependencies`: A dictionary of dependency packages with their inferred version ranges and recommended requirements lines. For the `pyglet` package, the inferred version range is ">=1.2.0,<2.0.0" and the recommended requirements line is "pyglet>=1.2.0,<2.0.0". The `math` package has no inferred version range or recommended requirements line, as its APIs were only introduced in Python 3.0 and have been deprecated in Python 3.5.
+* `requirements.txt`: A list of all dependencies with their recommended requirements lines. In this case, the `pyglet` package is included with its recommended requirements line, while the `math` package has no recommended requirements line.
+
+Note that the JSON output only includes valid JSON fields and does not include any extra text or markdown formatting.

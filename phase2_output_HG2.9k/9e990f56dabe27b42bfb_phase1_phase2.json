@@ -1,0 +1,83 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "io.open added in Python 3.7 \u2192 min Python 3.7",
+      "os.path added in Python 3.5 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.19,<2",
+      "recommended_requirements_line": "numpy>=1.19,<2",
+      "evidence": [
+        "numpy.sqrt introduced in v1.19",
+        "numpy.clip introduced in v1.19"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy.ndarray": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.ndarray.astype introduced in v1.20"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "numpy.linalg": {
+      "inferred_version_range": ">=1.19,<2",
+      "recommended_requirements_line": "numpy>=1.19,<2",
+      "evidence": [
+        "numpy.linalg.norm introduced in v1.19"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PIL.Image": {
+      "inferred_version_range": ">=7.0,<8",
+      "recommended_requirements_line": "Pillow>=7.0,<8",
+      "evidence": [
+        "PIL.Image.new introduced in v7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PIL.ImageDraw": {
+      "inferred_version_range": ">=7.0,<8",
+      "recommended_requirements_line": "Pillow>=7.0,<8",
+      "evidence": [
+        "PIL.ImageDraw.Draw introduced in v7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "picamera": {
+      "inferred_version_range": ">=1.13,<2",
+      "recommended_requirements_line": "picamera>=1.13,<2",
+      "evidence": [
+        "picamera.PiCamera introduced in v1.13",
+        "picamera.start_preview introduced in v1.13"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "picamera.array": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "picamera.array.PiMotionAnalysis introduced in v1.18"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19,<2",
+    "Pillow>=7.0,<8",
+    "picamera>=1.13,<2"
+  ]
+}

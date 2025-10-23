@@ -1,0 +1,47 @@
+{
+"python_version": {
+"min": "3.7",
+"max": null,
+"evidence": ["time.clock removed in Python 3.9→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"BeautifulSoup": {
+"inferred_version_range": ">=4.6.0,<5.0.0",
+"recommended_requirements_line": "beautifulsoup4>=4.8.0,<5.0.0",
+"evidence": ["BeautifulSoup.encode added in v4.6.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"requests": {
+"inferred_version_range": ">=2.18.4,<3.0.0",
+"recommended_requirements_line": "requests>=2.19.0,<3.0.0",
+"evidence": ["requests.get introduced in v2.18.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"twisted.internet.defer": {
+"inferred_version_range": ">=16.0.0",
+"recommended_requirements_line": "Twisted>=21.0.0",
+"evidence": ["twisted.internet.defer.inlineCallbacks introduced in Twisted v16.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"twisted.internet.task": {
+"inferred_version_range": ">=23.0.0",
+"recommended_requirements_line": "Twisted>=21.0.0",
+"evidence": ["twisted.internet.task.react introduced in Twisted v23.0.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"beautifulsoup4>=4.8.0,<5.0.0",
+"requests>=2.19.0,<3.0.0"
+]
+},
+"requirements_txt": [
+"BeautifulSoup4>=4.8.0,<5.0.0",
+"Requests>=2.19.0,<3.0.0"
+]
+}

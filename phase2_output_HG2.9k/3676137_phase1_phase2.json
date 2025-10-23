@@ -1,0 +1,106 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.contrib.flatpages introduced in Django 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.contrib": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django.contrib >=2.0,<3.0",
+      "evidence": [
+        "django.contrib.flatpages introduced in Django 2.0",
+        "django.contrib.flatpages.models introduced in Django 2.0",
+        "django.contrib.flatpages.admin introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.flatpages.models": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django.contrib.flatpages.models >=2.0,<3.0",
+      "evidence": [
+        "django.contrib.flatpages.models introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.flatpages.admin": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django.contrib.flatpages.admin >=2.0,<3.0",
+      "evidence": [
+        "django.contrib.flatpages.admin introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.flatpages.admin.forms": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.contrib.flatpages.admin.forms introduced in Django 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.contrib.flatpages.admin.forms.widgets": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.contrib.flatpages.admin.forms.widgets introduced in Django 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.contrib.flatpages": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django.contrib.flatpages >=2.0,<3.0",
+      "evidence": [
+        "django.contrib.flatpages introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.forms": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django.forms >=2.0,<3.0",
+      "evidence": [
+        "django.forms introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "redactor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "redactor.widgets introduced in Django 3.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0,<3.0",
+    "django.contrib>=2.0,<3.0",
+    "django.contrib.flatpages>=2.0,<3.0",
+    "django.contrib.flatpages.models>=2.0,<3.0",
+    "django.contrib.flatpages.admin>=2.0,<3.0",
+    "django.contrib.flatpages.admin.forms>=2.1,<3.0",
+    "django.contrib.flatpages.admin.forms.widgets>=2.1,<3.0",
+    "django.forms>=2.0,<3.0",
+    "redactor>=3.2,<4.0"
+  ]
+}

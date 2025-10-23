@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "y",
+"max": null,
+"evidence": ["pathlib.Path added in Python y → min Python y"],
+"notes": ""
+},
+"dependencies": {
+"re": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.5,
+"notes": "No version information available for re"
+},
+"django.forms": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "django-forms>=1.2.0,<2.0.0",
+"evidence": ["forms.IntegerField introduced in Django 1.2.0, removed in Django 2.0.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"django.db": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "django-db>=1.2.0,<2.0.0",
+"evidence": ["models.PositiveIntegerField introduced in Django 1.2.0, removed in Django 2.0.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"re>=y,<z",
+"django-forms>=1.2.0,<2.0.0",
+"django-db>=1.2.0,<2.0.0"
+]
+},
+"notes": ""
+}

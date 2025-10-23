@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gi.repository": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": "GObject>=3.4,<3.10",
+      "evidence": [
+        "Gtk introduced in gi.repository 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gtk": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": "Gtk>=3.4,<3.10",
+      "evidence": [
+        "Gtk.Window introduced in gtk 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gtk.stock": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Gtk.STOCK_OPEN introduced in gtk 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "GObject>=3.4,<3.10",
+    "Gtk>=3.4,<3.10"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.4.0",
+      "recommended_requirements_line": "requests>=2.4.0,<2.12.0",
+      "evidence": [
+        "requests.HTTPError introduced, deprecated, or removed in v2.4.0 \u2192 2.11.x"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "django.conf": {
+      "inferred_version_range": ">=1.9.0",
+      "recommended_requirements_line": "djangorestframework>=3.8.2,<4.0.0",
+      "evidence": [
+        "django.conf.settings introduced, deprecated, or removed in v1.9.0 \u2192 2.x"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.4.0,<2.12.0",
+    "djangorestframework>=3.8.2,<4.0.0"
+  ]
+}

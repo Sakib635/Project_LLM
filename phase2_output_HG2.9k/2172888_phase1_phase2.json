@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "The requests library was introduced in Python 3.4."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.core.files.temp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django>=2.2",
+      "evidence": [
+        "NamedTemporaryFile was introduced in Django 2.2."
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.db.models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django>=3.1",
+      "evidence": [
+        "ImageField.save was introduced in Django 3.1."
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "python>=3.5",
+      "evidence": [
+        "basename was introduced in Python 3.5."
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.core.files": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django>=2.1",
+      "evidence": [
+        "File was introduced in Django 2.1."
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.25.1",
+    "django>=3.1"
+  ]
+}

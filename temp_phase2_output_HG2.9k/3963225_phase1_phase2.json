@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Quartz.CoreGraphics": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Quartz.CoreGraphics.CGPDFDocumentCreateWithURL",
+        "Quartz.CoreGraphics.CGPDFPageGetBoxRect"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.splitext",
+        "os.path.basename",
+        "os.path.join"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tempfile.gettempdir"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv"
+      ],
+      "confidence": 0.25,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

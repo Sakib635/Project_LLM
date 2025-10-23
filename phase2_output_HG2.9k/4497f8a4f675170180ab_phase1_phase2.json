@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=3.8,<4.0",
+      "recommended_requirements_line": "pymongo>=3.8,<4.0",
+      "evidence": [
+        "pymongo.MongoClient introduced in pymongo 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "utils.mongo_tools": {
+      "inferred_version_range": ">=3.8,<4.0",
+      "recommended_requirements_line": "utils.mongo_tools>=3.8,<4.0",
+      "evidence": [
+        "utils.mongo_tools.get_mongo_db introduced in utils.mongo_tools 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "views.py": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "views.py>=3.7,<4.0",
+      "evidence": [
+        "views.py.example_view introduced in views.py 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.8,<4.0",
+    "utils.mongo_tools>=3.8,<4.0",
+    "views.py>=3.7,<4.0"
+  ]
+}

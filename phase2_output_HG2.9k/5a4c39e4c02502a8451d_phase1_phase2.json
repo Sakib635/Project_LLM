@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.0.0,<2.0.0",
+      "evidence": [
+        "os.path.join added in Python 1.0 \u2192 min Python 1.0",
+        "os.path.join removed in Python 2.0 \u2192 max Python 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Bio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Entrez.email added in Python 1.0 \u2192 min Python 1.0",
+        "Entrez.esearch removed in Python 2.0 \u2192 max Python 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.0.0,<2.0.0",
+    "Bio>=1.0.0,<2.0.0"
+  ]
+}

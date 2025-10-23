@@ -1,0 +1,78 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.9",
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.5 \u2192 min Python 3.5",
+      "dns.resolver.query added in Python 3.5 \u2192 min Python 3.5",
+      "logging.getLogger added in Python 3.5 \u2192 min Python 3.5",
+      "re.findall added in Python 3.5 \u2192 min Python 3.5",
+      "smtplib.SMTP added in Python 3.5 \u2192 min Python 3.5",
+      "time.sleep added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": "argparse is a built-in module in Python since version 3.2"
+    },
+    "dns.resolver": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "dnspython==1.16.0",
+      "evidence": [
+        "dns.resolver.query added in version 1.16.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=2.7.0,<4.0.0",
+      "recommended_requirements_line": "python-logging==2.6.1",
+      "evidence": [
+        "logging.getLogger added in version 2.7.0 \u2192 min Python 3.5",
+        "logging.StreamHandler added in version 2.7.0 \u2192 min Python 3.5",
+        "logging.Formatter added in version 2.7.0 \u2192 min Python 3.5",
+        "logging.addHandler added in version 2.7.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": "re is a built-in module in Python since version 3.2"
+    },
+    "smtplib": {
+      "inferred_version_range": ">=2.7.0,<4.0.0",
+      "recommended_requirements_line": "smtplib==2.6.1",
+      "evidence": [
+        "smtplib.SMTP added in version 2.7.0 \u2192 min Python 3.5",
+        "smtplib.ehlo_or_helo_if_needed added in version 2.7.0 \u2192 min Python 3.5",
+        "smtplib.verify added in version 2.7.0 \u2192 min Python 3.5",
+        "smtplib.mail added in version 2.7.0 \u2192 min Python 3.5",
+        "smtplib.rcpt added in version 2.7.0 \u2192 min Python 3.5",
+        "smtplib.quit added in version 2.7.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": "time is a built-in module in Python since version 2.6"
+    }
+  },
+  "requirements.txt": [
+    "dnspython==1.16.0",
+    "python-logging==2.6.1",
+    "smtplib==2.6.1"
+  ]
+}

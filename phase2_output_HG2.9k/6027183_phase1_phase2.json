@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "visa": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "visa>=1.2.0,<2.0.0",
+      "evidence": [
+        "visa.get_instruments_list added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "visa.instrument added in Python 1.2.0 \u2192 min Python 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "time>=3.7.0,<4.0.0",
+      "evidence": [
+        "time.sleep added in Python 3.7.0 \u2192 min Python 3.7.0",
+        "time.clock removed in Python 3.8.0 \u2192 max Python 3.8.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.6.0,<4.0.0",
+      "recommended_requirements_line": "sys>=2.6.0,<4.0.0",
+      "evidence": [
+        "sys.exit added in Python 2.6.0 \u2192 min Python 2.6.0",
+        "sys.exit removed in Python 3.8.0 \u2192 max Python 3.8.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "visa>=1.2.0,<2.0.0",
+    "time>=3.7.0,<4.0.0",
+    "sys>=2.6.0,<4.0.0"
+  ]
+}

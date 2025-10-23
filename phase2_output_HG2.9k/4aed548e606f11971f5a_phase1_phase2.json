@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rest_framework": {
+      "inferred_version_range": ">=3.10,<4",
+      "recommended_requirements_line": "rest-framework>=3.10,<4",
+      "evidence": [
+        "API rest_framework.authtoken.models.Token introduced in v3.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "social": {
+      "inferred_version_range": ">=4.0",
+      "recommended_requirements_line": "social-auth-app-django>=4.0",
+      "evidence": [
+        "API social.backends.oauth.BaseOAuth1 introduced in v4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "api": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No evidence of external packages used"
+    }
+  },
+  "requirements.txt": [
+    "rest-framework>=3.10,<4",
+    "social-auth-app-django>=4.0"
+  ]
+}

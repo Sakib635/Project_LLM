@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "base64",
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "simplejson",
+      "evidence": [
+        "simplejson.dumps"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=1.13.0,<2.0.0",
+      "recommended_requirements_line": "urllib==1.13.0",
+      "evidence": [
+        "urllib.request.Request"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "google.appengine.api": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "google-appengine-api",
+      "evidence": [
+        "google.appengine.api.urlfetch.create_rpc"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.utils.simplejson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django-jsonfield",
+      "evidence": [
+        "django.utils.simplejson.dumps"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "mixpanel": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "mixpanel",
+      "evidence": [
+        "mixpanel.track"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64",
+    "simplejson",
+    "urllib==1.13.0",
+    "google-appengine-api",
+    "django-jsonfield",
+    "mixpanel"
+  ]
+}

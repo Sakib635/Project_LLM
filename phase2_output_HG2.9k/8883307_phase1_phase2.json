@@ -1,0 +1,61 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "math.floor added in Python 3.0 \u2192 min Python 3.0",
+      "math.ceil added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "ctypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ctypes.windll.winmm.joyGetNumDevs introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "ctypes.windll.winmm.joyGetPos introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "ctypes.windll.winmm.joyGetPosEx introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "ctypes.windll.winmm.joyGetDevCapsW introduced in ctypes 1.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "_winreg": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "winreg.OpenKey introduced in winreg 2.7 \u2192 max Python 3.6",
+        "winreg.QueryValueEx introduced in winreg 2.7 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "ctypes.wintypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "WORD introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "UINT introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "DWORD introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "TCHAR introduced in ctypes 1.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "ctypes.structures": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "JOYCAPS introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "JOYINFO introduced in ctypes 1.0 \u2192 max Python 2.7",
+        "JOYINFOEX introduced in ctypes 1.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ctypes>=1.0,<2.0"
+  ]
+}

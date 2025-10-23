@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.0.0,<2.0.0",
+      "evidence": [
+        "PIL.Image added in Pillow 1.0.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "python-os>=2.6.0,<3.0.0",
+      "evidence": [
+        "os.path.expanduser added in python-os 2.6.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.0.0,<2.0.0",
+    "python-os>=2.6.0,<3.0.0"
+  ]
+}

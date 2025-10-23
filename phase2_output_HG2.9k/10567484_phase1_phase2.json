@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": "2.0",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 2.0 \u2192 min Python 2.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "np.asarray introduced in v1.2.0",
+        "np.sum deprecated in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

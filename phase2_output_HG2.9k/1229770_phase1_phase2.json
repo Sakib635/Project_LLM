@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "httplib.HTTPConnection added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "werkzeug": {
+      "inferred_version_range": ">=0.14.1,<0.16.0",
+      "recommended_requirements_line": "werkzeug>=0.14.1,<0.16.0",
+      "evidence": [
+        "werkzeug.datastructures.Headers introduced in v0.14.1",
+        "werkzeug.exceptions.NotFound introduced in v0.14.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "flask>=1.0,<2.0",
+      "evidence": [
+        "flask.Blueprint introduced in v1.0",
+        "flask.route introduced in v1.0",
+        "flask.request introduced in v1.0",
+        "flask.url_for introduced in v1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "werkzeug>=0.14.1,<0.16.0",
+    "flask>=1.0,<2.0"
+  ]
+}

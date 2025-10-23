@@ -1,0 +1,74 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "torch.FloatTensor introduced in v1.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torch.nn": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch.nn>=1.2.0,<2.0.0",
+      "evidence": [
+        "nn.Linear introduced in v1.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torch.optim": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch.optim>=1.2.0,<2.0.0",
+      "evidence": [
+        "Adam introduced in v1.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torchvision": {
+      "inferred_version_range": ">=0.3.0,<2.0.0",
+      "recommended_requirements_line": "torchvision>=0.3.0,<2.0.0",
+      "evidence": [
+        "transforms.Compose introduced in v0.3.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torchvision.datasets": {
+      "inferred_version_range": ">=0.3.0,<2.0.0",
+      "recommended_requirements_line": "torchvision.datasets>=0.3.0,<2.0.0",
+      "evidence": [
+        "ImageFolder introduced in v0.3.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torch.utils.data": {
+      "inferred_version_range": ">=0.4.0,<2.0.0",
+      "recommended_requirements_line": "torch.utils.data>=0.4.0,<2.0.0",
+      "evidence": [
+        "DataLoader introduced in v0.4.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.2.0,<2.0.0",
+    "torch.nn>=1.2.0,<2.0.0",
+    "torch.optim>=1.2.0,<2.0.0",
+    "torchvision>=0.3.0,<2.0.0",
+    "torchvision.datasets>=0.3.0,<2.0.0",
+    "torch.utils.data>=0.4.0,<2.0.0"
+  ]
+}

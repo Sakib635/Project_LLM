@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "time.sleep added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "uuid": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "uuid>=1.0,<2.0",
+      "evidence": [
+        "uuid.uuid4 introduced in uuid 1.0 \u2192 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mesos.interface": {
+      "inferred_version_range": ">=0.23.0,<0.24.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Scheduler added in mesos 0.23.0 \u2192 0.23.0",
+        "mesos_pb2 introduced in mesos 0.23.0 \u2192 0.23.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mesos.native": {
+      "inferred_version_range": ">=0.23.0,<0.24.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MesosSchedulerDriver added in mesos 0.23.0 \u2192 0.23.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.4,<3.5",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep introduced in Python 3.4 \u2192 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "uuid>=1.0,<2.0",
+    "mesos>=0.23.0,<0.24.0",
+    "time>=3.4,<3.5"
+  ]
+}

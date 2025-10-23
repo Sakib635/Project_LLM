@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "numpy.where added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "numpy.empty, numpy.arange, and numpy.repeat added in NumPy 1.0 \u2192 min NumPy 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scipy.sparse.csr_matrix": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "scipy>=2.0.0,<3.0.0",
+      "evidence": [
+        "scipy.sparse added in SciPy 2.0 \u2192 min SciPy 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0.0,<2.0.0",
+    "scipy>=2.0.0,<3.0.0"
+  ]
+}

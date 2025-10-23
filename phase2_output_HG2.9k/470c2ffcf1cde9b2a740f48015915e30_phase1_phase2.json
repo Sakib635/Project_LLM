@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pefile.PE.__init__ introduced in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.now introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pefile": {
+      "inferred_version_range": ">=2019.3.8,<2021.1.0",
+      "recommended_requirements_line": "pefile>=2019.3.8,<2021.1.0",
+      "evidence": [
+        "parse_header introduced in Python 3.5 \u2192 min Python 3.5",
+        "has_relocs added in Python 3.7 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "keystone": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "assemble added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "capstone": {
+      "inferred_version_range": ">=4.0.0-rc1,<4.1.0",
+      "recommended_requirements_line": "capstone>=4.0.0-rc1,<4.1.0",
+      "evidence": [
+        "cs_arch added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "getsizeof added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pefile>=2019.3.8,<2021.1.0",
+    "capstone>=4.0.0-rc1,<4.1.0"
+  ]
+}

@@ -1,0 +1,52 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["urllib.request.urlopen added in Python 3.6 → min Python 3.6", "winsound.Beep added in Python 3.9 → max Python 3.9"],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.25,<3",
+      "recommended_requirements_line": "urllib >=1.25,<3",
+      "evidence": ["urllib.request.urlopen introduced in Python 3.6 → min Python 3.6", "urllib.request.read introduced in Python 3.7 → max Python 3.9"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2,<3",
+      "recommended_requirements_line": "re >=2.2,<3",
+      "evidence": ["re.search introduced in Python 3.7 → min Python 3.7", "re.split removed in Python 3.10 → max Python 3.9"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=1,<4",
+      "recommended_requirements_line": "datetime >=1,<4",
+      "evidence": ["datetime.date introduced in Python 3.5 → min Python 3.5", "datetime.timedelta introduced in Python 3.8 → max Python 3.9"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "ctypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["ctypes.windll.user32.MessageBoxW introduced in Python 3.7 → min Python 3.7"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "winsound": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["winsound.Beep introduced in Python 3.9 → max Python 3.9"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib >=1.25,<3",
+    "re >=2.2,<3",
+    "datetime >=1,<4"
+  ]
+}
+```

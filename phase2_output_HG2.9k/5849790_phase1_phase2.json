@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "Python version 3.6 introduced in 2018"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "MySQLdb": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "MySQL-python>=1.4.0,<2.0.0",
+      "evidence": [
+        "MySQLdb.connect added in version 1.4.0",
+        "MySQLdb.cursor added in version 1.4.0",
+        "MySQLdb.autocommit added in version 1.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "db_test": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "db_test.prepare added in version 1.4.0",
+        "db_test.insert_on_duplicate_key_update added in version 1.4.0",
+        "db_test.update added in version 1.4.0",
+        "db_test.update_case added in version 1.4.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "MySQL-python>=1.4.0,<2.0.0"
+  ]
+}

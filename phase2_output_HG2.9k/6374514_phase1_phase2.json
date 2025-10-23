@@ -1,0 +1,31 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "httplib.HTTPConnection added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gevent": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "gevent>=1.0,<2.0",
+      "evidence": [
+        "httplib.HTTPConnection introduced in gevent 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "main": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence found for main package"
+    }
+  },
+  "requirements.txt": [
+    "gevent>=1.0,<2.0"
+  ]
+}

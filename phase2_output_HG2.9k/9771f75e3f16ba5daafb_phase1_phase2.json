@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": "3.8",
+    "evidence": [
+      "BasePermission introduced in Python 2.7 \u2192 min Python 2.7",
+      "IsAjaxPermission removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rest_framework": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "djangorestframework>=3.5,<4.0",
+      "evidence": [
+        "IsAjaxPermission introduced in djangorestframework v3.7 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.http.request": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django>=2.0,<3.0",
+      "evidence": [
+        "is_ajax introduced in Django v2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "djangorestframework>=3.5,<4.0",
+    "django>=2.0,<3.0"
+  ]
+}

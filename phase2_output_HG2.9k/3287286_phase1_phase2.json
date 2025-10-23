@@ -1,0 +1,47 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"rpy2": {
+"inferred_version_range": ">=3.0,<4.0",
+"recommended_requirements_line": "rpy2>=3.0,<4.0",
+"evidence": ["rpy2.robjects.RVector added in rpy2 v3.0", "rpy2.robjects.SexpVector added in rpy2 v3.0"],
+"confidence": 1,
+"notes": ""
+},
+"rinterface": {
+"inferred_version_range": ">=2.7,<3.0",
+"recommended_requirements_line": "rinterface>=2.7,<3.0",
+"evidence": ["rinterface.baseenv added in rinterface v2.7", "rinterface.globalenv added in rinterface v2.7"],
+"confidence": 1,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.array added in numpy v1.0", "numpy.linalg.norm added in numpy v1.2"],
+"confidence": 0.5,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["pandas.DataFrame added in pandas v1.0", "pandas.DataFrame.to_numpy added in pandas v1.2", "pandas.DataFrame.ix added in pandas v1.2"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"rpy2>=3.0,<4.0",
+"rinterface>=2.7,<3.0"
+]
+},
+"requirements.txt": [
+"rpy2>=3.0,<4.0",
+"rinterface>=2.7,<3.0"
+]
+}

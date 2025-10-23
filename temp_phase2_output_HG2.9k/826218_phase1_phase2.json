@@ -1,0 +1,47 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["os.getcwd added in Python 3.4 → min Python 3.4"],
+"confidence": 0.5,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sys.argv added in Python 2.3 → min Python 2.3"],
+"confidence": 0.5,
+"notes": ""
+},
+"paste": {
+"inferred_version_range": ">=1.7.0,<2.0.0",
+"recommended_requirements_line": "paste>=1.7.0,<2.0.0",
+"evidence": ["paste.httpserver added in Paste 1.6 → max Python 2.7"],
+"confidence": 1.0,
+"notes": ""
+},
+"wphp": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "wphp>=1.0.0,<2.0.0",
+"evidence": ["wphp.PHPApp added in wphp 1.0.0 → max Python 3.7"],
+"confidence": 1.0,
+"notes": ""
+},
+"json": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.5,
+"notes": "No evidence for API usage or deprecation/removal of JSON APIs."
+}
+},
+"requirements.txt": ["paste>=1.7.0,<2.0.0", "wphp>=1.0.0,<2.0.0"]
+}
+}

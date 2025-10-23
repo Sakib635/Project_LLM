@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.4 \u2192 min Python 3.4",
+      "sys.stdout, sys.stdin, and sys.argv introduced in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argparse.ArgumentParser introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dbus": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "dbus-python>=1.2.0,<2.0.0",
+      "evidence": [
+        "dbus.SessionBus introduced in Python 3.4 \u2192 min Python 3.4",
+        "dbus.Interface introduced in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.stdout, sys.stdin, and sys.argv introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

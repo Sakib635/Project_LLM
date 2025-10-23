@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=2.0.0",
+      "evidence": [
+        "tensorflow.models.rnn.rnn_cell.GRUCell introduced in v2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=3.4",
+      "evidence": [
+        "functools.wraps introduced in v3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sets": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=2.6",
+      "evidence": [
+        "sets.Mnist introduced in v2.6"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=2.0.0",
+    "functools>=3.4",
+    "sets>=2.6"
+  ]
+}

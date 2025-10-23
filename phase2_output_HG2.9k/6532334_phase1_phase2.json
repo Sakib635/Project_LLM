@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.8\u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "fcntl": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "fcntl.ioctl() introduced in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.5,<3.6",
+      "recommended_requirements_line": "os>=3.5,<3.6",
+      "evidence": [
+        "os.path.exists() introduced in Python 3.5",
+        "os.open() introduced in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scipy.misc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.misc.imread() introduced in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18,<2.0",
+      "recommended_requirements_line": "numpy>=1.18,<2.0",
+      "evidence": [
+        "numpy.zeros() introduced in Python 3.5",
+        "numpy.array() introduced in Python 3.5",
+        "numpy.linalg.norm() introduced in Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "fcntl>=3.5",
+    "os>=3.5",
+    "scipy.misc>=3.5",
+    "numpy>=1.18"
+  ]
+}

@@ -1,0 +1,5 @@
+(declare-fun tornado () String)
+(declare-fun iptools () String)
+(assert (and (or (= iptools "0.7.0"))
+     (or (= tornado "6.1") (= tornado "6.1b2") (= tornado "6.1b1"))))
+(check-sat)

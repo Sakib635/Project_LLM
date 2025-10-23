@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "argparse>=1.2.0,<2.0.0",
+      "evidence": [
+        "argparse.ArgumentParser introduced, depricated, removed or changed in v1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0",
+      "recommended_requirements_line": "numpy>=1.7.0",
+      "evidence": [
+        "numpy.array introduced, depricated, removed or changed in v1.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn.cluster": {
+      "inferred_version_range": ">=0.20",
+      "recommended_requirements_line": "scikit-learn>=0.20",
+      "evidence": [
+        "sklearn.cluster.KMeans introduced, depricated, removed or changed in v0.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tqdm": {
+      "inferred_version_range": ">=4.3",
+      "recommended_requirements_line": "tqdm>=4.3",
+      "evidence": [
+        "tqdm.tqdm introduced, depricated, removed or changed in v4.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2.0,<2.0.0",
+    "numpy>=1.7.0",
+    "scikit-learn>=0.20",
+    "tqdm>=4.3"
+  ]
+}

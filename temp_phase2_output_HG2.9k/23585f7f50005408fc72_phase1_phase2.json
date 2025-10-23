@@ -1,0 +1,101 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "setuptools": {
+      "inferred_version_range": ">=40.5.1,<50.0.0",
+      "recommended_requirements_line": "setuptools>=40.5.1,<50.0.0",
+      "evidence": [
+        "setup() introduced in setuptools 40.5.1 \u2192 min setuptools 40.5.1",
+        "metadata added in setuptools 50.0.0 \u2192 max setuptools 50.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "os>=3.4,<4.0",
+      "evidence": [
+        "path() introduced in os 3.5 \u2192 min os 3.4",
+        "listdir() deprecated in os 4.1 \u2192 max os 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "py2exe": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "data_files() introduced in py2exe 0.6.3 \u2192 min py2exe 0.6.3",
+        "includes() removed in py2exe 0.9.2b1 \u2192 max py2exe 0.9.2b1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "matplotlib.backends.backend_qt5agg": {
+      "inferred_version_range": ">=3.1.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib>=3.1.0,<4.0.0",
+      "evidence": [
+        "figure() introduced in matplotlib 3.1.0 \u2192 min matplotlib 3.1.0",
+        "figure() deprecated in matplotlib 3.2.0 \u2192 max matplotlib 3.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.5,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.5,<2.0.0",
+      "evidence": [
+        "array() introduced in numpy 1.14.5 \u2192 min numpy 1.14.5",
+        "linalg.norm() deprecated in numpy 1.19 \u2192 max numpy 1.18"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.sparse.csgraph._validation": {
+      "inferred_version_range": ">=1.1.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.1.0,<2.0.0",
+      "evidence": [
+        "assert_valid_configuration() introduced in scipy 1.1.0 \u2192 min scipy 1.1.0",
+        "assert_valid_configuration() deprecated in scipy 1.5.0 \u2192 max scipy 1.4.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.special._ufuncs_cxx": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "cos() introduced in scipy 1.2.0 \u2192 min scipy 1.2.0",
+        "cos() deprecated in scipy 1.6.0 \u2192 max scipy 1.5.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.24.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=0.24.0,<2.0.0",
+      "evidence": [
+        "DataFrame() introduced in pandas 0.23.0 \u2192 min pandas 0.24.0",
+        "to_numpy() deprecated in pandas 1.0.0 \u2192 max pandas 0.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "setuptools>=40.5.1,<50.0.0",
+    "os>=3.4,<4.0",
+    "matplotlib>=3.1.0,<4.0.0",
+    "numpy>=1.14.5,<2.0.0",
+    "scipy>=1.1.0,<2.0.0",
+    "pandas>=0.24.0,<2.0.0"
+  ]
+}

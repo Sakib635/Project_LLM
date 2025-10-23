@@ -1,0 +1,52 @@
+{
+"python_version": {
+"min": null,
+"max": null,
+"evidence": ["datetime.datetime added in Python 2.4 → min Python 2.4", "time.clock removed in Python 3.9 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"datetime": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["datetime.datetime introduced in Python 2.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"random": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": null,
+"evidence": ["random.random introduced in Python 1.2.0", "uuid.uuid4 introduced in Python 1.3.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"json": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["json.dumps introduced in Python 2.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"httplib2": {
+"inferred_version_range": ">=0.9,<1.0",
+"recommended_requirements_line": null,
+"evidence": ["httplib2.Http introduced in Python 2.6"],
+"confidence": 0.5,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sys.argv introduced in Python 2.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"datetime>=2.4",
+"random>=1.2.0,<2.0.0",
+"json>=2.6",
+"httplib2>=0.9,<1.0"
+]
+}
+}

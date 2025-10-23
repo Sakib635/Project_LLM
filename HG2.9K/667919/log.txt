@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 73, in <module>
+    test = TestDeferredInit()
+  File "snippet.py", line 43, in __init__
+    self.pool = adbapi.ConnectionPool("MySQLdb", 'localhost', 'modu', 'modu')
+  File "/usr/local/lib/python2.7/site-packages/twisted/enterprise/adbapi.py", line 211, in __init__
+    self.dbapi = reflect.namedModule(dbapiName)
+  File "/usr/local/lib/python2.7/site-packages/twisted/python/reflect.py", line 159, in namedModule
+    topLevel = __import__(name)
+ImportError: No module named MySQLdb

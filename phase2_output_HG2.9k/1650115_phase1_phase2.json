@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pygtk": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "pygtk>=2.0,<3.0",
+      "evidence": [
+        "pygtk.Entry added in pygtk 2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gobject.TYPE_STRING added in Python 3.5 \u2192 minimum version"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "gtk": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "gtk>=3.2,<4.0",
+      "evidence": [
+        "gtk.EntryCompletion added in GTK 3.2 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gdk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gdk.TYPE_STRING added in Python 3.5 \u2192 minimum version"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pygtk>=2.0,<3.0",
+    "gobject>=3.5,<4.0",
+    "gtk>=3.2,<4.0",
+    "gdk>=3.5,<4.0"
+  ]
+}

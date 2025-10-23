@@ -1,0 +1,14 @@
+WARNING:pyrocore.util.load_config.ConfigLoader:Configuration file '/root/.pyroscope/config.ini' not found, use the command 'pyroadmin --create-config' to create it!
+WARNING:pyrocore.util.load_config.ConfigLoader:Configuration file '/root/.pyroscope/config.py' not found!
+Traceback (most recent call last):
+  File "snippet.py", line 62, in <module>
+    rt = connect()
+  File "/usr/local/lib/python2.7/site-packages/pyrocore/__init__.py", line 35, in connect
+    config.engine.open()
+  File "/usr/local/lib/python2.7/site-packages/pyrocore/torrent/rtorrent.py", line 679, in open
+    self.load_config()
+0 files treated, of which 0 have been skipped due to size conflicts
+It represents about 0 bytes of data to be re-downloaded
+  File "/usr/local/lib/python2.7/site-packages/pyrocore/torrent/rtorrent.py", line 594, in load_config
+    raise error.UserError("Config file %r doesn't exist!" % (rcfile,))
+pyrocore.error.UserError: Config file '/root/.rtorrent.rc' doesn't exist!

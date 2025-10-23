@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "yaml": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": "yaml>=0.1.0,<0.2.0",
+      "evidence": [
+        "yaml.load introduced in v0.1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "os>=3.4,<3.8",
+      "evidence": [
+        "os.listdir introduced in v3.4",
+        "os.path.isfile introduced in v3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "imagesize": {
+      "inferred_version_range": ">=0.6,<0.7",
+      "recommended_requirements_line": "imagesize>=0.6,<0.7",
+      "evidence": [
+        "imagesize.get introduced in v0.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "functools.partial introduced in v3.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "yaml>=0.1.0,<0.2.0",
+    "os>=3.4,<3.8",
+    "imagesize>=0.6,<0.7"
+  ]
+}

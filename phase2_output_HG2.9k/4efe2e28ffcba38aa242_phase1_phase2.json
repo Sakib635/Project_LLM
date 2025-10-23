@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "sys.exit added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "nose": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "nose>=1.2.0,<2.0.0",
+      "evidence": [
+        "nose.run introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in Python 3.0 \u2192 min Python 3.0",
+        "sys.exit removed in Python 3.10 \u2192 max Python"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.setup introduced in v1.8 \u2192 min Python 3.0",
+        "django.test.utils deprecated in v1.9 \u2192 max Python"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.db": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "connection.creation.create_test_db introduced in v1.8 \u2192 min Python 3.0",
+        "connection.creation.destroy_test_db removed in v2.1 \u2192 max Python"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.test.utils": {
+      "inferred_version_range": ">=1.8,<1.9",
+      "recommended_requirements_line": "django-test-utils>=1.8,<1.9",
+      "evidence": [
+        "setup_test_environment introduced in v1.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nose>=1.2.0,<2.0.0",
+    "django-test-utils>=1.8,<1.9"
+  ]
+}

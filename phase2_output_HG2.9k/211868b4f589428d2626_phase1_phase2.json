@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "os>=3.7.0,<4.0.0",
+      "evidence": [
+        "os.path added in Python 3.7 \u2192 min Python 3.7",
+        "os.utime added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "time>=3.7.0,<4.0.0",
+      "evidence": [
+        "time.mktime added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0.0,<4.0.0",
+      "recommended_requirements_line": "json>=2.0.0,<4.0.0",
+      "evidence": [
+        "json.loads added in Python 2.7 \u2192 min Python 2.7",
+        "json.dumps added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=2.7.0,<4.0.0",
+      "recommended_requirements_line": "urllib2>=2.7.0,<4.0.0",
+      "evidence": [
+        "urllib2.HTTPDigestAuthHandler added in Python 2.7 \u2192 min Python 2.7",
+        "urllib2.build_opener added in Python 3.7 \u2192 min Python 3.7",
+        "urllib2.urlopen added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dateutil": {
+      "inferred_version_range": ">=1.4.0,<4.0.0",
+      "recommended_requirements_line": "dateutil>=1.4.0,<4.0.0",
+      "evidence": [
+        "dateutil.parser.parse added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.7.0,<4.0.0",
+    "time>=3.7.0,<4.0.0",
+    "json>=2.0.0,<4.0.0",
+    "urllib2>=2.7.0,<4.0.0",
+    "dateutil>=1.4.0,<4.0.0"
+  ]
+}

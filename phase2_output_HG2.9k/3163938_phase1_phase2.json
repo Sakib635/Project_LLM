@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "Tkinter added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tkinter": {
+      "inferred_version_range": ">=8.5.29,<9.0",
+      "recommended_requirements_line": "tkinter>=8.5.29,<9.0",
+      "evidence": [
+        "Tkinter.Button and Tkinter.Label introduced in tkinter 8.5.29 \u2192 8.5.29",
+        "time.sleep added in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "RPi.GPIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "RPi.GPIO.setmode introduced in RPi.GPIO 0.5.2 \u2192 0.5.3",
+        "RPi.GPIO.setup introduced in RPi.GPIO 0.5.1 \u2192 0.6.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "root": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "root.title introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tkinter>=8.5.29,<9.0",
+    "RPi.GPIO>=0.5.1,<0.6.0",
+    "root>=3.4,<4.0"
+  ]
+}

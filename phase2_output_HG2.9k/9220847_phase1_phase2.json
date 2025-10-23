@@ -1,0 +1,39 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["datetime.datetime and datetime.timedelta added in Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "remote_gae": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "remote_gae>=1.2.0,<2.0.0",
+      "evidence": ["remote_gae.fix_path and remote_gae.configure_gae_with_defaults introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ndb": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "ndb>=1.7.0,<2.0.0",
+      "evidence": ["ndb.get_context and ndb.set_cache_policy introduced in v1.7.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "experiments": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Experiment.query and Experiment.last_modified introduced in v2.0.0"],
+      "confidence": 0.5,
+      "notes": "Assuming v2.0.0 is the latest version of experiments"
+    }
+  },
+  "requirements.txt": [
+    "remote_gae>=1.2.0,<2.0.0",
+    "ndb>=1.7.0,<2.0.0",
+    "experiments>=2.0.0"
+  ]
+}
+```

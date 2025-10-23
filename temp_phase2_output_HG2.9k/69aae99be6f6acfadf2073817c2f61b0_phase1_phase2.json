@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.2.0,<2.0.0",
+      "evidence": [
+        "tensorflow.placeholder introduced in v1.2.0",
+        "tensorflow.Session introduced in v1.2.0",
+        "tensorflow.ConfigProto introduced in v1.2.0",
+        "tensorflow.add_n introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "python-dateutil>=1.0.0,<2.0.0",
+      "evidence": [
+        "datetime.datetime introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.2.0,<2.0.0",
+    "python-dateutil>=1.0.0,<2.0.0"
+  ]
+}

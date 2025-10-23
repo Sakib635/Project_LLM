@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "multiprocessing.Process added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "zmq": {
+      "inferred_version_range": ">=17.1.2,<19.0.0",
+      "recommended_requirements_line": "zmq>=17.1.2,<19.0.0",
+      "evidence": [
+        "zmq.Context introduced, zmq.REQ and zmq.REP introduced in v4.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pycuda": {
+      "inferred_version_range": ">=2018.1",
+      "recommended_requirements_line": "pycuda>=2018.1",
+      "evidence": [
+        "pycuda.driver.init introduced, pycuda.driver.Device introduced in v2017.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.13",
+      "recommended_requirements_line": "numpy>=1.13",
+      "evidence": [
+        "numpy.random.rand introduced in v1.13"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.getpid removed in Python 3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs and uncertain items."
+    }
+  },
+  "requirements.txt": [
+    "zmq>=17.1.2,<19.0.0",
+    "pycuda>=2018.1",
+    "numpy>=1.13"
+  ]
+}

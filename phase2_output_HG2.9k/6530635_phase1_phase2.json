@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "django.db.connection added in Python 3.6 \u2192 min Python 3.6",
+      "sqlite3.fetchall added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": [
+        "Django introduced in version 1.0, deprecated in version 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sqlite3": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "sqlite3>=3.6.0,<4.0.0",
+      "evidence": [
+        "sqlite3.cursor introduced in Python 3.6 \u2192 min Python 3.6",
+        "sqlite3.fetchall introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.utils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Django.utils introduced in version 1.0, deprecated in version 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "sqlite3>=3.6.0,<4.0.0"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "logging": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "logging>=1.2,<2.0",
+      "evidence": [
+        "logging.basicConfig added in Python 3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "MyDaemonRunner": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "MyDaemonRunner>=1.2,<2.0",
+      "evidence": [
+        "MyDaemonRunner.__init__ added in Python 3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "App": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "App>=1.2,<2.0",
+      "evidence": [
+        "App.log_file added in Python 3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "daemon": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "daemon>=1.2,<2.0",
+      "evidence": [
+        "daemon.runner.DaemonRunner.__init__ added in Python 3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "snippet.py", line 99, in <module>
+    main()
+  File "snippet.py", line 49, in main
+    device = find_keyboard_device()
+  File "snippet.py", line 40, in find_keyboard_device
+    for bus in usb.busses():
+  File "/usr/local/lib/python2.7/site-packages/usb/legacy.py", line 355, in busses
+    sorted(core.find(find_all=True), key=lambda d: d.bus),
+  File "/usr/local/lib/python2.7/site-packages/usb/core.py", line 1297, in find
+    raise NoBackendError('No backend available')
+usb.core.NoBackendError: No backend available

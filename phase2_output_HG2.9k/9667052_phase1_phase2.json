@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Crypto>=1.2.0,<2.0.0",
+      "evidence": [
+        "Crypto.Cipher.AES introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "binascii": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "API not found in any version"
+    },
+    "os": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "os>=2.6.0,<3.0.0",
+      "evidence": [
+        "os.path introduced in v2.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Crypto>=1.2.0,<2.0.0",
+    "os>=2.6.0,<3.0.0"
+  ]
+}

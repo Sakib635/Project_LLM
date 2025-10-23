@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "flask.ext.sqlalchemy.SQLAlchemy introduced in Flask 0.7 \u2192 min Flask 0.7",
+        "flask.ext.sqlalchemy.db introduced in Flask 0.7 \u2192 min Flask 0.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sqlalchemy.orm.decl_api.repr introduced in SQLAlchemy 1.0 \u2192 min SQLAlchemy 1.0",
+        "sqlalchemy.orm.decl_api.__dict__.repr introduced in SQLAlchemy 1.0 \u2192 min SQLAlchemy 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

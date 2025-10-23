@@ -1,0 +1,62 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["signal.SIGINT added in Python 3.5 → min Python 3.5", "signal.SIG_DFL removed in Python 3.10→ max Python"],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["sys.argv introduced in Python 2.0 → max Python"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": null,
+      "evidence": ["signal.SIGINT introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "webkit2png": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["webkit2png.WebkitRenderer introduced in Python 3.5 → max Python"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "PyQt4.QtCore": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["QApplication introduced in Python 2.0 → max Python"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "PyQt4.QtGui": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["QWebPage introduced in Python 2.0 → max Python"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "PyQt4.QtWebKit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["QWebPage.render_to_file introduced in Python 2.0 → max Python"],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sys>=2.0,<3",
+    "signal>=3.5,<4",
+    "webkit2png>=3.5,<4",
+    "PyQt4.QtCore>=2.0,<3",
+    "PyQt4.QtGui>=2.0,<3",
+    "PyQt4.QtWebKit>=2.0,<3"
+  ]
+}
+```

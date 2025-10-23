@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "urllib>=1.0.0,<2.0.0",
+      "evidence": [
+        "urllib.urlopen added in Python 1.0 \u2192 min Python 1.0",
+        "urllib.urlopen removed in Python 2.0\u2192 max Python 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "io>=1.0.0,<2.0.0",
+      "evidence": [
+        "io.BytesIO added in Python 1.0 \u2192 min Python 1.0",
+        "io.BytesIO removed in Python 2.0\u2192 max Python 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "threading.daemon was added in Python 2.7 and deprecated in Python 3.0"
+    },
+    "Clock": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pillow>=1.0.0,<2.0.0",
+      "evidence": [
+        "Image added in Python 1.0 \u2192 min Python 1.0",
+        "Image removed in Python 2.0\u2192 max Python 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "CoreImage": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.0.0,<2.0.0",
+    "io>=1.0.0,<2.0.0",
+    "pillow>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.7",
+"max": null,
+"evidence": ["datetime.now added in Python 3.7 → min Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"bson": {
+"inferred_version_range": ">=0.5.0,<1.0.0",
+"recommended_requirements_line": "bson>=0.5.0,<1.0.0",
+"evidence": ["bson.json_util.dumps introduced in bson 0.5.0"],
+"confidence": 1,
+"notes": ""
+},
+"pymongo": {
+"inferred_version_range": ">=3.7.0,<4.0.0",
+"recommended_requirements_line": "pymongo>=3.7.0,<4.0.0",
+"evidence": ["pymongo.Connection introduced in pymongo 3.7.0"],
+"confidence": 1,
+"notes": ""
+},
+"tornado": {
+"inferred_version_range": ">=5.0.2,<6.0.0",
+"recommended_requirements_line": "tornado>=5.0.2,<6.0.0",
+"evidence": ["tornado.ioloop introduced in tornado 5.0.2"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"bson>=0.5.0,<1.0.0",
+"pymongo>=3.7.0,<4.0.0",
+"tornado>=5.0.2,<6.0.0"
+]
+}
+}

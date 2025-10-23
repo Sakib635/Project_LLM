@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "boto3.s3.connection.S3Connection introduced in Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "boto3": {
+      "inferred_version_range": ">=1.9.243,<2.0.0",
+      "recommended_requirements_line": "boto3>=1.9.243,<2.0.0",
+      "evidence": [
+        "boto3.s3.bucket.Bucket.list introduced in boto3 v1.9.243",
+        "boto3.s3.bucket.Bucket.get_contents_as_string introduced in boto3 v1.9.243",
+        "boto3.s3.bucket.Bucket.set_contents_from_string introduced in boto3 v1.9.243"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "cStringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "cStringIO",
+      "evidence": [
+        "cStringIO.StringIO introduced in cStringIO v1.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "PIL",
+      "evidence": [
+        "PIL.Image.open introduced in PIL v1.1.7",
+        "PIL.Image.save introduced in PIL v1.1.7"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys",
+      "evidence": [
+        "sys.argv[1] introduced in sys v0.9.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "boto3>=1.9.243,<2.0.0",
+    "cStringIO",
+    "PIL",
+    "sys"
+  ]
+}

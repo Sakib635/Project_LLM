@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.7",
+"max": "4.0",
+"evidence": ["SingletonModel added in Python 3.9 → min Python 3.9", "delete introduced in Python 3.10 → max Python 4.0"],
+"notes": ""
+},
+"dependencies": {
+"django.db.models": {
+"inferred_version_range": ">=2.2,<3.0",
+"recommended_requirements_line": "django-model-utils>=2.2,<3.0",
+"evidence": ["SingletonModel introduced in v2.2.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"django.core.cache": {
+"inferred_version_range": ">=3.2,<4.0",
+"recommended_requirements_line": "django-cacheutils>=3.2,<4.0",
+"evidence": ["set introduced in v3.2.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django-model-utils>=2.2,<3.0",
+"django-cacheutils>=3.2,<4.0"
+]
+}
+}

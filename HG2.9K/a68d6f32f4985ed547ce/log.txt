@@ -1,0 +1,11 @@
+JAVA_HOME is not set
+Traceback (most recent call last):
+  File "snippet.py", line 25, in <module>
+    sc = pyspark.SparkContext("local", conf=conf)
+  File "/usr/local/lib/python2.7/site-packages/pyspark/context.py", line 133, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/usr/local/lib/python2.7/site-packages/pyspark/context.py", line 325, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+  File "/usr/local/lib/python2.7/site-packages/pyspark/java_gateway.py", line 105, in launch_gateway
+    raise Exception("Java gateway process exited before sending its port number")
+Exception: Java gateway process exited before sending its port number

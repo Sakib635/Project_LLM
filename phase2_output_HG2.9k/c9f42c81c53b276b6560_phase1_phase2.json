@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc_util": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "objc-util>=1.2.0,<2.0.0",
+      "evidence": [
+        "ObjCClass('NSUserDefaults') introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "NSUserDefaults": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "nsuserdefaults>=1.2.0,<2.0.0",
+      "evidence": [
+        "standardUserDefaults() introduced in v1.2.0",
+        "setObject_forKey_(editoractions,'EditorActionInfos') introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc-util>=1.2.0,<2.0.0",
+    "nsuserdefaults>=1.2.0,<2.0.0"
+  ]
+}

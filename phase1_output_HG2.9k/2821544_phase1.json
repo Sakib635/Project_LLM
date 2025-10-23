@@ -1,0 +1,47 @@
+{
+  "os": [
+    "os.getcwd",
+    "os.environ"
+  ],
+  "time": [
+    "time.sleep",
+    "time.time"
+  ],
+  "settings": [
+    "settings.global_config"
+  ],
+  "fabric.contrib.console": [
+    "confirm"
+  ],
+  "fabric.api": [
+    "local",
+    "settings",
+    "env",
+    "cd",
+    "run",
+    "sudo"
+  ],
+  "env": [
+    "env.hosts",
+    "env.user",
+    "env.path"
+  ],
+  "start": [
+    "start.sudo"
+  ],
+  "deploy": [
+    "deploy.update_code",
+    "deploy.collect_static",
+    "deploy.update_database",
+    "deploy.start"
+  ],
+  "update_code": [
+    "update_code.run"
+  ],
+  "update_database": [
+    "update_database.run"
+  ],
+  "restart_nginx": [
+    "restart_nginx.sudo"
+  ]
+}

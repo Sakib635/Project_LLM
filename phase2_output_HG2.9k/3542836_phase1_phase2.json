@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.8\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sublime": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "sublime>=4.0,<5.0",
+      "evidence": [
+        "sublime.TextCommand introduced in sublime 4.0.0 \u2192 4.x.x"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sublime_plugin": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "sublime-plugin>=2.0,<3.0",
+      "evidence": [
+        "sublime_plugin.TextCommand introduced in sublime-plugin 2.0.0 \u2192 2.x.x"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "webbrowser": {
+      "inferred_version_range": ">=2.3,<3.0",
+      "recommended_requirements_line": "webbrowser>=2.3,<3.0",
+      "evidence": [
+        "webbrowser.open_new_tab introduced in webbrowser 2.3 \u2192 2.x.x"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sublime>=4.0,<5.0",
+    "sublime-plugin>=2.0,<3.0",
+    "webbrowser>=2.3,<3.0"
+  ]
+}

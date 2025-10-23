@@ -1,0 +1,32 @@
+{
+"python_version": {
+"min": "2.7",
+"max": null,
+"evidence": ["pyspark.SparkContext added in Python 2.7 → min Python 2.7"],
+"notes": ""
+},
+"dependencies": {
+"sklearn": {
+"inferred_version_range": ">=0.0.1,<2.0.0",
+"recommended_requirements_line": "scikit-learn>=0.0.1,<2.0.0",
+"evidence": ["sklearn.tree.DecisionTreeClassifier introduced, depricated, removed or changed in v0.21.3"],
+"confidence": 0.9,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["sklearn.datasets.make_classification introduced, depricated, removed or changed in v1.2.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": ["scikit-learn>=0.0.1,<2.0.0", "pandas>=1.2.0,<2.0.0"]
+},
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock removed in Python 3.7 → max Python 3.7"],
+"notes": ""
+}
+}

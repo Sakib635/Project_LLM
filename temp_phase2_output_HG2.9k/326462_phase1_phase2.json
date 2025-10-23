@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "PIL is not a standard library, so its version cannot be inferred from the provided APIs."
+    },
+    "glob": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "glob>=1.2.0,<2.0.0",
+      "evidence": [
+        "glob.glob introduced in 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ThumbNail": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "ThumbNail is not a standard library, so its version cannot be inferred from the provided APIs."
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array added in numpy 1.2.0 \u2192 v1.2.0",
+        "numpy.zeros removed in numpy 2.0.0 \u2192 max Python 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame added in pandas 1.2.0 \u2192 v1.2.0",
+        "pandas.read_csv removed in pandas 2.0.0 \u2192 max Python 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pyspark": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pyspark.SparkConf added in pyspark 2.0 \u2192 max Python 3.0"
+      ],
+      "confidence": 0.875,
+      "notes": "The minimum version of pyspark inferred is 2.0, but the maximum version inferred is 3.0."
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

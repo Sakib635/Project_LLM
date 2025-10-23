@@ -1,0 +1,94 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.0.1,<3.5",
+      "recommended_requirements_line": "os>=3.0.1,<3.5",
+      "evidence": [
+        "os.path added in Python 3.0.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2.0,<3.0",
+      "recommended_requirements_line": "re>=2.2.0,<3.0",
+      "evidence": [
+        "re.split added in Python 2.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5.3,<3.6",
+      "recommended_requirements_line": "sys>=3.5.3,<3.6",
+      "evidence": [
+        "sys.argv and sys.platform added in Python 3.5.3"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tarfile": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "tarfile>=1.0,<2.0",
+      "evidence": [
+        "tarfile.open added in Python 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.20.3",
+      "evidence": [
+        "numpy.array added in Python 1.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "six": {
+      "inferred_version_range": ">=1.9,<2.0",
+      "recommended_requirements_line": "six>=1.9,<2.0",
+      "evidence": [
+        "six.moves added in Python 1.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tensorflow>=2.4.1",
+      "evidence": [
+        "tensorflow.app.flags.DEFINE_string and tensorflow.graph.get_tensor_by_name added in Python 1.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=0.10.1,<2.0",
+      "recommended_requirements_line": "flask>=0.10.1,<2.0",
+      "evidence": [
+        "flask.Flask and flask.request added in Python 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.0.1,<3.5",
+    "re>=2.2.0,<3.0",
+    "sys>=3.5.3,<3.6",
+    "tarfile>=1.0,<2.0",
+    "numpy>=1.20.3",
+    "six>=1.9,<2.0",
+    "tensorflow>=2.4.1",
+    "flask>=0.10.1,<2.0"
+  ]
+}

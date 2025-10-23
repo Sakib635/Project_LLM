@@ -1,0 +1,60 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["django.core.exceptions.MiddlewareNotUsed", "django.conf.settings"],
+"confidence": 0.0,
+"notes": ""
+},
+"cProfile": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "cProfile>=1.2.0,<2.0.0",
+"evidence": ["cProfile.Profile"],
+"confidence": 1.0,
+"notes": ""
+},
+"pstats": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pstats>=1.2.0,<2.0.0",
+"evidence": ["pstats.Stats"],
+"confidence": 1.0,
+"notes": ""
+},
+"marshal": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["marshal.dumps"],
+"confidence": 0.5,
+"notes": "Marshal is a built-in module in Python"
+},
+"cStringIO": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "cStringIO>=1.2.0,<2.0.0",
+"evidence": ["cStringIO.StringIO"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django>=1.2.0,<2.0.0",
+"cProfile>=1.2.0,<2.0.0",
+"pstats>=1.2.0,<2.0.0",
+"marshal>=1.2.0,<2.0.0",
+"cStringIO>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": [
+"django>=1.2.0,<2.0.0",
+"cProfile>=1.2.0,<2.0.0",
+"pstats>=1.2.0,<2.0.0",
+"marshal>=1.2.0,<2.0.0",
+"cStringIO>=1.2.0,<2.0.0"
+]
+}

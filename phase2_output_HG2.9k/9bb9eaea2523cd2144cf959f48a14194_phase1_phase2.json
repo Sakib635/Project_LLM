@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Django introduced AnonymousUser in v1.10 \u2192 v3.x"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "rest_framework": {
+      "inferred_version_range": ">=2.4.3,<3.0.0",
+      "recommended_requirements_line": "djangorestframework>=2.4.3,<3.0.0",
+      "evidence": [
+        "rest_framework.request.Request introduced in v1.0 \u2192 v2.4.3",
+        "rest_framework_jwt.authentication.JSONWebTokenAuthentication.authenticate() introduced in v3.7 \u2192 v3.x",
+        "rest_framework_jwt.authentication.JSONWebTokenAuthentication.get_user() introduced in v3.8 \u2192 v3.x"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.10,<4.0",
+    "djangorestframework>=2.4.3,<3.0.0"
+  ]
+}

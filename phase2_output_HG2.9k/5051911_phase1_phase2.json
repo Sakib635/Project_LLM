@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+      "evidence": [
+        "requests.get introduced in Python 2.7 \u2192 min Python 2.7",
+        "requests.put removed in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.files": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "django.core.files>=2.0.0,<3.0.0",
+      "evidence": [
+        "django.core.files.File introduced in Python 2.7 \u2192 min Python 2.7",
+        "django.core.files.temp.NamedTemporaryFile deprecated in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.0.0,<3.0.0",
+    "django.core.files>=2.0.0,<3.0.0"
+  ]
+}

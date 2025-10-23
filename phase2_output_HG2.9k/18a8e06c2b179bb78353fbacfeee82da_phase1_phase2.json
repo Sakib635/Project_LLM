@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "functools.wraps added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "telegram": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "telegram>=1.2.0,<2.0.0",
+      "evidence": [
+        "telegram.ChatAction introduced in v1.2.0",
+        "telegram.sendChatAction deprecated in v2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "telegram>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.time added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.dot introduced in numpy version 1.20 → max Python 3.6", "numpy.zeros introduced in numpy version 1.20 → min Python 3.6"],
+"confidence": 0.5,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["scipy.linalg.solve_triangular introduced in scipy version 1.0 → max Python 3.6", "scipy.linalg.lstsq introduced in scipy version 1.0 → min Python 3.6"],
+"confidence": 0.5,
+"notes": ""
+},
+"matplotlib.pyplot": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["matplotlib.pyplot.figure introduced in matplotlib version 1.2 → max Python 3.6", "matplotlib.pyplot.subplot introduced in matplotlib version 1.2 → min Python 3.6"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.20,<3.0",
+"scipy>=1.0,<4.0",
+"matplotlib>=1.2,<3.0"
+]
+},
+"requirements_txt": [
+"numpy>=1.20,<3.0",
+"scipy>=1.0,<4.0",
+"matplotlib>=1.2,<3.0"
+]
+}

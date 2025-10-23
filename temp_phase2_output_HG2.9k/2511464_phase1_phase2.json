@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": ">=6,<7",
+      "recommended_requirements_line": "tornado>=6,<7",
+      "evidence": [
+        "tornado.ioloop.IOLoop introduced in v6.0 \u2192 min version 6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3,<4",
+      "recommended_requirements_line": "logging>=3,<4",
+      "evidence": [
+        "logging.info introduced in v3.2 \u2192 min version 3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os>=1,<2",
+      "evidence": [
+        "os.path introduced in v1.5 \u2192 min version 1.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys>=1,<2",
+      "evidence": [
+        "sys.argv introduced in v1.5 \u2192 min version 1.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "time>=1,<2",
+      "evidence": [
+        "time.time introduced in v1.5 \u2192 min version 1.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "re>=2,<3",
+      "evidence": [
+        "re.compile introduced in v2.1 \u2192 min version 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

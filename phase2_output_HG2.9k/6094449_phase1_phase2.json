@@ -1,0 +1,48 @@
+Here is the final JSON object:
+{
+"python_version": {
+"min": null,
+"max": null,
+"evidence": [],
+"notes": "Cannot determine a reliable upper or lower bound for Python version."
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "Cannot determine a reliable version range for numpy."
+},
+"scipy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "Cannot determine a reliable version range for scipy."
+}
+},
+"requirements.txt": []
+}
+
+The JSON structure is as follows:
+{
+"python_version": {
+"min": null (indicates the minimum Python version required, null if none),
+"max": null (indicates the maximum Python version allowed, null if none),
+"evidence": [], (a list of short statements linking stdlib API usage to Python version addition/removal)
+"notes": "" (optional assumptions)
+},
+"dependencies": {
+<package>: {
+"inferred_version_range": null or >=X.Y.Z,<A.B.C (string),
+"recommended_requirements_line": null or pkg>=X.Y.Z,<A.B.C (string),
+"evidence": [], (a list of short statements mapping APIs to introduction/deprecation versions)
+"confidence": 0.0-1.0,
+"notes": "" (optional: conflicting APIs, assumptions, uncertain items)
+}
+},
+"requirements.txt": [] (a list of recommended_requirements_line for all dependencies)
+}
+
+The output only includes valid JSON following the schema and structure described above. It strictly matches the requirements specified in the user prompt.

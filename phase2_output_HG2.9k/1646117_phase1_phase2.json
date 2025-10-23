@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "nltk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["nltk.word_tokenize", "nltk.pos_tag"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["itertools.ifilterfalse"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pygraph": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pygraph.classes.graph.graph", "pygraph.classes.digraph.digraph", "pygraph.algorithms.pagerank.pagerank"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nltk>=0,<1",
+    "itertools>=0,<1",
+    "pygraph>=0,<1"
+  ]
+}
+```

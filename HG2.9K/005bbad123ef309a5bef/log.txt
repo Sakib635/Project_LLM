@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 85, in <module>
+    engine = create_engine('mysql://eve:eve@localhost:3306/eve', echo=False)
+  File "/usr/local/lib/python2.7/site-packages/sqlalchemy/engine/__init__.py", line 520, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/usr/local/lib/python2.7/site-packages/sqlalchemy/dialects/mysql/mysqldb.py", line 118, in dbapi
+    return __import__("MySQLdb")
+ImportError: No module named MySQLdb

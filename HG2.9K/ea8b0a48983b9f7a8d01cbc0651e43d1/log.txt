@@ -1,0 +1,7 @@
+%(name)s <filename.log>: Process a papertrail log, counting IP addresses.
+
+Logs are generated using the papertrail command line app:
+papertrail --min-time '2017-11-12 4:00 AM' --max-time '2017-11-12 5:00 AM' -g portland -- mdn-prod_web '-"GET /readiness"' '-"GET /healthz"' '-"- - HTTP/1.0"' > trouble.log
+
+To run tests: %(name)s --test
+

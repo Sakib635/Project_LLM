@@ -1,0 +1,10 @@
+snippet.py:25: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  my_config_dict = yaml.load(sample_yaml_as_dict)
+snippet.py:30: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  my_config_list = yaml.load(sample_yaml_as_list)
+Traceback (most recent call last):
+  File "snippet.py", line 36, in <module>
+    with open('~/my_config.yaml') as fp:
+IOError: [Errno 2] No such file or directory: '~/my_config.yaml'
+{'second_dict_key': 'some other value', 'first_dict_key': 'some value'}
+['list item 1', 'list item 2']

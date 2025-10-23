@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyobjus": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pyobjus>=1.2.0,<2.0.0",
+      "evidence": [
+        "pyobjus.autoclass introduced in version 1.2.0",
+        "pyobjus.dylib_manager deprecated in version 2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "CBCentralManager": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "CBCentralManager>=1.2.0,<2.0.0",
+      "evidence": [
+        "CBCentralManagerDelegate introduced in version 1.2.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyobjus>=1.2.0,<2.0.0",
+    "CBCentralManager>=1.2.0,<2.0.0"
+  ]
+}

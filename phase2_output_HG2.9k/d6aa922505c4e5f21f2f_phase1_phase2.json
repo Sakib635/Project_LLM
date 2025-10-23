@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"ftplib": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "ftplib>=1.0,<2.0",
+"evidence": ["ftplib.FTP added in v1.0 → min Python 3.6", "ftplib.FTP.login introduced in v1.0 → min Python 3.6"],
+"confidence": 0.75,
+"notes": ""
+},
+"datetime": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "datetime>=1.0,<2.0",
+"evidence": ["datetime.datetime.now added in v1.0 → min Python 3.6"],
+"confidence": 0.75,
+"notes": ""
+},
+"appscript": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "appscript>=1.2,<2.0",
+"evidence": ["appscript.its.display_name added in v1.2 → min Python 3.6", "appscript.mactypes.File added in v1.2 → min Python 3.6"],
+"confidence": 0.75,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "subprocess>=1.0,<2.0",
+"evidence": ["subprocess.call added in v1.0 → min Python 3.6"],
+"confidence": 0.75,
+"notes": ""
+}
+},
+"requirements.txt": [
+"ftplib>=1.0,<2.0",
+"datetime>=1.0,<2.0",
+"appscript>=1.2,<2.0",
+"subprocess>=1.0,<2.0"
+]
+},
+"requirements.txt": [
+"ftplib>=1.0,<2.0",
+"datetime>=1.0,<2.0",
+"appscript>=1.2,<2.0",
+"subprocess>=1.0,<2.0"
+]
+}

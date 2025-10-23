@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0.0",
+        "pandas.DataFrame.to_numpy introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "idaapi": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "idaapi.action_desc_t introduced in v5.6",
+        "idaapi.DbgDword introduced in v5.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "idaapi.plugin_t": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "idaapi.PLUGIN_KEEP introduced in v5.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.0,<2.0.0",
+    "idaapi>=5.6,<6.0"
+  ]
+}

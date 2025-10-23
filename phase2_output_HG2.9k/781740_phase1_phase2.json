@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "scipy.ndimage.maximum_filter added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.asarray introduced in v1.20.0",
+        "numpy.max depricated in v1.20.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "scipy>=1.5,<2.0",
+      "evidence": [
+        "scipy.ndimage.maximum_filter introduced in v1.5.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "scipy>=1.5,<2.0"
+  ]
+}

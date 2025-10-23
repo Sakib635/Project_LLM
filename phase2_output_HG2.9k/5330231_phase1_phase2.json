@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide.QtCore": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "PySide.QtCore>=1.2.0,<2.0.0",
+      "evidence": [
+        "QSettings introduced in PySide.QtCore v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "WindowSettable": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "WindowSettable>=1.2.0,<2.0.0",
+      "evidence": [
+        "WindowSettable._readAndApplyWindowAttributeSettings introduced in WindowSettable v1.2.0",
+        "WindowSettable._writeWindowAttributeSettings introduced in WindowSettable v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PySide.QtCore>=1.2.0,<2.0.0",
+    "WindowSettable>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.0.0,<2.0.0",
+      "evidence": [
+        "placeholder introduced in v1.0.0",
+        "reset_default_graph introduced in v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "slim": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "slim>=1.0.0,<2.0.0",
+      "evidence": [
+        "conv2d introduced in v1.0.0",
+        "batch_norm introduced in v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "log introduced in v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.0.0,<2.0.0",
+    "slim>=1.0.0,<2.0.0",
+    "numpy>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10→ max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["django.http.HttpResponsePermanentRedirect introduced in v2.2.0", "django.urls.resolve introduced in v1.11.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["pandas.DataFrame introduced in v0.20.3", "pandas.DataFrame.to_numpy introduced in v1.2.4"],
+"confidence": 0.9,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.array introduced in v1.5", "numpy.linalg.norm introduced in v1.10"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django>=2.2.0,<3.0.0",
+"pandas>=1.2.4,<2.0.0",
+"numpy>=1.10,<2.0.0"
+]
+},
+"notes": ""
+}

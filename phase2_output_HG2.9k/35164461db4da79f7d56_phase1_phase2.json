@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "midi": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "midi>=1.2.0,<2.0.0",
+      "evidence": [
+        "midi.getOffset introduced in v1.2.0",
+        "midi.setOffset depricated in v1.4.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dsp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dsp.rand introduced in v1.2.0",
+        "dsp.pulsar depricated in v1.4.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "midi>=1.2.0,<2.0.0",
+    "dsp>=1.2.0,<2.0.0"
+  ]
+}

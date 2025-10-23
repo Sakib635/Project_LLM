@@ -1,0 +1,79 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "celery.Celery introduced in Python 3.1 \u2192 min Python 3.1",
+      "flaskext.script.Manager removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Celery": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "celery.Celery introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Task": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "myapp.tasks.celery.Task introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "MyBaseTask": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "myapp.tasks.MyBaseTask introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "add": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "myapp.tasks.add introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "create_app": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "myapp introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Manager": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "flaskext.script.Manager introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "install_commands": {
+      "inferred_version_range": ">=4.2.0,<5.0.0",
+      "recommended_requirements_line": "celery>=4.2.0,<5.0.0",
+      "evidence": [
+        "flaskext.celery.install_commands introduced in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "celery>=4.2.0,<5.0.0"
+  ]
+}

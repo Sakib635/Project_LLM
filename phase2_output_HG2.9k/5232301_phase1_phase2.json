@@ -1,0 +1,88 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "os.urandom added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "M2Crypto": {
+      "inferred_version_range": ">=0.24.0,<0.25.0",
+      "recommended_requirements_line": "M2Crypto>=0.24.0,<0.25.0",
+      "evidence": [
+        "M2Crypto.RSA added in M2Crypto 0.24.0 \u2192 v0.24.0",
+        "M2Crypto.RSA.gen_key added in M2Crypto 0.24.0 \u2192 v0.24.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Alice": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of Alice package usage found."
+    },
+    "Bob": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of Bob package usage found."
+    },
+    "WriteRSA": {
+      "inferred_version_range": ">=2.5.3,<2.6.0",
+      "recommended_requirements_line": "cryptography>=2.5.3,<2.6.0",
+      "evidence": [
+        "WriteRSA.public_encrypt added in cryptography 2.5.3 \u2192 v2.5.3",
+        "WriteRSA.public_decrypt added in cryptography 2.5.3 \u2192 v2.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ReadRSA": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of ReadRSA package usage found."
+    },
+    "VerifyRSA": {
+      "inferred_version_range": ">=2.5.3,<2.6.0",
+      "recommended_requirements_line": "cryptography>=2.5.3,<2.6.0",
+      "evidence": [
+        "VerifyRSA.verify_rsassa_pss added in cryptography 2.5.3 \u2192 v2.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "SignEVP": {
+      "inferred_version_range": ">=2.5.3,<2.6.0",
+      "recommended_requirements_line": "cryptography>=2.5.3,<2.6.0",
+      "evidence": [
+        "SignEVP.sign_init added in cryptography 2.5.3 \u2192 v2.5.3",
+        "SignEVP.sign_update added in cryptography 2.5.3 \u2192 v2.5.3",
+        "SignEVP.sign_final added in cryptography 2.5.3 \u2192 v2.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "VerifyEVP": {
+      "inferred_version_range": ">=2.5.3,<2.6.0",
+      "recommended_requirements_line": "cryptography>=2.5.3,<2.6.0",
+      "evidence": [
+        "VerifyEVP.verify_init added in cryptography 2.5.3 \u2192 v2.5.3",
+        "VerifyEVP.verify_update added in cryptography 2.5.3 \u2192 v2.5.3",
+        "VerifyEVP.verify_final added in cryptography 2.5.3 \u2192 v2.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "M2Crypto>=0.24.0,<0.25.0",
+    "cryptography>=2.5.3,<2.6.0"
+  ]
+}

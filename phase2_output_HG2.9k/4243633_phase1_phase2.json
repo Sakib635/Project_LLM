@@ -1,0 +1,95 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.8",
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.Struct introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": ">=2.6.1,<3.0.0",
+      "recommended_requirements_line": "pycrypto>=2.6.1,<3.0.0",
+      "evidence": [
+        "Crypto.Cipher.AES introduced in Python 2.6.1 \u2192 min Python 2.6.1",
+        "Crypto.Cipher.AES deprecated in Python 3.0.0 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pycrypto": {
+      "inferred_version_range": ">=2.6.1,<3.0.0",
+      "recommended_requirements_line": "pycrypto>=2.6.1,<3.0.0",
+      "evidence": [
+        "Crypto.Cipher.AES introduced in Python 2.6.1 \u2192 min Python 2.6.1",
+        "Crypto.Cipher.AES deprecated in Python 3.0.0 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "aes_unwrap_key": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "aes_unwrap_key introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "aes_unwrap_key_and_iv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "aes_unwrap_key_and_iv introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "aes_wrap_key": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "aes_wrap_key introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "aes_wrap_key_withpad": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "aes_wrap_key_withpad introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "test": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "test introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "struct>=3.5.0,<3.9.0",
+    "pycrypto>=2.6.1,<3.0.0",
+    "aes_unwrap_key>=3.5.0,<3.9.0",
+    "aes_unwrap_key_and_iv>=3.5.0,<3.9.0",
+    "aes_wrap_key>=3.5.0,<3.9.0",
+    "aes_wrap_key_withpad>=3.5.0,<3.9.0",
+    "test>=3.5.0,<3.9.0"
+  ]
+}

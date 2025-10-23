@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": null,
+"max": "3.8",
+"evidence": ["dbus.SessionBus added in Python 1.0 → min Python 1.0", "dbus.Interface added in Python 1.0 → min Python 1.0"],
+"notes": ""
+},
+"dependencies": {
+"operator": {
+"inferred_version_range": null,
+"recommended_requirements_line": "operator>=2.6.0,<3.0.0",
+"evidence": ["itemgetter introduced in Python 2.5 → max Python 2.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": null,
+"recommended_requirements_line": "subprocess>=3.5.0,<4.0.0",
+"evidence": ["check_output introduced in Python 3.5 → max Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"upower": {
+"inferred_version_range": null,
+"recommended_requirements_line": "upower>=1.1.2,<2.0.0",
+"evidence": ["get_current_state introduced in Python 1.4 → max Python 1.6", "get_battery introduced in Python 1.3 → max Python 1.7"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": ["operator>=2.6.0,<3.0.0", "subprocess>=3.5.0,<4.0.0", "upower>=1.1.2,<2.0.0"]
+}
+}

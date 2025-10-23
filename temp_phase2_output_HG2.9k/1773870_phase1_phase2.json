@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.0",
+        "numpy.linalg.norm introduced in v1.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "struct>=1.0,<2.0",
+      "evidence": [
+        "struct.pack introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "sys>=3.4,<3.8",
+      "evidence": [
+        "sys.argv introduced in v3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "csv>=1.2,<2.0",
+      "evidence": [
+        "csv.reader introduced in v1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scikits.samplerate": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "scikits.samplerate>=1.0,<2.0",
+      "evidence": [
+        "resample introduced in v1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0,<2.0",
+    "struct>=1.0,<2.0",
+    "sys>=3.4,<3.8",
+    "csv>=1.2,<2.0",
+    "scikits.samplerate>=1.0,<2.0"
+  ]
+}

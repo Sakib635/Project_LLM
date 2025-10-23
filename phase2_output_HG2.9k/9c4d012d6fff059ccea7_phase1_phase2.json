@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path introduced in Python 3.6",
+        "os.abspath introduced in Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "re.compile introduced in Python 3.7",
+        "re.match deprecated in Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StringIO.StringIO introduced in Python 3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pygame": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pygame.init introduced in Python 2.4",
+        "pygame.font.Font introduced in Python 3.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image introduced in Python 2.3",
+        "PIL.ImageDraw introduced in Python 2.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.6",
+    "re>=3.7",
+    "StringIO>=3.2",
+    "pygame>=2.4",
+    "PIL>=2.3"
+  ]
+}

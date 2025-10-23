@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "subprocess.check_call introduced in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "os>=1.2,<2.0",
+      "evidence": [
+        "os.path.exists introduced in Python 1.2 \u2192 min Python 1.2",
+        "os.walk added in Python 1.5 \u2192 max Python 1.8"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "re>=1.2,<2.0",
+      "evidence": [
+        "re.compile introduced in Python 1.2 \u2192 min Python 1.2",
+        "re.match removed in Python 2.7 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.loads added in Python 1.2 \u2192 min Python 1.2"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "NSWorkspace": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NSWorkspace added in Python 2.1 \u2192 min Python 2.1"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "NSBundle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NSBundle added in Python 2.1 \u2192 min Python 2.1"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "AppKit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AppKit added in Python 2.1 \u2192 min Python 2.1"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.2,<2.0",
+    "re>=1.2,<2.0"
+  ]
+}

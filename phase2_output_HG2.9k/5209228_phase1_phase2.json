@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": ">=2.7,<2.9",
+      "recommended_requirements_line": "bpy>=2.7,<2.9",
+      "evidence": [
+        "bpy.data.objects introduced in v2.7",
+        "bpy.data.objects.type depricated in v2.8"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.9,<3.0",
+      "recommended_requirements_line": "json>=2.9,<3.0",
+      "evidence": [
+        "json.dumps introduced in v2.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.5,<3.6",
+      "recommended_requirements_line": "math>=3.5,<3.6",
+      "evidence": [
+        "math.round introduced in v3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.4,<2.7",
+      "recommended_requirements_line": "os>=2.4,<2.7",
+      "evidence": [
+        "os.path introduced in v2.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": ">=3.6,<3.7",
+      "recommended_requirements_line": "string>=3.6,<3.7",
+      "evidence": [
+        "string.format introduced in v3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bpy>=2.7,<2.9",
+    "json>=2.9,<3.0",
+    "math>=3.5,<3.6",
+    "os>=2.4,<2.7",
+    "string>=3.6,<3.7"
+  ]
+}

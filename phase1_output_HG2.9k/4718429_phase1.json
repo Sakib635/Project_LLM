@@ -1,0 +1,30 @@
+{
+  "signal": [
+    "signal.SIGINT"
+  ],
+  "rose": [
+    "rose.EventLoopPolicy"
+  ],
+  "tulip": [
+    "tulip.events",
+    "tulip.protocols"
+  ],
+  "events": [
+    "events.set_event_loop_policy",
+    "events.get_event_loop",
+    "events.run_until_complete"
+  ],
+  "reactor": [
+    "reactor.start_serving",
+    "reactor.run_until_complete",
+    "reactor.add_signal_handler",
+    "reactor.stop"
+  ],
+  "EchoProtocol": [
+    "EchoProtocol",
+    "EchoProtocol.connection_made",
+    "EchoProtocol.data_received",
+    "EchoProtocol.eof_received",
+    "EchoProtocol.connection_lost"
+  ]
+}

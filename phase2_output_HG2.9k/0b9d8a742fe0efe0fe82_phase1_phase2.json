@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": "Unable to determine Python version range based on provided APIs."
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.23.1,<0.24",
+      "recommended_requirements_line": "sklearn>=0.23.1,<0.24",
+      "evidence": [
+        "sklearn.cluster.KMeans added in v0.23.1",
+        "sklearn.preprocessing.StandardScaler added in v0.23.1",
+        "sklearn.decomposition.PCA added in v0.23.1",
+        "sklearn.metrics.pairwise.cosine_similarity added in v0.23.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.1.5,<2",
+      "recommended_requirements_line": "pandas>=1.1.5,<2",
+      "evidence": [
+        "pandas.read_csv added in v1.1.5",
+        "pandas.DataFrame.to_numpy added in v1.1.5",
+        "pandas.Series.str.get_dummies added in v1.1.5",
+        "pandas.DataFrame.fillna added in v1.1.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sklearn>=0.23.1,<0.24",
+    "pandas>=1.1.5,<2"
+  ]
+}

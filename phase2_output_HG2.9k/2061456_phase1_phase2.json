@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<3.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.5,<3.0.0",
+      "recommended_requirements_line": "numpy>=1.19.5,<3.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.19.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.utils": {
+      "inferred_version_range": ">=0.24.0,<3.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0,<3.0.0",
+      "evidence": [
+        "sklearn.utils.gen_even_slices introduced in v0.24.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.base": {
+      "inferred_version_range": ">=0.20.0,<3.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.20.0,<3.0.0",
+      "evidence": [
+        "sklearn.base.BaseEstimator introduced in v0.20.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.preprocessing": {
+      "inferred_version_range": ">=0.24.0,<3.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0,<3.0.0",
+      "evidence": [
+        "sklearn.preprocessing.LabelBinarizer introduced in v0.24.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<3.0.0",
+    "numpy>=1.19.5,<3.0.0",
+    "scikit-learn>=0.24.0,<3.0.0"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "IPython": {
+      "inferred_version_range": ">=6.0.0,<7.0.0",
+      "recommended_requirements_line": "ipython==6.0.0",
+      "evidence": [
+        "IPython.nbformat.current introduced in IPython v6.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "python==2.7.0",
+      "evidence": [
+        "sys.argv introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "io==3.0.0",
+      "evidence": [
+        "io.open introduced in Python 3.0 \u2192 min Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "current": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "current.read introduced in current vM.N.P",
+        "current.writes introduced in current vM.N.P"
+      ],
+      "confidence": 0.5,
+      "notes": "Unable to determine the exact version range for current"
+    }
+  },
+  "requirements.txt": [
+    "ipython==6.0.0",
+    "python==2.7.0",
+    "io==3.0.0"
+  ]
+}

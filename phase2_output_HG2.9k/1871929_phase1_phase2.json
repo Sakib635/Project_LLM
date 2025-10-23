@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "math.sqrt added in Python 3.6 \u2192 min Python 3.6",
+      "random.uniform added in Python 3.6 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=7.0.0,<9.0.0",
+      "recommended_requirements_line": "Pillow>=7.0.0,<9.0.0",
+      "evidence": [
+        "PIL.Image introduced in PIL 5.1.0, depricated in PIL 8.1.0 \u2192 v7.0.0, removed in PIL 9.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argparse.ArgumentParser introduced in argparse 1.2 \u2192 v1.2.0",
+        "argparse.add_argument introduced in argparse 1.4 \u2192 v1.4.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.makedirs introduced in os 3.4 \u2192 v3.4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=7.0.0,<9.0.0"
+  ]
+}

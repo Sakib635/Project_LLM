@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "freeling": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "freeling.util_init_locale",
+        "freeling.maco_options",
+        "freeling.lang_ident",
+        "freeling.maco",
+        "freeling.tokenizer",
+        "freeling.splitter",
+        "freeling.hmm_tagger",
+        "freeling.senses",
+        "freeling.ukb"
+      ],
+      "confidence": 0.7,
+      "notes": "API usage may indicate the presence of Freeling 2.x or newer."
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "json.load",
+        "json.dump"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

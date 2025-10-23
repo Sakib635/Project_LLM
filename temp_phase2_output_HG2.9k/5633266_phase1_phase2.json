@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.linalg.norm introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scikit-learn": {
+      "inferred_version_range": ">=0.24.0,<0.25.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0,<0.25.0",
+      "evidence": [
+        "sklearn.datasets.fetch_20newsgroups introduced in v0.24.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "externals.joblib": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "joblib>=1.0.0,<2.0.0",
+      "evidence": [
+        "sklearn.externals.joblib introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "scikit-learn>=0.24.0,<0.25.0",
+    "joblib>=1.0.0,<2.0.0"
+  ]
+}

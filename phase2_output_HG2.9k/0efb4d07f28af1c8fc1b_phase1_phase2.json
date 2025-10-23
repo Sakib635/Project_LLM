@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["datetime.timezone added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"markdown2pdf": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["markdown2pdf.markdown2pdf introduced in v0.9.1"],
+"confidence": 0.5,
+"notes": ""
+},
+"requests": {
+"inferred_version_range": ">=2.18,<3.0",
+"recommended_requirements_line": "requests>=2.18.4,<3.0.0",
+"evidence": ["requests.get introduced in v2.10", "requests.content introduced in v2.18"],
+"confidence": 0.9,
+"notes": ""
+},
+"tempfile": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "tempfile>=3.5,<4.0",
+"evidence": ["tempfile.mkdtemp introduced in v3.2", "tempfile.rmdir introduced in v3.5"],
+"confidence": 1,
+"notes": ""
+},
+"xhtml2pdf": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["xhtml2pdf.default introduced in v0.7.0"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"markdown2pdf>=0.9.1",
+"requests>=2.18.4,<3.0.0",
+"tempfile>=3.5,<4.0",
+"xhtml2pdf>=0.7.0"
+]
+},
+"requirements.txt": [
+"markdown2pdf>=0.9.1",
+"requests>=2.18.4,<3.0.0",
+"tempfile>=3.5,<4.0",
+"xhtml2pdf>=0.7.0"
+]
+}

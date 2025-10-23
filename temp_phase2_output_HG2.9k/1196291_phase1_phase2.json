@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.0,<3.2",
+      "recommended_requirements_line": "matplotlib>=3.0,<3.2",
+      "evidence": [
+        "matplotlib.pyplot.scatter introduced in v3.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7,<1.14",
+      "recommended_requirements_line": "numpy>=1.7,<1.14",
+      "evidence": [
+        "numpy.array introduced in v1.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

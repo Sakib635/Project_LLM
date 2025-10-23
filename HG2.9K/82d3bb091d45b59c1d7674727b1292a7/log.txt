@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 147, in <module>
+    Main(sys.argv)
+  File "snippet.py", line 135, in Main
+    FLAGS.host, FLAGS.admin_port, FLAGS.admin_user, FLAGS.admin_password)
+  File "snippet.py", line 63, in ConnectToAdminServer
+    s.connect((host, port))
+  File "/usr/local/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 111] Connection refused

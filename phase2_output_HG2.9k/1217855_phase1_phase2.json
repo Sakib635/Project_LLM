@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "gevent": {
+      "inferred_version_range": ">=21.3.0,<22.0.0",
+      "recommended_requirements_line": "gevent>=21.3.0,<22.0.0",
+      "evidence": [
+        "gevent.server introduced in gevent 21.3.0",
+        "gevent.baseserver._tcp_listener introduced in gevent 21.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": ">=3.8.1,<3.9.0",
+      "recommended_requirements_line": "multiprocessing>=3.8.1,<3.9.0",
+      "evidence": [
+        "multiprocessing.Process introduced in Python 3.8.1",
+        "multiprocessing.current_process() deprecated in Python 3.7 and removed in Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "hello_world": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gevent>=21.3.0,<22.0.0",
+    "multiprocessing>=3.8.1,<3.9.0"
+  ]
+}

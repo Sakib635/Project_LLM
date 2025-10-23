@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gevent.monkey": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "patch_all introduced in gevent v1.0.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "urllib.request": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "urllib>=2.6.0,<3.0.0",
+      "evidence": [
+        "urlopen introduced in urllib v2.6.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gevent>=1.0.0,<2.0.0",
+    "urllib>=2.6.0,<3.0.0"
+  ]
+}

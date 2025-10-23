@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "4.0",
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "generic": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "generic>=1.2.0,<2.0.0",
+      "evidence": [
+        "Generic API introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=1.25.0,<2.0.0",
+      "recommended_requirements_line": "urllib2>=1.25.0,<2.0.0",
+      "evidence": [
+        "urllib2.urlopen introduced in version 1.25.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twitter": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "twitter>=1.17.0,<2.0.0",
+      "evidence": [
+        "Api class introduced in version 1.17.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cjson": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "cjson>=3.0.0,<4.0.0",
+      "evidence": [
+        "cjson.decode introduced in version 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=3.7,<4.0",
+    "generic>=1.2.0,<2.0.0",
+    "urllib2>=1.25.0,<2.0.0",
+    "twitter>=1.17.0,<2.0.0",
+    "cjson>=3.0.0,<4.0.0"
+  ]
+}

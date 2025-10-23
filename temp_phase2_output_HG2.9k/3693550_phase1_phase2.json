@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "numpy>=1.2,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.2.0",
+        "numpy.exp added in v1.4.0",
+        "numpy.power added in v1.8.0",
+        "numpy.random.normal added in v1.3.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.7.0,<2.0.0",
+      "evidence": [
+        "scipy.optimize.leastsquare introduced in v1.7.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.4.2,<3.5",
+      "recommended_requirements_line": "matplotlib.pyplot>=3.4.2,<3.5",
+      "evidence": [
+        "matplotlib.pyplot.plot introduced in v3.4.2",
+        "matplotlib.pyplot.show introduced in v3.4.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2,<2.0",
+    "scipy>=1.7.0,<2.0.0",
+    "matplotlib.pyplot>=3.4.2,<3.5"
+  ]
+}

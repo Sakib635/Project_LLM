@@ -1,0 +1,34 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["tensorflow.reduce_sum added in Python 3.5 → min Python 3.5", "numpy.arange added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "tensorflow>=2.0.0,<3.0.0",
+      "evidence": ["tensorflow.reduce_sum added in TensorFlow 2.0 → min TensorFlow 2.0", "tensorflow.sqrt added in TensorFlow 2.0 → min TensorFlow 2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "tf": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["tf.variable_scope added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.expand_dims added in TensorFlow 1.14 → max TensorFlow 1.14", "tf.transpose added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.gather_nd added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.convert_to_tensor added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.maximum added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.divide added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.add_to_collection added in TensorFlow 2.0 → min TensorFlow 2.0", "tf.GraphKeys.LOSSES added in TensorFlow 2.0 → min TensorFlow 2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2.0",
+      "recommended_requirements_line": "numpy>=1.16,<2.0",
+      "evidence": ["np.hstack added in NumPy 1.16 → min NumPy 1.16", "np.arange added in NumPy 1.16 → min NumPy 1.16"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["tensorflow>=2.0.0,<3.0.0", "numpy>=1.16,<2.0"]
+}
+```

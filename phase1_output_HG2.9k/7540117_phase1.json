@@ -1,0 +1,36 @@
+{
+  "pyramid.security": [
+    "ALLOW_ALL",
+    "DENY_ALL"
+  ],
+  "sqlalchemy": [
+    "Column",
+    "Integer",
+    "Text",
+    "Unicode",
+    "ext.declarative",
+    "orm",
+    "synonym"
+  ],
+  "zope.sqlalchemy": [
+    "ZopeTransactionExtension"
+  ],
+  "cryptacular": [
+    "BCRYPTPasswordManager"
+  ],
+  "globals": [
+    "ADMINS"
+  ],
+  "DBSession": [
+    "scoped_session",
+    "sessionmaker",
+    "extension=ZopeTransactionExtension"
+  ],
+  "declarative_base": [],
+  "UserFactory": [],
+  "User": [
+    "__acl__",
+    "get_by_username",
+    "check_password"
+  ]
+}

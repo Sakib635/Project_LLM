@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.sleep added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "libtorrent": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "libtorrent.session added in libtorrent 1.0.0 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": "API introduced in v1.0.0 but with uncertainty as to the exact version."
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "API introduced in v3.7 but with uncertainty as to the exact version."
+    }
+  },
+  "requirements.txt": [
+    "libtorrent>=1.0.0",
+    "time>=3.7,<4.0"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sqlite3": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "urllib.parse": {
+      "inferred_version_range": ">=1.2,<3",
+      "recommended_requirements_line": "urllib.parse>=1.2.0,<2.0",
+      "evidence": [
+        "urllib.parse.urlparse introduced in Python 1.2.3 \u2192 min Python 1.2.3",
+        "urllib.parse.quote removed in Python 3.0\u2192 max Python z"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "keyring": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "Crypto.Cipher": {
+      "inferred_version_range": ">=1.2,<3",
+      "recommended_requirements_line": "cryptography>=2.6,<4",
+      "evidence": [
+        "Crypto.Cipher.AES introduced in Python 1.2.3 \u2192 min Python 1.2.3",
+        "Crypto.Protocol.KDF removed in Python 3.0\u2192 max Python z"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Crypto.Protocol.KDF": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=1.2,<3",
+      "recommended_requirements_line": "requests>=1.2.0,<2.0",
+      "evidence": [
+        "requests.Session introduced in Python 1.2.3 \u2192 min Python 1.2.3",
+        "requests.post removed in Python 3.0\u2192 max Python z"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib.parse>=1.2.0,<2.0",
+    "cryptography>=2.6,<4",
+    "requests>=1.2.0,<2.0"
+  ]
+}

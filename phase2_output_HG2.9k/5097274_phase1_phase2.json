@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pelican": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "pelican>=4.0.0,<5.0.0",
+      "evidence": [
+        "pelican.signals introduced in v4.0.0",
+        "pelican.readers introduced in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pelican.signals": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "pelican>=4.0.0,<5.0.0",
+      "evidence": [
+        "pelican.signals.get_generators introduced in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pelican.readers": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "pelican>=4.0.0,<5.0.0",
+      "evidence": [
+        "pelican.readers.NewReader introduced in v4.0.0",
+        "pelican.readers.EXTENSIONS introduced in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pelican>=4.0.0,<5.0.0",
+    "pelican.signals>=4.0.0,<5.0.0",
+    "pelican.readers>=4.0.0,<5.0.0"
+  ]
+}

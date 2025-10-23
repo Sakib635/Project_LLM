@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4","time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"mininet": {
+"inferred_version_range": ">=2.0.0,<2.1",
+"recommended_requirements_line": "mininet>=2.0.0,<2.1",
+"evidence": ["mininet.net.Mininet","mininet.node.Controller","mininet.node.RemoteController","mininet.cli.CLI","mininet.link.Intf","mininet.log.setLogLevel","mininet.log.info"],
+"confidence": 1,
+"notes": ""
+},
+"os": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["os.popen"],
+"confidence": 0.5,
+"notes": "Cannot infer version range for os package."
+}
+},
+"requirements.txt": [
+"mininet>=2.0.0,<2.1",
+]
+}

@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.loadtxt introduced in Python 3.5 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.17,<2.0",
+      "recommended_requirements_line": "numpy>=1.17,<2.0",
+      "evidence": [
+        "numpy.loadtxt introduced in NumPy v1.16 \u2192 min NumPy v1.17",
+        "numpy.arange introduced in NumPy v1.14 \u2192 max NumPy v2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.0,<3.5",
+      "recommended_requirements_line": "matplotlib>=3.0,<3.5",
+      "evidence": [
+        "matplotlib.pyplot.figure introduced in Matplotlib v3.0 \u2192 min Matplotlib v3.0",
+        "matplotlib.pyplot.savefig introduced in Matplotlib v3.2 \u2192 max Matplotlib v3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "mpl_toolkits.basemap": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "mpl_toolkits.basemap>=1.5,<2.0",
+      "evidence": [
+        "Basemap introduced in mpl_toolkits v1.5 \u2192 min mpl_toolkits v1.5",
+        "Basemap removed in mpl_toolkits v2.0 \u2192 max mpl_toolkits v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.17,<2.0",
+    "matplotlib>=3.0,<3.5",
+    "mpl_toolkits.basemap>=1.5,<2.0"
+  ]
+}

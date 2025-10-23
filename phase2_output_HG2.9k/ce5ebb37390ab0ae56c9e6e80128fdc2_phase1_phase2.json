@@ -1,0 +1,46 @@
+```json
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+    "notes": ""
+  },
+  "dependencies": {
+    "http.server": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "http.server>=1.0,<2.0",
+      "evidence": ["BaseHTTPRequestHandler introduced in Python 3.3"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "json>=1.4,<2.0",
+      "evidence": ["dumps() introduced in Python 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "os>=1.4,<2.0",
+      "evidence": ["path introduced in Python 3.4"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "sys>=1.4,<2.0",
+      "evidence": ["__name__ introduced in Python 3.4"],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "http.server>=1.0,<2.0",
+    "json>=1.4,<2.0",
+    "os>=1.4,<2.0",
+    "sys>=1.4,<2.0"
+  ]
+}
+```

@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "cassandra.cluster added in Python 3.5 \u2192 min Python 3.5",
+      "cassandra.policies introduced in Python 3.6 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cassandra-driver": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cassandra.cluster introduced in Python 3.5 \u2192 v3.x"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "cassandra-query": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cassandra.query introduced in Python 3.6 \u2192 v2.x"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "cassandra-policies": {
+      "inferred_version_range": ">=3.6,<3.9",
+      "recommended_requirements_line": "cassandra-policies>=3.6,<3.9",
+      "evidence": [
+        "cassandra.policies introduced in Python 3.6 \u2192 v3.x",
+        "cassandra.policies deprecated in Python 3.8 \u2192 v4.x"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cassandra-driver==3.15.0",
+    "cassandra-query==2.4.0",
+    "cassandra-policies>=3.6,<3.9"
+  ]
+}

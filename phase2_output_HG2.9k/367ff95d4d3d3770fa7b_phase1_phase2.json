@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7",
+      "time.clock removed in Python 3.10 \u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Django introduced API django.db.models.signals.pre_init in Django 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "collections.defaultdict introduced in Python 3.7 \u2192 min Python 3.7",
+        "collections.OrderedDict deprecated in Python 3.9 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0,<4.0",
+    "collections>=1.7,<5.0"
+  ]
+}

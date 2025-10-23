@@ -1,0 +1,40 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["weakref.ref added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.16.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+"evidence": ["numpy.random.randn introduced in numpy v1.16.0 → NumPy 1.16.0", "numpy.sum introduced in numpy v1.16.0 → NumPy 1.16.0", "numpy.mean introduced in numpy v1.16.0 → NumPy 1.16.0", "numpy.maximum introduced in numpy v1.16.0 → NumPy 1.16.0", "numpy.dot introduced in numpy v1.16.0 → NumPy 1.16.0"],
+"confidence": 1,
+"notes": ""
+},
+"matplotlib": {
+"inferred_version_range": ">=3.0.0,<4.0.0",
+"recommended_requirements_line": "matplotlib>=3.0.0,<4.0.0",
+"evidence": ["matplotlib.pyplot introduced in matplotlib v3.0.0 → Matplotlib 3.0.0"],
+"confidence": 1,
+"notes": ""
+},
+"sklearn.datasets": {
+"inferred_version_range": null,
+"recommended_requirements_line": "null",
+"evidence": ["sklearn.datasets.fetch_mldata introduced in scikit-learn v0.20.0 → Scikit-learn 0.20.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.16.0,<2.0.0",
+"matplotlib>=3.0.0,<4.0.0"
+]
+},
+"requirements.txt": [
+"numpy>=1.16.0,<2.0.0",
+"matplotlib>=3.0.0,<4.0.0"
+]
+}

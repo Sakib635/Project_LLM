@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.5",
+"max": "3.9",
+"evidence": ["defaultdict added in Python 3.5 → min Python 3.5", "collections.abc.Mapping introduced in Python 3.7 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"ete3": {
+"inferred_version_range": ">=2.0,<4.0",
+"recommended_requirements_line": "ete3>=2.0,<4.0",
+"evidence": ["ete3.PhyloTree introduced in v1.0.0", "ete3.TreeStyle introduced in v1.0.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"collections": {
+"inferred_version_range": ">=2.0,<4.0",
+"recommended_requirements_line": "collections>=2.0,<4.0",
+"evidence": ["collections.defaultdict introduced in v1.0"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": ["ete3>=2.0,<4.0", "collections>=2.0,<4.0"]
+}
+}

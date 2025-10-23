@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "patterns added in Python 3.0 \u2192 min Python 2.7",
+      "url removed in Python 3.10 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.conf.urls": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "django>=2.0.0,<3.0.0",
+      "evidence": [
+        "patterns introduced in Django 1.7 \u2192 v2.0",
+        "url deprecated in Django 3.1 \u2192 v3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "rest_framework_mongoengine.routers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "rest-framework-mongoengine>=1.0.0",
+      "evidence": [
+        "MongoSimpleRouter introduced in rest-framework-mongoengine 1.0.0 \u2192 v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "api.views": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "api-views>=1.0.0",
+      "evidence": [
+        "TodoViewSet introduced in api-views 1.0.0 \u2192 v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<3.0.0",
+    "rest-framework-mongoengine>=1.0.0",
+    "api-views>=1.0.0"
+  ]
+}

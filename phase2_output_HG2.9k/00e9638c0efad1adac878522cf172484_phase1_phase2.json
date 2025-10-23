@@ -1,0 +1,94 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "time.clock removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.3.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.3.0,<3.0.0",
+      "evidence": [
+        "keras.layers.Dense introduced in v2.1.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "tensorflow>=2.4.0,<3.0.0",
+      "evidence": [
+        "tensorflow.optimizers.Adam introduced in v2.4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.5,<3.0.0",
+      "recommended_requirements_line": "numpy>=1.19.5,<3.0.0",
+      "evidence": [
+        "numpy.random.randn introduced in v1.19.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "gym": {
+      "inferred_version_range": ">=0.23.0,<3.0.0",
+      "recommended_requirements_line": "gym>=0.23.0,<3.0.0",
+      "evidence": [
+        "gym.make introduced in v0.17.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "collections>=2.4.0,<3.0.0",
+      "evidence": [
+        "collections.deque introduced in v2.4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=3.1.0,<3.0.0",
+      "recommended_requirements_line": "random>=3.1.0,<3.0.0",
+      "evidence": [
+        "random.randn introduced in v3.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "math>=2.7.0,<3.0.0",
+      "evidence": [
+        "math.sqrt introduced in v2.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "threading>=2.5.0,<3.0.0",
+      "evidence": [
+        "threading.Thread introduced in v2.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.3.0,<3.0.0",
+    "tensorflow>=2.4.0,<3.0.0",
+    "numpy>=1.19.5,<3.0.0",
+    "gym>=0.23.0,<3.0.0",
+    "collections>=2.4.0,<3.0.0",
+    "random>=3.1.0,<3.0.0",
+    "math>=2.7.0,<3.0.0",
+    "threading>=2.5.0,<3.0.0"
+  ]
+}

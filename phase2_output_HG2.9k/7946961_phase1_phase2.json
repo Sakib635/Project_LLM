@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "argparse>=1.2.0,<2.0.0",
+      "evidence": [
+        "argparse.ArgumentParser introduced in argparse 1.2.0 \u2192 argparse 2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "capstone": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "capstone>=3.0.0,<4.0.0",
+      "evidence": [
+        "capstone.Cs introduced in capstone 3.0.0 \u2192 capstone 4.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "struct>=1.0.0,<2.0.0",
+      "evidence": [
+        "struct.unpack_from introduced in struct 1.0.0 \u2192 struct 2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2.0,<2.0.0",
+    "capstone>=3.0.0,<4.0.0",
+    "struct>=1.0.0,<2.0.0"
+  ]
+}

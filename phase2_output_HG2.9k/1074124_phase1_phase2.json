@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.0\u2192 max Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.defer introduced in twisted 15.2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "txredisapi": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "txredisapi>=1.2.0,<2.0.0",
+      "evidence": [
+        "txredisapi.lazyRedisConnectionPool introduced in txredisapi 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "twisted>=15.2.0",
+    "txredisapi>=1.2.0"
+  ]
+}

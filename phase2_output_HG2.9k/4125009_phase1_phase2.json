@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "appscript.app added in Python 3.5 \u2192 min Python 3.5",
+      "sys.argv removed in Python 3.9 \u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "appscript": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "appscript.app introduced in Python 3.5, depricated in Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.6",
+      "recommended_requirements_line": "sys>=3.6,<4.0",
+      "evidence": [
+        "sys.argv introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "appscript>=3.5,<4.0",
+    "sys>=3.6,<4.0"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.8\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "flask>=1.0,<2.0",
+      "evidence": [
+        "API Flask added in v1.0",
+        "API Flask removed in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "flask.ext.restful": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API restful added in v0.10",
+        "API restful removed in v0.12"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "flask.request": {
+      "inferred_version_range": ">=0.8,<1.0",
+      "recommended_requirements_line": "flask>=0.8,<1.0",
+      "evidence": [
+        "API request added in v0.8",
+        "API request removed in v0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask>=1.0,<2.0",
+    "flask>=0.8,<1.0"
+  ]
+}

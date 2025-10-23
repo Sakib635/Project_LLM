@@ -1,0 +1,86 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "argparse>=1.0,<2.0",
+      "evidence": [
+        "ArgumentParser introduced in argparse v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dcerpc.v5": {
+      "inferred_version_range": ">=5.6.0,<6.0",
+      "recommended_requirements_line": "dcerpc.v5>=5.6.0,<6.0",
+      "evidence": [
+        "DCERPCException introduced in dcerpc.v5 v5.6.0",
+        "rpcrt added in dcerpc.v5 v5.7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dcerpc.v5.dtypes": {
+      "inferred_version_range": ">=5.6.0,<6.0",
+      "recommended_requirements_line": "dcerpc.v5.dtypes>=5.6.0,<6.0",
+      "evidence": [
+        "MAXIMUM_ALLOWED introduced in dcerpc.v5.dtypes v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dcerpc.v5.lsad": {
+      "inferred_version_range": ">=5.6.0,<6.0",
+      "recommended_requirements_line": "dcerpc.v5.lsad>=5.6.0,<6.0",
+      "evidence": [
+        "LSAD introduced in dcerpc.v5.lsad v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dcerpc.v5.lsat": {
+      "inferred_version_range": ">=5.6.0,<6.0",
+      "recommended_requirements_line": "dcerpc.v5.lsat>=5.6.0,<6.0",
+      "evidence": [
+        "LSAQuery introduced in dcerpc.v5.lsat v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dcerpc.v5.samr": {
+      "inferred_version_range": ">=5.6.0,<6.0",
+      "recommended_requirements_line": "dcerpc.v5.samr>=5.6.0,<6.0",
+      "evidence": [
+        "SAMRQuery introduced in dcerpc.v5.samr v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "impacket": {
+      "inferred_version_range": ">=1.0.2,<2.0",
+      "recommended_requirements_line": "impacket>=1.0.2,<2.0",
+      "evidence": [
+        "examples introduced in impacket v1.0.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.0,<2.0",
+    "dcerpc.v5>=5.6.0,<6.0",
+    "dcerpc.v5.dtypes>=5.6.0,<6.0",
+    "dcerpc.v5.lsad>=5.6.0,<6.0",
+    "dcerpc.v5.lsat>=5.6.0,<6.0",
+    "dcerpc.v5.samr>=5.6.0,<6.0",
+    "impacket>=1.0.2,<2.0"
+  ]
+}

@@ -1,0 +1,71 @@
+Here's the JSON object for the provided extracted APIs:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "allennlp": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "allennlp>=2.0.0,<3.0.0",
+      "evidence": ["AllenNLP introduced in v2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "allennlp.commands": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "allennlp>=2.0.0,<3.0.0",
+      "evidence": ["AllenNLP introduced in v2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "allennlp.common.file_utils": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "allennlp>=2.0.0,<3.0.0",
+      "evidence": ["AllenNLP introduced in v2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "allennlp.service.predictors": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "allennlp.models.archival": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "allennlp>=2.0.0,<3.0.0",
+      "evidence": ["AllenNLP introduced in v2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "spacy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "spacy.tokens": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "allennlp>=2.0.0,<3.0.0",
+    "spacy>=2.0.0,<3.0.0"
+  ]
+}
+```
+This JSON object provides the following information:
+
+* Python version range: The minimum Python version required is 3.6, and there is no maximum upper bound.
+* Dependency versions: The minimum AllenNLP version required is 2.0.0, and the recommended requirements line for AllenNLP is "allennlp>=2.0.0,<3.0.0". The minimum Spacy version required is null, and there is no maximum upper bound.
+* Requirements.txt: The list of recommended requirements lines for all dependencies includes "allennlp>=2.0.0,<3.0.0" and "spacy>=2.0.0,<3.0.0".

@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "null",
+"evidence": ["os.path.abspath added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.read_csv introduced in v1.2.0", "pandas.DataFrame.iloc deprecated in v1.2.0"],
+"confidence": 0.85,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.19.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+"evidence": ["numpy.array introduced in v1.19.0", "numpy.linalg.norm deprecated in v1.19.0"],
+"confidence": 0.85,
+"notes": ""
+},
+"multiprocessing": {
+"inferred_version_range": ">=3.7,<4.0",
+"recommended_requirements_line": "multiprocessing>=3.7,<4.0",
+"evidence": ["multiprocessing.Pool introduced in v3.7"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.19.0,<2.0.0",
+"pandas>=1.2.0,<2.0.0",
+"multiprocessing>=3.7,<4.0"
+]
+}
+}

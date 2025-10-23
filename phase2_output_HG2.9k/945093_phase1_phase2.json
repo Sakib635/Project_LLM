@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "django>=1.2,<2.0",
+      "evidence": [
+        "DjangoTestSuiteRunner introduced in v1.2",
+        "connections removed in v2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.db.connection.settings_dict": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "django.db.connection.settings_dict>=1.2,<2.0",
+      "evidence": [
+        "TEST_MIRROR introduced in v1.2",
+        "NAME removed in v2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.db.creation": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "django.db.creation>=1.2,<2.0",
+      "evidence": [
+        "create_test_db introduced in v1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2,<2.0",
+    "django.db.connection.settings_dict>=1.2,<2.0",
+    "django.db.creation>=1.2,<2.0"
+  ]
+}

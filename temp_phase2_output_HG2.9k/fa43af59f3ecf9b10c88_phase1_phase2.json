@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4","time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "numpy>=1.2,<2.0",
+"evidence": ["linspace introduced in v1.2"],
+"confidence": 0.95,
+"notes": ""
+},
+"matplotlib": {
+"inferred_version_range": ">=3.1,<4.0",
+"recommended_requirements_line": "matplotlib>=3.1,<4.0",
+"evidence": ["subplots introduced in v3.1","axes.Axes.axis introduced in v3.1","set_title introduced in v3.1","lines.Line2D.set_xdata introduced in v3.1","lines.Line2D.set_ydata introduced in v3.1"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": []
+}
+}

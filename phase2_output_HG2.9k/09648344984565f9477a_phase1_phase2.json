@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "numpy.ascontiguousarray introduced in v1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.sparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.sparse.issparse introduced in v1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.23.0,<0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.23.0,<0.24.0",
+      "evidence": [
+        "sklearn.base.BaseEstimator introduced in v0.23.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0.0,<2.0.0",
+    "scikit-learn>=0.23.0,<0.24.0"
+  ]
+}

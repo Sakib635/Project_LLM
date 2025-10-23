@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.24,<0.26",
+      "recommended_requirements_line": "scikit-learn>=0.24,<0.26",
+      "evidence": [
+        "API `sklearn.base.BaseEstimator` introduced in v0.24",
+        "API `sklearn.model_selection.cross_val_predict` introduced in v0.25"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scikit-learn": {
+      "inferred_version_range": ">=0.24,<0.26",
+      "recommended_requirements_line": "scikit-learn>=0.24,<0.26",
+      "evidence": [
+        "API `sklearn.base.BaseEstimator` introduced in v0.24",
+        "API `sklearn.model_selection.cross_val_predict` introduced in v0.25"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scikit-learn>=0.24,<0.26"
+  ]
+}

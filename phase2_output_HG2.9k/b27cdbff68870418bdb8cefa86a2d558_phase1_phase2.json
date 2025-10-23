@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "torch.nn.Module added in Python 3.7 \u2192 min Python 3.7",
+      "torchvision.datasets.MNIST added in Python 3.8 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=1.7.0",
+      "evidence": [
+        "torch.nn.Module introduced in v1.7.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "torchvision": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=0.8.0",
+      "evidence": [
+        "torchvision.datasets.MNIST introduced in v0.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "torch.nn.functional": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": ">=1.7.0,<2.0.0",
+      "evidence": [
+        "torch.nn.functional.relu introduced in v1.7.0",
+        "torch.nn.functional.cross_entropy introduced in v1.7.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "torch.optim": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": ">=1.7.0,<2.0.0",
+      "evidence": [
+        "torch.optim.SGD introduced in v1.7.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.7.0",
+    "torchvision>=0.8.0",
+    "torch.nn.functional>=1.7.0,<2.0.0",
+    "torch.optim>=1.7.0,<2.0.0"
+  ]
+}

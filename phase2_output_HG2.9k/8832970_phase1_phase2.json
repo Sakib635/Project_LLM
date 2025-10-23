@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "scene.Scene added in Python 3.4 \u2192 min Python 3.4",
+      "scene.size removed in Python 3.7 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image added in PIL 1.0.0 \u2192 min PIL 1.0.0",
+        "PIL.ImageDraw added in PIL 1.0.0 \u2192 min PIL 1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "randint>=1.2.0,<2.0.0",
+      "evidence": [
+        "randint added in random 1.2.0 \u2192 min randint 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PIL>=1.0.0,<2.0.0",
+    "randint>=1.2.0,<2.0.0"
+  ]
+}

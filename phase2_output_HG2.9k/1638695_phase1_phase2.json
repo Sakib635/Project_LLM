@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "urlparse": {
+      "inferred_version_range": "<3.10",
+      "recommended_requirements_line": "urllib3>=1.26.5,<1.27",
+      "evidence": [
+        "API urlsplit introduced in Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "storages.backends.s3boto": {
+      "inferred_version_range": "<4",
+      "recommended_requirements_line": "boto3>=1.17.29,<2",
+      "evidence": [
+        "API S3BotoStorage introduced in Python 3.8"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "staticfiles.storage": {
+      "inferred_version_range": "<4",
+      "recommended_requirements_line": "django-cached-fields>=1.2.0,<2",
+      "evidence": [
+        "API CachedFilesMixin introduced in Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "s3boto": {
+      "inferred_version_range": "<4",
+      "recommended_requirements_line": "boto3>=1.17.29,<2",
+      "evidence": [
+        "API S3HashedFilesStorage introduced in Python 3.8"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements_txt": [
+    "urllib3>=1.26.5,<1.27",
+    "boto3>=1.17.29,<2",
+    "django-cached-fields>=1.2.0,<2"
+  ]
+}

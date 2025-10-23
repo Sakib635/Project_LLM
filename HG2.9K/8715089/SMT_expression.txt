@@ -1,0 +1,4 @@
+(declare-fun pycryptodome () String)
+(declare-fun keyring () String)
+(assert (and (or (= keyring "21.8.0")) (or (= pycryptodome "3.9.9"))))
+(check-sat)

@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "APIClient": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Unable to determine the version range for this package."
+    },
+    "requests": {
+      "inferred_version_range": "<3.5",
+      "recommended_requirements_line": "requests>=2.4.1,<3.5",
+      "evidence": [
+        "urllib was removed in requests v2.0 \u2192 min version 2.4.1"
+      ],
+      "confidence": 0.9
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.20.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=0.20.0,<2.0.0",
+      "evidence": [
+        "DataFrame introduced in pandas v0.15 \u2192 min version 0.15",
+        "to_numpy and ix methods were deprecated in pandas v1.2.0"
+      ],
+      "confidence": 0.95
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<2.0.0",
+      "evidence": [
+        "array was introduced in numpy v1.4 \u2192 min version 1.4",
+        "linalg module added in numpy v1.8 \u2192 min version 1.8"
+      ],
+      "confidence": 0.98
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.4.1,<3.5",
+    "pandas>=0.20.0,<2.0.0",
+    "numpy>=1.7.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"libmproxy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["libmproxy.controller.Master"],
+"confidence": 0.8,
+"notes": "No version range information available for libmproxy"
+},
+"pysnap": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pysnap>=1.2.0,<2.0.0",
+"evidence": ["pysnap.decrypt", "pysnap.is_video", "pysnap.is_image"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pysnap>=1.2.0,<2.0.0"
+]
+}
+}

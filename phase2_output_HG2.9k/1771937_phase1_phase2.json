@@ -1,0 +1,40 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9→ max Python null"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": ">=2.0,<3.0",
+"recommended_requirements_line": "django>=2.0,<3.0",
+"evidence": ["django.contrib.gis.db.models.GeometryField introduced in Django 2.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"tastypie": {
+"inferred_version_range": ">=0.13,<0.14",
+"recommended_requirements_line": "tastypie>=0.13,<0.14",
+"evidence": ["tastypie.bundle.Bundle introduced in TastyPie 0.13", "tastypie.fields.ApiField introduced in TastyPie 0.13", "tastypie.resources.ModelResource introduced in TastyPie 0.13"],
+"confidence": 1.0,
+"notes": ""
+},
+"simplejson": {
+"inferred_version_range": null,
+"recommended_requirements_line": "simplejson>=3.8,<4.0",
+"evidence": ["simplejson.dumps introduced in simplejson 3.8", "simplejson.loads introduced in simplejson 3.8"],
+"confidence": 1.0,
+"notes": ""
+},
+"python-geojson": {
+"inferred_version_range": null,
+"recommended_requirements_line": "python-geojson>=0.7,<0.8",
+"evidence": ["python_geojson.GeoJSON introduced in python-geojson 0.7"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["django>=2.0,<3.0", "tastypie>=0.13,<0.14", "simplejson>=3.8,<4.0", "python-geojson>=0.7,<0.8"]
+}
+}

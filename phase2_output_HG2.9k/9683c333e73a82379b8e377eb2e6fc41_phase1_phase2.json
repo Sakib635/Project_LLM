@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence provided."
+    },
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence provided."
+    },
+    "Foundation": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "foundation>=2.1,<3.9",
+      "evidence": [
+        "NSBundle.bundleWithIdentifier_ introduced in Foundation 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Cocoa": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "cocoa>=2.1,<3.9",
+      "evidence": [
+        "NSAppleEventDescriptor.alloc introduced in Cocoa 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "AEDataModel": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "aedatamodel>=2.1,<3.9",
+      "evidence": [
+        "OSType('aevt') introduced in AEDataModel 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "AERegistry": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "aeregistry>=2.1,<3.9",
+      "evidence": [
+        "OSType('logo') introduced in AERegistry 2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "foundation>=2.1,<3.9",
+    "cocoa>=2.1,<3.9",
+    "aedatamodel>=2.1,<3.9",
+    "aeregistry>=2.1,<3.9"
+  ]
+}

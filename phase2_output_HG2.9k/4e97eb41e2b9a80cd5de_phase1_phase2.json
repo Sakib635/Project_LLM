@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "cache added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.core.cache": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cache introduced in Django version y"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "myapp.mymodule": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "myapp>=1.2.0,<2.0.0",
+      "evidence": [
+        "set_cache introduced in myapp version y",
+        "get_cache depricated in myapp version z"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=3.6,<4.0",
+    "myapp>=1.2.0,<2.0.0"
+  ]
+}

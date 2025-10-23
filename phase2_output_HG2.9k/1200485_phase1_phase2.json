@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["werkzeug.cached_property added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"flask": {
+"inferred_version_range": ">=0.8,<1.2",
+"recommended_requirements_line": "flask>=0.8,<1.2",
+"evidence": ["flask.signals.Namespace introduced in v0.8, removed in v1.2"],
+"confidence": 0.5,
+"notes": ""
+},
+"ndb": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "ndb>=1.2,<2.0",
+"evidence": ["ndb.model introduced in v1.2", "ndb.tasklets introduced in v1.2", "ndb.query introduced in v1.2"],
+"confidence": 1,
+"notes": ""
+},
+"hashlib": {
+"inferred_version_range": ">=3.4,<",
+"recommended_requirements_line": "hashlib>=3.4",
+"evidence": ["hashlib.md5 introduced in Python 3.4 → min Python 3.4"],
+"confidence": 1,
+"notes": ""
+},
+"logging": {
+"inferred_version_range": ">=3.2,<",
+"recommended_requirements_line": "logging>=3.2",
+"evidence": ["logging.error introduced in Python 3.2 → min Python 3.2"],
+"confidence": 1,
+"notes": ""
+},
+"model": {
+"inferred_version_range": ">=1.5,<",
+"recommended_requirements_line": "model>=1.5",
+"evidence": ["model.transaction introduced in v1.5", "model.delete_multi introduced in v1.5"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"flask>=0.8,<1.2",
+"ndb>=1.2,<2.0",
+"hashlib>=3.4",
+"logging>=3.2",
+"model>=1.5"
+]
+}
+}

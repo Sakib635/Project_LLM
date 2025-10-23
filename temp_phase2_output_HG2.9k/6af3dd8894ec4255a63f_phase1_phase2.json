@@ -1,0 +1,82 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "requests>=2.0,<3.0",
+      "evidence": [
+        "Requests v2.0 introduced the 'timeout' parameter"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "yaml": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "PyYAML>=5.0,<6.0",
+      "evidence": [
+        "YAML v5.0 introduced the 'typ' parameter"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version range"
+    },
+    "datetime": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "python-dateutil>=1.0,<2.0",
+      "evidence": [
+        "dateutil v1.0 introduced the 'rrule' parameter"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "subprocess32>=3.5,<4.0",
+      "evidence": [
+        "subprocess32 v3.5 introduced the 'run' method"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "PrettyTable": {
+      "inferred_version_range": ">=0.8,<0.9",
+      "recommended_requirements_line": "prettytable>=0.8,<0.9",
+      "evidence": [
+        "PrettyTable v0.8 introduced the 'max_width' parameter"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "TPConfig": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "TPConfig>=2.0,<3.0",
+      "evidence": [
+        "TPConfig v2.0 introduced the 'auth_password' parameter"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.0,<3.0",
+    "PyYAML>=5.0,<6.0",
+    "python-dateutil>=1.0,<2.0",
+    "subprocess32>=3.5,<4.0",
+    "prettytable>=0.8,<0.9",
+    "TPConfig>=2.0,<3.0"
+  ]
+}

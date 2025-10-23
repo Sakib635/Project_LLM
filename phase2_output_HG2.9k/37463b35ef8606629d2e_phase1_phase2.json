@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scipy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "scipy.integrate.odeint introduced in v1.2.0",
+        "scipy.stats deprecated in v1.5.0 \u2192 removed in v2.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<2.0.0",
+      "evidence": [
+        "numpy.arange introduced in v1.7.0",
+        "numpy.exp deprecated in v1.9.0 \u2192 removed in v2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.exp introduced in v1.0 \u2192 removed in v3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scipy>=1.2.0,<2.0.0",
+    "numpy>=1.7.0,<2.0.0"
+  ]
+}

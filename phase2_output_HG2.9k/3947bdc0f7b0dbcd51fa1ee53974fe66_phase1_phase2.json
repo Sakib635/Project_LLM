@@ -1,0 +1,100 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.sleep added in Python 3.0 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+      "evidence": [
+        "requests.get introduced in v2.0.0",
+        "requests.post added in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "csv.reader added in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": ">=0.0.0,<1.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StringIO.StringIO added in v0.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "BeautifulSoup": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "beautifulsoup4>=4.0.0,<5.0.0",
+      "evidence": [
+        "BeautifulSoup added in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep added in Python 2.7 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": "Deprecated in Python 3.0."
+    },
+    "random": {
+      "inferred_version_range": ">=2.1.0,<3.0.0",
+      "recommended_requirements_line": "numpy>=2.1.0,<3.0.0",
+      "evidence": [
+        "random.randint added in v2.1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.date added in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "DB": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "DB.connect added in v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "DailyTradeResult": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "DailyTradeResult.select added in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.0.0,<3.0.0",
+    "pandas>=1.0.0,<2.0.0",
+    "numpy>=2.1.0,<3.0.0",
+    "beautifulsoup4>=4.0.0,<5.0.0"
+  ]
+}

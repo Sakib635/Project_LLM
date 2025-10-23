@@ -1,0 +1,61 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "luigi": {
+      "inferred_version_range": ">=2.8.0",
+      "recommended_requirements_line": "luigi>=2.8.0",
+      "evidence": [
+        "luigi.WorkflowTask introduced in v2.8.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "bwa": {
+      "inferred_version_range": ">=0.7.13",
+      "recommended_requirements_line": "bwa>=0.7.13",
+      "evidence": [
+        "bwa.aln introduced in v0.7.13"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "gatk": {
+      "inferred_version_range": ">=4.0.2.0",
+      "recommended_requirements_line": "gatk>=4.0.2.0",
+      "evidence": [
+        "gatk.GenomeAnalysisTK introduced in v4.0.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "picard": {
+      "inferred_version_range": ">=2.3.0",
+      "recommended_requirements_line": "picard>=2.3.0",
+      "evidence": [
+        "picard.AddOrReplaceReadGroups introduced in v2.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "samtools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "Could not determine version range for samtools as there were no APIs found."
+    }
+  },
+  "requirements.txt": [
+    "luigi>=2.8.0",
+    "bwa>=0.7.13",
+    "gatk>=4.0.2.0",
+    "picard>=2.3.0"
+  ]
+}

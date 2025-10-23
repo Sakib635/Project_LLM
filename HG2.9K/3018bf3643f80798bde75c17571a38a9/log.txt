@@ -1,0 +1,19 @@
+[1m[37m
+	Pass-The-Hash Carpet Bombing utility
+	Small utility trying every provided hash against every specified machine.
+	Mariusz B., 2016
+[0m
+usage: snippet.py [-h] [-v] [-port [smb port]] [rhosts] [hashes]
+
+Pass-The-Hash mass checking tool
+
+positional arguments:
+  rhosts            Specifies input file containing list of machines or CIDR
+                    notation of hosts
+  hashes            Specifies input file containing list of dumped hashes in
+                    pwdump format
+
+optional arguments:
+  -h, --help        show this help message and exit
+  -v                Verbose mode
+  -port [smb port]  Destination port used to connect into SMB Server

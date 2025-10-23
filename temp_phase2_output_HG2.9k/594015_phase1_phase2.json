@@ -1,0 +1,42 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urlconf_decorator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urlconf_decorator.decorate"
+      ],
+      "confidence": 0.3,
+      "notes": "No reliable upper or lower bound could be determined."
+    },
+    "django.core.urlresolvers": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "RegexURLResolver",
+        "RegexURLPattern"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "decorator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dec"
+      ],
+      "confidence": 0.3,
+      "notes": "No reliable upper or lower bound could be determined."
+    }
+  },
+  "requirements.txt": []
+}

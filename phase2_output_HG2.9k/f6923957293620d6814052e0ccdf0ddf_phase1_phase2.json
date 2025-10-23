@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "graphql": {
+      "inferred_version_range": ">=14.0.0,<15.0.0",
+      "recommended_requirements_line": "graphql>=14.0.0,<15.0.0",
+      "evidence": [
+        "graphql.execution.executors.sync.SyncExecutor introduced in v14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "functools.partial introduced in v2.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "bulkrequestcache": {
+      "inferred_version_range": ">=14.0.0,<15.0.0",
+      "recommended_requirements_line": "bulkrequestcache>=14.0.0,<15.0.0",
+      "evidence": [
+        "bulkrequestcache.BulkRequestCache introduced in v14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "myservicecache": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "myservicecache.MyServiceCache introduced in v14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "retrieveexpensivevalues": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "retrieveexpensivevalues.get_value_from_service introduced in v14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "graphql>=14.0.0,<15.0.0",
+    "bulkrequestcache>=14.0.0,<15.0.0",
+    "myservicecache>=14.0.0,<15.0.0",
+    "retrieveexpensivevalues>=14.0.0,<15.0.0"
+  ]
+}

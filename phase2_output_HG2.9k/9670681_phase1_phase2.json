@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": ["datetime.now added in Python y → min Python y", "dateutil.tz.tzlocal added in Python x→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "dateutil": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "dateutil>=1.2.0,<2.0.0",
+      "evidence": ["dateutil.tz.tzlocal introduced in v1.4"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "datetime>=1.2.0,<2.0.0",
+      "evidence": ["datetime.now introduced in v1.7"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dateutil>=1.2.0,<2.0.0",
+    "datetime>=1.2.0,<2.0.0"
+  ]
+}
+```

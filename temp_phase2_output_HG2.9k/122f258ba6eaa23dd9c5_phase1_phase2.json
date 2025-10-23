@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"bpy": {
+"inferred_version_range": ">=2.7,<3.0",
+"recommended_requirements_line": "bpy>=2.7,<3.0",
+"evidence": ["bpy.context introduced in v2.6 → min Python 2.7", "bpy.data, bpy.ops, and bpy.types were added in v2.7 → max Python 2.7"],
+"confidence": 1.0,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "math>=3.5,<4.0",
+"evidence": ["math.radians added in v3.5 → min Python 3.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"functools": {
+"inferred_version_range": ">=3.2,<4.0",
+"recommended_requirements_line": "functools>=3.2,<4.0",
+"evidence": ["cmp_to_key added in v3.2 → min Python 3.2"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"bpy>=2.7,<3.0",
+"math>=3.5,<4.0",
+"functools>=3.2,<4.0"
+]
+},
+"requirements.txt": []
+}

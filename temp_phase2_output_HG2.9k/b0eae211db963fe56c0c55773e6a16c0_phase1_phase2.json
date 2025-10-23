@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "push_notifications.api.rest_framework": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No external packages used in the provided APIs"
+    },
+    "push_notifications.models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No external packages used in the provided APIs"
+    },
+    "dj_represent.settings": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No external packages used in the provided APIs"
+    },
+    "rest_framework.response": {
+      "inferred_version_range": "<3.8",
+      "recommended_requirements_line": "rest-framework>=2.4.0,<3.8",
+      "evidence": [
+        "Response object added in rest-framework 2.4.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "rest_framework": {
+      "inferred_version_range": "<3.8",
+      "recommended_requirements_line": "dj-rest-auth>=2.4.0,<3.8",
+      "evidence": [
+        "status codes added in dj-rest-auth 2.4.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

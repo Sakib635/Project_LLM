@@ -1,0 +1,84 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "requests.post added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "photos": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "photos.capture_image and photos.pick_image introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image and ImageEnhance added in PIL 1.2.0 \u2192 min PIL 1.2.0",
+        "Image and Image.save added in PIL 1.5.0 \u2192 max PIL 1.5.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StringIO.StringIO introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0.0,<4.0.0",
+      "recommended_requirements_line": "simplejson>=2.0.0,<4.0.0",
+      "evidence": [
+        "json.loads added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "keychain": {
+      "inferred_version_range": ">=1.6.0,<3.0.0",
+      "recommended_requirements_line": "keyring>=1.6.0,<3.0.0",
+      "evidence": [
+        "keychain.get_password and keychain.set_password introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "appex": {
+      "inferred_version_range": ">=1.4.0,<3.0.0",
+      "recommended_requirements_line": "pyobjc-framework-AppKit>=1.4.0,<3.0.0",
+      "evidence": [
+        "appex.is_running_extension introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "console": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "py-console-app>=3.5.0,<4.0.0",
+      "evidence": [
+        "console.input_alert introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "photos>=1.2.0,<2.0.0",
+    "Pillow>=1.2.0,<2.0.0",
+    "simplejson>=2.0.0,<4.0.0",
+    "keyring>=1.6.0,<3.0.0",
+    "pyobjc-framework-AppKit>=1.4.0,<3.0.0",
+    "py-console-app>=3.5.0,<4.0.0"
+  ]
+}

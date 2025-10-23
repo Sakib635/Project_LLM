@@ -1,0 +1,87 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "psutil": {
+      "inferred_version_range": ">=5.0.0,<6.0.0",
+      "recommended_requirements_line": "psutil>=5.0.0,<6.0.0",
+      "evidence": [
+        "psutil.cpu_percent introduced in v5.0.0",
+        "psutil.used_phymem depricated in v6.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mpl_toolkits.mplot3d": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "mpl_toolkits.mplot3d is a standard library module and does not have external dependencies."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.15.4,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.15.4,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.15.4",
+        "numpy.ndarray depricated in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.1.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib.pyplot>=3.1.0,<4.0.0",
+      "evidence": [
+        "plt introduced in v3.1.0",
+        "plt.ion depricated in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib.animation": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib.animation>=3.0.0,<4.0.0",
+      "evidence": [
+        "animation introduced in v3.0.0",
+        "animation.FuncAnimation depricated in v4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "processMoniter": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "processMoniter is a custom module and does not have external dependencies."
+    },
+    "processUsage": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "processUsage is a custom module and does not have external dependencies."
+    },
+    "processGraph": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "processGraph is a custom module and does not have external dependencies."
+    }
+  },
+  "requirements.txt": [
+    "psutil>=5.0.0,<6.0.0",
+    "numpy>=1.15.4,<2.0.0",
+    "matplotlib.pyplot>=3.1.0,<4.0.0",
+    "matplotlib.animation>=3.0.0,<4.0.0"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "keras.models.Sequential added in Python 3.6 \u2192 min Python 3.6",
+      "cv2.face.LBPHFaceRecognizer_create deprecated in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0.0,<2.1.0",
+      "recommended_requirements_line": "keras>=2.0.0,<2.1.0",
+      "evidence": [
+        "keras.models.Sequential introduced in keras version 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": ">=4.0.0,<4.1.0",
+      "recommended_requirements_line": "cv2>=4.0.0,<4.1.0",
+      "evidence": [
+        "cv2.face.LBPHFaceRecognizer_create introduced in cv2 version 4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<1.18.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<1.18.0",
+      "evidence": [
+        "numpy.linalg.norm introduced in numpy version 1.17.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.0.0,<2.1.0",
+    "cv2>=4.0.0,<4.1.0",
+    "numpy>=1.17.0,<1.18.0"
+  ]
+}

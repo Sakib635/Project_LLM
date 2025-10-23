@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.8\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "modo": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API modo.c.LOCATOR_TYPE introduced in v2.0.3",
+        "API modo.basic_SetFlags introduced in v2.1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "lxifc": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "lxifc>=1.0.0,<2.0.0",
+      "evidence": [
+        "API lxifc.BasicCommand introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "lx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API lx.symbol.sTYPE_BOOLEAN introduced in v7.5",
+        "API lx.symbol.fCMDARG_OPTIONAL deprecated in v8.0",
+        "API lx.symbol.fCMD_MODEL introduced in v12.0",
+        "API lx.symbol.fCMD_UNDO removed in v13.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "modo>=2.0.3",
+    "lxifc>=1.0.0",
+    "lx>=7.5"
+  ]
+}

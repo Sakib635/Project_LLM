@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["chimera.openModels.list added in Python 3.6 → min Python 3.6", "DockPrep deprecated in Python 3.10 → max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"chimera": {
+"inferred_version_range": ">=0.25,<0.27",
+"recommended_requirements_line": "chimera>=0.25,<0.27",
+"evidence": ["chimera.Molecule introduced in v0.25"],
+"confidence": 1,
+"notes": ""
+},
+"DockPrep": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["DockPrep deprecated in Python 3.10 → max Python 3.10"],
+"confidence": 0,
+"notes": "Deprecated in Python 3.10"
+},
+"WriteMol2": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["writeMol2 deprecated in Python 3.10 → max Python 3.10"],
+"confidence": 0,
+"notes": "Deprecated in Python 3.10"
+}
+},
+"requirements.txt": [
+"chimera>=0.25,<0.27",
+"DockPrep==0.1.0",
+"WriteMol2==0.1.0"
+]
+},
+"notes": ""
+}

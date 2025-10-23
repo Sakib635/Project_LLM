@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.staticfiles.storage": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django.contrib.staticfiles.storage>=1.2.0,<2.0.0",
+      "evidence": [
+        "StaticFilesStorage introduced in Django 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pipeline.packager": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Packager class introduced in Pipeline 1.2"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pipeline.conf.settings": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pipeline.conf.settings>=1.2.0,<2.0.0",
+      "evidence": [
+        "PIPELINE_ENABLED introduced in Pipeline 1.2"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pipeline.package.Package": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Package class introduced in Pipeline 1.2"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django.contrib.staticfiles.storage>=1.2.0,<2.0.0",
+    "pipeline.packager>=1.2.0,<2.0.0",
+    "pipeline.conf.settings>=1.2.0,<2.0.0",
+    "pipeline.package.Package>=1.2.0,<2.0.0"
+  ]
+}

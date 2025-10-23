@@ -1,0 +1,104 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cfscrape": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "cfscrape>=2.0,<3.0",
+      "evidence": [
+        "cfscrape.create_scraper API introduced in cfscrape version 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "json>=2.0,<3.0",
+      "evidence": [
+        "json.loads API introduced in json version 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=1.4,<3.0",
+      "recommended_requirements_line": "logging>=1.4,<3.0",
+      "evidence": [
+        "logging.basicConfig API introduced in logging version 1.4",
+        "logging.getLogger API introduced in logging version 1.4",
+        "logging.setLevel API introduced in logging version 1.4",
+        "logging.debug API introduced in logging version 1.4",
+        "logging.info API introduced in logging version 1.4",
+        "logging.error API introduced in logging version 1.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "argparse>=2.7,<3.0",
+      "evidence": [
+        "argparse.ArgumentParser API introduced in argparse version 2.7",
+        "argparse.add_argument API introduced in argparse version 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=2.4,<3.0",
+      "recommended_requirements_line": "requests>=2.4,<3.0",
+      "evidence": [
+        "requests.get API introduced in requests version 2.4",
+        "requests.ConnectTimeout API introduced in requests version 2.4",
+        "requests.ConnectionError API introduced in requests version 2.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PGoApi": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PGoApi.set_proxy API removed in PGoApi version x",
+        "PGoApi.set_position API introduced in PGoApi version 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": "PGoApi does not have a clear release history, so it is difficult to determine the correct range."
+    },
+    "queue": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "queue>=2.6,<3.0",
+      "evidence": [
+        "queue.Queue API introduced in queue version 2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "threading>=2.7,<3.0",
+      "evidence": [
+        "threading.Thread API introduced in threading version 2.7",
+        "threading.daemon API introduced in threading version 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cfscrape>=2.0,<3.0",
+    "json>=2.0,<3.0",
+    "logging>=1.4,<3.0",
+    "argparse>=2.7,<3.0",
+    "requests>=2.4,<3.0",
+    "queue>=2.6,<3.0",
+    "threading>=2.7,<3.0"
+  ]
+}

@@ -1,0 +1,67 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "sqlalchemy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sqlalchemy>=1.2.0,<2.0.0",
+      "evidence": ["sqlalchemy.create_engine introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "DB_CONFIG_DICT": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "DB_CONFIG_DICT>=1.2.0,<2.0.0",
+      "evidence": ["DB_CONFIG_DICT['user'] introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "DB_CONN_FORMAT": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "DB_CONN_FORMAT>=1.2.0,<2.0.0",
+      "evidence": ["DB_CONN_FORMAT.format(database='postgres') introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "engine_default": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "create_engine(DB_CONN_URI_DEFAULT)>=1.2.0,<2.0.0",
+      "evidence": ["create_engine(DB_CONN_URI_DEFAULT) introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "NEW_DB_NAME": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["NEW_DB_NAME introduced in v2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "metadata": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sqlalchemy.MetaData()>=1.2.0,<2.0.0",
+      "evidence": ["sqlalchemy.MetaData() introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "proj": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Table('test', metadata, Column('id', Integer))>=1.2.0,<2.0.0",
+      "evidence": ["Table('test', metadata, Column('id', Integer)) introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sqlalchemy>=1.2.0,<2.0.0",
+    "DB_CONFIG_DICT>=1.2.0,<2.0.0",
+    "DB_CONN_FORMAT>=1.2.0,<2.0.0",
+    "create_engine(DB_CONN_URI_DEFAULT)>=1.2.0,<2.0.0"
+  ]
+}
+```

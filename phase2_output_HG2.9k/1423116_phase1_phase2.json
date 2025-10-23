@@ -1,0 +1,134 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "os>=1.0,<2.0",
+      "evidence": [
+        "os.path introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "sys>=1.0,<2.0",
+      "evidence": [
+        "sys.argv introduced in Python 1.0 \u2192 min Python 1.0",
+        "sys.platform introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "cPickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cPickle.dumps introduced in Python 2.0 \u2192 max Python 2.7",
+        "cPickle.loads introduced in Python 2.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "time>=1.0,<2.0",
+      "evidence": [
+        "time.time introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=1.1,<2.0",
+      "recommended_requirements_line": "hashlib>=1.1,<2.0",
+      "evidence": [
+        "hashlib.md5 introduced in Python 1.1 \u2192 min Python 1.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "uuid": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "uuid>=1.0,<2.0",
+      "evidence": [
+        "uuid.uuid1 introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "logging>=1.0,<2.0",
+      "evidence": [
+        "logging.getLogger introduced in Python 1.0 \u2192 min Python 1.0",
+        "logging.StreamHandler introduced in Python 1.0 \u2192 min Python 1.0",
+        "logging.info introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "cmemcached": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cmemcached.Client introduced in Python 2.6 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "SessionData": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "SessionData>=1.0,<2.0",
+      "evidence": [
+        "SessionData.__init__ introduced in Python 1.0 \u2192 min Python 1.0",
+        "SessionData.get introduced in Python 1.0 \u2192 min Python 1.0",
+        "SessionData.set introduced in Python 1.0 \u2192 min Python 1.0",
+        "SessionData.get_id introduced in Python 1.0 \u2192 min Python 1.0",
+        "SessionData.reset_update_status introduced in Python 1.0 \u2192 min Python 1.0",
+        "SessionData.is_updated introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "session_manager": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "session_manager.write_session_data introduced in Python 2.6 \u2192 max Python 2.7",
+        "session_manager.read_session_data introduced in Python 2.6 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "session": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "session.__init__ introduced in Python 1.0 \u2192 min Python 1.0",
+        "session.get_secure_cookie introduced in Python 1.0 \u2192 min Python 1.0",
+        "session.set_secure_cookie introduced in Python 1.0 \u2192 min Python 1.0",
+        "session.reset_update_status introduced in Python 1.0 \u2192 min Python 1.0",
+        "session.is_updated introduced in Python 1.0 \u2192 min Python 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.0,<2.0",
+    "sys>=1.0,<2.0",
+    "cPickle>=2.0,<3.0",
+    "time>=1.0,<2.0",
+    "hashlib>=1.1,<2.0",
+    "uuid>=1.0,<2.0",
+    "logging>=1.0,<2.0"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": [
+      "numpy.random.seed added in Python 3.6 \u2192 min Python 3.6",
+      "numpy.array removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "numpy>=1.2,<2.0",
+      "evidence": [
+        "numpy.random.seed added in numpy 1.2 \u2192 min numpy 1.2",
+        "numpy.array removed in numpy 2.0 \u2192 max numpy 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.0,<2.0",
+      "recommended_requirements_line": "scikit-learn>=0.0,<2.0",
+      "evidence": [
+        "sklearn.model_selection.train_test_split added in scikit-learn 0.21 \u2192 min scikit-learn 0.0",
+        "sklearn.model_selection.train_test_split removed in scikit-learn 2.0 \u2192 max scikit-learn 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "torch>=1.6,<2.0",
+      "evidence": [
+        "torch.nn.GRU added in torch 1.6 \u2192 min torch 1.6",
+        "torch.randn removed in torch 2.0 \u2192 max torch 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "torch>=1.6,<2.0",
+      "evidence": [
+        "torch.nn.GRU added in torch 1.6 \u2192 min torch 1.6",
+        "torch.randn removed in torch 2.0 \u2192 max torch 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2,<2.0",
+    "scikit-learn>=0.0,<2.0",
+    "torch>=1.6,<2.0"
+  ]
+}

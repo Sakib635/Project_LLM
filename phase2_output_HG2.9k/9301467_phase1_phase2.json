@@ -1,0 +1,67 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "email": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "email>=2.7,<3.0",
+      "evidence": [
+        "email.parser.BytesParser added in v2.7",
+        "email.policy.default added in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "io>=2.6,<3.0",
+      "evidence": [
+        "io.BytesIO added in v2.6",
+        "io.StringIO added in v2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mimetypes": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "mimetypes>=3.7,<4.0",
+      "evidence": [
+        "mimetypes.guess_extension added in v3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "os>=2.6,<3.0",
+      "evidence": [
+        "os.path.splitext added in v2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "uuid": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "uuid>=3.4,<4.0",
+      "evidence": [
+        "uuid.uuid4 added in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "email>=2.7,<3.0",
+    "io>=2.6,<3.0",
+    "mimetypes>=3.7,<4.0",
+    "os>=2.6,<3.0",
+    "uuid>=3.4,<4.0"
+  ]
+}

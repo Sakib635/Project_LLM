@@ -1,0 +1,40 @@
+{
+"python_version": {
+"min": "2.7",
+"max": null,
+"evidence": ["math.floor added in Python 2.7 → min Python 2.7", "sys.argv introduced in Python 2.6 → max Python 3.1"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.ma.array introduced in numpy 1.0 → max numpy 3.2", "numpy.reshape introduced in numpy 1.9.0 → max numpy 3.5"],
+"confidence": 0.75,
+"notes": ""
+},
+"cv2": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["cv2.imread introduced in cv2 3.0 → max cv2 4.5", "cv2.waitKey introduced in cv2 1.0 → max cv2 4.5"],
+"confidence": 0.75,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sys.argv introduced in sys 1.0 → max sys 4.3"],
+"confidence": 0.75,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.0,<3.2",
+"cv2>=3.0,<4.5"
+]
+},
+"requirements.txt": [
+"numpy>=1.0,<3.2",
+"cv2>=3.0,<4.5"
+]
+}

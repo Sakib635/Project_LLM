@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "null",
+    "evidence": [
+      "idaapi.MakeCode added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "idaapi": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "idaapi>=5.0,<6.0",
+      "evidence": [
+        "idaapi.MakeCode introduced in v5.0, deprecated in v6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "idc": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "idc>=5.0,<6.0",
+      "evidence": [
+        "idc.MakeCode introduced in v5.0, deprecated in v6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": "null",
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range for struct"
+    }
+  },
+  "requirements.txt": [
+    "idaapi>=5.0,<6.0",
+    "idc>=5.0,<6.0"
+  ]
+}

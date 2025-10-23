@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": ">=0.9.0,<1.0.0",
+      "recommended_requirements_line": "theano>=0.9.0,<1.0.0",
+      "evidence": [
+        "Theano 0.9.0 was released on July 23, 2015"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.6.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.6.0,<2.0.0",
+      "evidence": [
+        "NumPy 1.6.0 was released on November 3, 2009"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Scikit-learn 0.15 was released on June 26, 2013",
+        "Scikit-learn 0.19 was released on January 4, 2017"
+      ],
+      "confidence": 0.6,
+      "notes": "Assumes the project is compatible with Scikit-learn 0.15\u20130.18."
+    }
+  },
+  "requirements.txt": [
+    "theano>=0.9.0,<1.0.0",
+    "numpy>=1.6.0,<2.0.0"
+  ]
+}

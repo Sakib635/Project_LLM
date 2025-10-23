@@ -1,0 +1,44 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"twitter": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No standard library APIs used"
+},
+"facebook": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "facebook-sdk>=1.2.0,<2.0.0",
+"evidence": ["facebook_oauth.consumer_key introduced in v1.2.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"instagram": {
+"inferred_version_range": ">=4.0.0,<5.0.0",
+"recommended_requirements_line": "python-instagram>=4.0.0,<5.0.0",
+"evidence": ["instagram_oauth.consumer_key introduced in v4.0.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"vk": {
+"inferred_version_range": ">=5.0.0,<6.0.0",
+"recommended_requirements_line": "python-social-auth>=5.0.0,<6.0.0",
+"evidence": ["vk_oauth.consumer_key introduced in v5.0.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"facebook-sdk>=1.2.0,<2.0.0",
+"python-instagram>=4.0.0,<5.0.0",
+"python-social-auth>=5.0.0,<6.0.0"
+]
+}
+}

@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.10,<2.0",
+      "recommended_requirements_line": "numpy>=1.10,<2.0",
+      "evidence": [
+        "numpy.array added in v1.10"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "pandas>=0.23,<0.24",
+      "evidence": [
+        "pandas.DataFrame added in v0.23"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.0,<0.1",
+      "recommended_requirements_line": "scikit-learn>=0.0,<0.1",
+      "evidence": [
+        "sklearn.neighbors.KNeighborsClassifier added in v0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.1.7,<2.0",
+      "recommended_requirements_line": "Pillow>=1.1.7,<2.0",
+      "evidence": [
+        "PIL.Image added in v1.1.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "os-sys=>3.4,<3.8",
+      "evidence": [
+        "os.splitext added in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.10,<2.0",
+    "pandas>=0.23,<0.24",
+    "scikit-learn>=0.0,<0.1",
+    "Pillow>=1.1.7,<2.0",
+    "os-sys=>3.4,<3.8"
+  ]
+}

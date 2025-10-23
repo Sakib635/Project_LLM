@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": ">=4,<5",
+      "recommended_requirements_line": "PyQt4>=4,<5",
+      "evidence": [
+        "PyQt4.QtCore.Qt.Key_Backtab added in PyQt4 v4 \u2192 min version 4",
+        "PyQt4.QtGui.QTextEdit added in PyQt4 v4 \u2192 min version 4",
+        "PyQt4.QtGui.QTextCursor added in PyQt4 v4 \u2192 min version 4",
+        "PyQt4.QtGui.QApplication added in PyQt4 v4 \u2192 min version 4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "TabPlainTextEdit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "TabPlainTextEdit.__init__ introduced in TabPlainTextEdit vX \u2192 no version inference",
+        "TabPlainTextEdit.keyPressEvent introduced in TabPlainTextEdit vX \u2192 no version inference",
+        "TabPlainTextEdit.setTextCursor introduced in TabPlainTextEdit vX \u2192 no version inference"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

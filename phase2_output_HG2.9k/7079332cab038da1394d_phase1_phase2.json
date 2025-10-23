@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.2.0,<2.0.0",
+      "evidence": [
+        "b64encode introduced in Python 3.0 \u2192 min Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "datetime>=1.2.0,<2.0.0",
+      "evidence": [
+        "datetime introduced in Python 3.0 \u2192 min Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Crypto.Hash": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SHA introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "HMAC": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "new introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=1.2.0,<2.0.0",
+    "datetime>=1.2.0,<2.0.0"
+  ]
+}

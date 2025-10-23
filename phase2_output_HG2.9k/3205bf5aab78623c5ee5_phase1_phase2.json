@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.0 \u2192 min pandas 1.2.0",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.2.0 \u2192 min pandas 1.2.0",
+        "pandas.DataFrame.ix introduced in pandas 1.2.0 \u2192 min pandas 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.20.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.20.0 \u2192 min numpy 1.20.0",
+        "numpy.linalg.norm introduced in numpy 1.20.0 \u2192 min numpy 1.20.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pptx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pptx>=1.2.0",
+      "evidence": [
+        "pptx.util.lazyproperty introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.parts.slide.BaseSlide introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.parts.slide.Slide introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.shapes.shape.BaseShape introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.opc.constants.RELATIONSHIP_TYPE introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.opc.constants.CONTENT_TYPE introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.oxml.xmlchemy.BaseOxmlElement introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.oxml.ns.nsdecls introduced in pptx 1.2.0 \u2192 min pptx 1.2.0",
+        "pptx.opc.package.PartFactory introduced in pptx 1.2.0 \u2192 min pptx 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "openpyxl": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "openpyxl>=1.2",
+      "evidence": [
+        "openpyxl.worksheet.Worksheet introduced in openpyxl 1.2 \u2192 min openpyxl 1.2",
+        "openpyxl.cell.Cell introduced in openpyxl 1.2 \u2192 min openpyxl 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0",
+    "numpy>=1.20.0",
+    "pptx>=1.2.0",
+    "openpyxl>=1.2"
+  ]
+}

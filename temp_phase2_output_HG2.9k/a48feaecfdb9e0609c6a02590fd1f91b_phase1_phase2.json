@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "K.mean",
+        "K.var",
+        "K.sqrt",
+        "K.zeros_like"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tf.reshape",
+        "tf.transpose",
+        "tf.select",
+        "tf.is_nan",
+        "tf.extract_image_patches"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "json.dump added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "httplib2": {
+      "inferred_version_range": ">=0.10,<1.0",
+      "recommended_requirements_line": "httplib2>=0.10,<1.0",
+      "evidence": [
+        "httplib2.Http introduced in v0.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "oauth2client": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "oauth2client>=4.0,<5.0",
+      "evidence": [
+        "oauth2client.client.OAuth2WebServerFlow introduced in v4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "googleapiclient": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "googleapiclient>=1.6,<2.0",
+      "evidence": [
+        "googleapiclient.discovery.build introduced in v1.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "httplib2>=0.10,<1.0",
+    "oauth2client>=4.0,<5.0",
+    "googleapiclient>=1.6,<2.0"
+  ]
+}

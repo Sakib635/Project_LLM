@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "django>=2.0.0,<3.0.0",
+      "evidence": [
+        "apps introduced in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "DataFrame introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine a reliable upper or lower bound for NumPy. Prefer conservative ranges to ensure the project runs safely."
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<3.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,4 @@
+(declare-fun pymongo () String)
+(declare-fun gevent () String)
+(assert (and (or (= gevent "20.12.1")) (or (= pymongo "3.11.2"))))
+(check-sat)

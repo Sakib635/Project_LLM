@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "zope.interface.Interface added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "zope": {
+      "inferred_version_range": ">=4.1.0,<5.0.0",
+      "recommended_requirements_line": "zope.interface>=4.1.0,<5.0.0",
+      "evidence": [
+        "zope.interface.Interface introduced in v4.1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array introduced in v1.20.0"
+      ],
+      "confidence": 0.95,
+      "notes": "Deprecated since v1.23.0"
+    }
+  },
+  "requirements.txt": [
+    "zope.interface>=4.1.0,<5.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.20.0,<2.0.0"
+  ]
+}

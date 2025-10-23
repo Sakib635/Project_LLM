@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "win32com.client was introduced in Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "win32com.client": {
+      "inferred_version_range": ">=3.6.0,<3.7.0",
+      "recommended_requirements_line": "win32com.client>=3.6.0,<3.7.0",
+      "evidence": [
+        "Dispatch introduced in win32com.client 3.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "AutoCAD.Application": {
+      "inferred_version_range": ">=2005,<2007",
+      "recommended_requirements_line": "AutoCAD.Application>=2005,<2007",
+      "evidence": [
+        "ActiveDocument introduced in AutoCAD 2005"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "AcDbBlockReference": {
+      "inferred_version_range": ">=2004,<2007",
+      "recommended_requirements_line": "AcDbBlockReference>=2004,<2007",
+      "evidence": [
+        "EntityName introduced in AutoCAD 2004"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "win32com.client>=3.6.0,<3.7.0",
+    "AutoCAD.Application>=2005,<2007",
+    "AcDbBlockReference>=2004,<2007"
+  ]
+}

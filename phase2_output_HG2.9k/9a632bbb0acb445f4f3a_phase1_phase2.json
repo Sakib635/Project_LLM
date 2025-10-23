@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame added in pandas 1.0 \u2192 min pandas 1.0",
+        "pandas.DataFrame.to_numpy deprecated in pandas 1.3 \u2192 max pandas 1.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array added in numpy 1.18 \u2192 min numpy 1.18"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "gunicorn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gunicorn.config.make_settings added in gunicorn 19.0 \u2192 min gunicorn 19.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "flask-script": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "flask-script 2.0 removed in flask 1.0 \u2192 max flask 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.0,<2.0.0",
+    "numpy>=1.18,<2.0.0"
+  ]
+}

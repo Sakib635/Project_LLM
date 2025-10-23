@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "AppKit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AppKit.CurrentGlyphWindow()"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mojo.UI": {
+      "inferred_version_range": ">=2.0.0",
+      "recommended_requirements_line": "mojo.UI>=2.0.0",
+      "evidence": [
+        "mojo.UI.CurrentFont()",
+        "mojo.UI.AllFonts()",
+        "mojo.UI.getGlyphWindowPosSize()"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "AppKit>=3.6",
+    "mojo.UI>=2.0.0"
+  ]
+}

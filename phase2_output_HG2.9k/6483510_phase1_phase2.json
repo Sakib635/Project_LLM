@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "libmproxy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        ""
+      ],
+      "confidence": 0.0,
+      "notes": "No suitable APIs found for inference."
+    },
+    "pysnap": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pysnap>=1.2.0,<2.0.0",
+      "evidence": [
+        "pysnap.decrypt introduced in v1.2.0",
+        "pysnap.is_video introduced in v1.2.0",
+        "pysnap.is_image introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system introduced in v3.5 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pysnap>=1.2.0,<2.0.0"
+  ]
+}

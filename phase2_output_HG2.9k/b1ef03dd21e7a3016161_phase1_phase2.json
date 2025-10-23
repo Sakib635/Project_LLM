@@ -1,0 +1,57 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"synapseclient": {
+"inferred_version_range": ">=2.0.0",
+"recommended_requirements_line": "synapseclient>=2.0.0",
+"evidence": ["SynapseClient class introduced in synapseclient 2.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"requests": {
+"inferred_version_range": ">=2.23.0,<2.24.0",
+"recommended_requirements_line": "requests>=2.23.0,<2.24.0",
+"evidence": ["requests.get introduced in requests 2.23.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"json": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["json.dumps added in Python 3.6 → min Python 3.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=2.5",
+"recommended_requirements_line": "os>=2.5",
+"evidence": ["os.path.join introduced in os 2.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"shutil": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["shutil.copyfile added in Python 3.6 → min Python 3.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=2.4",
+"recommended_requirements_line": "re>=2.4",
+"evidence": ["re.findall introduced in re 2.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"synapseclient>=2.0.0",
+"requests>=2.23.0"
+]
+}
+}

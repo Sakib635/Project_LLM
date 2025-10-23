@@ -1,0 +1,68 @@
+{
+  "import gym": [
+    "gym"
+  ],
+  "import numpy as np": [
+    "np"
+  ],
+  "import tensorflow as tf": [
+    "tf"
+  ],
+  "class PolicyGradientAgent(object)": [
+    "PolicyGradientAgent"
+  ],
+  "self._s = sess": [
+    "PolicyGradientAgent",
+    "sess"
+  ],
+  "self._input = tf.placeholder(tf.float32, shape=[None, hparams['input_size']])": [
+    "PolicyGradientAgent",
+    "_input"
+  ],
+  "hidden1 = tf.contrib.layers.fully_connected(inputs=self._input, num_outputs=hparams['hidden_size'], activation_fn=tf.nn.relu, weights_initializer=tf.random_normal)": [
+    "PolicyGradientAgent",
+    "hidden1"
+  ],
+  "logits = tf.contrib.layers.fully_connected(inputs=hidden1, num_outputs=hparams['num_actions'], activation_fn=None)": [
+    "PolicyGradientAgent",
+    "logits"
+  ],
+  "self._sample = tf.reshape(tf.multinomial(logits, 1), [])": [
+    "PolicyGradientAgent",
+    "_sample"
+  ],
+  "self._acts = tf.placeholder(tf.int32)": [
+    "PolicyGradientAgent",
+    "_acts"
+  ],
+  "self._advantages = tf.placeholder(tf.float32)": [
+    "PolicyGradientAgent",
+    "_advantages"
+  ],
+  "loss = -tf.reduce_sum(tf.mul(act_prob, self._advantages))": [
+    "PolicyGradientAgent",
+    "loss"
+  ],
+  "optimizer = tf.train.RMSPropOptimizer(hparams['learning_rate'])": [
+    "PolicyGradientAgent",
+    "optimizer"
+  ],
+  "self._train = optimizer.minimize(loss)": [
+    "PolicyGradientAgent",
+    "_train"
+  ],
+  "def act(self, observation):": [
+    "PolicyGradientAgent",
+    "act"
+  ],
+  "def train_step(self, obs, acts, advantages):": [
+    "PolicyGradientAgent",
+    "train_step"
+  ],
+  "def policy_rollout(env, agent):": [
+    "policy_rollout"
+  ],
+  "def process_rewards(rews):": [
+    "process_rewards"
+  ]
+}

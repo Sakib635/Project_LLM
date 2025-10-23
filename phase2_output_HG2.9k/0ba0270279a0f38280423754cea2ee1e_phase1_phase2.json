@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "keras.models.Model introduced in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.4.0,<3.0.0",
+      "evidence": [
+        "keras.layers.convolutional.Convolution2D introduced in v2.3.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.16.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.4.0,<3.10.0",
+      "recommended_requirements_line": "math>=3.4.0,<3.10.0",
+      "evidence": [
+        "math.sqrt introduced in v3.5.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "keras.preprocessing.image": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "keras.preprocessing.image>=2.4.0,<3.0.0",
+      "evidence": [
+        "keras.preprocessing.image.ImageDataGenerator introduced in v2.1.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "keras.utils": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "keras.utils>=2.4.0,<3.0.0",
+      "evidence": [
+        "keras.utils.np_utils introduced in v2.4.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.4.0,<3.0.0",
+    "numpy>=1.17.0,<2.0.0",
+    "math>=3.4.0,<3.10.0",
+    "keras.preprocessing.image>=2.4.0,<3.0.0",
+    "keras.utils>=2.4.0,<3.0.0"
+  ]
+}

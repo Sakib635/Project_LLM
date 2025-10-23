@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "snippet.py", line 17, in <module>
+    for ws in cat.get_workspaces(): 
+  File "/usr/local/lib/python2.7/site-packages/geoserver/catalog.py", line 1015, in get_workspaces
+    description = self.get_xml("%s/workspaces.xml" % self.service_url)
+  File "/usr/local/lib/python2.7/site-packages/geoserver/catalog.py", line 213, in get_xml
+    response, content = self.http.request(rest_url)
+  File "/usr/local/lib/python2.7/site-packages/httplib2/__init__.py", line 2192, in request
+    cachekey,
+  File "/usr/local/lib/python2.7/site-packages/httplib2/__init__.py", line 1845, in _request
+    conn, request_uri, method, body, headers
+  File "/usr/local/lib/python2.7/site-packages/httplib2/__init__.py", line 1756, in _conn_request
+    raise ServerNotFoundError("Unable to find the server at %s" % conn.host)
+httplib2.ServerNotFoundError: Unable to find the server at host

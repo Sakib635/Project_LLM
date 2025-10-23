@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "snippet.py", line 73, in <module>
+    crypter = keyczar.Crypter.Read(keydir)
+  File "/usr/local/lib/python2.7/site-packages/keyczar/keyczar.py", line 507, in Read
+    return Crypter(readers.CreateReader(location))
+  File "/usr/local/lib/python2.7/site-packages/keyczar/readers.py", line 44, in CreateReader
+    "Unable to create a reader for %s. Does the location exist?" % location)
+keyczar.errors.KeyczarError: Unable to create a reader for /root/.my-keyczar-keystore. Does the location exist?

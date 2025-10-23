@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.2,<3.0",
+      "recommended_requirements_line": "django>=2.2,<3.0",
+      "evidence": ["Django 2.2 introduces ModelBase class"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ltree_helper": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "ltree_helper>=1.2,<2.0",
+      "evidence": ["LTreeHelper.prepare added in v1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.2,<3.0",
+    "ltree_helper>=1.2,<2.0"
+  ]
+}
+```

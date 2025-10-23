@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "tensorflow.Session added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.4.0,<2.0.0",
+      "evidence": [
+        "numpy.random.seed introduced in numpy v1.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.5.0,<2.0.0",
+      "evidence": [
+        "tensorflow.models.rnn introduced in tensorflow v1.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.4.0,<2.0.0",
+    "tensorflow>=1.5.0,<2.0.0"
+  ]
+}

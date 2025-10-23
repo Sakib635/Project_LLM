@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame added in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+      "evidence": [
+        "numpy.array added in version 1.19.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "theano": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "theano.config.floatX introduced in version 0.9.0",
+        "theano.logging.getLogger deprecated in version 0.11.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Theano versions prior to 0.9.0 do not have floatX or logging functions."
+    },
+    "scipy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.sparse.csr_matrix added in version 1.2.0",
+        "scipy.sparse.csr_matrix.todense introduced in version 1.4.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Scipy versions prior to 1.2.0 do not have sparse matrix functions."
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.19.0,<2.0.0"
+  ]
+}

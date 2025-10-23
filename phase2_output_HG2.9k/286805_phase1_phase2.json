@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "google.appengine.ext.db": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "db.Model introduced in v1.0.2",
+        "db.StringProperty introduced in v1.0.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.appengine.ext.webapp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "webapp.RequestHandler introduced in v1.0.2",
+        "webapp.Response introduced in v1.0.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.appengine.ext.webapp.util": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "run_wsgi_app introduced in v1.0.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "google.appengine.ext.db>=1.0.2",
+    "google.appengine.ext.webapp>=1.0.2",
+    "google.appengine.ext.webapp.util>=1.0.2"
+  ]
+}

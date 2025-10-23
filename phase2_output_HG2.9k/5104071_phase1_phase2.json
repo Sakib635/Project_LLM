@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": null,
+"max": null,
+"evidence": [],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=3.4,<3.5",
+"recommended_requirements_line": "os>=3.4,<3.5",
+"evidence": ["os.mkfifo added in Python 3.4 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"zope.interface": {
+"inferred_version_range": ">=4.1,<5.0",
+"recommended_requirements_line": "zope.interface>=4.1,<5.0",
+"evidence": ["implements added in Python 3.4 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"twisted.internet": {
+"inferred_version_range": ">=18.9,<20.0",
+"recommended_requirements_line": "twisted.internet>=18.9,<20.0",
+"evidence": ["abstract added in Python 3.4 → min Python 3.4", "interfaces added in Python 3.5 → max Python 3.5"],
+"confidence": 0.7,
+"notes": ""
+},
+"NamedPipeReader": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["__init__ added in Python 3.4 → min Python 3.4", "startListening added in Python 3.5 → max Python 3.5"],
+"confidence": 0.3,
+"notes": ""
+},
+"NamedPipeWriter": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["__init__ added in Python 3.4 → min Python 3.4", "startListening added in Python 3.5 → max Python 3.5"],
+"confidence": 0.3,
+"notes": ""
+}
+},
+"requirements.txt": [
+"os>=3.4,<3.5",
+"zope.interface>=4.1,<5.0",
+"twisted.internet>=18.9,<20.0"
+]
+}
+}

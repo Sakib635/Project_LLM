@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rest_framework": {
+      "inferred_version_range": ">=3.12,<4.0",
+      "recommended_requirements_line": "rest_framework>=3.12,<4.0",
+      "evidence": [
+        "rest_framework.serializers.JSONRenderer added in version 3.12 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "rest_framework.parsers": {
+      "inferred_version_range": ">=3.12,<4.0",
+      "recommended_requirements_line": "rest_framework.parsers>=3.12,<4.0",
+      "evidence": [
+        "rest_framework.parsers.JSONParser added in version 3.12 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "rest_framework>=3.12,<4.0"
+  ]
+}

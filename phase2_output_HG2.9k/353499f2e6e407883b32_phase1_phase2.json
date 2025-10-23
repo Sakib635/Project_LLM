@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10.2",
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "theano==1.0.0",
+      "evidence": [
+        "Theano 1.0.0 was the last stable version before introducing support for Python 3.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.21.5,<2.0.0",
+      "recommended_requirements_line": "numpy==1.21.5",
+      "evidence": [
+        "NumPy 1.21.5 was the last stable version before introducing support for Python 3.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "theano==1.0.0",
+    "numpy==1.21.5"
+  ]
+}

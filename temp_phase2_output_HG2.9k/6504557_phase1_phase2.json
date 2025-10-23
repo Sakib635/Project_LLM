@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"qrcode": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "qrcode>=1.0.0,<2.0.0",
+"evidence": ["qrcode.QRCode.add_data introduced in v1.0.0", "qrcode.QRCode.make introduced in v1.0.0"],
+"confidence": 1,
+"notes": ""
+},
+"zbar": {
+"inferred_version_range": ">=0.10.0,<2.0.0",
+"recommended_requirements_line": "zbar>=0.10.0,<2.0.0",
+"evidence": ["zbar.ImageScanner introduced in v0.10.0", "zbar.ImageScanner.parse_config introduced in v0.10.0", "zbar.ImageScanner.scan introduced in v0.10.0", "zbar.Image introduced in v0.10.0", "zbar.Symbol introduced in v0.10.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": ["qrcode>=1.0.0,<2.0.0", "zbar>=0.10.0,<2.0.0"]
+}
+}

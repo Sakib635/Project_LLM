@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "OpenGL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No API usage found for OpenGL package."
+    },
+    "PyQt5": {
+      "inferred_version_range": "<3.12,>=3.10",
+      "recommended_requirements_line": "PyQt5>=3.10,<3.12",
+      "evidence": [
+        "QtWidgets introduced in PyQt5 3.10 \u2192 inferred version range"
+      ],
+      "confidence": 1.0
+    },
+    "numpy": {
+      "inferred_version_range": "<1.21,>=1.19",
+      "recommended_requirements_line": "numpy>=1.19,<1.21",
+      "evidence": [
+        "ogrid introduced in numpy 1.19 \u2192 inferred version range"
+      ],
+      "confidence": 1.0
+    },
+    "ctypes": {
+      "inferred_version_range": "<3.8,>=3.5",
+      "recommended_requirements_line": "ctypes>=3.5,<3.8",
+      "evidence": [
+        "memmove introduced in ctypes 3.5 \u2192 inferred version range"
+      ],
+      "confidence": 1.0
+    }
+  },
+  "requirements.txt": [
+    "PyQt5>=3.10,<3.12",
+    "numpy>=1.19,<1.21",
+    "ctypes>=3.5,<3.8"
+  ]
+}

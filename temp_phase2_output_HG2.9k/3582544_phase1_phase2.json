@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"kivy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["kivy.app.App"],
+"confidence": 0.5,
+"notes": "Conflicting APIs: kivy.uix.widget.Widget and kivy.graphics.Rectangle both require >=1.2.0,<2.0.0. Uncertain items: kivy.graphics.texture.Texture."
+},
+"kivy.uix": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["kivy.uix.widget.MyWidget"],
+"confidence": 0.5,
+"notes": "Conflicting APIs: kivy.uix.widget.MyWidget and kivy.graphics.texture.Texture both require >=1.2.0,<2.0.0. Uncertain items: kivy.graphics.texture.Texture."
+},
+"kivy.graphics": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "kivy.graphics>=1.2.0,<2.0.0",
+"evidence": ["kivy.graphics.texture.Texture"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"kivy.graphics>=1.2.0,<2.0.0",
+]
+}

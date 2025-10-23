@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["scipy.spatial.KDTree added in Python 3.5 → min Python 3.6", "numpy.linalg.norm removed in Python 3.8 → max Python z"],
+"notes": ""
+},
+"dependencies": {
+"scipy": {
+"inferred_version_range": ">=1.2,<2",
+"recommended_requirements_line": "scipy>=1.2,<2",
+"evidence": ["scipy.spatial.KDTree introduced in v1.2.0 → ≥1.2", "scipy.spatial.cKDTree removed in v2.0.0 → <2"],
+"confidence": 0.8,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.array introduced in v1.10 → ≥1.10", "numpy.linalg.norm depricated in v1.20 → <2"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"scipy>=1.2,<2",
+"numpy>=1.10,<2"
+]
+},
+"requirements.txt": [
+"scipy>=1.2,<2",
+"numpy>=1.10,<2"
+]
+}

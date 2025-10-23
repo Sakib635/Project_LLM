@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.10",
+    "evidence": [
+      "The extracted APIs include functions introduced in Python 3.6 and removed in Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "mininet": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "mininet==2.7.*",
+      "evidence": [
+        "The extracted APIs include functions introduced in Mininet 2.7 and removed in Mininet 3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.4,<3.6",
+      "recommended_requirements_line": "logging==3.4.*",
+      "evidence": [
+        "The extracted APIs include functions introduced in Python 3.4 and removed in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.7,<3.10",
+      "recommended_requirements_line": "os==2.7.*",
+      "evidence": [
+        "The extracted APIs include functions introduced in Python 2.7 and removed in Python 3.10"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "mininet==2.7.*",
+    "logging==3.4.*",
+    "os==2.7.*"
+  ]
+}

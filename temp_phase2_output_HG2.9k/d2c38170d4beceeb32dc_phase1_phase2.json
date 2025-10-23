@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No dependencies found in the input list."
+    },
+    "mongoengine": {
+      "inferred_version_range": ">=0.12.0,<3.0.0",
+      "recommended_requirements_line": "mongoengine>=0.12.0,<3.0.0",
+      "evidence": [
+        "mongoengine.Document introduced in version 0.12.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "werkzeug": {
+      "inferred_version_range": ">=0.14.0,<3.0.0",
+      "recommended_requirements_line": "werkzeug>=0.14.0,<3.0.0",
+      "evidence": [
+        "werkzeug.routing.Rule introduced in version 0.14.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

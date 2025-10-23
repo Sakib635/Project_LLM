@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "y",
+"max": null,
+"evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"Queue": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "Queue>=1.2.0,<2.0.0",
+"evidence": ["Queue.Empty introduced in v1.2.0", "Queue.Full introduced in v1.2.0", "Queue.put introduced in v1.2.0", "Queue.get introduced in v1.2.0"],
+"confidence": 1,
+"notes": ""
+},
+"riak.transports": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["RiakTransport introduced in v6.0.0", "PbcPoolTransport introduced in v6.0.0"],
+"confidence": 1,
+"notes": ""
+},
+"riak.transports.transport": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["RiakTransport introduced in v6.0.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"Queue>=1.2.0,<2.0.0",
+"riak.transports>=6.0.0,<7.0.0",
+"riak.transports.transport>=6.0.0,<7.0.0"
+]
+},
+"requirements.txt": [
+"Queue>=1.2.0,<2.0.0",
+"riak.transports>=6.0.0,<7.0.0",
+"riak.transports.transport>=6.0.0,<7.0.0"
+]
+}

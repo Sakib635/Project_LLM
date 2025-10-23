@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20.0,<2.0.0",
+      "evidence": [
+        "numpy.float32 introduced in v1.20.0",
+        "numpy.seterr deprecated in v1.20.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.2.0",
+        "pandas.DataFrame.to_numpy deprecated in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "osgeo": {
+      "inferred_version_range": ">=3.6.4,<4.0.0",
+      "recommended_requirements_line": "osgeo>=3.6.4,<4.0.0",
+      "evidence": [
+        "osgeo.gdal introduced in v3.6.4",
+        "osgeo.gdalconst deprecated in v3.6.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "osgeo>=3.6.4,<4.0.0"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.8",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyspark": {
+      "inferred_version_range": ">=2.4,<3.0",
+      "recommended_requirements_line": "pyspark>=2.4,<3.0",
+      "evidence": [
+        "SparkContext and SparkConf introduced in pyspark 2.4.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "optparse": {
+      "inferred_version_range": ">=1.3,<2.0",
+      "recommended_requirements_line": "optparse>=1.3,<2.0",
+      "evidence": [
+        "OptionParser and OptionGroup introduced in optparse 1.3.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.4,<3.0",
+      "recommended_requirements_line": "re>=2.4,<3.0",
+      "evidence": [
+        "compile and match introduced in re 2.4.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argv and exit introduced in Python 3.6 \u2192 max version"
+      ],
+      "confidence": 0.75,
+      "notes": "Evidence suggests argv and exit were added in Python 3.6 but the minimum required version is 3.6."
+    }
+  },
+  "requirements.txt": [
+    "pyspark>=2.4,<3.0",
+    "optparse>=1.3,<2.0",
+    "re>=2.4,<3.0"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "3.8",
+"evidence": ["cv2.imread added in Python 3.6 → min Python 3.6", "cv2.waitKey removed in Python 3.8→ max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.19,<2.0",
+"recommended_requirements_line": "numpy>=1.19,<2.0",
+"evidence": ["np.array introduced in numpy 1.18, depricated in numpy 1.19, removed in numpy 2.0"],
+"confidence": 0.6,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=3.5",
+"recommended_requirements_line": "re>=3.5",
+"evidence": ["re.split introduced in re 3.5"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.19,<2.0",
+"re>=3.5"
+]
+},
+"requirements.txt": [
+"numpy>=1.19,<2.0",
+"re>=3.5"
+]
+}

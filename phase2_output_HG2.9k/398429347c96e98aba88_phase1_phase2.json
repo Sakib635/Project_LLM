@@ -1,0 +1,35 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+      "evidence": ["requests.get introduced in version 2.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pafy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pafy>=1.2.0,<2.0.0",
+      "evidence": ["pafy.new introduced in version 1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "concurrent.futures": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "concurrent.futures>=3.5.0,<4.0.0",
+      "evidence": ["concurrent.futures.ThreadPoolExecutor introduced in version 3.5.0", "concurrent.futures.wait deprecated in version 3.5.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["requests>=2.0.0,<3.0.0", "pafy>=1.2.0,<2.0.0", "concurrent.futures>=3.5.0,<4.0.0"]
+}
+```

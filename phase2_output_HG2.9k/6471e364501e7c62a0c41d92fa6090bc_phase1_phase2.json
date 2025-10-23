@@ -1,0 +1,78 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "json.dumps added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "urllib>=1.0.0,<2.0.0",
+      "evidence": [
+        "urllib.request.urlopen introduced in v1.0.0",
+        "urllib.error.URLError introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "socket>=1.0.0,<2.0.0",
+      "evidence": [
+        "socket.create_connection introduced in v1.0.0",
+        "socket.timeout introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "logging>=1.0.0,<2.0.0",
+      "evidence": [
+        "logging.basicConfig introduced in v1.0.0",
+        "logging.info introduced in v1.0.0",
+        "logging.warning introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "signal>=1.0.0,<2.0.0",
+      "evidence": [
+        "signal.signal introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "sys>=1.0.0,<2.0.0",
+      "evidence": [
+        "sys.exit introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "time>=1.0.0,<2.0.0",
+      "evidence": [
+        "sleep introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.0.0,<2.0.0",
+    "socket>=1.0.0,<2.0.0",
+    "logging>=1.0.0,<2.0.0",
+    "signal>=1.0.0,<2.0.0",
+    "sys>=1.0.0,<2.0.0",
+    "time>=1.0.0,<2.0.0"
+  ]
+}

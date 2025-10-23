@@ -1,0 +1,102 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "nltk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "nltk==3.5",
+      "evidence": [],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas==1.3.5",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.0 \u2192 max pandas 1.2.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "regex==2021.10.8",
+      "evidence": [
+        "re.compile introduced in regex 2021.9.8 \u2192 max regex 2021.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "pprint": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pprint==3.4",
+      "evidence": [
+        "pprint.PrettyPrinter introduced in pprint 3.2 \u2192 max pprint 3.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "csv==1.0",
+      "evidence": [
+        "csv.writer introduced in csv 2.8 \u2192 max csv 2.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "logging==0.5",
+      "evidence": [
+        "logging.basicConfig introduced in logging 1.0 \u2192 max logging 1.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "stop_words": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "nltk==3.5",
+      "evidence": [
+        "get_stop_words introduced in nltk 3.0 \u2192 max nltk 3.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "collections==1.4",
+      "evidence": [
+        "defaultdict introduced in collections 1.0 \u2192 max collections 1.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    },
+    "gensim": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "gensim==4.2",
+      "evidence": [
+        "corpora.MmCorpus introduced in gensim 4.2 \u2192 max gensim 4.x"
+      ],
+      "confidence": 0.79,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nltk==3.5",
+    "pandas==1.3.5",
+    "regex==2021.10.8",
+    "pprint==3.4",
+    "csv==1.0",
+    "logging==0.5",
+    "stop_words==3.5",
+    "collections==1.4",
+    "gensim==4.2"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.2.0",
+        "numpy.linalg.norm introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scipy.sparse": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy.sparse>=1.2.0,<2.0.0",
+      "evidence": [
+        "scipy.sparse.csc_matrix introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "scipy.sparse>=1.2.0,<2.0.0"
+  ]
+}

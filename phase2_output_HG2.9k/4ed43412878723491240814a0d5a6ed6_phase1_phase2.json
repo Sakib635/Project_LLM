@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "khmer": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "khmer>=1.0,<2.0",
+      "evidence": [
+        "khmer.ReadParser introduced in v1.0",
+        "khmer.create_nodegraph introduced in v1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "khmer_args": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "khmer-args>=2.0,<3.0",
+      "evidence": [
+        "khmer_args.build_counting_args introduced in v2.0",
+        "khmer_args.create_countgraph introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found for this package."
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "scipy>=1.0,<2.0",
+      "evidence": [
+        "scipy.signal.find_peaks_cwt introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "khmer>=1.0,<2.0",
+    "khmer-args>=2.0,<3.0",
+    "numpy>=1.0,<2.0",
+    "scipy>=1.0,<2.0"
+  ]
+}

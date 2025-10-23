@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 48, in <module>
+    conn = krpc.connect()
+  File "/usr/local/lib/python2.7/site-packages/krpc/__init__.py", line 25, in connect
+    rpc_connection.connect()
+  File "/usr/local/lib/python2.7/site-packages/krpc/connection.py", line 15, in connect
+    self._socket.connect((self._address, self._port))
+  File "/usr/local/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+socket.error: [Errno 111] Connection refused

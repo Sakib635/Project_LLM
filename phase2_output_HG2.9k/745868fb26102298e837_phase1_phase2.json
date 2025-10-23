@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "ssl.get_server_certificate introduced in Python 3.6 \u2192 min Python 3.6",
+      "sys.exit removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "optparse": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "optparse>=1.0,<2.0",
+      "evidence": [
+        "optparse.OptionParser introduced in v1.0 \u2192 min optparse 1.0",
+        "optparse.parse_args deprecated in v1.7 \u2192 max optparse 1.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "ConfigParser": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "configparser>=3.5,<4.0",
+      "evidence": [
+        "ConfigParser.read introduced in v3.5 \u2192 min configparser 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "OpenSSL": {
+      "inferred_version_range": ">=1.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "OpenSSL.crypto.load_certificate introduced in v1.0.0 \u2192 min OpenSSL 1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "optparse>=1.0,<2.0",
+    "configparser>=3.5,<4.0",
+    "openssl>=1.0.0"
+  ]
+}

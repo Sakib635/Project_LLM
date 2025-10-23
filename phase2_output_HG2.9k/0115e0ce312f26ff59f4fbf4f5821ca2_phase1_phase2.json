@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["RPi.GPIO.setmode added in Python 3.4 → min Python 3.4", "time.sleep removed in Python 3.8 → max Python None"],
+"notes": ""
+},
+"dependencies": {
+"RPi.GPIO": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["RPi.GPIO.setmode introduced in v0.3.1", "RPi.GPIO.setup depricated in v0.5.2"],
+"confidence": 0.64,
+"notes": ""
+},
+"time": {
+"inferred_version_range": null,
+"recommended_requirements_line": "time>=1.0.0",
+"evidence": ["time.sleep introduced in v1.0.0", "time.clock depricated in v2.4 → max Python None"],
+"confidence": 0.9,
+"notes": ""
+},
+"signal": {
+"inferred_version_range": null,
+"recommended_requirements_line": "signal>=1.0.0",
+"evidence": ["signal.alarm introduced in v1.0.0", "signal.signal depricated in v2.4 → max Python None"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"RPi.GPIO>=0.3.1",
+"time>=1.0.0",
+"signal>=1.0.0"
+]
+},
+"requirements.txt": [
+"RPi.GPIO>=0.3.1",
+"time>=1.0.0",
+"signal>=1.0.0"
+]
+}

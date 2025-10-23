@@ -1,0 +1,23 @@
+How to use Gensim to compute TF-IDF similarity step by step
+----------
+Let's start with a raw corpus :<type 'list'>
+
+STEP 1 : Index and vectorize
+----------
+We create a dictionary, an index of all unique values: <class 'gensim.corpora.dictionary.Dictionary'>
+Then convert convert tokenized documents to vectors: <type 'list'>
+Save the vectorized corpus as a .mm file
+
+STEP 2 : Transform and compute similarity between corpuses
+----------
+We load our dictionary : <class 'gensim.corpora.dictionary.Dictionary'>
+We load our vector corpus : <class 'gensim.corpora.mmcorpus.MmCorpus'> 
+We initialize our TF-IDF transformation tool : <class 'gensim.models.tfidfmodel.TfidfModel'>
+We convert our vectors corpus to TF-IDF space : <class 'gensim.interfaces.TransformedCorpus'>
+
+STEP 3 : Create similarity matrix of all files
+----------
+We compute similarities from the TF-IDF corpus : <class 'gensim.similarities.docsim.MatrixSimilarity'>
+We get a similarity matrix for all documents in the corpus <type 'numpy.ndarray'>
+
+Done in 0.003s

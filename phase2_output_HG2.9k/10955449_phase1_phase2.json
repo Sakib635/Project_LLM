@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": ["urllib.request added in Python 3.0 → min Python 3.0", "time.sleep added in Python 3.7 → max Python 3.10"],
+    "notes": ""
+  },
+  "dependencies": {
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["json.loads added in Python 2.6 → min Python 2.6", "json.dumps added in Python 3.0 → max Python 3.9"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "pprint": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pprint.pprint added in Python 2.7 → min Python 2.7", "pprint.pformat added in Python 3.0 → max Python 3.8"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["time.sleep added in Python 3.7 → max Python 3.10"],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "json>=2.6,<3.10",
+    "pprint>=2.7,<3.9",
+    "time>=3.7,<4.0"
+  ]
+}
+```

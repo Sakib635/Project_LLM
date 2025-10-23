@@ -1,0 +1,4 @@
+(declare-fun selenium () String)
+(declare-fun lxml () String)
+(assert (and (or (= lxml "4.6.2")) (or (= selenium "3.141.0"))))
+(check-sat)

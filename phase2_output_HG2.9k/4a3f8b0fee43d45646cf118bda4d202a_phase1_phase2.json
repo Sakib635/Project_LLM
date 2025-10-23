@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.20.0,<1.0.0",
+      "recommended_requirements_line": "sklearn>=0.20.0,<1.0.0",
+      "evidence": [
+        "sklearn.manifold.TSNE introduced in v0.20.0",
+        "sklearn.decomposition.PCA introduced in v0.20.0",
+        "sklearn.preprocessing.MinMaxScaler introduced in v0.20.0",
+        "sklearn.multioutput.MultiOutputRegressor introduced in v0.20.0",
+        "sklearn.model_selection.train_test_split introduced in v0.20.0",
+        "sklearn.datasets.load_digits introduced in v0.20.0",
+        "sklearn.metrics.mean_absolute_error introduced in v0.20.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xgboost": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "xgboost.XGBRegressor introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sklearn>=0.20.0,<1.0.0",
+    "xgboost>=1.0.0"
+  ]
+}

@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["freetype.Face added in Python 3.5 → min Python 3.5", "freetype.FT_LOAD_RENDER removed in Python 3.8 → max Python 3.8"],
+    "notes": ""
+  },
+  "dependencies": {
+    "python-mono": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["mono.Bitmap introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.25,
+      "notes": ""
+    },
+    "python-text-rendering": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["bitmap.BitmappedFont introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.25,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "python-mono>=1.2.0,<2.0.0",
+    "python-text-rendering>=1.2.0,<2.0.0"
+  ]
+}
+```

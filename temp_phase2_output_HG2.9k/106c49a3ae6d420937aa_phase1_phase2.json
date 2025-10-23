@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Deprecated since Python 3.10."
+    },
+    "functools": {
+      "inferred_version_range": ">=2.6",
+      "recommended_requirements_line": "functools>=2.6",
+      "evidence": [
+        "functools.wraps added in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "QtCore": {
+      "inferred_version_range": ">=4.5,<4.10",
+      "recommended_requirements_line": "PyQt4>=4.5,<4.10",
+      "evidence": [
+        "QtCore.QRunnable introduced in PyQt 4.5"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "builtins": {
+      "inferred_version_range": ">=2.6",
+      "recommended_requirements_line": "builtins>=2.6",
+      "evidence": [
+        "builtins.Exception added in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PyQt4>=4.5,<4.10",
+    "functools>=2.6",
+    "builtins>=2.6"
+  ]
+}

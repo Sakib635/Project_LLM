@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ArgumentParser introduced in argparse module version 0.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=1.0.0,<3.0.0",
+      "evidence": [
+        "Session added in requests module version 0.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "mimetypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "guess_type added in mimetypes module version 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.0.0,<4.0.0",
+      "recommended_requirements_line": "Pillow>=1.0.0,<4.0.0",
+      "evidence": [
+        "Image added in PIL module version 1.1.7",
+        "open added in PIL module version 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pymongo": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "pymongo>=3.0.0,<4.0.0",
+      "evidence": [
+        "Connection added in pymongo module version 3.1",
+        "GridFS added in pymongo module version 3.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "gridfs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "GridFS added in pymongo module version 3.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=0.2",
+    "requests>=1.0.0,<3.0.0",
+    "mimetypes>=1.2",
+    "Pillow>=1.0.0,<4.0.0",
+    "pymongo>=3.0.0,<4.0.0"
+  ]
+}

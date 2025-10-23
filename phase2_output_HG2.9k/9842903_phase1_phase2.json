@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "TemplateView introduced in v1.2.0",
+        "patterns introduced in v1.5.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "django.urls": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "patterns introduced in v1.4.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.conf": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "settings introduced in v1.2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<2.0.0",
+    "pathlib>=y,<z"
+  ]
+}

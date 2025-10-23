@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": [
+      "json.dumps added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.core.serializers.json": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django.core.serializers.json>=1.0,<2.0",
+      "evidence": [
+        "DjangoJSONEncoder added in Django 1.0 \u2192 min Django 1.0",
+        "DjangoJSONEncoder removed in Django 2.0\u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.template.Library": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django.template.Library>=1.0,<2.0",
+      "evidence": [
+        "register added in Django 1.0 \u2192 min Django 1.0",
+        "filter safe added in Django 1.0\u2192 max Django 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django.core.serializers.json>=1.0,<2.0",
+    "django.template.Library>=1.0,<2.0"
+  ]
+}

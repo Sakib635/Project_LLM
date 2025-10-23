@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["struct.unpack added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"osgeo": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "osgeo>=1.2,<2.0",
+"evidence": ["GDAL API introduced in osgeo version 1.2 → inferred version range"],
+"confidence": 0.9,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "math>=3.5,<4.0",
+"evidence": ["round API introduced in Python 3.5 → inferred version range"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"osgeo>=1.2,<2.0",
+"math>=3.5,<4.0"
+]
+}
+}

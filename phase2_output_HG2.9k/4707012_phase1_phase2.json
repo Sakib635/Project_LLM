@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "Python 3.8 added f-strings and walrus operator"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20.0",
+      "recommended_requirements_line": "numpy>=1.20.0",
+      "evidence": [
+        "numpy.random.seed introduced in numpy 1.20"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pyspark.context": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "Unable to determine version range"
+    },
+    "sklearn.linear_model": {
+      "inferred_version_range": ">=0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0",
+      "evidence": [
+        "SGDClassifier introduced in scikit-learn 0.24"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn.base": {
+      "inferred_version_range": ">=0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0",
+      "evidence": [
+        "copy introduced in scikit-learn 0.24"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": ">=0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0",
+      "evidence": [
+        "accuracy_score introduced in scikit-learn 0.24"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn.model_selection": {
+      "inferred_version_range": ">=0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.0",
+      "evidence": [
+        "train_test_split introduced in scikit-learn 0.24"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20.0",
+    "scikit-learn>=0.24.0"
+  ]
+}

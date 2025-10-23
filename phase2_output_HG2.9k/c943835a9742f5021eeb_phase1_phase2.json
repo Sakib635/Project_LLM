@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gi.repository": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Gtk.Menu introduced in Python 3.0",
+        "AppIndicator3.Indicator.new introduced in Python 3.9",
+        "AppIndicator3.Indicator.set_status introduced in Python 3.10"
+      ],
+      "confidence": 0.2,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in Python 3.7",
+        "pandas.DataFrame.to_numpy introduced in Python 3.8",
+        "pandas.DataFrame.ix deprecated in Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in Python 3.6",
+        "numpy.linalg.norm added in Python 3.8"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gi.repository>=3.0.0,<4.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

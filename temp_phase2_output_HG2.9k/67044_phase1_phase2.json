@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "opencv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "opencv.cv.CV_BGR2GRAY",
+        "opencv.highgui.cvCreateImage",
+        "opencv.highgui.cvCvtColor",
+        "opencv.highgui.cvClearMemStorage",
+        "opencv.highgui.cvEqualizeHist",
+        "opencv.highgui.cvLoadHaarClassifierCascade",
+        "opencv.highgui.cvHaarDetectObjects"
+      ],
+      "confidence": 0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": ">=3.4",
+      "evidence": [
+        "sys.argv"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

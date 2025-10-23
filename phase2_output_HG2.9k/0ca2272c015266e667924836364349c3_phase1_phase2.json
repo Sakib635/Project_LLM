@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.7 \u2192 min Python 3.7",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "aws-cognito-idp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "aws-cognito-idp>=2.0.0",
+      "evidence": [
+        "aws-cognito-idp.CognitoIdentityProvider.get_id introduced in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "botocore": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "botocore>=1.24.0",
+      "evidence": [
+        "botocore.UnauthorizedClientError introduced in v1.24.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "jose": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "jose>=3.2.0,<4.0.0",
+      "evidence": [
+        "jose.decode_compact introduced in v3.2.0",
+        "jose.jwt.get_unverified_claims introduced in v3.2.0",
+        "jose.jwt.get_unverified_header introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "aws-cognito-idp>=2.0.0",
+    "botocore>=1.24.0",
+    "jose>=3.2.0"
+  ]
+}

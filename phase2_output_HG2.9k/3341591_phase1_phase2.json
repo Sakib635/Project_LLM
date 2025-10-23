@@ -1,0 +1,28 @@
+The JSON output for the given extracted APIs is:
+```json
+{
+  "python_version": {
+    "min": "3.0.0",
+    "max": "null",
+    "evidence": ["struct.calcsize added in Python 3.0 → min Python 3.0"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pygame": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pygame>=1.2.0,<2.0.0",
+      "evidence": ["pygame.display added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.event added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.QUIT added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.KEYDOWN added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.K_w added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.K_a added in pygame version 1.2.0 → min pygame version 1.2.0", "pygame.K_d added in pygame version 1.2.0 → min pygame version 1.2.0"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "player": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "player>=1.2.0,<2.0.0",
+      "evidence": ["player.update added in player version 1.2.0 → min player version 1.2.0", "player.move added in player version 1.2.0 → min player version 1.2.0", "player.position added in player version 1.2.0 → min player version 1.2.0", "player.image added in player version 1.2.0 → min player version 1.2.0"],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["pygame>=1.2.0,<2.0.0", "player>=1.2.0,<2.0.0"]
+}
+```

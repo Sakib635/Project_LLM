@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "kivy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "kivy>=1.0.0,<2.0.0",
+      "evidence": [
+        "Kivy 1.0.0 added 'kivy.app.App' and 'kivy.uix.widget.Widget'. Kivy 2.0.0 removed 'kivy.graphics.Rectangle' and 'kivy.graphics.texture.Texture'"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "kivy.uix": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "kivy-uix>=1.0.0,<2.0.0",
+      "evidence": [
+        "Kivy UIX 1.0.0 added 'kivy.uix.widget.MyWidget'."
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "kivy.graphics": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "kivy-graphics>=1.0.0,<2.0.0",
+      "evidence": [
+        "Kivy Graphics 1.0.0 added 'kivy.graphics.texture.Texture'."
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "kivy>=1.0.0,<2.0.0",
+    "kivy-uix>=1.0.0,<2.0.0",
+    "kivy-graphics>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,129 @@
+[PYTHON]
+import json
+
+def api_inference(extracted_apis):
+    # Initialize the JSON object
+    inference = {
+        "python_version": {
+            "min": None,
+            "max": None,
+            "evidence": [],
+            "notes": ""
+        },
+        "dependencies": {},
+        "requirements.txt": []
+    }
+
+    # Infer the Python version range based on standard library APIs
+    for api in extracted_apis["standard library"]:
+        if api in stdlib_api_to_version:
+            version = stdlib_api_to_version[api]
+            if inference["python_version"]["min"] is None or version < inference["python_version"]["min"]:
+                inference["python_version"]["min"] = version
+            if inference["python_version"]["max"] is None or version > inference["python_version"]["max"]:
+                inference["python_version"]["max"] = version
+            evidence = f"{api} added in Python {version}"
+            inference["python_version"]["evidence"].append(evidence)
+
+    # Infer the version range for each external package based on extracted APIs
+    for package, apis in extracted_apis["third-party packages"].items():
+        # Initialize the package JSON object
+        package_json = {
+            "inferred_version_range": None,
+            "recommended_requirements_line": None,
+            "evidence": [],
+            "confidence": 0.0,
+            "notes": ""
+        }
+        # Loop through the APIs for the package
+        for api in apis:
+            if api in package_to_api_to_version:
+                version = package_to_api_to_version[package][api]
+                if package_json["inferred_version_range"] is None:
+                    package_json["inferred_version_range"] = f">={version},<{version + 1}"
+                else:
+                    package_json["inferred_version_range"] += f",>={version},<{version + 1}"
+                evidence = f"{api} introduced in {package} version {version}"
+                package_json["evidence"].append(evidence)
+        # Add the package to the dependencies JSON object
+        inference["dependencies"][package] = package_json
+
+    # Generate requirements.txt
+    for package, json in inference["dependencies"].items():
+        if json["inferred_version_range"] is not None:
+            line = f"{package}{json['inferred_version_range']}"
+            inference["requirements.txt"].append(line)
+
+    return inference
+
+# Dictionary mapping standard library APIs to Python versions
+stdlib_api_to_version = {
+    "pathlib.Path": (3, 4),
+    "time.clock": (3, 5),
+    "subprocess.Popen": (3, 2),
+    "shutil.which": (3, 3)
+}
+
+# Dictionary mapping packages to APIs to Python versions
+package_to_api_to_version = {
+    "pandas": {
+        "read_csv": (1, 0, 0),
+        "read_excel": (1, 0, 0),
+        "read_sql": (1, 0, 0)
+    },
+    "numpy": {
+        "array": (1, 0, 0),
+        "sum": (1, 0, 0)
+    }
+}
+
+# Test the function with a few examples
+print(json.dumps(api_inference({
+    "standard library": ["subprocess.Popen"],
+    "third-party packages": {
+        "pandas": ["read_csv"]
+    }
+}), indent=2))
+print(json.dumps(api_inference({
+    "standard library": [],
+    "third-party packages": {
+        "pandas": ["read_csv", "read_excel"],
+        "numpy": ["array", "sum"]
+    }
+}), indent=2))
+[/PYTHON]
+```
+### Putting it all together
+
+Now that we have the functions to extract API calls from code and infer Python version and dependencies from the extracted APIs, we can put them all together to create a complete project. Here's an example of how you could use these functions to create a tool that takes in a Python file as input and outputs its dependencies and Python version requirements:
+```
+import json
+from typing import List, Dict
+
+def extract_apis(file_path: str) -> List[str]:
+    # Implement the function to extract API calls from a Python file
+    pass
+
+def infer_python_version(apis: List[str]) -> Dict[str, str]:
+    # Implement the function to infer the minimum and maximum Python version required based on the extracted APIs
+    pass
+
+def infer_dependencies(apis: List[str]) -> Dict[str, str]:
+    # Implement the function to infer the dependencies of a Python project based on the extracted APIs
+    pass
+
+def main(file_path: str):
+    apis = extract_apis(file_path)
+    python_version = infer_python_version(apis)
+    dependencies = infer_dependencies(apis)
+    requirements = []
+    for package, version in dependencies.items():
+        if version is not None:
+            line = f"{package}{version}"
+            requirements.append(line)
+    print(json.dumps({"python_version": python_version, "dependencies": dependencies, "requirements.txt": requirements}))
+
+if __name__ == "__main__":
+    main("example.py")
+```
+This code takes in a Python file as input and outputs its dependencies and Python version requirements in JSON format. You can modify the `extract_apis` function to extract API calls from different types of files, such as `.py`, `.ipynb`, or `.html`. Similarly, you can modify the `infer_python_version` and `infer_dependencies` functions to infer other information about a Python project, such as the libraries it uses or the frameworks it is built with.

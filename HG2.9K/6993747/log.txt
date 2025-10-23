@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "snippet.py", line 4, in <module>
+    api = finding(siteid='EBAY-GB', appid='<REPLACE WITH YOUR OWN APPID>')
+  File "/usr/local/lib/python2.7/site-packages/ebaysdk/__init__.py", line 76, in finding
+    'from ebaysdk.finding import Connection as finding',
+ImportError: SDK import must be changed as follows:
+
+- from ebaysdk import finding
++ from ebaysdk.finding import Connection as finding
+
+

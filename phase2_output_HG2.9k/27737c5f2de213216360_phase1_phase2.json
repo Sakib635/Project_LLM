@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in pandas 1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.linalg.norm introduced in numpy 1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=7.0.0,<8.0.0",
+      "recommended_requirements_line": "Pillow>=7.0.0,<8.0.0",
+      "evidence": [
+        "Image.open introduced in PIL 7.0.0",
+        "Image.thumbnail introduced in PIL 7.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0",
+    "Pillow>=7.0.0,<8.0.0"
+  ]
+}

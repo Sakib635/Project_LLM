@@ -1,0 +1,65 @@
+{
+  "logging": [
+    "logging.StreamHandler",
+    "logging.getLogger",
+    "logging.addHandler",
+    "logging.setLevel",
+    "logging.warn",
+    "logging.exception"
+  ],
+  "twisted.internet": [
+    "twisted.internet.endpoints",
+    "twisted.internet.clientFromString",
+    "twisted.internet.protocol",
+    "twisted.internet.reactor",
+    "twisted.internet.reactor.callLater"
+  ],
+  "twisted.internet.endpoints": [
+    "twisted.internet.endpoints.clientFromString"
+  ],
+  "twisted.internet.protocol": [
+    "twisted.internet.protocol.Protocol",
+    "twisted.internet.protocol.ReconnectingClientFactory",
+    "twisted.internet.protocol.ServerFactory"
+  ],
+  "twisted.internet.reactor": [
+    "twisted.internet.reactor.listenTCP",
+    "twisted.internet.reactor.run"
+  ],
+  "OpenSSL": [
+    "OpenSSL.Context",
+    "OpenSSL.Connection",
+    "OpenSSL.do_handshake",
+    "OpenSSL.set_accept_state",
+    "OpenSSL.get_servername",
+    "OpenSSL.bio_write"
+  ],
+  "ssl": [
+    "ssl.TLSv1_2_METHOD",
+    "ssl.set_tlsext_servername_callback"
+  ],
+  "NameResolver": [
+    "NameResolver.__init__",
+    "NameResolver.resolve",
+    "NameResolver.get_endpoint"
+  ],
+  "SSLContext": [
+    "SSLContext.__init__",
+    "SSLContext.parse_client_hello"
+  ],
+  "ServerProtocol": [
+    "ServerProtocol.__init__",
+    "ServerProtocol.connectionMade",
+    "ServerProtocol.parseSNI",
+    "ServerProtocol.createClient",
+    "ServerProtocol.dataReceived",
+    "ServerProtocol.write"
+  ],
+  "ClientProtocol": [
+    "ClientProtocol.__init__",
+    "ClientProtocol.connectionMade",
+    "ClientProtocol.dataReceived",
+    "ClientProtocol.write",
+    "ClientProtocol.connectionLost"
+  ]
+}

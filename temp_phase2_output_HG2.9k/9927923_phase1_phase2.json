@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.atleast_2d added in numpy 1.16 \u2192 min version 1.0",
+        "numpy.newaxis removed in numpy 1.19 \u2192 max version 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn.mixture": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "GMM introduced in sklearn 0.21 \u2192 max version None"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "sklearn.datasets": {
+      "inferred_version_range": ">=0.23,<0.25",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.25",
+      "evidence": [
+        "make_classification introduced in scikit-learn 0.22 \u2192 min version 0.23",
+        "make_classification deprecated in scikit-learn 0.24 \u2192 max version 0.24"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0,<2.0",
+    "scikit-learn>=0.23,<0.25"
+  ]
+}

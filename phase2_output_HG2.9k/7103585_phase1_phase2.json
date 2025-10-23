@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "dns.message.make_query added in Python y \u2192 min Python y",
+      "dns.rdataclass.IN added in Python y \u2192 min Python y",
+      "dns.rdatatype.A added in Python y \u2192 min Python y",
+      "dns.flags.RD added in Python y \u2192 min Python y",
+      "dns.query.udp added in Python y \u2192 min Python y",
+      "sys.argv added in Python x \u2192 max Python z",
+      "sys.exit added in Python x \u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dns": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "dns>=1.2.0,<2.0.0",
+      "evidence": [
+        "dns.message.make_query introduced in v1.2.0",
+        "dns.rdataclass.IN introduced in v1.2.0",
+        "dns.rdatatype.A introduced in v1.2.0",
+        "dns.flags.RD introduced in v1.2.0",
+        "dns.query.udp introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "sys>=3.5.0,<4.0.0",
+      "evidence": [
+        "sys.argv introduced in v3.5.0",
+        "sys.exit introduced in v3.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dns>=1.2.0,<2.0.0",
+    "sys>=3.5.0,<4.0.0"
+  ]
+}

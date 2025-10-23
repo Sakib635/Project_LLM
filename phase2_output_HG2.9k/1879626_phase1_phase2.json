@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "bson.ObjectId added in Python 3.7 \u2192 min Python 3.7",
+      "django.conf.settings added in Python 3.8 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bson.ObjectId added in Python 3.7 \u2192 min Python 3.7",
+        "django.conf.settings added in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "common": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MongoConnection added in Python 3.7 \u2192 min Python 3.7",
+        "django.views.generic.base.View introduced in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Http404 introduced in Python 3.8 \u2192 max Python 3.8",
+        "HttpResponseRedirect introduced in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "python.objectid": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bson.ObjectId added in Python 3.7 \u2192 min Python 3.7",
+        "django.conf.settings added in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bson>=3.7,<4.0",
+    "common>=3.7,<4.0",
+    "django.http>=3.8,<4.0",
+    "python.objectid>=3.7,<4.0"
+  ]
+}

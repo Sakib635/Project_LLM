@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 105, in <module>
+    main()
+  File "snippet.py", line 101, in main
+    service_account_email)
+  File "snippet.py", line 33, in get_service
+    service_account_email, key_file_location, scopes=scope)
+  File "/usr/local/lib/python2.7/site-packages/oauth2client/service_account.py", line 329, in from_p12_keyfile
+    with open(filename, 'rb') as file_obj:
+IOError: [Errno 2] No such file or directory: 'yourkeyname.p12'

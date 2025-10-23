@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gtk.MenuItem and gtk.Menu were introduced in Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.2.0,<2.0.0",
+      "evidence": [
+        "os.path.exists and os.getenv were introduced in Python 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "shlex": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "shlex>=2.0.0,<3.0.0",
+      "evidence": [
+        "shlex.split was introduced in Python 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gtk>=3.8.0,<4.0.0",
+    "os>=1.2.0,<2.0.0",
+    "shlex>=2.0.0,<3.0.0"
+  ]
+}

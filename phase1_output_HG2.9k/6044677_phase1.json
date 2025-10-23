@@ -1,0 +1,17 @@
+{
+  "tox._config": [
+    "parseconfig"
+  ],
+  "print": [
+    "print"
+  ],
+  "env:": [],
+  "for": [
+    "for env in parseconfig(None, 'tox').envlist"
+  ],
+  "tox": [
+    "tox",
+    "-e $TOX_ENV"
+  ],
+  "script:": []
+}

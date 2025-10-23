@@ -1,0 +1,29 @@
+```
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["os.path.join(SITE_ROOT, 'static') introduced in Python 3.4 → min Python 3.5", "time.clock removed in Python 3.9 → max Python null"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.2.0,<2.0.0",
+      "evidence": ["os.path.dirname(os.path.realpath(__file__)) introduced in Python 1.2.0 → min Python 1.2.0", "os.path.join(SITE_ROOT, 'static') removed in Python 3.9 → max Python null"],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.2.0,<2.0.0"
+  ]
+}
+```

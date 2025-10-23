@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 409, in <module>
+    suite = TestSuiteBuilder().build(*paths)
+  File "/usr/local/lib/python2.7/site-packages/robot/running/builder/builders.py", line 83, in build
+    self.included_suites).build(paths)
+  File "/usr/local/lib/python2.7/site-packages/robot/parsing/suitestructure.py", line 58, in build
+    paths = list(self._normalize_paths(paths))
+  File "/usr/local/lib/python2.7/site-packages/robot/parsing/suitestructure.py", line 66, in _normalize_paths
+    raise DataError('One or more source paths required.')
+robot.errors.DataError: One or more source paths required.

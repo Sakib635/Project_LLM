@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.sleep added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "ctypes": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "ctypes>=1.0.0,<2.0.0",
+      "evidence": [
+        "ctypes.WinDLL introduced in version 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "win32net": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32net>=1.0.0,<2.0.0",
+      "evidence": [
+        "win32net.NetLocalGroupGetMembers introduced in version 1.0.0",
+        "win32net.NetLocalGroupAddMembers introduced in version 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "win32api": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "win32api>=1.0.0,<2.0.0",
+      "evidence": [
+        "win32api.GetUserNameEx introduced in version 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep removed in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ctypes>=1.0.0,<2.0.0",
+    "win32net>=1.0.0,<2.0.0",
+    "win32api>=1.0.0,<2.0.0",
+    "time>=1.0.0,<2.0.0"
+  ]
+}

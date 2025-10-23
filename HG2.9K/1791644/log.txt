@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "snippet.py", line 1, in <module>
+    from compressor.filters import CompilerFilter
+  File "/usr/local/lib/python2.7/site-packages/compressor/filters/__init__.py", line 2, in <module>
+    from compressor.filters.base import (FilterBase, CallbackOutputFilter,
+  File "/usr/local/lib/python2.7/site-packages/compressor/filters/base.py", line 26, in <module>
+    from compressor.cache import cache, get_precompiler_cachekey
+  File "/usr/local/lib/python2.7/site-packages/compressor/cache.py", line 14, in <module>
+    from compressor.conf import settings
+  File "/usr/local/lib/python2.7/site-packages/compressor/conf.py", line 7, in <module>
+    from appconf import AppConf
+  File "/usr/local/lib/python2.7/site-packages/appconf/__init__.py", line 1, in <module>
+    from .base import AppConf  # noqa
+  File "/usr/local/lib/python2.7/site-packages/appconf/base.py", line 107
+    class AppConf(metaclass=AppConfMetaClass):
+                           ^
+SyntaxError: invalid syntax

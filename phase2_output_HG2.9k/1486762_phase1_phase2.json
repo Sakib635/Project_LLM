@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+      "evidence": [
+        "requests.get introduced in v2.0.0, requests.post introduced in v2.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=0.0.1,<0.2.0",
+      "recommended_requirements_line": "urllib>=0.0.1,<0.2.0",
+      "evidence": [
+        "urllib.request.urlopen introduced in v0.0.1",
+        "urllib.request.Request introduced in v0.0.2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.0.0,<3.0.0",
+    "urllib>=0.0.1,<0.2.0"
+  ]
+}

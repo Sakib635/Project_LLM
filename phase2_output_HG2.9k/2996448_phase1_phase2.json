@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "2.7",
+"max": "3.9",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"sublime_plugin": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["EventListener introduced in sublime_plugin 3.0"],
+"confidence": 1,
+"notes": ""
+},
+"sublime": {
+"inferred_version_range": ">=3.7.0,<4.0.0",
+"recommended_requirements_line": "sublime>=3.7.0,<4.0.0",
+"evidence": ["Region introduced in sublime 3.7.0", "Window added in sublime 4.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"sublime_plugin>=3.0",
+"sublime>=3.7.0,<4.0.0"
+]
+}
+}

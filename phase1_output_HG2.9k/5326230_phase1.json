@@ -1,0 +1,19 @@
+{
+  "pykd": {
+    "module": [
+      "kernel32",
+      "ntdll"
+    ]
+  },
+  "reg": {
+    "rip": "0",
+    "eip": "0"
+  },
+  "is64bitSystem": [
+    ""
+  ],
+  "while": [
+    "(kernel32.begin() < ip and ip < kernel32.end()) or (ntdll.begin() < ip and ip < ntdll.end())",
+    "trace()"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"scene": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["scene.Scene", "scene.Node"],
+"confidence": 0.0,
+"notes": ""
+},
+"ui": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "ui>=1.2.0,<2.0.0",
+"evidence": ["ui.ImageContext", "ui.Path", "ui.set_color", "ui.SpriteNode"],
+"confidence": 0.875,
+"notes": ""
+},
+"math": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["math.floor"],
+"confidence": 0.25,
+"notes": "math.floor is only available in Python versions >=3.4"
+}
+},
+"requirements.txt": [
+"ui>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": [
+"ui>=1.2.0,<2.0.0"
+]
+}

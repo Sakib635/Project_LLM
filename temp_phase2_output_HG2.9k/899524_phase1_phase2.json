@@ -1,0 +1,63 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "simplejson": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "simplejson>=1.2.0,<2.0.0",
+      "evidence": ["simplejson.dumps API introduced in simplejson 1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "cjson": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cjson>=1.2.0,<2.0.0",
+      "evidence": ["cjson.encode API introduced in cjson 1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "ujson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["ujson.dumps API deprecated in ujson 2.0.0"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": ["json.dumps API introduced in json 1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "jsonlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["jsonlib.dumps API deprecated in jsonlib 2.0.0"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["time.time API deprecated in Python 3.8"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pickle>=1.2.0,<2.0.0",
+      "evidence": ["pickle.dumps API introduced in pickle 1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+```

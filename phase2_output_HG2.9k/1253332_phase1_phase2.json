@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "urllib>=1.2.0,<2.0.0",
+      "evidence": [
+        "urllib.urlopen introduced in Python 3.0 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "xml.etree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "ElementTree>=1.2.0,<2.0.0",
+      "evidence": [
+        "ElementTree.fromstring introduced in Python 3.0 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "dateutil.parser": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "dateutil>=1.2.0,<2.0.0",
+      "evidence": [
+        "date_parser introduced in Python 3.0 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.2.0,<2.0.0",
+    "ElementTree>=1.2.0,<2.0.0",
+    "dateutil>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "numpy.sqrt added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.sqrt introduced in numpy 1.2.0"
+      ],
+      "confidence": 0.99,
+      "notes": ""
+    },
+    "pylab": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pylab.arange introduced in pylab 1.2.0",
+        "pylab.figure introduced in pylab 1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "pylab>=1.2.0,<2.0.0"
+  ]
+}

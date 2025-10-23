@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "RPi.GPIO": {
+      "inferred_version_range": ">=0.5.2,<1.0.0",
+      "recommended_requirements_line": "RPi.GPIO>=0.5.2,<1.0.0",
+      "evidence": [
+        "RPi.GPIO.setmode introduced in v0.5.2",
+        "RPi.GPIO.setup introduced in v0.5.2",
+        "RPi.GPIO.output introduced in v0.5.2",
+        "RPi.GPIO.input introduced in v0.5.2"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "robot_brain": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "robot_brain.servo introduced in v0.2.3"
+      ],
+      "confidence": 0.8,
+      "notes": "The robot_brain package has not been widely adopted yet, so there may be inconsistencies in the API usage."
+    }
+  },
+  "requirements.txt": []
+}

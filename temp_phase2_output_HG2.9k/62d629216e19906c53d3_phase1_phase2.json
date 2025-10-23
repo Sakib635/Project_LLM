@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4","time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"fiona": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "fiona>=1.2.0,<2.0.0",
+"evidence": ["fiona.open introduced in v1.2.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"click": {
+"inferred_version_range": ">=6.7,<8.0",
+"recommended_requirements_line": "click>=6.7,<8.0",
+"evidence": ["click.command introduced in v6.7","click.argument introduced in v7.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"rasterio": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "rasterio>=1.2.0,<2.0.0",
+"evidence": ["rasterio.features.rasterize introduced in v1.2.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"fiona>=1.2.0,<2.0.0",
+"click>=6.7,<8.0",
+"rasterio>=1.2.0,<2.0.0"]
+},
+"requirements.txt": []
+}

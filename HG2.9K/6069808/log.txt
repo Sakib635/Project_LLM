@@ -1,0 +1,19 @@
+From http://learningenglish.voanews.com/programindex.html parsing themes ...
+Traceback (most recent call last):
+  File "snippet.py", line 81, in <module>
+    html = download_data(INDEX_PAGE)
+  File "snippet.py", line 36, in download_data
+    data = urllib2.urlopen(url).read()
+  File "/usr/local/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/lib/python2.7/urllib2.py", line 1198, in do_open
+    raise URLError(err)
+urllib2.URLError: <urlopen error [Errno 99] Cannot assign requested address>

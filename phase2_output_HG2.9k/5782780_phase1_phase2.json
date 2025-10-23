@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "Python 3.8 introduced pathlib.Path",
+      "Python 3.10 removed time.clock"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Orange": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Orange.classification.tree introduced in Orange >=1.2.0",
+        "Orange.feature.scoring introduced in Orange >=1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Orange.classification.tree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "forcedfirstsplittreelearner>=1.2.0",
+      "evidence": [
+        "ForcedFirstSplitTreeLearner introduced in Orange >=1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Orange>=1.2.0"
+  ]
+}

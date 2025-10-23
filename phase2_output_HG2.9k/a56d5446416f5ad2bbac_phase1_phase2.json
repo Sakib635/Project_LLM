@@ -1,0 +1,71 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.time added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Theano was last updated in 2019; no evidence of its usage beyond that version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "time>={VERSION},<4.0",
+      "evidence": [
+        "time.time added in Python 3.7 \u2192 max Python 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2.0",
+      "recommended_requirements_line": "numpy>={VERSION},<2.0",
+      "evidence": [
+        "numpy.random.randn added in numpy 1.16 \u2192 max numpy 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.1,<4.0",
+      "recommended_requirements_line": "matplotlib>={VERSION},<4.0",
+      "evidence": [
+        "matplotlib.pyplot.imsave added in matplotlib 3.1 \u2192 max matplotlib 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "scipy>={VERSION},<2.0",
+      "evidence": [
+        "scipy.misc.imsave added in scipy 1.2 \u2192 max scipy 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "foxhound": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Foxhound was last updated in 2019; no evidence of its usage beyond that version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.16,<2.0",
+    "matplotlib>=3.1,<4.0",
+    "scipy>=1.2,<2.0"
+  ]
+}

@@ -1,0 +1,429 @@
+{% extends "base.html" %}
+
+{% block title %}Dockerfile生成{% endblock %}
+{% block navititle %}Dockerfile生成{% endblock %}
+{% block page_styles %}{% endblock %}
+{% block mainpagebody %}
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style type="text/css">
+            #dockerfile {
+                margin: 2%;
+                width: 45%;
+                height: 600px;
+                background-color: #fbffe7;
+                float: left;
+            }
+
+            #dockerfile_text_terminal {
+                overflow-x: scroll;
+                overflow-y: scroll;
+                height: 100%;
+                width: 100%;
+            }
+
+            #packages_text_terminal {
+                overflow-x: scroll;
+                overflow-y: scroll;
+                height: 200px;
+                width: 100%;
+            }
+
+            pre {
+                clear: left;
+                min-height: 42px;
+                padding: 15px 0;
+                color: #f1f1f1;
+                font-family: Monaco, monospace;
+                font-size: 12px;
+                line-height: 19px;
+                white-space: nowrap;
+                background-color: #222;
+                counter-reset: line-numbering;
+                margin-top: 0;
+            }
+
+            #input_data {
+                float: right;
+                width: 45%;
+                margin: 2%;
+            }
+        </style>
+
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <style>
+
+
+            .auto_hidden {
+                width: 204px;
+                border-top: 1px solid #333;
+                border-bottom: 1px solid #333;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
+                position: absolute;
+                display: none;
+            }
+
+            .auto_show {
+                width: 204px;
+                border-top: 1px solid #333;
+                border-bottom: 1px solid #333;
+                border-left: 1px solid #333;
+                border-right: 1px solid #333;
+                position: absolute;
+                z-index: 9999;
+                /* 设置对象的层叠顺序 */
+                display: block;
+            }
+
+            .auto_onmouseover {
+                color: #ffffff;
+                background-color: highlight;
+                width: 100%;
+            }
+
+            .auto_onmouseout {
+                color: #000000;
+                width: 100%;
+                background-color: #ffffff;
+            }
+        </style>
+        <script>
+            var Auto = function(id) {
+                return "string" == typeof id ? document.getElementById(id) : id;
+            }
+            var Bind = function(object, fun) {
+                return function() {
+                    return fun.apply(object, arguments);
+                }
+            }
+
+            function AutoComplete(obj, autoObj, arr) {
+                this.obj = Auto(obj); //输入框
+                this.autoObj = Auto(autoObj); //DIV的根节点
+                this.value_arr = arr; //不要包含重复值
+                this.index = -1; //当前选中的DIV的索引
+                this.search_value = ""; //保存当前搜索的字符
+            }
+            AutoComplete.prototype = {
+                //初始化DIV的位置
+                init: function() {
+                    this.autoObj.style.left = this.obj.offsetLeft + "px";
+                    this.autoObj.style.top = this.obj.offsetTop + this.obj.offsetHeight + "px";
+                    this.autoObj.style.width = this.obj.offsetWidth - 2 + "px"; //减去边框的长度2px
+                },
+                //删除自动完成需要的所有DIV
+                deleteDIV: function() {
+                    while(this.autoObj.hasChildNodes()) {
+                        this.autoObj.removeChild(this.autoObj.firstChild);
+                    }
+                    this.autoObj.className = "auto_hidden";
+                },
+                //设置值
+                setValue: function(_this) {
+                    return function() {
+                        _this.obj.value = this.seq;
+                        _this.autoObj.className = "auto_hidden";
+                    }
+                },
+                //模拟鼠标移动至DIV时，DIV高亮
+                autoOnmouseover: function(_this, _div_index) {
+                    return function() {
+                        _this.index = _div_index;
+                        var length = _this.autoObj.children.length;
+                        for(var j = 0; j < length; j++) {
+                            if(j != _this.index) {
+                                _this.autoObj.childNodes[j].className = 'auto_onmouseout';
+                            } else {
+                                _this.autoObj.childNodes[j].className = 'auto_onmouseover';
+                            }
+                        }
+                    }
+                },
+                //更改classname
+                changeClassname: function(length) {
+                    for(var i = 0; i < length; i++) {
+                        if(i != this.index) {
+                            this.autoObj.childNodes[i].className = 'auto_onmouseout';
+                        } else {
+                            this.autoObj.childNodes[i].className = 'auto_onmouseover';
+                            this.obj.value = this.autoObj.childNodes[i].seq;
+                        }
+                    }
+                },
+                //响应键盘
+                pressKey: function(event) {
+                    var length = this.autoObj.children.length;
+                    //光标键"↓"
+                    if(event.keyCode == 40) {
+                        ++this.index;
+                        if(this.index > length) {
+                            this.index = 0;
+                        } else if(this.index == length) {
+                            this.obj.value = this.search_value;
+                        }
+                        this.changeClassname(length);
+                    }
+                    //光标键"↑"
+                    else if(event.keyCode == 38) {
+                        this.index--;
+                        if(this.index < -1) {
+                            this.index = length - 1;
+                        } else if(this.index == -1) {
+                            this.obj.value = this.search_value;
+                        }
+                        this.changeClassname(length);
+                    }
+                    //回车键
+                    else if(event.keyCode == 13) {
+                        this.autoObj.className = "auto_hidden";
+                        this.index = -1;
+                    } else {
+                        this.index = -1;
+                    }
+                },
+                //程序入口
+                start: function(event) {
+                    if(event.keyCode != 13 && event.keyCode != 38 && event.keyCode != 40) {
+                        this.init();
+                        this.deleteDIV();
+                        this.search_value = this.obj.value;
+                        var valueArr = this.value_arr;
+                        valueArr.sort();
+                        if(this.obj.value.replace(/(^\s*)|(\s*$)/g, '') == "") {
+                            return;
+                        } //值为空，退出
+                        try {
+                            var reg = new RegExp("(" + this.obj.value + ")", "i");
+                        } catch(e) {
+                            return;
+                        }
+                        var div_index = 0; //记录创建的DIV的索引
+                        for(var i = 0; i < valueArr.length; i++) {
+                            if(reg.test(valueArr[i])) {
+                                var div = document.createElement("div");
+                                div.className = "auto_onmouseout";
+                                div.seq = valueArr[i];
+                                div.onclick = this.setValue(this);
+                                div.onmouseover = this.autoOnmouseover(this, div_index);
+                                div.innerHTML = valueArr[i].replace(reg, "<strong>$1</strong>"); //搜索到的字符粗体显示
+                                this.autoObj.appendChild(div);
+                                this.autoObj.className = "auto_show";
+                                div_index++;
+                                if(div_index>=20){
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    this.pressKey(event);
+                    window.onresize = Bind(this, function() {
+                        this.init();
+                    });
+                }
+            }
+            var autoComplete;
+            var i = 0;
+            pkg_urls = '{{ pkg_urls }}';
+            pkg_url_data = pkg_urls.split('$_$');
+            function search() {
+                if(i == 0) {
+                    autoComplete = new AutoComplete('package_input', 'autoHide', pkg_url_data);
+                    i = 1;
+                }
+
+                autoComplete.start(event);
+            }
+            //-->
+        </script>
+    </head>
+    <div class="page-content">
+        <div class="page-header">
+            <h1>
+                Dockerfile生成
+            </h1>
+        </div><!-- /.page-header -->
+        <div id="dockerfile">
+            <div class="widget-header header-color-green2">
+                <h5 class="bigger lighter">
+                    <i class="icon-book"></i>
+                    Dockerfile
+                </h5>
+            </div>
+            <textarea id="dockerfile_text_terminal" style="font-size: 20px" >
+
+            </textarea>
+        </div>
+        <div id="input_data">
+            <div class="page-header">
+                <h1>
+                    Dockerfile配置
+                </h1>
+            </div><!-- /.page-header -->
+            <div class="col-xs-12">
+                <!-- Dockerfile info -->
+                <form class="form-horizontal" onsubmit="return false">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="username"> 用户名（可选） </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" value="otc" id="username" name="username" placeholder="otc" class="col-xs-10 col-sm-5" />
+                        </div>
+                    </div>
+
+                    <div class="space-4"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="email"> 邮箱（可选） </label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="email" name="email" placeholder="otc@gmail.com" class="col-xs-10 col-sm-5" />
+                        </div>
+                    </div>
+
+                    <div class="space-4"></div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="">软件包</label>
+
+                        <div class="col-sm-9">
+                            <input  type="text" class="form-control search-query" id="package_input" placeholder="请输入软件包名称 ..." onkeyup="search()"/>
+                            <div class="auto_hidden" id="autoHide">
+                                <!--自动完成 DIV-->
+                            </div>
+                            <button id="choose_package_btn" type="button" class="btn btn-success btn-sm" title="">
+                                <i class="icon-lock smaller-80"></i>
+                                选择软件包
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="">软件包（可选）</label>
+                        <div class="col-sm-9">
+                            <div class="space-4"></div>
+                            <p style="color:orange">输入软件包名称, 用分号或换行隔开...</p>
+                            <textarea id="packages_text_terminal">
+                            </textarea>
+                        </div>
+                    </div>
+
+                    <div class="space-4"></div>
+
+                    <div class="space-4"></div>
+
+                    <div class="space-4"></div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label no-padding-right" for="">基础镜像</label>
+
+                        <div class="col-sm-9">
+                            <input value="" type="text" class="col-sm-12" name="tags" id="base_image_key" placeholder="镜像名,语义标签 ..." />
+                            <button id="choose_base_image_btn" type="button" class="btn btn-success btn-sm" title="点击选择基础镜像">
+                                <i class="icon-lock smaller-80"></i>
+                                推荐镜像
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="clearfix form-actions">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button class="btn btn-info" type="submit" id="generate_df_btn">
+                                <i class="icon-ok bigger-110"></i>
+                                生成Dockerfile
+                            </button>
+
+                            &nbsp; &nbsp; &nbsp;
+                            <button class="btn btn-danger" type="reset" id = "reset_df_btn">
+                                <i class="icon-undo bigger-110"></i>
+                                重置
+                            </button>
+                            &nbsp; &nbsp; &nbsp;
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block inlinescripts %}
+
+
+    <script src="static/assets/js/jquery-ui-1.10.3.full.min.js"></script>
+    <script src="static/js/utils.js"></script>
+
+    <script type="text/javascript">
+        {#  样式 #}
+        $("#side-docker").addClass("active");
+
+        pkg_urls = '{{ pkg_urls }}';
+        pkg_url_data = pkg_urls.split('$_$');
+        console.log(pkg_url_data);
+
+
+        jQuery(function($) {
+            cp_btn = $("#choose_package_btn");
+            cp_btn.click(function () {
+                document.getElementById('packages_text_terminal').value += "\n" + $("#package_input").val();
+                document.getElementById('package_input').value = "";
+            });
+            gene_df_btn = $('#generate_df_btn');
+            gene_df_btn.click(function () {
+                document.getElementById("dockerfile_text_terminal").value = "正在生成Dockerfile...";
+                post_data = {};
+                post_data['username'] = $('#username').val();
+                post_data['email'] = $('#email').val();
+                base_image_key = $('#base_image_key').val();
+                if (!base_image_key.endsWith("#")){
+                    console.log("alert");
+                    window.alert("请先选择镜像, 如果选择默认镜像,请以 # 结尾");
+                    return
+                }
+                post_data['base_image'] = base_image_key.substring(0, base_image_key.length-1);
+                console.log(post_data["base_image"]);
+                pkg_text = $('#packages_text_terminal').val();
+                post_data['pkg_text'] = pkg_text;
+                console.log(post_data['pkg_text']);
+                gene_df_btn.html('<i class=\"icon-spinner icon-spin orange bigger-125\"></i> 请求中...');
+                $.post("generate_dockerfile_post", post_data,
+                    function(data){
+                        console.log(data);
+                        console.log("return back");
+                        console.log(data["dockerfile"]);
+                        document.getElementById('dockerfile_text_terminal').value = data['dockerfile'];
+                        gene_df_btn.html('<i class="icon-ok bigger-110"></i>生成Dockerfile')
+                    }, "json");
+            });
+
+            document.getElementById("packages_text_terminal").value = "";
+
+            $('textarea[class*=autosize]').autosize({append: "\n"});
+            cbi_btn = $('#choose_base_image_btn');
+            cbi_btn.click(function () {
+{#                console.log("点击更新");#}
+                cbi_btn.html('<i class=\"icon-spinner icon-spin orange bigger-125\"></i> 请求中...');
+                post_data = {};
+                post_data['base_image_key'] = $('#base_image_key').val();
+                post_data['pkg_text'] = $('#packages_text_terminal').val();
+                $.post("df_search_base_image", post_data,
+                    function(data){
+                        console.log(data);
+                        console.log(data[0]);
+                        document.getElementById('base_image_key').value = data[0] + "#";
+                        cbi_btn.html('<i class="icon-lock smaller-80"></i>推荐镜像');
+                    }, "json");
+            });
+        });
+
+
+
+
+    </script>
+
+{% endblock %}

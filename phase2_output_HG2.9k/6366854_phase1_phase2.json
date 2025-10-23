@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "twisted.internet.reactor added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted.web.http": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "twisted>=1.2.0,<2.0.0",
+      "evidence": [
+        "twisted.web.http.HTTPChannel introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.application": {
+      "inferred_version_range": ">=8.0.0",
+      "recommended_requirements_line": "twisted>=8.0.0,<9.0.0",
+      "evidence": [
+        "twisted.application.internet introduced in v8.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.web.server": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "twisted>=1.2.0,<2.0.0",
+      "evidence": [
+        "twisted.web.server.Site introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.web.resource": {
+      "inferred_version_range": ">=8.0.0",
+      "recommended_requirements_line": "twisted>=8.0.0,<9.0.0",
+      "evidence": [
+        "twisted.web.resource.Resource introduced in v8.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "SlowResource": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SlowResource not found in any version"
+      ],
+      "confidence": 0.0,
+      "notes": "SlowResource was not found in any version of Twisted."
+    },
+    "MyProtocol": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MyProtocol not found in any version"
+      ],
+      "confidence": 0.0,
+      "notes": "MyProtocol was not found in any version of Twisted."
+    }
+  },
+  "requirements.txt": [
+    "twisted>=1.2.0,<2.0.0",
+    "twisted>=8.0.0,<9.0.0"
+  ]
+}

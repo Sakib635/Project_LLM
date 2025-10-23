@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "urllib.request.urlopen added in Python 3.7 \u2192 min Python 3.6",
+      "requests.get added in Python 2.7 \u2192 max Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib.request": {
+      "inferred_version_range": ">=3.7,<3.8",
+      "recommended_requirements_line": "urllib.request>=3.7,<3.8",
+      "evidence": [
+        "urllib.request.urlopen added in Python 3.7 \u2192 min Python 3.6",
+        "urllib.request.urlopen removed in Python 3.8 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "requests>=2.7,<3.0",
+      "evidence": [
+        "requests.get added in Python 2.7 \u2192 min Python 2.7",
+        "requests.post added in Python 2.8 \u2192 max Python 2.9"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib.request>=3.7,<3.8",
+    "requests>=2.7,<3.0"
+  ]
+}

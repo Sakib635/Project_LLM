@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "jsonpickle.encode added in Python 1.0 \u2192 min Python 3.0",
+      "domain._make_key_pattern deprecated in Python 2.7 \u2192 max Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "jsonpickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "jsonpickle.encode introduced in version 0.5 \u2192 v1.2.0",
+        "jsonpickle.decode introduced in version 0.6 \u2192 v1.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "domain": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "domain.make_attribute_key introduced in version 0.1 \u2192 v2.0.0",
+        "domain._sep introduced in version 0.3 \u2192 v2.5.0",
+        "domain._make_basic_key introduced in version 0.4 \u2192 v3.0.0",
+        "domain._make_key_pattern deprecated in version 0.7 \u2192 v3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "redis": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "redis.keys introduced in version 2.4 \u2192 v3.0.0",
+        "redis.mget introduced in version 2.6 \u2192 v3.5.0",
+        "redis.set introduced in version 2.8 \u2192 v3.9.0",
+        "redis.delete introduced in version 3.0 \u2192 v3.10.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array introduced in version 1.6 \u2192 v1.19.5",
+        "numpy.linalg.norm introduced in version 1.8 \u2192 v1.20.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

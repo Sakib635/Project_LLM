@@ -1,0 +1,52 @@
+```
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "astropy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "astropy>=1.0,<2.0",
+      "evidence": ["astropy.units introduced in v1.0", "astropy.coordinates introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "streams": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["streams.coordinates introduced in v0.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "icrs": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "ICRSCoordinates>=1.0,<2.0",
+      "evidence": ["ICRSCoordinates introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sgr": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "SgrCoordinates>=1.0,<2.0",
+      "evidence": ["SgrCoordinates introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "orp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["OrphanCoordinates introduced in v0.2"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "astropy>=1.0,<2.0",
+    "ICRSCoordinates>=1.0,<2.0",
+    "SgrCoordinates>=1.0,<2.0"
+  ]
+}
+```

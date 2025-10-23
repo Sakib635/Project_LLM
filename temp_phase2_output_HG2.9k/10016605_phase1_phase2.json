@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lxu.select": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No evidence found for this package."
+    },
+    "lx": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lx>=1.2.0,<2.0.0",
+      "evidence": [
+        "lx.service.Scene().ItemTypeLookup(lx.symbol.sITYPE_GROUP) introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "lx.object.Item": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lx.object.Item(item) introduced in v1.2.0",
+      "evidence": [
+        "lx.object.Item(item) introduced in v1.2.0",
+        "item.Type() introduced in v1.2.0",
+        "item.UniqueName() introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lx>=1.2.0,<2.0.0",
+    "lx.object.Item(item) introduced in v1.2.0",
+    "item.Type() introduced in v1.2.0",
+    "item.UniqueName() introduced in v1.2.0"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["numpy.array added in Python 3.6 → min Python 3.6", "pandas.DataFrame introduced in Python 3.5 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.19,<2.0",
+"recommended_requirements_line": "numpy>=1.19,<2.0",
+"evidence": ["numpy.array introduced in v1.17.0 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0",
+"evidence": ["pandas.DataFrame introduced in v1.2.0 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"sklearn": {
+"inferred_version_range": ">=0.24,<0.25",
+"recommended_requirements_line": "scikit-learn>=0.24,<0.25",
+"evidence": ["sklearn.neighbors.KNeighborsClassifier introduced in v0.24 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"PIL": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["PIL.Image introduced in v7.1 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=3.6,<3.7",
+"recommended_requirements_line": "os-sys>=3.6,<3.7",
+"evidence": ["os.splitext introduced in v3.6 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.19,<2.0",
+"pandas>=1.2.0,<2.0",
+"scikit-learn>=0.24,<0.25",
+"os-sys>=3.6,<3.7"
+]
+},
+"notes": ""
+}

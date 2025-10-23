@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "social_auth.backends.facebook": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "FacebookBackend introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "social_auth.backends": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "google.GoogleOAuth2Backend introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "apps.photo.models": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Photo introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.template.defaultfilters": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "slugify introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.core.files.base": {
+      "inferred_version_range": ">=0.1.0,<0.2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ContentFile introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "social-auth-facebook>=0.1.0,<0.2.0",
+    "social-auth-google-oauth2>=0.1.0,<0.2.0",
+    "django-photo>=0.1.0,<0.2.0",
+    "django-template-defaultfilters>=0.1.0,<0.2.0",
+    "django-core-files-base>=0.1.0,<0.2.0"
+  ]
+}

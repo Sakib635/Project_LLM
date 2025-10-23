@@ -1,0 +1,27 @@
+```
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gimpfu": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "gimpfu>=1.0,<2.0",
+      "evidence": ["gimpfu.register added in Python 1 → min Python 1", "gimpfu.unregister removed in Python 2 → max Python 2"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.getcwd added in Python 0 → min Python 0", "os.getcwdu removed in Python 3 → max Python 3"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["gimpfu>=1.0,<2.0", "os>=0.0,<3.0"]
+}
+```

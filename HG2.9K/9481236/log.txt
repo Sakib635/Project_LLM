@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "snippet.py", line 3, in <module>
+    from solution import is_happy, happy_primes
+  File "/usr/local/lib/python2.7/site-packages/solution/__init__.py", line 13, in <module>
+    from .form import Form  # noqa
+  File "/usr/local/lib/python2.7/site-packages/solution/form.py", line 11, in <module>
+    from .fields import Field
+  File "/usr/local/lib/python2.7/site-packages/solution/fields/__init__.py", line 7, in <module>
+    from .file import File, Image, IMAGES, DOCUMENTS, DATA, ARCHIVES
+  File "/usr/local/lib/python2.7/site-packages/solution/fields/file/__init__.py", line 1, in <module>
+    from .file import File
+  File "/usr/local/lib/python2.7/site-packages/solution/fields/file/file.py", line 2, in <module>
+    from werkzeug.datastructures import FileStorage
+ImportError: No module named werkzeug.datastructures

@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pickle": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pickle>=1.2.0,<2.0.0",
+      "evidence": [
+        "pickle.load introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4.0,<4.0.0",
+      "recommended_requirements_line": "os>=3.4.0,<4.0.0",
+      "evidence": [
+        "os.path.join added in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "png": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "png>=1.2.0,<2.0.0",
+      "evidence": [
+        "png.from_array introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<2.0.0",
+      "evidence": [
+        "numpy.array added in v1.7",
+        "numpy.linalg.norm introduced in v1.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pickle>=1.2.0,<2.0.0",
+    "os>=3.4.0,<4.0.0",
+    "png>=1.2.0,<2.0.0",
+    "numpy>=1.7.0,<2.0.0"
+  ]
+}

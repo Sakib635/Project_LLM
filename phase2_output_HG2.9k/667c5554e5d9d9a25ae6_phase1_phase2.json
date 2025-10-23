@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "Pillow>=7.0.0,<8.0.0",
+      "evidence": [
+        "Image.open added in Pillow 5.4.1 \u2192 min Pillow 5.4.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "random>=2.2.0",
+      "evidence": [
+        "random.randint added in random 2.2.0 \u2192 min random 2.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys>=3.7",
+      "evidence": [
+        "sys.setrecursionlimit added in sys 3.7 \u2192 min sys 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=7.0.0,<8.0.0",
+    "random>=2.2.0",
+    "sys>=3.7"
+  ]
+}

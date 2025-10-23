@@ -1,0 +1,38 @@
+```
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "sublime_plugin": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": "No compatible APIs found"
+    },
+    "sublime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sublime>=1.2.0,<2.0.0",
+      "evidence": ["sublime.get_clipboard added in v1.2.0", "sublime.active_window added in v1.2.0", "sublime.open_file added in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sublime.status_message": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["sublime.status_message"],
+      "confidence": 0.8,
+      "notes": "No compatible APIs found"
+    }
+  },
+  "requirements.txt": [
+    "sublime>=1.2.0,<2.0.0",
+    "sublime_plugin>=1.2.0,<2.0.0",
+    "sublime.status_message>=1.2.0,<2.0.0"
+  ]
+}
+```

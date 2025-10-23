@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "API numpy.array added in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "API scipy.spatial.distance added in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API sklearn.metrics.pairwise_kernels removed in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": "sklearn.metrics was only available in versions before 1.0"
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API sys.stdout removed in v3.7"
+      ],
+      "confidence": 1.0,
+      "notes": "sys is a built-in module and does not have versioned APIs"
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API os.path added in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": "os is a built-in module and does not have versioned APIs"
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "scipy>=1.2.0,<2.0.0"
+  ]
+}

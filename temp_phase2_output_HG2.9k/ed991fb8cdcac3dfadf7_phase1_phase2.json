@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "argparse>=1.2,<2.0",
+      "evidence": [
+        "ArgumentParser introduced in argparse v1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "fileinput": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "fileinput>=1.4,<2.0",
+      "evidence": [
+        "input() introduced in fileinput v1.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2,<2.0",
+    "fileinput>=1.4,<2.0"
+  ]
+}

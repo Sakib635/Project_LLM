@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "objc>=1.2.0,<2.0.0",
+      "evidence": [
+        "objc.createOpaquePointerType introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Foundation>=1.2.0,<2.0.0",
+      "evidence": [
+        "NSBundle introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc>=1.2.0,<2.0.0",
+    "Foundation>=1.2.0,<2.0.0"
+  ]
+}

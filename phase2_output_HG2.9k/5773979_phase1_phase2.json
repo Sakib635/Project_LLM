@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "sys>=2.7.0,<3.0.0",
+      "evidence": [
+        "sys.argv added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "time>=2.7.0,<3.0.0",
+      "evidence": [
+        "time.clock added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "resource": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "resource.getrusage(resource.RUSAGE_SELF).ru_maxrss added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "__import__": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "__import__(s[0]).__dict__[s[1]] added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sys>=2.7.0,<3.0.0",
+    "time>=2.7.0,<3.0.0"
+  ]
+}

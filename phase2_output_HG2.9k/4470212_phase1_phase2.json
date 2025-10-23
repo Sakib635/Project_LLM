@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "inspect": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "inspect.getargspec introduced in v2.0 \u2192 min Python 2.6",
+        "inspect.signature removed in v3.5\u2192 max Python 3.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pickle.loads introduced in v2.6 \u2192 min Python 2.7",
+        "pickle.dumps removed in v4.0\u2192 max Python 3.9"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "IPython": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "IPython.utils.pickleutil.canDict introduced in v4.1 \u2192 min Python 3.5",
+        "IPython.utils.pickleutil.uncanDict removed in v7.0\u2192 max Python 3.9"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "AClass": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AClass.__init__ introduced in v2.3 \u2192 min Python 2.7",
+        "AClass.a_method removed in v4.0\u2192 max Python 3.9"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "BClass": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BClass.__init__ introduced in v2.4 \u2192 min Python 2.7",
+        "BClass.b_method removed in v5.0\u2192 max Python 3.9"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "inspect>=2.6,<3.10",
+    "pickle>=2.6,<4.0",
+    "IPython>=4.1,<7.0",
+    "AClass>=2.3,<5.0",
+    "BClass>=2.4,<5.0"
+  ]
+}

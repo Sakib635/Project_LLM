@@ -1,0 +1,54 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "tw2.core": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tw2.core>=1.0.0,<2.0.0",
+      "evidence": ["Request", "Response", "Route", "Router"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "tw2.forms": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tw2.forms>=1.0.0,<2.0.0",
+      "evidence": ["Form", "Field", "SelectionField"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "tw2.sqla": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tw2.sqla>=1.0.0,<2.0.0",
+      "evidence": ["Model", "Query", "Transaction"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "tw2.bootstrap": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tw2.bootstrap>=1.0.0,<2.0.0",
+      "evidence": ["Table", "Button", "Form"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "awesome.model": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Group", "User"],
+      "confidence": 0.5,
+      "notes": "Could not determine version range"
+    }
+  },
+  "requirements.txt": [
+    "tw2.core>=1.0.0,<2.0.0",
+    "tw2.forms>=1.0.0,<2.0.0",
+    "tw2.sqla>=1.0.0,<2.0.0",
+    "tw2.bootstrap>=1.0.0,<2.0.0"
+  ]
+}
+```

@@ -1,0 +1,46 @@
+```
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["objc.loadBundleFunctions", "objc.bundleWithPath", "objc.bundleWithIdentifier"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Foundation.NSBundle.bundleWithPath_", "Foundation.NSBundle.bundleWithIdentifier_"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "EAP8021X": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "EAP8021X>=1.2.0,<2.0.0",
+      "evidence": ["EAP8021X_bundle", "EAPOLClientConfigurationCopyProfiles"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "Security": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Security>=1.2.0,<2.0.0",
+      "evidence": ["SecIdentityCopyCertificate", "SecCertificateCopyValues"],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc>=1.2.0,<2.0.0",
+    "Foundation>=1.2.0,<2.0.0",
+    "EAP8021X>=1.2.0,<2.0.0",
+    "Security>=1.2.0,<2.0.0"
+  ]
+}
+```

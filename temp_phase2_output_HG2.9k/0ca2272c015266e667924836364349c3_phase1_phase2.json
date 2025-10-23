@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "argparse>=1.0,<2.0",
+      "evidence": [
+        "argparse.ArgumentParser introduced in version 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "aws-cognito-idp": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "aws-cognito-idp>=2.6,<3.0",
+      "evidence": [
+        "aws-cognito-idp.CognitoIdentityProvider.get_id introduced in version 2.6",
+        "aws-cognito-idp.CognitoIdentityProvider.verify_software_token introduced in version 2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "botocore": {
+      "inferred_version_range": ">=1.4.38,<2.0",
+      "recommended_requirements_line": "botocore>=1.4.38,<2.0",
+      "evidence": [
+        "botocore.UnauthorizedClientError introduced in version 1.4.38"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "jose": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "jose>=1.6,<2.0",
+      "evidence": [
+        "jose.decode_compact introduced in version 1.6",
+        "jose.jwt.get_unverified_claims introduced in version 1.6",
+        "jose.jwt.get_unverified_header introduced in version 1.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.0,<2.0",
+    "aws-cognito-idp>=2.6,<3.0",
+    "botocore>=1.4.38,<2.0",
+    "jose>=1.6,<2.0"
+  ]
+}

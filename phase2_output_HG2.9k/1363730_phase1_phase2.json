@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "StringIO.StringIO added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.5.2,<2.0.0",
+      "recommended_requirements_line": "django>=1.5.2,<2.0.0",
+      "evidence": [
+        "django.core.handlers.wsgi introduced in version 1.5.2",
+        "django.contrib.auth.models introduced in version 1.6"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in version 1.2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in version 1.14.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.5.2,<2.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.14.0,<2.0.0"
+  ]
+}

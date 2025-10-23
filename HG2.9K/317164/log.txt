@@ -1,0 +1,16 @@
+snippet.py:6: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  # Copyright (c) 2009 Raymond Hettinger
+snippet.py:1: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  import yaml
+**********************************************************************
+File "snippet.py", line 190, in __main__.repr_odict
+Failed example:
+    yaml.dump(data, default_flow_style=True)
+Expected:
+    '!!omap [foo: bar, mumble: quux, baz: gorp]\n'
+Got:
+    '!!omap [{foo: bar}, {mumble: quux}, {baz: gorp}]\n'
+**********************************************************************
+1 items had failures:
+   1 of   3 in __main__.repr_odict
+***Test Failed*** 1 failures.

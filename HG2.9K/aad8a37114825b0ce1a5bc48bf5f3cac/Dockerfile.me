@@ -1,0 +1,9 @@
+FROM python:2.7.13
+COPY . /aad8a37114825b0ce1a5bc48bf5f3cac
+RUN ["pip","install","PyUserInput"]
+RUN ["pip","install","six"]
+RUN ["pip","install","pytest"]
+RUN ["pip","install","py"]
+RUN ["pip","install","PyMouse"]
+CMD ["python","/aad8a37114825b0ce1a5bc48bf5f3cac/snippet.py"]
+

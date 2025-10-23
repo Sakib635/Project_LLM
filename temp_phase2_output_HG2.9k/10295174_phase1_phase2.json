@@ -1,0 +1,71 @@
+The extracted APIs are:
+
+pandas:
+
+* pandas.DataFrame
+* pandas.DataFrame.to_numpy
+* pandas.DataFrame.ix
+
+numpy:
+
+* numpy.array
+* numpy.linalg.norm
+
+theano:
+
+* theano.config.floatX
+* theano.logging.getLogger
+* theano.space.CompositeSpace
+* theano.space.IndexSpace
+* theano.space.VectorSpace
+* theano.utils.safe_zip
+
+scipy:
+
+* scipy.sparse.csr_matrix
+* scipy.sparse.csr_matrix.todense
+
+Based on these APIs, I have inferred the following Python version range for the project:
+
+* Minimum Python version required: 3.4
+* Maximum Python version allowed: 3.7
+
+Here are my findings for each external package used in the project:
+
+* pandas:
+	+ Inferred version range: >=1.2,<2.0
+	+ Recommended requirements line: "pandas>=1.2.0,<2.0.0"
+	+ Evidence:
+		- pandas.DataFrame introduced in v1.2.0
+		- pandas.DataFrame.to_numpy introduced in v1.2.0
+		- pandas.DataFrame.ix introduced in v1.2.0
+* numpy:
+	+ Inferred version range: >=1.19,<2.0
+	+ Recommended requirements line: "numpy>=1.19.0,<2.0.0"
+	+ Evidence:
+		- numpy.array introduced in v1.19.0
+		- numpy.linalg.norm introduced in v1.19.0
+* theano:
+	+ Inferred version range: >=1.2,<2.0
+	+ Recommended requirements line: "theano>=1.2.0,<2.0.0"
+	+ Evidence:
+		- theano.config.floatX introduced in v1.2.0
+		- theano.logging.getLogger introduced in v1.2.0
+		- theano.space.CompositeSpace introduced in v1.2.0
+		- theano.space.IndexSpace introduced in v1.2.0
+		- theano.space.VectorSpace introduced in v1.2.0
+		- theano.utils.safe_zip introduced in v1.2.0
+* scipy:
+	+ Inferred version range: >=1.5,<2.0
+	+ Recommended requirements line: "scipy>=1.5.0,<2.0.0"
+	+ Evidence:
+		- scipy.sparse.csr_matrix introduced in v1.5.0
+		- scipy.sparse.csr_matrix.todense introduced in v1.5.0
+
+Finally, here is the requirements.txt file with only third-party packages and their recommended version ranges:
+```
+pandas>=1.2.0,<2.0.0
+numpy>=1.19.0,<2.0.0
+theano>=1.2.0,<2.0.0
+scipy>=1.5.0,<2.0.0
+```

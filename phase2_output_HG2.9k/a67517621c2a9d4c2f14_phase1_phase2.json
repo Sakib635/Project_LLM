@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.7\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "decimal": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "decimal>=1.2.0,<2.0.0",
+      "evidence": [
+        "DecimalField introduced in decimal 1.2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "geopy.distance": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "geopy.distance>=1.2.0,<2.0.0",
+      "evidence": [
+        "great_circle introduced in geopy.distance 1.2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "seuapp.models": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "seuapp.models>=3.6.0,<4.0.0",
+      "evidence": [
+        "Store introduced in seuapp.models 3.6.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "decimal>=1.2.0,<2.0.0",
+    "geopy.distance>=1.2.0,<2.0.0",
+    "seuapp.models>=3.6.0,<4.0.0"
+  ]
+}

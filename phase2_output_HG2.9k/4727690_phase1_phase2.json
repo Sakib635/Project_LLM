@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "clouddns": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "clouddns>=1.2.0,<2.0.0",
+      "evidence": [
+        "clouddns.connection.Connection introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: os.path.expanduser and os.path.join"
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: time.sleep"
+    }
+  },
+  "requirements.txt": [
+    "clouddns>=1.2.0,<2.0.0"
+  ]
+}

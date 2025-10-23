@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "numpy.float64 added in numpy 1.17.0 \u2192 min numpy 1.17.0",
+        "numpy.random.normal added in numpy 1.17.0 \u2192 min numpy 1.17.0",
+        "numpy.pow added in numpy 1.17.0 \u2192 min numpy 1.17.0",
+        "numpy.sqrt added in numpy 1.17.0 \u2192 min numpy 1.17.0",
+        "numpy.array added in numpy 1.17.0 \u2192 min numpy 1.17.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.5.0,<2.0.0",
+      "evidence": [
+        "scipy.optimize.minimize added in scipy 1.5.0 \u2192 min scipy 1.5.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib>=3.2.0,<4.0.0",
+      "evidence": [
+        "matplotlib.use added in matplotlib 3.2.0 \u2192 min matplotlib 3.2.0",
+        "matplotlib.pyplot.hist added in matplotlib 3.2.0 \u2192 min matplotlib 3.2.0",
+        "matplotlib.pyplot.plot added in matplotlib 3.2.0 \u2192 min matplotlib 3.2.0",
+        "matplotlib.pyplot.savefig added in matplotlib 3.2.0 \u2192 min matplotlib 3.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.17.0,<2.0.0",
+    "scipy>=1.5.0,<2.0.0",
+    "matplotlib>=3.2.0,<4.0.0"
+  ]
+}

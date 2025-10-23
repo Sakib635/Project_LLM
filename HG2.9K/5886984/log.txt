@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "snippet.py", line 6, in <module>
+    from zipline.gens.utils import hash_args
+  File "/usr/local/lib/python2.7/site-packages/zipline/__init__.py", line 29, in <module>
+    from .utils.run_algo import run_algorithm
+  File "/usr/local/lib/python2.7/site-packages/zipline/utils/run_algo.py", line 25, in <module>
+    from zipline.pipeline.data import USEquityPricing
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/__init__.py", line 5, in <module>
+    from .factors import Factor, CustomFactor
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/factors/__init__.py", line 7, in <module>
+    from .basic import (
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/factors/basic.py", line 20, in <module>
+    from zipline.pipeline.data import EquityPricing
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/data/__init__.py", line 1, in <module>
+    from .equity_pricing import EquityPricing, USEquityPricing
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/data/equity_pricing.py", line 7, in <module>
+    from .dataset import Column, DataSet
+  File "/usr/local/lib/python2.7/site-packages/zipline/pipeline/data/dataset.py", line 13, in <module>
+    from zipline.currency import Currency
+  File "/usr/local/lib/python2.7/site-packages/zipline/currency.py", line 2, in <module>
+    from iso4217 import Currency as ISO4217Currency
+  File "/usr/local/lib/python2.7/site-packages/iso4217/__init__.py", line 6, in <module>
+    import enum
+ImportError: No module named enum

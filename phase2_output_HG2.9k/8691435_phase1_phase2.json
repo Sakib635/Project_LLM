@@ -1,0 +1,39 @@
+{
+"python_version": {
+"min": "3.8",
+"max": null,
+"evidence": ["os.walk and os.exists added in Python 3.8 → min Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"nltk": {
+"inferred_version_range": ">=3.5,<4",
+"recommended_requirements_line": "nltk>=3.5,<4",
+"evidence": ["nltk.tokenize.RegexpTokenizer introduced in nltk 3.5 → max Python 3.8"],
+"confidence": 0.95,
+"notes": ""
+},
+"gensim": {
+"inferred_version_range": ">=3.8",
+"recommended_requirements_line": "gensim>=3.8",
+"evidence": ["gensim.models.ldamodel.LdaModel introduced in gensim 3.8 → max Python 3.8"],
+"confidence": 1,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.17",
+"recommended_requirements_line": "numpy>=1.17",
+"evidence": ["numpy.array introduced in numpy 1.17 → max Python 3.8"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"nltk>=3.5,<4",
+"gensim>=3.8",
+"numpy>=1.17"
+]
+},
+"notes": "",
+"evidence": ["os.walk and os.exists added in Python 3.8 → min Python 3.8"]
+}

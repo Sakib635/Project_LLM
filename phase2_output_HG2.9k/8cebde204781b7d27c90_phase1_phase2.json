@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "timeit.Timer added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "MySQLdb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "MySQL-python>=1.2.5",
+      "evidence": [
+        "MySQL-python.connect added in v1.2.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "timeit": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "timeit>=3.1",
+      "evidence": [
+        "timeit.Timer introduced in v3.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "MySQL-python>=1.2.5",
+    "timeit>=3.1"
+  ]
+}

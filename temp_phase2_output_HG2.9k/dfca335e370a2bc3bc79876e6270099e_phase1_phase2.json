@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "torch.nn.Embedding introduced in v1.2 \u2192 torch version 1.2+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.autograd": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "Variable introduced in v1.2 \u2192 torch version 1.2+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn.utils.rnn": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "pack_padded_sequence introduced in v1.2 \u2192 torch version 1.2+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn.functional": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "F introduced in v1.2 \u2192 torch version 1.2+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.15,<2.0",
+      "recommended_requirements_line": "numpy>=1.15.0,<2.0.0",
+      "evidence": [
+        "np introduced in v1.15 \u2192 numpy version 1.15+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": ">=3.4,<3.7",
+      "recommended_requirements_line": "itertools>=3.4.0,<3.6.0",
+      "evidence": [
+        "chain introduced in v3.4 \u2192 itertools version 3.4+"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.2.0,<2.0.0",
+    "numpy>=1.15.0,<2.0.0",
+    "itertools>=3.4.0,<3.6.0"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "print_function added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dbus": {
+      "inferred_version_range": ">=0.85,<1.0",
+      "recommended_requirements_line": "dbus-python==0.85",
+      "evidence": [
+        "bus API introduced in v0.85"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.75,
+      "notes": "ArgumentParser API deprecated in Python 3.10 \u2192 max Python 3.10"
+    },
+    "dbus.service": {
+      "inferred_version_range": ">=0.85,<1.0",
+      "recommended_requirements_line": "dbus-python==0.85",
+      "evidence": [
+        "set_as_default=True introduced in v0.85"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "dbus.mainloop.glib": {
+      "inferred_version_range": ">=0.85,<1.0",
+      "recommended_requirements_line": "dbus-python==0.85",
+      "evidence": [
+        "set_as_default=True introduced in v0.85"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.75,
+      "notes": "GLib API deprecated in Python 3.9 \u2192 max Python 3.9"
+    }
+  },
+  "requirements.txt": [
+    "dbus-python>=0.85",
+    "gobject==3.14"
+  ]
+}

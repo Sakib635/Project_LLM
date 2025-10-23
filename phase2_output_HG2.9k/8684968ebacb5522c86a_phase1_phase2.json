@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "paho.mqtt.client": {
+      "inferred_version_range": ">=1.0.2,<2.0.0",
+      "recommended_requirements_line": "paho-mqtt>=1.0.2,<2.0.0",
+      "evidence": [
+        "API mqtt.Client introduced in v1.0.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssl": {
+      "inferred_version_range": ">=3.7.4,<3.8.0",
+      "recommended_requirements_line": "ssl>=3.7.4,<3.8.0",
+      "evidence": [
+        "API ssl.PROTOCOL_TLSv1_2 introduced in v3.7.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5.3,<3.6.0",
+      "recommended_requirements_line": "sys>=3.5.3,<3.6.0",
+      "evidence": [
+        "API sys.stdout introduced in v3.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "time>=2.7.0,<3.0.0",
+      "evidence": [
+        "API time.sleep introduced in v2.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "paho-mqtt>=1.0.2,<2.0.0",
+    "ssl>=3.7.4,<3.8.0",
+    "sys>=3.5.3,<3.6.0",
+    "time>=2.7.0,<3.0.0"
+  ]
+}

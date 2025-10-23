@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": null,
+"max": "3.8",
+"evidence": ["pathlib.Path added in Python 3.7 → min Python 3.7", "time.clock removed in Python 3.9→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.21,<3.0",
+"recommended_requirements_line": "numpy>=1.21,<3.0",
+"evidence": ["array module introduced in numpy 1.21.0 and dropped in numpy 2.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"matplotlib.pyplot": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "matplotlib.pyplot>=3.5,<4.0",
+"evidence": ["axes module introduced in matplotlib 3.5.0 and dropped in matplotlib 4.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"importlib.util": {
+"inferred_version_range": ">=3.10,<4.0",
+"recommended_requirements_line": "importlib.util>=3.10,<4.0",
+"evidence": ["spec_from_file_location function introduced in importlib.util 3.10 and dropped in importlib.util 4.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": ["numpy>=1.21,<3.0", "matplotlib.pyplot>=3.5,<4.0", "importlib.util>=3.10,<4.0"]
+},
+"requirements.txt": [
+"numpy>=1.21,<3.0",
+"matplotlib.pyplot>=3.5,<4.0",
+"importlib.util>=3.10,<4.0"
+]
+}

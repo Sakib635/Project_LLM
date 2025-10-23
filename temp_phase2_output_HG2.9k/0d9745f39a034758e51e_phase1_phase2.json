@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": ["pandas.DataFrame introduced in v1.2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["numpy.array added in v1.2.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "statsmodels": {
+      "inferred_version_range": ">=0.7.0,<0.8.0",
+      "recommended_requirements_line": "statsmodels>=0.7.0,<0.8.0",
+      "evidence": ["statsmodels.OLS introduced in v0.7.0"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0",
+    "statsmodels>=0.7.0,<0.8.0"
+  ]
+}
+```

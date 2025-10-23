@@ -1,0 +1,13 @@
+{
+  "sublime_plugin": [
+    "sublime_plugin.EventListener",
+    "sublime_plugin.on_post_save"
+  ],
+  "os": [
+    "os.system"
+  ],
+  "remote": {
+    "/local/path/to/project": "/usr/bin/scp '$1' username@remote_host:'/remote/path/to/project$2'"
+  },
+  "fname": "view.file_name().replace(dirname, '')"
+}

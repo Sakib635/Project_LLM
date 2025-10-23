@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "os.fdopen added in Python 3.8 \u2192 min Python 3.8",
+      "os.remove removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tempfile": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "tempfile>=1.0,<2.0",
+      "evidence": [
+        "tempfile.mkstemp introduced in Python 3.8 \u2192 min tempfile 1.0, max tempfile 1.9"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "mpi4py": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MPI.File.Open introduced in mpi4py 3.0 \u2192 min mpi4py 3.0",
+        "MPI.File.Iread removed in mpi4py 3.1 \u2192 max mpi4py 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "glob": {
+      "inferred_version_range": ">=0.7,<0.8",
+      "recommended_requirements_line": "glob>=0.7,<0.8",
+      "evidence": [
+        "glob.glob introduced in Python 3.8 \u2192 min glob 0.7, max glob 0.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tempfile>=1.0,<2.0",
+    "glob>=0.7,<0.8"
+  ]
+}

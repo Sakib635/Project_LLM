@@ -1,0 +1,9 @@
+{
+  "bpy": [
+    "bpy.data.materials['Material']",
+    "bpy.node_tree.nodes",
+    "bpy.node_tree.nodes.new(type='ShaderNodeBsdfAnisotropic')",
+    "bpy.node_tree.nodes.new(type='ShaderNodeOutputMaterial')",
+    "bpy.node_tree.links.new(node_ani.outputs[0], node_output.inputs[0])"
+  ]
+}

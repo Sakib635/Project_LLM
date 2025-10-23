@@ -1,0 +1,40 @@
+Here is the JSON output for the given extracted APIs:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["numpy.array", "numpy.linalg.norm"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy.ndimage": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy.ndimage>=1.2.0,<2.0.0",
+      "evidence": ["scipy.ndimage.zoom"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy.linalg": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["scipy.linalg.blas"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+```
+The JSON output includes the following fields:
+
+* `python_version`: an object with the minimum and maximum Python versions required based on the extracted APIs. The `evidence` field contains a list of short statements linking stdlib API usage to Python version addition/removal, while the `notes` field is optional assumptions.
+* `dependencies`: an object with information about each dependency (external package) used in the code. Each dependency has an `inferred_version_range` field that specifies the minimum and maximum versions required for that package based on the extracted APIs, a `recommended_requirements_line` field that contains the recommended requirements line for installing that package, an `evidence` field with a list of short statements mapping APIs to introduction/deprecation versions, a `confidence` field indicating the confidence in the version range inference, and a `notes` field containing optional assumptions or conflicting APIs.
+* `requirements.txt`: an empty array of recommended requirements lines for all dependencies. This field is not included in the final JSON output because it is not relevant to the given extracted APIs.

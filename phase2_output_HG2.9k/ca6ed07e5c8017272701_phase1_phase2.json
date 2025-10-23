@@ -1,0 +1,24 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "django.db.models.Aggregate.Concat introduced in Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.db.models.sql.aggregates.Aggregate": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas added in Python y \u2192 min Python y"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

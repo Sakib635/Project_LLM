@@ -1,0 +1,119 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "hashlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "hashlib>=1.2.0,<2.0.0",
+      "evidence": [
+        "md5() introduced in hashlib v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.2.0,<2.0.0",
+      "evidence": [
+        "b64decode() introduced in base64 v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Crypto.Random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs were found in Crypto.Random"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    },
+    "Crypto.Cipher": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cryptography>=1.2.0,<2.0.0",
+      "evidence": [
+        "AES introduced in Crypto.Cipher v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Crypto.Cipher.AES": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cryptography>=1.2.0,<2.0.0",
+      "evidence": [
+        "MODE_CBC introduced in Crypto.Cipher.AES v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Crypto.Hash.MD5": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs were found in Crypto.Hash.MD5"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs were found in os"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs were found in sys"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "typing-extensions>=3.7.0,<4.0.0",
+      "evidence": [
+        "ord() introduced in string v3.7.0",
+        "chr() introduced in string v3.7.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "types": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs were found in types"
+      ],
+      "confidence": 0.1,
+      "notes": ""
+    },
+    "__main__": {
+      "inferred_version_range": ">=3.4.0,<3.8.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AESCipher() introduced in __main__ v3.4.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "hashlib>=1.2.0,<2.0.0",
+    "base64>=1.2.0,<2.0.0",
+    "cryptography>=1.2.0,<2.0.0",
+    "typing-extensions>=3.7.0,<4.0.0"
+  ]
+}

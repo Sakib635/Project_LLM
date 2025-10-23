@@ -1,0 +1,35 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.db": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["django.db.connection introduced in Django 1.4", "django.db.models.Manager introduced in Django 1.7"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.db.models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["django.db.models.QuerySet introduced in Django 1.4"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.db.utils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["django.db.utils.Cursor introduced in Django 1.4"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+```

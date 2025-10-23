@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "oaipmh": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "oaipmh>=1.2.0,<2.0.0",
+      "evidence": [
+        "oaipmh.client.Client",
+        "oaipmh.metadata.MetadataRegistry",
+        "oaipmh.metadata.oai_dc_reader"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "http.request"
+      ],
+      "confidence": 0.6,
+      "notes": "Could not determine version range for http package"
+    }
+  },
+  "requirements.txt": [
+    "oaipmh>=1.2.0,<2.0.0",
+    "http"
+  ]
+}

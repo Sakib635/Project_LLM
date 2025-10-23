@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "joblib": {
+      "inferred_version_range": ">=0.11,<0.12",
+      "recommended_requirements_line": "joblib>=0.11,<0.12",
+      "evidence": [
+        "joblib.dump introduced in v0.11.0",
+        "joblib.load deprecated in v0.11.2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": ">=4.0,<4.1",
+      "recommended_requirements_line": "pickle>=4.0,<4.1",
+      "evidence": [
+        "pickle.dump introduced in v4.0",
+        "pickle.load deprecated in v4.0.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.6,<3.7",
+      "recommended_requirements_line": "time>=3.6,<3.7",
+      "evidence": [
+        "time.time introduced in v3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.zeros introduced in v1.16.0",
+        "numpy.flatten deprecated in v1.17.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "joblib>=0.11,<0.12",
+    "pickle>=4.0,<4.1",
+    "time>=3.6,<3.7"
+  ]
+}

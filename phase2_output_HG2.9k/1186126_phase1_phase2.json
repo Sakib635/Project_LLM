@@ -1,0 +1,36 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"sublime": {
+"inferred_version_range": ">=1.2,<2",
+"recommended_requirements_line": "sublime>=1.2,<2",
+"evidence": ["sublime_plugin.TextCommand added in Sublime Text 1.2 → min Sublime Text 1.2"],
+"confidence": 0.8,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=3.4,<4",
+"recommended_requirements_line": "os>=3.4,<4",
+"evidence": ["os.path added in Python 3.4 → min Python 3.4", "os.isfile added in Python 3.4 → min Python 3.4"],
+"confidence": 0.8,
+"notes": ""
+},
+"string": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.6,
+"notes": "APIs used for string formatting and validation do not have a specific version range."
+}
+},
+"requirements.txt": [
+"sublime>=1.2,<2",
+"os>=3.4,<4"
+]
+}
+}

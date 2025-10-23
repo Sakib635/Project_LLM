@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "bottle.get added in Python 3.8 \u2192 min Python 3.8",
+      "hashlib.sha1 added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bottle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "bottle>=1.0,<2.0",
+      "evidence": [
+        "bottle.get introduced in bottle 0.9 \u2192 min bottle 0.9",
+        "bottle.post introduced in bottle 0.10 \u2192 min bottle 0.10"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=3.6,<3.8",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "hashlib.sha1 introduced in hashlib 2017.1 \u2192 min hashlib 2017.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "json>=2.0,<3.0",
+      "evidence": [
+        "json.loads introduced in json 1.0 \u2192 min json 1.0",
+        "json.loads deprecated in json 3.0 \u2192 max json 2.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "urllib2>=1.2,<3.0",
+      "evidence": [
+        "urllib2.quote introduced in urllib 2.6 \u2192 min urllib 2.6",
+        "urllib2.urlopen introduced in urllib 2.7 \u2192 min urllib 2.7"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "xml.etree.ElementTree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "xml.etree.ElementTree>=1.3,<2.0",
+      "evidence": [
+        "xml.etree.ElementTree.fromstring introduced in xml 1.3 \u2192 min xml 1.3"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bottle>=1.0,<2.0",
+    "hashlib>=3.6,<3.8",
+    "json>=2.0,<3.0",
+    "urllib2>=1.2,<3.0",
+    "xml.etree.ElementTree>=1.3,<2.0"
+  ]
+}

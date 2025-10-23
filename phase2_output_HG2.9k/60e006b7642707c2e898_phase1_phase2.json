@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.0 \u2192 max Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=2.6.1,<3.0",
+      "recommended_requirements_line": "os>=2.6.1,<3.0",
+      "evidence": [
+        "os.path.basename added in Python 2.6.1 \u2192 min Python 2.6.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "gimpfu": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "gimpfu>=3.5,<4",
+      "evidence": [
+        "gimpfu.register added in Python 3.5 \u2192 min Python 3.5",
+        "gimpfu.pdb removed in Python 4.0 \u2192 max Python 4.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "python_fu_scale_half": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "python_fu_scale_half.plugin_main not found"
+      ],
+      "confidence": 0,
+      "notes": ""
+    },
+    "gimp": {
+      "inferred_version_range": ">=2.7,<3",
+      "recommended_requirements_line": "gimp>=2.7,<3",
+      "evidence": [
+        "gimp.message added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=2.6.1,<3.0",
+    "gimpfu>=3.5,<4",
+    "gimp>=2.7,<3"
+  ]
+}

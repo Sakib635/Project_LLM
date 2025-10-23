@@ -1,0 +1,30 @@
+```
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10",
+    "evidence": ["os.access added in Python 3.2 → min Python 3.2", "subprocess.Popen, subprocess.communicate added in Python 3.5 → max Python 3.10"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["django.core.exceptions.ImproperlyConfigured introduced in Django 2.0, not removed"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pandas.read_csv introduced in pandas 1.2.0, not removed"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0",
+    "pandas>=1.2.0"
+  ]
+}
+```

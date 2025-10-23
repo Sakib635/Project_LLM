@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"gi.repository": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Vips.Image introduced in gi.repository 1.2.0 → min Gi >=1.2.0"],
+"confidence": 0.5,
+"notes": "Gi version was not explicitly specified."
+},
+"vips": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "vips>=1.2.0,<2.0.0",
+"evidence": ["Vips.Image introduced in vips 1.2.0 → min ViPS >=1.2.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["gi>=1.2.0", "vips>=1.2.0"]
+}
+}

@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "cv2>=3.4,<3.8",
+      "evidence": [
+        "cv2.imread introduced in v3.4",
+        "cv2.imshow added in v3.5",
+        "cv2.waitKey added in v3.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "np.array introduced in v1.0",
+        "np.dot added in v1.5",
+        "np.linalg.inv added in v1.7",
+        "np.linalg.svd added in v2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "re>=3.4,<3.8",
+      "evidence": [
+        "re.split introduced in v3.4"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=3.4,<3.8",
+    "numpy>=1.0,<2.0",
+    "re>=3.4,<3.8"
+  ]
+}

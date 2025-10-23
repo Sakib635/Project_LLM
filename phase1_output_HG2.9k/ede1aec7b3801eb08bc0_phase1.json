@@ -1,0 +1,23 @@
+{
+  "twisted": [
+    "twisted.words.protocols.irc.IRCClient",
+    "twisted.internet.reactor",
+    "twisted.internet.protocol",
+    "twisted.python.log"
+  ],
+  "betbot": [
+    "betbot.BetBot",
+    "betbot.BetBot.connectionMade",
+    "betbot.BetBot.connectionLost",
+    "betbot.BetBot.signedOn",
+    "betbot.BetBot.joined",
+    "betbot.BetBot.privmsg",
+    "betbot.BetBot.action"
+  ],
+  "cobaltbetfactory": [
+    "cobaltbetfactory.CobaltBetFactory",
+    "cobaltbetfactory.CobaltBetFactory.buildProtocol",
+    "cobaltbetfactory.CobaltBetFactory.clientConnectionLost",
+    "cobaltbetfactory.CobaltBetFactory.clientConnectionFailed"
+  ]
+}

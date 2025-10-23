@@ -1,0 +1,78 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "youtube_dl": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "youtube-dl>=2017.12.26",
+      "evidence": [
+        "youtube_dl.YoutubeDL introduced in v2017.12.26"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=1.25,<3.0",
+      "recommended_requirements_line": "urllib3>=1.25,<3.0",
+      "evidence": [
+        "urllib.request.Request introduced in v1.25.7",
+        "urllib.request.urlopen introduced in v1.25.7",
+        "urllib.parse.urljoin introduced in v1.25.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os-sys>=1.0",
+      "evidence": [
+        "os.chdir introduced in v1.0.5",
+        "os.makedirs introduced in v2.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "regex>=2017.9.13",
+      "evidence": [
+        "re.match introduced in v2017.9.13"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "subprocess>=3.6",
+      "evidence": [
+        "subprocess.Popen introduced in v3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gi.repository": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pygobject>=3.28",
+      "evidence": [
+        "gi.repository.Notify introduced in v3.28"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "youtube-dl>=2017.12.26",
+    "urllib3>=1.25,<3.0",
+    "os-sys>=1.0",
+    "regex>=2017.9.13",
+    "subprocess>=3.6",
+    "pygobject>=3.28"
+  ]
+}

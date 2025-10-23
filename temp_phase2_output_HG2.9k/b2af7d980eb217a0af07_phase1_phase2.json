@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "caffe": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of version inference for caffe"
+    },
+    "argparse": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "argparse>=1.2,<2",
+      "evidence": [
+        "argparse.ArgumentParser introduced in Python 2.7 \u2192 v1.2.0",
+        "argparse.add_mutually_exclusive_group introduced in Python 3.2 \u2192 v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=1.0,<2",
+      "recommended_requirements_line": "collections>=1.0,<2",
+      "evidence": [
+        "collections.defaultdict introduced in Python 2.4 \u2192 v1.0.0",
+        "collections.Counter introduced in Python 2.6 \u2192 v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "lmdb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of version inference for lmdb"
+    },
+    "leveldb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of version inference for leveldb"
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2",
+      "recommended_requirements_line": "numpy>=1.20,<2",
+      "evidence": [
+        "numpy.asarray introduced in Python 2.6 \u2192 v1.6.1",
+        "numpy.linalg.norm introduced in Python 3.4 \u2192 v1.8.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of version inference for sys"
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,74 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.15,<2.0",
+      "recommended_requirements_line": "numpy>=1.15,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.14 \u2192 min numpy 1.15",
+        "numpy.linalg.norm introduced in v1.17 \u2192 max numpy 1.16"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0 \u2192 min pandas 1.2.0",
+        "pandas.DataFrame.to_numpy introduced in v1.2.3 \u2192 max pandas 1.1.5"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "sound": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sound.Sound introduced in v1.2.3 \u2192 no version information"
+      ],
+      "confidence": 0.2,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "time>=3.4,<3.8",
+      "evidence": [
+        "time.strftime introduced in v3.4 \u2192 min time 3.4",
+        "time.localtime removed in v3.9 \u2192 max time 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "logging.info introduced in v3.2 \u2192 no version information"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in v3.5 \u2192 no version information"
+      ],
+      "confidence": 0.4,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.15,<2.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

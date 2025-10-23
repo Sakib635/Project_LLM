@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["simplegui.create_frame added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"random": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["random.randint introduced in v2.1 → max Python 3.7"],
+"confidence": 0.5,
+"notes": ""
+},
+"dict": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "dict>=1.2.0,<2.0.0",
+"evidence": ["dict.get introduced in v1.2.0 → min Python 3.4", "dict.setdefault introduced in v2.0.0 → max Python 3.7"],
+"confidence": 0.9,
+"notes": ""
+},
+"list": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "list>=1.0.0,<2.0.0",
+"evidence": ["list.append introduced in v1.0.0 → min Python 3.4", "list.clear introduced in v2.0.0 → max Python 3.7"],
+"confidence": 0.9,
+"notes": ""
+},
+"str": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "str>=1.0.0,<2.0.0",
+"evidence": ["str.format introduced in v1.0.0 → min Python 3.4", "str.strip introduced in v2.0.0 → max Python 3.7"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"random>=2.1.0,<3.0.0",
+"dict>=1.2.0,<2.0.0",
+"list>=1.0.0,<2.0.0",
+"str>=1.0.0,<2.0.0"
+]
+}
+}

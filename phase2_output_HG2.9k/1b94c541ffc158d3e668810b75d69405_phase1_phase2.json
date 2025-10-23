@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0.9,<3.0.0",
+      "recommended_requirements_line": "json>=2.0.9,<3.0.0",
+      "evidence": [
+        "json.dumps added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "python-dateutil>=2.5.0,<3.0.0",
+      "evidence": [
+        "datetime.now and datetime.strptime added in Python 2.5 \u2192 min Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dateutil.relativedelta": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "python-dateutil>=2.5.0,<3.0.0",
+      "evidence": [
+        "dateutil.relativedelta.relativedelta added in Python 2.5 \u2192 min Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.18.4",
+    "json>=2.0.9",
+    "python-dateutil>=2.5.3"
+  ]
+}

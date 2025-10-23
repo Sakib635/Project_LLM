@@ -1,0 +1,101 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.expanduser introduced, depricated, removed or changed in v1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "subprocess>=3.2,<4.0",
+      "evidence": [
+        "subprocess.check_call introduced in v3.2"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "glob": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "glob.iglob introduced, depricated, removed or changed in v3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "github": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "GitHubAPI>=1.2.0,<2.0.0",
+      "evidence": [
+        "Github introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "github.Repository": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "GitHubAPI>=1.2.0,<2.0.0",
+      "evidence": [
+        "Github.get_user().get_repos introduced in v1.2.0",
+        "Github.repository.create introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "github.User": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Github.get_user() introduced, depricated, removed or changed in v1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "github.owner": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Github.repository.owner introduced, depricated, removed or changed in v1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "bitbucket": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "BitbucketAPI>=1.2.0,<2.0.0",
+      "evidence": [
+        "Bitbucket introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "bitbucket.repository": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "BitbucketAPI>=1.2.0,<2.0.0",
+      "evidence": [
+        "Bitbucket.repository.create introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os >=3.5,<4.0",
+    "subprocess>=3.2,<4.0",
+    "GithubAPI>=1.2.0,<2.0.0",
+    "BitbucketAPI>=1.2.0,<2.0.0"
+  ]
+}

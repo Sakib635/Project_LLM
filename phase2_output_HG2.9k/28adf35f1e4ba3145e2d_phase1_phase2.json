@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["urllib.Request added in Python 3.4 → min Python 3.4", "bs4.BeautifulSoup removed in Python 3.5→ max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"urllib": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["urllib.urlopen introduced in Python 3.4 → min Python 3.4", "urllib.Request added in Python 3.4 → min Python 3.4"],
+"confidence": 0.8,
+"notes": ""
+},
+"bs4": {
+"inferred_version_range": ">=4.5.2,<5.0.0",
+"recommended_requirements_line": "bs4>=4.5.2,<5.0.0",
+"evidence": ["bs4.BeautifulSoup introduced in Python 3.4 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"urllib>=3.4.0,<3.9.0",
+"bs4>=4.5.2,<5.0.0"
+]
+},
+"requirements.txt": [
+"urllib>=3.4.0,<3.9.0",
+"bs4>=4.5.2,<5.0.0"
+]
+}

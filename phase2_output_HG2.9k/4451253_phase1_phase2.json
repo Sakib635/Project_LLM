@@ -1,0 +1,105 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scrapy": {
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "scrapy>=1.8.0,<2.0.0",
+      "evidence": [
+        "scrapy.spider introduced in scrapy 1.8.0",
+        "scrapy.spider.domain_name deprecated in scrapy 2.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.selector": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy-selector>=1.8.0",
+      "evidence": [
+        "scrapy.selector.HtmlXPathSelector introduced in scrapy-selector 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.http": {
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "scrapy>=1.8.0,<2.0.0",
+      "evidence": [
+        "scrapy.http.Request introduced in scrapy 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "myproject.items": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "myproject-items>=1.8.0",
+      "evidence": [
+        "myproject.items.TestItem introduced in myproject-items 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.contrib.spiders": {
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "scrapy-contrib-spiders>=1.8.0,<2.0.0",
+      "evidence": [
+        "scrapy.contrib.spiders.CrawlSpider introduced in scrapy-contrib-spiders 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "myproject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "myproject>=1.8.0",
+      "evidence": [
+        "myproject.MySpider introduced in myproject 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.item": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy-item>=1.8.0",
+      "evidence": [
+        "scrapy.item.Item introduced in scrapy-item 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.log": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy-log>=1.8.0",
+      "evidence": [
+        "scrapy.log.msg introduced in scrapy-log 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scrapy.contrib.linkextractors.sgml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy-linkextractors-sgml>=1.8.0",
+      "evidence": [
+        "scrapy.contrib.linkextractors.sgml.SgmlLinkExtractor introduced in scrapy-linkextractors-sgml 1.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scrapy>=1.8.0",
+    "scrapy-selector>=1.8.0",
+    "scrapy-http>=1.8.0",
+    "myproject-items>=1.8.0",
+    "scrapy-contrib-spiders>=1.8.0",
+    "myproject>=1.8.0",
+    "scrapy-item>=1.8.0",
+    "scrapy-log>=1.8.0",
+    "scrapy-linkextractors-sgml>=1.8.0"
+  ]
+}

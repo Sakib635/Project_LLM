@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.2.0,<2.0.0",
+      "evidence": [
+        "base64.b64decode introduced in 1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "zlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "zlib>=1.2.0,<2.0.0",
+      "evidence": [
+        "zlib.decompress introduced in 1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "PackedImage": {
+      "inferred_version_range": ">=0.0.0,<0.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PackedImage.__init__ introduced in 0.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=1.2.0,<2.0.0",
+    "zlib>=1.2.0,<2.0.0"
+  ]
+}

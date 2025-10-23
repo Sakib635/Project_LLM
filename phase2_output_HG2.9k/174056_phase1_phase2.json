@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.1 \u2192 max Python 3.1"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted.enterprise": {
+      "inferred_version_range": ">=10.0.0,<11.0.0",
+      "recommended_requirements_line": "twisted.enterprise>=10.0.0,<11.0.0",
+      "evidence": [
+        "ReconnectingConnectionPool introduced in Twisted Enterprise 10.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.python": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "twisted.python>=2.0.0,<3.0.0",
+      "evidence": [
+        "log introduced in Twisted Python 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "MySQLdb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to infer version range for MySQLdb"
+    },
+    "adbapi": {
+      "inferred_version_range": ">=1.3.0,<2.0.0",
+      "recommended_requirements_line": "adbapi>=1.3.0,<2.0.0",
+      "evidence": [
+        "ConnectionPool introduced in adbapi 1.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Python.program": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to infer version range for Python.program"
+    }
+  },
+  "requirements.txt": [
+    "twisted.enterprise>=10.0.0,<11.0.0",
+    "twisted.python>=2.0.0,<3.0.0",
+    "adbapi>=1.3.0,<2.0.0"
+  ]
+}

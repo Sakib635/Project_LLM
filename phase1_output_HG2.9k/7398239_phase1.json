@@ -1,0 +1,42 @@
+{
+  "csv": [
+    "csv.reader(open(filename))"
+  ],
+  "codecs": [
+    "codecs.open('%s.txt' % filename, 'w', 'utf-8')"
+  ],
+  "numpy": [
+    "numpy.array",
+    "numpy.linalg.norm"
+  ],
+  "MeCab": [
+    "MeCab.Tagger('-Ochasen')",
+    "MeCab.Node"
+  ],
+  "sklearn.feature_extraction.text.TfidfVectorizer": [
+    "TfidfVectorizer(analyzer=analyzer, max_df=MAX_DF)",
+    "TfidfVectorizer.max_features = MAX_FEATURES"
+  ],
+  "sklearn.cluster.KMeans": [
+    "KMeans(n_clusters=NUM_CLUSTERS, init='k-means++', n_init=1, verbose=True)",
+    "MiniBatchKMeans(n_clusters=NUM_CLUSTERS, init='k-means++', batch_size=1000, n_init=10, max_no_improvement=10, verbose=True)"
+  ],
+  "sklearn.cluster.KMeans.fit": [
+    "km.fit(X)"
+  ],
+  "sklearn.cluster.MiniBatchKMeans.transform": [
+    "transformed = km.transform(X)"
+  ],
+  "numpy.zeros": [
+    "dists = np.zeros(labels.shape)"
+  ],
+  "numpy.fill_diagonal": [
+    "for i in range(len(labels)): dists[i] = transformed[i, labels[i]]"
+  ],
+  "numpy.vstack": [
+    "di = np.vstack([dd,ii]).transpose().tolist()"
+  ],
+  "numpy.sort": [
+    "di.sort()"
+  ]
+}

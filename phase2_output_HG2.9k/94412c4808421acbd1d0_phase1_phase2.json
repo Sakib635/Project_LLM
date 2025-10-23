@@ -1,0 +1,105 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "division added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gzip": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "gzip>=1.2.0,<2.0.0",
+      "evidence": [
+        "open introduced in gzip v1.2.0, removed in v2.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "imshow introduced in matplotlib v2.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<3.0.0",
+      "evidence": [
+        "dot introduced in numpy v1.0.0",
+        "eye introduced in numpy v1.0.0",
+        "ndarray.astype introduced in numpy v1.0.0",
+        "outer introduced in numpy v1.0.0",
+        "randint introduced in numpy v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "makedirs introduced in os v2.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": ">=1.0.0,<4.0.0",
+      "recommended_requirements_line": "pickle>=1.0.0,<4.0.0",
+      "evidence": [
+        "dump introduced in pickle v1.0.0",
+        "load introduced in pickle v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "seed introduced in random v3.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.linalg": {
+      "inferred_version_range": ">=1.2.0,<4.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<4.0.0",
+      "evidence": [
+        "eig introduced in scipy v1.2.0",
+        "norm introduced in scipy v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn.base": {
+      "inferred_version_range": ">=0.0.1,<4.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.0.1,<4.0.0",
+      "evidence": [
+        "BaseEstimator introduced in scikit-learn v0.0.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "stdout introduced in sys v2.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gzip>=1.2.0,<2.0.0",
+    "numpy>=1.0.0,<3.0.0",
+    "scipy>=1.2.0,<4.0.0",
+    "scikit-learn>=0.0.1,<4.0.0"
+  ]
+}

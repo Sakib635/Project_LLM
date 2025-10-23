@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bpy.data introduced in v2.8 \u2192 inferred version range 2.8,<3.0"
+      ],
+      "confidence": 0.75,
+      "notes": "Assumes bpy.data is the only API used."
+    },
+    "THREE": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "THREE.CurvePath introduced in v0.86 \u2192 inferred version range 0.86,<1.0",
+        "THREE.CubicBezierCurve3 introduced in v0.87 \u2192 inferred version range 0.87,<1.0",
+        "THREE.Vector3 introduced in v0.84 \u2192 inferred version range 0.84,<1.0",
+        "THREE.Line introduced in v0.85 \u2192 inferred version range 0.85,<1.0",
+        "THREE.LineBasicMaterial introduced in v0.86 \u2192 inferred version range 0.86,<1.0"
+      ],
+      "confidence": 0.75,
+      "notes": "Assumes THREE.CurvePath and THREE.CubicBezierCurve3 are the only APIs used."
+    }
+  },
+  "requirements.txt": [
+    "bpy>=2.8,<3.0",
+    "THREE>=0.86,<1.0"
+  ]
+}

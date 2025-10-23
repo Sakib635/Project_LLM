@@ -1,0 +1,4 @@
+(declare-fun PyYAML () String)
+(declare-fun six () String)
+(assert (and (or (= six "1.15.0")) (or (= PyYAML "5.3.1") (= PyYAML "5.3b1"))))
+(check-sat)

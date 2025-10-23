@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "4.0",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "select": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "select>=1.2.0,<3.0.0",
+      "evidence": [
+        "select.select introduced in version 1.2.0"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "socket>=1.2.0,<3.0.0",
+      "evidence": [
+        "socket.error introduced in version 1.2.0",
+        "socket.socket introduced in version 1.2.0"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<3.0.0",
+      "evidence": [
+        "django.conf.settings introduced in version 1.2.0",
+        "django.contrib.staticfiles.handlers.StaticFilesHandler introduced in version 1.2.0",
+        "django.core.management.call_command introduced in version 1.2.0",
+        "django.core.servers.basehttp.WSGIRequestHandler introduced in version 1.2.0",
+        "django.core.servers.basehttp.WSGIServer introduced in version 1.2.0",
+        "django.core.wsgi.WSGIHandler introduced in version 1.2.0"
+      ],
+      "confidence": 0.83,
+      "notes": ""
+    },
+    "django.db": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "django.test": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "django-test>=1.2.0,<3.0.0",
+      "evidence": [
+        "django.test.TransactionTestCase introduced in version 1.2.0"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

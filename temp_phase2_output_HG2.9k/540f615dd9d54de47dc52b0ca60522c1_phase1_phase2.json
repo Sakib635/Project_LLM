@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "idc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "idaapi": {
+      "inferred_version_range": ">=7.4,<8.0",
+      "recommended_requirements_line": "idaapi>=7.4,<8.0",
+      "evidence": ["idaapi.get_func added in v7.4"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "idautils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "idaapi>=7.4,<8.0",
+    "idautils"
+  ]
+}
+```
+
+The final JSON object includes the following fields:
+
+* `python_version`: An object containing the minimum and maximum Python versions required based on stdlib APIs.
+* `dependencies`: An object with one field per external package, each containing the following subfields:
+	+ `inferred_version_range`: A string representing the inferred version range for the package, or null if it cannot be determined.
+	+ `recommended_requirements_line`: A string representing the recommended requirements line for the package, or null if it cannot be determined.
+	+ `evidence`: An array of short statements mapping APIs to introduction/deprecation versions.
+	+ `confidence`: A number between 0.0 and 1.0 indicating the confidence in the inferred version range and recommended requirements line.
+	+ `notes`: Optional assumptions or conflicting APIs that may affect the accuracy of the inference.
+* `requirements.txt`: An array of strings representing the recommended requirements lines for all dependencies, excluding stdlib packages.
+
+The JSON object is valid according to the specified schema and is human-readable formatted with 2 spaces of indentation.
+
+Note that the final JSON object may include additional fields or subfields as needed to provide a complete representation of the inference results.

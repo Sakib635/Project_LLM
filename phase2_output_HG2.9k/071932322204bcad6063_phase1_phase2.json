@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "math.floor added in Python 2.5 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scene": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scene.Scene, scene.Node introduced in Python 3.0 \u2192 unknown version"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ui": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "ui>=1.2.0,<2.0.0",
+      "evidence": [
+        "ui.ImageContext, ui.Path introduced in Python 3.7 \u2192 v1.2.0",
+        "ui.set_color depricated in Python 3.8 \u2192 unknown version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.floor introduced in Python 2.5 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scene>=3.0.0",
+    "ui>=1.2.0",
+    "math>=2.5.0"
+  ]
+}

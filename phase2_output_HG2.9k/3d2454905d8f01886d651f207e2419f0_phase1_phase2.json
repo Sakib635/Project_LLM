@@ -1,0 +1,75 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.8",
+    "evidence": [
+      "dash.Dash added in Python 3.6 \u2192 min Python 3.6",
+      "datetime.datetime removed in Python 3.9\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dash": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dash.Dash added in Python 3.6 \u2192 min Python 3.6",
+        "dash.dependencies.Input introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "dash_core_components": {
+      "inferred_version_range": ">=1.12.0,<2.0.0",
+      "recommended_requirements_line": "dash-core-components==1.12.0",
+      "evidence": [
+        "dcc.Dropdown introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "dash_html_components": {
+      "inferred_version_range": ">=1.0.2,<2.0.0",
+      "recommended_requirements_line": "dash-html-components==1.0.2",
+      "evidence": [
+        "html.Div introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas_datareader": {
+      "inferred_version_range": ">=0.9,<2.0.0",
+      "recommended_requirements_line": "pandas-datareader==0.9.0",
+      "evidence": [
+        "web.DataReader introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "datetime==3.7.0",
+      "evidence": [
+        "datetime.datetime introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.dump introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dash==1.12.0",
+    "dash-core-components==1.12.0",
+    "dash-html-components==1.0.2",
+    "pandas-datareader==0.9.0",
+    "datetime==3.7.0"
+  ]
+}

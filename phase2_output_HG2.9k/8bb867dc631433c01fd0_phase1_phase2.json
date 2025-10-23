@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.8\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.db.migrations.RunPython introduced in django 3.2",
+        "django.db.migrations.RemoveField depricated in django 4.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "models.UUIDField introduced in models 1.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=3.2",
+    "models>=1.1"
+  ]
+}

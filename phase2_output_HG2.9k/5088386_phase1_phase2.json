@@ -1,0 +1,35 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.5,
+"notes": "Unable to determine version range"
+},
+"django_filters": {
+"inferred_version_range": ">=1.4,<2.0",
+"recommended_requirements_line": "django-filters>=1.4,<2.0",
+"evidence": ["Django FilterSet introduced in Django 1.4"],
+"confidence": 0.7,
+"notes": ""
+},
+"operator": {
+"inferred_version_range": ">=2.6,<3.0",
+"recommended_requirements_line": "operator>=2.6,<3.0",
+"evidence": ["operator.or_ introduced in Python 2.6"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django-filters>=1.4,<2.0"
+]
+}
+}

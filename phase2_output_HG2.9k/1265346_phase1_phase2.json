@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "JSONResponse added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django>=2.0,<3.0",
+      "evidence": [
+        "JSONResponse introduced in Django 2.0 \u2192 min Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "simplejson>=3.16.0,<4.0",
+      "evidence": [
+        "dumps introduced in simplejson 3.16.0 \u2192 min simplejson 3.16.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2,<3.0",
+      "recommended_requirements_line": "re>=2.2,<3.0",
+      "evidence": [
+        "compile introduced in re 2.2 \u2192 min re 2.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0,<3.0",
+    "simplejson>=3.16.0,<4.0",
+    "re>=2.2,<3.0"
+  ]
+}

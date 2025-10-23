@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyspark": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "pyspark>=2.4.0,<3.0.0",
+      "evidence": [
+        "SparkConf added in pyspark 2.4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn.datasets": {
+      "inferred_version_range": ">=0.0.0,<0.0.1",
+      "recommended_requirements_line": "scikit-learn>=0.0.0,<0.0.1",
+      "evidence": [
+        "make_classification added in scikit-learn 0.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn.ensemble": {
+      "inferred_version_range": ">=0.23.0,<0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.23.0,<0.24.0",
+      "evidence": [
+        "ExtraTreesClassifier added in scikit-learn 0.23.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pd.read_csv added in pandas 1.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "np.array added in numpy 1.18.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyspark>=2.4.0,<3.0.0",
+    "scikit-learn>=0.0.0,<0.0.1",
+    "pandas>=1.0.0,<2.0.0",
+    "numpy>=1.18.0,<2.0.0"
+  ]
+}

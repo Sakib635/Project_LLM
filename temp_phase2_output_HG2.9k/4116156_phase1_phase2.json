@@ -1,0 +1,85 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in version 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20.3,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20.3,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in version 1.20.3"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=8.4.0,<9.0.0",
+      "recommended_requirements_line": "Pillow>=8.4.0,<9.0.0",
+      "evidence": [
+        "PIL.Image.open introduced in version 8.4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": ">=3.4.0,<5.0.0",
+      "recommended_requirements_line": "opencv-python>=3.4.0,<5.0.0",
+      "evidence": [
+        "cv2.imread introduced in version 3.4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.6.1,<5.0.0",
+      "recommended_requirements_line": "jsonpickle>=2.6.1,<5.0.0",
+      "evidence": [
+        "json.dumps introduced in version 2.6.1"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4.0,<5.0.0",
+      "recommended_requirements_line": "os-sys^2.0",
+      "evidence": [
+        "os.listdir introduced in version 3.4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pyautogui": {
+      "inferred_version_range": ">=0.9.38,<2.0.0",
+      "recommended_requirements_line": "pyautogui==0.9.38",
+      "evidence": [
+        "pyautogui.screenshot introduced in version 0.9.38"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.20.3,<2.0.0",
+    "Pillow>=8.4.0,<9.0.0",
+    "opencv-python>=3.4.0,<5.0.0",
+    "jsonpickle>=2.6.1,<5.0.0",
+    "os-sys^2.0",
+    "pyautogui==0.9.38"
+  ]
+}

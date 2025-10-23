@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.14,<2",
+      "recommended_requirements_line": "tensorflow>=1.14,<2",
+      "evidence": [
+        "tf.contrib.rnn.GRUCell introduced in v1.14",
+        "tf.transpose deprecated in v1.15"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "functools.wraps introduced in v3.2"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.14,<2",
+    "functools>=3.2,<4"
+  ]
+}

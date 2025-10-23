@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.5",
+"max": "null",
+"evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5", "time.clock removed in Python 3.7→ max Python null"],
+"notes": ""
+},
+"dependencies": {
+"requests": {
+"inferred_version_range": ">=2.18,<3.0",
+"recommended_requirements_line": "requests>=2.18,<3.0",
+"evidence": ["requests.get introduced in version 2.18"],
+"confidence": 0.5,
+"notes": ""
+},
+"PySide": {
+"inferred_version_range": ">=5.9,<6.0",
+"recommended_requirements_line": "PySide>=5.9,<6.0",
+"evidence": ["QtGui.QLineEdit introduced in version 5.9"],
+"confidence": 1.0,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": "null",
+"recommended_requirements_line": null,
+"evidence": ["sys.argv deprecated since Python 3.5 → max Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "pandas>=1.0,<2.0",
+"evidence": ["pandas.DataFrame introduced in version 1.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"requests>=2.18,<3.0",
+"PySide>=5.9,<6.0",
+"pandas>=1.0,<2.0"
+]
+},
+"notes": "This is a conservative inference based on the provided APIs."
+}

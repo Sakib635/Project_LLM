@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.size added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=4.5.1,<5.0.0",
+      "recommended_requirements_line": "cv2>=4.5.1,<5.0.0",
+      "evidence": [
+        "cv2.imread introduced in cv2 4.5.1 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.3.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib.pyplot>=3.3.0,<4.0.0",
+      "evidence": [
+        "plt.imshow introduced in matplotlib 3.3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.21.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.21.0,<2.0.0",
+      "evidence": [
+        "np.arctan2 introduced in numpy 1.21.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=4.5.1,<5.0.0",
+    "matplotlib.pyplot>=3.3.0,<4.0.0",
+    "numpy>=1.21.0,<2.0.0"
+  ]
+}

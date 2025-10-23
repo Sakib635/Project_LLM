@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["datetime.timezone added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": ">=2.2,<2.4",
+"recommended_requirements_line": "django>=2.2,<2.4",
+"evidence": ["django.db.models.Sum introduced in Django 2.2 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"cache": {
+"inferred_version_range": ">=1.5,<1.6",
+"recommended_requirements_line": "django-cache>=1.5,<1.6",
+"evidence": ["cache.get, cache.add, cache.incr, cache.decr introduced in Django Cache 1.5 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django>=2.2,<2.4",
+"cache>=1.5,<1.6"
+]
+},
+"requirements.txt": [
+"django>=2.2,<2.4",
+"cache>=1.5,<1.6"
+]
+}

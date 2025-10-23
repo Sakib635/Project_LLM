@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "urllib>=1.20,<2.0",
+      "evidence": [
+        "urllib.request.urlopen introduced in v1.20",
+        "urllib.error.URLError deprecated in v2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "socket>=3.4,<4.0",
+      "evidence": [
+        "socket.create_connection introduced in v3.4",
+        "socket.timeout deprecated in v4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=2.6,<3.9",
+      "recommended_requirements_line": "logging>=2.6,<3.9",
+      "evidence": [
+        "logging.basicConfig introduced in v2.6",
+        "logging.info introduced in v2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "signal.signal deprecated in v3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.6,<4.0",
+      "recommended_requirements_line": "sys>=2.6,<4.0",
+      "evidence": [
+        "sys.exit introduced in v2.6",
+        "sys.path added in v3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sleep introduced in v2.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.20,<2.0",
+    "socket>=3.4,<4.0",
+    "logging>=2.6,<3.9",
+    "sys>=2.6,<4.0"
+  ]
+}

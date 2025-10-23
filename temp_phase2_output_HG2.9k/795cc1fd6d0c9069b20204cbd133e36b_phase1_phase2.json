@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": "numpy>=1.20,<2",
+"evidence": ["numpy.array introduced in v1.16.5", "numpy.arange added in v1.17.4"],
+"confidence": 0.8,
+"notes": ""
+},
+"tensorflow": {
+"inferred_version_range": null,
+"recommended_requirements_line": "tensorflow>=2.5,<3",
+"evidence": ["tensorflow.Graph introduced in v2.1.0", "tensorflow.Session introduced in v2.4.0"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.20,<2",
+"tensorflow>=2.5,<3"
+]
+}
+}

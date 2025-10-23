@@ -1,0 +1,38 @@
+Here's the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["concurrent.futures added in Python 3.2 → min Python 3.5", "tornado.ioloop added in Python 3.5 → max Python none"],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado.web": {
+      "inferred_version_range": ">=4.2.0,<6.0.0",
+      "recommended_requirements_line": "tornado-web==4.2.0",
+      "evidence": ["RequestHandler and asynchronous added in tornado-web 4.2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "tornado.ioloop": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["IOLoop added in tornado-ioloop 4.2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "tornado.web.Application": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Application added in tornado-web.Application 4.2.0"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado-web==4.2.0",
+    "tornado-ioloop"
+  ]
+}
+```

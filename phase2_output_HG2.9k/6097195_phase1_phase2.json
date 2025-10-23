@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "google.appengine.ext.ndb added in Python 2.5 \u2192 min Python 2.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "google-app-engine": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": "google-app-engine>=1.9.0,<2.0.0",
+      "evidence": [
+        "google.appengine.ext.ndb.Model added in v1.9.0 \u2192 v2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "DynamicPropertyMixin": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "google-app-engine>=1.5.0,<2.0.0",
+      "evidence": [
+        "DynamicPropertyMixin.set_dynamic_prop added in v1.5.0 \u2192 v1.6.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "google-app-engine>=1.9.0,<2.0.0",
+    "DynamicPropertyMixin>=1.5.0,<2.0.0"
+  ]
+}

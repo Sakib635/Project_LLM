@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.time added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "hou": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "hou>=1.2.0,<2.0.0",
+      "evidence": [
+        "hou.ui.addEventLoopCallback introduced in v1.2.0",
+        "hou.ui.removeEventLoopCallback depricated in v1.9.5"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "hou>=1.2.0,<2.0.0"
+  ]
+}

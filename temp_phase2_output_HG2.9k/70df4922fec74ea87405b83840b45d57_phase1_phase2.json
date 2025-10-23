@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "opencv": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cv2>=1.2.0,<2.0.0",
+      "evidence": [
+        "cv2 introduced in Python 3.4 \u2192 min Python 3.4",
+        "cv2 removed in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "np>=1.2.0,<2.0.0",
+      "evidence": [
+        "np introduced in Python 3.4 \u2192 min Python 3.4",
+        "np removed in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os introduced in Python 2.6 \u2192 min Python 2.6",
+        "os removed in Python 3.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=1.2.0,<2.0.0",
+    "np>=1.2.0,<2.0.0"
+  ]
+}

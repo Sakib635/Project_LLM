@@ -1,0 +1,12 @@
+*** Error setting resource limits. Mininet's performance may be affected.
+*** Adding controller
+Traceback (most recent call last):
+  File "snippet.py", line 38, in <module>
+    myNetwork()
+  File "snippet.py", line 14, in myNetwork
+    net.addController(name='c0')
+  File "/usr/local/lib/python2.7/site-packages/mininet/net.py", line 285, in addController
+    controller_new = controller( name, **params )
+  File "/usr/local/lib/python2.7/site-packages/mininet/node.py", line 1576, in DefaultController
+    raise Exception( 'Could not find a default OpenFlow controller' )
+Exception: Could not find a default OpenFlow controller

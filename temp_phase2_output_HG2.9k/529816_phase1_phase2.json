@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Django version added in Python 2.6"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "your-project.context_processors.ssl_fix": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["getattr introduced in Python 2.0", "request.is_secure introduced in Python 2.1"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "your-project.context_processors.ssl_fix>=0.0,<1.0"
+  ]
+}
+```

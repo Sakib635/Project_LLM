@@ -1,0 +1,81 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "null",
+    "evidence": [
+      "pandas.DataFrame.to_numpy added in Python 3.7 \u2192 min Python 3.7",
+      "time.clock removed in Python 3.9\u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dataiku": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "dataiku>=1.0.0,<2.0.0",
+      "evidence": [
+        "dataiku.Dataset introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0.0",
+        "pandas.DataFrame.to_numpy introduced in v1.0.0",
+        "pandas.DataFrame.ix depricated in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.2,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.19.2",
+        "numpy.linalg.norm introduced in v1.19.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.23.0,<2.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.23.0,<2.0.0",
+      "evidence": [
+        "sklearn.metrics.roc_auc_score introduced in v0.23.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xgboost": {
+      "inferred_version_range": ">=0.85,<2.0.0",
+      "recommended_requirements_line": "xgboost>=0.85,<2.0.0",
+      "evidence": [
+        "xgboost.XGBClassifier introduced in v0.85"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "hyperopt": {
+      "inferred_version_range": ">=0.1,<2.0.0",
+      "recommended_requirements_line": "hyperopt>=0.1,<2.0.0",
+      "evidence": [
+        "hyperopt.hp introduced in v0.1",
+        "hyperopt.fmin introduced in v0.1",
+        "hyperopt.tpe introduced in v0.1",
+        "hyperopt.Trials introduced in v0.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dataiku>=1.0.0,<2.0.0",
+    "pandas>=1.0.0,<2.0.0",
+    "numpy>=1.19.2,<2.0.0",
+    "scikit-learn>=0.23.0,<2.0.0",
+    "xgboost>=0.85,<2.0.0",
+    "hyperopt>=0.1,<2.0.0"
+  ]
+}

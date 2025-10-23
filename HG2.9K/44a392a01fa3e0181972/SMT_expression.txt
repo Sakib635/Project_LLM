@@ -1,0 +1,5 @@
+(declare-fun vtk () String)
+(declare-fun matplotlib () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= matplotlib "3.3.3")) (or (= vtk "9.0.1"))))
+(check-sat)

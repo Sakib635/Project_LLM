@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10",
+    "evidence": [
+      "torchvision.transforms.Compose added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "torch>=1.7.0",
+      "evidence": [
+        "torch.utils.data.Dataset introduced in v1.7.0"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "torchvision": {
+      "inferred_version_range": ">=0.9.1",
+      "recommended_requirements_line": "torchvision>=0.9.1",
+      "evidence": [
+        "torchvision.datasets.MNIST introduced in v0.9.1"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os>=3.5",
+      "evidence": [
+        "os.path.expanduser introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "torch.utils.data": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "torch.utils.data>=1.8.0",
+      "evidence": [
+        "torch.utils.data.DataLoader introduced in v1.8.0"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.7.0",
+    "torchvision>=0.9.1",
+    "os>=3.5",
+    "torch.utils.data>=1.8.0"
+  ]
+}

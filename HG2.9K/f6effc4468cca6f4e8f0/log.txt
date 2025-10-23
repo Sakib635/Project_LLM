@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "snippet.py", line 57, in <module>
+    findHIDDevice(mbed_vendor_id, mbed_product_id)
+  File "snippet.py", line 19, in findHIDDevice
+    hid_device = usb.core.find(idVendor=mbed_vendor_id,idProduct=mbed_product_id)
+  File "/usr/local/lib/python2.7/site-packages/usb/core.py", line 1297, in find
+    raise NoBackendError('No backend available')
+usb.core.NoBackendError: No backend available

@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["math.sqrt added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+"evidence": ["np.random added in numpy 1.2.0 → 2.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"numbapro": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["cuda added in numbapro 1.2.0 → 2.0.0"],
+"confidence": 0.6,
+"notes": "Uncertainty due to conflicting APIs"
+},
+"timeit": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["default_timer added in timeit 1.2.0 → 2.0.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.2.0,<2.0.0",
+"numbapro>=1.2.0,<2.0.0",
+"timeit>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": [
+"numpy>=1.2.0,<2.0.0",
+"numbapro>=1.2.0,<2.0.0",
+"timeit>=1.2.0,<2.0.0"
+]
+}

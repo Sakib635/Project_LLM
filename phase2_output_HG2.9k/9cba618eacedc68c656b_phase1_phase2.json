@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "multiprocessing.cpu_count introduced in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scapy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scapy.layers.all.TCP added in Scapy 2.4.3 \u2192 min Python 3.5",
+        "scapy.layers.all.UDP introduced in Scapy 2.4.3\u2192 min Python 3.5",
+        "scapy.layers.all.Raw introduced in Scapy 2.4.3 \u2192 min Python 3.5",
+        "scapy.all.sniff added in Scapy 2.4.3 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cachetools": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cachetools>=1.2.0,<2.0.0",
+      "evidence": [
+        "cachetools.LRUCache introduced in cachetools 1.2.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Queue": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Queue.Queue introduced in Python 3.2 \u2192 min Python 3.5",
+        "Queue.empty removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "LimitedPool": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "LimitedPool.__init__ introduced in Python 3.2 \u2192 min Python 3.5",
+        "LimitedPool.__init__ removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "libemu": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "libemu.Emulator introduced in Python 3.2 \u2192 min Python 3.5",
+        "libemu.Emulator removed in Python 3.9\u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cachetools>=1.2.0,<2.0.0",
+    "scapy>=2.4.3"
+  ]
+}

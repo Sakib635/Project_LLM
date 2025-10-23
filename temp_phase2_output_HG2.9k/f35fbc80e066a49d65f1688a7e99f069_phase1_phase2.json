@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"keras": {
+"inferred_version_range": ">=2.0.0,<3.0.0",
+"recommended_requirements_line": "keras>=2.0.0,<3.0.0",
+"evidence": ["keras.models.Sequential introduced in v2.0.0", "keras.layers.Dense introduced in v2.0.0", "keras.layers.Dropout introduced in v2.0.0", "keras.layers.Flatten introduced in v2.0.0"],
+"confidence": 1,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.16.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+"evidence": ["numpy.array introduced in v1.16.0", "numpy.save introduced in v1.16.0", "numpy.load introduced in v1.16.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": ["keras>=2.0.0,<3.0.0", "numpy>=1.16.0,<2.0.0"]
+},
+"requirements.txt": []
+}

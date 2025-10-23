@@ -1,0 +1,97 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "datetime.date added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "appex": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "appex.is_running_extension() introduced in Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "console": {
+      "inferred_version_range": ">=2.7,<3",
+      "recommended_requirements_line": "console>=2.7,<3",
+      "evidence": [
+        "console.hud_alert() introduced in Python 2.7 \u2192 min Python 2.7",
+        "console.show_activity() introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.7,<4",
+      "recommended_requirements_line": "datetime>=3.7,<4",
+      "evidence": [
+        "date.today() introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "dialogs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dialogs.form_dialog() introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keychain": {
+      "inferred_version_range": ">=2.6,<3",
+      "recommended_requirements_line": "keychain>=2.6,<3",
+      "evidence": [
+        "keychain.get_password() introduced in Python 2.6 \u2192 min Python 2.6",
+        "keychain.set_password() introduced in Python 2.6 \u2192 min Python 2.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=3.7,<4",
+      "recommended_requirements_line": "re>=3.7,<4",
+      "evidence": [
+        "re.split() introduced in Python 3.7 \u2192 min Python 3.7",
+        "re.sub() introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "normalize() introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "unicodedata": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "unicodedata>=3.5,<4",
+      "evidence": [
+        "normalize() introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "appex>=3.5,<4",
+    "console>=2.7,<3",
+    "datetime>=3.7,<4",
+    "dialogs>=3.7,<4",
+    "keychain>=2.6,<3",
+    "re>=3.7,<4",
+    "string>=3.6,<4",
+    "unicodedata>=3.5,<4"
+  ]
+}

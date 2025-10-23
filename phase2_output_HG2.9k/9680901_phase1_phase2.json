@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5", "time.clock removed in Python 3.6→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"xmpp": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["xmpp.Client introduced in Python 3.5→ min Python 3.5", "xmpp.protocol.Message introduced in Python 3.5→ min Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+},
+"json": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["json.dumps introduced in Python 3.5→ min Python 3.5", "json.loads introduced in Python 3.5→ min Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+},
+"random": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["random.choice introduced in Python 3.5→ min Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+},
+"string": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["string.ascii_letters introduced in Python 3.5→ min Python 3.5", "string.digits introduced in Python 3.5→ min Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sys.exit introduced in Python 3.5→ min Python 3.5"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"xmpp>=3.5",
+"json>=3.5",
+"random>=3.5",
+"string>=3.5",
+"sys>=3.5"
+]
+}
+}

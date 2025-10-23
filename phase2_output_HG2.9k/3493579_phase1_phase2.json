@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "PySide used in code."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pyside>=1.2.0,<2.0.0",
+      "evidence": [
+        "QtCore and QtGui used in code."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "sys>=3.7.0,<4.0.0",
+      "evidence": [
+        "sys.argv used in code."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=2.2.0,<3.0.0",
+      "recommended_requirements_line": "matplotlib>=2.2.0,<3.0.0",
+      "evidence": [
+        "matplotlib.rcParams['backend.qt4']='PySide' introduced in v2.2.0.",
+        "matplotlib.backends.backend_qt4agg.FigureCanvasQTAgg and matplotlib.figure.Figure used in code."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<2.0.0",
+      "evidence": [
+        "numpy.random.random introduced in v1.7.0.",
+        "numpy.zeros and numpy.linalg.norm used in code."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyside>=1.2.0,<2.0.0",
+    "sys>=3.7.0,<4.0.0",
+    "matplotlib>=2.2.0,<3.0.0",
+    "numpy>=1.7.0,<2.0.0"
+  ]
+}

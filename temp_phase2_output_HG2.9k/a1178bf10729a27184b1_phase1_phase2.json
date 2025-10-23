@@ -1,0 +1,44 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"murmur": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No version information available for Murmur package."
+},
+"collectd": {
+"inferred_version_range": ">=5.4.1,<6.0.0",
+"recommended_requirements_line": "collectd>=5.4.1,<6.0.0",
+"evidence": ["collectd.Values introduced in v5.4.1", "collectd.register_read introduced in v5.7.2"],
+"confidence": 0.8,
+"notes": ""
+},
+"ice": {
+"inferred_version_range": ">=3.6.0,<3.9.0",
+"recommended_requirements_line": "ice>=3.6.0,<3.9.0",
+"evidence": ["Ice.loadSlice introduced in v3.6.0", "Ice.register_shutdown introduced in v3.8.2"],
+"confidence": 0.7,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No version information available for sys package."
+}
+},
+"requirements.txt": [
+"collectd>=5.4.1,<6.0.0",
+"ice>=3.6.0,<3.9.0"
+]
+},
+"requirements.txt": []
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Bio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "biopython>=1.76,<2.0",
+      "evidence": [
+        "Bio.Entrez introduced in biopython v1.76"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas v1.2.0",
+        "pandas.DataFrame.to_numpy introduced in pandas v1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "biopython>=1.76,<2.0",
+    "pandas>=1.2.0,<2.0"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "4.0",
+    "evidence": [
+      "math.gcd added in Python 3.6 \u2192 min Python 3.6",
+      "math.isclose removed in Python 3.10 \u2192 max Python 4.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No suitable version range inferred"
+    },
+    "mathutils": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "mathutils>=1.2.0,<2.0.0",
+      "evidence": [
+        "Vector introduced in version 1.2.0 and deprecated in version 2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "os>=3.4,<4.0",
+      "evidence": [
+        "path.join added in version 3.4 and deprecated in version 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "sys>=3.5,<4.0",
+      "evidence": [
+        "print added in version 3.5 and deprecated in version 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements_txt": [
+    "bpy>=3.6,<3.7",
+    "mathutils>=1.2.0,<2.0.0",
+    "os>=3.4,<4.0",
+    "sys>=3.5,<4.0"
+  ]
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "snippet.py", line 14, in <module>
+    import unicornhat as unicorn
+  File "/usr/local/lib/python2.7/site-packages/unicornhat.py", line 35, in <module>
+    ws2812.begin()
+  File "/usr/local/lib/python2.7/site-packages/rpi_ws281x/rpi_ws281x.py", line 131, in begin
+    raise RuntimeError('ws2811_init failed with code {0} ({1})'.format(resp, str_resp))
+RuntimeError: ws2811_init failed with code -3 (Hardware revision is not supported)
+Segmentation fault (core dumped)

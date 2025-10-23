@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "hashlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "hashlib.sha1",
+        "hashlib.md5"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "optparse": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "optparse>=1.0,<2.0",
+      "evidence": [
+        "optparse.OptionParser().parse_args"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "paramiko": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "paramiko>=1.0,<2.0",
+      "evidence": [
+        "paramiko.RSAKey.from_private_key",
+        "paramiko.SSHException"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.PublicKey.RSA.importKey",
+        "Crypto.PublicKey.RSA.get_name",
+        "Crypto.PublicKey.RSA.get_base64"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "hashlib>=1.0,<2.0",
+    "optparse>=1.0,<2.0",
+    "paramiko>=1.0,<2.0",
+    "Crypto>=1.0,<2.0"
+  ]
+}

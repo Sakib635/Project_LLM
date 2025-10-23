@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "plone": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "plone>=1.2.0,<2.0.0",
+      "evidence": [
+        "createContentInContainer introduced in Plone 1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "transaction": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "commit introduced in Python 3.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "opengever": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "opengever>=1.2.0,<2.0.0",
+      "evidence": [
+        "businesscasedossier, document, task, mail, repositoryfolder introduced in Opengever 1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "plone>=1.2.0,<2.0.0",
+    "opengever>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable upper or lower bound for requests."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.stderr and sys.stdout introduced in Python 2.6 \u2192 min Python 2.6",
+        "sys.std(out|err) removed in Python 3.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=1.4.2,<2.0.0",
+      "recommended_requirements_line": "matplotlib>=1.4.2,<2.0.0",
+      "evidence": [
+        "matplotlib.pyplot introduced in v1.4.2",
+        "matplotlib.basemap introduced in v1.4.3",
+        "matplotlib.figure introduced in v1.4.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mpl_toolkits": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "mpl_toolkits.basemap introduced in Python 3.4 \u2192 min Python 3.4",
+        "mpl_toolkits.basemap removed in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "collections.OrderedDict introduced in Python 2.7 \u2192 min Python 2.7",
+        "collections.OrderedDict removed in Python 3.6 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

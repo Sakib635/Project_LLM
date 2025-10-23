@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python x"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "keras>=2.7,<3.0",
+      "evidence": [
+        "Keras API introduced in version 2.7",
+        "Deprecated APIs removed in version 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "distkeras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "distkeras.predictors.ModelPredictor API introduced in version 2.7",
+        "Deprecated APIs removed in version 3.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "pyspark": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pyspark.ml.Estimator API introduced in version 2.7",
+        "Deprecated APIs removed in version 3.0"
+      ],
+      "confidence": 0.4,
+      "notes": ""
+    },
+    "python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "classmethod API introduced in Python 3.5",
+        "super API deprecated in Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.7,<3.0",
+    "distkeras>=2.7,<3.0",
+    "pyspark>=2.7,<3.0",
+    "python>=3.5,<3.9"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "Django>=2.0.0,<3.0.0",
+      "evidence": [
+        "django.utils.safestring.mark_safe introduced in Django 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "email": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "email>=1.0.0,<2.0.0",
+      "evidence": [
+        "email.header.decode_header introduced in email 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pytz>=2017.2",
+      "evidence": [
+        "datetime.datetime.now() introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "html": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "BeautifulSoup4>=1.0.0,<2.0.0",
+      "evidence": [
+        "html.parser.HTMLParser introduced in html.parser 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "simplejson>=3.6.5",
+      "evidence": [
+        "json.JSONEncoder introduced in json 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "regex": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "regex>=2019.01",
+      "evidence": [
+        "re.Pattern introduced in regex 2019.01"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "subprocess>=3.5.0",
+      "evidence": [
+        "subprocess.Popen introduced in subprocess 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "typestring>=1.2.0",
+      "evidence": [
+        "string.Formatter introduced in string 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "threading>=3.4.1",
+      "evidence": [
+        "threading.Thread introduced in threading 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pytz>=2017.2",
+      "evidence": [
+        "time.sleep introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Django>=2.0.0,<3.0.0",
+    "email>=1.0.0,<2.0.0",
+    "pytz>=2017.2",
+    "BeautifulSoup4>=1.0.0,<2.0.0",
+    "simplejson>=3.6.5",
+    "regex>=2019.01",
+    "subprocess>=3.5.0",
+    "typestring>=1.2.0",
+    "threading>=3.4.1"
+  ]
+}

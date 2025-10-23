@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.0.0,<2.0.0",
+      "evidence": [
+        "tensorflow.GraphDef introduced in v1.0.0",
+        "tensorflow.Session introduced in v1.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "os>=2.5.0,<3.0.0",
+      "evidence": [
+        "os.path introduced in v2.5.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "subprocess>=3.5.0,<4.0.0",
+      "evidence": [
+        "subprocess.Popen introduced in v3.5.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "time>=2.7.0,<3.0.0",
+      "evidence": [
+        "time.sleep introduced in v2.7.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.0.0,<2.0.0",
+    "os>=2.5.0,<3.0.0",
+    "subprocess>=3.5.0,<4.0.0",
+    "time>=2.7.0,<3.0.0"
+  ]
+}

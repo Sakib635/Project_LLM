@@ -1,0 +1,74 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "torch.nn.Embedding added in Python 3.6 \u2192 min Python 3.6",
+      "torch.autograd.Variable removed in Python 3.7\u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.5.0,<2.0.0",
+      "evidence": [
+        "torch.nn.Embedding introduced in version 1.5.0, torch.nn.LSTM introduced in version 1.7.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.autograd": {
+      "inferred_version_range": ">=1.6.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.6.0,<2.0.0",
+      "evidence": [
+        "Variable introduced in version 1.6.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "torch.nn.utils.rnn": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.7.0,<2.0.0",
+      "evidence": [
+        "pack_padded_sequence introduced in version 1.7.0, pad_packed_sequence introduced in version 1.8.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn.functional": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.7.0,<2.0.0",
+      "evidence": [
+        "F introduced in version 1.7.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "np introduced in version 1.16.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "itertools>=4.0.0,<5.0.0",
+      "evidence": [
+        "chain introduced in version 4.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.5.0,<2.0.0",
+    "torch>=1.6.0,<2.0.0",
+    "torch>=1.7.0,<2.0.0",
+    "numpy>=1.16.0,<2.0.0",
+    "itertools>=4.0.0,<5.0.0"
+  ]
+}

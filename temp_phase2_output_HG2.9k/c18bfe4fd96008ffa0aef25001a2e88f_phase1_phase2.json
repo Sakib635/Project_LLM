@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bleach": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Unable to determine a reliable version range for bleach."
+    },
+    "jsonlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "jsonlib>=1.2.0,<2.0.0",
+      "evidence": [
+        "jsonlib.dumps introduced in jsonlib 1.2.0",
+        "jsonlib.loads introduced in jsonlib 1.2.0"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Unable to determine a reliable version range for django."
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.0",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.2.0",
+        "pandas.DataFrame.ix introduced in pandas 1.2.0"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bleach>=X.Y.Z,<A.B.C",
+    "jsonlib>=1.2.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

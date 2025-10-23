@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "cv2.VideoCapture and cv2.destroyAllWindows added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "numpy.astype and numpy.uint8 added in NumPy 1.18.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "opencv-python>=4.0.0,<5.0.0",
+      "evidence": [
+        "cv2.VideoCapture and cv2.destroyAllWindows added in OpenCV 4.0.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "BackGroundSubtractor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BackGroundSubtractor.__init__ and BackGroundSubtractor.getForeground added in OpenCV 4.0.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "denoise": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "denoise added in OpenCV 4.0.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "opencv-python>=4.0.0,<5.0.0"
+  ]
+}

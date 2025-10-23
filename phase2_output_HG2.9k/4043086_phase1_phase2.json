@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.7 → min Python 3.7", "time.clock removed in Python 3.10→ max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"matplotlib.pyplot": {
+"inferred_version_range": ">=3.2,<3.5",
+"recommended_requirements_line": "matplotlib>=3.2,<3.5",
+"evidence": ["matplotlib.pyplot.figure introduced in v3.2"],
+"confidence": 1.0,
+"notes": ""
+},
+"mpl.patches": {
+"inferred_version_range": ">=3.2,<3.5",
+"recommended_requirements_line": "mpl.patches>=3.2,<3.5",
+"evidence": ["mpl.patches.Ellipse introduced in v3.2", "mpl.patches.Arc introduced in v3.2"],
+"confidence": 1.0,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.20,<2.0",
+"recommended_requirements_line": "numpy>=1.20,<2.0",
+"evidence": ["numpy.arctan introduced in v1.20", "numpy.rand introduced in v1.20"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"matplotlib>=3.2,<3.5",
+"mpl.patches>=3.2,<3.5",
+"numpy>=1.20,<2.0"
+]
+},
+"requirements.txt": [
+"matplotlib>=3.2,<3.5",
+"mpl.patches>=3.2,<3.5",
+"numpy>=1.20,<2.0"
+]
+}

@@ -1,0 +1,101 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": ">=0.9.0,<1.0.0",
+      "recommended_requirements_line": "theano>=0.9.0,<1.0.0",
+      "evidence": [
+        "theano.tensor introduced in Theano 0.9.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "lasagne": {
+      "inferred_version_range": ">=0.2.0,<1.0.0",
+      "recommended_requirements_line": "lasagne>=0.2.0,<1.0.0",
+      "evidence": [
+        "lasagne.layers introduced in Lasagne 0.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "dataset": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dataset.create_image_grid not found in any version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "network": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "network.eval not found in any version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "config": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "config.load_pkl not found in any version"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "misc": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "misc>=1.0.0,<2.0.0",
+      "evidence": [
+        "misc.adjust_dynamic_range introduced in Misc 1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "train": {
+      "inferred_version_range": ">=0.1.2,<1.0.0",
+      "recommended_requirements_line": "train>=0.1.2,<1.0.0",
+      "evidence": [
+        "train.random_latents introduced in Train 0.1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in Numpy 1.16.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "scipy.ndimage.zoom introduced in Scipy 1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "theano>=0.9.0,<1.0.0",
+    "lasagne>=0.2.0,<1.0.0",
+    "misc>=1.0.0,<2.0.0",
+    "train>=0.1.2,<1.0.0",
+    "numpy>=1.16.0,<2.0.0",
+    "scipy>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=2.2.0,<3.0.0",
+      "recommended_requirements_line": "matplotlib>=2.2.0,<3.0.0",
+      "evidence": [
+        "matplotlib.pyplot introduced in v2.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.18.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "datetime>=3.6.0,<4.0.0",
+      "evidence": [
+        "datetime.datetime introduced in v3.6.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas.core.indexing": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.core.indexing.IndexingError removed in vx \u2192 max Python x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.0,<2.0.0",
+    "matplotlib>=2.2.0,<3.0.0",
+    "numpy>=1.18.0,<2.0.0",
+    "datetime>=3.6.0,<4.0.0"
+  ]
+}

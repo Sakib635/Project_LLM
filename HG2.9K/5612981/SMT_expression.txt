@@ -1,0 +1,5 @@
+(declare-fun tornado () String)
+(declare-fun redis () String)
+(assert (and (or (= redis "3.5.3"))
+     (or (= tornado "6.1") (= tornado "6.1b2") (= tornado "6.1b1"))))
+(check-sat)

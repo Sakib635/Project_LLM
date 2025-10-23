@@ -1,0 +1,31 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "usb.busses and usb.devices added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "usb": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "usb>=1.2.0,<2.0.0",
+      "evidence": [
+        "usb.device.idVendor and usb.device.idProduct added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for sys package"
+    }
+  },
+  "requirements.txt": [
+    "usb>=1.2.0,<2.0.0"
+  ]
+}

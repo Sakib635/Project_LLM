@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib2": {
+      "inferred_version_range": ">=1.24,<3",
+      "recommended_requirements_line": "urllib2>=1.24,<3",
+      "evidence": [
+        "urlopen() added in urllib2 1.24"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=3.2,<4",
+      "recommended_requirements_line": "re>=3.2,<4",
+      "evidence": [
+        "match() added in re 3.2"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "codecs": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": "codecs>=3.6,<4",
+      "evidence": [
+        "getwriter() added in codecs 3.6"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": "sys>=3.6,<4",
+      "evidence": [
+        "stdout = UTF8Writer(sys.stdout) added in sys 3.6"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib2>=1.24,<3",
+    "re>=3.2,<4",
+    "codecs>=3.6,<4",
+    "sys>=3.6,<4"
+  ]
+}

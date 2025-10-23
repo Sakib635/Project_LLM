@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "django>=1.2,<2",
+      "evidence": [
+        "login() introduced in Django 1.2 \u2192 min Django 1.2",
+        "HttpResponseRedirect() introduced in Django 1.2 \u2192 max Django 1.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "urlparse": {
+      "inferred_version_range": ">=1.4,<2",
+      "recommended_requirements_line": "urllib3>=1.4,<2",
+      "evidence": [
+        "urlparse() introduced in Python 1.4 \u2192 min Python 1.4",
+        "added urlparse() in Python 1.4 \u2192 max Python 1.8"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2,<2",
+    "urllib3>=1.4,<2"
+  ]
+}

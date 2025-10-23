@@ -1,0 +1,31 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["PDFParser was introduced in Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pdfminer": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pdfminer>=1.2.0,<2.0.0",
+      "evidence": ["PDFParser and PDFDocument were introduced in version 1.2.0"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["argv was introduced in Python 3.6"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pdfminer>=1.2.0,<2.0.0",
+    "sys>=3.6"
+  ]
+}
+```

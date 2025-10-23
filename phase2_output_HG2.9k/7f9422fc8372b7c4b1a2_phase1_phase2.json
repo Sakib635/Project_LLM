@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "mysql": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "mysql-connector-python>=1.2.0,<3.0.0",
+      "evidence": [
+        "mysql.connector added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "mysql.connector removed in Python 3.0.0\u2192 max Python 3.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "python-dateutil>=3.2.0,<4.0.0",
+      "evidence": [
+        "datetime.fromtimestamp added in Python 3.2.0 \u2192 min Python 3.2.0",
+        "datetime.strftime removed in Python 4.0.0\u2192 max Python 4.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "mysql-connector-python>=1.2.0,<3.0.0",
+    "python-dateutil>=3.2.0,<4.0.0"
+  ]
+}

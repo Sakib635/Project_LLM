@@ -1,0 +1,31 @@
+JSON Output:
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "vapoursynth": {
+      "inferred_version_range": ">=0.1,<0.2",
+      "recommended_requirements_line": "vapoursynth>=0.1,<0.2",
+      "evidence": ["vapoursynth.get_core"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "vs": {
+      "inferred_version_range": ">=0.1,<0.2",
+      "recommended_requirements_line": "vs>=0.1,<0.2",
+      "evidence": ["vs.resize.Lanczos", "vs.get_core"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "vapoursynth>=0.1,<0.2",
+    "vs>=0.1,<0.2"
+  ]
+}
+
+Note: The output is based on the information provided in the input and may not be accurate or up-to-date.

@@ -1,0 +1,31 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "MongoClient and ObjectId added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "pymongo>=3.5.0,<4.0.0",
+      "evidence": [
+        "MongoClient and ObjectId introduced in pymongo 3.5.0, depricated, removed or changed in v4.x"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "project": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "The project's package is not a dependency."
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.5.0,<4.0.0"
+  ]
+}

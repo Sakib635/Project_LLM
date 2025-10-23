@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "jupyterhub": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "jupyterhub>=1.0,<2.0",
+      "evidence": [
+        "API 'jupyterhub.spawner.LocalProcessSpawner' introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "subprocess>=3.5,<4.0",
+      "evidence": [
+        "API 'subprocess.Popen' introduced in v3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": ">=6.0,<7.0",
+      "recommended_requirements_line": "tornado>=6.0,<7.0",
+      "evidence": [
+        "API 'tornado.gen.coroutine' introduced in v6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pipes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "jupyterhub>=1.0,<2.0",
+    "subprocess>=3.5,<4.0",
+    "tornado>=6.0,<7.0"
+  ]
+}

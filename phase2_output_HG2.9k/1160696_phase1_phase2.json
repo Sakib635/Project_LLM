@@ -1,0 +1,27 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "base64.b64encode added in Python y \u2192 min Python y",
+      "myapplication.app, myapplication.app.test_client added in Python x \u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "unittest": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "unittest>=1.2.0,<3.0.0",
+      "evidence": [
+        "unittest.TestCase introduced in Python 1.2.0 and deprecated/removed/changed in v3.x"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=y,<z",
+    "myapplication>=x,<y",
+    "unittest>=1.2.0,<3.0.0"
+  ]
+}

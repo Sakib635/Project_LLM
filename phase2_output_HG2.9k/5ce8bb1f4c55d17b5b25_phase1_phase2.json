@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.2,<2.10",
+      "recommended_requirements_line": "django>=2.2,<2.10",
+      "evidence": [
+        "django.contrib.sessions.models.Session introduced in v2.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "social.backends": {
+      "inferred_version_range": ">=0.13,<0.14",
+      "recommended_requirements_line": "social-auth-app-django>=0.13,<0.14",
+      "evidence": [
+        "social.backends.facebook.FacebookBackend introduced in v0.13"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.2,<2.10",
+    "social-auth-app-django>=0.13,<0.14"
+  ]
+}

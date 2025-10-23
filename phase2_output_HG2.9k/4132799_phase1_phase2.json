@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "clipboard.get_image added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "PIL>=1.2.0,<2.0.0",
+      "evidence": [
+        "PIL.Image introduced in PIL 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=0.0.0,<2.0.0",
+      "recommended_requirements_line": "base64>=0.0.0,<2.0.0",
+      "evidence": [
+        "base64.standard_b64encode introduced in base64 0.0.0",
+        "base64.standard_b64decode introduced in base64 0.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PIL>=1.2.0,<2.0.0",
+    "base64>=0.0.0,<2.0.0"
+  ]
+}

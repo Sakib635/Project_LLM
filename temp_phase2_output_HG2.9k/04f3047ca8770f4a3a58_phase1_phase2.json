@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "subprocess": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "subprocess.Popen introduced in Python 3.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "unittest": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "unittest.TestCase introduced in Python 3.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scrapy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scrapy>=1.2.0,<2.0.0",
+      "evidence": [
+        "scrapy.crawler introduced in Scrapy 1.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.reactor introduced in Twisted 15.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "my_project": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "my_project.spiders.Spider1 introduced in My Project 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

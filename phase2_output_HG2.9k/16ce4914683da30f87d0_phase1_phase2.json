@@ -1,0 +1,44 @@
+{
+"python_version": {
+"min": null,
+"max": null,
+"evidence": [],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.7,<2",
+"recommended_requirements_line": "numpy>=1.7,<2",
+"evidence": ["numpy.array introduced in 1.7", "numpy.dot introduced in 1.8"],
+"confidence": 0.9,
+"notes": ""
+},
+"scipy.linalg": {
+"inferred_version_range": ">=0.13,<0.14",
+"recommended_requirements_line": "scipy>=0.13,<0.14",
+"evidence": ["scipy.linalg.svd introduced in 0.13"],
+"confidence": 0.9,
+"notes": ""
+},
+"sklearn.metrics.pairwise": {
+"inferred_version_range": ">=0.20,<0.21",
+"recommended_requirements_line": "scikit-learn>=0.20,<0.21",
+"evidence": ["sklearn.metrics.pairwise.euclidean_distances introduced in 0.20", "sklearn.metrics.pairwise.pairwise_kernels introduced in 0.20"],
+"confidence": 0.9,
+"notes": ""
+},
+"sklearn.utils.validation": {
+"inferred_version_range": ">=0.20,<0.21",
+"recommended_requirements_line": "scikit-learn>=0.20,<0.21",
+"evidence": ["sklearn.utils.validation.check_consistent_length introduced in 0.20"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.7,<2",
+"scipy>=0.13,<0.14",
+"scikit-learn>=0.20,<0.21"
+]
+}
+}

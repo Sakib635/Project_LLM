@@ -1,0 +1,45 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["hashlib.sha1 added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "argparse>=1.2,<2",
+      "evidence": ["ArgumentParser introduced, depricated, removed or changed in v1.2"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["b32encode introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Crypto.PublicKey": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "cryptography>=1.2,<2",
+      "evidence": ["RSA introduced in Python 3.5 → min Python 3.5", "RSA deprecated in v0.7 and removed in v1.6"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["exit introduced in Python 3.5 → min Python 3.5"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2,<2",
+    "base64>=1.2,<2",
+    "cryptography>=1.2,<2"
+  ]
+}
+```

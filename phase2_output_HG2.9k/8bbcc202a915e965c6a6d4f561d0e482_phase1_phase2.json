@@ -1,0 +1,70 @@
+[PYTHON]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+    "notes": ""
+  },
+  "dependencies": {
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["radians introduced in math v0.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["time added in time v2.5"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "geopy.distance": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["vincenty added in geopy.distance v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyproj": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "pyproj>=3.0,<4.0",
+      "evidence": ["Geod added in pyproj v3.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "geographiclib.geodesic": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Geodesic added in geographiclib.geodesic v0.3"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "geodesy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["distance added in geodesy v0.2"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyproj>=3.0,<4.0",
+    "geopy.distance"
+  ]
+}
+[/PYTHON]
+
+This is the final JSON object based on the extracted APIs provided:
+
+* Python version range: The minimum required Python version is 3.4, and there is no maximum recommended Python version.
+* Dependencies:
+	+ math: No version range could be inferred for this dependency, so it will not be included in the requirements.txt file.
+	+ time: The "time" package was added in Python 2.5, but it is not used in the codebase. Therefore, no version range can be inferred.
+	+ geopy.distance: The "vincenty" function was added to the "geopy.distance" package in version 1.0. Therefore, the inferred version range for this dependency is >=1.0,<2.0.
+	+ pyproj: The "Geod" class was added to the "pyproj" package in version 3.0. Therefore, the inferred version range for this dependency is >=3.0,<4.0.
+	+ geographiclib.geodesic: No version range could be inferred for this dependency, so it will not be included in the requirements.txt file.
+	+ geodesy: The "distance" function was added to the "geodesy" package in version 0.2. Therefore, the inferred version range for this dependency is >=0.2,<1.0.
+* requirements.txt: The recommended requirements line for each dependency is listed in the order they are displayed above.

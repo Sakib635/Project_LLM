@@ -1,0 +1,29 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": "3.6",
+    "evidence": ["time.clock removed in Python 3.7 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["sys module added in Python 3.7"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": ["Image.open introduced in Pillow v1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.2.0,<2.0.0"
+  ]
+}
+```

@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "tempfile.NamedTemporaryFile added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "m2crypto": {
+      "inferred_version_range": ">=0.31,<0.35",
+      "recommended_requirements_line": "m2crypto>=0.31,<0.35",
+      "evidence": [
+        "X509 introduced in m2crypto 0.31.1 \u2192 v0.31.1",
+        "EVP introduced in m2crypto 0.31.1 \u2192 v0.31.1",
+        "RSA introduced in m2crypto 0.31.1 \u2192 v0.31.1",
+        "ASN1 introduced in m2crypto 0.31.1 \u2192 v0.31.1"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "time>=0.0.0",
+      "evidence": [
+        "time introduced in time 0.0.0 \u2192 v0.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os.path>=0.0.0",
+      "evidence": [
+        "join introduced in os.path 0.0.0 \u2192 v0.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "m2crypto>=0.31,<0.35",
+    "time>=0.0.0",
+    "os.path>=0.0.0"
+  ]
+}

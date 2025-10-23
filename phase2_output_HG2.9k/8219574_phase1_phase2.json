@@ -1,0 +1,99 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.7",
+    "evidence": [
+      "os.makedirs added in Python 3.0 \u2192 min Python 3.0",
+      "random.randint removed in Python 3.1 \u2192 max Python 3.1"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib.urlopen introduced in Python 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "re>=2.0.0,<3.0.0",
+      "evidence": [
+        "re.compile introduced in Python 2.0 \u2192 min Python 2.0",
+        "re.search removed in Python 3.0 \u2192 max Python 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.makedirs introduced in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "urlparse": {
+      "inferred_version_range": ">=3.4.2,<4.0.0",
+      "recommended_requirements_line": "urlparse>=3.4.2,<4.0.0",
+      "evidence": [
+        "urlparse.urlparse introduced in Python 3.4.2 \u2192 min Python 3.4.2",
+        "urlparse.parse_qsl removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.dump introduced in Python 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gzip": {
+      "inferred_version_range": ">=3.3.0,<4.0.0",
+      "recommended_requirements_line": "gzip>=3.3.0,<4.0.0",
+      "evidence": [
+        "gzip.open introduced in Python 3.3.0 \u2192 min Python 3.3.0",
+        "gzip.decompress removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.randint introduced in Python 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "math>=3.5.0,<4.0.0",
+      "evidence": [
+        "math.ceil introduced in Python 3.5.0 \u2192 min Python 3.5.0",
+        "math.log2 removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.0",
+    "re>=2.0.0,<3.0.0",
+    "os>=3.0",
+    "urlparse>=3.4.2,<4.0.0",
+    "json>=1.0",
+    "gzip>=3.3.0,<4.0.0",
+    "random>=2.0",
+    "math>=3.5.0,<4.0.0"
+  ]
+}

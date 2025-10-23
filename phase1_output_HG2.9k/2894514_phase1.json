@@ -1,0 +1,25 @@
+{
+  "avahi": [
+    "avahi.DBUS_NAME",
+    "avahi.DBUS_PATH_SERVER",
+    "avahi.DBUS_INTERFACE_ENTRY_GROUP",
+    "avahi.IF_UNSPEC",
+    "avahi.PROTO_UNSPEC",
+    "avahi.GetHostNameFqdn()"
+  ],
+  "dbus": [
+    "dbus.SystemBus()",
+    "dbus.Interface(bus.get_object(avahi.DBUS_NAME, avahi.DBUS_PATH_SERVER), avahi.DBUS_INTERFACE_SERVER)",
+    "dbus.Interface(bus.get_object(avahi.DBUS_NAME, server.EntryGroupNew()), avahi.DBUS_INTERFACE_ENTRY_GROUP)"
+  ],
+  "encodings.idna": [
+    "ToASCII()"
+  ],
+  "logging": [
+    "logging.basicConfig(level=20)",
+    "logging.info()"
+  ],
+  "socket": [
+    "socket.inet_aton()"
+  ]
+}

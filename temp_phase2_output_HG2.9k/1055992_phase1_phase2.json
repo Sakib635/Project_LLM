@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Django 1.0 introduced the EmptyQuerySet"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "FakeQuerySet": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "FakeQuerySet introduced in Django 1.2"
+      ],
+      "confidence": 0.98,
+      "notes": ""
+    },
+    "super": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "super() introduced in Python 3.0"
+      ],
+      "confidence": 0.96,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

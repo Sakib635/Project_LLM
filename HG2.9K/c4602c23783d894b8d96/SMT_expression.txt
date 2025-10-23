@@ -1,0 +1,4 @@
+(declare-fun pycryptodome () String)
+(declare-fun lxml () String)
+(assert (and (or (= lxml "4.6.2")) (or (= pycryptodome "3.9.9"))))
+(check-sat)

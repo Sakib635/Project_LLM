@@ -1,0 +1,82 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in version 1.16.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gc.get_objects not found in Python <2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "inspect": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "inspect>=3.5,<4",
+      "evidence": [
+        "inspect.getsourcelines introduced in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "six": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "six.PY3 not found in Python <2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.management.base": {
+      "inferred_version_range": ">=1.8,<2",
+      "recommended_requirements_line": "django.core.management.base>=1.8,<2",
+      "evidence": [
+        "django.core.management.base.BaseCommand introduced in version 1.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.dispatch.dispatcher": {
+      "inferred_version_range": ">=1.7,<2",
+      "recommended_requirements_line": "django.dispatch.dispatcher>=1.7,<2",
+      "evidence": [
+        "django.dispatch.dispatcher.Signal introduced in version 1.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.16.0,<2.0.0",
+    "inspect>=3.5,<4",
+    "django.core.management.base>=1.8,<2",
+    "django.dispatch.dispatcher>=1.7,<2"
+  ]
+}

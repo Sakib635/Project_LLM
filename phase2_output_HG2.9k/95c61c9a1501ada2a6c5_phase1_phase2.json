@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["sys.argv added in Python 3.6 → min Python 3.6", "sys.exit removed in Python 3.10 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"PIL": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "PIL>=1.2.0,<2.0.0",
+"evidence": ["Image.open added in PIL 1.2.0 → min PIL 1.2.0", "Image.convert introduced in PIL 1.4.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"struct": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["No evidence found in API list."],
+"confidence": 0.0,
+"notes": "Unable to determine version range for struct package due to lack of information in the provided API list."
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["No evidence found in API list."],
+"confidence": 0.0,
+"notes": "Unable to determine version range for sys package due to lack of information in the provided API list."
+},
+"Image": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["No evidence found in API list."],
+"confidence": 0.0,
+"notes": "Unable to determine version range for Image package due to lack of information in the provided API list."
+}
+},
+"requirements.txt": [
+"PIL>=1.2.0,<2.0.0",
+"struct>=X.Y.Z,<A.B.C",
+"sys>=X.Y.Z,<A.B.C",
+"Image>=X.Y.Z,<A.B.C"
+]
+},
+"requirements.txt": [
+"PIL>=1.2.0,<2.0.0",
+"struct>=X.Y.Z,<A.B.C",
+"sys>=X.Y.Z,<A.B.C",
+"Image>=X.Y.Z,<A.B.C"
+]
+}

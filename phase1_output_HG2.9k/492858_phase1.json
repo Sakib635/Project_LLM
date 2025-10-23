@@ -1,0 +1,34 @@
+{
+  "sys": [
+    "sys.path"
+  ],
+  "import": [
+    "import sys",
+    "from thrift import Thrift",
+    "from thrift.transport import TSocket",
+    "from thrift.transport import TTransport",
+    "from thrift.protocol import TBinaryProtocol",
+    "import tap",
+    "import memcacheConstants",
+    "from flume import ThriftFlumeEventServer",
+    "class FlumeDest"
+  ],
+  "thrift": [
+    "Thrift",
+    "TSocket",
+    "TTransport",
+    "TBinaryProtocol"
+  ],
+  "tap": [
+    "tap.mainLoop"
+  ],
+  "memcacheConstants": [
+    "memcacheConstants.CMD_TAP_MUTATION",
+    "memcacheConstants.TAP_MUTATION_PKT_FMT"
+  ],
+  "flume": [
+    "ThriftFlumeEventServer.Client",
+    "ThriftFlumeEventServer.Priority",
+    "ThriftFlumeEventServer.ThriftFlumeEvent"
+  ]
+}

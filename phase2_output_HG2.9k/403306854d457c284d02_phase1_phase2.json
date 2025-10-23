@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gst": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gst.Pipeline and gst.element_factory_make added in GStreamer 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pipeline": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pipeline.add and pipeline.set_state added in GStreamer 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "audio_source": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "audio_source.set_property added in GStreamer 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "decode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Could not determine version range for decode API"
+    },
+    "convert": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Could not determine version range for convert API"
+    },
+    "equalizer": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "equalizer.set_property added in GStreamer 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "audio_sink": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Could not determine version range for audio_sink API"
+    }
+  },
+  "requirements.txt": []
+}

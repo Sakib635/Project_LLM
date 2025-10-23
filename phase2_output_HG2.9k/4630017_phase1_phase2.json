@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["time.sleep added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "RPi.GPIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["RPi.GPIO.setmode added in Python 3.5 → min Python 3.5", "RPi.GPIO.setup added in Python 3.5 → min Python 3.5", "RPi.GPIO.input added in Python 3.5 → min Python 3.5"],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "phue": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["phue.Bridge added in Python 3.5 → min Python 3.5"],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "RPi.GPIO>=3.5,<4",
+    "phue>=3.5,<4"
+  ]
+}
+```

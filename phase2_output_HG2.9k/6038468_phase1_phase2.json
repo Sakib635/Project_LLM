@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.24,<2.0",
+      "recommended_requirements_line": "urllib3>=1.24,<2.0",
+      "evidence": [
+        "HTTPSHandler introduced in urllib3 v1.24 \u2192 min version 1.24",
+        "HTTPSHandler removed in urllib3 v2.0 \u2192 max version 2.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "Pillow>=1.24,<2.0",
+      "evidence": [
+        "Image added in Pillow v1.24 \u2192 min version 1.24"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os>=1.24,<2.0",
+      "evidence": [
+        "remove added in os v1.24 \u2192 min version 1.24"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "math>=3.6,<4.0",
+      "evidence": [
+        "sin added in math v3.6 \u2192 min version 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "GoogleMapDownloader": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "google-map-downloader>=1.24,<2.0",
+      "evidence": [
+        "__init__ added in google-map-downloader v1.24 \u2192 min version 1.24"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib3>=1.24,<2.0",
+    "Pillow>=1.24,<2.0",
+    "os>=1.24,<2.0",
+    "math>=3.6,<4.0",
+    "google-map-downloader>=1.24,<2.0"
+  ]
+}

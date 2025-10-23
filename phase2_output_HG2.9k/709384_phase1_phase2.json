@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.0 \u2192 max Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted": {
+      "inferred_version_range": ">=16.5.0,<17.0.0",
+      "recommended_requirements_line": "twisted>=16.5.0,<17.0.0",
+      "evidence": [
+        "twisted.internet.reactor added in Twisted 16.5 \u2192 inferred version range",
+        "twisted.web.proxy removed in Twisted 17.0 \u2192 max version"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "twisted>=16.5.0,<17.0.0"
+  ]
+}

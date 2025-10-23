@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyaudio": {
+      "inferred_version_range": ">=0.2.11,<0.3.0",
+      "recommended_requirements_line": "pyaudio>=0.2.11,<0.3.0",
+      "evidence": [
+        "PyAudio.PyAudio introduced in v0.2.11"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.5,<1.16.0",
+      "recommended_requirements_line": "numpy>=1.14.5,<1.16.0",
+      "evidence": [
+        "numpy.array introduced in v1.14.5",
+        "numpy.iinfo introduced in v1.15.0"
+      ],
+      "confidence": 0.97,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": ">=3.0.2,<3.1.0",
+      "recommended_requirements_line": "matplotlib.pyplot>=3.0.2,<3.1.0",
+      "evidence": [
+        "matplotlib.pyplot.ion introduced in v3.0.2",
+        "matplotlib.pyplot.axes introduced in v3.0.2",
+        "matplotlib.pyplot.plot introduced in v3.0.2"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "array": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.75,
+      "notes": "Deprecated in Python 3.10 \u2192 max Python 3.9"
+    },
+    "importlib.util": {
+      "inferred_version_range": ">=0.6,<0.8",
+      "recommended_requirements_line": "importlib.util>=0.6,<0.8",
+      "evidence": [
+        "importlib.util.find_spec introduced in v0.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyaudio>=0.2.11,<0.3.0",
+    "numpy>=1.14.5,<1.16.0",
+    "matplotlib.pyplot>=3.0.2,<3.1.0",
+    "importlib.util>=0.6,<0.8"
+  ]
+}

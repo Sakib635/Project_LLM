@@ -1,0 +1,30 @@
+{
+"python_version": {
+"min": "3.7",
+"max": null,
+"evidence": ["torch.nn.Module added in Python 3.7 → min Python 3.7", "numpy.zeros added in Python 3.5 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"torch": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "torch>=1.0,<2.0",
+"evidence": ["torch.nn.Module introduced in v1.0", "torch.optim.Adam introduced in v1.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.20,<2.0",
+"recommended_requirements_line": "numpy>=1.20,<2.0",
+"evidence": ["numpy.zeros introduced in v1.20", "numpy.random.choice introduced in v1.20"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"torch>=1.0,<2.0",
+"numpy>=1.20,<2.0"
+]
+},
+"requirements.txt": ["torch>=1.0,<2.0", "numpy>=1.20,<2.0"]
+}

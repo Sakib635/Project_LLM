@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"unicorn": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "unicorn>=1.2.0,<2.0.0",
+"evidence": ["unicorn.UC_ARCH_ARM introduced in v1.2.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"keystone": {
+"inferred_version_range": ">=0.9.3,<1.0.0",
+"recommended_requirements_line": "keystone>=0.9.3,<1.0.0",
+"evidence": ["keystone.KS_ARCH_ARM introduced in v0.9.3"],
+"confidence": 1.0,
+"notes": ""
+},
+"pwn": {
+"inferred_version_range": ">=2.1.4,<3.0.0",
+"recommended_requirements_line": "pwn>=2.1.4,<3.0.0",
+"evidence": ["pwn.remote introduced in v2.1.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["unicorn>=1.2.0,<2.0.0", "keystone>=0.9.3,<1.0.0", "pwn>=2.1.4,<3.0.0"]
+},
+"requirements.txt": []
+}

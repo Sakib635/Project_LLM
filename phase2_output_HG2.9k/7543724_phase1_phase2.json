@@ -1,0 +1,38 @@
+```
+{
+"python_version": {
+"min": "y",
+"max": null,
+"evidence": ["django.contrib.auth.management._get_all_permissions added in Python y → min Python y", "pandas.DataFrame.to_numpy introduced in Python 3.5.0 → max Python 3.6.1"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": "django>=2.2.17",
+"evidence": ["django.contrib.auth.management._get_all_permissions introduced in Django 3.0 → max Python 3.6.1"],
+"confidence": 0.5,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.DataFrame introduced in pandas 1.2.0 → max Python 3.6.1"],
+"confidence": 1.0,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+"evidence": ["numpy.array introduced in numpy 1.16.4 → max Python 3.6.1"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django>=2.2.17",
+"pandas>=1.2.0,<2.0.0",
+"numpy>=1.2.0,<2.0.0"
+]
+}
+```

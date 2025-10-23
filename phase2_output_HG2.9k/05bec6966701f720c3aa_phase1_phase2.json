@@ -1,0 +1,121 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.10",
+    "evidence": [
+      "argparse.ArgumentParser introduced in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "apiclient": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "apiclient.discovery introduced in Python 3.5",
+        "apiclient.errors deprecated in Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "csv.reader introduced in Python 3.5",
+        "csv.writer deprecated in Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "google_auth": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "google_auth.exceptions introduced in Python 3.5",
+        "google_auth.transport.requests deprecated in Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "http.client.HTTPConnection introduced in Python 3.5"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "oauth2client": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "oauth2client.service_account introduced in Python 3.5",
+        "oauth2client.service_account._ServiceAccountCredentials deprecated in Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path introduced in Python 3.5"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in Python 3.5 \u2192 min Python 3.5",
+        "pandas.DataFrame.to_numpy deprecated in Python 3.10 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "requests.Response introduced in Python 3.5"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "sample_tools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sample_tools.init introduced in Python 3.5",
+        "sample_tools._helpers deprecated in Python 3.10"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "string.printable introduced in Python 3.5"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "apiclient>=3.5.0,<4.0.0",
+    "csv>=3.5.0,<4.0.0",
+    "google-auth>=3.5.0,<4.0.0",
+    "http>=3.5.0,<4.0.0",
+    "oauth2client>=3.5.0,<4.0.0",
+    "os>=3.5.0,<4.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "requests>=3.5.0,<4.0.0",
+    "sample-tools>=3.5.0,<4.0.0",
+    "string>=3.5.0,<4.0.0"
+  ]
+}

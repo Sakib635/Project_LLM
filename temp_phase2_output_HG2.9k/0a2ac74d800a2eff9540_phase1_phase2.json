@@ -1,0 +1,42 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "appindicator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "IPIndicator"
+      ],
+      "confidence": 0.0,
+      "notes": "No known version range for appindicator"
+    },
+    "gtk": {
+      "inferred_version_range": ">=3.16,<4.0",
+      "recommended_requirements_line": "pycairo==1.19.*; extra == '+gtk'",
+      "evidence": [
+        "Menu",
+        "MenuItem"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urlopen"
+      ],
+      "confidence": 0.0,
+      "notes": "No known version range for urllib2"
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pandas.DataFrame introduced in Python 3.6 → min Python 3.6", "numpy.array introduced in Python 3.6 → min Python 3.6", "pandas.DataFrame.to_numpy deprecated in Python 3.7 → max Python 3.7", "pandas.DataFrame.ix removed in Python 3.8 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "pandas>=1.0,<2.0",
+"evidence": ["pandas.DataFrame introduced in pandas 1.0 → min pandas 1.0", "pandas.DataFrame.to_numpy deprecated in pandas 1.7 → max pandas 1.7"],
+"confidence": 0.5,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.6,<2.0",
+"recommended_requirements_line": "numpy>=1.6,<2.0",
+"evidence": ["numpy.array introduced in numpy 1.6 → min numpy 1.6", "numpy.linalg.norm deprecated in numpy 1.7 → max numpy 1.7"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": ["pandas>=1.0,<2.0", "numpy>=1.6,<2.0"]
+},
+"notes": ""
+}

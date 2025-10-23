@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "User model introduced in Django 1.x"
+      ],
+      "confidence": 0.5,
+      "notes": "No clear evidence of version range"
+    },
+    "tastypie": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "tastypie>=1.2.0,<2.0.0",
+      "evidence": [
+        "ApiKeyAuthentication introduced in tastypie 1.2.x"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "EmailApiKeyAuthentication": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "is_authenticated introduced in EmailApiKeyAuthentication v0.x",
+        "get_key introduced in EmailApiKeyAuthentication v1.x"
+      ],
+      "confidence": 0.5,
+      "notes": "No clear evidence of version range"
+    }
+  },
+  "requirements.txt": [
+    "django>=1.y,<2.z",
+    "tastypie>=1.2.0,<2.0.0",
+    "EmailApiKeyAuthentication>=0.x,<1.x"
+  ]
+}

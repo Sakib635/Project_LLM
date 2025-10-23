@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "scipy.spatial.distance.euclidean added in Python 3.6 \u2192 min Python 3.6",
+      "numpy.sqrt removed in Python 3.7 \u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "numpy.sqrt introduced in v1.18.0, deprecated in v1.19.0 \u2192 recommended version range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.spatial.distance.euclidean added in v1.3.0 \u2192 recommended version range"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "scipy>=1.3.0,<2.0.0"
+  ]
+}

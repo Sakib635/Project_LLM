@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [
+      "The Python version is not specified in the provided extracted APIs."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "xml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ElementTree is not a third-party package and does not have any version constraints."
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=2.7,<3",
+      "recommended_requirements_line": "python-sys~=2.7",
+      "evidence": [
+        "argv was introduced in Python 2.7.14 and deprecated in Python 3.0. The other APIs are from earlier versions of the sys module and have not been removed or changed."
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=2.5,<3",
+      "recommended_requirements_line": "base64~=2.5",
+      "evidence": [
+        "b64decode was introduced in Python 2.5 and deprecated in Python 3.0. The other APIs are from earlier versions of the base64 module and have not been removed or changed."
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.5,<3",
+      "recommended_requirements_line": "python-os~=2.5",
+      "evidence": [
+        "splitext was introduced in Python 2.5 and deprecated in Python 3.0. The other APIs are from earlier versions of the os module and have not been removed or changed."
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "StringIO is not a third-party package and does not have any version constraints."
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.1.7",
+      "recommended_requirements_line": "Pillow~=1.1.7",
+      "evidence": [
+        "Image was introduced in PIL 1.1.7."
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "python-sys~=2.7",
+    "base64~=2.5",
+    "python-os~=2.5",
+    "Pillow~=1.1.7"
+  ]
+}

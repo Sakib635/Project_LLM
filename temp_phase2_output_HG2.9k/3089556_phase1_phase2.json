@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "pygtk>=3.0,<4.0",
+      "evidence": [
+        "gtk.Window, gtk.Image, gtk.StatusIcon, gtk.CheckMenuItem, gtk.MenuItem, gtk.Menu introduced in pygtk 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=2.5,<3.0",
+      "recommended_requirements_line": "python-dateutil>=2.5,<3.0",
+      "evidence": [
+        "datetime.datetime introduced in python-dateutil 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.6,<3.1",
+      "recommended_requirements_line": "simplejson>=2.6,<3.1",
+      "evidence": [
+        "json.load introduced in simplejson 2.6"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine upper or lower bound for urllib2"
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine upper or lower bound for Image"
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine upper or lower bound for StringIO"
+    },
+    "gtk.gdk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine upper or lower bound for gtk.gdk"
+    }
+  },
+  "requirements.txt": [
+    "pygtk>=3.0,<4.0",
+    "python-dateutil>=2.5,<3.0",
+    "simplejson>=2.6,<3.1"
+  ]
+}

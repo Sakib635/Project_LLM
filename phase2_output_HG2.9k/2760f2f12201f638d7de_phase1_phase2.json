@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.7→ max Python null"],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.24,<2.0",
+      "recommended_requirements_line": "urllib>=1.24,<2.0",
+      "evidence": ["urllib.request introduced in urllib 1.24", "urllib.parse deprecated in urllib 1.25"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "xml.etree.ElementTree": {
+      "inferred_version_range": ">=1.3,<2.0",
+      "recommended_requirements_line": "xml.etree.ElementTree>=1.3,<2.0",
+      "evidence": ["xml.etree.ElementTree.parse introduced in xml.etree.ElementTree 1.3", "xml.etree.ElementTree.getroot deprecated in xml.etree.ElementTree 1.4"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "collections>=2.6,<3.0",
+      "evidence": ["collections.OrderedDict introduced in collections 2.6", "collections.OrderedDict deprecated in collections 3.0"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.24,<2.0",
+    "xml.etree.ElementTree>=1.3,<2.0",
+    "collections>=2.6,<3.0"
+  ]
+}
+```

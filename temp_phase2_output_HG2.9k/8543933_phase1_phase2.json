@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "numpy>=1.2,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "traits": {
+      "inferred_version_range": ">=4.3,<5.0",
+      "recommended_requirements_line": "traits>=4.3,<5.0",
+      "evidence": [
+        "traits.api.Array introduced in v4.3.0",
+        "traits.api.Callable introduced in v4.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pyface": {
+      "inferred_version_range": ">=4.2,<5.0",
+      "recommended_requirements_line": "pyface>=4.2,<5.0",
+      "evidence": [
+        "pyface.timer.api.Timer introduced in v4.1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "chaco": {
+      "inferred_version_range": ">=5.2,<6.0",
+      "recommended_requirements_line": "chaco>=5.2,<6.0",
+      "evidence": [
+        "chaco.chaco_plot_editor.ChacoPlotItem introduced in v5.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2,<2.0",
+    "traits>=4.3,<5.0",
+    "pyface>=4.2,<5.0",
+    "chaco>=5.2,<6.0"
+  ]
+}

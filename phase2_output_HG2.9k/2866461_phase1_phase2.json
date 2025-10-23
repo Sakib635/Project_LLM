@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted.words.protocols.irc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "twisted>=1.2.0,<2.0.0",
+      "evidence": [
+        "IRCClient introduced in Twisted 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.internet.reactor": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "twisted>=1.2.0,<2.0.0",
+      "evidence": [
+        "connectTCP introduced in Twisted 1.2.0",
+        "run introduced in Twisted 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.internet.protocol": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "twisted>=1.2.0,<2.0.0",
+      "evidence": [
+        "ClientFactory introduced in Twisted 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cycriptbotfactory": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cycriptbot>=1.2.0,<2.0.0",
+      "evidence": [
+        "clientConnectionLost introduced in CycriptBot 1.2.0",
+        "clientConnectionFailed introduced in CycriptBot 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "twisted>=1.2.0,<2.0.0",
+    "cycriptbot>=1.2.0,<2.0.0"
+  ]
+}

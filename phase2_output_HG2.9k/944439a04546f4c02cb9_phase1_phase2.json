@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 2.7 \u2192 min Python 2.7",
+      "keras.models.Sequential.fit removed in Python 3.8\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "keras.models.Sequential introduced in keras 2.0.0 \u2192 min version 2.0.0",
+        "keras.preprocessing.sequence.pad_sequences added in keras 1.0.0 \u2192 max version 1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=2.0.0",
+      "recommended_requirements_line": "collections>=2.0.0",
+      "evidence": [
+        "collections.Counter introduced in collections 2.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0.0,<2.0.0",
+    "collections>=2.0.0"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep introduced in time 1.4 \u2192 min Python 2.7",
+        "time.clock removed in Python 3.9\u2192 max Python z"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "com.android.monkeyrunner": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MonkeyRunner.waitForConnection introduced in com.android 2.1 \u2192 min Python 2.7",
+        "MonkeyDevice.touch added in com.android 3.0 \u2192 min Python 2.7",
+        "MonkeyDevice.DOWN, MOVE, UP introduced in com.android 4.0 \u2192 min Python 2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "time>=1.4,<3.9",
+    "com.android.monkeyrunner>=2.1,<4.0"
+  ]
+}

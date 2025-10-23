@@ -1,0 +1,27 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.2.0,<2.0.0",
+      "evidence": ["os.path introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyramid": {
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "pyramid>=1.8.0,<2.0.0",
+      "evidence": ["pyramid.config.Configurator introduced in v1.8.0", "pyramid.include introduced in v1.8.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["os>=1.2.0,<2.0.0", "pyramid>=1.8.0,<2.0.0"]
+}
+```

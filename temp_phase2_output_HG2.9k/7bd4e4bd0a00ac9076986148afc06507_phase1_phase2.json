@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gensim": {
+      "inferred_version_range": ">=0.10,<1.0",
+      "recommended_requirements_line": "gensim>=0.10,<1.0",
+      "evidence": [
+        "Word2Vec API added in v0.10",
+        "Word2Vec.load API added in v0.10"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "tensorflow>=1.4,<2.0",
+      "evidence": [
+        "InteractiveSession API added in v1.4",
+        "Variable API introduced in v1.4",
+        "global_variables_initializer API introduced in v1.4",
+        "tf.train.Saver API introduced in v1.4",
+        "projector.visualize_embeddings API added in v1.12"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.13,<2.0",
+      "recommended_requirements_line": "numpy>=1.13,<2.0",
+      "evidence": [
+        "array API added in v1.13",
+        "linalg.norm API added in v1.13"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

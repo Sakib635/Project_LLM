@@ -1,0 +1,80 @@
+[PYTHON]
+import json
+
+def get_python_version(extracted_apis):
+    # Initialize the minimum and maximum Python versions to null
+    min_version = None
+    max_version = None
+    # Iterate over the extracted APIs
+    for api in extracted_apis:
+        # Check if the API is a standard library API
+        if api.startswith("python"):
+            # Get the version number from the API name
+            version = api.split(".")[1]
+            # Update the minimum Python version if necessary
+            if min_version is None or min_version > version:
+                min_version = version
+            # Update the maximum Python version if necessary
+            if max_version is None or max_version < version:
+                max_version = version
+    # Return the minimum and maximum Python versions
+    return {
+        "min": str(min_version) if min_version else None,
+        "max": str(max_version) if max_version else None,
+        "evidence": ["Python {} added".format(api.split(".")[1]) for api in extracted_apis],
+        "notes": ""
+    }
+
+def get_dependency_versions(extracted_apis):
+    # Initialize an empty dictionary to store the dependency versions
+    dependencies = {}
+    # Iterate over the extracted APIs
+    for api in extracted_apis:
+        # Check if the API is a third-party library API
+        if "." in api:
+            # Get the package name and version from the API name
+            package, version = api.split(".")[0], api.split(">=")[1].split(",")[0]
+            # Add the dependency to the dictionary of dependencies
+            dependencies[package] = {
+                "inferred_version_range": ">={},<{}".format(version, version),
+                "recommended_requirements_line": None,
+                "evidence": ["API {} introduced in v{}".format(api, version)],
+                "confidence": 1.0,
+                "notes": ""
+            }
+    # Return the dictionary of dependencies
+    return dependencies
+
+def get_requirements_txt(dependencies):
+    # Initialize an empty list to store the requirements.txt lines
+    requirements = []
+    # Iterate over the dependencies
+    for dependency, info in dependencies.items():
+        # Check if the dependency has a recommended version range
+        if info["recommended_requirements_line"]:
+            # Add the requirement line to the list of requirements
+            requirements.append(info["recommended_requirements_line"])
+    # Return the list of requirements.txt lines
+    return requirements
+
+# Get the extracted APIs from the user prompt
+extracted_apis = json.loads(input())
+
+# Infer the Python version range based on the extracted APIs
+python_version = get_python_version(extracted_apis)
+
+# Infer the versions of third-party packages based on the extracted APIs
+dependencies = get_dependency_versions(extracted_apis)
+
+# Get the list of requirements.txt lines for all dependencies
+requirements = get_requirements_txt(dependencies)
+
+# Create the final JSON object
+json_object = {
+    "python_version": python_version,
+    "dependencies": dependencies,
+    "requirements.txt": requirements
+}
+
+print(json.dumps(json_object, indent=2))
+[/PYTHON]

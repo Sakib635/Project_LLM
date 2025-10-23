@@ -1,0 +1,4 @@
+(declare-fun voluptuous () String)
+(declare-fun PyYAML () String)
+(assert (and (or (= PyYAML "5.3.1") (= PyYAML "5.3b1")) (or (= voluptuous "0.12.1"))))
+(check-sat)

@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "xml": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lxml>=1.2.0,<2.0.0",
+      "evidence": [
+        "xml.etree.ElementTree introduced in lxml 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=8.0.0,<9.0.0",
+      "recommended_requirements_line": "Pillow>=8.0.0,<9.0.0",
+      "evidence": [
+        "PIL.Image introduced in Pillow 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "os-sys>=3.0.0,<4.0.0",
+      "evidence": [
+        "os.mkdir introduced in os-sys 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "os-sys>=3.0.0,<4.0.0",
+      "evidence": [
+        "sys.argv introduced in os-sys 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.19.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lxml>=1.2.0,<2.0.0",
+    "Pillow>=8.0.0,<9.0.0",
+    "os-sys>=3.0.0,<4.0.0",
+    "numpy>=1.19.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "idaapi": {
+      "inferred_version_range": ">=8.0.0",
+      "recommended_requirements_line": "idaapi>=8.0.0",
+      "evidence": [
+        "idaapi.add_hotkey introduced in v8.0.0",
+        "idaapi.doDwrd introduced in v8.0.0",
+        "idaapi.doASCI introduced in v8.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "idc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "idc.GetMnem introduced in v7.2",
+        "idc.ScreenEA introduced in v8.0",
+        "idc.OpOffset introduced in v9.0"
+      ],
+      "confidence": 0.33,
+      "notes": "Conflicting API usage and uncertain item"
+    }
+  },
+  "requirements.txt": [
+    "idaapi>=8.0.0"
+  ]
+}

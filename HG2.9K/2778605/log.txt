@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "snippet.py", line 97, in <module>
+    button = Button(0x1710, 0x5612)
+  File "snippet.py", line 15, in __init__
+    self.device = self.getDevice(vendor_id, device_id)
+  File "snippet.py", line 39, in getDevice
+    busses = usb.busses()
+  File "/usr/local/lib/python2.7/site-packages/usb/legacy.py", line 355, in busses
+    sorted(core.find(find_all=True), key=lambda d: d.bus),
+  File "/usr/local/lib/python2.7/site-packages/usb/core.py", line 1297, in find
+    raise NoBackendError('No backend available')
+usb.core.NoBackendError: No backend available

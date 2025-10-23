@@ -1,0 +1,60 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "json": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "json>=1.0,<3.0",
+      "evidence": [
+        "json.dumps, json.loads added in Python 2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": ">=2.0,<4.0",
+      "recommended_requirements_line": "simplejson>=2.0,<4.0",
+      "evidence": [
+        "simplejson.dumps, simplejson.loads added in Python 3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cjson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cjson.encode, cjson.decode removed in Python 3"
+      ],
+      "confidence": 0.0,
+      "notes": "Dependency not used."
+    },
+    "ujson": {
+      "inferred_version_range": ">=1.35,<2.0",
+      "recommended_requirements_line": "ujson>=1.35,<2.0",
+      "evidence": [
+        "ujson.dumps, ujson.loads added in Python 3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cPickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cPickle.dumps, cPickle.loads removed in Python 3"
+      ],
+      "confidence": 0.0,
+      "notes": "Dependency not used."
+    }
+  },
+  "requirements.txt": [
+    "json>=1.0,<3.0",
+    "simplejson>=2.0,<4.0",
+    "ujson>=1.35,<2.0"
+  ]
+}

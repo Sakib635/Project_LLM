@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "wave.open added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.2.0",
+        "numpy.linalg.norm deprecated in v2.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.pack not found in Python y",
+        "struct.pack added in v3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv not found in Python y",
+        "sys.argv added in v3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "csv.reader not found in Python y",
+        "csv.reader added in v3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scikits.samplerate": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "resample not found in Python y",
+        "resample added in v3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "scikits.samplerate>=3.9,<4.0.0"
+  ]
+}

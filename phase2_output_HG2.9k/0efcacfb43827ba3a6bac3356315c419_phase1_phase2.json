@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.21.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.21.2,<2.0.0",
+      "evidence": [
+        "np.max introduced in NumPy 1.21.2, depricated, removed or changed in v1.21.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=3.6,<4.0",
+    "numpy>=1.21.2,<2.0.0"
+  ]
+}

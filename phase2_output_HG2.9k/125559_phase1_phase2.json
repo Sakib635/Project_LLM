@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "daemon": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "daemon>=1.0.0,<2.0.0",
+      "evidence": [
+        "DaemonContext and DaemonContext.open added in version 1.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "optparse": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "optparse>=1.0.0,<2.0.0",
+      "evidence": [
+        "make_option and OptionParser added in version 1.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<3.6",
+      "recommended_requirements_line": "os>=3.4,<3.6",
+      "evidence": [
+        "path.join added in version 3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "daemon>=1.0.0,<2.0.0",
+    "optparse>=1.0.0,<2.0.0",
+    "os>=3.4,<3.6"
+  ]
+}

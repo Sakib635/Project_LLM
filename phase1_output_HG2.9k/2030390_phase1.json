@@ -1,0 +1,21 @@
+{
+  "MySQLdb": [
+    "MySQLdb.connect",
+    "MySQLdb.cursor"
+  ],
+  "DB_CONFIG": [
+    "DB_CONFIG['host']",
+    "DB_CONFIG['name']",
+    "DB_CONFIG['pass']",
+    "DB_CONFIG['user']"
+  ],
+  "getConn": [
+    "MySQLdb.connect(host=DB_CONFIG['host'], user=DB_CONFIG['user'], passwd=DB_CONFIG['pass'], db=DB_CONFIG['name'], charset='utf8', use_unicode=True)",
+    "conn.set_character_set('utf8')"
+  ],
+  "setup_cursor": [
+    "dbc.execute('SET NAMES utf8;')",
+    "dbc.execute('SET CHARACTER SET utf8;')",
+    "dbc.execute('SET character_set_connection=utf8;')"
+  ]
+}

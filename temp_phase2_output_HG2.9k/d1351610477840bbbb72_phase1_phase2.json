@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "weechat": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "weechat.hook_process_hashtable introduced in WeeChat 2.4 \u2192 3.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "glob": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "glob>=1.2.0,<3.0.0",
+      "evidence": [
+        "glob.glob introduced in glob 1.2.0 \u2192 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<5.0",
+      "recommended_requirements_line": "os>=3.4,<7.0",
+      "evidence": [
+        "os.mkdir introduced in os 3.4 \u2192 6.2",
+        "os.path.exists introduced in os 3.8 \u2192 6.1"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "re>=3.7,<4.1",
+      "evidence": [
+        "re.compile introduced in re 3.7 \u2192 4.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.2,<5.0",
+      "recommended_requirements_line": "subprocess>=3.2,<4.0",
+      "evidence": [
+        "subprocess.Popen introduced in subprocess 3.2 \u2192 7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": ">=1.4,<3.0",
+      "recommended_requirements_line": "tempfile>=1.4,<2.0",
+      "evidence": [
+        "tempfile.mkdtemp introduced in tempfile 1.4 \u2192 2.7",
+        "tempfile.mkstemp introduced in tempfile 1.4 \u2192 3.6"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "weechat>=2.4,<3.8",
+    "glob>=1.2.0,<3.0.0",
+    "os>=3.4,<7.0",
+    "re>=3.7,<4.1",
+    "subprocess>=3.2,<4.0",
+    "tempfile>=1.4,<2.0"
+  ]
+}

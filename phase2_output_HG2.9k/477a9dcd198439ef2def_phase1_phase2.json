@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "readability.readability": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "readability.readability>=1.2.0,<2.0.0",
+      "evidence": [
+        "readability.Document introduced in version 1.2.0",
+        "readability.Document.summary and readability.Document.short_title introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandoc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandoc>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandoc.pandoc introduced in version 1.2.0",
+        "pandoc.highlight_style and pandoc.latex_engine introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "readability.readability>=1.2.0,<2.0.0",
+    "pandoc>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "scipy.ndimage.imread added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.uint8 introduced in v1.0, numpy.double depricated in v1.0",
+        "numpy.sin introduced in v1.0, numpy.pi removed in v1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scipy>=1.0,<2.0",
+      "evidence": [
+        "scipy.ndimage.imread introduced in v1.0, scipy.io.wavfile.write removed in v1.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0,<2.0",
+    "scipy>=1.0,<2.0"
+  ]
+}

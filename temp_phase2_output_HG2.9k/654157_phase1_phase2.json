@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "django>=2.0.0,<3.0.0",
+      "evidence": [
+        "django.conf introduced in Django 1.8 \u2192 2.0.0",
+        "django.contrib.auth introduced in Django 1.8 \u2192 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "httplib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "httplib.HTTPConnection removed in Python 3.9 \u2192 no recommended version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "json>=2.0.0,<3.0.0",
+      "evidence": [
+        "json.dumps introduced in Python 2.6 \u2192 2.0.0",
+        "json.loads introduced in Python 2.6 \u2192 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "logging.info added in Python 2.4 \u2192 no recommended version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": ">=6.0.0,<7.0.0",
+      "recommended_requirements_line": "tornado>=6.0.0,<7.0.0",
+      "evidence": [
+        "tornado.options introduced in Tornado 6.0 \u2192 6.0.0",
+        "tornado.template introduced in Tornado 6.0 \u2192 6.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<3.0.0",
+    "json>=2.0.0,<3.0.0",
+    "tornado>=6.0.0,<7.0.0"
+  ]
+}

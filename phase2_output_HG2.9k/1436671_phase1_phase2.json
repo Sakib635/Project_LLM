@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scikits.audiolab": {
+      "inferred_version_range": ">=0.10.2,<0.11.0",
+      "recommended_requirements_line": "scikits.audiolab>=0.10.2,<0.11.0",
+      "evidence": [
+        "scikits.audiolab.wavread introduced in v0.10.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.6,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.6,<2.0.0",
+      "evidence": [
+        "numpy.abs introduced in v1.14.6"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.7.0,<3.10.0",
+      "recommended_requirements_line": "os>=3.7.0,<3.10.0",
+      "evidence": [
+        "os.system introduced in v3.7.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.7.0,<3.10.0",
+      "recommended_requirements_line": "sys>=3.7.0,<3.10.0",
+      "evidence": [
+        "sys.argv introduced in v3.7.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scikits.audiolab>=0.10.2,<0.11.0",
+    "numpy>=1.14.6,<2.0.0",
+    "os>=3.7.0,<3.10.0",
+    "sys>=3.7.0,<3.10.0"
+  ]
+}

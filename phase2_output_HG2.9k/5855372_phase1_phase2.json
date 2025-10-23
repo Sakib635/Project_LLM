@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "requests.get added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "django>=1.0,<3.0",
+      "evidence": [
+        "django.conf.settings introduced in Django 1.0 \u2192 min Django 1.0",
+        "django.utils.simplejson added in Django 1.8 \u2192 max Django 2.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "desk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "desk.DeskClient introduced in Desk 2.4 \u2192 min Desk 2.4",
+        "desk.DeskError added in Desk 3.0 \u2192 max Desk 3.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<3.0"
+  ]
+}

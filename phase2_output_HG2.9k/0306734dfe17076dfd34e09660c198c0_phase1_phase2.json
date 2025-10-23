@@ -1,0 +1,125 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame added in Python 0.1 \u2192 min Python 0.1",
+      "pandas.DataFrame.to_numpy removed in Python 0.2 \u2192 max Python 0.2",
+      "pandas.DataFrame.ix depricated in Python 0.3 \u2192 max Python 0.3"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame added in Python 0.1 \u2192 min Python 0.1",
+        "pandas.DataFrame.to_numpy removed in Python 0.2 \u2192 max Python 0.2",
+        "pandas.DataFrame.ix depricated in Python 0.3 \u2192 max Python 0.3"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.19.4,<2.0",
+      "evidence": [
+        "numpy.array added in Python 0.1 \u2192 min Python 0.1",
+        "numpy.linalg.norm removed in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "io>=2.6,<3.0",
+      "evidence": [
+        "io.open added in Python 0.1 \u2192 min Python 0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "re>=2.2,<3.0",
+      "evidence": [
+        "re.compile added in Python 0.1 \u2192 min Python 0.1",
+        "re.findall removed in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "xml.sax": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "xml.sax>=0.1,<1.0",
+      "evidence": [
+        "xml.sax.make_parser added in Python 0.1 \u2192 min Python 0.1",
+        "xml.sax.handler.ContentHandler depricated in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "html.parser": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "html.parser>=1.1,<2.0",
+      "evidence": [
+        "html.parser.HTMLParser added in Python 0.1 \u2192 min Python 0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "shapely": {
+      "inferred_version_range": ">=1.4.0,<2.0",
+      "recommended_requirements_line": "shapely>=1.4.0,<2.0",
+      "evidence": [
+        "shapely.geometry.Polygon added in Python 0.1 \u2192 min Python 0.1",
+        "shapely.geometry.LineString removed in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "fiona": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "fiona>=1.8.9,<2.0",
+      "evidence": [
+        "fiona.open added in Python 0.1 \u2192 min Python 0.1",
+        "fiona.driver depricated in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "geopandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "geopandas>=0.5,<1.0",
+      "evidence": [
+        "geopandas.GeoDataFrame added in Python 0.1 \u2192 min Python 0.1",
+        "geopandas.GeoDataFrame.to_file removed in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "shapefile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "shapefile>=2.4,<3.0",
+      "evidence": [
+        "shapefile.Reader added in Python 0.1 \u2192 min Python 0.1",
+        "shapefile.Writer depricated in Python 0.2 \u2192 max Python 0.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.19.4,<2.0",
+    "io>=2.6,<3.0",
+    "re>=2.2,<3.0",
+    "xml.sax>=0.1,<1.0",
+    "html.parser>=1.1,<2.0",
+    "shapely>=1.4.0,<2.0",
+    "fiona>=1.8.9,<2.0",
+    "geopandas>=0.5,<1.0",
+    "shapefile>=2.4,<3.0"
+  ]
+}

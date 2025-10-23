@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "ldap": {
+      "inferred_version_range": ">=2.4.0,<2.9.0",
+      "recommended_requirements_line": "ldap>=2.4.0,<2.9.0",
+      "evidence": [
+        "ldap.SCOPE_SUBTREE introduced in v2.4.0",
+        "ldap.AUTH_LDAP_USER_SEARCH deprecated since v3.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django_auth_ldap": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django-auth-ldap>=1.2.0,<2.0.0",
+      "evidence": [
+        "django_auth_ldap.config.LDAPSearch introduced in v1.2.0",
+        "django_auth_ldap.config.PosixGroupType deprecated since v1.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ldap>=2.4.0,<2.9.0",
+    "django-auth-ldap>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"reddit": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "reddit>=1.2.0,<2.0.0",
+"evidence": ["Reddit introduced in v1.2.0", "get_subreddit deprecated in v1.3.0, removed in v2.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["exit introduced in Python 3.6 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"time": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sleep introduced in Python 3.7 → max Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "re>=1.2.0,<2.0.0",
+"evidence": ["compile introduced in v1.2.0", "search deprecated in v1.4.0, removed in v2.0.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": ["reddit>=1.2.0,<2.0.0", "re>=1.2.0,<2.0.0"]
+},
+"requirements.txt": ["reddit>=1.2.0,<2.0.0", "re>=1.2.0,<2.0.0"]
+}

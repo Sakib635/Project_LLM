@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "snippet.py", line 69, in <module>
+    main()
+  File "snippet.py", line 62, in main
+    "HKQuantityTypeIdentifierStepCount")
+  File "snippet.py", line 45, in get_values_for_type
+    tree = ET.parse("export.xml")
+  File "/usr/local/lib/python2.7/xml/etree/ElementTree.py", line 1182, in parse
+    tree.parse(source, parser)
+  File "/usr/local/lib/python2.7/xml/etree/ElementTree.py", line 647, in parse
+    source = open(source, "rb")
+IOError: [Errno 2] No such file or directory: 'export.xml'

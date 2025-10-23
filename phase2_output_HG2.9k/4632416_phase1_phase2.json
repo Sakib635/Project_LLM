@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10",
+    "evidence": [
+      "pandas.DataFrame introduced in Python 2.0 \u2192 min Python 2.0",
+      "datetime.date removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "echonest.audio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "LocalAudioFile not found in any package"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "DataFrame introduced in Python 2.0 \u2192 min Python 2.0",
+        "DataFrame.to_numpy introduced in Python 3.6\u2192 max Python 3.9",
+        "DataFrame.ix not found in any package"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20.0,<2.0.0",
+      "evidence": [
+        "array introduced in Python 2.6\u2192 min Python 2.6",
+        "linalg.norm added in Python 3.0\u2192 max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.20.0,<2.0.0"
+  ]
+}

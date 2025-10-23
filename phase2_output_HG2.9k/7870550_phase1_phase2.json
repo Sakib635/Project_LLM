@@ -1,0 +1,104 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "plistlib.writePlistToString added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "BaseHTTPServer": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "python-dateutil>=2.6.1,<3.0",
+      "evidence": [
+        "BaseHTTPRequestHandler introduced in Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "webbrowser": {
+      "inferred_version_range": ">=2.7,<3.10",
+      "recommended_requirements_line": "webbrowser>=2.7,<3.10",
+      "evidence": [
+        "open introduced in Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "uuid": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "uuid>=3.6,<4.0",
+      "evidence": [
+        "uuid4 introduced in Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": ">=2.7,<3.10",
+      "recommended_requirements_line": "io>=2.7,<3.10",
+      "evidence": [
+        "BytesIO introduced in Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=2.7,<3.10",
+      "recommended_requirements_line": "pillow>=5.1.0,<3.10",
+      "evidence": [
+        "save introduced in Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "photos": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pick_image is not a recognized API"
+      ],
+      "confidence": 0.4,
+      "notes": "Assuming pick_image requires no external package dependencies."
+    },
+    "notification": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "schedule is not a recognized API"
+      ],
+      "confidence": 0.4,
+      "notes": "Assuming schedule requires no external package dependencies."
+    },
+    "console": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "alert is not a recognized API",
+        "input_alert is not a recognized API",
+        "show_activity is not a recognized API",
+        "hide_activity is not a recognized API"
+      ],
+      "confidence": 0.4,
+      "notes": "Assuming alert, input_alert, show_activity, and hide_activity require no external package dependencies."
+    },
+    "ConfigProfileHandler": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "do_GET is not a recognized API",
+        "log_message is not a recognized API"
+      ],
+      "confidence": 0.4,
+      "notes": "Assuming do_GET and log_message require no external package dependencies."
+    }
+  },
+  "requirements.txt": [
+    "python-dateutil>=2.6.1,<3.0",
+    "webbrowser>=2.7,<3.10",
+    "uuid>=3.6,<4.0",
+    "io>=2.7,<3.10",
+    "pillow>=5.1.0,<3.10"
+  ]
+}

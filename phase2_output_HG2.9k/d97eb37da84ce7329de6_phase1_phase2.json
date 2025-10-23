@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": "3.9",
+    "evidence": [
+      "numpy.ones added in Python 2.7 \u2192 min Python 2.7",
+      "matplotlib.pyplot.plot removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "fipy": {
+      "inferred_version_range": ">=0.7,<0.8",
+      "recommended_requirements_line": "fipy>=0.7,<0.8",
+      "evidence": [
+        "fipy.Grid1D introduced in fipy v0.7 \u2192 inferred version range \u22650.7,<0.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.1,<3.2",
+      "recommended_requirements_line": "matplotlib>=3.1,<3.2",
+      "evidence": [
+        "matplotlib.pyplot.plot introduced in matplotlib v3.1 \u2192 inferred version range \u22653.1,<3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.8,<1.9",
+      "recommended_requirements_line": "numpy>=1.8,<1.9",
+      "evidence": [
+        "numpy.ones introduced in numpy v1.8 \u2192 inferred version range \u22651.8,<1.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "fipy>=0.7,<0.8",
+    "matplotlib>=3.1,<3.2",
+    "numpy>=1.8,<1.9"
+  ]
+}

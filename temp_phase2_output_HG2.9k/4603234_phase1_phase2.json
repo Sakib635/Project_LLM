@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "np.asarray introduced in v1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "Pillow>=5.4.1,<6.0.0",
+      "evidence": [
+        "Image.fromarray introduced in v5.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in v2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "np.linalg": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "np.linalg.solve introduced in v1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "np.math": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "np.std introduced in v1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "Pillow>=5.4.1,<6.0.0"
+  ]
+}

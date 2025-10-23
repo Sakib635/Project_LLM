@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "snippet.py", line 187, in <module>
+    t = WorkflowTesting(WF)
+  File "snippet.py", line 111, in __init__
+    self.info = AlfredPlist(self.wf)
+  File "snippet.py", line 18, in __init__
+    self.data = self.wf.info
+  File "/usr/local/lib/python2.7/site-packages/workflow/workflow.py", line 1088, in info
+    self._load_info_plist()
+  File "/usr/local/lib/python2.7/site-packages/workflow/workflow.py", line 2768, in _load_info_plist
+    self._info = plistlib.readPlist(self.workflowfile('info.plist'))
+  File "/usr/local/lib/python2.7/site-packages/workflow/workflow.py", line 1369, in workflowfile
+    return os.path.join(self.workflowdir, filename)
+  File "/usr/local/lib/python2.7/site-packages/workflow/workflow.py", line 1328, in workflowdir
+    raise IOError("'info.plist' not found in directory tree")
+IOError: 'info.plist' not found in directory tree

@@ -1,0 +1,75 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "keras.optimizers.Adam added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.0.0,<3.0.0",
+      "evidence": [
+        "keras.backend.backend as K added in Python 3.5 \u2192 min Python 3.5",
+        "keras.optimizers.Adam introduced in v2.0.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "keras.datasets": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "keras-datasets>=1.2.0,<2.0.0",
+      "evidence": [
+        "keras.datasets.mnist introduced in v1.2.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "keras.utils": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras-utils>=2.0.0,<3.0.0",
+      "evidence": [
+        "keras.utils.np_utils.to_categorical introduced in v2.0.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "keras.metrics": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras-metrics>=2.0.0,<3.0.0",
+      "evidence": [
+        "keras.metrics.categorical_accuracy introduced in v2.0.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "keras.initializations": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras-initializations>=2.0.0,<3.0.0",
+      "evidence": [
+        "keras.initializations.glorot_uniform introduced in v2.0.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.16.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.0.0,<3.0.0",
+    "keras-datasets>=1.2.0,<2.0.0",
+    "keras-utils>=2.0.0,<3.0.0",
+    "keras-metrics>=2.0.0,<3.0.0",
+    "keras-initializations>=2.0.0,<3.0.0",
+    "numpy>=1.16.0,<2.0.0"
+  ]
+}

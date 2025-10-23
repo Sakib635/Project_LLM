@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "os.unlink removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "re.compile API introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.date API introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pathlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pathlib.Path API introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.listdir API introduced in Python 3.5 \u2192 min Python 3.5",
+        "os.abspath API introduced in Python 3.5 \u2192 min Python 3.5",
+        "os.unlink API removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re>=2.2.1,<4.0",
+    "datetime>=2.0.0,<3.0.0",
+    "pathlib>=1.0.1,<2.0.0",
+    "os>=1.0.0,<2.0.0"
+  ]
+}

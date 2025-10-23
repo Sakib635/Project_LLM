@@ -1,0 +1,46 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9→ max Python null"],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "pyqt4>=4.0,<5.0",
+      "evidence": ["PyQt4.QtGui.QDockWidget introduced in v4.3", "PyQt4.QtCore.Qt.RightDockWidgetArea deprecated in v5.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "maya.OpenMayaUI": {
+      "inferred_version_range": ">=2017,<2020",
+      "recommended_requirements_line": "maya.OpenMayaUI>=2017,<2020",
+      "evidence": ["maya.OpenMayaUI.MQtUtil.mainWindow introduced in v2017"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sip": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "sip>=4.0,<5.0",
+      "evidence": ["sip.wrapinstance introduced in v4.19"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Custom classes and methods": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyqt4>=4.0,<5.0",
+    "maya.OpenMayaUI>=2017,<2020",
+    "sip>=4.0,<5.0"
+  ]
+}
+```

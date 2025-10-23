@@ -1,0 +1,36 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["os.getenv added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pythonjsonlogger": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pythonjsonlogger>=1.5.0,<2.0.0",
+      "evidence": ["pythonjsonlogger.JsonFormatter introduced in v1.5.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pythonjsonlogger>=1.5.0,<2.0.0",
+      "evidence": ["logging.dictConfig introduced in v3.2 → min Python 3.2", "logging.warning introduced in v3.2 → min Python 3.2"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "logging.handlers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pythonjsonlogger>=1.5.0,<2.0.0",
+      "evidence": ["logging.handlers.RotatingFileHandler introduced in v3.2 → min Python 3.2", "logging.handlers.StreamHandler introduced in v3.2 → min Python 3.2"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pythonjsonlogger>=1.5.0,<2.0.0"
+  ]
+}
+```

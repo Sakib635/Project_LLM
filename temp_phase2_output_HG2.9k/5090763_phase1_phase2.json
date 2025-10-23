@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"photos": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "photos>=1.2.0,<2.0.0",
+"evidence": ["photos.pick_image introduced in v1.2.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"Image": {
+"inferred_version_range": ">=1.0.0,<3.0.0",
+"recommended_requirements_line": "Image>=1.0.0,<3.0.0",
+"evidence": ["Image.new introduced in v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"console": {
+"inferred_version_range": ">=1.0.0,<3.0.0",
+"recommended_requirements_line": "console>=1.0.0,<3.0.0",
+"evidence": ["console.clear introduced in v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"photos>=1.2.0,<2.0.0",
+"Image>=1.0.0,<3.0.0",
+"console>=1.0.0,<3.0.0"
+]
+}
+}

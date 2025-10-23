@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lxu.select": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "lxu.select>=1.0,<2.0",
+      "evidence": [
+        "API ItemSelection().current() introduced in v1.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "lx": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "lx>=1.0,<2.0",
+      "evidence": [
+        "API Scene().ItemTypeLookup(sITYPE_GROUP) introduced in v1.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "lx.object.Item": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "lx.object.Item>=1.0,<2.0",
+      "evidence": [
+        "API Item() introduced in v1.0",
+        "Type() introduced in v1.0",
+        "UniqueName() introduced in v1.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lxu.select>=1.0,<2.0",
+    "lx>=1.0,<2.0",
+    "lx.object.Item>=1.0,<2.0"
+  ]
+}

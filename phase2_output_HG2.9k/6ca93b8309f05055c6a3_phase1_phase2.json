@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "argparse>=1.2,<2",
+      "evidence": [
+        "ArgumentParser introduced in argparse 1.2 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=1.14,<2",
+      "recommended_requirements_line": "tensorflow>=1.14,<2",
+      "evidence": [
+        "app.flags.FLAGS introduced in TensorFlow 1.14 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.23,<2",
+      "recommended_requirements_line": "pandas>=0.23,<2",
+      "evidence": [
+        "DataFrame introduced in pandas 0.23 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14,<2",
+      "recommended_requirements_line": "numpy>=1.14,<2",
+      "evidence": [
+        "array introduced in numpy 1.14 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2,<2",
+    "tensorflow>=1.14,<2",
+    "pandas>=0.23,<2",
+    "numpy>=1.14,<2"
+  ]
+}

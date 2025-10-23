@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "snippet.py", line 230, in <module>
+    config = Config(config_file=args.config_file)
+  File "snippet.py", line 38, in __init__
+    self.parse()
+  File "snippet.py", line 57, in parse
+    with open(config_file, "r") as f:
+IOError: [Errno 2] No such file or directory: '/etc/logmon/logmon.conf'

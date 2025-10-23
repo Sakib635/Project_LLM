@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "root.TCanvas introduced in Python 3.6 \u2192 min Python 3.6",
+      "root.TF1 added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "root": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Conflicting APIs: 'ROOT.TCanvas', 'ROOT.TF1'"
+    },
+    "root.gROOT": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "root>=3.6.0,<4.0.0",
+      "evidence": [
+        "root.gROOT.SetBatch added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "root.tempfile": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "root>=3.6.0,<4.0.0",
+      "evidence": [
+        "root.tempfile.NamedTemporaryFile added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "root.display": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "root>=3.6.0,<4.0.0",
+      "evidence": [
+        "root.display.Image added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "root.get_ipython": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "root>=3.6.0,<4.0.0",
+      "evidence": [
+        "root.get_ipython().display_formatter.formatters['image/png'] added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "root.ROOT": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Conflicting APIs: 'ROOT.TCanvas', 'ROOT.TF1'"
+    },
+    "root.numpy": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "numpy>=3.6.0,<4.0.0",
+      "evidence": [
+        "root.numpy.array added in Python 3.6 \u2192 min Python 3.6",
+        "root.numpy.linalg.norm added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "root>=3.6.0,<4.0.0",
+    "numpy>=3.6.0,<4.0.0"
+  ]
+}

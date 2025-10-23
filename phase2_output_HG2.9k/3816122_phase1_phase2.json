@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": "3.8",
+    "evidence": [
+      "zipfile.ZipFile added in Python 2.7 \u2192 min Python 2.7",
+      "envoy.run removed in Python 3.0\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Foundation": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "Foundation>=1.2,<2.0",
+      "evidence": [
+        "Foundation.NSData added in v1.2 \u2192 min Foundation 1.2",
+        "Foundation.NSPropertyListSerialization removed in v2.0\u2192 max Foundation 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "AppInventory": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "AppInventory>=1.0,<2.0",
+      "evidence": [
+        "AppInventory.__init__ added in v1.0 \u2192 min AppInventory 1.0",
+        "AppInventory.save removed in v2.0\u2192 max AppInventory 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Foundation>=1.2,<2.0",
+    "AppInventory>=1.0,<2.0"
+  ]
+}

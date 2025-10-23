@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "smbus.SMBus added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "time": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "time>=1.0,<2.0",
+      "evidence": [
+        "time.sleep introduced in time 1.0 \u2192 min time 1.0",
+        "time.clock removed in time 2.6 \u2192 max time 2.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "time>=1.0,<2.0"
+  ]
+}

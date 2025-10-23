@@ -1,0 +1,46 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["os.makedirs added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": ">=0,<2",
+      "recommended_requirements_line": null,
+      "evidence": ["struct.unpack added in Python 0 → min Python 0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=0,<2",
+      "recommended_requirements_line": null,
+      "evidence": ["collections.namedtuple added in Python 0 → min Python 0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2,<3",
+      "recommended_requirements_line": null,
+      "evidence": ["os.path.exists added in Python 2 → min Python 2", "os.makedirs added in Python 2 → min Python 2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "builtins": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["open added in Python 0 → min Python 0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "struct>=0,<2",
+    "collections>=0,<2",
+    "os>=2,<3",
+    "builtins>=0,<2"
+  ]
+}
+```

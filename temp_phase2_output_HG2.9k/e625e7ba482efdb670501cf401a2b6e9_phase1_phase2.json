@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pandas.read_csv added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.18.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+"evidence": ["np.array introduced in v1.18.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"matplotlib": {
+"inferred_version_range": ">=3.0.0,<4.0.0",
+"recommended_requirements_line": "matplotlib>=3.0.0,<4.0.0",
+"evidence": ["mpl.pyplot introduced in v3.0.0", "ax.set_xlim introduced in v3.1.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.18.0,<2.0.0",
+"matplotlib>=3.0.0,<4.0.0"
+]
+}
+}

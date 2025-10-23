@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "pyside>=2.0.0,<3.0.0",
+      "evidence": [
+        "PySide.QtGui.QApplication introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PySide.QtCore": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "pyside.qtc>=2.0.0,<3.0.0",
+      "evidence": [
+        "PySide.QtCore.QEvent introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyside>=2.0.0,<3.0.0",
+    "pyside.qtc>=2.0.0,<3.0.0"
+  ]
+}

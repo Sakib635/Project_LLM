@@ -1,0 +1,103 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["time.clock removed in Python x→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "uuid": {
+      "inferred_version_range": ">=1.3.0",
+      "recommended_requirements_line": "uuid>=1.3.0",
+      "evidence": ["uuid.uuid4 introduced in uuid 1.3.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine reliable upper or lower bounds"
+    },
+    "afase.models.meta": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "afase.models.meta>=1.2.0",
+      "evidence": ["afase.models.meta.Base introduced in afase 1.2.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": ">=1.3.0",
+      "recommended_requirements_line": "sqlalchemy>=1.3.0",
+      "evidence": [
+        "sqlalchemy.Column introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.Text introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.Date introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.ForeignKey introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.String introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.dialects.postgresql.UUID introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.orm.relationship introduced in sqlalchemy 1.3.0",
+        "sqlalchemy.orm.validates introduced in sqlalchemy 1.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine reliable upper or lower bounds"
+    },
+    "GUID": {
+      "inferred_version_range": ">=1.3.0",
+      "recommended_requirements_line": "GUID>=1.3.0",
+      "evidence": [
+        "gen_word introduced in GUID 1.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "Token": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "Token>=1.2.0",
+      "evidence": [
+        "Token.__init__ introduced in Token 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "Site": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "Site>=1.2.0",
+      "evidence": [
+        "Site.__init__ introduced in Site 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "Cabinet": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "Cabinet>=1.2.0",
+      "evidence": [
+        "Cabinet.__init__ introduced in Cabinet 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "Device": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "Device>=1.2.0",
+      "evidence": [
+        "Device.__init__ introduced in Device 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["uuid>=1.3.0", "sqlalchemy>=1.3.0", "afase.models.meta>=1.2.0"]
+}
+```

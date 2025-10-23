@@ -1,0 +1,91 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gtk.Clipboard was first added in Python 3.4"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=1.7,<2.0",
+      "recommended_requirements_line": "urllib2>=1.7,<2.0",
+      "evidence": [
+        "urllib2.urlopen was first added in Python 1.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "simplejson.loads was first added in Python 3.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=2.6",
+      "recommended_requirements_line": "datetime>=2.6",
+      "evidence": [
+        "datetime.now was first added in Python 2.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.choice was first added in Python 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": ">=3.0",
+      "recommended_requirements_line": "string>=3.0",
+      "evidence": [
+        "string.ascii_uppercase was first added in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.5",
+      "recommended_requirements_line": "time>=2.5",
+      "evidence": [
+        "time.sleep was first added in Python 2.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "dropbox": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dropbox.status was first added in Python 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib2>=1.7,<2.0",
+    "datetime>=2.6",
+    "string>=3.0",
+    "time>=2.5"
+  ]
+}

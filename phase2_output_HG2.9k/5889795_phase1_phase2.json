@@ -1,0 +1,42 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<3.0.0",
+      "evidence": [
+        "np.asarray introduced in v1.2.0",
+        "np.linalg.solve and np.dot introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy.linalg.fblas": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<3.0.0",
+      "evidence": [
+        "dgemm introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy.linalg": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<3.0.0",
+      "evidence": [
+        "np.linalg.norm introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<3.0.0",
+    "scipy>=1.2.0,<3.0.0"
+  ]
+}

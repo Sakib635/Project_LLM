@@ -1,0 +1,4 @@
+(declare-fun tqdm () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= tqdm "4.56.0"))))
+(check-sat)

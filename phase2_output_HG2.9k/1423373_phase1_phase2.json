@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "2.7",
+"max": null,
+"evidence": ["pandas.DataFrame added in Python 2.7 → min Python 2.7", "pandas.DataFrame.to_numpy added in Python 3.0 → max Python 3"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=1.0,<4.0",
+"recommended_requirements_line": "pandas>=1.2.4,<2.0.0",
+"evidence": ["pandas.DataFrame introduced in v1.0.0, deprecated in v3.0.0 → inferred version range"],
+"confidence": 0.95,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.18,<2.0",
+"recommended_requirements_line": "numpy>=1.18.5,<2.0.0",
+"evidence": ["numpy.array introduced in v1.18.0 → inferred version range"],
+"confidence": 0.95,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": ">=1.4,<2.0",
+"recommended_requirements_line": "scipy>=1.6.0,<2.0.0",
+"evidence": ["scipy.linalg.eigh introduced in v1.5.0 → inferred version range"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": ["pandas>=1.2.4,<2.0.0", "numpy>=1.18.5,<2.0.0", "scipy>=1.6.0,<2.0.0"]
+},
+"requirements.txt": [
+"pandas>=1.2.4,<2.0.0",
+"numpy>=1.18.5,<2.0.0",
+"scipy>=1.6.0,<2.0.0"
+]
+}

@@ -1,0 +1,4 @@
+(declare-fun simplekml () String)
+(declare-fun simplejson () String)
+(assert (and (or (= simplejson "3.17.2")) (or (= simplekml "1.3.5"))))
+(check-sat)

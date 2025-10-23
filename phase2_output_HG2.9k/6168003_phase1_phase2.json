@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.2,<3.0",
+      "recommended_requirements_line": "Django>=2.2,<3.0",
+      "evidence": [
+        "Django introduced in v2.2, depricated, removed or changed in v3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "south": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "South introduced in v0.7.4, depricated, removed or changed in v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: south.db.execute has been deprecated since South v1.0."
+    }
+  },
+  "requirements.txt": [
+    "Django>=2.2,<3.0",
+    "pathlib>=3.6,<3.7"
+  ]
+}

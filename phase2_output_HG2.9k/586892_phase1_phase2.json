@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "_winreg was introduced in Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "win32file": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "win32file>=1.2.0,<2.0.0",
+      "evidence": [
+        "win32file.CreateFile introduced in win32file 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "_winreg": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "_winreg was introduced in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "win32file>=1.2.0,<2.0.0",
+    "_winreg"
+  ]
+}

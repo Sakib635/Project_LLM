@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["matplotlib.pyplot.subplots added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "moviepy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "moviepy>=1.0.0,<2.0.0",
+      "evidence": ["moviepy.VideoClip added in moviepy 1.0.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": ["numpy.linspace added in numpy 1.16.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "matplotlib>=3.2.0,<4.0.0",
+      "evidence": ["matplotlib.axes.Axes.axis added in matplotlib 3.2.0", "matplotlib.lines.Line2D.set_xdata added in matplotlib 3.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.16.0,<2.0.0",
+    "matplotlib>=3.2.0,<4.0.0",
+    "moviepy>=1.0.0,<2.0.0"
+  ]
+}
+```

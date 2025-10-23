@@ -1,0 +1,27 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.7→ max Python 3.9"],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.2,<4",
+      "recommended_requirements_line": "gtk>=3.2,<4",
+      "evidence": ["GTK added in Python 3.6 → min Python 3.6", "GTK removed in Python 3.8→ max Python 3.9"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "pole": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pole.xml.importar added in Python 3.6 → min Python 3.6", "pole.xml.procurar removed in Python 3.8→ max Python 3.9"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["gtk>=3.2,<4", "pole>=3.6,<3.8"]
+}
+```

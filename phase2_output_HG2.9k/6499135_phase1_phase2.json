@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rest_framework": {
+      "inferred_version_range": ">=3.10.0",
+      "recommended_requirements_line": "django-rest-framework>=3.10.0",
+      "evidence": [
+        "API added in rest_framework.views._APIView in v3.10.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API added in django.views.generic.View"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django-rest-framework>=3.10.0"
+  ]
+}

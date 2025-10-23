@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"canvas": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["canvas.set_size introduced in version 1.0 → min Python 3.4", "canvas.draw_rect introduced in version 1.0 → min Python 3.4", "canvas.draw_line introduced in version 1.0 → min Python 3.4", "canvas.set_stroke_color introduced in version 1.0 → min Python 3.4", "canvas.set_line_width introduced in version 1.0 → min Python 3.4"],
+"confidence": 0.25,
+"notes": ""
+},
+"math": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["math.sin introduced in version 1.0 → min Python 3.4", "math.cos introduced in version 1.0 → min Python 3.4", "math.pi introduced in version 1.0 → min Python 3.4"],
+"confidence": 0.25,
+"notes": ""
+},
+"random": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["random.randint introduced in version 1.0 → min Python 3.4", "random.random introduced in version 1.0 → min Python 3.4"],
+"confidence": 0.25,
+"notes": ""
+},
+"time": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["time.sleep introduced in version 1.0 → min Python 3.4"],
+"confidence": 0.25,
+"notes": ""
+},
+"turtle": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "turtle>=1.0.0,<2.0.0",
+"evidence": ["turtle.Turtle introduced in version 1.0 → min Python 3.4", "turtle.forward introduced in version 1.0 → min Python 3.4", "turtle.backward introduced in version 1.0 → min Python 3.4", "turtle.right introduced in version 1.0 → min Python 3.4", "turtle.left introduced in version 1.0 → min Python 3.4", "turtle.goto introduced in version 1.0 → min Python 3.4", "turtle.setheading introduced in version 1.0 → min Python 3.4", "turtle.penup introduced in version 1.0 → min Python 3.4", "turtle.pendown introduced in version 1.0 → min Python 3.4"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"canvas>=1.0.0,<2.0.0",
+"math>=1.0.0,<2.0.0",
+"random>=1.0.0,<2.0.0",
+"time>=1.0.0,<2.0.0",
+"turtle>=1.0.0,<2.0.0"
+]
+}
+}

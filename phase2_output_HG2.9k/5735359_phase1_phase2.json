@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image added in PIL v1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.0,<2.0.0",
+      "evidence": [
+        "asarray introduced in numpy v1.14.0",
+        "mean introduced in numpy v1.14.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.3.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.3.0,<2.0.0",
+      "evidence": [
+        "ndimage.label introduced in scipy v1.3.0",
+        "ndimage.sum introduced in scipy v1.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "skimage": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scikit-image>=0.14.0,<2.0.0",
+      "evidence": [
+        "filter.sobel introduced in scikit-image v0.14.0",
+        "morphology.watershed introduced in scikit-image v0.14.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.2.0,<2.0.0",
+    "numpy>=1.14.0,<2.0.0",
+    "scipy>=1.3.0,<2.0.0",
+    "scikit-image>=0.14.0,<2.0.0"
+  ]
+}

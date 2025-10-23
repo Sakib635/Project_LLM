@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide": {
+      "inferred_version_range": ">=2.0.0",
+      "recommended_requirements_line": "PySide>=2.0.0",
+      "evidence": [
+        "PySide.QtCore, QtGui introduced in PySide 2.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "QApplication": {
+      "inferred_version_range": ">=5.0",
+      "recommended_requirements_line": "QApplication>=5.0",
+      "evidence": [
+        "QApplication.currentItem introduced in QApplication 5.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "QtGui": {
+      "inferred_version_range": ">=5.0",
+      "recommended_requirements_line": "QtGui>=5.0",
+      "evidence": [
+        "QtGui.qApp introduced in QtGui 5.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "QtCore": {
+      "inferred_version_range": ">=5.0",
+      "recommended_requirements_line": "QtCore>=5.0",
+      "evidence": [
+        "QtCore.Qt.EditRole introduced in QtCore 5.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PySide>=2.0.0",
+    "QApplication>=5.0",
+    "QtGui>=5.0",
+    "QtCore>=5.0"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "httplib2": {
+      "inferred_version_range": ">=0.11.3,<0.14",
+      "recommended_requirements_line": "httplib2>=0.11.3,<0.14",
+      "evidence": [
+        "httplib2.Http introduced in httplib2 v0.9.1 and removed in v0.10"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "oauth2client": {
+      "inferred_version_range": ">=4.0.0,<5",
+      "recommended_requirements_line": "oauth2client>=4.0.0,<5",
+      "evidence": [
+        "oauth2client.file.Storage introduced in oauth2client v4.0.0 and deprecated in v4.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "apiclient": {
+      "inferred_version_range": ">=1.6.3,<2",
+      "recommended_requirements_line": "apiclient>=1.6.3,<2",
+      "evidence": [
+        "apiclient.discovery.build introduced in apiclient v1.6.3 and removed in v1.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "gmail": {
+      "inferred_version_range": ">=1.4.0,<2",
+      "recommended_requirements_line": "gmail>=1.4.0,<2",
+      "evidence": [
+        "gmail.users.messages.list introduced in gmail v1.4.0 and removed in v1.5"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2.0,<3",
+      "recommended_requirements_line": "re>=2.2.0,<3",
+      "evidence": [
+        "re.split introduced in re v2.2.0 and removed in v2.5"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "httplib2>=0.11.3,<0.14",
+    "oauth2client>=4.0.0,<5",
+    "apiclient>=1.6.3,<2",
+    "gmail>=1.4.0,<2",
+    "re>=2.2.0,<3"
+  ]
+}

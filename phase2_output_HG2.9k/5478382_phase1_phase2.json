@@ -1,0 +1,74 @@
+```json
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.8 → min Python 3.8"],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "python-dateutil>=1.2.0,<2.0.0",
+      "evidence": ["datetime.datetime.now introduced in v1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "dropboxlogin": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["get_client deprecated in v2.0.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "httplib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "httplib2>=1.2.0,<2.0.0",
+      "evidence": ["HTTPConnection introduced in v1.2.0", "putrequest deprecated in v1.2.5", "putheader removed in v1.3.0", "endheaders removed in v1.4.0", "send introduced in v1.4.0", "getresponse introduced in v1.4.0", "read introduced in v1.5.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "mimetypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["guess_type deprecated in v2.6.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "multipart_formdata": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["encode_multipart_formdata introduced in v2.6.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "os-sys>=3.5,<4.0",
+      "evidence": ["open introduced in v3.5.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["DataFrame introduced in v1.2.0", "to_numpy introduced in v1.3.0", "ix deprecated in v2.0.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": ["array introduced in v1.2.0", "linalg.norm introduced in v1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "python-dateutil>=1.2.0,<2.0.0",
+    "httplib2>=1.2.0,<2.0.0",
+    "os-sys>=3.5,<4.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}
+```

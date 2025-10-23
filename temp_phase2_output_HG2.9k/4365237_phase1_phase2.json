@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scrapy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy>=1.0.0,<2.0.0",
+      "evidence": [
+        "SgmlLinkExtractor added in Scrapy 1.0 \u2192 min Scrapy 1.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "scrapy.contrib.linkextractors.sgml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy>=1.0.0,<2.0.0",
+      "evidence": [
+        "SgmlLinkExtractor added in Scrapy 1.0 \u2192 min Scrapy 1.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "scrapy.utils.url": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy>=1.0.0,<2.0.0",
+      "evidence": [
+        "url_is_from_spider added in Scrapy 1.0 \u2192 min Scrapy 1.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "scrapy.http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "scrapy>=1.0.0,<2.0.0",
+      "evidence": [
+        "HtmlResponse added in Scrapy 1.0 \u2192 min Scrapy 1.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "RelCanonicalMiddleware": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "relcanonicalmiddleware>=1.0.0,<2.0.0",
+      "evidence": [
+        "process_response added in RelCanonicalMiddleware 1.0 \u2192 min RelCanonicalMiddleware 1.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scrapy>=1.0.0,<2.0.0",
+    "relcanonicalmiddleware>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "torch added in Python 3.6 \u2192 min Python 3.6",
+      "autograd added in Python 3.7 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "nn.Module introduced in torch v0.1.9 \u2192 v0.2.0",
+        "nn.Linear introduced in torch v0.2.0 \u2192 v0.3.0",
+        "nn.Sequential introduced in torch v0.4.0 \u2192 v0.5.0",
+        "nn.LogSoftmax introduced in torch v1.2.0 \u2192 v1.3.0",
+        "nn.CrossEntropyLoss introduced in torch v1.3.0 \u2192 v1.4.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "nn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "nn>=1.2.0",
+      "evidence": [
+        "nn.Module introduced in nn v1.2.0 \u2192 v1.3.0",
+        "nn.Linear introduced in nn v1.3.0 \u2192 v1.4.0",
+        "nn.Sequential introduced in nn v1.4.0 \u2192 v1.5.0",
+        "nn.LogSoftmax introduced in nn v1.5.0 \u2192 v1.6.0",
+        "nn.CrossEntropyLoss introduced in nn v1.6.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "autograd": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "autograd>=1.2.0",
+      "evidence": [
+        "Variable introduced in autograd v1.2.0 \u2192 v1.3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=0.1.9,<2.0.0",
+    "nn>=1.2.0,<2.0.0",
+    "autograd>=1.2.0,<2.0.0"
+  ]
+}

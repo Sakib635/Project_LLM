@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "snippet.py", line 33, in <module>
+    root.mount(wrapped_proxy_app,"/proxytest")
+  File "/usr/local/lib/python2.7/site-packages/bottle.py", line 671, in mount
+    segments = [p for p in prefix.split('/') if p]
+AttributeError: 'function' object has no attribute 'split'

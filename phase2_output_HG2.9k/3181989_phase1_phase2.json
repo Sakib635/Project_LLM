@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+      "evidence": [
+        "requests.get introduced in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.Image": {
+      "inferred_version_range": ">=5.0.0,<6.0.0",
+      "recommended_requirements_line": "Pillow>=5.0.0,<6.0.0",
+      "evidence": [
+        "PIL.Image.open introduced in v5.0.0",
+        "PIL.Image.point introduced in v5.0.0",
+        "PIL.Image.convert introduced in v5.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tesserwrap": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range for tesserwrap"
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range for StringIO"
+    }
+  },
+  "requirements.txt": [
+    "requests>=2.0.0,<3.0.0",
+    "Pillow>=5.0.0,<6.0.0"
+  ]
+}

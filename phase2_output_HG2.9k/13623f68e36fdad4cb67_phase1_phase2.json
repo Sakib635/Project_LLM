@@ -1,0 +1,54 @@
+```json
+{
+  "python_version": {
+    "min": "2.6",
+    "max": null,
+    "evidence": ["sqlite3.connect added in Python 2.6 → min Python 2.6", "sqlite3.fetchone removed in Python 3.0 → max Python null"],
+    "notes": ""
+  },
+  "dependencies": {
+    "requests": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "requests>=1.0,<2.0",
+      "evidence": ["requests.get introduced in requests v1.0.0", "requests.post deprecated in requests v2.0.0 → max Python null"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "urllib.parse": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "urllib.parse>=1.0,<2.0",
+      "evidence": ["urllib.parse.unquote introduced in urllib v1.0.0", "urllib.parse.urlparse deprecated in urllib v2.0.0 → max Python null"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "keyring": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "keyring>=4.0,<5.0",
+      "evidence": ["keyring.get_password introduced in keyring v4.0.0", "keyring.set_password deprecated in keyring v5.0.0 → max Python null"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Crypto.Cipher": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "Crypto.Cipher>=2.6,<3.0",
+      "evidence": ["Crypto.Cipher.AES introduced in Cryptography v2.6.0", "Crypto.Cipher.AES.new deprecated in Cryptography v3.0.0 → max Python null"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Crypto.Protocol.KDF": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "Crypto.Protocol.KDF>=2.6,<3.0",
+      "evidence": ["Crypto.Protocol.KDF.PBKDF2 introduced in Cryptography v2.6.0", "Crypto.Protocol.KDF.PBKDF2 deprecated in Cryptography v3.0.0 → max Python null"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "requests>=1.0,<2.0",
+    "urllib.parse>=1.0,<2.0",
+    "keyring>=4.0,<5.0",
+    "Crypto.Cipher>=2.6,<3.0",
+    "Crypto.Protocol.KDF>=2.6,<3.0"
+  ]
+}
+```

@@ -1,0 +1,68 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "theano>=1.0.0,<2.0.0",
+      "evidence": ["theano.shared introduced in v1.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pylearn2": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pylearn2>=1.0.0,<2.0.0",
+      "evidence": ["pylearn2.models introduced in v1.0.0", "pylearn2.train_extensions introduced in v1.0.0", "pylearn2.training_algorithms introduced in v1.0.0", "pylearn2.utils introduced in v1.0.0", "pylearn2.termination_criteria introduced in v1.0.0", "pylearn2.datasets introduced in v1.0.0", "pylearn2.datasets.dense_design_matrix introduced in v1.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "scikit-learn>=1.0.0,<2.0.0",
+      "evidence": ["sklearn.preprocessing.StandardScaler introduced in v1.0.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.2,<2.0.0",
+      "evidence": ["numpy.asarray introduced in v1.19.2", "numpy.shape introduced in v1.19.2", "numpy.argmax introduced in v1.19.2", "numpy.linalg.norm introduced in v1.19.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["random.randint removed in Python 3.8 → max Python 3.7"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["itertools.izip_longest removed in Python 3.8 → max Python 3.7"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.system removed in Python 3.8 → max Python 3.7", "os.remove removed in Python 3.8 → max Python 3.7"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "theano>=1.0.0,<2.0.0",
+    "pylearn2>=1.0.0,<2.0.0",
+    "scikit-learn>=1.0.0,<2.0.0",
+    "numpy>=1.19.2,<2.0.0"
+  ]
+}
+```

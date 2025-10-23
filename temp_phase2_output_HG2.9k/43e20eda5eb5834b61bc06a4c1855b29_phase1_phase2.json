@@ -1,0 +1,85 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "tensorflow>=2.4.0,<3.0.0",
+      "evidence": [
+        "tensorflow.FIFOQueue introduced in v2.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+      "evidence": [
+        "numpy.arange introduced in v1.19.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keras.applications": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "keras.engine": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    },
+    "keras.layers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence for version inference."
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.4.0,<3.0.0",
+    "tensorflow>=2.4.0,<3.0.0",
+    "numpy>=1.19.0,<2.0.0"
+  ]
+}

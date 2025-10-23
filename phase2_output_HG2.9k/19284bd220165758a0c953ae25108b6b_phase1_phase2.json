@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "bpy.context.scene.objects.active introduced in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": ">=2.74,<3",
+      "recommended_requirements_line": "bpy>=2.74,<3",
+      "evidence": [
+        "bpy.ops.mesh.primitive_monkey_add introduced in bpy v2.74"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5,<4",
+      "recommended_requirements_line": "sys>=3.5,<4",
+      "evidence": [
+        "sys.argv[1:] introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bpy>=2.74,<3",
+    "sys>=3.5,<4"
+  ]
+}

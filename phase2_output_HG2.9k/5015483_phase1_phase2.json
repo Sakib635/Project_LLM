@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6",
+      "sys.exit removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array introduced in v1.9.0",
+        "numpy.dot introduced in v1.12.0",
+        "numpy.linalg.eigh introduced in v1.15.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "getopt": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "getopt module introduced in v2.1 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=2.6.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.isnan added in v2.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.9.0",
+    "getopt"
+  ]
+}

@@ -1,0 +1,4 @@
+(declare-fun pypng () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= pypng "0.0.20"))))
+(check-sat)

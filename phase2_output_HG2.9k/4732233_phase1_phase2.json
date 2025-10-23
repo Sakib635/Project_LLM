@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": "3.10",
+    "evidence": [
+      "base64.b64decode added in Python 2.5 \u2192 min Python 2.7",
+      "django.http.HttpResponse added in Python 2.5 \u2192 min Python 2.7",
+      "django.contrib.auth.authenticate added in Python 2.5 \u2192 min Python 2.7",
+      "django.conf.settings added in Python 2.5 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "base64.b64decode introduced in Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.http": {
+      "inferred_version_range": ">=1.2,<3.0",
+      "recommended_requirements_line": "Django>=1.2,<3.0",
+      "evidence": [
+        "HttpResponse introduced in Django 1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.auth": {
+      "inferred_version_range": ">=1.2,<3.0",
+      "recommended_requirements_line": "Django>=1.2,<3.0",
+      "evidence": [
+        "authenticate introduced in Django 1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.conf": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "settings introduced in Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=2.5",
+    "Django>=1.2,<3.0"
+  ]
+}

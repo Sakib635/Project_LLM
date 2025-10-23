@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "itertools.tee added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.gis.db": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django-gis>=1.2.0,<2.0.0",
+      "evidence": [
+        "models introduced in Django GIS 1.2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "django.contrib.gis.measure": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django-gis>=1.2.0,<2.0.0",
+      "evidence": [
+        "Distance introduced in Django GIS 1.2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "geopy.distance": {
+      "inferred_version_range": ">=1.13.0,<2.0.0",
+      "recommended_requirements_line": "geopy>=1.13.0,<2.0.0",
+      "evidence": [
+        "distance introduced in geopy 1.13.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "django.contrib.gis.geos": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django-gis>=1.2.0,<2.0.0",
+      "evidence": [
+        "Point introduced in Django GIS 1.2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django-gis>=1.2.0,<2.0.0",
+    "geopy>=1.13.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "tornado>=5.0,<6.0",
+      "evidence": [
+        "tornado.web.RequestHandler introduced in tornado 5.0",
+        "tornado.web.Application introduced in tornado 4.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Queue": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "Queue>=1.2,<2.0",
+      "evidence": [
+        "Queue.Queue introduced in Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado>=5.0,<6.0",
+    "Queue>=1.2,<2.0"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "tornado>=5.0,<6.0",
+      "evidence": [
+        "tornado.httpclient.HTTPClient",
+        "tornado.gen.coroutine",
+        "tornado.web.RequestHandler"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "concurrent": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "concurrent.futures>=3.2,<4.0",
+      "evidence": [
+        "concurrent.futures.ThreadPoolExecutor"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": "null",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.time"
+      ],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable upper or lower bound for time.time."
+    },
+    "os": {
+      "inferred_version_range": "null",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.getpid"
+      ],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable upper or lower bound for os.getpid."
+    },
+    "sys": {
+      "inferred_version_range": "null",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit"
+      ],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable upper or lower bound for sys.exit."
+    }
+  },
+  "requirements.txt": [
+    "tornado>=5.0,<6.0",
+    "concurrent.futures>=3.2,<4.0"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"sublime_plugin": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": ">=3.5,<4",
+"recommended_requirements_line": "subprocess>=3.5,<4",
+"evidence": ["subprocess.Popen added in Python 3.5 → min Python 3.5"],
+"confidence": 1.0,
+"notes": ""
+},
+"time": {
+"inferred_version_range": ">=2.7,<3",
+"recommended_requirements_line": "time>=2.7,<3",
+"evidence": ["time.sleep added in Python 2.7 → min Python 2.7"],
+"confidence": 1.0,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": ">=3.4,<3.9",
+"recommended_requirements_line": "sys>=3.4,<3.9",
+"evidence": ["sys.stderr.write added in Python 3.4 → min Python 3.4"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"subprocess>=3.5,<4",
+"time>=2.7,<3",
+"sys>=3.4,<3.9"
+]
+},
+"requirements.txt": [
+"subprocess>=3.5,<4",
+"time>=2.7,<3",
+"sys>=3.4,<3.9"
+]
+}

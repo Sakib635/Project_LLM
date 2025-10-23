@@ -1,0 +1,27 @@
+snippet.py:31: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  '''
+snippet.py:43: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  '''
+snippet.py:51: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  '''
+Traceback (most recent call last):
+  File "snippet.py", line 51, in <module>
+    '''
+  File "/usr/local/lib/python2.7/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/lib/python2.7/site-packages/yaml/constructor.py", line 76, in get_single_data
+    return self.construct_document(node)
+  File "/usr/local/lib/python2.7/site-packages/yaml/constructor.py", line 80, in construct_document
+    data = self.construct_object(node)
+  File "/usr/local/lib/python2.7/site-packages/yaml/constructor.py", line 125, in construct_object
+    data = constructor(self, node)
+  File "snippet.py", line 19, in no_duplicates_constructor
+    "found duplicate key (%s)" % key, key_node.start_mark)
+yaml.constructor.ConstructorError: while constructing a mapping
+  in "<string>", line 3, column 1:
+    foo: bar
+    ^
+found duplicate key (foo)
+  in "<string>", line 4, column 1:
+    foo: qux
+    ^

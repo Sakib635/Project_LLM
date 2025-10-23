@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=4.0.1,<5.0.0",
+      "recommended_requirements_line": "cv2>=4.0.1,<5.0.0",
+      "evidence": [
+        "cv2.imread added in OpenCV v4.0.1 \u2192 inferred version range"
+      ],
+      "confidence": 0.98,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "numpy.float32 added in NumPy v1.17.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.98,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=4.0.1,<5.0.0",
+    "numpy>=1.17.0,<2.0.0"
+  ]
+}

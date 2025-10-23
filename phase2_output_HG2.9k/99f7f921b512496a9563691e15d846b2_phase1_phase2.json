@@ -1,0 +1,30 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.0.0,<3.0.0",
+      "evidence": ["Keras introduced in Python 2.7"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.13.3,<2.0.0",
+      "evidence": ["numpy.random.seed added in Python 3.6 → min Python 3.6"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.0.0,<3.0.0",
+    "numpy>=1.13.3,<2.0.0"
+  ]
+}
+```

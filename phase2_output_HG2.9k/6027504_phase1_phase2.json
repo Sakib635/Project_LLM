@@ -1,0 +1,94 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "struct.pack added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "json.dumps introduced in JSON 1.2 \u2192 min Python 3.7",
+        "json.dumps removed in JSON 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.web.server introduced in Twisted 12.0 \u2192 min Python 3.7",
+        "twisted.internet.protocol removed in Twisted 19.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "DatagramProtocol": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.protocol.DatagramProtocol introduced in Twisted 12.0 \u2192 min Python 3.7",
+        "twisted.internet.protocol.DatagramProtocol removed in Twisted 19.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "resource": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.web.resource introduced in Twisted 12.0 \u2192 min Python 3.7",
+        "twisted.web.resource removed in Twisted 19.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "MulticastServer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.application.internet.MulticastServer introduced in Twisted 12.0 \u2192 min Python 3.7",
+        "twisted.application.internet.MulticastServer removed in Twisted 19.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "reactor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.reactor introduced in Twisted 12.0 \u2192 min Python 3.7",
+        "twisted.internet.reactor removed in Twisted 19.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sma_data": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sma_data introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "json>=1.2.0,<2.0.0",
+    "twisted>=12.0.0,<19.0.0"
+  ]
+}

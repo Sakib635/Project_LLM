@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": "Cannot determine reliable upper or lower bound for Python version."
+  },
+  "dependencies": {
+    "matplotlib.pyplot": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "matplotlib.pyplot.figure",
+        "matplotlib.pyplot.plot",
+        "matplotlib.pyplot.xlabel",
+        "matplotlib.pyplot.ylabel",
+        "matplotlib.pyplot.legend"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "scipy.integrate": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.integrate.odeint"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.linspace"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scipy>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

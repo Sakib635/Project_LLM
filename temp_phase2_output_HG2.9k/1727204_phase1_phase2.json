@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "haystack": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "haystack.backends.whoosh_backend"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "whoosh": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "whoosh>=1.2.0,<2.0.0",
+      "evidence": [
+        "whoosh.analysis",
+        "whoosh.fields"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

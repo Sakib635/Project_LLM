@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"IPython": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["IPython.core.debugger.Pdb introduced in IPython 6.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": ">=3.4,<3.7",
+"recommended_requirements_line": "sys>=3.4,<3.7",
+"evidence": ["sys._getframe introduced in Python 3.5 → min Python 3.4", "sys.last_traceback removed in Python 3.8 → max Python 3.7"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"IPython>=6.0,<7.0",
+"sys>=3.4,<3.7"
+]
+}
+}

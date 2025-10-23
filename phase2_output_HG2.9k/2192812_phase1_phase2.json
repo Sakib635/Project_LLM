@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["pandas.DataFrame added in Python 3.5 → min Python 3.5", "numpy.linalg.norm deprecated in Python 3.8→ max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": null,
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.DataFrame introduced in v1.0.0", "pandas.DataFrame.to_numpy introduced in v1.2.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+"evidence": ["numpy.array introduced in v1.13.0", "numpy.linalg.norm deprecated in v1.18.0"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+"numpy>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+"numpy>=1.2.0,<2.0.0"
+]
+}

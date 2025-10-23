@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "3.8",
+"evidence": ["keras.backend as k added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9→ max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"keras": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["keras.applications", "keras.preprocessing.image", "keras.optimizers", "keras.models", "keras.layers"],
+"confidence": 0.8,
+"notes": ""
+},
+"backend": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["keras.backend as k added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9→ max Python 3.8"],
+"confidence": 0.8,
+"notes": ""
+},
+"callbacks": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["keras.callbacks.ModelCheckpoint", "keras.callbacks.LearningRateScheduler", "keras.callbacks.TensorBoard", "keras.callbacks.EarlyStopping"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"keras>=2.7.0,<3.0.0",
+"backend>=3.6,<3.9",
+"callbacks>=2.1.0,<3.0.0"
+]
+},
+"requirements.txt": [
+"keras>=2.7.0,<3.0.0",
+"backend>=3.6,<3.9",
+"callbacks>=2.1.0,<3.0.0"
+]
+}

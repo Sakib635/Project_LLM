@@ -1,0 +1,46 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9→ max Python 3.9"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2",
+      "recommended_requirements_line": "numpy>=1.20,<2",
+      "evidence": ["numpy.array introduced in v1.20", "numpy.linalg.norm added in v1.20"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.5,<2",
+      "recommended_requirements_line": "scipy>=1.5,<2",
+      "evidence": ["scipy.signal.hilbert introduced in v1.5", "scipy.signal.resample added in v1.5"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.2,<4",
+      "recommended_requirements_line": "matplotlib>=3.2,<4",
+      "evidence": ["matplotlib.pyplot.imshow introduced in v3.2", "matplotlib.pyplot.title added in v3.2"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "scikit-learn": {
+      "inferred_version_range": ">=0.20,<0.22",
+      "recommended_requirements_line": "scikit-learn>=0.20,<0.22",
+      "evidence": ["sklearn.decomposition.PCA introduced in v0.20", "sklearn.preprocessing.zca added in v0.20"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2",
+    "scipy>=1.5,<2",
+    "matplotlib>=3.2,<4",
+    "scikit-learn>=0.20,<0.22"
+  ]
+}
+```

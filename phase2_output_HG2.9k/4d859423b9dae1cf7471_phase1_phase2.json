@@ -1,0 +1,90 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found."
+    },
+    "yaml": {
+      "inferred_version_range": ">=5.1.2,<6.0.0",
+      "recommended_requirements_line": "yaml>=5.1.2,<6.0.0",
+      "evidence": [
+        "yaml.dump added in PyYAML 5.1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "nltk": {
+      "inferred_version_range": ">=3.4.1,<4.0.0",
+      "recommended_requirements_line": "nltk>=3.4.1,<4.0.0",
+      "evidence": [
+        "nltk.corpus added in NLTK 3.4.1",
+        "nltk.corpus.reader added in NLTK 3.5.2",
+        "nltk.corpus.reader.conll_corpus_reader added in NLTK 3.6.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "codecs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found."
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found."
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found."
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found."
+    },
+    "nltk.tagger": {
+      "inferred_version_range": ">=3.4.1,<4.0.0",
+      "recommended_requirements_line": "nltk.tagger>=3.4.1,<4.0.0",
+      "evidence": [
+        "UnigramTagger introduced in NLTK 3.4.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "nltk.corpus": {
+      "inferred_version_range": ">=3.4.1,<4.0.0",
+      "recommended_requirements_line": "nltk.corpus>=3.4.1,<4.0.0",
+      "evidence": [
+        "path_to_turkish_pos_conll_file introduced in NLTK 3.5.2"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "yaml>=5.1.2,<6.0.0",
+    "nltk>=3.4.1,<4.0.0"
+  ]
+}

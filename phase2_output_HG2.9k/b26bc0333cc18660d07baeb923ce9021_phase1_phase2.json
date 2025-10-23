@@ -1,0 +1,65 @@
+```
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["pandas.DataFrame added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": ["numpy.array added in v1.0.0 → min numpy 1.0.0", "numpy.linalg.norm added in v1.7.0 → max numpy 1.7.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": ["pandas.DataFrame added in v1.2.0 → min pandas 1.2.0", "pandas.DataFrame.to_numpy added in v1.3.0 → max pandas 1.3.0"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=2.6,<4.0",
+      "recommended_requirements_line": null,
+      "evidence": ["math.ceil added in v2.6 → min math 2.6", "math.copysign added in v3.5 → max math 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": ">=2.6,<4.0",
+      "recommended_requirements_line": null,
+      "evidence": ["operator.add added in v2.6 → min operator 2.6", "operator.matmul added in v3.5 → max operator 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["csv.reader added in v2.0 → min csv 2.0", "csv.DictReader added in v3.5 → max csv 3.5"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["io.open added in v2.6 → min io 2.6", "io.open added in v3.5 → max io 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["collections.Counter added in v2.6 → min collections 2.6", "collections.OrderedDict added in v3.5 → max collections 3.5"],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}
+```

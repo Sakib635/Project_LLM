@@ -1,0 +1,36 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "numpy>=1.2,<2.0",
+"evidence": ["numpy.loadtxt introduced in numpy v1.2", "numpy.arange introduced in numpy v1.2"],
+"confidence": 1.0,
+"notes": ""
+},
+"matplotlib": {
+"inferred_version_range": ">=3.4,<3.9",
+"recommended_requirements_line": "matplotlib>=3.4,<3.9",
+"evidence": ["matplotlib.pyplot.figure introduced in matplotlib v3.4", "matplotlib.pyplot.savefig introduced in matplotlib v3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"mpl_toolkits.basemap": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Basemap API was introduced in Basemap v0.10"],
+"confidence": 0.8,
+"notes": "Could not determine version range as it is not a widely used package."
+}
+},
+"requirements.txt": [
+"numpy>=1.2,<2.0",
+"matplotlib>=3.4,<3.9"
+]
+}
+}

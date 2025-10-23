@@ -1,0 +1,44 @@
+```json
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["time.clock removed in Python x→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": ["pandas.DataFrame introduced in v1.2.0", "pandas.DataFrame.to_numpy introduced in v1.3.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+      "evidence": ["numpy.array introduced in v1.19.0", "numpy.linalg.norm introduced in v1.19.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ImageDraw": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "No APIs found"
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "No APIs found"
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19.0,<2.0.0",
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}
+```

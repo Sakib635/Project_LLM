@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"bpy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "bpy>=1.2.0,<2.0.0",
+"evidence": ["bpy.data.materials.new introduced in v1.2.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "math>=3.5,<4.0",
+"evidence": ["base introduced in v3.5", "c introduced in v3.6"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"bpy>=1.2.0,<2.0.0",
+"math>=3.5,<4.0"
+]
+}
+}

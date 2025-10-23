@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tastypie": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.fields.ListField"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "ModelResource": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.resources.ModelResource"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "build_filters": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.resources.ModelResource.build_filters"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "super": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.resources.ModelResource.build_filters",
+        "tastypie.resources.ModelResource.dehydrate_tags",
+        "tastypie.resources.ModelResource.save_m2m"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dehydrate_tags": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.resources.ModelResource.dehydrate_tags"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "save_m2m": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tastypie.resources.ModelResource.save_m2m"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tastypie>=X.Y.Z,<A.B.C",
+    "ModelResource>=X.Y.Z,<A.B.C",
+    "build_filters>=X.Y.Z,<A.B.C",
+    "super>=X.Y.Z,<A.B.C",
+    "dehydrate_tags>=X.Y.Z,<A.B.C",
+    "save_m2m>=X.Y.Z,<A.B.C"
+  ]
+}

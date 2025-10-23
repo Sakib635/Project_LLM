@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "gobject.threads_init introduced in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.10,<4.0",
+      "recommended_requirements_line": "gtk>=3.10,<4.0",
+      "evidence": [
+        "gtk.Window added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": ">=3.10,<4.0",
+      "recommended_requirements_line": "gobject>=3.10,<4.0",
+      "evidence": [
+        "gobject.SIGNAL_RUN_LAST introduced in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "threading>=3.7,<4.0",
+      "evidence": [
+        "threading.Thread added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "time>=3.7,<4.0",
+      "evidence": [
+        "time.sleep added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "random>=3.7,<4.0",
+      "evidence": [
+        "random.randint added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gtk>=3.10,<4.0",
+    "gobject>=3.10,<4.0",
+    "threading>=3.7,<4.0",
+    "time>=3.7,<4.0",
+    "random>=3.7,<4.0"
+  ]
+}

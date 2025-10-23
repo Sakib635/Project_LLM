@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "os.path.join added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.new introduced in Pillow 1.2.0 \u2192 inferred version range",
+        "Image.open deprecated in Pillow 1.9.0 \u2192 inferred version range",
+        "Image.paste introduced in Pillow 1.10.0 \u2192 inferred version range",
+        "Image.save introduced in Pillow 1.11.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "python-dotenv>=3.6.0,<4.0.0",
+      "evidence": [
+        "random.shuffle introduced in Python 3.6 \u2192 min Python version",
+        "random.choice deprecated in Python 3.10.0 \u2192 max Python version"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.2.0,<2.0.0",
+    "python-dotenv>=3.6.0,<4.0.0"
+  ]
+}

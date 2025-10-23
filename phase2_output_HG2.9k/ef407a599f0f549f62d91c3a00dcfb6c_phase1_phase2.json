@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "subprocess.Popen added in Python 3.5 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.0.0,<2.0.0",
+      "evidence": [
+        "tensorflow.train.Server introduced in v1.0.0",
+        "tensorflow.ConfigProto introduced in v1.0.0",
+        "tensorflow.GraphOptions introduced in v1.0.0",
+        "tensorflow.OptimizerOptions introduced in v1.0.0",
+        "tensorflow.train.ClusterSpec introduced in v1.0.0",
+        "tensorflow.initialize_all_variables introduced in v1.0.0",
+        "tensorflow.get_variable introduced in v1.0.0",
+        "tensorflow.assign_add introduced in v1.0.0",
+        "tensorflow.sleep_interval introduced in v1.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.0.0",
+        "numpy.linalg.norm introduced in v1.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.0.0,<2.0.0",
+    "numpy>=1.0.0,<2.0.0"
+  ]
+}

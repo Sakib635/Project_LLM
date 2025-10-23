@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gensim.models.word2vec.Word2Vec": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "load_word2vec_format introduced in gensim 0.18.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "basicConfig introduced in logging 0.1",
+        "info introduced in logging 2.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "flask.Flask": {
+      "inferred_version_range": ">=1.0,<3",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "route introduced in Flask 0.2",
+        "run introduced in Flask 1.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "flask.jsonify": {
+      "inferred_version_range": ">=1.0,<3",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dumps introduced in Flask 0.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "flask.request": {
+      "inferred_version_range": ">=1.0,<3",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "args introduced in Flask 1.0",
+        "get introduced in Flask 1.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gensim>=0.18.2,<4",
+    "logging>=0.1,<4",
+    "flask>=1.0,<3",
+    "flask-jsonify>=0.8,<3",
+    "flask-request>=1.0,<3"
+  ]
+}

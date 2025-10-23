@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.forms.forms",
+        "django.core.validators.MinLengthValidator",
+        "django.core.validators.MaxLengthValidator",
+        "django.core.exceptions.ValidationError"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.forms": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.forms.Field"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.validators": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django.core.validators>=1.2.0,<2.0.0",
+      "evidence": [
+        "django.core.validators.MinLengthValidator",
+        "django.core.validators.MaxLengthValidator"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<2.0.0"
+  ]
+}

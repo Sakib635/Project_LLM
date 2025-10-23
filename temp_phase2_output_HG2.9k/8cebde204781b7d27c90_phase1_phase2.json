@@ -1,0 +1,30 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"MySQLdb": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "MySQLdb>=1.2.0,<2.0.0",
+"evidence": ["MySQLdb.connect introduced in v1.2.0"],
+"confidence": 1,
+"notes": ""
+},
+"timeit": {
+"inferred_version_range": ">=1.4,<2.0",
+"recommended_requirements_line": "timeit>=1.4.0,<2.0.0",
+"evidence": ["timeit.Timer introduced in v1.4.0"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"MySQLdb>=1.2.0,<2.0.0",
+"timeit>=1.4.0,<2.0.0"
+]
+},
+"requirements.txt": []
+}

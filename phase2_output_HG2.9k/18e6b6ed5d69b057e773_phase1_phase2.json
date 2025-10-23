@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "re==1.*",
+      "evidence": [
+        "re.compile introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "subprocess==3.*",
+      "evidence": [
+        "subprocess.check_output introduced in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xml.etree.ElementTree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "xml.etree.ElementTree==*",
+      "evidence": [
+        "xml.etree.ElementTree.fromstring introduced in v1.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "workflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "workflow==*",
+      "evidence": [
+        "workflow.Workflow introduced in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "xml==*",
+      "evidence": [
+        "xml.etree.ElementTree.parse introduced in v1.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re==1.*",
+    "subprocess==3.*",
+    "workflow==*",
+    "xml==*"
+  ]
+}

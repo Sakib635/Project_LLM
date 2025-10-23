@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "datetime.strftime added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "csvkit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.72,
+      "notes": "No APIs from csvkit found."
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "OrderedDict introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.72,
+      "notes": "No APIs from collections found."
+    },
+    "flask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.72,
+      "notes": "No APIs from flask found."
+    },
+    "rethinkdb": {
+      "inferred_version_range": ">=2.3.0,<3.0.0",
+      "recommended_requirements_line": "rethinkdb >=2.3.0,<3.0.0",
+      "evidence": [
+        "r.table introduced in RethinkDB 2.3 \u2192 inferred version range"
+      ],
+      "confidence": 0.72,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "dumps introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.72,
+      "notes": ""
+    },
+    "stringio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.72,
+      "notes": "No APIs from stringio found."
+    }
+  },
+  "requirements.txt": [
+    "csvkit",
+    "collections",
+    "flask",
+    "rethinkdb",
+    "json",
+    "stringio"
+  ]
+}

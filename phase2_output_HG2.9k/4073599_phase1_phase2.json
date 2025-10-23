@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "email": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "email>=1.2.0,<2.0.0",
+      "evidence": [
+        "email.mime.base.MIMEBase introduced in v1.2.0",
+        "email.mime.multipart.MIMEMultipart deprecated and removed in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "smtplib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "smtplib>=1.2.0,<2.0.0",
+      "evidence": [
+        "smtplib.SMTP introduced in v1.2.0",
+        "smtplib.SMTP deprecated and removed in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Image.open introduced in v2.5.0",
+        "Image.open deprecated and removed in v3.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "email>=1.2.0,<2.0.0",
+    "smtplib>=1.2.0,<2.0.0"
+  ]
+}

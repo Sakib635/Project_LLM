@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "RPi.GPIO": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "RPi.GPIO>=1.2.0,<2.0.0",
+      "evidence": [
+        "GPIO introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "readchar": {
+      "inferred_version_range": ">=1.5.1,<2.0.0",
+      "recommended_requirements_line": "readchar>=1.5.1,<2.0.0",
+      "evidence": [
+        "readkey introduced in v1.5.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "time>=2.4.0,<3.0.0",
+      "evidence": [
+        "sleep introduced in v2.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "RPi.GPIO>=1.2.0,<2.0.0",
+    "readchar>=1.5.1,<2.0.0",
+    "time>=2.4.0,<3.0.0"
+  ]
+}

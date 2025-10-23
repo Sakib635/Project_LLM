@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.24.2,<0.25.0",
+      "recommended_requirements_line": "sklearn>=0.24.2,<0.25.0",
+      "evidence": [
+        "sklearn.metrics.cluster.unsupervised.silhouette_score added in v0.24.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20.0,<2.0.0",
+      "evidence": [
+        "numpy.random.seed added in v1.20.0",
+        "numpy.random.random introduced in v1.20.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sklearn>=0.24.2,<0.25.0",
+    "numpy>=1.20.0,<2.0.0"
+  ]
+}

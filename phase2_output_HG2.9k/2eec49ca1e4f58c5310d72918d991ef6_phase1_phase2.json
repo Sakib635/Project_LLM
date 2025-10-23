@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tensorflow>=2.0.0",
+      "evidence": [
+        "tensorflow.GraphDef introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tensorflow.python.platform": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tensorflow.python.platform>=2.0",
+      "evidence": [
+        "tensorflow.python.platform.gfile introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tensorflow.summary": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tensorflow.summary>=2.0",
+      "evidence": [
+        "tensorflow.summary.FileWriter introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=2.0.0",
+    "tensorflow.python.platform>=2.0",
+    "tensorflow.summary>=2.0"
+  ]
+}

@@ -1,0 +1,4 @@
+(declare-fun traits () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= traits "6.1.1"))))
+(check-sat)

@@ -1,0 +1,84 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.5 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "airflow": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": "airflow>=1.9.0,<2.0.0",
+      "evidence": [
+        "AirflowPlugin introduced in Airflow 1.9.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "slackclient": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "slackclient>=2.0.0,<3.0.0",
+      "evidence": [
+        "SlackClient introduced in Slack API 2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "titan.utils": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": "titan.utils>=1.9.0,<2.0.0",
+      "evidence": [
+        "config introduced in Titan 1.9.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "logging>=3.5.0,<4.0.0",
+      "evidence": [
+        "exception introduced in Python 3.5"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.7.0,<3.8.0",
+      "recommended_requirements_line": "datetime>=3.7.0,<3.8.0",
+      "evidence": [
+        "strptime introduced in Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "DataFrame introduced in pandas 1.2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "array introduced in numpy 1.16.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "airflow>=1.9.0,<2.0.0",
+    "slackclient>=2.0.0,<3.0.0",
+    "titan.utils>=1.9.0,<2.0.0",
+    "logging>=3.5.0,<4.0.0",
+    "datetime>=3.7.0,<3.8.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.16.0,<2.0.0"
+  ]
+}

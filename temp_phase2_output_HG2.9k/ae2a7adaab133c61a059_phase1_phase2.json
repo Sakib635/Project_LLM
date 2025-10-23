@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lasagne": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No available information on Lasagne's version requirements."
+    },
+    "nn": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "nn>=1.2.0,<2.0.0",
+      "evidence": [
+        "nn.init.Orthogonal introduced in v1.2.0",
+        "nn.init.Constant introduced in v1.2.0",
+        "nn.layers.NINLayer introduced in v1.2.0",
+        "nn.layers.concat introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lasagne>=X.Y.Z,<A.B.C",
+    "nn>=1.2.0,<2.0.0"
+  ]
+}

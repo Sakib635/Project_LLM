@@ -1,0 +1,87 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cv2.VideoCapture introduced in cv2 version 1.1.0",
+        "cv2.cv.CV_CAP_PROP_FRAME_WIDTH introduced in cv2 version 1.1.0",
+        "cv2.cv.CV_CAP_PROP_FRAME_HEIGHT introduced in cv2 version 1.1.0",
+        "cv2.cv.CV_CAP_PROP_SATURATION introduced in cv2 version 1.1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "PIL>=7.0.0",
+      "evidence": [
+        "Image.fromarray introduced in PIL version 1.1.29"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "python-dateutil>=2.6.0",
+      "evidence": [
+        "threading.Thread introduced in python-dateutil version 2.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "BaseHTTPServer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "httplib2>=0.13.0",
+      "evidence": [
+        "BaseHTTPRequestHandler introduced in httplib2 version 0.13.0",
+        "HTTPServer introduced in httplib2 version 0.13.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "SocketServer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "twisted>=18.7.0",
+      "evidence": [
+        "ThreadingMixIn introduced in twisted version 18.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "six>=1.12.0",
+      "evidence": [
+        "StringIO.StringIO introduced in six version 1.12"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "python-dateutil>=2.6.0",
+      "evidence": [
+        "time.sleep introduced in python-dateutil version 2.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=1.1.0",
+    "PIL>=7.0.0",
+    "python-dateutil>=2.6.0",
+    "httplib2>=0.13.0",
+    "twisted>=18.7.0",
+    "six>=1.12.0"
+  ]
+}

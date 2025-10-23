@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "random.randint added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gmpy2": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "gmpy2>=2.0,<3.0",
+      "evidence": [
+        "gmpy2.is_prime introduced in v2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "operator>=3.5,<4.0",
+      "evidence": [
+        "operator.mul introduced in v3.5 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "math>=3.5,<4.0",
+      "evidence": [
+        "math.pow introduced in v3.5 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "roca": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "roca.has_fingerprint_real introduced in v1.0 \u2192 inferred version range",
+        "roca.get_prime introduced in v1.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gmpy2>=2.0,<3.0",
+    "operator>=3.5,<4.0",
+    "math>=3.5,<4.0"
+  ]
+}

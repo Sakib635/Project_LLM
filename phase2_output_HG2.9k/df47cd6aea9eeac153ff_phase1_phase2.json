@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "boto3": {
+      "inferred_version_range": ">=1.4.0",
+      "recommended_requirements_line": "boto3>=1.4.0",
+      "evidence": [
+        "boto3.session.Session introduced, depricated, removed or changed in v1.4.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.6",
+      "recommended_requirements_line": "os>=3.6",
+      "evidence": [
+        "os.environ.get('EC2REGION') introduced in Python 3.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys>=3.5",
+      "evidence": [
+        "sys.argv[1] introduced in Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "yaml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "yaml>=5.1",
+      "evidence": [
+        "yaml.load(f.read()) introduced in Python 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "boto3>=1.4.0",
+    "os>=3.6",
+    "sys>=3.5",
+    "yaml>=5.1"
+  ]
+}

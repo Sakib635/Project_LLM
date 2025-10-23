@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine version range for django package."
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "dumps introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine version range for operator package."
+    }
+  },
+  "requirements.txt": [
+    "json>=1.2.0,<2.0.0"
+  ]
+}

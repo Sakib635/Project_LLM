@@ -1,0 +1,7 @@
+(declare-fun pycryptodome () String)
+(declare-fun botocore () String)
+(declare-fun boto3 () String)
+(assert (and (or (= boto3 "1.16.55"))
+     (or (= botocore "1.19.55"))
+     (or (= pycryptodome "3.9.9"))))
+(check-sat)

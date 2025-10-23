@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gi.repository": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "gi-repository>=2.0,<3.0",
+      "evidence": ["Gtk added in Python 2.0 → min Python 2.0", "Gdk added in Python 2.0 → min Python 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "subprocess>=3.5,<4.0",
+      "evidence": ["subprocess.Popen added in Python 3.5 → min Python 3.5"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xsel": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Could not determine version range for xsel"
+    }
+  },
+  "requirements.txt": ["gi-repository>=2.0,<3.0", "subprocess>=3.5,<4.0"]
+}
+Note: The "confidence" field in the dependencies dictionary represents the degree of confidence in the inferred version range for each package.
+The value ranges from 0.0 to 1.0, where 1.0 indicates a high level of certainty in the inference result.
+In this example, the confidence value for xsel is set to 0.5 because while we have seen its usage in the code, we cannot determine its version range with complete certainty.
+Also, the "notes" field provides additional information about the inference results, such as the assumption that the package's version range depends on the Python version.
+Finally, the "requirements.txt" field contains a list of recommended requirements lines for all dependencies, in the format of "<package>=<version>,<comparator>".

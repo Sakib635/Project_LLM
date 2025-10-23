@@ -1,0 +1,98 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "hashlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "hashlib.new"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "hmac": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "hmac>=1.2.0,<2.0.0",
+      "evidence": [
+        "hmac.new"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.0.0,<2.0.0",
+      "evidence": [
+        "base64.b64encode"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "json.loads"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "settings": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "settings.SHOPIFY_API_SECRET"
+      ],
+      "confidence": 0.8,
+      "notes": "Settings may be used for other purposes in addition to Shopify API secret."
+    },
+    "wraps": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "wraps"
+      ],
+      "confidence": 0.7,
+      "notes": "Wraps may be used for other purposes in addition to decorators."
+    },
+    "request": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "request.META",
+        "request.body",
+        "request.webhook_topic",
+        "request.webhook_data"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "HttpResponseBadRequest": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "HttpResponseBadRequest"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "HttpResponseForbidden": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "HttpResponseForbidden"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,55 @@
+Here is the JSON object that satisfies the requirements:
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"PIL": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Image", "ImageOps"],
+"confidence": 0.25,
+"notes": ""
+},
+"math": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["floor"],
+"confidence": 0.25,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=1.0,<3.0",
+"recommended_requirements_line": "os>=1.0,<3.0",
+"evidence": ["listdir", "makedirs", "join", "isdir", "path"],
+"confidence": 0.75,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["argv"],
+"confidence": 0.25,
+"notes": ""
+},
+"Image": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["open", "save"],
+"confidence": 0.75,
+"notes": ""
+}
+},
+"requirements.txt": [
+"PIL>=1.2.0,<2.0.0",
+"math>=1.2.0,<2.0.0",
+"os>=1.2.0,<3.0.0",
+"sys>=1.2.0,<3.0.0",
+"Image>=1.2.0,<2.0.0"
+]
+}
+
+Note that the inferred version ranges for each dependency are based on the extracted APIs and may not be accurate or up-to-date. The confidence scores are also approximate and subject to change.

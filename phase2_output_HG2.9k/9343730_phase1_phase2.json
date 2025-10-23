@@ -1,0 +1,61 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": "4.0",
+    "evidence": [
+      "BaseHTTPRequestHandler introduced in Python 3.0 \u2192 min Python 3.0",
+      "HTTPServer introduced in Python 3.0 \u2192 min Python 3.0",
+      "time.sleep deprecated in Python 3.7 \u2192 max Python 3.6",
+      "time.clock removed in Python 3.7 \u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "io": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BytesIO introduced in Python 2.5 \u2192 min Python 2.5",
+        "BytesIO deprecated in Python 3.0 \u2192 max Python 2.6",
+        "BytesIO removed in Python 3.1 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sleep introduced in Python 2.5 \u2192 min Python 2.5",
+        "sleep deprecated in Python 3.7 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "BaseHTTPServer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BaseHTTPRequestHandler introduced in Python 3.0 \u2192 min Python 3.0",
+        "HTTPServer introduced in Python 3.0 \u2192 min Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "picamera": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PiCamera introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "io>=2.5,<3.1",
+    "time>=2.5,<3.1",
+    "BaseHTTPServer>=3.0,<4.0",
+    "picamera>=2.7,<4.0"
+  ]
+}

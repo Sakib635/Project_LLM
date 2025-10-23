@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "usb.core": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "usb.core.find introduced in v1.2.0",
+        "usb.core.detach_kernel_driver introduced in v1.2.0",
+        "usb.core.set_configuration introduced in v1.2.0",
+        "usb.core.write introduced in v1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys>=1.2.0,<2.0.0",
+      "evidence": [
+        "sys.exit introduced in v1.2.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "usb.core>=1.2.0,<2.0.0",
+    "sys>=1.2.0,<2.0.0"
+  ]
+}

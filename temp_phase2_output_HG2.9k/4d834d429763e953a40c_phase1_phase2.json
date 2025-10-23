@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+"evidence": ["np.fromstring introduced in v1.2.0 → inferred range"],
+"confidence": 0.95,
+"notes": ""
+},
+"cv2": {
+"inferred_version_range": ">=4.2.0,<5.0.0",
+"recommended_requirements_line": "cv2>=4.2.0,<5.0.0",
+"evidence": ["cv2.imdecode introduced in v4.2.0 → inferred range"],
+"confidence": 0.95,
+"notes": ""
+},
+"urllib2": {
+"inferred_version_range": ">=1.8.0,<3.0.0",
+"recommended_requirements_line": "urllib2>=1.8.0,<3.0.0",
+"evidence": ["urllib2.urlopen introduced in v1.8.0 → inferred range"],
+"confidence": 0.95,
+"notes": ""
+},
+"cv2.highgui": {
+"inferred_version_range": ">=4.2.0,<5.0.0",
+"recommended_requirements_line": "cv2.highgui>=4.2.0,<5.0.0",
+"evidence": ["cv2.imshow introduced in v4.2.0 → inferred range"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.2.0,<2.0.0",
+"cv2>=4.2.0,<5.0.0",
+"urllib2>=1.8.0,<3.0.0",
+"cv2.highgui>=4.2.0,<5.0.0"
+]
+},
+"requirements.txt": [
+"numpy>=1.2.0,<2.0.0",
+"cv2>=4.2.0,<5.0.0",
+"urllib2>=1.8.0,<3.0.0",
+"cv2.highgui>=4.2.0,<5.0.0"
+]
+}

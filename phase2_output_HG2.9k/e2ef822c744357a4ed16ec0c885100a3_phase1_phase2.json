@@ -1,0 +1,34 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["numpy.core.multiarray.zeros added in Python 3.6 → min Python 3.6", "numpy.linalg.norm removed in Python 3.10→ max Python z"],
+    "notes": ""
+  },
+  "dependencies": {
+    "h5py": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["h5py.File added in Python 3.6 → min Python 3.6", "h5py.create_dataset removed in Python 3.10→ max Python z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["keras.models.Sequential added in Python 3.6 → min Python 3.6", "keras.layers.Dense removed in Python 3.10→ max Python z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["numpy.astype added in Python 3.6 → min Python 3.6", "numpy.random.randn removed in Python 3.10→ max Python z"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+```

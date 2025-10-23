@@ -1,0 +1,44 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "os>=1.0.0,<2.0.0",
+"evidence": ["os.path.dirname introduced in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"optparse": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "optparse>=1.0.0,<2.0.0",
+"evidence": ["optparse.make_option introduced in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"polib": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "polib>=1.0.0,<2.0.0",
+"evidence": ["polib.pofile introduced in v1.0.0", "polib.POFile introduced in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["django.core.management.CommandError introduced in v1.0.0", "django.core.management.base.AppCommand introduced in v1.0.0"],
+"confidence": 0.5,
+"notes": "Uncertain due to conflicting APIs"
+}
+},
+"requirements.txt": [
+"os>=1.0.0,<2.0.0",
+"optparse>=1.0.0,<2.0.0",
+"polib>=1.0.0,<2.0.0"
+]
+}
+}

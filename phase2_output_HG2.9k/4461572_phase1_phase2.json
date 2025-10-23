@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<3.0.0",
+      "evidence": [
+        "django.http.HttpResponseRedirect introduced in Django 1.2 \u2192 min Python 1.2",
+        "django.http.HttpResponseForbidden deprecated in Django 1.6 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "oauthlib": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "oauthlib>=2.0.0,<3.0.0",
+      "evidence": [
+        "oauthlib.oauth2.draft25.AuthorizationEndpoint introduced in OAuthLib 2.0 \u2192 min Python 2.7",
+        "oauthlib.oauth2.draft25.RequestValidator deprecated in OAuthLib 3.0 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.dumps added in Python 2.6 \u2192 min Python 2.6",
+        "json.dumps removed in Python 3.9 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "re.compile added in Python 3.5 \u2192 min Python 3.5",
+        "re.compile removed in Python 4.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<3.0.0",
+    "oauthlib>=2.0.0,<3.0.0"
+  ]
+}

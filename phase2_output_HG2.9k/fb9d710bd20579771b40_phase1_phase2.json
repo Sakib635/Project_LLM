@@ -1,0 +1,27 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "bpy.types.Operator added in Python 3.6 \u2192 min Python 3.6",
+      "bpy.path.abspath added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "frameExportMesh": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "frameExportMesh>=1.2.0,<2.0.0",
+      "evidence": [
+        "frameExportMesh.execute introduced in v1.2.0",
+        "frameExportMesh.execute.scene introduced in v1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bpy>=3.6.0,<4.0.0",
+    "frameExportMesh>=1.2.0,<2.0.0"
+  ]
+}

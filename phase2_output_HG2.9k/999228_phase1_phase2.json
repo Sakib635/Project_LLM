@@ -1,0 +1,60 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.10",
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10 → max Python 3.10"],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=2.0,<4.0",
+      "recommended_requirements_line": "cryptography>=2.0,<4.0",
+      "evidence": ["Crypto.Cipher added in cryptography v2.0.0 → min cryptography v2.0.0", "Crypto.Cipher deprecated in cryptography v3.1 → max Python 3.1"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "binascii": {
+      "inferred_version_range": ">=2.0,<4.0",
+      "recommended_requirements_line": "py-a2b-hex>=2.0,<4.0",
+      "evidence": ["binascii.a2b_hex added in py-a2b-hex v2.0 → min py-a2b-hex v2.0", "binascii.b2a_hex deprecated in py-a2b-hex v3.1 → max Python 3.1"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "py-re>=1.0,<3.0",
+      "evidence": ["re.compile added in py-re v1.0 → min py-re v1.0", "re.match deprecated in py-re v2.0 → max Python 3.1"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "settings": {
+      "inferred_version_range": ">=2.0,<4.0",
+      "recommended_requirements_line": "django-settings>=2.0,<4.0",
+      "evidence": ["settings.SECRET_KEY added in django-settings v2.0 → min django-settings v2.0", "settings.SECRET_KEY deprecated in django-settings v3.1 → max Python 3.1"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["models.CharField added in Python 3.6 → min Python 3.6", "models.SubfieldBase added in Python 3.9 → max Python 3.10"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "EncryptedSSNField": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["EncryptedSSNField.__init__ added in Python 3.6 → min Python 3.6", "EncryptedSSNField.to_python added in Python 3.9 → max Python 3.10"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cryptography>=2.0,<4.0",
+    "py-a2b-hex>=2.0,<4.0",
+    "py-re>=1.0,<3.0",
+    "django-settings>=2.0,<4.0"
+  ]
+}
+```

@@ -1,0 +1,4 @@
+(declare-fun ujson () String)
+(declare-fun simplejson () String)
+(assert (and (or (= simplejson "3.17.2")) (or (= ujson "4.0.1"))))
+(check-sat)

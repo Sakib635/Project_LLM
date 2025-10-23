@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": [
+      "struct.pack added in Python 3.6 \u2192 min Python 3.6",
+      "struct.unpack added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "nulllife": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "nulllife>=1.0,<2.0",
+      "evidence": [
+        "NullSocket introduced in nulllife 1.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "socket>=3.6,<4.0",
+      "evidence": [
+        "socket.send introduced in socket 3.6 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.7,<5.0",
+      "recommended_requirements_line": "os>=2.7,<5.0",
+      "evidence": [
+        "os.system introduced in os 2.7 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "platform": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "platform>=3.6,<4.0",
+      "evidence": [
+        "platform.architecture introduced in platform 3.6 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nulllife>=1.0,<2.0",
+    "socket>=3.6,<4.0",
+    "os>=2.7,<5.0",
+    "platform>=3.6,<4.0"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "M2Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for M2Crypto."
+    },
+    "plistlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "plistlib>=1.2.0,<2.0.0",
+      "evidence": [
+        "plistlib.readPlistFromString introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for sys."
+    },
+    "logging": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "logging>=3.2.0,<4.0.0",
+      "evidence": [
+        "logging.error introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    {
+      "pkg": "M2Crypto",
+      "version_specifier": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for M2Crypto."
+    },
+    {
+      "pkg": "plistlib",
+      "version_specifier": ">=1.2.0,<2.0.0",
+      "evidence": [
+        "plistlib.readPlistFromString introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    {
+      "pkg": "sys",
+      "version_specifier": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for sys."
+    },
+    {
+      "pkg": "logging",
+      "version_specifier": ">=3.2.0,<4.0.0",
+      "evidence": [
+        "logging.error introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  ]
+}

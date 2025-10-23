@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pandas.DataFrame.to_numpy added in Python 3.7 → min Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"lxml": {
+"inferred_version_range": ">=4.5.0,<4.6.0",
+"recommended_requirements_line": "lxml>=4.5.0,<4.6.0",
+"evidence": ["lxml.etree added in lxml v4.5.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"dateutil": {
+"inferred_version_range": ">=0.6,<0.7",
+"recommended_requirements_line": "dateutil>=0.6,<0.7",
+"evidence": ["dateutil.parser added in dateutil v0.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.DataFrame added in pandas v1.2.0", "pandas.DataFrame.to_numpy added in pandas v1.2.0", "pandas.DataFrame.ix added in pandas v1.2.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["numpy.array added in numpy v1.6", "numpy.linalg.norm added in numpy v1.6"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+"dateutil>=0.6,<0.7",
+"numpy>=1.6.0,<1.7.0"
+]
+},
+"notes": ""
+}

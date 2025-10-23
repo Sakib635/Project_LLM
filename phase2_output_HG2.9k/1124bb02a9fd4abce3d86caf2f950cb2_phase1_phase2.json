@@ -1,0 +1,25 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "4.0",
+"evidence": ["subprocess.Popen added in Python 3.6 → min Python 3.6", "time.time added in Python 3.6 → max Python 4.0"],
+"notes": ""
+},
+"dependencies": {
+"tensorflow": {
+"inferred_version_range": ">=1.15,<2.0",
+"recommended_requirements_line": "tensorflow>=1.15,<2.0",
+"evidence": ["tensorflow.flags introduced in v1.15", "tensorflow.get_variable introduced in v1.15", "tensorflow.initialize_all_variables introduced in v1.15", "tensorflow.int32 introduced in v1.15", "tensorflow.OptimizerOptions introduced in v1.15", "tensorflow.train.ClusterSpec introduced in v1.15", "tensorflow.ConfigProto introduced in v1.15", "tensorflow.log_device_placement introduced in v1.15", "tensorflow.allow_soft_placement introduced in v1.15"],
+"confidence": 0.9,
+"notes": ""
+},
+"tf": {
+"inferred_version_range": ">=1.15,<2.0",
+"recommended_requirements_line": "tensorflow>=1.15,<2.0",
+"evidence": ["tf.flags introduced in v1.15", "tf.get_variable introduced in v1.15", "tf.initialize_all_variables introduced in v1.15", "tf.int32 introduced in v1.15", "tf.OptimizerOptions introduced in v1.15", "tf.train.ClusterSpec introduced in v1.15", "tf.ConfigProto introduced in v1.15", "tf.log_device_placement introduced in v1.15", "tf.allow_soft_placement introduced in v1.15"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [tensorflow>=1.15,<2.0]
+}

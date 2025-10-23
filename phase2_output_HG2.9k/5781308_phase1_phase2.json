@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "gzip.GzipFile added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "uuid": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "uuid>=1.2.0,<2.0.0",
+      "evidence": [
+        "uuid4 introduced in v1.3 \u2192 min Python 3.5",
+        "uuid4 removed in v2.0 \u2192 max Python null"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=0.4,<0.10",
+      "recommended_requirements_line": "urllib2>=0.4,<0.10",
+      "evidence": [
+        "Request introduced in v0.4 \u2192 min Python 3.5",
+        "urlopen removed in v0.9 \u2192 max Python null"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    },
+    "gdal": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "gdal>=2.0,<3.0",
+      "evidence": [
+        "FileFromMemBuffer introduced in v2.0 \u2192 min Python 3.5",
+        "Open removed in v3.0 \u2192 max Python null"
+      ],
+      "confidence": 0.875,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "uuid>=1.2.0,<2.0.0",
+    "urllib2>=0.4,<0.10",
+    "gdal>=2.0,<3.0"
+  ]
+}

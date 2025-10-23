@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Cocoa": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NSEvent added in Cocoa y \u2192 min Cocoa y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NSApp added in Foundation y \u2192 min Foundation y",
+        "main() added in Foundation y \u2192 min Foundation y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PyObjCTools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AppHelper added in PyObjCTools y \u2192 min PyObjCTools y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Cocoa>=y",
+    "Foundation>=y",
+    "PyObjCTools>=y"
+  ]
+}

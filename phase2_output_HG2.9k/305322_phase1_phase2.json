@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "googleapis": {
+      "inferred_version_range": ">=0.14.0,<1.0.0",
+      "recommended_requirements_line": "googleapis>=0.14.0,<1.0.0",
+      "evidence": [
+        "apis added in version 0.14.0",
+        "apis removed or changed in version 1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "google-auth": {
+      "inferred_version_range": ">=1.6.3,<2.0.0",
+      "recommended_requirements_line": "google-auth>=1.6.3,<2.0.0",
+      "evidence": [
+        "exceptions added in version 1.6.3",
+        "transport.requests added in version 1.6.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "googleapis>=0.14.0,<1.0.0",
+    "google-auth>=1.6.3,<2.0.0"
+  ]
+}

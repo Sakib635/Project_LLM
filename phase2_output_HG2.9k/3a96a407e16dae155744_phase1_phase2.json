@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xcb": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "xcb>=1.2.0,<2.0.0",
+      "evidence": [
+        "xcb.connect introduced in Python 3.6",
+        "xcb.core.QueryTree introduced in Python 3.6",
+        "xcb.core.GetWindowAttributes introduced in Python 3.6",
+        "xcb.core.GetGeometry introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "xcb.xproto": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "xcb.xproto>=1.2.0,<2.0.0",
+      "evidence": [
+        "xcb.xproto.XCB_MAP_STATE_VIEWABLE introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.6,<4.0",
+    "xcb>=1.2.0,<2.0.0",
+    "PIL>=3.6,<4.0",
+    "xcb.xproto>=1.2.0,<2.0.0"
+  ]
+}

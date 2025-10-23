@@ -1,0 +1,4 @@
+(declare-fun pygame () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= pygame "2.0.1") (= pygame "2.0.1.dev1"))))
+(check-sat)

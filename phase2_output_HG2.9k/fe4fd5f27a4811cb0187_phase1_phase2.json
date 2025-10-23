@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": ">=1.2,<3.0",
+      "recommended_requirements_line": "re==1.2.*",
+      "evidence": [
+        "re.compile introduced in re 1.2 \u2192 min Python y"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "execjs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "execjs.compile removed in Python x\u2192 max Python z"
+      ],
+      "confidence": 0.5,
+      "notes": "No API usage evidence found for execjs"
+    },
+    "katex": {
+      "inferred_version_range": ">=0.12,<0.13",
+      "recommended_requirements_line": "katex==0.12.*",
+      "evidence": [
+        "katex.call introduced in katex 0.12 \u2192 min Python y",
+        "katex.renderToString introduced in katex 0.12 \u2192 min Python y"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re==1.2.*",
+    "katex==0.12.*"
+  ]
+}

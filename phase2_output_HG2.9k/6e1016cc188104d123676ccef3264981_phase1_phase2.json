@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "keras.utils.conv_utils added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.0.0,<3.0.0",
+      "evidence": [
+        "keras.utils.conv_utils introduced in keras v2.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.7.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy v1.7.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keras.backend": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "keras.backend.K introduced in keras v2.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: keras.backend.K removed in keras v2.3.0"
+    },
+    "keras.engine.topology": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "keras.engine.topology.Layer introduced in keras v2.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: keras.engine.topology.Layer removed in keras v2.3.0"
+    }
+  },
+  "requirements.txt": [
+    "keras>=2.0.0,<3.0.0",
+    "numpy>=1.7.0,<2.0.0"
+  ]
+}

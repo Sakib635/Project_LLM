@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.core.exceptions.MiddlewareNotUsed introduced in Django 3.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "cProfile": {
+      "inferred_version_range": ">=2.4.0,<2.7",
+      "recommended_requirements_line": "cProfile>=2.4.0,<2.7",
+      "evidence": [
+        "cProfile.Profile introduced in Python 2.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pstats": {
+      "inferred_version_range": ">=2.5.0,<3.0",
+      "recommended_requirements_line": "pstats>=2.5.0,<3.0",
+      "evidence": [
+        "pstats.Stats introduced in Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "marshal": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "marshal.dumps introduced in Python 3.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cStringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cStringIO.StringIO introduced in Python 3.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=3.1",
+    "cProfile>=2.4.0,<2.7",
+    "pstats>=2.5.0,<3.0",
+    "marshal>=3.4",
+    "cStringIO>=3.2"
+  ]
+}

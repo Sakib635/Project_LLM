@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"tank": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "tank>=1.0.0,<2.0.0",
+"evidence": ["tank.tank_from_path introduced in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"maya": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "maya>=1.0.0,<2.0.0",
+"evidence": ["cmds.file introduced in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"tk-maya": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No API calls found for tk-maya package."
+}
+},
+"requirements.txt": ["tank>=1.0.0,<2.0.0", "maya>=1.0.0,<2.0.0"]
+}
+}

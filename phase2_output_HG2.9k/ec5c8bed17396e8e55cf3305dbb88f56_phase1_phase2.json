@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.sleep added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"requests": {
+"inferred_version_range": ">=2.0.0,<3.0.0",
+"recommended_requirements_line": "requests>=2.0.0,<3.0.0",
+"evidence": ["requests.get added in version 2.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"selenium": {
+"inferred_version_range": ">=3.141.0,<4.0.0",
+"recommended_requirements_line": "selenium>=3.141.0,<4.0.0",
+"evidence": ["webdriver.Firefox added in version 3.141.0", "driver.execute_script added in version 3.141.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"PIL": {
+"inferred_version_range": ">=5.0.0,<6.0.0",
+"recommended_requirements_line": "Pillow>=5.0.0,<6.0.0",
+"evidence": ["Image added in version 5.0.0", "Image.open added in version 5.0.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["requests>=2.0.0,<3.0.0", "selenium>=3.141.0,<4.0.0", "Pillow>=5.0.0,<6.0.0"]
+},
+"notes": ""
+}

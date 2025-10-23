@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "math": {
+      "inferred_version_range": ">=3.6,<4.0",
+      "recommended_requirements_line": "math>=3.6,<4.0",
+      "evidence": [
+        "math.log introduced in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "theano": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Theano version 1.0.3 introduced the tensor type API (theano.tensor.TensorType), which is not supported in Python 3.10."
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to lack of evidence for specific versions."
+    },
+    "lasagne": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Lasagne version 0.2 introduced the initialization scheme API (lasagne.init.InitializationScheme), which is not supported in Python 3.10."
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to lack of evidence for specific versions."
+    }
+  },
+  "requirements.txt": [
+    "math>=3.6,<4.0",
+    "theano>=1.0.3,<2.0.0",
+    "lasagne>=0.2,<2.0.0"
+  ]
+}

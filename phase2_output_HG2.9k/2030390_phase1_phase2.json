@@ -1,0 +1,44 @@
+Here is the final JSON object for the given extracted APIs:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "MySQLdb": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "MySQL-python>=1.2.0,<2.0.0",
+      "evidence": ["MySQLdb.connect API introduced in v1.2.0", "MySQLdb.cursor API deprecated in v1.2.0"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "DB_CONFIG": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["DB_CONFIG['host'] API introduced in v1.2.0", "DB_CONFIG['name'] API introduced in v1.2.0", "DB_CONFIG['pass'] API introduced in v1.2.0", "DB_CONFIG['user'] API introduced in v1.2.0"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "getConn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["MySQLdb.connect API introduced in v1.2.0", "conn.set_character_set API deprecated in v1.2.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "setup_cursor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["dbc.execute API introduced in v1.2.0", "dbc.execute API deprecated in v1.2.0"],
+      "confidence": 0.4,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "MySQL-python>=1.2.0,<2.0.0"
+  ]
+}
+```

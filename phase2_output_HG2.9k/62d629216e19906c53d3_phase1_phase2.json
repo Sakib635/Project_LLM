@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "fiona": {
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "fiona>=1.8.0,<2.0.0",
+      "evidence": [
+        "fiona.open introduced in fiona 1.8.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "click": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "click.command added in click 6.5 \u2192 min Python 3.5",
+        "click.argument and click.option introduced in click 7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "rasterio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "rasterio.features.rasterize introduced in rasterio 1.0.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "fiona>=1.8.0,<2.0.0",
+    "click>=6.5,<7.0"
+  ]
+}

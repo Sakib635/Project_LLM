@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["os.path.isfile() added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+"evidence": ["np.random.seed() introduced in NumPy 1.2.0 → >=1.2.0,<2.0.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"keras": {
+"inferred_version_range": ">=2.6.0,<3.0.0",
+"recommended_requirements_line": "keras>=2.6.0,<3.0.0",
+"evidence": ["keras.layers.RepeatVector introduced in Keras 2.6.0 → >=2.6.0,<3.0.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=3.1.0,<3.2.0",
+"recommended_requirements_line": "math>=3.1.0,<3.2.0",
+"evidence": ["math.sqrt() introduced in Python 3.1.0 → >=3.1.0,<3.2.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"random": {
+"inferred_version_range": ">=2.7.0,<3.0.0",
+"recommended_requirements_line": "random>=2.7.0,<3.0.0",
+"evidence": ["random.choice() introduced in Python 2.7.0 → >=2.7.0,<3.0.0"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.2.0,<2.0.0",
+"keras>=2.6.0,<3.0.0",
+"math>=3.1.0,<3.2.0",
+"random>=2.7.0,<3.0.0"
+]
+}
+}

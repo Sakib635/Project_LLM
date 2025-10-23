@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "torch.Tensor added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "torch.autograd added in torch v0.1 \u2192 min torch v0.1",
+        "torch.nn added in torch v0.4 \u2192 min torch v0.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "torch.autograd": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Variable added in torch.autograd v0.1 \u2192 min torch.autograd v0.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "torch.nn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Bottleneck added in torch.nn v0.2 \u2192 min torch.nn v0.2",
+        "ResNeXt added in torch.nn v0.3 \u2192 min torch.nn v0.3"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=0.1.0"
+  ]
+}

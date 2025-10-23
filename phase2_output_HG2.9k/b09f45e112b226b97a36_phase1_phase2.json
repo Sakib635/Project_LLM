@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": "The sys package is part of the standard library and its APIs have been present since the beginning of Python."
+    },
+    "markdown": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "markdown.markdown added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": "The markdown package is part of the standard library and its APIs have been present since the beginning of Python."
+    },
+    "yaml": {
+      "inferred_version_range": ">=3.10,<4.0",
+      "recommended_requirements_line": "pyyaml>=3.10,<4.0",
+      "evidence": [
+        "yaml.safe_load added in Python 3.10 \u2192 min Python 3.10"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.getcwd added in Python 2.6 \u2192 min Python 2.6",
+        "os.path.join added in Python 3.1 \u2192 min Python 3.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "jinja2": {
+      "inferred_version_range": ">=2.10,<4.0",
+      "recommended_requirements_line": "Jinja2>=2.10,<4.0",
+      "evidence": [
+        "jinja2.Environment added in Python 3.6 \u2192 min Python 3.6",
+        "jinja2.FileSystemLoader added in Python 3.7 \u2192 min Python 3.7",
+        "jinja2.Template.render added in Python 3.8 \u2192 min Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyyaml>=3.10,<4.0",
+    "Jinja2>=2.10,<4.0"
+  ]
+}

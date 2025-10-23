@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.7\u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.db.connections introduced in Django 1.0 \u2192 min Django 1.0",
+        "django.db.models.query.QuerySet introduced in Django 1.4 \u2192 min Django 1.4",
+        "django.db.models.query.QuerySet.count introduced in Django 1.5 \u2192 min Django 1.5"
+      ],
+      "confidence": null,
+      "notes": ""
+    },
+    "python": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "python>=3.6.0,<4.0.0",
+      "evidence": [
+        "builtins.len introduced in Python 3.5 \u2192 min Python 3.5",
+        "collections.abc.Sequence introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": null,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "python>=3.6.0,<4.0.0"
+  ]
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "snippet.py", line 10, in <module>
+    import inkex
+  File "/usr/local/lib/python2.7/site-packages/inkex/__init__.py", line 11, in <module>
+    from .extensions import *
+  File "/usr/local/lib/python2.7/site-packages/inkex/extensions.py", line 31, in <module>
+    from .utils import errormsg, Boolean, CloningVat, PY3
+  File "/usr/local/lib/python2.7/site-packages/inkex/utils.py", line 310
+    return eval(f'lambda {variable}: ' + (function.strip('"') or 't'), EVAL_GLOBALS, {})
+                                     ^
+SyntaxError: invalid syntax

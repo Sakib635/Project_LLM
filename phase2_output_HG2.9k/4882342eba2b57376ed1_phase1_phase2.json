@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lasagne": {
+      "inferred_version_range": ">=0.2.1,<0.3.0",
+      "recommended_requirements_line": "lasagne>=0.2.1,<0.3.0",
+      "evidence": [
+        "Lasagne 0.2.1 introduced",
+        "Lasagne 0.2.2 deprecated"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "nolearn.lasagne": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "nolearn.lasagne deprecated in v1.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.13.3,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.13.3,<2.0.0",
+      "evidence": [
+        "numpy.random.normal introduced in v1.13.3",
+        "numpy.float32 deprecated in v1.14.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lasagne>=0.2.1,<0.3.0",
+    "numpy>=1.13.3,<2.0.0"
+  ]
+}

@@ -1,0 +1,4 @@
+(declare-fun h5py () String)
+(declare-fun numpy () String)
+(assert (and (or (= numpy "1.16.6")) (or (= h5py "3.1.0"))))
+(check-sat)

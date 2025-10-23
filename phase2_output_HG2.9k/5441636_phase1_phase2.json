@@ -1,0 +1,58 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "socket": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "socket.socket introduced in Python 2.4",
+        "socket.connect introduced in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.pack introduced in Python 2.5",
+        "struct.unpack introduced in Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "protobuf": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "protobuf.IpcConnectionContext_pb2.IpcConnectionContextProto introduced in Python 2.6",
+        "protobuf.RpcPayloadHeader_pb2.RpcPayloadHeaderProto introduced in Python 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "org.apache.hadoop.mapred": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "org.apache.hadoop.mapred.JobSubmissionProtocol introduced in Python 2.6",
+        "org.apache.hadoop.mapred.JobSubmissionProtocol deprecated in Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "socket>=2.4,<3.0",
+    "struct>=2.5,<3.6",
+    "protobuf>=2.6,<3.7",
+    "org.apache.hadoop.mapred>=2.6,<3.8"
+  ]
+}

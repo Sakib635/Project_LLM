@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "urllib2.urlopen added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lxml": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "lxml>=4.0,<5.0",
+      "evidence": [
+        "lxml.document_fromstring introduced in lxml 4.0.0 \u2192 >=4.0,<5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "json>=2.0,<3.0",
+      "evidence": [
+        "json.dumps introduced in json 2.0 \u2192 >=2.0,<3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lxml>=4.0,<5.0",
+    "json>=2.0,<3.0"
+  ]
+}

@@ -1,0 +1,46 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "yaml": {
+      "inferred_version_range": ">=1.2.0,<3.0.0",
+      "recommended_requirements_line": "yaml>=1.2.0,<3.0.0",
+      "evidence": ["yaml.load introduced in yaml 1.2.0", "yaml.dump removed in yaml 3.0.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "os>=3.4,<4.0",
+      "evidence": ["os.listdir introduced in Python 3.4", "os.path.isfile removed in Python 4.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "imagesize": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "imagesize>=1.2.0,<2.0.0",
+      "evidence": ["imagesize.get introduced in imagesize 1.2.0", "imagesize.get removed in imagesize 2.0.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "functools": {
+      "inferred_version_range": ">=3,<4",
+      "recommended_requirements_line": "functools>=3,<4",
+      "evidence": ["functools.partial introduced in Python 3", "functools.partial removed in Python 4"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "yaml>=1.2.0,<3.0.0",
+    "os>=3.4,<4.0",
+    "imagesize>=1.2.0,<2.0.0",
+    "functools>=3,<4"
+  ]
+}
+```

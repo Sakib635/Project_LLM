@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gimpfu": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "gimpfu>=1.2.0,<2.0.0",
+      "evidence": [
+        "gimpfu.register added in gimpfu 1.2.0 \u2192 inferred min Python y",
+        "gimpfu.main added in gimpfu 1.2.0 \u2192 inferred min Python y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "IPython": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "IPython>=0,<1",
+      "evidence": [
+        "IPython.embed added in IPython 0.13.2 \u2192 inferred max Python x"
+      ],
+      "confidence": 0.5,
+      "notes": "Could not determine a reliable upper or lower bound for this package."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.16.0,<2.0.0",
+      "evidence": [
+        "numpy.array added in numpy 1.16.0 \u2192 inferred min Python y",
+        "numpy.linalg.norm added in numpy 1.16.0 \u2192 inferred min Python y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gimpfu>=1.2.0,<2.0.0",
+    "IPython>=0,<1",
+    "numpy>=1.16.0,<2.0.0"
+  ]
+}

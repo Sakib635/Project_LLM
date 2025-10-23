@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "c4d": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine version range for c4d package."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array added in NumPy 1.20 \u2192 min numpy 1.20",
+        "numpy.linalg.norm added in NumPy 1.20 \u2192 min numpy 1.20"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "pandas>=1.2,<2",
+      "evidence": [
+        "pandas.DataFrame added in pandas 1.2 \u2192 min pandas 1.2",
+        "pandas.DataFrame.to_numpy added in pandas 1.2 \u2192 min pandas 1.2",
+        "pandas.DataFrame.ix added in pandas 1.2 \u2192 min pandas 1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "pandas>=1.2,<2"
+  ]
+}

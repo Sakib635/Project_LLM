@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.environ",
+        "os.access"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv",
+        "sys.platform",
+        "sys.exit",
+        "sys.getsizeof"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "vlc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "vlc>=1.2.0,<2.0.0",
+      "evidence": [
+        "vlc.Instance",
+        "vlc.MediaPlayer",
+        "vlc.State",
+        "vlc.EventType",
+        "vlc.media_new",
+        "vlc.media_player_new",
+        "vlc.event_attach",
+        "vlc.set_xwindow",
+        "vlc.set_hwnd",
+        "vlc.set_agl"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pygame": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pygame>=1.2.0,<2.0.0",
+      "evidence": [
+        "pygame.init",
+        "pygame.display.set_mode",
+        "pygame.display.get_wm_info",
+        "pygame.mixer.quit",
+        "pygame.event.get",
+        "pygame.QUIT",
+        "pygame.KEYDOWN",
+        "pygame.MOUSEBUTTONDOWN"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

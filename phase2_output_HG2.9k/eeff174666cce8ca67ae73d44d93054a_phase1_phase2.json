@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "tensorflow.reset_default_graph added in Python 3.5 \u2192 min Python 3.5",
+      "pandas.read_csv deprecated in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.0.0,<2.0.0",
+      "evidence": [
+        "tensorflow.nn.bidirectional_dynamic_rnn added in v1.0.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.23.0,<0.24.0",
+      "recommended_requirements_line": "pandas>=0.23.0,<0.24.0",
+      "evidence": [
+        "pandas.DataFrame added in v0.23.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16.4,<1.17.0",
+      "recommended_requirements_line": "numpy>=1.16.4,<1.17.0",
+      "evidence": [
+        "numpy.random_uniform added in v1.16.4 \u2192 inferred_version_range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.0.0,<2.0.0",
+    "pandas>=0.23.0,<0.24.0",
+    "numpy>=1.16.4,<1.17.0"
+  ]
+}

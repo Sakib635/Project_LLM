@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "getopt": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "getopt>=1.0.0,<2.0.0",
+      "evidence": [
+        "getopt.getopt introduced in getopt 1.0.0 \u2192 inference",
+        "getopt.GetoptError introduced in getopt 1.0.0 \u2192 inference"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.train.get_checkpoint_state introduced in tensorflow 1.0.0 \u2192 inference",
+        "tensorflow.contrib.framework.list_variables introduced in tensorflow 1.0.0 \u2192 inference",
+        "tensorflow.contrib.framework.load_variable introduced in tensorflow 1.0.0 \u2192 inference",
+        "Variable introduced in tensorflow 1.0.0 \u2192 inference"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

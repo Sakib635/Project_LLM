@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyspark": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "pyspark>=2.4.0,<3.0.0",
+      "evidence": [
+        "pyspark.SparkContext introduced in v2.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "os-path>=3.5.0,<4.0.0",
+      "evidence": [
+        "abspath introduced in v3.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "logging>=3.2.0,<4.0.0",
+      "evidence": [
+        "logging.getLogger introduced in v3.2.0",
+        "logging.StreamHandler introduced in v3.2.0",
+        "logging.Formatter introduced in v3.2.0",
+        "logging.setLevel introduced in v3.2.0",
+        "logging.addHandler introduced in v3.2.0",
+        "logging.info introduced in v3.2.0",
+        "logging.debug introduced in v3.2.0",
+        "logging.error introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyspark>=2.4.0,<3.0.0",
+    "os-path>=3.5.0,<4.0.0",
+    "logging>=3.2.0,<4.0.0"
+  ]
+}

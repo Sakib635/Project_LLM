@@ -1,0 +1,100 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "boto3": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "boto3>=1.4.0,<2.0.0",
+      "evidence": [
+        "boto3.Session added in v1.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "botocore": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "botocore>=1.5.0,<2.0.0",
+      "evidence": [
+        "botocore.config.Config added in v1.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.loads added in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.ceil added in v3.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.stat added in v3.4.0",
+        "os.environ added in v3.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit added in v3.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ast": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ast.literal_eval added in v3.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argparse.ArgumentParser added in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "t": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "t.gmtime added in v3.4.0",
+        "t.mktime added in v3.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "boto3>=1.4.0,<2.0.0",
+    "botocore>=1.5.0,<2.0.0"
+  ]
+}

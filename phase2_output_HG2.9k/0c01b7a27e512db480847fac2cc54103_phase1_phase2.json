@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "CoreText API added in Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc_util": {
+      "inferred_version_range": ">=0.3.0",
+      "recommended_requirements_line": "objc-util>=0.3.0",
+      "evidence": [
+        "objc_util.ObjCInstance added in objc-util 0.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "ctypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ctypes.CFUNCTYPE added in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "CoreFoundation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "CFURLCreateWithString added in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "CoreText": {
+      "inferred_version_range": ">=2.0",
+      "recommended_requirements_line": "coretext>=2.0",
+      "evidence": [
+        "CTFontManagerRegisterFontsForURL added in CoreText 2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc-util>=0.3.0",
+    "coretext>=2.0"
+  ]
+}

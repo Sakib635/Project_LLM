@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["django.contrib.gis.measure.D added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.DataFrame introduced in v1.2.0, pandas.DataFrame.to_numpy deprecated in v1.3.0, pandas.DataFrame.ix removed in v2.0.0"],
+"confidence": 0.67,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.18.5,<2.0.0",
+"recommended_requirements_line": "numpy>=1.18.5,<2.0.0",
+"evidence": ["numpy.array introduced in v1.18.5, numpy.linalg.norm introduced in v1.19.3"],
+"confidence": 0.75,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+"numpy>=1.18.5,<2.0.0"
+]
+}
+}

@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "os.path added in Python 3.5 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=0.7.3,<1.0",
+      "recommended_requirements_line": "Crypto>=0.7.3,<1.0",
+      "evidence": [
+        "Crypto.PublicKey introduced in version 0.7.3",
+        "Crypto.Cipher introduced in version 0.7.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gmpy2": {
+      "inferred_version_range": ">=2.0.8",
+      "recommended_requirements_line": "gmpy2>=2.0.8",
+      "evidence": [
+        "gmpy2.mul introduced in version 2.0.8",
+        "gmpy2.invert introduced in version 2.0.8",
+        "gmpy2.is_odd introduced in version 2.0.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "RSA": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "RSA>=3.5",
+      "evidence": [
+        "RSA.construct introduced in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Crypto>=0.7.3,<1.0",
+    "gmpy2>=2.0.8",
+    "RSA>=3.5"
+  ]
+}

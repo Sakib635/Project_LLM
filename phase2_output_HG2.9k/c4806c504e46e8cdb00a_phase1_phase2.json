@@ -1,0 +1,83 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.environ introduced in Python 3.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "base64.b64decode introduced in Python 3.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.loads introduced in Python 2.6",
+        "json.dumps introduced in Python 3.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Crypto.Cipher": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher.AES introduced in Python 3.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "phpserialize": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "phpserialize.loads introduced in Python 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "decrypt": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "mcrypt_decrypt introduced in Python 3.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "unserialize": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "unserialize introduced in Python 3.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.4",
+    "base64>=3.0",
+    "json>=2.6,<3.0",
+    "Crypto.Cipher>=3.4",
+    "phpserialize>=3.6",
+    "mcrypt_decrypt>=3.4",
+    "unserialize>=3.0"
+  ]
+}

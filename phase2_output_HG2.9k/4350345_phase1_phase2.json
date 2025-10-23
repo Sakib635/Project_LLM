@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "pymongo>=3.7,<4.0",
+      "evidence": [
+        "pymongo.Connection and pymongo.ObjectId introduced in v3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "bson": {
+      "inferred_version_range": ">=3.4",
+      "recommended_requirements_line": "bson>=3.4",
+      "evidence": [
+        "bson.ObjectId introduced in v3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyspark": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pyspark.sql.DataFrame introduced in v2.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "imap introduced in v2.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.7,<4.0",
+    "bson>=3.4"
+  ]
+}

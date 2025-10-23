@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "snippet.py", line 18, in <module>
+    from txpostgres import txpostgres
+  File "/usr/local/lib/python2.7/site-packages/txpostgres/txpostgres.py", line 52, in <module>
+    from txpostgres.psycopg2_impl import psycopg2
+  File "/usr/local/lib/python2.7/site-packages/txpostgres/psycopg2_impl.py", line 45, in <module>
+    psycopg2 = _try_psycopg2_impl()
+  File "/usr/local/lib/python2.7/site-packages/txpostgres/psycopg2_impl.py", line 42, in _try_psycopg2_impl
+    raise ImportError('no module named psycopg2, psycopg2cffi or psycopg2ct')
+ImportError: no module named psycopg2, psycopg2cffi or psycopg2ct

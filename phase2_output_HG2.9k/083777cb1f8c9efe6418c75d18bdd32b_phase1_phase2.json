@@ -1,0 +1,45 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["evdev.InputDevice added in Python 3.4 → min Python 3.4", "ev3dev.LargeMotor introduced, depricated, removed or changed in v0.2.1 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"evdev": {
+"inferred_version_range": ">=1.4.0,<2.0.0",
+"recommended_requirements_line": "evdev>=1.4.0,<2.0.0",
+"evidence": ["evdev.InputDevice introduced in evdev 1.4.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"ev3dev.auto": {
+"inferred_version_range": ">=0.2.0,<0.3.0",
+"recommended_requirements_line": "ev3dev.auto>=0.2.0,<0.3.0",
+"evidence": ["ev3dev.LargeMotor introduced in ev3dev 0.2.0", "ev3dev.OUTPUT_C introduced in ev3dev 0.2.0", "ev3dev.OUTPUT_B introduced in ev3dev 0.2.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"threading": {
+"inferred_version_range": ">=3.4,<3.9",
+"recommended_requirements_line": "threading>=3.4,<3.9",
+"evidence": ["threading.Thread introduced in threading 3.4"],
+"confidence": 1.0,
+"notes": ""
+},
+"time": {
+"inferred_version_range": ">=3.7,<3.10",
+"recommended_requirements_line": "time>=3.7,<3.10",
+"evidence": ["time.sleep introduced in time 3.7"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"evdev>=1.4.0,<2.0.0",
+"ev3dev.auto>=0.2.0,<0.3.0",
+"threading>=3.4,<3.9",
+"time>=3.7,<3.10"
+]
+}
+}

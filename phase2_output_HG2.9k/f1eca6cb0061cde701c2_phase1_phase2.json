@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "keras.layers.core.Dropout was removed in Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "keras.models.Sequential was introduced in Keras 2.3.0",
+        "keras.layers.core.TimeDistributedDense was introduced in Keras 2.3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array was introduced in NumPy 1.9",
+        "numpy.linalg.norm was introduced in NumPy 1.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": null
+}

@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "null",
+    "evidence": [
+      "struct.unpack added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "binaryninja": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "binaryninja>=2.0.0,<3.0.0",
+      "evidence": [
+        "binaryninja.InstructionTextTokenType introduced in v2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": "null",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.unpack added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "binaryninja>=2.0.0,<3.0.0",
+    "struct>=3.7.0,<4.0.0"
+  ]
+}

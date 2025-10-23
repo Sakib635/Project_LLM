@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "4.0",
+    "evidence": [
+      "time.clock removed in Python 3.8 \u2192 max Python 4.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: os.system, os.system.returncode"
+    },
+    "commands": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "commands.getoutput added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: commands.getoutput, commands.getstatusoutput"
+    },
+    "gtk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gtk.MessageDialog added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: gtk.MessageDialog, gtk.CheckButton, gtk.RadioButton, gtk.RESPONSE_OK"
+    },
+    "string": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "string>=3.6.0,<4.0.0",
+      "evidence": [
+        "string.Template added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.7,<4.0",
+    "commands>=3.7,<4.0",
+    "gtk>=3.7,<4.0",
+    "string>=3.6,<4.0"
+  ]
+}

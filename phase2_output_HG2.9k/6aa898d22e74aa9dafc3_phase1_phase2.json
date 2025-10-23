@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "moviepy": {
+      "inferred_version_range": ">=0.2.0,<1.0.0",
+      "recommended_requirements_line": "moviepy>=0.2.0,<1.0.0",
+      "evidence": [
+        "MoviePy introduced, depricated, removed or changed in v0.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.4.0,<2.0.0",
+      "evidence": [
+        "convolve introduced in v1.4.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.21.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.21.0,<2.0.0",
+      "evidence": [
+        "np.array introduced in v1.21.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "moviepy>=0.2.0,<1.0.0",
+    "scipy>=1.4.0,<2.0.0",
+    "numpy>=1.21.0,<2.0.0"
+  ]
+}

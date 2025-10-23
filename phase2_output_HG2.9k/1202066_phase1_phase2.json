@@ -1,0 +1,27 @@
+```
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["redis.Redis added in Python 3.5 → min Python 3.5", "web.session.Session and web.session.Store added in Python 3.6 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "redis": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "web": {
+      "inferred_version_range": ">=3.6,<3.8",
+      "recommended_requirements_line": "web[session]>=3.6,<3.7",
+      "evidence": ["Session and Store introduced in Python 3.6 → min Python 3.6", "Session and Store removed in Python 3.8 → max Python 3.7"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["redis>=3.5,<3.6", "web[session]>=3.6,<3.7"]
+}
+```

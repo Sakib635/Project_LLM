@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "tornado.httpclient.HTTPClient added in Python 3.6 \u2192 min Python 3.6",
+      "concurrent.futures.ThreadPoolExecutor removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tornado.httpclient.HTTPClient introduced in v5.0.2",
+        "tornado.gen.coroutine introduced in v6.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "concurrent": {
+      "inferred_version_range": ">=3.4.0,<3.9.0",
+      "recommended_requirements_line": "concurrent.futures>=3.4.0,<3.9.0",
+      "evidence": [
+        "concurrent.futures.ThreadPoolExecutor introduced in v3.4.0",
+        "concurrent.futures.ThreadPoolExecutor deprecated in v3.9.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.time introduced in v2.3 \u2192 min Python 2.3",
+        "time.clock removed in v3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.getpid introduced in v2.5 \u2192 min Python 2.5",
+        "os.getpid deprecated in v3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit introduced in v2.4 \u2192 min Python 2.4",
+        "sys.exit deprecated in v3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado>=5.0.2",
+    "concurrent.futures>=3.4.0",
+    "time>=2.3,<3.9",
+    "os>=2.5,<3.9",
+    "sys>=2.4,<3.9"
+  ]
+}

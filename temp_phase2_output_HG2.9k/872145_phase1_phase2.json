@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.conf.settings",
+        "django.db.models.Model",
+        "django.db.models.Manager"
+      ],
+      "confidence": 0.33,
+      "notes": ""
+    },
+    "cacheops": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "cacheops>=1.0.0,<2.0.0",
+      "evidence": [
+        "cacheops.query.QuerySetMixin._no_monkey",
+        "cacheops.query.QuerySetMixin.__init__",
+        "cacheops.query.QuerySetMixin._clone",
+        "cacheops.query.QuerySetMixin.inplace"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "inspect": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "inspect.getmembers",
+        "inspect.ismethod"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

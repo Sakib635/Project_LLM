@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "sys.argv introduced in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "getopt": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "getopt>=1.0,<2.0",
+      "evidence": [
+        "getopt.getopt introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "WebSocket": {
+      "inferred_version_range": ">=1.1,<2.0",
+      "recommended_requirements_line": "websocket-client>=1.1,<2.0",
+      "evidence": [
+        "websocket.create_connection introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "multiprocessing>=1.0,<2.0",
+      "evidence": [
+        "multiprocessing.Process introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "getopt>=1.0,<2.0",
+    "websocket-client>=1.1,<2.0",
+    "multiprocessing>=1.0,<2.0"
+  ]
+}

@@ -1,0 +1,51 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn.datasets": {
+      "inferred_version_range": ">=0.23.1,<0.24.0",
+      "recommended_requirements_line": null,
+      "evidence": ["load_digits introduced in sklearn.datasets v0.23.1"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sklearn.svm": {
+      "inferred_version_range": ">=0.24.1,<0.25.0",
+      "recommended_requirements_line": null,
+      "evidence": ["SVC introduced in sklearn.svm v0.24.1"],
+      "confidence": 0.90,
+      "notes": ""
+    },
+    "sklearn.utils": {
+      "inferred_version_range": ">=0.23.1,<0.24.0",
+      "recommended_requirements_line": null,
+      "evidence": ["shuffle introduced in sklearn.utils v0.23.1"],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": ">=0.24.1,<0.25.0",
+      "recommended_requirements_line": null,
+      "evidence": ["zero_one_score introduced in sklearn.metrics v0.24.1"],
+      "confidence": 0.90,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable upper or lower bound for numpy."
+    }
+  },
+  "requirements.txt": [
+    "sklearn>=0.23.1,<0.25.0",
+    "scipy>=1.4.1,<2.0.0"
+  ]
+}
+```

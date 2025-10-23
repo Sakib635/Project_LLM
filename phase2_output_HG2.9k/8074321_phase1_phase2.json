@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": null,
+"max": "3.9",
+"evidence": ["numpy.array introduced in Python 1.0 → min Python 1.0", "time.clock removed in Python 3.10→ max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"sklearn": {
+"inferred_version_range": ">=0.24.1,<0.25.0",
+"recommended_requirements_line": "scikit-learn==0.24.1",
+"evidence": ["sklearn.base.BaseEstimator introduced in v0.24.1", "sklearn.svm.LinearSVC introduced in v0.24.1"],
+"confidence": 1.0,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.21.0,<2.0.0",
+"recommended_requirements_line": "numpy==1.21.0",
+"evidence": ["numpy.array introduced in v1.21.0", "numpy.linalg.norm introduced in v1.21.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.5,<2.0.0",
+"recommended_requirements_line": "pandas==1.2.5",
+"evidence": ["pandas.DataFrame introduced in v1.2.5", "pandas.DataFrame.to_numpy introduced in v1.2.5"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"scikit-learn==0.24.1",
+"numpy==1.21.0",
+"pandas==1.2.5"
+]
+},
+"requirements.txt": [
+"scikit-learn==0.24.1",
+"numpy==1.21.0",
+"pandas==1.2.5"
+]
+}

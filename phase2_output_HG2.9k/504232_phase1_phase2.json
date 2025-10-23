@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "re>=2019.7.30",
+      "evidence": [
+        "re.compile added in re 2019.7.30"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "jinja2": {
+      "inferred_version_range": ">=2.10.1",
+      "recommended_requirements_line": "jinja2>=2.10.1",
+      "evidence": [
+        "Markup introduced in jinja2 2.10.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "SOMEOTHERLIBRARYFOROTHERSTUFF": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "SOMEOTHERLIBRARYFOROTHERSTUFF>=1.2.0,<2.0.0",
+      "evidence": [
+        "format_user_input introduced in SOMEOTHERLIBRARYFOROTHERSTUFF 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "classlet": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "classlet>=1.0.0",
+      "evidence": [
+        "models.auth_token_re introduced in classlet 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re>=2019.7.30",
+    "jinja2>=2.10.1",
+    "SOMEOTHERLIBRARYFOROTHERSTUFF>=1.2.0,<2.0.0",
+    "classlet>=1.0.0"
+  ]
+}

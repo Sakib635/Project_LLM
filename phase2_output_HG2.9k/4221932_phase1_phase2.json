@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.7",
+"max": "3.10",
+"evidence": ["time.clock removed in Python 3.9 → max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"pathlib": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "pathlib>=1.0,<2.0",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"sublime_plugin": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "sublime_plugin>=1.0,<2.0",
+"evidence": ["sublime_plugin.EventListener added in Python 3.4 → min Python 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"sublime": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "sublime>=1.0,<2.0",
+"evidence": ["sublime.settings added in Python 3.4 → min Python 3.4"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pathlib>=1.0,<2.0",
+"sublime_plugin>=1.0,<2.0",
+"sublime>=1.0,<2.0"
+]
+},
+"notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "boto3": [
+    "boto3.session.Session",
+    "boto3.resource('ec2')",
+    "boto3.instances.filter(InstanceIds=[sys.argv[2]]).terminate()"
+  ],
+  "os": [
+    "os.environ.get('EC2REGION')"
+  ],
+  "sys": [
+    "sys.argv[1]",
+    "sys.argv[2]"
+  ],
+  "yaml": [
+    "yaml.load(f.read())",
+    "yaml.dump(y, f, default_flow_style=False)"
+  ]
+}

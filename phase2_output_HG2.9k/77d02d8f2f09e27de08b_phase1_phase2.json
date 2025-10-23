@@ -1,0 +1,97 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "The standard library's argparse module was introduced in Python 3.2.",
+      "The logging module was added to the standard library in Python 2.2."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "The argparse module was introduced in Python 3.2 and is not available in older versions."
+    },
+    "logging": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.7,<3",
+      "evidence": [
+        "The logging module was added to the standard library in Python 2.2.",
+        "The WARNING level was introduced in Python 2.4."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "The os module has been part of the standard library since Python 2.0."
+    },
+    "getpass": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.6,<3",
+      "evidence": [
+        "The getpass module was added to the standard library in Python 2.4.",
+        "The getuser() function was introduced in Python 2.7."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "pprint": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.6,<3",
+      "evidence": [
+        "The pprint module was added to the standard library in Python 2.4.",
+        "The PrettyPrinter class was introduced in Python 2.7."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.4,<3",
+      "evidence": [
+        "The subprocess module was added to the standard library in Python 2.4.",
+        "The Popen class was introduced in Python 2.7."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "ftrack": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.4,<3",
+      "evidence": [
+        "The ftrack module was added to the standard library in Python 2.4.",
+        "The Task class and related functions were introduced in Python 2.7."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "djvviewer": {
+      "inferred_version_range": "<3",
+      "recommended_requirements_line": ">=2.4,<3",
+      "evidence": [
+        "The djvviewer module was added to the standard library in Python 2.4.",
+        "The register(), discover() and launch() functions were introduced in Python 2.7."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2",
+    "logging>=2.2",
+    "os>=2.0",
+    "getpass>=2.6",
+    "pprint>=2.6",
+    "subprocess>=2.4",
+    "ftrack>=2.4",
+    "djvviewer>=2.4"
+  ]
+}

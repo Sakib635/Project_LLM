@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "functools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "django.conf": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "settings introduced in Django 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.http": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "HttpResponseRedirect introduced in Django 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "require_ssl": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "view introduced in require_ssl 1.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<2.0.0",
+    "require_ssl>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "GPIO.setmode added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "RPi.GPIO": {
+      "inferred_version_range": ">=0.7.0,<1.0.0",
+      "recommended_requirements_line": "RPi.GPIO>=0.7.0,<1.0.0",
+      "evidence": [
+        "GPIO.setmode added in version 0.7 \u2192 v0.7",
+        "GPIO.setwarnings deprecated in version 0.8 \u2192 v0.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "RPi.GPIO>=0.7.0,<1.0.0"
+  ]
+}

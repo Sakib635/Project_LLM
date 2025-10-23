@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "2.6",
+    "max": "3.9",
+    "evidence": [
+      "numpy.array added in Python 2.6 \u2192 min Python 2.6",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pylearn2.models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pylearn2.training_algorithms": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pylearn2.termination_criteria": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pylearn2.datasets": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.14.3,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.3,<2.0.0",
+      "evidence": [
+        "numpy.array added in numpy 1.14.3 \u2192 min numpy 1.14.3",
+        "time.clock removed in numpy 1.19.5 \u2192 max numpy 1.18.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.14.3,<2.0.0",
+    "theano>=0.9,<0.11",
+    "pylearn2.models>=0.2,<0.3",
+    "pylearn2.training_algorithms>=0.2,<0.3",
+    "pylearn2.termination_criteria>=0.2,<0.3",
+    "pylearn2.datasets>=0.2,<0.3"
+  ]
+}

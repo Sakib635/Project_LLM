@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.sleep introduced in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "RPi.GPIO": {
+      "inferred_version_range": ">=0.6.0,<1.0.0",
+      "recommended_requirements_line": "RPi.GPIO>=0.6.0,<1.0.0",
+      "evidence": [
+        "RPi.GPIO.setmode introduced in v0.6.0 \u2192 min RPi.GPIO 0.6.0",
+        "RPi.GPIO.setup introduced in v0.6.0 \u2192 max RPi.GPIO 1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "bluetooth": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "bluetooth>=2.7,<3.0",
+      "evidence": [
+        "bluetooth.BluetoothSocket introduced in v2.7 \u2192 min bluetooth 2.7",
+        "bluetooth.PORT_ANY removed in v3.0 \u2192 max bluetooth 2.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "socket",
+      "evidence": [
+        "socket.accept introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "RPi.GPIO>=0.6.0,<1.0.0",
+    "bluetooth>=2.7,<3.0"
+  ]
+}

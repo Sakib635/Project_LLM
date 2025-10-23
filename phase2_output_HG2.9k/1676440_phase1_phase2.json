@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "datetime.datetime added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo.connection": {
+      "inferred_version_range": ">=3.12,<4.0",
+      "recommended_requirements_line": "pymongo>=3.12,<4.0",
+      "evidence": [
+        "Connection class introduced in pymongo 3.12 \u2192 v3.12"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tornado.httpserver": {
+      "inferred_version_range": ">=6.1,<7.0",
+      "recommended_requirements_line": "tornado>=6.1,<7.0",
+      "evidence": [
+        "HTTPServer class introduced in tornado 6.1 \u2192 v6.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tornado.ioloop": {
+      "inferred_version_range": ">=6.1,<7.0",
+      "recommended_requirements_line": "tornado>=6.1,<7.0",
+      "evidence": [
+        "IOLoop class introduced in tornado 6.1 \u2192 v6.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tornado.options": {
+      "inferred_version_range": ">=5.0,<7.0",
+      "recommended_requirements_line": "tornado>=5.0,<7.0",
+      "evidence": [
+        "define function introduced in tornado 5.0 \u2192 v5.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tornado.web": {
+      "inferred_version_range": ">=6.1,<7.0",
+      "recommended_requirements_line": "tornado>=6.1,<7.0",
+      "evidence": [
+        "Application class introduced in tornado 6.1 \u2192 v6.1"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "mongosample": {
+      "inferred_version_range": ">=3.12,<4.0",
+      "recommended_requirements_line": "pymongo>=3.12,<4.0",
+      "evidence": [
+        "comments module introduced in pymongo 3.12 \u2192 v3.12"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.12,<4.0",
+    "tornado>=6.1,<7.0",
+    "mongosample>=3.12,<4.0"
+  ]
+}

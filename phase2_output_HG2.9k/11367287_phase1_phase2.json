@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "PIL>=1.2.0,<2.0.0",
+      "evidence": [
+        "PIL.Image added in v1.2.0 \u2192 min PIL 1.2.0",
+        "PIL.ImageStat removed in v2.0.0 \u2192 max PIL 1.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "camera": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "camera.Camera added in v3.0.0 \u2192 min Python 3.0",
+        "camera.ImageFilter added in v3.2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PIL>=1.2.0,<2.0.0",
+    "camera>=3.0.0,<3.10"
+  ]
+}

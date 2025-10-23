@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "java": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sublime.View.settings().get('SublimeLinter', {}).get('language') introduced in v4.1"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sublime": {
+      "inferred_version_range": ">=4.1,<6",
+      "recommended_requirements_line": "sublime==4.1.*",
+      "evidence": [
+        "sublime.View.settings().get('SublimeLinter', {}).get('language') introduced in v4.1",
+        "sublime.View.file_name() introduced in v4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "base_linter": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BaseLinter.built_in_check introduced in v3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sublime==4.1.*",
+    "base-linter"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"PIL": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "PIL>=1.2.0,<2.0.0",
+"evidence": ["Image introduced in v1.1.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"torchvision": {
+"inferred_version_range": ">=0.2.0,<0.9.0",
+"recommended_requirements_line": "torchvision>=0.2.0,<0.9.0",
+"evidence": ["transforms introduced in v0.2.0", "models introduced in v0.3.0", "datasets introduced in v0.4.0", "io introduced in v0.5.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": ["PIL>=1.2.0,<2.0.0", "torchvision>=0.2.0,<0.9.0"]
+}
+}

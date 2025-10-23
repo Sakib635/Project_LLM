@@ -1,0 +1,46 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"PySide": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "PySide>=1.2.0,<2.0.0",
+"evidence": ["QtGui.QLabel introduced in PySide 1.2.0"],
+"confidence": 0.95,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": "sys",
+"evidence": ["sys.argv introduced in Python 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"platform": {
+"inferred_version_range": null,
+"recommended_requirements_line": "platform",
+"evidence": ["platform.system introduced in Python 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"Foundation": {
+"inferred_version_range": null,
+"recommended_requirements_line": "Foundation",
+"evidence": ["Foundation.NSURL introduced in Foundation 1.2.0"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"PySide>=1.2.0,<2.0.0",
+"sys",
+"platform",
+"Foundation"
+]
+},
+"requirements.txt": []
+}

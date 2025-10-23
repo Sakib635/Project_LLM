@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "psycopg2.connect added in Python 3.6 \u2192 min Python 3.6",
+      "MySQLdb.connect added in Python 3.0 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "psycopg2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "psycopg2.connect added in Python 3.6 \u2192 min Python 3.6",
+        "psycopg2.cursor.copy_to added in Python 3.5 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "MySQLdb": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MySQLdb.connect added in Python 3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system added in Python 2.3 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "psycopg2>=3.6,<4.0",
+    "MySQLdb>=3.0,<4.0"
+  ]
+}

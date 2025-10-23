@@ -1,0 +1,4 @@
+(declare-fun simplejson () String)
+(declare-fun selenium () String)
+(assert (and (or (= selenium "3.141.0")) (or (= simplejson "3.17.2"))))
+(check-sat)

@@ -1,0 +1,47 @@
+{
+"python_version": {
+"min": "3.0",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": ">=1.2.0,<3.0.0",
+"recommended_requirements_line": "scipy>=1.2.0,<3.0.0",
+"evidence": ["spatial.distance.cdist added in SciPy 1.2 → min SciPy 1.2", "signal.sweep_coeffs deprecated in SciPy 1.9 → max SciPy 1.9"],
+"confidence": 0.67,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<3.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<3.0.0",
+"evidence": ["DataFrame.to_csv method added in pandas 1.2 → min pandas 1.2", "read_excel function deprecated in pandas 1.4 → max pandas 1.4"],
+"confidence": 0.67,
+"notes": ""
+},
+"scikit-learn": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0,
+"notes": ""
+},
+"lasagne": {
+"inferred_version_range": ">=0.2.1,<2.0.0",
+"recommended_requirements_line": "lasagne>=0.2.1,<2.0.0",
+"evidence": ["layers.InputLayer class added in Lasagne 0.2.1 → min Lasagne 0.2.1", "GlobalPoolLayer class deprecated in Lasagne 2.0 → max Lasagne 2.0"],
+"confidence": 0.67,
+"notes": ""
+}
+},
+"requirements.txt": ["scipy>=1.2.0,<3.0.0", "pandas>=1.2.0,<3.0.0", "lasagne>=0.2.1,<2.0.0"]
+}
+}

@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.8→ max Python 3.8"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": ["models.Model introduced in Django 1.0", "models.CharField introduced in Django 1.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "django.db": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": ["models.Model introduced in Django 1.0", "models.CharField introduced in Django 1.0"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "django.db>=1.0,<2.0"
+  ]
+}
+```

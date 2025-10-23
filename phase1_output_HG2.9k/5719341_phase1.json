@@ -1,0 +1,65 @@
+{
+  "kombu": [
+    "kombu.Exchange",
+    "kombu.Queue"
+  ],
+  "datetime": [
+    "datetime.timedelta"
+  ],
+  "config": [
+    "config.cfg"
+  ],
+  "log": [
+    "log.initLog"
+  ],
+  "os": [
+    "os.path.dirname",
+    "os.path.basename"
+  ],
+  "sys": [
+    "sys.path.append"
+  ],
+  "redis": [
+    "_redis['password']",
+    "_redis['host']",
+    "_redis['port']",
+    "_redis['db']"
+  ],
+  "celery": [
+    "CELERY_RESULT_BACKEND",
+    "CELERY_TIMEZONE",
+    "CELERY_TASK_RESULT_EXPIRES",
+    "CELERYD_CONCURRENCY",
+    "CELERY_TASK_SERIALIZER",
+    "CELERY_RESULT_SERIALIZER",
+    "CELERY_CACHE_BACKEND",
+    "CELERY_TASK_PUBLISH_RETRY",
+    "CELERY_TASK_PUBLISH_RETRY_POLICY",
+    "CELERYD_POOL"
+  ],
+  "celery.tasks": [
+    "CELERY_IMPORTS"
+  ],
+  "celery.queues": [
+    "CELERY_QUEUES"
+  ],
+  "celery.routes": [
+    "CELERY_ROUTES"
+  ],
+  "celery.events": [
+    "CELERY_SEND_EVENTS",
+    "CELERY_SEND_TASK_SENT_EVENT"
+  ],
+  "celery.log": [
+    "CELERYD_HIJACK_ROOT_LOGGER",
+    "CELERYD_LOG_COLOR",
+    "CELERYD_LOG_FORMAT",
+    "CELERYD_TASK_LOG_FORMAT",
+    "CELERY_REDIRECT_STDOUTS"
+  ],
+  "celery.email": [
+    "CELERY_SEND_TASK_ERROR_EMAILS",
+    "ADMINS",
+    "SERVER_EMAIL"
+  ]
+}

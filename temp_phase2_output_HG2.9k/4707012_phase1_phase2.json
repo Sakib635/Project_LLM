@@ -1,0 +1,82 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "array introduced in v1.20",
+        "random.seed introduced in v1.17"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scikit-learn": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.24",
+      "evidence": [
+        "SGDClassifier introduced in v0.23",
+        "copy introduced in v0.22"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scikit-learn-gpu": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Not found in extracted APIs"
+      ],
+      "confidence": 0.15,
+      "notes": "Not a standard library or package."
+    },
+    "sklearn.linear_model": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.24",
+      "evidence": [
+        "SGDClassifier introduced in v0.23"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "sklearn.base": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.24",
+      "evidence": [
+        "copy introduced in v0.22"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.24",
+      "evidence": [
+        "accuracy_score introduced in v0.23"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "sklearn.model_selection": {
+      "inferred_version_range": ">=0.23,<0.24",
+      "recommended_requirements_line": "scikit-learn>=0.23,<0.24",
+      "evidence": [
+        "train_test_split introduced in v0.23"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "scikit-learn>=0.23,<0.24"
+  ]
+}

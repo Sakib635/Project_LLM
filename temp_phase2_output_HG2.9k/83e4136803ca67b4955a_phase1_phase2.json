@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Foundation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "API CFPreferencesCopyAppValue not found in any version of Foundation"
+    },
+    "SystemConfiguration": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "systemconfig>=2.0.0,<3.0.0",
+      "evidence": [
+        "API SCDynamicStoreCopyConsoleUser introduced in v2.0.0 of SystemConfiguration"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "os>=3.4,<4.0",
+      "evidence": [
+        "API walk introduced in v3.4 of os",
+        "API join introduced in v3.5 of os"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.0.9,<3.0.0",
+      "recommended_requirements_line": "json>=2.0.9,<3.0.0",
+      "evidence": [
+        "API load introduced in v2.0.9 of json"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "systemconfig>=2.0.0,<3.0.0",
+    "os>=3.4,<4.0",
+    "json>=2.0.9,<3.0.0"
+  ]
+}

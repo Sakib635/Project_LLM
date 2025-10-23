@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.6 \u2192 min Python 3.6",
+      "numpy.random.randint removed in Python 3.9\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "AssotesteR": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "AssotesteR.CALPHA introduced, depricated, removed or changed in v0.1"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array introduced, depricated, removed or changed in v1.20",
+        "numpy.mean introduced, depricated, removed or changed in v1.20",
+        "numpy.random.randint introduced, depricated, removed or changed in v1.20",
+        "numpy.linalg.norm introduced, depricated, removed or changed in v1.20",
+        "numpy.sum introduced, depricated, removed or changed in v1.20"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "AssotesteR>=0.1,<0.2",
+    "numpy>=1.20,<2.0"
+  ]
+}

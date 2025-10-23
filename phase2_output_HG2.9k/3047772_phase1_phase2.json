@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pybel": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pybel>=1.2.0,<2.0.0",
+      "evidence": [
+        "pybel.readstring added in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mol": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "mol>=1.2.0,<2.0.0",
+      "evidence": [
+        "mol.calcfp added in v1.2.0",
+        "mol.calcdesc added in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pybel>=1.2.0,<2.0.0",
+    "mol>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "signal.SIGINT added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rose": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "rose>=1.2.0,<2.0.0",
+      "evidence": [
+        "rose.EventLoopPolicy added in v1.2.0 \u2192 v1.2.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tulip": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range"
+    },
+    "events": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "events>=3.5,<4.0",
+      "evidence": [
+        "events.set_event_loop_policy added in v3.5 \u2192 v3.x",
+        "events.get_event_loop added in v3.5 \u2192 v3.x",
+        "events.run_until_complete added in v3.5 \u2192 v3.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "reactor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range"
+    },
+    "EchoProtocol": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range"
+    }
+  },
+  "requirements.txt": [
+    "rose>=1.2.0,<2.0.0",
+    "events>=3.5,<4.0"
+  ]
+}

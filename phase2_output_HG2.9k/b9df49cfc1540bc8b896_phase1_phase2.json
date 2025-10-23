@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "pgp.packets.constants added in Python 3.6 \u2192 min Python 3.0",
+      "pgp.packets.parsers added in Python 3.6 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pgp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pgp.packets.constants added in Python 3.6 \u2192 min Python 3.0",
+        "pgp.packets.parsers added in Python 3.6 \u2192 min Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": ">=2.7,<2.8",
+      "recommended_requirements_line": "Crypto>=2.7,<2.8",
+      "evidence": [
+        "Crypto.PublicKey.RSA added in Python 2.7 \u2192 min Python 2.7",
+        "Crypto.PublicKey.RSA removed in Python 3.0 \u2192 max Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pgp>=3.6,<4.0",
+    "Crypto>=2.7,<2.8"
+  ]
+}

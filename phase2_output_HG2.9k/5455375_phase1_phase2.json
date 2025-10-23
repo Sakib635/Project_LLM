@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock added in Python 3.5 → min Python 3.5", "time.process_time removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.20,<2.0",
+"recommended_requirements_line": "numpy>=1.20,<2.0",
+"evidence": ["array added in v1.20 → inferred version range", "log10 introduced in v1.18 → evidence"],
+"confidence": 0.9,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": ">=1.5,<2.0",
+"recommended_requirements_line": "scipy>=1.5,<2.0",
+"evidence": ["signal.freqs added in v1.4 → inferred version range", "signal.freqz introduced in v1.6 → evidence"],
+"confidence": 0.8,
+"notes": ""
+},
+"matplotlib": {
+"inferred_version_range": ">=3.2,<4.0",
+"recommended_requirements_line": "matplotlib>=3.2,<4.0",
+"evidence": ["pyplot.title added in v3.1 → inferred version range", "xticks introduced in v3.0 → evidence"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.20,<2.0",
+"scipy>=1.5,<2.0",
+"matplotlib>=3.2,<4.0"
+]
+},
+"notes": ""
+}

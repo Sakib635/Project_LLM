@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "boto": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "boto>=1.2.0,<2.0.0",
+      "evidence": [
+        "boto.route53.connection introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "dns": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "dnspython>=1.2.0,<2.0.0",
+      "evidence": [
+        "dns.resolver introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "python-logging>=1.2.0,<2.0.0",
+      "evidence": [
+        "logging.FileHandler introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "urllib3>=1.2.0,<2.0.0",
+      "evidence": [
+        "urllib2.urlopen introduced in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "boto>=1.2.0,<2.0.0",
+    "dnspython>=1.2.0,<2.0.0",
+    "python-logging>=1.2.0,<2.0.0",
+    "urllib3>=1.2.0,<2.0.0"
+  ]
+}

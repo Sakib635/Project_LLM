@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"encryptor": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "encryptor>=1.0.0,<2.0.0",
+"evidence": ["encryptor.gen_keypair introduced in v1.0.0", "encryptor.encrypt introduced in v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"sec_decode": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sec_decode introduced in v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"encryptor>=1.0.0,<2.0.0",
+"sec_decode>=1.0.0,<2.0.0"
+]
+}
+}

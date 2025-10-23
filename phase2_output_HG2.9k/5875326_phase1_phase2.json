@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "gevent": {
+      "inferred_version_range": ">=20.1.0",
+      "recommended_requirements_line": "gevent>=20.1.0",
+      "evidence": [
+        "gevent.core.EVENTS introduced in gevent 20.1.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pycurl": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pycurl.CurlMulti introduced in pycurl 7.43.0",
+        "pycurl.M_SOCKETFUNCTION introduced in pycurl 7.19.0"
+      ],
+      "confidence": 0.6666666666666666,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": ">=4.5.3",
+      "recommended_requirements_line": "tornado>=4.5.3",
+      "evidence": [
+        "tornado.curl_httpclient.GeventCurl._set_socket introduced in tornado 4.5.3"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gevent>=20.1.0",
+    "pycurl>=7.43.0",
+    "tornado>=4.5.3"
+  ]
+}

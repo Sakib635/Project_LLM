@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "amazon": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "AmazonAPI added in v1.2.0, depricated or removed in v2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "python-amazon-simple-product-api": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "python_amazon_simple_product_api>=1.2.0,<2.0.0",
+      "evidence": [
+        "AmazonAPIWrapper added in v1.2.0, depricated or removed in v2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "python_amazon_simple_product_api>=1.2.0,<2.0.0"
+  ]
+}

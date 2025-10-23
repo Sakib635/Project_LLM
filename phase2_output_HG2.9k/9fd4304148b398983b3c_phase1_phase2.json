@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "gtk.Window added in Python 2.7 \u2192 min Python 2.7",
+      "os.system removed in Python 3.9 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "getpass": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "getpass>=1.0,<2.0",
+      "evidence": [
+        "getpass.getuser added in getpass v1.0.0 \u2192 recommended_requirements_line"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gtk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gtk.Window added in GTK+ v2.7 \u2192 inferred_version_range",
+        "gtk.HBox introduced in GTK+ v2.8 \u2192 inferred_version_range",
+        "gtk.VBox introduced in GTK+ v2.9 \u2192 inferred_version_range",
+        "gtk.Button introduced in GTK+ v2.10 \u2192 inferred_version_range",
+        "gtk.Label introduced in GTK+ v3.0 \u2192 inferred_version_range"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "getpass>=1.0,<2.0",
+    "gtk>=2.7,<3.0"
+  ]
+}

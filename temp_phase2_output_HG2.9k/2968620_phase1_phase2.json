@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["idaapi.GetFrame added in Python 3.4 → min Python 3.4", "idaapi.GetStrucSize added in Python 3.4 → min Python 3.4", "idc.here added in Python 3.8 → max Python 3.7", "idc.GetMemberName added in Python 3.0 → min Python 3.0", "idc.GetMemberOffset added in Python 3.0 → min Python 3.0", "idc.GetRegValue added in Python 3.0 → min Python 3.0"],
+"notes": ""
+},
+"dependencies": {
+"idaapi": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["idaapi.GetFrame added in Python 3.4 → min Python 3.4", "idaapi.GetStrucSize added in Python 3.4 → min Python 3.4"],
+"confidence": 0.67,
+"notes": ""
+},
+"idc": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "idc>=1.2.0,<2.0.0",
+"evidence": ["idc.here added in Python 3.8 → max Python 3.7", "idc.GetMemberName added in Python 3.0 → min Python 3.0", "idc.GetMemberOffset added in Python 3.0 → min Python 3.0", "idc.GetRegValue added in Python 3.0 → min Python 3.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["idc>=1.2.0,<2.0.0"]
+},
+"requirements.txt": []
+}

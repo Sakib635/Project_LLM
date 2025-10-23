@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "QualityCenter": {
+      "inferred_version_range": ">=7.0.1,<8.0",
+      "recommended_requirements_line": "QualityCenter>=7.0.1,<8.0",
+      "evidence": [
+        "QC.Project added in v7.0.1, depricated in v7.1 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "MS Test": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MSTest.Test added in v7.2 \u2192 min Python 3.8"
+      ],
+      "confidence": 0.4,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "QualityCenter>=7.0.1,<8.0",
+    "MSTest.Test>=7.2,<8.0"
+  ]
+}

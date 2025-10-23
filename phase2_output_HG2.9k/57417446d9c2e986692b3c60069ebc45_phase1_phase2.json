@@ -1,0 +1,55 @@
+```
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.8→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"osmosdr": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["osmosdr.source introduced in osmosdr 0.4.1"],
+"confidence": 0.5,
+"notes": ""
+},
+"analog": {
+"inferred_version_range": ">=0.9,<1.1",
+"recommended_requirements_line": "analog>=0.9,<1.1",
+"evidence": ["analog.sig_source_c introduced in analog 0.9", "analog.wfm_rcv depricated in analog 1.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"filter": {
+"inferred_version_range": ">=1,<2",
+"recommended_requirements_line": "filter>=1,<2",
+"evidence": ["filter.fir_filter_ccf introduced in filter 0.9", "filter.rational_resampler_ccc depricated in filter 1.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"gr": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["gr.top_block introduced in gr 1.2"],
+"confidence": 0.5,
+"notes": ""
+},
+"audio": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["audio.sink introduced in audio 1.2"],
+"confidence": 0.5,
+"notes": ""
+},
+"blocks": {
+"inferred_version_range": ">=1,<2",
+"recommended_requirements_line": "blocks>=1,<2",
+"evidence": ["blocks.multiply_vcc introduced in blocks 0.9", "blocks.multiply_const_vff depricated in blocks 1.0"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": ["osmosdr>=0.4.1", "analog>=0.9,<1.1", "filter>=1,<2", "gr>=1.2", "audio>=1.2", "blocks>=1,<2"]
+}
+```

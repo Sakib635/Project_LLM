@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cStringIO": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "cStringIO>=1.0,<2.0",
+      "evidence": [
+        "cStringIO.StringIO introduced in version 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.1,<2.0",
+      "recommended_requirements_line": "PIL>=1.1,<2.0",
+      "evidence": [
+        "PIL.Image introduced in version 1.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssim": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ssim.compute_ssim introduced in version 1.0"
+      ],
+      "confidence": 0.5,
+      "notes": "No clear evidence of introduction/deprecation/removal"
+    }
+  },
+  "requirements.txt": [
+    "cStringIO>=1.0,<2.0",
+    "PIL>=1.1,<2.0"
+  ]
+}

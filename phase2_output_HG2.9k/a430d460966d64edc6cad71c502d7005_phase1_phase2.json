@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "networkx.Graph added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "networkx": {
+      "inferred_version_range": ">=2.1,<3.0",
+      "recommended_requirements_line": "networkx>=2.1,<3.0",
+      "evidence": [
+        "networkx.Graph introduced in version 2.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "graph_tool": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "graph-tool>=3.0,<4.0",
+      "evidence": [
+        "graph_tool.Graph introduced in version 3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array introduced in version 1.20"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "unicode": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "unicode.encode deprecated in version 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "networkx>=2.1,<3.0",
+    "graph-tool>=3.0,<4.0",
+    "numpy>=1.20,<2.0"
+  ]
+}

@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "snippet.py", line 71, in <module>
+    main()
+  File "snippet.py", line 39, in main
+    init_msg_handler = print_bootstrap_lines,
+[1mStarting Tor:
+[0m
+  File "/usr/local/lib/python2.7/site-packages/stem/process.py", line 296, in launch_tor_with_config
+    return launch_tor(tor_cmd, args, torrc_path, completion_percent, init_msg_handler, timeout, take_ownership)
+  File "/usr/local/lib/python2.7/site-packages/stem/process.py", line 103, in launch_tor
+    raise OSError("'%s' isn't available on your system. Maybe it's not in your PATH?" % tor_cmd)
+OSError: 'tor' isn't available on your system. Maybe it's not in your PATH?

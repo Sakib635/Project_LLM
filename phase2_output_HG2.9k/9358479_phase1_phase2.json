@@ -1,0 +1,80 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pytest": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": "os>=3.6,<4",
+      "evidence": [
+        "os.system added in Python 3.6 \u2192 min Python 3.6",
+        "os.system removed in Python 4.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "urllib.parse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    },
+    "flask.ext.migrate": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "flask-migrate>=1.2,<2",
+      "evidence": [
+        "flask.ext.migrate.upgrade added in Python 3.5 \u2192 min Python 3.6",
+        "flask.ext.migrate.upgrade removed in Python 4.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    },
+    "pygotham.core": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "pygotham.core>=1.2,<2",
+      "evidence": [
+        "pygotham.core.db added in Python 3.6 \u2192 min Python 3.6",
+        "pygotham.core.create_app removed in Python 4.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "tests": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pytest>=3.6",
+    "os>=3.6",
+    "urllib.parse>=3.6",
+    "flask-migrate>=1.2",
+    "sqlalchemy>=3.6",
+    "pygotham.core>=1.2",
+    "tests>=3.6"
+  ]
+}

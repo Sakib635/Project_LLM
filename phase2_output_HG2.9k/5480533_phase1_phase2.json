@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "smtplib.SMTP added in Python 3.7 \u2192 min Python 3.7",
+      "time.sleep added in Python 3.7 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "email": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: email.mime.text.MIMEText added in Python 3.1 \u2192 min Python 3.1, removed in Python 4.0 \u2192 max Python 4.0"
+    },
+    "smtplib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "smtplib>=1.2.0,<2.0.0",
+      "evidence": [
+        "smtplib.SMTP added in Python 3.7 \u2192 min Python 3.7",
+        "smtplib.starttls added in Python 3.4 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: smtplib.SMTP added in Python 3.1 \u2192 min Python 3.1, removed in Python 4.0 \u2192 max Python 4.0, smtplib.starttls added in Python 3.4 \u2192 max Python 3.9"
+    },
+    "RPi.GPIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "RPi.GPIO>=1.0,<2.0",
+      "evidence": [
+        "RPi.GPIO.setmode added in Python 3.7 \u2192 min Python 3.7",
+        "RPi.GPIO.setup added in Python 3.4 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: RPi.GPIO.setmode added in Python 3.1 \u2192 min Python 3.1, removed in Python 4.0 \u2192 max Python 4.0, RPi.GPIO.setup added in Python 3.4 \u2192 max Python 3.9"
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "time>=1.0,<2.0",
+      "evidence": [
+        "time.sleep added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: time.sleep added in Python 3.1 \u2192 min Python 3.1, removed in Python 4.0 \u2192 max Python 4.0"
+    }
+  },
+  "requirements.txt": [
+    "email>=1.2.0,<2.0.0",
+    "smtplib>=1.2.0,<2.0.0",
+    "RPi.GPIO>=1.0,<2.0",
+    "time>=1.0,<2.0"
+  ]
+}

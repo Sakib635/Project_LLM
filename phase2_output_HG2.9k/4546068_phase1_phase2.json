@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "binascii": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "binascii>=1.2.0,<2.0.0",
+      "evidence": [
+        "binascii.hexlify added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "binascii.unhexlify removed in Python 3.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "hashlib>=1.2.0,<2.0.0",
+      "evidence": [
+        "hashlib.md5 added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "hashlib.md5 removed in Python 3.9 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher.AES added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "Crypto.Cipher.AES removed in Python 3.9 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "binascii>=1.2.0,<2.0.0",
+    "hashlib>=1.2.0,<2.0.0"
+  ]
+}

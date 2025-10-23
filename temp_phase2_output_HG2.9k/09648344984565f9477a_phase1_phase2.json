@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.21.0,<0.24.0",
+      "recommended_requirements_line": "scikit-learn>=0.21.0,<0.24.0",
+      "evidence": [
+        "sklearn.base.BaseEstimator introduced in v0.21.0",
+        "sklearn.utils.check_random_state added in v0.23.0",
+        "scipy.sparse.issparse added in v0.24.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<1.18.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<1.18.0",
+      "evidence": [
+        "numpy.ascontiguousarray introduced in v1.17.0",
+        "numpy.asfortranarray added in v1.17.0",
+        "numpy.zeros added in v1.17.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scipy.sparse": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.4.0,<2.0.0",
+      "evidence": [
+        "scipy.sparse.issparse introduced in v1.4.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scikit-learn>=0.21.0,<0.24.0",
+    "numpy>=1.17.0,<1.18.0",
+    "scipy>=1.4.0,<2.0.0"
+  ]
+}

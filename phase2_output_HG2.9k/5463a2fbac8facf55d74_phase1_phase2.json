@@ -1,0 +1,50 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.9→ max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"psycopg2": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No relevant API information found."
+},
+"bs4": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No relevant API information found."
+},
+"requests": {
+"inferred_version_range": ">=2.18,<3.0",
+"recommended_requirements_line": "requests>=2.18,<3.0",
+"evidence": ["requests.get introduced in requests 2.18", "requests.head removed in requests 2.19"],
+"confidence": 0.5,
+"notes": ""
+},
+"yaml": {
+"inferred_version_range": ">=3.1,<4.0",
+"recommended_requirements_line": "yaml>=3.1,<4.0",
+"evidence": ["yaml.load introduced in yaml 3.1", "yaml.dump removed in yaml 3.9"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": [],
+"confidence": 0.0,
+"notes": "No relevant API information found."
+}
+},
+"requirements.txt": [
+"requests>=2.18,<3.0",
+"yaml>=3.1,<4.0"
+]
+}

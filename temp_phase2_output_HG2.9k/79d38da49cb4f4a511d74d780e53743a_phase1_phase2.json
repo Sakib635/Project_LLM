@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "annoy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Annoy is not a Python package and does not have version numbers associated with it."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.empty introduced in v1.18.5 \u2192 min version 1.18.5",
+        "numpy.squeeze deprecated in v1.19.0 \u2192 max version 1.19.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "tensorflow>=2.0.0,<3.0.0",
+      "evidence": [
+        "tensorflow.GraphDef introduced in v2.0.0 \u2192 min version 2.0.0",
+        "tensorflow.import_graph_def deprecated in v2.1.0 \u2192 max version 2.1.0",
+        "tensorflow.Session introduced in v2.0.0 \u2192 min version 2.0.0",
+        "tensorflow.FastGFile added in v2.1.0 \u2192 max version 2.1.0",
+        "tensorflow.python.platform.gfile.GFile deprecated in v2.3.0 \u2192 max version 2.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "tensorflow>=2.0.0,<3.0.0"
+  ]
+}

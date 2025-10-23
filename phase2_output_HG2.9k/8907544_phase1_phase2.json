@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "os.getcwd added in Python 3.8 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.2.0,<2.0.0",
+      "evidence": [
+        "base64.b64encode introduced in v1.2.0 \u2192 min Python 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "bcrypt": {
+      "inferred_version_range": ">=3.2,<5.0",
+      "recommended_requirements_line": "bcrypt>=3.2,<5.0",
+      "evidence": [
+        "bcrypt.hashpw introduced in v3.2 \u2192 min Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Random and Crypto.Cipher introduced in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range due to lack of available APIs"
+    },
+    "Blockout": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Blockout.enblockout and Blockout.deblockout introduced in Python 3.8 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": "Unable to determine version range due to lack of available APIs"
+    }
+  },
+  "requirements.txt": [
+    "base64>=1.2.0,<2.0.0",
+    "bcrypt>=3.2,<5.0"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.Variable introduced",
+        "tensorflow.assign introduced",
+        "tensorflow.cond introduced",
+        "tensorflow.is_variable_initialized introduced",
+        "tensorflow.no_op introduced",
+        "tensorflow.group introduced",
+        "tensorflow.all_variables introduced",
+        "tensorflow.get_default_graph introduced",
+        "tensorflow.get_operation_by_name introduced",
+        "tensorflow.report_uninitialized_variables introduced",
+        "tensorflow.size introduced"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "tensorflow.contrib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.contrib.graph_editor introduced"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=y,<x",
+    "tensorflow-contrib>=y,<x"
+  ]
+}

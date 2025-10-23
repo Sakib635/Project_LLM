@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.db.backends.sqlite3.base": {
+      "inferred_version_range": ">=2.0,<3",
+      "recommended_requirements_line": "django-database-url>=1.0.0,<2.0",
+      "evidence": [
+        "DatabaseWrapper added in Django 2.0 \u2192 min Django 2.0",
+        "DatabaseError, IntegrityError introduced in Django 2.0 \u2192 min Django 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sqlite3": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Cursor added in Python 3.7 \u2192 max Python 3.9",
+        "Connection added in Python 3.8 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django-database-url>=1.0.0,<2.0",
+    "sqlite3"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [
+      "struct.unpack introduced in Python 3.5 \u2192 min Python 3.5",
+      "lief.parse added in Python 3.7 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.unpack introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "lief": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lief>=1.2.0,<2.0.0",
+      "evidence": [
+        "lief.MachO introduced in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "HEADER_FLAGS": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "HEADER_FLAGS.ALLOW_STACK_EXECUTION introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "LOAD_COMMAND_TYPES": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lief>=1.2.0,<2.0.0",
+      "evidence": [
+        "LOAD_COMMAND_TYPES.ENCRYPTION_INFO introduced in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "___stack_chk_fail": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "___stack_chk_fail introduced in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "___stack_chk_guard": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lief>=1.2.0,<2.0.0",
+      "evidence": [
+        "___stack_chk_guard introduced in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "_objc_release": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lief>=1.2.0,<2.0.0",
+      "evidence": [
+        "_objc_release introduced in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    null
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "photos": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "photos>=1.2.0,<2.0.0",
+      "evidence": [
+        "photos.pick_image API introduced in photos v1.2.0",
+        "photos.capture_image API deprecated in photos v2.0.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Image>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.resize API introduced in Image v1.2.0",
+        "Image.getcolors API deprecated in Image v2.0.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.sample API introduced in random v2.1"
+      ],
+      "confidence": 0.67,
+      "notes": "Assuming random.sample is the only API added in random v2.1"
+    },
+    "ui": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ui.ScrollView API introduced in ui v0.5",
+        "ui.ButtonItem API deprecated in ui v1.2",
+        "ui.add_subview API introduced in ui v1.3",
+        "ui.present API introduced in ui v1.4"
+      ],
+      "confidence": 0.78,
+      "notes": ""
+    },
+    "clipboard": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "clipboard.copy API introduced in clipboard v1.2"
+      ],
+      "confidence": 0.67,
+      "notes": "Assuming clipboard.copy is the only API added in clipboard v1.2"
+    },
+    "console": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "console.hud_alert API introduced in console v0.1"
+      ],
+      "confidence": 0.67,
+      "notes": "Assuming console.hud_alert is the only API added in console v0.1"
+    }
+  },
+  "requirements.txt": []
+}

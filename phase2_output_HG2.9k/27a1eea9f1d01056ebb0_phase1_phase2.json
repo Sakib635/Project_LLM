@@ -1,0 +1,54 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": ["os.path.expanduser added in Python 3.5 → min Python 3.5", "time.clock removed in Python 3.10 → max Python 3.9"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyinotify": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pyinotify.WatchManager introduced in pyinotify version y → min pyinotify version y", "pyinotify.Notifier introduced in pyinotify version z → max pyinotify version z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os.path": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.path.expanduser introduced in os.path version y → min os.path version y", "os.path.expanduser removed in os.path version z → max os.path version z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "gtk.gdk": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["gtk.gdk.pixbuf_new_from_file introduced in gtk.gdk version y → min gtk.gdk version y", "gtk.gdk.pixbuf_new_from_file removed in gtk.gdk version z → max gtk.gdk version z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "email.header": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["email.header.decode_header introduced in email.header version y → min email.header version y", "email.header.decode_header removed in email.header version z → max email.header version z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "mailbox": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["mailbox.MaildirMessage introduced in mailbox version y → min mailbox version y", "mailbox.MaildirMessage removed in mailbox version z → max mailbox version z"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyinotify>=y,<z",
+    "os.path>=y,<z",
+    "gtk.gdk>=y,<z",
+    "email.header>=y,<z",
+    "mailbox>=y,<z"
+  ]
+}
+```

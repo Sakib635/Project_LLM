@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"base64": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["base64.urlsafe_b64encode"],
+"confidence": 0.9,
+"notes": ""
+},
+"time": {
+"inferred_version_range": ">=3.7,<3.8",
+"recommended_requirements_line": "time>=3.7,<3.8",
+"evidence": ["time.time"],
+"confidence": 0.9,
+"notes": ""
+},
+"OpenSSL": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["OpenSSL.crypto.load_pkcs12", "OpenSSL.crypto.sign"],
+"confidence": 0.9,
+"notes": ""
+},
+"simplejson": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["simplejson.dumps"],
+"confidence": 0.9,
+"notes": ""
+},
+"django.utils": {
+"inferred_version_range": ">=3.8,<3.9",
+"recommended_requirements_line": "django.utils.simplejson>=3.8,<3.9",
+"evidence": ["django.utils.simplejson.dumps"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"base64>=3.4,<3.8",
+"time>=3.7,<3.8",
+"OpenSSL>=3.7,<3.9",
+"simplejson>=3.8,<3.9",
+"django.utils.simplejson>=3.8,<3.9"
+]
+}
+}

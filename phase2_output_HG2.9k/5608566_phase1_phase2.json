@@ -1,0 +1,18 @@
+{
+"python_version": {
+"min": "y",
+"max": "x",
+"evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+<package>: {
+"inferred_version_range": ">=X.Y.Z,<A.B.C" or null,
+"recommended_requirements_line": "pkg>=X.Y.Z,<A.B.C" or null,
+"evidence": ["API X introduced, depricated, removed or changed in vM.N.P"],
+"confidence": 0.0,
+"notes": ""
+}
+},
+"requirements.txt": [pkg>=X.Y.Z,<A.B.C]
+}

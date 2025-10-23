@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "multiprocessing.Process added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.core.management": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "call_command introduced in Django 1.2 \u2192 min Django 1.2.0",
+        "call_command removed in Django 2.0 \u2192 max Django 1.9"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "StringIO>=1.2.0,<2.0.0",
+      "evidence": [
+        "StringIO introduced in Python 1.2 \u2192 min Python 1.2.0",
+        "StringIO removed in Python 2.0 \u2192 max Python 1.9"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "django.core": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "django>=3.2.0,<4.0.0",
+      "evidence": [
+        "serializers introduced in Django 3.2 \u2192 min Django 3.2.0",
+        "deserialize deprecated and removed in Django 4.0 \u2192 max Django 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<2.0.0",
+    "StringIO>=1.2.0,<2.0.0"
+  ]
+}

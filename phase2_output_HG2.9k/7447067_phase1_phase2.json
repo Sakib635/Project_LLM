@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.7",
+    "evidence": [
+      "pandas.DataFrame added in Python 3.5 \u2192 min Python 3.5",
+      "pandas.DataFrame.to_numpy removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.0 \u2192 3.5",
+        "pandas.DataFrame.to_numpy removed in v1.2 \u2192 3.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.stats.binom introduced in v1.0 \u2192 3.5",
+        "scipy.stats.norm deprecated in v1.2 \u2192 3.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.1,<4.0",
+      "recommended_requirements_line": "matplotlib>=3.1,<4.0",
+      "evidence": [
+        "matplotlib.pyplot.subplot introduced in v3.1 \u2192 3.5",
+        "matplotlib.pyplot.title deprecated in v3.2 \u2192 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "matplotlib>=3.1,<4.0"
+  ]
+}

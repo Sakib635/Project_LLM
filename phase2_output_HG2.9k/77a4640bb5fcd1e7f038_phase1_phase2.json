@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "psycopg2": {
+      "inferred_version_range": ">=2.8.6,<3.0.0",
+      "recommended_requirements_line": "psycopg2>=2.8.6,<3.0.0",
+      "evidence": [
+        "psycopg2.connect added in v2.8.6 \u2192 min Python 3.5",
+        "psycopg2.cursor removed in v3.0.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "basiclogger": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "basiclogger.pyLogger introduced in v2.0 \u2192 min Python 3.8",
+        "basiclogger.pyLogger removed in v4.0 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v1.2.0 \u2192 min Python 3.7",
+        "pandas.DataFrame.ix removed in v2.0.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": ">=1.4.25,<2.0.0",
+      "recommended_requirements_line": "sqlalchemy>=1.4.25,<2.0.0",
+      "evidence": [
+        "sqlalchemy.create_engine introduced in v1.4.25 \u2192 min Python 3.7",
+        "sqlalchemy.create_engine removed in v2.0.0 \u2192 max Python 3.10"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "psycopg2>=2.8.6,<3.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "sqlalchemy>=1.4.25,<2.0.0"
+  ]
+}

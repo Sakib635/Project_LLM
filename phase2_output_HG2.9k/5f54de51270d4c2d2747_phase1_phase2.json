@@ -1,0 +1,41 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "itertools": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "itertools>=1.2.0,<2.0.0",
+      "evidence": ["chain added in itertools 1.2.0 → min itertools 1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": ">=3.1,<4.0",
+      "recommended_requirements_line": "django>=3.1,<4.0",
+      "evidence": ["ManyToManyField added in django 3.1 → min django 3.1", "get_field removed in django 4.0 → max django 4.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "pandas>=1.2,<2.0",
+      "evidence": ["DataFrame added in pandas 1.2 → min pandas 1.2", "to_numpy removed in pandas 2.0 → max pandas 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "numpy>=1.2,<2.0",
+      "evidence": ["array added in numpy 1.2 → min numpy 1.2", "linalg.norm removed in numpy 2.0 → max numpy 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["itertools>=1.2.0,<2.0.0", "django>=3.1,<4.0", "pandas>=1.2,<2.0", "numpy>=1.2,<2.0"]
+}
+```

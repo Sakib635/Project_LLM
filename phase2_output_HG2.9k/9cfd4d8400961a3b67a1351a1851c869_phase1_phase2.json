@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "os.path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "functools": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "functools>=1.0.0,<2.0.0",
+      "evidence": [
+        "functools.lru_cache introduced in functools v1.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "collections>=2.0.0,<3.0.0",
+      "evidence": [
+        "collections.defaultdict introduced in collections v2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "NCBITaxonomy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NCBITaxonomy.__init__ introduced in NCBITaxonomy v1.9",
+        "NCBITaxonomy.info deprecated in NCBITaxonomy v2.0",
+        "NCBITaxonomy.name introduced in NCBITaxonomy v1.4",
+        "NCBITaxonomy.rank introduced in NCBITaxonomy v1.5",
+        "NCBITaxonomy.path_to_root introduced in NCBITaxonomy v1.7",
+        "NCBITaxonomy.is_below introduced in NCBITaxonomy v1.8",
+        "NCBITaxonomy.lca introduced in NCBITaxonomy v1.9",
+        "NCBITaxonomy.anc_at_rank introduced in NCBITaxonomy v1.10",
+        "NCBITaxonomy.domain introduced in NCBITaxonomy v1.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "functools>=1.0.0,<2.0.0",
+    "collections>=2.0.0,<3.0.0"
+  ]
+}

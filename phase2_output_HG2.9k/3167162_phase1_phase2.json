@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv[1] introduced in Python 3.6 \u2192 min Python 3.6",
+      "sys.argv[2] removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "hou": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "hou>=1.0,<2.0",
+      "evidence": [
+        "hou.hipFile.load introduced in Houdini 1.0 \u2192 min Houdini 1.0",
+        "hou.parmTuple().set removed in Houdini 2.0 \u2192 max Houdini 2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.6,<3.10",
+      "recommended_requirements_line": "sys>=3.6,<3.10",
+      "evidence": [
+        "sys.argv[1] introduced in Python 3.6 \u2192 min Python 3.6",
+        "sys.argv[2] removed in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "hou>=1.0,<2.0",
+    "sys>=3.6,<3.10"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Package not found in the extracted APIs."
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.4,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.4,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.4 \u2192 min pandas 1.2.4",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.2.4 \u2192 min pandas 1.2.4",
+        "pandas.DataFrame.ix introduced in pandas 1.2.4 \u2192 min pandas 1.2.4"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20.0",
+      "recommended_requirements_line": "numpy>=1.20.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.20.0 \u2192 min numpy 1.20.0",
+        "numpy.linalg.norm introduced in numpy 1.20.0 \u2192 min numpy 1.20.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.4,<2.0.0",
+    "numpy>=1.20.0"
+  ]
+}

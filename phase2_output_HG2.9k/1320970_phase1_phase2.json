@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "dbus.SessionBus added in Python 3.6 \u2192 min Python 3.6",
+      "gobject.MainLoop added in Python 3.7 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dbus": {
+      "inferred_version_range": ">=0.8,<1.0",
+      "recommended_requirements_line": "dbus-python>=0.8,<1.0",
+      "evidence": [
+        "dbus.SessionBus introduced in dbus-python 0.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": ">=3.7,<3.9",
+      "recommended_requirements_line": "pygobject3>=3.7,<3.9",
+      "evidence": [
+        "gobject.MainLoop introduced in pygobject3 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dbus-python>=0.8,<1.0",
+    "pygobject3>=3.7,<3.9"
+  ]
+}

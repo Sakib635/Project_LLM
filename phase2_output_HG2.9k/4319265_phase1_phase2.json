@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "pandas.DataFrame added in Python 0.1 \u2192 min Python 0.1",
+      "numpy.linalg.norm removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2,<3.0",
+      "recommended_requirements_line": "pandas>=1.2,<3.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas v1.2.0",
+        "pandas.DataFrame.to_numpy deprecated in pandas v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array introduced in numpy v1.2.0",
+        "numpy.linalg.norm deprecated in numpy v1.19.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2,<3.0"
+  ]
+}

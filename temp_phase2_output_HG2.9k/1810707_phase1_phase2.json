@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.date",
+        "datetime.timedelta"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "dateutil": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "dateutil>=2.0,<3.0",
+      "evidence": [
+        "dateutil.easter"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dateutil.relativedelta": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "datetime>=1.2,<2.0",
+    "dateutil>=2.0,<3.0"
+  ]
+}

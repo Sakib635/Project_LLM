@@ -1,0 +1,100 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python x \u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bs4": {
+      "inferred_version_range": ">=0.0.1,<0.2.0",
+      "recommended_requirements_line": "bs4>=0.0.1,<0.2.0",
+      "evidence": [
+        "BeautifulSoup added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=1.24.0,<2.0.0",
+      "recommended_requirements_line": "urllib>=1.24.0,<2.0.0",
+      "evidence": [
+        "urlopen added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "subprocess>=1.0.0,<2.0.0",
+      "evidence": [
+        "run added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2.0,<3.0.0",
+      "recommended_requirements_line": "re>=2.2.0,<3.0.0",
+      "evidence": [
+        "findall added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argv added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.1,
+      "notes": "Confidence is low because random API was not found in any Python version."
+    },
+    "requests": {
+      "inferred_version_range": ">=2.2.0,<3.0.0",
+      "recommended_requirements_line": "requests>=2.2.0,<3.0.0",
+      "evidence": [
+        "get added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "DataFrame added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "array added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bs4>=0.0.1,<0.2.0",
+    "urllib>=1.24.0,<2.0.0",
+    "subprocess>=1.0.0,<2.0.0",
+    "re>=2.2.0,<3.0.0",
+    "requests>=2.2.0,<3.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

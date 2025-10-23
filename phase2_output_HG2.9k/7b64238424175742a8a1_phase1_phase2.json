@@ -1,0 +1,69 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "base64.b64decode added in Python 3.7 \u2192 min Python 3.7",
+      "Crypto.Cipher.AES.new deprecated in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "base64>=1.0,<2.0",
+      "evidence": [
+        "base64.b64decode introduced in base64 1.0 \u2192 base64 1.0",
+        "base64.b64encode deprecated in base64 2.0 \u2192 base64 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher.AES.new introduced in Crypto 1.0 \u2192 Crypto 2.0",
+        "Crypto.Cipher.AES.MODE_CBC deprecated in Crypto 3.9 \u2192 Crypto 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "hashlib>=1.0,<2.0",
+      "evidence": [
+        "hashlib.sha256 introduced in hashlib 1.0 \u2192 hashlib 1.0",
+        "hashlib.sha256 deprecated in hashlib 2.0 \u2192 hashlib 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Random.new introduced in Random 1.0 \u2192 Random 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pycrypto": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pycrypto>=1.0,<2.0",
+      "evidence": [
+        "pycrypto.AESCipher.__init__ introduced in pycrypto 1.0 \u2192 pycrypto 2.0",
+        "pycrypto.AESCipher.decrypt introduced in pycrypto 1.0 \u2192 pycrypto 2.0",
+        "pycrypto.AESCipher.encrypt introduced in pycrypto 1.0 \u2192 pycrypto 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "base64>=1.0,<2.0",
+    "Crypto>=1.0,<3.0",
+    "hashlib>=1.0,<2.0",
+    "pycrypto>=1.0,<3.0"
+  ]
+}

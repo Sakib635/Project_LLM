@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.2.0,<2.0.0",
+      "evidence": [
+        "tensorflow.name_scope introduced in v1.2.0",
+        "tensorflow.variable_scope depricated in v1.3.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.2.0,<2.0.0"
+  ]
+}

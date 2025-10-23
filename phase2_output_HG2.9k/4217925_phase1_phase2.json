@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["PySide.QtGui.QApplication introduced in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=0.25.1,<0.27",
+"recommended_requirements_line": "pandas>=0.25.1,<0.27",
+"evidence": ["pandas.read_csv introduced in v0.24.0 → inferred version range"],
+"confidence": 0.8,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.13.3,<1.17",
+"recommended_requirements_line": "numpy>=1.13.3,<1.17",
+"evidence": ["numpy.random.rand introduced in v1.16 → inferred version range"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pandas>=0.25.1,<0.27",
+"numpy>=1.13.3,<1.17"
+]
+},
+"requirements.txt": [
+"pandas>=0.25.1,<0.27",
+"numpy>=1.13.3,<1.17"
+]
+}

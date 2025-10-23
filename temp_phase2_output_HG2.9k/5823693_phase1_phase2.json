@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["pandas.DataFrame introduced in v1.0.0", "pandas.DataFrame.to_numpy added in v1.2.0", "pandas.DataFrame.ix deprecated in v1.3.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"twisted": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["defer introduced in v10.2", "endpoints introduced in v13.3", "protocol introduced in v15.0", "reactor introduced in v11.0", "task introduced in v16.0", "log deprecated in v17.9", "irc introduced in v18.0"],
+"confidence": 0.4,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+null
+]
+},
+"requirements.txt": [
+"pandas>=1.2.0,<2.0.0",
+null
+]
+}

@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "sys.stdout added in Python 3.6 \u2192 min Python 3.6",
+      "sys.stderr removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "c4d": {
+      "inferred_version_range": ">=0.9,<1.0",
+      "recommended_requirements_line": "c4d>=0.9,<1.0",
+      "evidence": [
+        "c4d.documents.GetActiveDocument introduced in c4d 0.9 \u2192 min c4d 0.9",
+        "c4d.objects.GetActiveObject depricated in c4d 1.0 \u2192 max c4d 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "gui": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": "gui>=0.0,<1.0",
+      "evidence": [
+        "gui.MessageBox introduced in gui 0.0 \u2192 min gui 0.0",
+        "gui.ProgressBar removed in gui 1.0 \u2192 max gui 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "xrange": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "xrange removed in Python 3.1 \u2192 max Python 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "print": {
+      "inferred_version_range": ">=2.7,<3.1",
+      "recommended_requirements_line": "print>=2.7,<3.1",
+      "evidence": [
+        "print introduced in Python 2.7 \u2192 min print 2.7",
+        "print removed in Python 3.1 \u2192 max print 3.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "None": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "None removed in Python 2.7 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "c4d>=0.9,<1.0",
+    "gui>=0.0,<1.0",
+    "print>=2.7,<3.1"
+  ]
+}

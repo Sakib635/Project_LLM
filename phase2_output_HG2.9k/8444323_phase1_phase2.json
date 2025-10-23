@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "random.seed added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": ">=0.8.1,<2.0.0",
+      "recommended_requirements_line": "struct>=0.8.1,<2.0.0",
+      "evidence": [
+        "struct.pack added in struct 0.8.1 \u2192 min Python y",
+        "struct.unpack added in struct 0.8.1 \u2192 min Python y"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=0.20.0,<3.0.0",
+      "recommended_requirements_line": "scipy>=0.20.0,<3.0.0",
+      "evidence": [
+        "scipy.linalg added in scipy 0.20.0 \u2192 min Python y"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sample.wmv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sample.wmv.length added in sample.wmv x \u2192 max Python z",
+        "sample.wmv.open added in sample.wmv x \u2192 max Python z",
+        "sample.wmv.read added in sample.wmv x \u2192 max Python z",
+        "sample.wmv.close added in sample.wmv x \u2192 max Python z"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "struct>=0.8.1,<2.0.0",
+    "scipy>=0.20.0,<3.0.0"
+  ]
+}

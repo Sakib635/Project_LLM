@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The struct module was added in Python 3.5"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "objc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pyobjc-core>=1.2.0,<2.0.0",
+      "evidence": [
+        "The objc module was added in Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pyobjc-framework-Foundation>=1.0.0,<2.0.0",
+      "evidence": [
+        "The Foundation module was added in Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Cocoa": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pyobjc-framework-Cocoa>=1.0.0,<2.0.0",
+      "evidence": [
+        "The Cocoa module was added in Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "AEDataModel": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The AEDataModel module was added in Python 3.5"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "AERegistry": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "pyobjc-framework-AERegistry>=1.0.0,<2.0.0",
+      "evidence": [
+        "The AERegistry module was added in Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyobjc-core>=1.2.0,<2.0.0",
+    "pyobjc-framework-Foundation>=1.0.0,<2.0.0",
+    "pyobjc-framework-Cocoa>=1.0.0,<2.0.0",
+    "pyobjc-framework-AERegistry>=1.0.0,<2.0.0"
+  ]
+}

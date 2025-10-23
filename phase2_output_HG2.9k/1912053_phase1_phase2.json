@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "gtk.ScrolledWindow.add added in Python 3.7 \u2192 min Python 3.7",
+      "gtk.TextView.set_border_window_size removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.6,<4",
+      "recommended_requirements_line": "gtk~=3.6",
+      "evidence": [
+        "gtk.TextView added in v3.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pango": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pango.ALIGN_RIGHT added in v1.20"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "gtk.gobject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gtk.gobject.GObject.connect added in v3.6"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gtk~=3.6",
+    "pango>=1.20"
+  ]
+}

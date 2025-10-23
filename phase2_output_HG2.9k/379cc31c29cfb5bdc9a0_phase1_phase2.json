@@ -1,0 +1,38 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["argparse.ArgumentParser added in Python 3.5 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "chainer": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "chainer==4.0.*",
+      "evidence": ["chainer.Variable introduced in v3.0, depricated in v4.0, removed in v5.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2.0",
+      "recommended_requirements_line": "numpy==1.16.*",
+      "evidence": ["numpy.ndarray introduced in v1.15, depricated in v1.16, removed in v2.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.20,<0.21",
+      "recommended_requirements_line": "scikit-learn==0.20.*",
+      "evidence": ["sklearn.datasets.fetch_mldata introduced in v0.19, depricated in v0.20, removed in v0.21"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "chainer==4.0.*",
+    "numpy==1.16.*",
+    "scikit-learn==0.20.*"
+  ]
+}
+```

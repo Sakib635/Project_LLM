@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "Crypto.Cipher added in Python 3.5 \u2192 min Python 3.4",
+      "base64 module added in Python 3.10 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=2.6,<2.8",
+      "recommended_requirements_line": "Crypto>=2.6,<2.8",
+      "evidence": [
+        "Crypto.Cipher added in Crypto 2.6 \u2192 min Python 3.4",
+        "Crypto module deprecated in Crypto 2.8 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "base64>=1.0,<2.0",
+      "evidence": [
+        "base64.b64decode added in base64 1.0 \u2192 min Python 3.4",
+        "base64 module deprecated in base64 1.9 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "No APIs found in os module"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Crypto>=2.6,<2.8",
+    "base64>=1.0,<2.0"
+  ]
+}

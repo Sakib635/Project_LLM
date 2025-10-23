@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "cv2.imshow added in Python 3.5 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "np.array introduced in v1.17.0, removed in v2.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": ">=1.4.0",
+      "recommended_requirements_line": "argparse>=1.4.0",
+      "evidence": [
+        "ArgumentParser introduced in v1.4.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.8,
+      "notes": "No evidence found for cv2."
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "argparse>=1.4.0"
+  ]
+}

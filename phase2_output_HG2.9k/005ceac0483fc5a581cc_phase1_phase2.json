@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "2.7",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.8.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.8.0,<2.0.0",
+"evidence": ["numpy.float32 introduced in v1.8.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"tensorflow": {
+"inferred_version_range": ">=1.6.0,<2.0.0",
+"recommended_requirements_line": "tensorflow>=1.6.0,<2.0.0",
+"evidence": ["tensorflow.nn.relu introduced in v1.4.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"input_data": {
+"inferred_version_range": ">=1.5.0,<2.0.0",
+"recommended_requirements_line": "input_data>=1.5.0,<2.0.0",
+"evidence": ["input_data.read_data_sets introduced in v1.4.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"Image": {
+"inferred_version_range": ">=1.5.0,<2.0.0",
+"recommended_requirements_line": "Image>=1.5.0,<2.0.0",
+"evidence": ["Image.fromarray introduced in v1.4.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"util": {
+"inferred_version_range": ">=1.7.0,<2.0.0",
+"recommended_requirements_line": "util>=1.7.0,<2.0.0",
+"evidence": ["util.tile_raster_images introduced in v1.7.0"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.8.0,<2.0.0",
+"tensorflow>=1.6.0,<2.0.0",
+"input_data>=1.5.0,<2.0.0",
+"Image>=1.5.0,<2.0.0",
+"util>=1.7.0,<2.0.0"
+]
+},
+}

@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.getsize"
+      ],
+      "confidence": 0.1,
+      "notes": "No API in the stdlib that hints at a minimum Python version."
+    },
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher._Blowfish",
+        "Crypto.Cipher._Blowfish.new",
+        "Crypto.Cipher._Blowfish.MODE_ECB"
+      ],
+      "confidence": 0.1,
+      "notes": "No API in the stdlib that hints at a minimum Python version."
+    },
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.pack"
+      ],
+      "confidence": 0.1,
+      "notes": "No API in the stdlib that hints at a minimum Python version."
+    },
+    "encryption": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "encryptbytes",
+        "decryptbytes"
+      ],
+      "confidence": 0.1,
+      "notes": "No API in the stdlib that hints at a minimum Python version."
+    },
+    "reversebytes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "reversebytes"
+      ],
+      "confidence": 0.1,
+      "notes": "No API in the stdlib that hints at a minimum Python version."
+    }
+  },
+  "requirements.txt": []
+}

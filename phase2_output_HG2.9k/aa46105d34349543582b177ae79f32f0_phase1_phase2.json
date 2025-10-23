@@ -1,0 +1,75 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "h5py": {
+      "inferred_version_range": ">=2.10,<2.11",
+      "recommended_requirements_line": "h5py>=2.10,<2.11",
+      "evidence": [
+        "h5py.File introduced in v2.10"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine version range for os package"
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19,<2.0",
+      "recommended_requirements_line": "numpy>=1.19,<2.0",
+      "evidence": [
+        "numpy.linalg.norm introduced in v1.19"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=7.0,<8.0",
+      "recommended_requirements_line": "Pillow>=7.0,<8.0",
+      "evidence": [
+        "PIL.Image introduced in v7.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "shutil": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine version range for shutil package"
+    },
+    "skimage": {
+      "inferred_version_range": ">=0.16,<0.17",
+      "recommended_requirements_line": "scikit-image>=0.16,<0.17",
+      "evidence": [
+        "skimage.viewer.ImageViewer introduced in v0.16"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Cannot determine version range for random package"
+    }
+  },
+  "requirements.txt": [
+    "h5py>=2.10,<2.11",
+    "numpy>=1.19,<2.0",
+    "Pillow>=7.0,<8.0",
+    "scikit-image>=0.16,<0.17"
+  ]
+}

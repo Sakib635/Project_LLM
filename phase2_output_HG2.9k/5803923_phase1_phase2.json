@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0.0,<2.1.0",
+      "recommended_requirements_line": "django>=2.0.0,<2.1.0",
+      "evidence": [
+        "Django 2.0 added 'django.conf.settings', 'django.core.files.storage.Storage' and 'django.utils.importlib' APIs"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.files.storage": {
+      "inferred_version_range": ">=2.0.0,<2.1.0",
+      "recommended_requirements_line": "django.core.files.storage>=2.0.0,<2.1.0",
+      "evidence": [
+        "Django 2.0 added 'django.core.files.storage' package"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.files.storage.HybridStorage": {
+      "inferred_version_range": ">=2.0.0,<2.1.0",
+      "recommended_requirements_line": "django.core.files.storage.HybridStorage>=2.0.0,<2.1.0",
+      "evidence": [
+        "Django 2.0 added 'django.core.files.storage.HybridStorage' package"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<2.1.0",
+    "django.core.files.storage>=2.0.0,<2.1.0",
+    "django.core.files.storage.HybridStorage>=2.0.0,<2.1.0"
+  ]
+}

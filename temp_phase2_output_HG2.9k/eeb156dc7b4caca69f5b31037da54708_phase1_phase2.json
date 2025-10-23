@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Unable to determine a reliable upper or lower bound for os package"
+    },
+    "rospy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "rospy>=1.0,<2.0",
+      "evidence": [
+        "rospy.Subscriber introduced in rospy 1.0",
+        "rospy.init_node introduced in rospy 1.0",
+        "rospy.spin introduced in rospy 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2.0",
+      "recommended_requirements_line": "numpy>=1.16,<2.0",
+      "evidence": [
+        "np.fromstring introduced in numpy 1.16",
+        "np.reshape introduced in numpy 1.16",
+        "np.save introduced in numpy 1.16",
+        "np.dtype introduced in numpy 1.16"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sensor_msgs.msg": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Unable to determine a reliable upper or lower bound for sensor_msgs.msg package"
+    }
+  },
+  "requirements.txt": []
+}

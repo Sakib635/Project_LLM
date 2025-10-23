@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6",
+      "sys.stdout removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=8.1.0,<9.0.0",
+      "recommended_requirements_line": "Pillow>=8.1.0,<9.0.0",
+      "evidence": [
+        "PIL.Image added in version 8.1.0; PIL.ImageChops added in version 8.3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "colormath": {
+      "inferred_version_range": ">=2.0.1,<3.0.0",
+      "recommended_requirements_line": "colormath>=2.0.1,<3.0.0",
+      "evidence": [
+        "colormath.color_conversions added in version 2.0.1; colormath.color_objects added in version 2.0.1; colormath.color_diff added in version 2.0.1"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "argparse>=1.4,<2.0",
+      "evidence": [
+        "argparse.ArgumentParser added in version 1.4; argparse.ArgumentParser removed in version 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=8.1.0,<9.0.0",
+    "colormath>=2.0.1,<3.0.0",
+    "argparse>=1.4,<2.0"
+  ]
+}

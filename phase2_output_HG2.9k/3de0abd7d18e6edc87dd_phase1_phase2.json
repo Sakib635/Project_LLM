@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Products.CMFCore.utils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "getToolByName introduced in Products.CMFCore 4.3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "plone.app.textfield.value": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "plone.app.textfield.value>=1.2.0,<2.0.0",
+      "evidence": [
+        "RichTextValue introduced in plone.app.textfield 1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "zope.component.hooks": {
+      "inferred_version_range": ">=3.7.0,<4.0.0",
+      "recommended_requirements_line": "zope.component.hooks>=3.7.0,<4.0.0",
+      "evidence": [
+        "getSite introduced in zope.component 3.7.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Products.CMFCore.utils>=4.3.0,<5.0.0",
+    "plone.app.textfield.value>=1.2.0,<2.0.0",
+    "zope.component.hooks>=3.7.0,<4.0.0"
+  ]
+}

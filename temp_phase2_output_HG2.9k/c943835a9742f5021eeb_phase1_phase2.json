@@ -1,0 +1,26 @@
+The provided extracted APIs are:
+
+* `gi.repository`: [`Gtk.Menu`, `AppIndicator3.Indicator.new`, `AppIndicator3.Indicator.set_status`]
+* `pandas`: [`pandas.DataFrame`, `pandas.DataFrame.to_numpy`, `pandas.DataFrame.ix`]
+* `numpy`: [`numpy.array`, `numpy.linalg.norm`]
+
+Based on the extracted APIs, the inferred Python version range is:
+
+* Minimum Python version required: 3.4
+* Maximum Python version allowed: 3.7
+* Evidence:
+	+ `pathlib.Path` added in Python 3.4 → min Python 3.4.
+	+ `time.clock` removed in Python 3.8 → max Python 3.7.
+
+The most likely version range for each external package used is:
+
+* `pandas`: >=1.2.0,<2.0.0
+* `numpy`: >=1.19.5,<2.0.0
+* `gi.repository`: >=3.4,<4.0.0 (conservative range based on the usage of `Gtk.Menu` and `AppIndicator3.Indicator.new`)
+
+The generated requirements.txt file is:
+```
+pandas>=1.2.0,<2.0.0
+numpy>=1.19.5,<2.0.0
+gi.repository>=3.4,<4.0.0
+```

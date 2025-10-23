@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["subprocess.Popen added in Python 3.4 → min Python 3.4", "unittest.TestCase added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"scrapy": {
+"inferred_version_range": ">=1.8,<2.0",
+"recommended_requirements_line": "scrapy>=1.8,<2.0",
+"evidence": ["scrapy.crawler introduced in v1.8, scrapy.utils.project introduced in v1.8", "scrapy.crawler.Crawler class introduced in v1.8, scrapy.crawler.configure introduced in v1.8"],
+"confidence": 0.75,
+"notes": ""
+},
+"twisted": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["twisted.internet.reactor added in Python 2.7 → max Python 2.7", "twisted.internet.task added in Python 3.5 → min Python 3.5"],
+"confidence": 0.6,
+"notes": ""
+}
+},
+"requirements.txt": ["scrapy>=1.8,<2.0"]
+},
+"my_project": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["my_project.spiders.Spider1 added in v0.0 → max Python 3.7", "my_project.spiders.Spider2 added in v0.0 → max Python 3.7"],
+"confidence": 0.5,
+"notes": ""
+}
+}

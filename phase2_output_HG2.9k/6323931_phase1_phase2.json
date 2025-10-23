@@ -1,0 +1,30 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"dbus": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "dbus-python>=1.2.0,<2.0.0",
+"evidence": ["dbus.SystemBus introduced in version 1.2.0", "dbus.Interface deprecated in version 1.4.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"collections": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["collections.namedtuple introduced in version 3.7", "collections.abc.Collection deprecated in version 3.9"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"dbus-python>=1.2.0,<2.0.0",
+"pandas>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": ["dbus-python>=1.2.0,<2.0.0", "pandas>=1.2.0,<2.0.0"]
+}

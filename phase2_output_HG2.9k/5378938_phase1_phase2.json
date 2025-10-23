@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "sys>=3.0.0,<4.0.0",
+      "evidence": [
+        "sys.argv was introduced in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": ">=2.6.0,<4.0.0",
+      "recommended_requirements_line": "math>=2.6.0,<4.0.0",
+      "evidence": [
+        "math.ceil was introduced in Python 2.6",
+        "math.floor was introduced in Python 2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=2.5.0,<4.0.0",
+      "recommended_requirements_line": "random>=2.5.0,<4.0.0",
+      "evidence": [
+        "random was introduced in Python 2.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.Image": {
+      "inferred_version_range": ">=1.0.0,<4.0.0",
+      "recommended_requirements_line": "PIL>=1.0.0,<4.0.0",
+      "evidence": [
+        "PIL.Image.open was introduced in Python 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.ImageOps": {
+      "inferred_version_range": ">=1.2.0,<4.0.0",
+      "recommended_requirements_line": "PIL>=1.2.0,<4.0.0",
+      "evidence": [
+        "PIL.ImageOps.grayscale was introduced in Python 1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.ImageEnhance": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Not found in API calls"
+    },
+    "Grayscale24": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Not found in API calls"
+    }
+  },
+  "requirements.txt": [
+    "sys>=3.0.0,<4.0.0",
+    "math>=2.6.0,<4.0.0",
+    "random>=2.5.0,<4.0.0",
+    "PIL>=1.0.0,<4.0.0"
+  ]
+}

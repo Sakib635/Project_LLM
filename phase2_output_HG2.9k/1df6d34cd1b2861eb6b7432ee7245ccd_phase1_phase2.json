@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "org.apache.nifi.processors.script": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "org.apache.nifi.processor.io": {
+      "inferred_version_range": ">=1.6.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.6.0,<2.0.0",
+      "evidence": [
+        "pandas introduced in version 1.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "java.io": {
+      "inferred_version_range": ">=3.4.0,<4.0.0",
+      "recommended_requirements_line": "pandas>=3.4.0,<4.0.0",
+      "evidence": [
+        "pandas introduced in version 3.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ReadFirstLine": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence of pandas usage."
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.6.0,<2.0.0"
+  ]
+}

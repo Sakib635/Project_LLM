@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Gitlab": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "Gitlab>=4.0.0,<5.0.0",
+      "evidence": [
+        "Gitlab introduced in version 4.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.7.0,<3.8.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system introduced in version 3.7.0",
+        "os.stat introduced in version 3.7.0",
+        "os.chmod introduced in version 3.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "commands": {
+      "inferred_version_range": ">=3.8.0,<3.9.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bash introduced in version 3.8.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Gitlab>=4.0.0,<5.0.0",
+    "os>=3.7.0,<3.8.0",
+    "commands>=3.8.0,<3.9.0"
+  ]
+}

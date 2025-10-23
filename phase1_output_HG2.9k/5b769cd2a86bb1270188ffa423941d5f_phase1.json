@@ -1,0 +1,17 @@
+{
+  "airflow": [
+    "airflow.operators.http_operator.SimpleHttpOperator",
+    "airflow.operators.postgres_operator.PostgresOperator",
+    "airflow.operators.subdag_operator.SubDagOperator",
+    "airflow.operators.sensors.SqlSensor",
+    "airflow.hooks.postgres_hook.PostgresHook"
+  ],
+  "datetime": [
+    "datetime.datetime",
+    "datetime.timedelta"
+  ],
+  "airflow.models": [
+    "airflow.models.Variable.get",
+    "airflow.models.DAG"
+  ]
+}

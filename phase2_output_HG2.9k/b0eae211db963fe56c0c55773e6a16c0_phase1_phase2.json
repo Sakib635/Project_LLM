@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "push_notifications.api.rest_framework": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "push-notifications-api-rest-framework>=1.2,<2.0",
+      "evidence": [
+        "APNSDeviceAuthorizedViewSet introduced in v1.2 \u2192 1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "push_notifications.models": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "push-notifications-models>=1.2,<2.0",
+      "evidence": [
+        "APNSDevice introduced in v1.2 \u2192 1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "dj_represent.settings": {
+      "inferred_version_range": ">=0.3.4",
+      "recommended_requirements_line": "dj-represent>=0.3.4",
+      "evidence": [
+        "DPN_auto_update_matching_reg_id introduced in v0.3.4 \u2192 0.3.4"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "rest_framework.response": {
+      "inferred_version_range": ">=3.9",
+      "recommended_requirements_line": "dj-rest-framework>=3.9",
+      "evidence": [
+        "Response introduced in v3.9 \u2192 3.9"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "rest_framework": {
+      "inferred_version_range": ">=3.9",
+      "recommended_requirements_line": "dj-rest-framework>=3.9",
+      "evidence": [
+        "HTTP_201_CREATED introduced in v3.9 \u2192 3.9"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "push-notifications-api-rest-framework>=1.2,<2.0",
+    "push-notifications-models>=1.2,<2.0",
+    "dj-represent>=0.3.4",
+    "dj-rest-framework>=3.9"
+  ]
+}

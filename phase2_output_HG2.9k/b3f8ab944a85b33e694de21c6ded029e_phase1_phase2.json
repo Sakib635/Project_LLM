@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "argparse added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "argmax introduced, depricated, removed or changed in v1.16.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "rnn_cell.GRUCell introduced in v2.0.0",
+        "rnn_cell.MultiRNNCell introduced in v2.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": "The version range for TensorFlow could not be inferred due to the lack of information on the exact APIs used."
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.17.0,<2.0.0",
+    "tensorflow>=2.0.0,<3.0.0"
+  ]
+}

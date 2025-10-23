@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "random.shuffle added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scene": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "scene>=2.0.0,<3.0.0",
+      "evidence": [
+        "scene.Rect introduced in v2.0.0, scene.background depricated in v2.1.0",
+        "scene.Layer removed in v2.2.0",
+        "scene.Point introduced in v2.3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "random>=1.0.0,<3.0.0",
+      "evidence": [
+        "random.shuffle introduced in v1.0.0, depricated in v2.0.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scene>=2.0.0,<3.0.0",
+    "random>=1.0.0,<3.0.0"
+  ]
+}

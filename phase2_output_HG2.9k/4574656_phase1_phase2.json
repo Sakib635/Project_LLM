@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tastypie": {
+      "inferred_version_range": ">=0.13.0,<0.15.0",
+      "recommended_requirements_line": "tastypie>=0.13.0,<0.15.0",
+      "evidence": [
+        "API tastypie.authentication.Authentication introduced in v0.13.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "django_facebook": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "django-facebook>=1.6,<2.0",
+      "evidence": [
+        "API django_facebook.connect.connect_user introduced in v1.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "logging>=2.7,<3.0",
+      "evidence": [
+        "API logging.getLogger(__name__) introduced in v2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tastypie>=0.13.0,<0.15.0",
+    "django-facebook>=1.6,<2.0",
+    "logging>=2.7,<3.0"
+  ]
+}

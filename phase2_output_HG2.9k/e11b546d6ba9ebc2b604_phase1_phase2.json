@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "CoreFoundation": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "CoreFoundation>=1.2.0",
+      "evidence": [
+        "CoreFoundation.CFURLCreateWithString introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ctypes": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "ctypes>=3.5",
+      "evidence": [
+        "ctypes.c_void_p added in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "NetFS": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc>=1.2.0",
+    "CoreFoundation>=1.2.0",
+    "ctypes>=3.5"
+  ]
+}

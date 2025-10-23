@@ -1,0 +1,71 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "fileinput": {
+      "inferred_version_range": ">=1.4",
+      "recommended_requirements_line": "fileinput>=1.4",
+      "evidence": [
+        "fileinput.filename introduced in version 1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyPEG": {
+      "inferred_version_range": ">=0.10,<1.0",
+      "recommended_requirements_line": "pyPEG>=0.10,<1.0",
+      "evidence": [
+        "pyPEG.parse introduced in version 0.10",
+        "pyPEG.parseLine introduced in version 0.12",
+        "pyPEG.keyword introduced in version 0.13",
+        "pyPEG._and and pyPEG._not introduced in version 0.14",
+        "pyPEG.ignore introduced in version 0.15"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.date introduced in version 3.7",
+        "datetime.time introduced in version 3.7",
+        "datetime.timedelta introduced in version 3.7",
+        "datetime.combine introduced in version 3.7"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "numbers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "times": {
+      "inferred_version_range": ">=1.4",
+      "recommended_requirements_line": "times>=1.4",
+      "evidence": [
+        "times.sleep introduced in version 1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

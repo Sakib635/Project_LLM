@@ -1,0 +1,31 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "No evidence found for the version range of numpy."
+    },
+    "pymc3": {
+      "inferred_version_range": ">=3.4,<3.7",
+      "recommended_requirements_line": "pymc3>=3.4,<3.7",
+      "evidence": [
+        "pymc3.Stochastic introduced in version 3.4",
+        "pymc3.Normal introduced in version 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

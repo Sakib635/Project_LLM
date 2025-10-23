@@ -1,0 +1,31 @@
+Here's the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["sys.argv added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "gi.repository": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "gi.repository>=1.2.0,<2.0.0",
+      "evidence": ["Vips.Image introduced in v1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "vips": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "vips>=1.2.0,<2.0.0",
+      "evidence": ["Vips.Image introduced in v1.2.0"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gi.repository>=1.2.0,<2.0.0",
+    "vips>=1.2.0,<2.0.0"
+  ]
+}
+```

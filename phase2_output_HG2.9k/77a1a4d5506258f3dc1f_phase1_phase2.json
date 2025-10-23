@@ -1,0 +1,46 @@
+[PYTHON]
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "rospy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "rospy>=1.2,<2.0",
+      "evidence": ["rospy.init_node introduced in rospy 1.2", "rospy.Subscriber deprecated in rospy 2.0"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sensor_msgs.msg": {
+      "inferred_version_range": ">=1.4",
+      "recommended_requirements_line": "sensor_msgs.msg>=1.4",
+      "evidence": ["Image introduced in sensor_msgs 1.4"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["imwrite introduced in cv2 4.0", "imgmsg_to_cv2 introduced in cv2 4.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cv_bridge": {
+      "inferred_version_range": ">=1.6",
+      "recommended_requirements_line": "cv_bridge>=1.6",
+      "evidence": ["CvBridge introduced in cv_bridge 1.6"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "rospy>=1.2,<2.0",
+    "sensor_msgs.msg>=1.4",
+    "cv2>=4.0",
+    "cv_bridge>=1.6"
+  ]
+}
+[/PYTHON]

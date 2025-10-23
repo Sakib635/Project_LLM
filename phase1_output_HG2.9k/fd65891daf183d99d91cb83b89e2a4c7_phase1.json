@@ -1,0 +1,20 @@
+{
+  "bpy": [
+    "bpy.ops.view3d.viewnumpad",
+    "bpy.ops.mesh.primitive_cube_add",
+    "bpy.ops.object.editmode_toggle",
+    "bpy.ops.mesh.delete",
+    "bpy.ops.curve.primitive_bezier_curve_add",
+    "bpy.ops.curve.delete",
+    "bpy.ops.object.modifier_add",
+    "bpy.context.object.modifiers['Screw'].steps = 64",
+    "bpy.context.object.modifiers['Solidify'].thickness = 0.1",
+    "bpy.ops.object.modifier_add",
+    "bpy.context.object.modifiers['EdgeSplit'].show_viewport = False",
+    "bpy.context.object.modifiers['EdgeSplit'].show_render = False"
+  ],
+  "bpy.types": [
+    "bpy.types.Operator",
+    "bpy.types.INFO_MT_mesh_add"
+  ]
+}

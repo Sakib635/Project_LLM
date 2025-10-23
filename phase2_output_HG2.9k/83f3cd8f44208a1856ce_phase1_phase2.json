@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["numpy.fft.fftfreq added in Python 3.6 → min Python 3.6", "sys.exit removed in Python 3.7→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.15.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.15.0,<2.0.0",
+"evidence": ["numpy.fft.fftfreq introduced in v1.15.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"pylab": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["pylab.plot removed in v3.6 → max Python z"],
+"confidence": 0.5,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["sys.exit removed in v3.7 → max Python z"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": ["numpy>=1.15.0,<2.0.0"]
+},
+"requirements.txt": ["numpy>=1.15.0,<2.0.0"]
+}

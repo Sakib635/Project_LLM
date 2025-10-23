@@ -1,0 +1,5 @@
+(declare-fun redis () String)
+(declare-fun gevent () String)
+(declare-fun dnslib () String)
+(assert (and (or (= dnslib "0.9.14")) (or (= gevent "20.12.1")) (or (= redis "3.5.3"))))
+(check-sat)

@@ -1,0 +1,60 @@
+Here is the JSON object for the extracted APIs you provided:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.path"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": "<3.4",
+      "recommended_requirements_line": "subprocess>=2.7.9,<3.4",
+      "evidence": ["subprocess.Popen"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["StringIO"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ImageMagickConversion": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "imagemagick-python>=1.2.0,<2.0.0",
+      "evidence": ["ImageMagickConversion.__init__", "ImageMagickConversion._cache_image_properties", "ImageMagickConversion.width", "ImageMagickConversion.height", "ImageMagickConversion.format", "ImageMagickConversion.gravity", "ImageMagickConversion.crop", "ImageMagickConversion.resize", "ImageMagickConversion.quality", "ImageMagickConversion._process_image", "ImageMagickConversion.convert", "ImageMagickConversion.watermark"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": "<3.4",
+      "recommended_requirements_line": "pillow>=2.7.9,<3.4",
+      "evidence": ["PIL.Image"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": "<3.4",
+      "recommended_requirements_line": "pillow>=2.7.9,<3.4",
+      "evidence": ["Image.open"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "subprocess>=2.7.9,<3.4",
+    "imagemagick-python>=1.2.0,<2.0.0",
+    "pillow>=2.7.9,<3.4"
+  ]
+}
+```

@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "json.loads added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bottle": {
+      "inferred_version_range": ">=0.12,<2.0",
+      "recommended_requirements_line": "bottle>=0.12,<2.0",
+      "evidence": [
+        "bottle.route introduced in v0.12, depricated in v1.0 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "simplejson.JSONEncoder added in v1.2 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    },
+    "pymongo": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "pymongo>=2.6,<3.0",
+      "evidence": [
+        "pymongo.Connection introduced in v2.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.datetime added in v2.5 \u2192 max Python 2.7"
+      ],
+      "confidence": 0.3,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bottle>=0.12,<2.0",
+    "pymongo>=2.6,<3.0"
+  ]
+}

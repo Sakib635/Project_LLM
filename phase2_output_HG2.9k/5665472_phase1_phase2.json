@@ -1,0 +1,38 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["sys.argv added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"gi.repository": {
+"inferred_version_range": ">=2.16.0,<2.18.0",
+"recommended_requirements_line": "gi.repository>=2.16.0,<2.18.0",
+"evidence": ["Gio.Settings added in gi.repository v2.16.0 → inferred version range"],
+"confidence": 1,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<3.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<3.0.0",
+"evidence": ["pandas.DataFrame added in pandas v1.2.0 → inferred version range"],
+"confidence": 1,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.19.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+"evidence": ["numpy.array added in numpy v1.19.0 → inferred version range"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": ["gi.repository>=2.16.0,<2.18.0", "pandas>=1.2.0,<3.0.0", "numpy>=1.19.0,<2.0.0"]
+},
+"requirements_txt": [
+"gi.repository>=2.16.0,<2.18.0",
+"pandas>=1.2.0,<3.0.0",
+"numpy>=1.19.0,<2.0.0"
+]
+}

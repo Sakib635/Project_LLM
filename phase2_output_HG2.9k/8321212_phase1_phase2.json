@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "os.SEEK_END added in Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "django>=2.0.0,<3.0.0",
+      "evidence": [
+        "django.core.files.uploadedfile.InMemoryUploadedFile introduced in Django 2.0.0",
+        "django.core.files.uploadedfile.TemporaryUploadedFile introduced in Django 2.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image introduced in PIL 1.1.7",
+        "PIL.ExifTags introduced in PIL 2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cStringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cStringIO.StringIO introduced in cStringIO 1.2.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<3.0.0",
+    "PIL>=1.1.7,<2.0.0",
+    "cStringIO>=1.2.4"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "python.math.sqrt added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced, depricated, removed or changed in v1.20.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.23.0,<0.25.0",
+      "recommended_requirements_line": "scikit-learn>=0.23.0,<0.25.0",
+      "evidence": [
+        "sklearn.linear_model.base.LinearModel introduced, depricated, removed or changed in v0.24.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20.0,<2.0.0",
+    "scikit-learn>=0.23.0,<0.25.0"
+  ]
+}

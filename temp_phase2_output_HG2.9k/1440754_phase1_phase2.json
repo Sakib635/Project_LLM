@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "csv": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "csv.writer introduced in pandas 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "github2.client": {
+      "inferred_version_range": ">=0.0.0,<0.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Github API added in version 0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "path.join introduced in version 2.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.0.0,<3.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argv introduced in version 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

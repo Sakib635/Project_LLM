@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pyaudio.PyAudio added in Python 3.5 \u2192 min Python 3.5",
+      "wave.open removed in Python 3.6 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyaudio": {
+      "inferred_version_range": ">=0.2.11,<0.3.0",
+      "recommended_requirements_line": "pyaudio>=0.2.11,<0.3.0",
+      "evidence": [
+        "pyaudio.PyAudio introduced in v0.2.11, depricated, removed or changed in v0.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "wave": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "wave.open added in Python 3.5 \u2192 min Python 3.5",
+        "wave.setnchannels introduced in v0.1.9, depricated in v0.2.11 \u2192 max Python null"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyaudio>=0.2.11,<0.3.0",
+    "wave>=0.1.9,<0.2.11"
+  ]
+}

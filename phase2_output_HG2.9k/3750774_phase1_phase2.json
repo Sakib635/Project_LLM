@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "django.db.models.loading.get_model added in Python 3.6 \u2192 min Python 3.6",
+      "haystack.backends.solr_backend.SolrSearchBackend removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.db.models.loading.get_model introduced in Django 1.0 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "haystack": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "haystack.backends.solr_backend.SolrEngine introduced in Haystack 2.0 \u2192 max Haystack 3.0",
+        "haystack.backends.solr_backend.SolrSearchBackend deprecated in Haystack 3.0 \u2192 min Haystack 3.1"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "python.builtins.int introduced in Python 3.0 \u2192 max Python 3.7",
+        "python.builtins.str removed in Python 3.9 \u2192 min Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "haystack>=2.0,<3.0"
+  ]
+}

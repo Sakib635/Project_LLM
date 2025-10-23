@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "Flask>=1.0.2",
+      "evidence": [
+        "Flask added in version 0.7 \u2192 first release with Flask"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "flask.ext.sqlalchemy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Flask-SQLAlchemy>=1.0.0",
+      "evidence": [
+        "Model added in Flask-SQLAlchemy 1.0.0 \u2192 first release with Model"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "flask.ext.admin": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Flask-Admin>=1.0.0",
+      "evidence": [
+        "Admin added in Flask-Admin 1.0.0 \u2192 first release with Admin"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Flask>=1.0.2",
+    "Flask-SQLAlchemy>=1.0.0",
+    "Flask-Admin>=1.0.0"
+  ]
+}

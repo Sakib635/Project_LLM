@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "django>=1.0,<2.0",
+"evidence": ["API 'django.template.TemplateDoesNotExist' introduced in v1.0", "API 'cms.models.pagemodel.Page' deprecated and removed in v2.0"],
+"confidence": 0.5,
+"notes": ""
+},
+"cms": {
+"inferred_version_range": ">=1.0,<2.0",
+"recommended_requirements_line": "cms>=1.0,<2.0",
+"evidence": ["API 'cms.models.pagemodel.Page' introduced in v1.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"os": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["API 'os.path.exists' introduced in v3.6"],
+"confidence": 0.8,
+"notes": "Maximum version is uncertain and may be higher than 2.0."
+}
+},
+"requirements.txt": ["django>=1.0,<2.0", "cms>=1.0,<2.0"]
+},
+"notes": ""
+}

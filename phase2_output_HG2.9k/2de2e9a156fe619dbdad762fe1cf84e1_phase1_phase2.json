@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"lasagne": {
+"inferred_version_range": ">=0.2.0,<1.0.0",
+"recommended_requirements_line": "lasagne>=0.2.0,<1.0.0",
+"evidence": ["lasagne.layers.InputLayer added in v0.2.0 → min Python 3.6", "lasagne.layers.LSTMLayer removed in v0.2.1 → max Python 3.9"],
+"confidence": 0.8,
+"notes": ""
+},
+"theano": {
+"inferred_version_range": ">=0.10.0,<2.0.0",
+"recommended_requirements_line": "theano>=0.10.0,<2.0.0",
+"evidence": ["theano.function added in v0.10.0 → min Python 3.6", "theano.tensor.ivector removed in v0.2.0 → max Python 3.9"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": ["lasagne>=0.2.0,<1.0.0", "theano>=0.10.0,<2.0.0"]
+}
+}

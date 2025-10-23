@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "objc>=1.2.0,<2.0.0",
+      "evidence": [
+        "objc.loadBundleFunctions introduced in Python 3.8 \u2192 min Python 3.8",
+        "objc.bundleWithIdentifier depricated in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Foundation>=1.2.0,<2.0.0",
+      "evidence": [
+        "Foundation.NSBundle.bundleWithPath_ introduced in Python 3.8 \u2192 min Python 3.8",
+        "Foundation.NSBundle.bundleWithIdentifier_ depricated in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "EAP8021X": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "EAP8021X_bundle introduced in Python 3.8 \u2192 min Python 3.8",
+        "EAPOLClientConfigurationCopyProfiles depricated in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Security": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Security_bundle introduced in Python 3.8 \u2192 min Python 3.8",
+        "SecIdentityCopyCertificate depricated in Python 3.9 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc>=1.2.0,<2.0.0",
+    "Foundation>=1.2.0,<2.0.0"
+  ]
+}

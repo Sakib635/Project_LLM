@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "apscheduler": {
+      "inferred_version_range": ">=3.6.0",
+      "recommended_requirements_line": "apscheduler>=3.6.0",
+      "evidence": [
+        "APScheduler 3.6.0 released with support for Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "daemon": {
+      "inferred_version_range": ">=1.0",
+      "recommended_requirements_line": "daemon>=1.0",
+      "evidence": [
+        "DaemonRunner introduced in Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.2,
+      "notes": "No information about version range for os package"
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5",
+      "recommended_requirements_line": "sys>=3.5",
+      "evidence": [
+        "sys.exc_info added in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.2,
+      "notes": "No information about version range for time package"
+    }
+  },
+  "requirements.txt": [
+    "apscheduler>=3.6.0",
+    "daemon>=1.0"
+  ]
+}

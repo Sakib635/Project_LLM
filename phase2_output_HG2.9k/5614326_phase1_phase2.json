@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": ">=1.0.2,<2.0.0",
+      "recommended_requirements_line": "flask>=1.0.2,<2.0.0",
+      "evidence": [
+        "API flask.Flask introduced in v1.0.2",
+        "API flask.jsonify introduced in v1.0.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "flask-httpauth": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API flask_httpauth.HTTPBasicAuth introduced in v0.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask>=1.0.2,<2.0.0",
+    "flask-httpauth==0.3"
+  ]
+}

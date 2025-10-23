@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.8",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "xchat": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "xchat.emit_print introduced in v3.0",
+        "xchat.hook_command introduced in v3.2"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "Hush": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Hush.__init__ introduced in v2.1"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "xchat>=3.0",
+    "Hush>=2.1"
+  ]
+}

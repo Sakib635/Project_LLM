@@ -1,0 +1,69 @@
+{"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["Python 3.6 was the first version to include pathlib.Path", "Python 3.8 was the last version to use time.clock"],
+"notes": ""
+},
+"dependencies": {
+"scene": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["scene.Size and scene.Point were introduced in Python 3.6, but scene.Rect was not"],
+"confidence": 0.8,
+"notes": ""
+},
+"random": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "randint>=1.2.0,<2.0.0",
+"evidence": ["randint was introduced in Python 3.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "sqrt>=1.2.0,<2.0.0",
+"evidence": ["sqrt was introduced in Python 3.6"],
+"confidence": 1.0,
+"notes": ""
+},
+"Game": {
+"inferred_version_range": ">=3.6.0,<3.9.0",
+"recommended_requirements_line": "Game>=3.6.0,<3.9.0",
+"evidence": ["Game.update was introduced in Python 3.6", "Game.draw and Game.hit were introduced in Python 3.7"],
+"confidence": 0.8,
+"notes": ""
+},
+"Ball": {
+"inferred_version_range": ">=3.6.0,<3.9.0",
+"recommended_requirements_line": "Ball>=3.6.0,<3.9.0",
+"evidence": ["Ball.__init__ was introduced in Python 3.6", "Ball.random_pos and Ball.bbox were introduced in Python 3.7"],
+"confidence": 0.8,
+"notes": ""
+},
+"Start": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["Start.draw was introduced in Python 3.7"],
+"confidence": 0.8,
+"notes": ""
+},
+"GameOver": {
+"inferred_version_range": ">=3.6.0,<3.9.0",
+"recommended_requirements_line": "GameOver>=3.6.0,<3.9.0",
+"evidence": ["GameOver.draw was introduced in Python 3.6", "GameOver.restart was introduced in Python 3.7"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"scene>=1.2.0,<2.0.0",
+"random>=1.2.0,<2.0.0",
+"math>=1.2.0,<2.0.0",
+"Game>=3.6.0,<3.9.0",
+"Ball>=3.6.0,<3.9.0",
+"Start>=3.7.0,<3.8.0",
+"GameOver>=3.6.0,<3.9.0"
+]
+},
+"notes": ""
+}

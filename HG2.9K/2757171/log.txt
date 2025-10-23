@@ -1,0 +1,15 @@
+/usr/local/lib/python2.7/getpass.py:83: GetPassWarning: Can not control echo on the terminal.
+  passwd = fallback_getpass(prompt, stream)
+Warning: Password input may be echoed.
+encrypted wallet: Traceback (most recent call last):
+  File "snippet.py", line 90, in <module>
+    clear = decrypt(prompt("encrypted wallet"), prompt("password"))
+  File "snippet.py", line 9, in prompt
+    return getpass.getpass(p + ": ")
+  File "/usr/local/lib/python2.7/getpass.py", line 83, in unix_getpass
+    passwd = fallback_getpass(prompt, stream)
+  File "/usr/local/lib/python2.7/getpass.py", line 118, in fallback_getpass
+    return _raw_input(prompt, stream)
+  File "/usr/local/lib/python2.7/getpass.py", line 135, in _raw_input
+    raise EOFError
+EOFError

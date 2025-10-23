@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "graphql.core.utils.ast_to_dict added in Python 3.7 \u2192 min Python 3.7",
+      "pandas.DataFrame added in Python 0.12.0 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "graphql": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "graphql.core.schema.ResolveInfo added in graphql 1.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.24.0,<0.26.0",
+      "recommended_requirements_line": "pandas>=0.24.0,<0.26.0",
+      "evidence": [
+        "pandas.DataFrame added in pandas 0.24.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.17.0,<2.0.0",
+      "evidence": [
+        "numpy.array added in numpy 1.17.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "graphql>=1.0,<2.0",
+    "pandas>=0.24.0,<0.26.0",
+    "numpy>=1.17.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scrapy": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "scrapy>=1.5,<2.0",
+      "evidence": [
+        "CrawlSpider introduced in Scrapy 1.5"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "scrapy_tutorial": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "scrapy-tutorial>=1.5,<2.0",
+      "evidence": [
+        "ScrapyTutorialItem introduced in Scrapy 1.5"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scrapy>=1.5,<2.0",
+    "scrapy-tutorial>=1.5,<2.0"
+  ]
+}

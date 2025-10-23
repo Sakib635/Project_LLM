@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "matplotlib.use added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "matplotlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "matplotlib>=3.4,<3.8",
+      "evidence": [
+        "matplotlib.use introduced in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "pyaudio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pyaudio>=1.2,<2",
+      "evidence": [
+        "pyaudio.PyAudio introduced in v1.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "wave": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "wave>=3.4,<3.8",
+      "evidence": [
+        "wave.open introduced in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.2,<2",
+      "evidence": [
+        "numpy.fromstring introduced in v1.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "multiprocessing>=3.4,<3.8",
+      "evidence": [
+        "multiprocessing.Queue introduced in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "matplotlib>=3.4,<3.8",
+    "pyaudio>=1.2,<2",
+    "wave>=3.4,<3.8",
+    "numpy>=1.2,<2",
+    "multiprocessing>=3.4,<3.8"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "subprocess.check_output introduced in Python 3.7 \u2192 min Python 3.7",
+      "multiprocessing.Queue removed in Python 3.8 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "subprocess": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "subprocess>=1.0.0,<2.0.0",
+      "evidence": [
+        "subprocess.check_output introduced in v1.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": ">=3.4.0,<3.9.0",
+      "recommended_requirements_line": "multiprocessing>=3.4.0,<3.9.0",
+      "evidence": [
+        "multiprocessing.Process introduced in v3.4.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "south.migration": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "south.migration.all_migrations removed in v0.8 \u2192 no inference possible"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "south.models": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "south.models.MigrationHistory removed in v0.8 \u2192 no inference possible"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2.0,<3.0.0",
+      "recommended_requirements_line": "re>=2.2.0,<3.0.0",
+      "evidence": [
+        "re.match introduced in v2.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "subprocess>=1.0.0,<2.0.0",
+    "multiprocessing>=3.4.0,<3.9.0",
+    "re>=2.2.0,<3.0.0"
+  ]
+}

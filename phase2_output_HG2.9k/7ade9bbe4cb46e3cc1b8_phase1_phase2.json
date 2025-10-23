@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "weechat": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "weechat>=1.2.0,<2.0.0",
+      "evidence": [
+        "weechat.buffer_new introduced in version 1.2.0",
+        "weechat.info_get deprecated in version 1.5"
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "csv>=1.4.0,<2.0.0",
+      "evidence": [
+        "csv.reader introduced in version 1.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "unicodedata": {
+      "inferred_version_range": ">=3.3.0,<4.0.0",
+      "recommended_requirements_line": "unicodedata>=3.3.0,<4.0.0",
+      "evidence": [
+        "unicodedata.normalize introduced in version 3.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep removed in version 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "weechat>=1.2.0,<2.0.0",
+    "csv>=1.4.0,<2.0.0",
+    "unicodedata>=3.3.0,<4.0.0"
+  ]
+}

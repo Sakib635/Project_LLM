@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "numpy.array",
+        "numpy.linalg.inv"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.2.0,<2.0.0",
+      "evidence": [
+        "scipy.stats.multivariate_normal.rvs"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "matplotlib.pyplot.plot",
+        "matplotlib.pyplot.show"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "python.random.rand"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

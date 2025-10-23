@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+"obelisk": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "obelisk>=1.2.0,<2.0.0",
+"evidence": ["obelisk.HighDefWallet.root", "obelisk.HighDefWallet.branch"],
+"confidence": 0.75,
+"notes": ""
+},
+"ecdsa": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "ecdsa>=1.2.0,<2.0.0",
+"evidence": ["ecdsa.numbertheory.square_root_mod_prime", "ecdsa.ellipticcurve.Point"],
+"confidence": 0.75,
+"notes": ""
+},
+"os": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["os.urandom"],
+"confidence": 0.875,
+"notes": ""
+}
+},
+"requirements.txt": [
+"obelisk>=1.2.0,<2.0.0",
+"ecdsa>=1.2.0,<2.0.0"
+]
+},
+"requirements.txt": ["obelisk>=1.2.0,<2.0.0", "ecdsa>=1.2.0,<2.0.0"]
+}

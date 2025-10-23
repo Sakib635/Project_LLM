@@ -1,0 +1,31 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.7 → min Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "django>=2.0,<3.0",
+      "evidence": ["Django 2.0 introduced MEDIA_URL"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "your-project": {
+      "inferred_version_range": ">=1.8,<2.0",
+      "recommended_requirements_line": "your-project>=1.8,<2.0",
+      "evidence": ["Context processor ssl_fix introduced in Django 1.8"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0,<3.0",
+    "your-project>=1.8,<2.0"
+  ]
+}
+```

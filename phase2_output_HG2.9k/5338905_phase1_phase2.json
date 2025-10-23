@@ -1,0 +1,31 @@
+Here's the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "PySide": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "PySide>=1.2.0,<2.0.0",
+      "evidence": ["PySide.QtCore.QApplication introduced in v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["sys.argv introduced in Python 3.6"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "PySide>=1.2.0,<2.0.0",
+    "sys>=3.6"
+  ]
+}
+```

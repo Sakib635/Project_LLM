@@ -1,0 +1,26 @@
+{
+"python_version": {
+"min": "y",
+"max": "x",
+"evidence": ["pathlib.Path added in Python y → min Python y", "time.clock removed in Python x→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"re": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "re>=1.2.0,<2.0.0",
+"evidence": ["re.compile introduced in v1.2.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"MeCab": {
+"inferred_version_range": ">=0.98,<0.99",
+"recommended_requirements_line": "MeCab>=0.98,<0.99",
+"evidence": ["MeCab.Tagger introduced in v0.98", "MeCab.Node introduced in v0.98"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["re>=1.2.0,<2.0.0","MeCab>=0.98,<0.99"]
+}
+}

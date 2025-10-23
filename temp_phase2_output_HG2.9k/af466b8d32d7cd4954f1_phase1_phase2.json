@@ -1,0 +1,71 @@
+Here is the final JSON object:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "ui": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "ui>=1.2.0,<2.0.0",
+      "evidence": ["ui.load_view_str introduced in v1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "dialogs": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "dialogs>=1.2.0,<2.0.0",
+      "evidence": ["dialogs.list_dialog introduced in v1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "editor": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "editor>=1.2.0,<2.0.0",
+      "evidence": ["editor.get_path introduced in v1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "os>=1.0.0,<2.0.0",
+      "evidence": ["os.path.splitext introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "base64>=1.0.0,<2.0.0",
+      "evidence": ["base64.b64encode introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "bz2": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "bz2>=1.0.0,<2.0.0",
+      "evidence": ["bz2.compress introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "clipboard": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "clipboard>=1.0.0,<2.0.0",
+      "evidence": ["clipboard.set introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ui>=1.2.0,<2.0.0",
+    "dialogs>=1.2.0,<2.0.0",
+    "editor>=1.2.0,<2.0.0",
+    "os>=1.0.0,<2.0.0",
+    "base64>=1.0.0,<2.0.0",
+    "bz2>=1.0.0,<2.0.0",
+    "clipboard>=1.0.0,<2.0.0"
+  ]
+}
+```

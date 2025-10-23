@@ -1,0 +1,43 @@
+{
+  "sqlalchemy": [
+    "sqlalchemy.create_engine",
+    "sqlalchemy.MetaData",
+    "sqlalchemy.Table",
+    "sqlalchemy.Column",
+    "sqlalchemy.Integer",
+    "sqlalchemy.NullPool"
+  ],
+  "DB_CONFIG_DICT": [
+    "DB_CONFIG_DICT['user']",
+    "DB_CONFIG_DICT['password']",
+    "DB_CONFIG_DICT['host']",
+    "DB_CONFIG_DICT['port']",
+    "DB_CONFIG_DICT['database']"
+  ],
+  "DB_CONN_FORMAT": [
+    "DB_CONN_FORMAT.format(database='postgres')"
+  ],
+  "engine_default": [
+    "create_engine(DB_CONN_URI_DEFAULT)",
+    "engine_default.connect()"
+  ],
+  "NEW_DB_NAME": [
+    "NEW_DB_NAME",
+    "DB_CONN_URI_NEW"
+  ],
+  "metadata": [
+    "sqlalchemy.MetaData()"
+  ],
+  "proj": [
+    "Table('test', metadata, Column('id', Integer))"
+  ],
+  "setup_module": [
+    "setup_module()"
+  ],
+  "test_create_table": [
+    "test_create_table()"
+  ],
+  "teardown_module": [
+    "teardown_module()"
+  ]
+}

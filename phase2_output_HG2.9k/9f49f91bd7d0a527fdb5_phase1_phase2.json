@@ -1,0 +1,120 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.5 \u2192 min Python 3.5",
+      "sys.setdefaultencoding removed in Python 3.5\u2192 max Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "argparse>=1.2.0,<2.0.0",
+      "evidence": [
+        "argparse.ArgumentParser introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "logging>=3.5.0,<4.0.0",
+      "evidence": [
+        "logging.getLogger introduced in v3.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pprint": {
+      "inferred_version_range": ">=3.3.0,<4.0.0",
+      "recommended_requirements_line": "pprint>=3.3.0,<4.0.0",
+      "evidence": [
+        "pprint.pformat introduced in v3.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv removed in Python 3.5\u2192 max Python 3.5",
+        "sys.exit introduced in v2.6 \u2192 min Python 2.6"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.0.0,<4.0.0",
+      "recommended_requirements_line": "json>=1.0.0,<4.0.0",
+      "evidence": [
+        "json.loads introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "lxml.etree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "lxml.etree.fromstring removed in Python 3.5\u2192 max Python 3.5",
+        "lxml.etree.tostring introduced in v4.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "re.split added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cfgm_common.ifmap.client": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cfgm_common.ifmap.client.call introduced in v4.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cfgm_common.ifmap.request": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cfgm_common.ifmap.request.NewSessionRequest introduced in v4.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cfgm_common.ifmap.response": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cfgm_common.ifmap.response.newSessionResult introduced in v4.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "cfgm_common.ifmap.id": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cfgm_common.ifmap.id.Identity introduced in v4.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2.0,<2.0.0",
+    "logging>=3.5.0,<4.0.0",
+    "pprint>=3.3.0,<4.0.0",
+    "json>=1.0.0,<4.0.0"
+  ]
+}

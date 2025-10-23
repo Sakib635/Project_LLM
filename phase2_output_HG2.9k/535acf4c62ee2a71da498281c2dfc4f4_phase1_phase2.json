@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "np.random added in Python 3.7 \u2192 min Python 3.6",
+      "tf.data.Dataset removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gym": {
+      "inferred_version_range": ">=0.14,<0.15",
+      "recommended_requirements_line": "gym>=0.14,<0.15",
+      "evidence": [
+        "Gym 0.14.0 introduced",
+        "Gym 0.15.0 removed"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<1.17",
+      "recommended_requirements_line": "numpy>=1.16,<1.17",
+      "evidence": [
+        "np.random added in Python 3.7 \u2192 min Python 3.6",
+        "tf.data.Dataset removed in Python 3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "tensorflow>=2.1,<2.2",
+      "evidence": [
+        "tf.data.Dataset removed in Python 3.9 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gym>=0.14,<0.15",
+    "numpy>=1.16,<1.17"
+  ]
+}

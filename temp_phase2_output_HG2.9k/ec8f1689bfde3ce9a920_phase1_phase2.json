@@ -1,0 +1,63 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "stem": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "stem>=1.2.0,<2.0.0",
+      "evidence": [
+        "stem.control.Controller introduced in stem 1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "stem.process": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "stem.process>=1.2.0,<2.0.0",
+      "evidence": [
+        "stem.process.launch_tor_with_config introduced in stem 1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "stem.util": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "stem.util>=1.2.0,<2.0.0",
+      "evidence": [
+        "stem.util.term introduced in stem 1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=0.12.0,<0.13.0",
+      "recommended_requirements_line": "flask>=0.12.0,<0.13.0",
+      "evidence": [
+        "flask.Flask and flask.route introduced in Flask 0.12"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": ">=1.6.0,<1.7.0",
+      "recommended_requirements_line": "tempfile>=1.6.0,<1.7.0",
+      "evidence": [
+        "tempfile.mkdtemp introduced in tempfile 1.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "stem>=1.2.0,<2.0.0",
+    "flask>=0.12.0,<0.13.0",
+    "tempfile>=1.6.0,<1.7.0"
+  ]
+}

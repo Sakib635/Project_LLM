@@ -1,0 +1,24 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "gevent.patch_psycopg added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "psycogreen.gevent": {
+      "inferred_version_range": ">=1.2,<2",
+      "recommended_requirements_line": "psycogreen.gevent>=1.2,<2",
+      "evidence": [
+        "gevent.patch_psycopg introduced in v1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "psycogreen.gevent>=1.2,<2"
+  ]
+}

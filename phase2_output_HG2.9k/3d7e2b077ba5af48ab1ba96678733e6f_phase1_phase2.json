@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.7",
+    "evidence": [
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "binaryninja": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "binaryninja>=1.0.0,<2.0.0",
+      "evidence": [
+        "BinaryViewType introduced in binaryninja 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=2.4.0,<3.0.0",
+      "recommended_requirements_line": "socket>=2.4.0,<3.0.0",
+      "evidence": [
+        "socket.socket introduced in socket 2.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "base64>=1.0.0,<2.0.0",
+      "evidence": [
+        "base64.b64encode introduced in base64 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "binaryninja>=1.0.0,<2.0.0",
+    "socket>=2.4.0,<3.0.0",
+    "base64>=1.0.0,<2.0.0"
+  ]
+}

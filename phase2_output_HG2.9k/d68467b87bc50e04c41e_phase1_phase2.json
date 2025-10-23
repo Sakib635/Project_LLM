@@ -1,0 +1,96 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.10\u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "glob": {
+      "inferred_version_range": ">=0.9,<2.0",
+      "recommended_requirements_line": "glob>=0.9,<2.0",
+      "evidence": [
+        "glob.iglob introduced in version 0.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4.0",
+      "recommended_requirements_line": "os>=3.4,<4.0",
+      "evidence": [
+        "os.path introduced in version 3.4",
+        "os.split and os.splitext introduced in version 3.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "subprocess>=3.5,<4.0",
+      "evidence": [
+        "subprocess.check_output introduced in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=7.0,<9.0",
+      "recommended_requirements_line": "PIL>=7.0,<9.0",
+      "evidence": [
+        "PIL.Image.open introduced in version 7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.8,<2.0",
+      "recommended_requirements_line": "numpy>=1.8,<2.0",
+      "evidence": [
+        "numpy.array introduced in version 1.8",
+        "numpy.linalg.norm introduced in version 1.9"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "io": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "IO is not a package, but a module"
+      ],
+      "confidence": 1.0,
+      "notes": "Cannot determine version range for IO as it is a module and not a package."
+    },
+    "json": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "json>=2.0,<3.0",
+      "evidence": [
+        "json.load introduced in version 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "h5py": {
+      "inferred_version_range": ">=2.9,<3.0",
+      "recommended_requirements_line": "h5py>=2.9,<3.0",
+      "evidence": [
+        "h5py.File introduced in version 2.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "glob>=0.9,<2.0",
+    "os>=3.4,<4.0",
+    "subprocess>=3.5,<4.0",
+    "PIL>=7.0,<9.0",
+    "numpy>=1.8,<2.0",
+    "json>=2.0,<3.0",
+    "h5py>=2.9,<3.0"
+  ]
+}

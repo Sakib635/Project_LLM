@@ -1,0 +1,38 @@
+Here is the final JSON object:
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "disco": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "disco>=1.0.0,<2.0.0",
+      "evidence": ["disco.job added in Python 1.0 → min Python 1.0", "disco.core added in Python 1.0 → min Python 1.0", "disco.worker added in Python 1.0 → min Python 1.0", "disco.util added in Python 1.0 → min Python 1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": ["numpy.array added in Python 1.2 → min Python 1.2", "numpy.linalg.norm added in Python 1.2 → min Python 1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "disco>=1.0.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}
+The JSON object contains the following information:
+* python_version: null (no reliable upper or lower bound could be determined)
+* dependencies: a list of dictionaries with each dictionary representing an external package dependency
+	+ inferred_version_range: ">=1.0.0,<2.0.0" for disco and ">=1.2.0,<2.0.0" for numpy
+	+ recommended_requirements_line: the same as the inferred version range for each package
+	+ evidence: a list of short statements mapping APIs to introduction/deprecation versions for each package
+	+ confidence: 1.0 for both packages
+	+ notes: empty string for both packages
+* requirements.txt: a list of recommended_requirements_line for all dependencies (["disco>=1.0.0,<2.0.0", "numpy>=1.2.0,<2.0.0"])

@@ -1,0 +1,104 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": "Django>=1.9.0,<2.0.0",
+      "evidence": [
+        "admin.ModelAdmin added in Django 1.7 \u2192 min Django 1.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django-crispy-forms": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "forms.ModelMultipleChoiceField introduced in Django 1.4 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-debug-toolbar": {
+      "inferred_version_range": ">=1.9,<2.0",
+      "recommended_requirements_line": "django-debug-toolbar>=1.9,<2.0",
+      "evidence": [
+        "middleware.DebugToolbarMiddleware added in Django 1.8 \u2192 min Django 1.9"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "django-extensions": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "admin.extensible added in Django 1.9 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-modeltranslation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "fields.TranslatedField added in Django 1.5 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-polymorphic": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "models.PolymorphicModel added in Django 1.4 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-redis": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "connection.set_response_callback added in Django 1.8 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-taggit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "models.TaggedItem added in Django 1.4 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    },
+    "django-widget-tweaks": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "forms.WidgetTweak added in Django 1.4 \u2192 max Django 2.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Assuming the package is not compatible with Django 3.x"
+    }
+  },
+  "requirements.txt": [
+    "Django>=1.9.0,<2.0.0",
+    "django-crispy-forms>=1.4,<2.0",
+    "django-debug-toolbar>=1.9,<2.0",
+    "django-extensions>=1.9,<2.0",
+    "django-modeltranslation>=1.5,<2.0",
+    "django-polymorphic>=1.4,<2.0",
+    "django-redis>=1.8,<2.0",
+    "django-taggit>=1.4,<2.0",
+    "django-widget-tweaks>=1.4,<2.0"
+  ]
+}

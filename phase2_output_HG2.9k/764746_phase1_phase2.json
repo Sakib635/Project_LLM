@@ -1,0 +1,32 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "json.dumps added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "pymongo>=3.7,<4.0",
+      "evidence": [
+        "Connection class introduced in pymongo 3.7 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence found for json package"
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.7,<4.0",
+    "json>=3.6"
+  ]
+}

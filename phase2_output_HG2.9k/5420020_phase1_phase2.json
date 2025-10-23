@@ -1,0 +1,90 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6",
+      "print introduced in Python 3.0 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.open introduced in PIL 1.2.0 \u2192 min PIL 1.2.0",
+        "Image.resize introduced in PIL 4.0.0 \u2192 max PIL 4.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.open introduced in PIL 1.2.0 \u2192 min PIL 1.2.0",
+        "Image.resize introduced in PIL 4.0.0 \u2192 max PIL 4.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "reduce": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "reduce introduced in Python 3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "map": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "map introduced in Python 2.4 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "enumerate": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "enumerate introduced in Python 2.4 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "lambda": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "lambda introduced in Python 2.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "isinstance": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "isinstance introduced in Python 2.4 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "hamming": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "hamming introduced in Python 3.1 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.2.0,<2.0.0"
+  ]
+}

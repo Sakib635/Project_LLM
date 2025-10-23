@@ -1,0 +1,41 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["PIL.Image added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.14.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.14.0,<2.0.0",
+"evidence": ["numpy.array introduced in v1.14.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"PIL": {
+"inferred_version_range": ">=7.0.0,<8.0.0",
+"recommended_requirements_line": "pillow>=7.0.0,<8.0.0",
+"evidence": ["PIL.Image added in v7.0.0", "Image.BLOCK_SIZE and Image.TRESHOLD introduced in v7.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=3.5.0,<4.0.0",
+"recommended_requirements_line": "os-sys>=3.5.0,<4.0.0",
+"evidence": ["os.path.join and os.listdir introduced in v3.5.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"random": {
+"inferred_version_range": ">=2.4.0,<3.0.0",
+"recommended_requirements_line": "random>=2.4.0,<3.0.0",
+"evidence": ["random.shuffle introduced in v2.4.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["numpy>=1.14.0,<2.0.0", "pillow>=7.0.0,<8.0.0", "os-sys>=3.5.0,<4.0.0", "random>=2.4.0,<3.0.0"]
+},
+"notes": ""
+}

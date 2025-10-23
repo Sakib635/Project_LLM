@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "os.path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "apt": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "subprocess.check_output introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "apt_pkg": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "apt-pkg>=1.2.0,<2.0.0",
+      "evidence": [
+        "apt_pkg.Cache introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "sys>=3.5,<4.0",
+      "evidence": [
+        "sys.stderr introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "apt>=1.2.0,<2.0.0",
+    "apt-pkg>=1.2.0,<2.0.0",
+    "sys>=3.5,<4.0"
+  ]
+}

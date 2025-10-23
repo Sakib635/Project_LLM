@@ -1,0 +1,85 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "datetime.datetime added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "QSTK": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "QSTK.qstkutil.qsdateutil.getNYSEdays introduced in v3.5.0",
+        "QSTK.qstkutil.tsutil.returnize0 introduced in v3.5.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "datetime>=3.5.0,<4.0.0",
+      "evidence": [
+        "datetime.datetime introduced in v3.5.0",
+        "datetime.timedelta introduced in v3.5.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.20.0,<1.0.0",
+      "recommended_requirements_line": "pandas>=0.20.0,<1.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v0.20.0",
+        "pandas.DataFrame.to_numpy introduced in v1.2.0",
+        "pandas.DataFrame.ix introduced in v1.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.optimize.minimize introduced in v1.2.0",
+        "scipy.optimize.minimize deprecated in v1.7.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.13.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.13.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.13.0",
+        "numpy.linalg.norm introduced in v1.13.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "matplotlib.pyplot.clf introduced in v3.0.0",
+        "matplotlib.pyplot.legend introduced in v2.0.0",
+        "matplotlib.pyplot.plot introduced in v2.0.0",
+        "matplotlib.pyplot.savefig introduced in v1.5.0",
+        "matplotlib.pyplot.ylabel introduced in v3.3.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "QSTK>=3.5.0",
+    "datetime>=3.5.0",
+    "pandas>=0.20.0",
+    "scipy>=1.2.0",
+    "numpy>=1.13.0",
+    "matplotlib.pyplot>=3.0.0"
+  ]
+}

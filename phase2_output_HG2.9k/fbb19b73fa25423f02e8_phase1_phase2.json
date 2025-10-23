@@ -1,0 +1,37 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.7→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"scipy": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "scipy>=1.0.0,<2.0.0",
+"evidence": ["scipy.stats.chisqprob added in scipy v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"statsmodels": {
+"inferred_version_range": ">=0.11.0,<2.0.0",
+"recommended_requirements_line": "statsmodels>=0.11.0,<2.0.0",
+"evidence": ["statsmodels.stats.multitest.multipletests added in statsmodels v0.11.0", "statsmodels.stats.libqsturng.psturng added in statsmodels v0.11.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+"evidence": ["numpy.rankdata added in numpy v1.0.0", "numpy.tiecorrect added in numpy v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"scipy>=1.0.0,<2.0.0",
+"statsmodels>=0.11.0,<2.0.0",
+"numpy>=1.0.0,<2.0.0"
+]
+}
+}

@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "unicorn": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "unicorn>=1.2.0,<2.0.0",
+      "evidence": [
+        "unicorn.UC_ARCH_ARM introduced in v1.2.0",
+        "unicorn.UC_MODE_ARM introduced in v1.2.0",
+        "unicorn.Uc introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "keystone": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "keystone>=1.2.0,<2.0.0",
+      "evidence": [
+        "keystone.Ks introduced in v1.2.0",
+        "keystone.KS_ARCH_ARM introduced in v1.2.0",
+        "keystone.KS_MODE_ARM introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pwn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Insufficient data to determine version range."
+    }
+  },
+  "requirements.txt": [
+    "unicorn>=1.2.0,<2.0.0",
+    "keystone>=1.2.0,<2.0.0"
+  ]
+}

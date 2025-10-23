@@ -1,0 +1,39 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "list": {
+      "inferred_version_range": ">=2.6.1,<3.0.0",
+      "recommended_requirements_line": "list>=2.6.1,<3.0.0",
+      "evidence": [
+        "read_list_payload introduced in Python 2.6.1 \u2192 min Python 2.6.1",
+        "tag_types removed in Python 3.0.0\u2192 max Python z"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "list>=2.6.1,<3.0.0"
+  ]
+}

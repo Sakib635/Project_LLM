@@ -1,0 +1,62 @@
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "cv2>=1.0,<2.0",
+      "evidence": ["cv2.imread", "cv2.resize"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "json>=1.0,<2.0",
+      "evidence": ["json.dumps"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.prod", "numpy.median"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "operator>=1.0,<2.0",
+      "evidence": ["operator.itemgetter", "operator.attrgetter"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "re>=1.0,<2.0",
+      "evidence": ["re.finditer", "re.split", "re.match"],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "sys>=1.0,<2.0",
+      "evidence": ["sys.argv"],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=1.0,<2.0",
+    "json>=1.0,<2.0",
+    "numpy>=1.0,<2.0",
+    "operator>=1.0,<2.0",
+    "re>=1.0,<2.0",
+    "sys>=1.0,<2.0"
+  ]
+}
+```

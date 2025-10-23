@@ -1,0 +1,5 @@
+(declare-fun scapy () String)
+(declare-fun cachetools () String)
+(assert (and (or (= cachetools "4.2.0"))
+     (or (= scapy "2.4.4") (= scapy "2.4.4rc2") (= scapy "2.4.4rc1"))))
+(check-sat)

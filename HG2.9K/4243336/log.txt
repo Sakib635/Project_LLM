@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "snippet.py", line 1, in <module>
+    import OpenGL.GL as GL
+  File "/usr/local/lib/python2.7/site-packages/OpenGL/GL/__init__.py", line 4, in <module>
+    from OpenGL.GL.VERSION.GL_1_1 import *
+  File "/usr/local/lib/python2.7/site-packages/OpenGL/GL/VERSION/GL_1_1.py", line 14, in <module>
+    from OpenGL.raw.GL.VERSION.GL_1_1 import *
+  File "/usr/local/lib/python2.7/site-packages/OpenGL/raw/GL/VERSION/GL_1_1.py", line 7, in <module>
+    from OpenGL.raw.GL import _errors
+  File "/usr/local/lib/python2.7/site-packages/OpenGL/raw/GL/_errors.py", line 4, in <module>
+    _error_checker = _ErrorChecker( _p, _p.GL.glGetError )
+AttributeError: 'NoneType' object has no attribute 'glGetError'

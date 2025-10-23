@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pygame": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pygame>=1.2.0,<2.0.0",
+      "evidence": [
+        "pygame.camera introduced in pygame 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "cv2>=3.2.0,<4.0.0",
+      "evidence": [
+        "cv2.CreateMat introduced in cv2 3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.join added in Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": "Cannot determine a reliable upper or lower bound for os."
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep added in Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": "Cannot determine a reliable upper or lower bound for time."
+    }
+  },
+  "requirements.txt": [
+    "pygame>=1.2.0,<2.0.0",
+    "cv2>=3.2.0,<4.0.0"
+  ]
+}

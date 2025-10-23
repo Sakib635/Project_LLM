@@ -1,0 +1,92 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "The API sys.argv was introduced in Python 3.4."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API sys.argv was introduced in Python 3.4."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssl": {
+      "inferred_version_range": ">=2.7.9,<3.0",
+      "recommended_requirements_line": "pyopenssl>=0.14",
+      "evidence": [
+        "The API ssl.PROTOCOL_TLSv1 was introduced in Python 2.7.9.",
+        "The OpenSSL module was added in Python 3.0."
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=2.5,<3.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API datetime.now was introduced in Python 2.5.",
+        "The API datetime.strptime was deprecated in Python 3.0."
+      ],
+      "confidence": 0.67,
+      "notes": ""
+    },
+    "pytz": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API pytz.utc was introduced in Python 2.5."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ndg": {
+      "inferred_version_range": ">=0.4.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API ndg.httpsclient.subj_alt_name.SubjectAltName was introduced in Python 0.4.0."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyasn1": {
+      "inferred_version_range": ">=0.2",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API pyasn1.codec.der.decoder was introduced in Python 0.2."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=2.7",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API socket.AF_INET was introduced in Python 2.7.",
+        "The API socket.SOCK_STREAM was introduced in Python 3.0."
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "color": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "The API color['error'] was introduced in Python 3.4."
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyopenssl>=0.14",
+    "ndg-httpsclient==0.4.0",
+    "pyasn1>=0.2"
+  ]
+}

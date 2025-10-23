@@ -1,0 +1,247 @@
+{
+  "project": "Example_Project",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-13T22:26:36Z",
+      "image_tag": "example_project_trial_1",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "all --no-cache-dir -r /app/requirements.txt; fi:\n1.893 ERROR: Could not find a version that satisfies the requirement gym<3.0.0,>=2.6.0 (from versions: 0.0.2, 0.0.3, 0.0.4, 0.0.5, 0.0.6, 0.0.7, 0.1.0, 0.1.1, 0.1.2, 0.1.3, 0.1.4, 0.1.5, 0.1.6, 0.1.7, 0.2.0, 0.2.1, 0.2.2, 0.2.3, 0.2.4, 0.2.5, 0.2.6, 0.2.7, 0.2.8, 0.2.9, 0.2.10, 0.2.11, 0.2.12, 0.3.0, 0.4.0, 0.4.1, 0.4.2, 0.4.3, 0.4.4, 0.4.5, 0.4.6, 0.4.8, 0.4.9, 0.4.10, 0.5.0, 0.5.1, 0.5.2, 0.5.3, 0.5.4, 0.5.5, 0.5.6, 0.5.7, 0.6.0, 0.7.0, 0.7.1, 0.7.2, 0.7.3, 0.7.4, 0.8.0.dev0, 0.8.0, 0.8.1, 0.8.2, 0.9.0, 0.9.1, 0.9.2, 0.9.3, 0.9.4, 0.9.5, 0.9.6, 0.9.7, 0.10.0, 0.10.1, 0.10.2, 0.10.3, 0.10.4, 0.10.5, 0.10.8, 0.10.9, 0.10.11, 0.11.0, 0.12.0, 0.12.1, 0.12.4, 0.12.5, 0.12.6, 0.13.0, 0.13.1, 0.14.0, 0.15.3, 0.15.4, 0.15.6, 0.15.7, 0.16.0, 0.17.0, 0.17.1, 0.17.2, 0.17.3, 0.18.0, 0.18.3, 0.19.0, 0.20.0, 0.21.0, 0.22.0, 0.23.0, 0.23.1, 0.24.0, 0.24.1, 0.25.0, 0.25.1, 0.25.2, 0.26.0, 0.26.1, 0.26.2)\n1.893 ERROR: No matching distribution found for gym<3.0.0,>=2.6.0\n1.974 \n1.974 [notice] A new release of pip is available: 24.0 -> 25.2\n1.974 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:5\n--------------------\n   3 |     WORKDIR /app\n   4 |     COPY . /app\n   5 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n   6 |     CMD [\"python\", \"snippet.py\"]\n   7 |     \n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n",
+        "time_sec": 3.54
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_fixes": {
+        "requirements": [
+          "gym>=0.25.2"
+        ],
+        "python_min": "3.6",
+        "python_max": null,
+        "notes": "Increasing the minimum Python version required by the project to 3.6 or higher due to issues with older versions of Python and the use of the 'time.clock' function."
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-13T22:26:51Z",
+      "image_tag": "example_project_trial_2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.24
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.\nPlease upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.\nUsers of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.\nSee the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 18, in <module>\n    from keras.layers import Dense, Flatten, Input, merge, Lambda, Activation\nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.42
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": "3.8",
+        "python_max": null,
+        "notes": "Raised SyntaxError due to f-string in Python 3.6."
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-13T22:27:11Z",
+      "image_tag": "example_project_trial_3",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.3s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.1s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#5 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#5 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 6.56kB done\n#4 DONE 0.1s\n\n#6 [3/4] COPY . /app\n#6 CACHED\n\n#7 [2/4] WORKDIR /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:dba8d83246e3d1d5e5e87bd2e76e14d3cba02d6d6492a06c3206707e1e185932 done\n#9 exporting config sha256:5747c1fe43e20ecaa257aa2b7e0a0a7a8737892de261f4ca09e08c4f232167d5 done\n#9 exporting attestation manifest sha256:381f7d1c6dd2cae39141bd63bfd7385f524cc5b359ab67ed0142b88a6e092f14\n#9 exporting attestation manifest sha256:381f7d1c6dd2cae39141bd63bfd7385f524cc5b359ab67ed0142b88a6e092f14 0.0s done\n#9 exporting manifest list sha256:aef99416e688029bbdd34be366b6e7a72b082bd851c3d34b1fe7e0844c0fffc7 0.0s done\n#9 naming to docker.io/library/example_project_trial_3:latest done\n#9 unpacking to docker.io/library/example_project_trial_3:latest done\n#9 DONE 0.1s\n",
+        "time_sec": 1.3
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.\nPlease upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.\nUsers of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.\nSee the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 18, in <module>\n    from keras.layers import Dense, Flatten, Input, merge, Lambda, Activation\nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.45
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": null,
+        "python_max": null,
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-13T22:27:25Z",
+      "image_tag": "example_project_trial_4",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "top-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.1s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#5 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#5 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 6.56kB done\n#4 DONE 0.0s\n\n#6 [3/4] COPY . /app\n#6 CACHED\n\n#7 [2/4] WORKDIR /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:dba8d83246e3d1d5e5e87bd2e76e14d3cba02d6d6492a06c3206707e1e185932 done\n#9 exporting config sha256:5747c1fe43e20ecaa257aa2b7e0a0a7a8737892de261f4ca09e08c4f232167d5 done\n#9 exporting attestation manifest sha256:ffeddd427b7b123b07724877bf0bab05720094e1c0ee53adacff9b92a85f9afb 0.0s done\n#9 exporting manifest list sha256:96f3fc31b8620fe2d69475e28c6aa0686807fbef1c9889db9f4092dbd5f831dd\n#9 exporting manifest list sha256:96f3fc31b8620fe2d69475e28c6aa0686807fbef1c9889db9f4092dbd5f831dd 0.0s done\n#9 naming to docker.io/library/example_project_trial_4:latest done\n#9 unpacking to docker.io/library/example_project_trial_4:latest done\n#9 DONE 0.1s\n",
+        "time_sec": 1.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.\nPlease upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.\nUsers of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.\nSee the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 18, in <module>\n    from keras.layers import Dense, Flatten, Input, merge, Lambda, Activation\nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.69
+      },
+      "applied_fixes": {
+        "requirements": [
+          "keras>=2.6.0,<3.0.0",
+          "numpy>=1.19.4,<2.0.0",
+          "tensorflow>=2.4.1,<3.0.0"
+        ],
+        "python_min": "3.8",
+        "python_max": "3.10",
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-13T22:27:42Z",
+      "image_tag": "example_project_trial_5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 148.69
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 17, in <module>\n    import gym\nModuleNotFoundError: No module named 'gym'\n",
+        "time_sec": 1.07
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": null,
+        "python_max": null,
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 6,
+      "timestamp": "2025-10-13T22:30:20Z",
+      "image_tag": "example_project_trial_6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.3s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#5 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#5 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 6.61kB 0.0s done\n#4 DONE 0.1s\n\n#6 [3/4] COPY . /app\n#6 CACHED\n\n#7 [2/4] WORKDIR /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:1d2c6bb207c5ba75de43f4ebda6ff1412efbc32e020a26837f2d218a06d4f6af done\n#9 exporting config sha256:cac46a39c686c5443c84f0094215bafe03cefcffac052981c836a44a03d0ce23 done\n#9 exporting attestation manifest sha256:35568d6b01cdbf0bde2c46d7b36f3da456f1518e9500a21138ab608b8aae8a2f 0.0s done\n#9 exporting manifest list sha256:247842141bdc624a3c6348bac5062b698832fa9ce023980ca0ccc7a25d40a859 0.0s done\n#9 naming to docker.io/library/example_project_trial_6:latest done\n#9 unpacking to docker.io/library/example_project_trial_6:latest done\n#9 DONE 0.1s\n",
+        "time_sec": 1.42
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 17, in <module>\n    import gym\nModuleNotFoundError: No module named 'gym'\n",
+        "time_sec": 1.12
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": null,
+        "python_max": null,
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 7,
+      "timestamp": "2025-10-13T22:30:29Z",
+      "image_tag": "example_project_trial_7",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "inux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#5 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#5 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 6.61kB done\n#4 DONE 0.1s\n\n#6 [2/4] WORKDIR /app\n#6 CACHED\n\n#7 [3/4] COPY . /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:1d2c6bb207c5ba75de43f4ebda6ff1412efbc32e020a26837f2d218a06d4f6af done\n#9 exporting config sha256:cac46a39c686c5443c84f0094215bafe03cefcffac052981c836a44a03d0ce23 done\n#9 exporting attestation manifest sha256:885eebbad08c5fb40ec13fb51a2f98020232535ec2e0f9411c49a5eb114bf5f9 0.0s done\n#9 exporting manifest list sha256:f76faf5660ac92001424b88bcd3d2d075b965866f8b1c8a8dada5e2002d6372a\n#9 exporting manifest list sha256:f76faf5660ac92001424b88bcd3d2d075b965866f8b1c8a8dada5e2002d6372a 0.0s done\n#9 naming to docker.io/library/example_project_trial_7:latest done\n#9 unpacking to docker.io/library/example_project_trial_7:latest 0.0s done\n#9 DONE 0.1s\n",
+        "time_sec": 1.24
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 17, in <module>\n    import gym\nModuleNotFoundError: No module named 'gym'\n",
+        "time_sec": 1.11
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": null,
+        "python_max": null,
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 8,
+      "timestamp": "2025-10-13T22:30:44Z",
+      "image_tag": "example_project_trial_8",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B 0.0s done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.1s\n\n#4 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#4 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 6.61kB done\n#5 DONE 0.0s\n\n#6 [2/4] WORKDIR /app\n#6 CACHED\n\n#7 [3/4] COPY . /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:1d2c6bb207c5ba75de43f4ebda6ff1412efbc32e020a26837f2d218a06d4f6af done\n#9 exporting config sha256:cac46a39c686c5443c84f0094215bafe03cefcffac052981c836a44a03d0ce23 done\n#9 exporting attestation manifest sha256:97c54f2ceec748249af89c7f5ced5886764289317376adecb3baf5cec3001fde 0.0s done\n#9 exporting manifest list sha256:660ddab5e11d466c53d528466e5089775e1451a6c1a952e792f776eca534797c\n#9 exporting manifest list sha256:660ddab5e11d466c53d528466e5089775e1451a6c1a952e792f776eca534797c 0.0s done\n#9 naming to docker.io/library/example_project_trial_8:latest done\n#9 unpacking to docker.io/library/example_project_trial_8:latest done\n#9 DONE 0.1s\n",
+        "time_sec": 1.27
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 17, in <module>\n    import gym\nModuleNotFoundError: No module named 'gym'\n",
+        "time_sec": 1.08
+      },
+      "applied_fixes": {
+        "requirements": [],
+        "python_min": null,
+        "python_max": null,
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 9,
+      "timestamp": "2025-10-13T22:30:54Z",
+      "image_tag": "example_project_trial_9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "#0 building with \"desktop-linux\" instance using docker driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 247B done\n#1 DONE 0.1s\n\n#2 [internal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/4] FROM docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2\n#4 resolve docker.io/library/python:3.11-slim@sha256:5e9093a415c674b51e705d42dde4dd6aad8c132dab6ca3e81ecd5cbbe3689bd2 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 6.61kB done\n#5 DONE 0.0s\n\n#6 [2/4] WORKDIR /app\n#6 CACHED\n\n#7 [3/4] COPY . /app\n#7 CACHED\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 CACHED\n\n#9 exporting to image\n#9 exporting layers done\n#9 exporting manifest sha256:1d2c6bb207c5ba75de43f4ebda6ff1412efbc32e020a26837f2d218a06d4f6af done\n#9 exporting config sha256:cac46a39c686c5443c84f0094215bafe03cefcffac052981c836a44a03d0ce23 done\n#9 exporting attestation manifest sha256:f2eec6eefc82cf194d2c2becd346e34c9022e288dee8e55c50af1aa066eed107 0.0s done\n#9 exporting manifest list sha256:4b580ab8aaf6ca9d7d9e5cd1595042cdf1810bd95eaaa0cbd5c5983bc5c41f8d 0.0s done\n#9 naming to docker.io/library/example_project_trial_9:latest\n#9 naming to docker.io/library/example_project_trial_9:latest done\n#9 unpacking to docker.io/library/example_project_trial_9:latest done\n#9 DONE 0.1s\n",
+        "time_sec": 1.15
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 17, in <module>\n    import gym\nModuleNotFoundError: No module named 'gym'\n",
+        "time_sec": 1.07
+      },
+      "applied_fixes": {
+        "requirements": [
+          "gym>=0.10.9,<0.12",
+          "keras>=2.6.0,<3.0.0",
+          "numpy>=1.19.4,<2.0.0",
+          "tensorflow>=2.4.1,<3.0.0"
+        ],
+        "python_min": "3.6",
+        "python_max": "3.8",
+        "notes": ""
+      }
+    },
+    {
+      "attempt": 10,
+      "timestamp": "2025-10-13T22:31:08Z",
+      "image_tag": "example_project_trial_10",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 110.49
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "2025-10-13 22:33:00.182354: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-10-13 22:33:00.185716: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.\n2025-10-13 22:33:00.260023: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.\n2025-10-13 22:33:00.260503: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\nTo enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.\n2025-10-13 22:33:01.189763: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT\nTraceback (most recent call last):\n  File \"snippet.py\", line 18, in <module>\n    from keras.layers import Dense, Flatten, Input, merge, Lambda, Activation\nImportError: cannot import name 'merge' from 'keras.layers' (/usr/local/lib/python3.8/site-packages/keras/layers/__init__.py)\n",
+        "time_sec": 4.34
+      },
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_non_recoverable",
+  "phase1_json": "C:\\Users\\sadma\\Documents\\Thesis\\Project LLM\\Example_Run_Merged\\phase1_output\\Example_Project_phase1.json",
+  "phase2_json": "C:\\Users\\sadma\\Documents\\Thesis\\Project LLM\\Example_Run_Merged\\phase2_output\\Example_Project_phase2.json",
+  "final_requirements": null,
+  "final_python": null,
+  "total_time_sec": 422.39
+}

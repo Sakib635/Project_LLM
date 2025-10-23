@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": ">=4.5,<5",
+      "recommended_requirements_line": "tornado>=4.5,<5",
+      "evidence": [
+        "tornado.concurrent.is_future added in tornado 4.5 \u2192 5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "promise": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "promise.Promise introduced in promise 1.0 \u2192 latest"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tornado>=4.5,<5",
+    "promise>=1.0"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": "3.8",
+    "evidence": [
+      "cStringIO added in Python 2.7 \u2192 min Python 2.7",
+      "datetime.datetime, datetime.date and datetime.time were introduced in Python 2.7 \u2192 min Python 2.7",
+      "decimal.Decimal was introduced in Python 2.7 \u2192 min Python 2.7",
+      "django.core.serializers.python.Serializer and django.core.serializers.json.DjangoJSONEncoder were introduced in Python 2.7 \u2192 min Python 2.7",
+      "django.utils.encoding.is_protected_type and django.utils.encoding.smart_unicode were introduced in Python 2.7 \u2192 min Python 2.7",
+      "django.utils.datetime_safe was introduced in Python 2.7 \u2192 min Python 2.7",
+      "django.contrib.gis.geos.geometry.GEOSGeometry was introduced in Python 2.7 \u2192 min Python 2.7",
+      "django.contrib.gis.db.models.fields.GeometryField was introduced in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cStringIO": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "cStringIO>=0.3.15",
+      "evidence": [
+        "cStringIO.StringIO was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "python-dateutil>=2.8.0",
+      "evidence": [
+        "datetime.datetime was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "decimal": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "python-decimal>=1.5",
+      "evidence": [
+        "decimal.Decimal was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.serializers.python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.core.serializers.python.Serializer was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.serializers.json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.core.serializers.json.DjangoJSONEncoder was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.utils.encoding": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.utils.encoding.is_protected_type and django.utils.encoding.smart_unicode were introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.utils": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.utils.datetime_safe was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.gis.geos.geometry": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.contrib.gis.geos.geometry.GEOSGeometry was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.gis.db.models.fields": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "djangorestframework>=3.9.0",
+      "evidence": [
+        "django.contrib.gis.db.models.fields.GeometryField was introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cStringIO>=0.3.15",
+    "python-dateutil>=2.8.0",
+    "python-decimal>=1.5",
+    "djangorestframework>=3.9.0"
+  ]
+}

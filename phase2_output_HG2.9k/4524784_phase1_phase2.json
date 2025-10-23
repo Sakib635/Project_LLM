@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.5",
+"max": "null",
+"evidence": ["time.clock removed in Python 3.8 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": "Django>=2.0.0,<3.0.0",
+"evidence": ["django.conf.settings introduced in Django 2.0.0 → Django 3.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": null,
+"evidence": ["pandas.Series introduced in pandas 1.2.0 → max pandas 3.x"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": [
+"Django>=2.0.0,<3.0.0",
+"pandas>=1.2.0,<2.0.0"
+]
+},
+"requirements_text": [
+"Django>=2.0.0,<3.0.0",
+"pandas>=1.2.0,<2.0.0"
+]
+}

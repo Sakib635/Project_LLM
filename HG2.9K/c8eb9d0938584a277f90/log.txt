@@ -1,0 +1,20 @@
+/usr/local/lib/python2.7/site-packages/robofab/interface/all/dialogs_legacy.py:27: UserWarning: dialogs.py only supports Mac and PC platforms.
+  warn("dialogs.py only supports Mac and PC platforms.")
+Traceback (most recent call last):
+  File "snippet.py", line 7, in <module>
+    f1 = SelectFont("Select 'Master' font:")
+  File "/usr/local/lib/python2.7/site-packages/robofab/interface/all/dialogs_legacy.py", line 386, in SelectFont
+    from robofab.world import RFont
+  File "/usr/local/lib/python2.7/site-packages/robofab/world.py", line 102, in <module>
+    from robofab.objects.objectsRF import CurrentFont, CurrentGlyph, RFont, RGlyph, OpenFont, NewFont, AllFonts
+  File "/usr/local/lib/python2.7/site-packages/robofab/objects/objectsRF.py", line 4, in <module>
+    from robofab.objects.objectsBase import BaseFont, BaseKerning, BaseGroups, BaseInfo, BaseFeatures, BaseLib,\
+  File "/usr/local/lib/python2.7/site-packages/robofab/objects/objectsBase.py", line 25, in <module>
+    from robofab import ufoLib
+  File "/usr/local/lib/python2.7/site-packages/robofab/ufoLib.py", line 38, in <module>
+    from robofab.glifLib import GlyphSet, READ_MODE, WRITE_MODE
+  File "/usr/local/lib/python2.7/site-packages/robofab/glifLib.py", line 19, in <module>
+    from robofab.pens.pointPen import AbstractPointPen
+  File "/usr/local/lib/python2.7/site-packages/robofab/pens/pointPen.py", line 145, in <module>
+    from fontTools.pens.basePen import AbstractPen
+ImportError: No module named fontTools.pens.basePen

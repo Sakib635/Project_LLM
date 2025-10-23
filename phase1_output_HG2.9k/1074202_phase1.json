@@ -1,0 +1,59 @@
+{
+  "import os": [],
+  "import sys": [],
+  "import re": [],
+  "import subprocess": [],
+  "import functools": [],
+  "from os.path import normpath": [],
+  "from urlparse import urlparse, parse_qsl": [],
+  "from urllib import unquote, urlencode, quote, pathname2url as p2u": [],
+  "from xml.etree.ElementTree import Element, tostring": [],
+  "from json import dumps as dumpsj, loads as loadsj": [],
+  "import sublime": [],
+  "import sublime_plugin": [],
+  "class one_shot(object)": [
+    "callbacks"
+  ],
+  "def on_load(f=None, window=None, encoded_row_col=True)": [
+    "window"
+  ],
+  "def open_file_path(fn)": [
+    "normpath"
+  ],
+  "def args_2_string(args)": [],
+  "if not WINDOWS": [
+    "quote_arg",
+    "args_2_string"
+  ],
+  "else": [],
+  "class sublime_plugin.WindowCommand": [
+    "window"
+  ],
+  "def create_sublime_url(fn=None, row=1, col=1, commands=[])": [
+    "normpath",
+    "quote"
+  ],
+  "def create_textmate_url(fn, row, col)": [
+    "quote"
+  ],
+  "URL_CREATORS = {'sblm': create_sublime_url, 'txmt': create_textmate_url}": [],
+  "class ClipboardOpenProtocolUrlCommandline(sublime_plugin.WindowCommand)": [
+    "window"
+  ],
+  "def run(self, url_ph='%1', as_repr=False)": [
+    "quote"
+  ],
+  "def is_enabled(self, **args)": [],
+  "def run(self, edit, paste_into=None, protocol='sblm')": [
+    "find_and_open_file",
+    "protocol"
+  ],
+  "class CreateProtocolLink(sublime_plugin.TextCommand)": [
+    "view"
+  ],
+  "class OpenProtocolUrl(sublime_plugin.WindowCommand)": [
+    "window"
+  ],
+  "def run(self, url=None)": [],
+  "if txmt": []
+}

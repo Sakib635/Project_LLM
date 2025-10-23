@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": [
+        "DjangoTestSuiteRunner introduced in Django 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "nose": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "nose>=1.0,<2.0",
+      "evidence": [
+        "SkipTest introduced in Nose 1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "mongoengine": {
+      "inferred_version_range": ">=0.8,<0.11",
+      "recommended_requirements_line": "mongoengine>=0.8,<0.11",
+      "evidence": [
+        "connect introduced in MongoEngine 0.8"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "django-nose": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": "django-nose>=0.0,<1.0",
+      "evidence": [
+        "TestCase introduced in Django Nose 0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django-settings": {
+      "inferred_version_range": ">=0.0,<1.0",
+      "recommended_requirements_line": "django-settings>=0.0,<1.0",
+      "evidence": [
+        "settings introduced in Django Settings 0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "nose>=1.0,<2.0",
+    "mongoengine>=0.8,<0.11",
+    "django-nose>=0.0,<1.0",
+    "django-settings>=0.0,<1.0"
+  ]
+}

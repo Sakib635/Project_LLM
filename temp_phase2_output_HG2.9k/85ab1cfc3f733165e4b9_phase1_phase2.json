@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gensim": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "gensim>=3.0,<4.0",
+      "evidence": [
+        "gensim.corpora.dictionary introduced in v3.0",
+        "gensim.matutils.Sparse2Corpus introduced in v3.1"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.20,<0.22",
+      "recommended_requirements_line": "scikit-learn>=0.20,<0.22",
+      "evidence": [
+        "sklearn.feature_extraction.text.CountVectorizer introduced in v0.20.1",
+        "sklearn.feature_extraction.text.TfidfVectorizer introduced in v0.21"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gensim>=3.0,<4.0",
+    "scikit-learn>=0.20,<0.22"
+  ]
+}

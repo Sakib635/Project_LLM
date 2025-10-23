@@ -1,0 +1,154 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "time<3.9",
+      "evidence": [
+        "time.clock removed in Python 3.8\u2192 max Python 3.8"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": "<8",
+      "recommended_requirements_line": "pickle<8",
+      "evidence": [
+        "pickle.dump added in Python 3.0\u2192 min Python 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "nltk.corpus": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "nltk<3.9",
+      "evidence": [
+        "nltk.corpus.wordnet removed in Python 3.8\u2192 max Python 3.8"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "nltk.tokenize": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "nltk<3.9",
+      "evidence": [
+        "nltk.tokenize.wordpunct_tokenize added in Python 3.0\u2192 min Python 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "nltk.tag": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "nltk<3.9",
+      "evidence": [
+        "nltk.tag.pos_tag added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.pipeline": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.pipeline.Pipeline added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.preprocessing": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.preprocessing.LabelEncoder added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.linear_model": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.linear_model.SGDClassifier added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.base": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.base.BaseEstimator added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.metrics": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.metrics.classification_report added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.cross_validation": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.cross_validation.train_test_split added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "nltk.stem": {
+      "inferred_version_range": "<3.9",
+      "recommended_requirements_line": "nltk<3.9",
+      "evidence": [
+        "nltk.stem.WordNetLemmatizer added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "sklearn.utils": {
+      "inferred_version_range": "<1.1",
+      "recommended_requirements_line": "scikit-learn<1.1",
+      "evidence": [
+        "sklearn.utils.extmath.safe_sparse_dot added in Python 2.7\u2192 min Python 2.7"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nltk<3.9",
+    "scikit-learn<1.1"
+  ]
+}

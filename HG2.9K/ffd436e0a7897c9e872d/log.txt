@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "snippet.py", line 57, in <module>
+    spec = txamqp.spec.load(spec_file)
+  File "/usr/local/lib/python2.7/site-packages/txamqp/spec.py", line 257, in load
+    doc = xmlutil.parse(specfile)
+  File "/usr/local/lib/python2.7/site-packages/txamqp/xmlutil.py", line 30, in parse
+    xml.sax.parse(file, Builder(doc))
+  File "/usr/local/lib/python2.7/xml/sax/__init__.py", line 33, in parse
+    parser.parse(source)
+  File "/usr/local/lib/python2.7/xml/sax/expatreader.py", line 105, in parse
+    source = saxutils.prepare_input_source(source)
+  File "/usr/local/lib/python2.7/xml/sax/saxutils.py", line 349, in prepare_input_source
+    f = urllib.urlopen(source.getSystemId())
+  File "/usr/local/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 215, in open
+    return getattr(self, name)(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 471, in open_file
+    return self.open_local_file(url)
+  File "/usr/local/lib/python2.7/urllib.py", line 485, in open_local_file
+    raise IOError(e.errno, e.strerror, e.filename)
+IOError: [Errno 2] No such file or directory: '/etc/jasmin/resource/amqp0-9-1.xml'

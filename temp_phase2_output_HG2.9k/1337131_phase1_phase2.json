@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "mayapyu": {
+      "inferred_version_range": ">=1,<2",
+      "recommended_requirements_line": "mayapyu>=1,<2",
+      "evidence": [
+        "maya.OpenMayaUI.MQtUtil"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "cmds": {
+      "inferred_version_range": ">=8,<9",
+      "recommended_requirements_line": "cmds>=8,<9",
+      "evidence": [
+        "cmds.attrColorSliderGrp",
+        "cmds.findChildren"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "PyQt4.QtGui": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "QMainWindow",
+        "QListView",
+        "QDockWidget",
+        "QWidget"
+      ],
+      "confidence": 0.5,
+      "notes": "Indicates no evidence for a version range."
+    },
+    "PyQt4.QtCore": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Qt.LeftDockWidgetArea"
+      ],
+      "confidence": 0.5,
+      "notes": "Indicates no evidence for a version range."
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.19,<2.0",
+      "recommended_requirements_line": "numpy>=1.19,<2.0",
+      "evidence": [
+        "numpy.array added in numpy v1.19 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "scipy>=1.5,<2.0",
+      "evidence": [
+        "scipy.io.savemat added in scipy v1.5 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "caffe": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "caffe.set_mode_gpu added in caffe v1 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pickle.dump added in pickle v0 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.dirname added in os v1 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.path.append added in sys v1 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19,<2.0",
+    "scipy>=1.5,<2.0"
+  ]
+}

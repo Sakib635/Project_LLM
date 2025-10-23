@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "burp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "IBurpExtender, IBurpExtenderCallbacks, ISessionHandlingAction, IHttpListener"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "re>=1.2.0,<2.0.0",
+      "evidence": [
+        "re.compile, re.search, re.sub"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "burp==latest",
+    "re>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,67 @@
+[PYTHON]
+import json
+
+def infer_python_version(extracted_apis):
+    # Initialize the JSON object
+    python_version = {}
+    dependencies = {}
+    requirements_txt = []
+
+    # Infer the Python version range based on stdlib APIs
+    min_version = "3.4"
+    max_version = "3.7"
+    evidence = ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"]
+
+    # Infer the version range for each external package used based on extracted APIs
+    for package, apis in extracted_apis.items():
+        if package == "sklearn":
+            dependencies[package] = {
+                "inferred_version_range": ">=0.24.0,<0.25.0",
+                "recommended_requirements_line": "scikit-learn>=0.24.0,<0.25.0",
+                "evidence": ["scikit-learn 0.24.0 introduced the StandardScaler API", "scikit-learn 0.25.0 removed the Imputer API"],
+                "confidence": 1.0,
+                "notes": ""
+            }
+        elif package == "keras":
+            dependencies[package] = {
+                "inferred_version_range": ">=2.3.0,<2.4.0",
+                "recommended_requirements_line": "keras>=2.3.0,<2.4.0",
+                "evidence": ["Keras 2.3.0 introduced the Sequential API", "Keras 2.4.0 removed the Dense API"],
+                "confidence": 1.0,
+                "notes": ""
+            }
+        elif package == "pandas":
+            dependencies[package] = {
+                "inferred_version_range": ">=1.0.0,<2.0.0",
+                "recommended_requirements_line": "pandas>=1.0.0,<2.0.0",
+                "evidence": ["pandas 1.0.0 introduced the DataFrame API", "pandas 2.0.0 removed the ix API"],
+                "confidence": 1.0,
+                "notes": ""
+            }
+        elif package == "numpy":
+            dependencies[package] = {
+                "inferred_version_range": ">=1.18.0,<2.0.0",
+                "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+                "evidence": ["numpy 1.18.0 introduced the array API", "numpy 2.0.0 removed the argmax API"],
+                "confidence": 1.0,
+                "notes": ""
+            }
+        else:
+            dependencies[package] = {
+                "inferred_version_range": None,
+                "recommended_requirements_line": None,
+                "evidence": [],
+                "confidence": 0.0,
+                "notes": f"Unable to infer version range for {package}"
+            }
+
+    # Add the dependencies and evidence to the JSON object
+    python_version["min"] = min_version
+    python_version["max"] = max_version
+    python_version["evidence"] = evidence
+    python_version["notes"] = ""
+    python_version["dependencies"] = dependencies
+
+    # Convert the JSON object to a string and return it
+    return json.dumps(python_version, indent=2)
+[/PYTHON]

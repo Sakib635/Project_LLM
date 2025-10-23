@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.randint introduced in Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "lib.core.enums": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "lib.core.enums>=1.2.0,<2.0.0",
+      "evidence": [
+        "PRIORITY.NORMAL introduced in Python 3.6, depricated in Python 3.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "random>=1.2.0,<2.0.0",
+    "lib.core.enums>=1.2.0,<2.0.0"
+  ]
+}

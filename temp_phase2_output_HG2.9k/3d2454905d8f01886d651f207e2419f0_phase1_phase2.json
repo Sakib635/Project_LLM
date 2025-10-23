@@ -1,0 +1,74 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "dash": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        ""
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "dash_core_components": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "dash-core-components>=1.18.0,<2.0.0",
+      "evidence": [
+        "dcc.Dropdown introduced in dash-core-components 1.18.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "dash_html_components": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "dash-html-components>=1.0.0,<2.0.0",
+      "evidence": [
+        "html.Div introduced in dash-html-components 1.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "pandas_datareader": {
+      "inferred_version_range": ">=0.8.0,<0.10.0",
+      "recommended_requirements_line": "pandas-datareader>=0.8.0,<0.10.0",
+      "evidence": [
+        "web.DataReader introduced in pandas-datareader 0.8.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.4,<3.10",
+      "recommended_requirements_line": "python-dateutil>=3.4,<3.10",
+      "evidence": [
+        "datetime.datetime introduced in python-dateutil 3.4"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=3.6,<3.10",
+      "recommended_requirements_line": "jsonpickle>=3.6,<3.10",
+      "evidence": [
+        "json.dump introduced in jsonpickle 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dash-core-components>=1.18.0,<2.0.0",
+    "dash-html-components>=1.0.0,<2.0.0",
+    "pandas-datareader>=0.8.0,<0.10.0",
+    "python-dateutil>=3.4,<3.10",
+    "jsonpickle>=3.6,<3.10"
+  ]
+}

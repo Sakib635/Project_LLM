@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rospy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "rospy>=1.2.0,<2.0.0",
+      "evidence": [
+        "rospy.init_node introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "yaml": {
+      "inferred_version_range": ">=5.1.0,<6.0.0",
+      "recommended_requirements_line": "yaml>=5.1.0,<6.0.0",
+      "evidence": [
+        "yaml.load introduced in v5.1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sensor_msgs": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "sensor_msgs>=1.0.0,<2.0.0",
+      "evidence": [
+        "sensor_msgs.msg.CameraInfo introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "rospy>=1.2.0,<2.0.0",
+    "yaml>=5.1.0,<6.0.0",
+    "sensor_msgs>=1.0.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.8",
+    "max": null,
+    "evidence": [
+      "urllib.request added in Python 3.7 \u2192 min Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted": {
+      "inferred_version_range": ">=18.9.0,<20.0.0",
+      "recommended_requirements_line": "twisted>=18.9.0,<20.0.0",
+      "evidence": [
+        "twisted.web.iweb.IBodyProducer added in Twisted 18.9.0",
+        "twisted.internet.defer added in Twisted 18.9.0",
+        "twisted.web.client.Agent added in Twisted 18.9.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "simple_producer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence of SimpleProducer in the provided APIs."
+    }
+  },
+  "requirements.txt": [
+    "twisted>=18.9.0,<20.0.0"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.7\u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": ">=1.10,<2",
+      "recommended_requirements_line": "tensorflow>=1.10,<2",
+      "evidence": [
+        "tensorflow.placeholder introduced in TensorFlow 1.10",
+        "tensorflow.layers.dense introduced in TensorFlow 1.10",
+        "tensorflow.reduce_mean introduced in TensorFlow 1.10"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tensorflow.train": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.train.RMSPropOptimizer introduced in TensorFlow 1.2",
+        "tensorflow.train.minimize introduced in TensorFlow 1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow.summary": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.summary.scalar introduced in TensorFlow 1.2",
+        "tensorflow.summary.merge_all introduced in TensorFlow 1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2",
+      "recommended_requirements_line": "numpy>=1.16,<2",
+      "evidence": [
+        "numpy.random.normal introduced in NumPy 1.16"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.10,<2",
+    "numpy>=1.16,<2"
+  ]
+}

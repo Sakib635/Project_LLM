@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"socket": {
+"inferred_version_range": ">=2.0.0,<3.0.0",
+"recommended_requirements_line": "socket>=2.0.0,<3.0.0",
+"evidence": ["socket.gethostname introduced in Python 2.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"http": {
+"inferred_version_range": ">=2.6.1,<3.0.0",
+"recommended_requirements_line": "http>=2.6.1,<3.0.0",
+"evidence": ["SimpleHTTPRequestHandler introduced in Python 2.6.1 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"socketserver": {
+"inferred_version_range": ">=3.4,<4.0",
+"recommended_requirements_line": "socketserver>=3.4,<4.0",
+"evidence": ["ThreadingMixIn introduced in Python 3.4 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"socket>=2.0.0,<3.0.0",
+"http>=2.6.1,<3.0.0",
+"socketserver>=3.4,<4.0"
+]
+},
+"requirements.txt": [
+"socket>=2.0.0,<3.0.0",
+"http>=2.6.1,<3.0.0",
+"socketserver>=3.4,<4.0"
+]
+}

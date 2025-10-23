@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "os>=1.0.0,<2.0.0",
+"evidence": ["os.walk introduced in v1.0.0", "os.open added in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"select": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["select.kevent introduced in v2.7.5", "select.KQ_FILTER_VNODE introduced in v3.0.0"],
+"confidence": 0.66,
+"notes": "Conflicting API versions."
+},
+"pathlib": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "pathlib>=1.0.0,<2.0.0",
+"evidence": ["pathlib.Path.register added in v1.0.0", "pathlib.Path.unregister added in v1.0.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["os>=1.0.0,<2.0.0", "pathlib>=1.0.0,<2.0.0"]
+},
+"requirements.txt": [["os>=1.0.0,<2.0.0"], ["pathlib>=1.0.0,<2.0.0"]]
+}

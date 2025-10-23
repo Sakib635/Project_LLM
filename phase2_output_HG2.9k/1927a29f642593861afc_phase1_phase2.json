@@ -1,0 +1,27 @@
+```json
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python 3.7 → min Python 3.7", "time.clock removed in Python 3.8→ max Python 3.8"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2",
+      "recommended_requirements_line": "numpy>=1.20,<2",
+      "evidence": ["numpy.array introduced in v1.20", "scipy.spatial.distance.cosine deprecated in v1.21"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence of pandas usage."
+    }
+  },
+  "requirements.txt": ["numpy>=1.20,<2"]
+}
+```

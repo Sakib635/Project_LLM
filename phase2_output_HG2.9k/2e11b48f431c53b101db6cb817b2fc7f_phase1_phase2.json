@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django>=1.2.0,<2.0.0",
+      "evidence": [
+        "TestCase introduced in Django 1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "re>=1.2.0,<2.0.0",
+      "evidence": [
+        "sub introduced in re 1.2"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2.0,<2.0.0",
+    "re>=1.2.0,<2.0.0"
+  ]
+}

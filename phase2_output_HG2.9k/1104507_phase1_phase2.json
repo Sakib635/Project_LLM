@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.7\u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced, deprecated, removed or changed in v0.17.0",
+        "pandas.DataFrame.to_numpy introduced, deprecated, removed or changed in v0.24.0",
+        "pandas.DataFrame.ix introduced, deprecated, removed or changed in v0.25.3"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.17,<2.0",
+      "recommended_requirements_line": "numpy>=1.17,<2.0",
+      "evidence": [
+        "numpy.array introduced, deprecated, removed or changed in v1.16.0",
+        "numpy.linalg.norm introduced, deprecated, removed or changed in v1.18.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.17,<2.0"
+  ]
+}

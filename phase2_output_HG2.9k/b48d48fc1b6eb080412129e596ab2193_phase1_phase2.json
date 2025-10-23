@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "flask>=1.2.0,<2.0.0",
+      "evidence": [
+        "flask.ext.sqlalchemy.SQLAlchemy added in Flask 1.2 \u2192 min Flask 1.2",
+        "flask.ext.sqlalchemy.db deprecated in Flask 2.x \u2192 max Flask 2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sqlalchemy.orm.decl_api.repr added in SQLAlchemy 1.4 \u2192 min SQLAlchemy 1.4",
+        "sqlalchemy.orm.decl_api.__dict__.repr deprecated in SQLAlchemy 1.x \u2192 max SQLAlchemy 1.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask>=1.2.0,<2.0.0",
+    "sqlalchemy>=1.4.0,<2.0.0"
+  ]
+}

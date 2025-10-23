@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "Python 3.6 introduced `io.open` and `os.splitext`. Python 3.7 dropped support for Python 2.7."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pandas>=1.0.3",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas version 1.0.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.19.2",
+      "evidence": [
+        "numpy.array introduced in numpy version 1.19.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0.3",
+    "numpy>=1.19.2"
+  ]
+}

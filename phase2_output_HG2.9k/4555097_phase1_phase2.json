@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "string.encode added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "MeCab": {
+      "inferred_version_range": ">=0.99.7,<1.0",
+      "recommended_requirements_line": "MeCab>=0.99.7,<1.0",
+      "evidence": [
+        "MeCab.Tagger introduced in version 0.99.7",
+        "MeCab.Tagger.parseToNode introduced in version 0.99.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "string": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "string.encode added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.5,
+      "notes": "The API string.encode is available since Python 3.6."
+    },
+    "node": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "node.next introduced in version 1.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": "The API node.next is available since Node.js v1.0."
+    },
+    "m": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "m.parseToNode introduced in version 0.99.7",
+        "m.parseToNode removed in version 1.0 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": "The API m.parseToNode is available since MeCab v0.99.7 and was removed in Node.js v1.0."
+    }
+  },
+  "requirements.txt": [
+    "MeCab>=0.99.7,<1.0",
+    "string>=3.6,<3.7",
+    "node>=1.0,<2.0",
+    "m>=0.99.7,<1.0"
+  ]
+}

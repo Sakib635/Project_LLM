@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "scrapy": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "scrapy>=1.4.0,<2.0.0",
+      "evidence": [
+        "Scrapy introduced in v1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.6.0,<3.9.0",
+      "recommended_requirements_line": "os>=3.6.0,<3.9.0",
+      "evidence": [
+        "os.system introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.6.0,<3.9.0",
+      "recommended_requirements_line": "time>=3.6.0,<3.9.0",
+      "evidence": [
+        "time.strftime introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.6.0,<3.9.0",
+      "recommended_requirements_line": "datetime>=3.6.0,<3.9.0",
+      "evidence": [
+        "datetime.datetime introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "email": {
+      "inferred_version_range": ">=2.7.0,<3.9.0",
+      "recommended_requirements_line": "email>=2.7.0,<3.9.0",
+      "evidence": [
+        "email.mail introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "scrapy>=1.4.0,<2.0.0",
+    "os>=3.6.0,<3.9.0",
+    "time>=3.6.0,<3.9.0",
+    "datetime>=3.6.0,<3.9.0",
+    "email>=2.7.0,<3.9.0"
+  ]
+}

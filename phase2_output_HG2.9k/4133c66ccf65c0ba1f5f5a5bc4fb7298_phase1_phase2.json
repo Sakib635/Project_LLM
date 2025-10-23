@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "torch.manual_seed added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.7.0,<2.0.0",
+      "evidence": [
+        "torch.manual_seed introduced in torch 1.7.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "nn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "nn.Module introduced in nn module in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19,<2.0",
+      "recommended_requirements_line": "numpy>=1.19,<2.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.19"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.7.0,<2.0.0",
+    "numpy>=1.19,<2.0"
+  ]
+}

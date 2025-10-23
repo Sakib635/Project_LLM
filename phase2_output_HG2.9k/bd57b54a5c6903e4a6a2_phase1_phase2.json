@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10.2",
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.21.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.21.2,<2.0.0",
+      "evidence": [
+        "NumPy API numpy.array introduced in v1.21.2",
+        "NumPy API numpy.linalg.norm introduced in v1.21.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rasterio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "rasterio>=1.2.0",
+      "evidence": [
+        "Rasterio API rio.open introduced in v1.2.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "dask": {
+      "inferred_version_range": ">=2.31.1,<3.0.0",
+      "recommended_requirements_line": "dask>=2.31.1,<3.0.0",
+      "evidence": [
+        "Dask API da.Array.__init__ introduced in v2.31.1",
+        "Dask API da.Array.read introduced in v2.31.1",
+        "Dask API da.Array.close introduced in v2.31.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.21.2,<2.0.0",
+    "rasterio>=1.2.0",
+    "dask>=2.31.1,<3.0.0"
+  ]
+}

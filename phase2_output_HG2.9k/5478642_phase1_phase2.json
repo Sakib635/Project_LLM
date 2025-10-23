@@ -1,0 +1,61 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.10",
+    "evidence": [
+      "numpy.array and numpy.linalg.norm were introduced in Python 3.5."
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2,<4",
+      "recommended_requirements_line": "numpy>=1.2,<4",
+      "evidence": [
+        "numpy.array and numpy.linalg.norm were introduced in numpy 1.2."
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scipy.stats": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "scipy.stats.beta was introduced in scipy 0.19."
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.random was introduced in Python 3.2."
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "BetaBandit": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BetaBandit.__init__ was introduced in Python 3.1."
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "gain": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gain.gain was introduced in Python 3.1."
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2,<4",
+    "scipy>=0.19,<4"
+  ]
+}

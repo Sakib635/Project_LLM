@@ -1,0 +1,5 @@
+(declare-fun sgmllib3k () String)
+(declare-fun feedparser () String)
+(assert (and (or (= feedparser "6.0.2"))
+     (=> (= feedparser "6.0.2") (or (= sgmllib3k "1.0.0")))))
+(check-sat)

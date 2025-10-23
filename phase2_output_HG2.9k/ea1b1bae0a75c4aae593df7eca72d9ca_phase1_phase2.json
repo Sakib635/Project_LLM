@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["subprocess.Popen added in Python 3.2 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"tf": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "tensorflow>=1.0.0,<2.0.0",
+"evidence": ["tf.flags introduced in v1.0.0, depricated in v2.0.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"threading": {
+"inferred_version_range": ">=3.0.0,<4.0.0",
+"recommended_requirements_line": "threading>=3.0.0,<4.0.0",
+"evidence": ["threading.Thread introduced in v3.2 → min Python 3.4, depricated in v3.9 → max Python 3.10"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": [
+"tensorflow>=1.0.0,<2.0.0",
+"threading>=3.0.0,<4.0.0"
+]
+}
+}

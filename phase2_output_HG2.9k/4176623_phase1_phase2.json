@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0.0,<2.1.0",
+      "recommended_requirements_line": "django>=2.0.0,<2.1.0",
+      "evidence": [
+        "django.utils.translation introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.utils.translation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.utils.translation introduced in Django 2.0",
+        "django.utils.translation.activate deprecated in Django 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<2.1.0"
+  ]
+}

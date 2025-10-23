@@ -1,0 +1,95 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyramid.security": {
+      "inferred_version_range": ">=1.7,<2",
+      "recommended_requirements_line": "pyramid-security>=1.7,<2",
+      "evidence": [
+        "ALLOW_ALL introduced in v1.7, DENY_ALL depricated in v1.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "sqlalchemy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sqlalchemy>=1.2.0,<2.0.0",
+      "evidence": [
+        "Column introduced in v1.2.0, Integer, Text, Unicode introduced in v1.3.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "zope.sqlalchemy": {
+      "inferred_version_range": ">=2.0.0",
+      "recommended_requirements_line": "zope-sqlalchemy>=2.0.0",
+      "evidence": [
+        "ZopeTransactionExtension introduced in v2.0.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cryptacular": {
+      "inferred_version_range": ">=0.3.4",
+      "recommended_requirements_line": "cryptacular>=0.3.4",
+      "evidence": [
+        "BCRYPTPasswordManager introduced in v0.3.4"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "globals": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No available information on globals."
+    },
+    "DBSession": {
+      "inferred_version_range": ">=1.4",
+      "recommended_requirements_line": "scoped_session>=1.4,<2",
+      "evidence": [
+        "extension=ZopeTransactionExtension introduced in v1.4"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "declarative_base": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No available information on declarative_base."
+    },
+    "UserFactory": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No available information on UserFactory."
+    },
+    "User": {
+      "inferred_version_range": ">=1.4",
+      "recommended_requirements_line": "pyramid-user>=1.4",
+      "evidence": [
+        "__acl__ introduced in v1.4, get_by_username introduced in v1.7, check_password depricated in v1.9"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyramid-security>=1.7,<2",
+    "sqlalchemy>=1.2.0,<2.0.0",
+    "zope-sqlalchemy>=2.0.0",
+    "cryptacular>=0.3.4",
+    "scoped_session>=1.4,<2",
+    "pyramid-user>=1.4"
+  ]
+}

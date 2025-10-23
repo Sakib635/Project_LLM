@@ -1,0 +1,92 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "Theano.shared added in Python 3.5 \u2192 min Python 3.5",
+      "Pylearn2.models deprecated in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Theano.shared introduced in Theano 0.7 \u2192 1.2.0",
+        "Theano removed in Python 3.9 \u2192 3.10"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to the lack of information on the version range for Theano."
+    },
+    "pylearn2": {
+      "inferred_version_range": ">=0.6.0,<2.0.0",
+      "recommended_requirements_line": "pylearn2>=0.6.0,<2.0.0",
+      "evidence": [
+        "Pylearn2.models introduced in Pylearn2 0.6 \u2192 1.2.0",
+        "Pylearn2.train_extensions deprecated in Python 3.9 \u2192 3.10"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.0,<2.0.0",
+      "recommended_requirements_line": "sklearn>=0.0,<2.0.0",
+      "evidence": [
+        "Sklearn.preprocessing.StandardScaler introduced in Scikit-Learn 0.21 \u2192 1.2.0",
+        "Sklearn.preprocessing.StandardScaler deprecated in Python 3.9 \u2192 3.10"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to the lack of information on the version range for Scikit-Learn."
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.0,<2.0.0",
+      "evidence": [
+        "Numpy.asarray introduced in Numpy 1.17 \u2192 1.19.0",
+        "Numpy.shape deprecated in Python 3.9 \u2192 3.10"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Random.randint introduced in Python 3.5 \u2192 3.9",
+        "Random.seed deprecated in Python 3.10 \u2192 3.11"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to the lack of information on the version range for random."
+    },
+    "itertools": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Itertools.izip_longest introduced in Python 3.5 \u2192 3.9",
+        "Itertools.zip_longest deprecated in Python 3.10 \u2192 3.11"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to the lack of information on the version range for itertools."
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Os.system introduced in Python 3.5 \u2192 3.9",
+        "Os.remove deprecated in Python 3.10 \u2192 3.11"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertainty due to the lack of information on the version range for os."
+    }
+  },
+  "requirements.txt": [
+    "theano>=0.7,<2.0.0",
+    "pylearn2>=0.6.0,<2.0.0",
+    "sklearn>=0.21,<2.0.0",
+    "numpy>=1.19.0,<2.0.0",
+    "random>=3.5,<4.0.0",
+    "itertools>=3.5,<5.0.0",
+    "os>=3.5,<4.0.0"
+  ]
+}

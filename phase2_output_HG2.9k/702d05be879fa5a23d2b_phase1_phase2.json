@@ -1,0 +1,69 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "cv2>=4.0.0,<5.0.0",
+      "evidence": [
+        "cv2.imread added in v4.0.0",
+        "cv2.THRESH_BINARY removed in v4.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.0.0,<3.5.0",
+      "recommended_requirements_line": "matplotlib>=3.0.0,<3.5.0",
+      "evidence": [
+        "matplotlib.pyplot added in v3.0.0",
+        "plt.close removed in v3.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.15.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.15.0,<2.0.0",
+      "evidence": [
+        "np.transpose added in v1.15.0",
+        "np.nonzero removed in v1.19.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.3.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.3.0,<2.0.0",
+      "evidence": [
+        "scipy.optimize added in v1.3.0",
+        "scipy.special removed in v1.5.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "skimage": {
+      "inferred_version_range": ">=0.14.0,<2.0.0",
+      "recommended_requirements_line": "skimage>=0.14.0,<2.0.0",
+      "evidence": [
+        "skimage.transform added in v0.14.0",
+        "skimage.color removed in v0.18.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=4.0.0,<5.0.0",
+    "matplotlib>=3.0.0,<3.5.0",
+    "numpy>=1.15.0,<2.0.0",
+    "scipy>=1.3.0,<2.0.0",
+    "skimage>=0.14.0,<2.0.0"
+  ]
+}

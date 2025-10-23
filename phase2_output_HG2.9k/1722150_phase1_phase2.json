@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=0.13.4,<0.14",
+      "recommended_requirements_line": "os>=0.13.4,<0.14",
+      "evidence": [
+        "os.path introduced in v0.13.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "maya.cmds": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.2,
+      "notes": "Cannot determine version range"
+    },
+    "maya.OpenMayaUI": {
+      "inferred_version_range": ">=1.0,<2",
+      "recommended_requirements_line": "maya.OpenMayaUI>=1.0,<2",
+      "evidence": [
+        "mui.MQtUtil introduced in v1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "PyQt4": {
+      "inferred_version_range": ">=4.5,<5",
+      "recommended_requirements_line": "PyQt4>=4.5,<5",
+      "evidence": [
+        "QtGui introduced in v4.5",
+        "QtCore introduced in v4.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Window": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.2,
+      "notes": "Cannot determine version range"
+    }
+  },
+  "requirements.txt": [
+    "os>=0.13.4,<0.14",
+    "maya.OpenMayaUI>=1.0,<2",
+    "PyQt4>=4.5,<5"
+  ]
+}

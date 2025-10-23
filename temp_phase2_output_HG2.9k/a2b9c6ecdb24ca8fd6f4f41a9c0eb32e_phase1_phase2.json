@@ -1,0 +1,79 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bpy.types.Panel, bpy.types.Operator"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    },
+    "urllib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib.request.urlopen"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    },
+    "requests": {
+      "inferred_version_range": ">=2.4,<3",
+      "recommended_requirements_line": "requests>=2.4,<3",
+      "evidence": [
+        "requests.post"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tempfile.gettempdir",
+        "tempfile.NamedTemporaryFile"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.join",
+        "os.unlink"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.loads"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    },
+    "webbrowser": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "webbrowser.open"
+      ],
+      "confidence": 0.75,
+      "notes": "No specific API or version information found"
+    }
+  },
+  "requirements.txt": []
+}

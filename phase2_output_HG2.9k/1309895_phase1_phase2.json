@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "gobject.timeout_add added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gtk": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "gtk-python3>=3.0,<4.0",
+      "evidence": [
+        "GTK.Menu introduced in v3.0.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "appindicator": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "python-appindicator3>=1.2.0,<2.0.0",
+      "evidence": [
+        "AppIndicator introduced in v1.2.0 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.localtime introduced in v2.3 \u2192 min Python 2.3",
+        "time.gmtime deprecated in v2.7 \u2192 max Python 2.7",
+        "time.strftime introduced in v2.6 \u2192 inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gtk-python3>=3.0,<4.0",
+    "python-appindicator3>=1.2.0,<2.0.0"
+  ]
+}

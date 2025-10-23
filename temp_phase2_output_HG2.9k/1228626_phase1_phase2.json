@@ -1,0 +1,27 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["math.sqrt added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.gis.geos": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django-geo>=1.2.0,<2.0.0",
+      "evidence": ["Point class introduced in GEOS 1.2.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "dorling": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["Cartogram class introduced in Dorling 1.0"],
+      "confidence": 0.5,
+      "notes": "Dorling not on PyPI"
+    }
+  },
+  "requirements.txt": [
+    "django-geo>=1.2.0,<2.0.0",
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "peak": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "peak>=1.2.0,<2.0.0",
+      "evidence": [
+        "peak.rules introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "operator>=3.5,<4.0",
+      "evidence": [
+        "operator.add introduced in v3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Identity": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for Identity."
+    },
+    "bind_identity": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Cannot determine a reliable version range for bind_identity."
+    }
+  },
+  "requirements.txt": [
+    "peak>=1.2.0,<2.0.0",
+    "operator>=3.5,<4.0"
+  ]
+}

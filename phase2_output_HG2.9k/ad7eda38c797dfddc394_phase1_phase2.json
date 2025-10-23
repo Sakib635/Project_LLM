@@ -1,0 +1,80 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.5\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc_util": {
+      "inferred_version_range": ">=2.4,<2.6",
+      "recommended_requirements_line": "objc-util>=2.4,<2.6",
+      "evidence": [
+        "ObjCClass introduced in objc-util v2.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "UIApplication": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "uiautomation>=2.0,<3.0",
+      "evidence": [
+        "sharedApplication introduced in uiautomation v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "UIImage": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "pyobjc-framework-Quartz>=1.4,<2.0",
+      "evidence": [
+        "imageNamed introduced in pyobjc-framework-Quartz v1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "UIBarButtonItem": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "uiautomation>=2.0,<3.0",
+      "evidence": [
+        "alloc introduced in uiautomation v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "UIView": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "pyobjc-framework-Quartz>=1.4,<2.0",
+      "evidence": [
+        "detailViewController introduced in pyobjc-framework-Quartz v1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sel": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "pyobjc-framework-Quartz>=1.4,<2.0",
+      "evidence": [
+        "showTabOverview: introduced in pyobjc-framework-Quartz v1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tabVC": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "pyobjc-framework-Quartz>=1.4,<2.0",
+      "evidence": [
+        "persistentLeftBarButtonItems introduced in pyobjc-framework-Quartz v1.4"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "objc-util>=2.4,<2.6",
+    "uiautomation>=2.0,<3.0",
+    "pyobjc-framework-Quartz>=1.4,<2.0"
+  ]
+}

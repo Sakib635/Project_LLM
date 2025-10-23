@@ -1,0 +1,40 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.0.1,<2.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.0.1,<2.0.0",
+      "evidence": [
+        "TfidfVectorizer introduced in v0.0.1",
+        "SVC introduced in v0.0.1",
+        "classification_report introduced in v0.0.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: os.path.join was introduced in Python 3.4 and removed in Python 3.10."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: sys.argv was introduced in Python 2.7 and removed in Python 3.10."
+    }
+  },
+  "requirements.txt": [
+    "scikit-learn>=0.0.1,<2.0.0"
+  ]
+}

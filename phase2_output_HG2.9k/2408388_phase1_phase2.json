@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "socket.socket added in Python 3.5 \u2192 min Python 3.5",
+      "time.sleep removed in Python 3.9\u2192 max Python"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "re>=1.2.0,<2.0.0",
+      "evidence": [
+        "re.compile added in Python 1.2.0 \u2192 min Python 1.2.0",
+        "re.match removed in Python 2.0.0\u2192 max Python 2.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "struct>=1.0.0,<2.0.0",
+      "evidence": [
+        "struct.pack added in Python 1.0.0 \u2192 min Python 1.0.0",
+        "struct.unpack removed in Python 2.0.0\u2192 max Python 2.0.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "time>=1.0.0,<2.0.0",
+      "evidence": [
+        "time.sleep added in Python 1.0.0 \u2192 min Python 1.0.0",
+        "time.clock removed in Python 2.0.0\u2192 max Python 2.0.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re>=1.2.0,<2.0.0",
+    "struct>=1.0.0,<2.0.0",
+    "time>=1.0.0,<2.0.0"
+  ]
+}

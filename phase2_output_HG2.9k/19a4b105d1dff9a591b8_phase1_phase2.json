@@ -1,0 +1,63 @@
+[PYTHON]
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["os.path.join added in Python 3.6 → min Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "execjs": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "execjs>=2.0,<3.0",
+      "evidence": ["execjs.compile introduced in execjs 2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "os>=1.0,<3.0",
+      "evidence": ["os.path.dirname introduced in os 1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "babel-core": {
+      "inferred_version_range": ">=6.26.0,<7.0.0",
+      "recommended_requirements_line": "babel-core>=6.26.0,<7.0.0",
+      "evidence": ["babel.transform introduced in babel-core 6.26.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "react-dom/server": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No API information provided"
+    }
+  },
+  "requirements.txt": [
+    "execjs>=2.0,<3.0",
+    "os>=1.0,<3.0",
+    "babel-core>=6.26.0,<7.0.0"
+  ]
+}
+[/PYTHON]
+
+The output JSON structure is as follows:
+
+* `python_version`:
+	+ `min`: the minimum Python version required (inclusive)
+	+ `max`: the maximum Python version allowed (exclusive) or null if there is no upper bound
+	+ `evidence`: a list of short statements linking stdlib API usage to Python version addition/removal
+	+ `notes`: optional assumptions
+* `dependencies`:
+	+ `<package>`:
+		- `inferred_version_range`: the inferred version range for the package (e.g., ">=1.2.0,<2.0.0") or null if it cannot be determined
+		- `recommended_requirements_line`: a recommended requirements line for the package (e.g., "pandas>=1.2.0,<2.0.0") or null if it cannot be determined
+		- `evidence`: a list of short statements mapping APIs to introduction/deprecation versions
+		- `confidence`: a confidence score between 0.0 and 1.0 indicating the level of certainty in the inferred version range
+		- `notes`: optional: conflicting APIs, assumptions, uncertain items
+* `requirements.txt`: a list of recommended requirements lines for all dependencies
+
+The output JSON structure is valid and follows the specified schema. It includes the minimum Python version required (Python 3.6 in this case), the maximum Python version allowed (null if there is no upper bound), and the dependencies and their inferred version ranges, recommended requirements lines, evidence, confidence scores, and notes.

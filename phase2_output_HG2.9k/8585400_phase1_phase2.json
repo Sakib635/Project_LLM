@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "clipboard": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "clipboard>=1.2.0,<2.0.0",
+      "evidence": [
+        "clipboard.get introduced in Python 3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "urllib>=1.2.0,<2.0.0",
+      "evidence": [
+        "urllib.urlopen introduced in Python 1.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.open introduced in Pillow 1.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "photos": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "photos.save_image not found in any Python version"
+      ],
+      "confidence": 0,
+      "notes": "Package 'photos' not found"
+    },
+    "cStringIO": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "cStringIO>=1.2.0,<2.0.0",
+      "evidence": [
+        "cStringIO.StringIO introduced in Python 3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "clipboard>=1.2.0,<2.0.0",
+    "urllib>=1.2.0,<2.0.0",
+    "Pillow>=1.2.0,<2.0.0",
+    "cStringIO>=1.2.0,<2.0.0"
+  ]
+}

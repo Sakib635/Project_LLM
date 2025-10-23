@@ -1,0 +1,30 @@
+```json
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": ["OpenGL.GL.glCreateProgram added in Python 3.5 → min Python 3.5"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": ["numpy.array added in v1.18.0 → min version 1.18.0"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "glfwpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["glfwpy.GL added in v1.18.0 → min version 1.18.0"],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "glfwpy>=1.18.0,<2.0.0"
+  ]
+}
+```

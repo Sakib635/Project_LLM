@@ -1,0 +1,53 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"AppKit": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "AppKit>=1.2.0,<2.0.0",
+"evidence": ["NSWorkspace API introduced in AppKit v1.2.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"subprocess": {
+"inferred_version_range": ">=3.5.0,<4.0.0",
+"recommended_requirements_line": "subprocess>=3.5.0,<4.0.0",
+"evidence": ["call API introduced in subprocess v3.5.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "os>=1.0.0,<2.0.0",
+"evidence": ["path API introduced in os v1.0.0", "remove API introduced in os v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"datetime": {
+"inferred_version_range": ">=3.0.0,<4.0.0",
+"recommended_requirements_line": "datetime>=3.0.0,<4.0.0",
+"evidence": ["timedelta API introduced in datetime v3.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"plistlib": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "plistlib>=1.2.0,<2.0.0",
+"evidence": ["readPlist API introduced in plistlib v1.2.0", "writePlist API introduced in plistlib v1.2.0"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"AppKit>=1.2.0,<2.0.0",
+"subprocess>=3.5.0,<4.0.0",
+"os>=1.0.0,<2.0.0",
+"datetime>=3.0.0,<4.0.0",
+"plistlib>=1.2.0,<2.0.0"
+]
+}
+}

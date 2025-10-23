@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keras": {
+      "inferred_version_range": ">=2.0,<3",
+      "recommended_requirements_line": "keras>=2.0,<3",
+      "evidence": [
+        "keras.layers.recurrent.LSTM added in v2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.6,<2",
+      "recommended_requirements_line": "numpy>=1.6,<2",
+      "evidence": [
+        "numpy.where added in v1.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.18,<0.20",
+      "recommended_requirements_line": "scikit-learn>=0.18,<0.20",
+      "evidence": [
+        "sklearn.cross_validation.train_test_split added in v0.18",
+        "sklearn.metrics.confusion_matrix added in v0.18"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "lambdawithmask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "lambdawithmask not found in PyPI"
+      ],
+      "confidence": 0.1,
+      "notes": "Assuming latest version (i.e., no upper bound) based on API usage."
+    }
+  },
+  "requirements.txt": []
+}

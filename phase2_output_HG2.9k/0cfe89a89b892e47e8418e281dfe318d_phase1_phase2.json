@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "json.dumps added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.admin": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "django.contrib.admin>=1.0.0,<2.0.0",
+      "evidence": [
+        "formfield_overrides added in Django 1.0 \u2192 max Python 2.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.postgres.forms.jsonb": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "django.contrib.postgres.forms.jsonb>=3.0.0,<4.0.0",
+      "evidence": [
+        "InvalidJSONInput added in Django 3.0 \u2192 min Python 3.0",
+        "JSONField added in Django 1.0 \u2192 max Python 2.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.contrib.postgres.fields": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "django.contrib.postgres.fields>=3.0.0,<4.0.0",
+      "evidence": [
+        "JSONField added in Django 1.0 \u2192 max Python 2.x"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django.contrib.admin>=1.0.0,<2.0.0",
+    "django.contrib.postgres.forms.jsonb>=3.0.0,<4.0.0",
+    "django.contrib.postgres.fields>=3.0.0,<4.0.0"
+  ]
+}

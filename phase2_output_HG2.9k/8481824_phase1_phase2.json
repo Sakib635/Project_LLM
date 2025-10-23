@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.10\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "loadtxt added in numpy 1.20 \u2192 min numpy 1.20",
+        "asanyarray introduced in numpy 1.20 \u2192 max numpy 1.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rpy2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "robjects.r introduced in rpy2 3.0 \u2192 max rpy2 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Cannot determine a reliable upper or lower bound for rpy2."
+    },
+    "glmnet": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "glmnet>=4.0,<5.0",
+      "evidence": [
+        "cv.glmnet introduced in glmnet 4.0 \u2192 min glmnet 4.0",
+        "cv.glmnet deprecated in glmnet 4.3\u2192 max glmnet 4.3"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "rpy2>=3.0,<4.0",
+    "glmnet>=4.0,<5.0"
+  ]
+}

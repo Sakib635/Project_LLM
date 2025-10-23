@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "logging.getLogger added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tastypie.authorization": {
+      "inferred_version_range": ">=0.12.2,<0.14.0",
+      "recommended_requirements_line": "tastypie.authorization>=0.12.2,<0.14.0",
+      "evidence": [
+        "DjangoAuthorization introduced in tastypie.authorization 0.12.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "guardian.shortcuts": {
+      "inferred_version_range": ">=1.5.1,<2.0.0",
+      "recommended_requirements_line": "guardian.shortcuts>=1.5.1,<2.0.0",
+      "evidence": [
+        "get_objects_for_user introduced in guardian.shortcuts 1.5.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "guardian.core": {
+      "inferred_version_range": ">=1.5.1,<2.0.0",
+      "recommended_requirements_line": "guardian.core>=1.5.1,<2.0.0",
+      "evidence": [
+        "ObjectPermissionChecker introduced in guardian.core 1.5.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "GuardianAuthorization": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No information available for GuardianAuthorization"
+    }
+  },
+  "requirements.txt": [
+    "tastypie.authorization>=0.12.2,<0.14.0",
+    "guardian.shortcuts>=1.5.1,<2.0.0",
+    "guardian.core>=1.5.1,<2.0.0"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "3.10",
+    "evidence": [
+      "urllib2.urlopen added in Python 3.7 \u2192 min Python 3.7",
+      "json.loads added in Python 3.5 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "pymongo>=3.0,<4.0",
+      "evidence": [
+        "pymongo.MongoClient added in version 3.0 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "optparse": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "optparse>=1.6,<2.0",
+      "evidence": [
+        "optparse.OptionParser added in version 1.6 \u2192 max Python 3.9"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=3.0,<4.0",
+    "optparse>=1.6,<2.0"
+  ]
+}

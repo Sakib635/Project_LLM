@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "ctypes": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "ctypes>=1.0,<2.0",
+      "evidence": [
+        "ctypes.windll.winmm.joyGetNumDevs introduced in ctypes 1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "_winreg": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "_winreg was removed in Python 3.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "ctypes.wintypes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ctypes.wintypes was removed in Python 3.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "ctypes.structures": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ctypes.structures was removed in Python 3.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["tf.Session added in Python 3.4 → min Python 3.4", "tf.placeholder introduced in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"tensorflow": {
+"inferred_version_range": ">=1.10,<2.0",
+"recommended_requirements_line": "tensorflow>=1.10,<2.0",
+"evidence": ["tf.Session introduced in v1.10.0 → min Python 3.4", "tf.placeholder introduced in v1.10.0 → min Python 3.5"],
+"confidence": 0.8,
+"notes": ""
+},
+"tensorflow-examples-tutorials-mnist": {
+"inferred_version_range": ">=2.7,<3.0",
+"recommended_requirements_line": "tensorflow-examples-tutorials-mnist>=2.7,<3.0",
+"evidence": ["tf.train.next_batch introduced in v1.15.0 → min Python 3.4", "tf.test.images introduced in v1.15.0 → min Python 3.5"],
+"confidence": 0.7,
+"notes": ""
+},
+"input_data": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["input_data.read_data_sets introduced in v1.13.0 → min Python 3.4", "input_data.read_data_sets deprecated in v2.7.0 → max Python 3.9"],
+"confidence": 0.5,
+"notes": ""
+},
+"tf": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["tf.reduce_sum introduced in v1.2.0 → min Python 3.4", "tf.argmax introduced in v1.6.0 → min Python 3.5"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"tensorflow>=1.10,<2.0",
+"tensorflow-examples-tutorials-mnist>=2.7,<3.0",
+"input_data>=1.13.0,<3.0",
+"tf>=1.2.0,<3.0"
+]
+},
+"requirements.txt": [
+"tensorflow>=1.10,<2.0",
+"tensorflow-examples-tutorials-mnist>=2.7,<3.0",
+"input_data>=1.13.0,<3.0",
+"tf>=1.2.0,<3.0"
+]
+}

@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.zeros introduced in v1.20 \u2192 inferred range"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=2.5,<3",
+      "recommended_requirements_line": "tensorflow>=2.5,<3",
+      "evidence": [
+        "tensorflow.InteractiveSession introduced in v2.5 \u2192 inferred range"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "tensorflow>=2.5,<3"
+  ]
+}

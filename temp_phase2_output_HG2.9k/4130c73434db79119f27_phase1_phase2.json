@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "googleapiclient": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "googleapiclient.discovery.build"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "oauth2client": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "oauth2client>=1.5.0,<2.0.0",
+      "evidence": [
+        "oauth2client.client.GoogleCredentials"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "logging": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "logging>=3.2,<4.0",
+      "evidence": [
+        "logging.Handler.__init__",
+        "logging.Handler.emit"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "logging_v2beta1": {
+      "inferred_version_range": ">=1.7,<2.0",
+      "recommended_requirements_line": "logging-v2beta1>=1.7,<2.0",
+      "evidence": [
+        "logging_v2beta1.entries.write"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "oauth2client>=1.5.0,<2.0.0",
+    "googleapiclient>=2.4.0,<3.0.0",
+    "logging>=3.2,<4.0",
+    "logging-v2beta1>=1.7,<2.0"
+  ]
+}

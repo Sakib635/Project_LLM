@@ -1,0 +1,83 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "os>=3.6.0,<4.0.0",
+      "evidence": [
+        "os.path introduced in Python 3.6 \u2192 min Python 3.6",
+        "os.makedirs introduced in Python 3.5 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "random>=3.6.0,<4.0.0",
+      "evidence": [
+        "random.randint introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "re>=3.6.0,<4.0.0",
+      "evidence": [
+        "re.search introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "shutil": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "shutil.move removed in Python 3.5 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "time>=3.6.0,<4.0.0",
+      "evidence": [
+        "time.sleep introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=3.6.0,<4.0.0",
+      "recommended_requirements_line": "json>=3.6.0,<4.0.0",
+      "evidence": [
+        "json.dumps introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argparse.ArgumentParser introduced in Python 3.5 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.6.0,<4.0.0",
+    "random>=3.6.0,<4.0.0",
+    "re>=3.6.0,<4.0.0",
+    "time>=3.6.0,<4.0.0",
+    "json>=3.6.0,<4.0.0"
+  ]
+}

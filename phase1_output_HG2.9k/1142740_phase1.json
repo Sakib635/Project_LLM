@@ -1,0 +1,24 @@
+{
+  "os": [
+    "os.path.exists",
+    "os.mkdir"
+  ],
+  "re": [
+    "re.sub"
+  ],
+  "fabric.api": [],
+  "yaml": [
+    "yaml.load"
+  ],
+  "ivs3": [
+    "ivs3"
+  ],
+  "s3cmd": [
+    "s3cmd -P --guess-mime-type put",
+    "s3cmd del --recursive s3://%(s3_bucket)s/%(project_name)s"
+  ],
+  "node_modules/carto/bin/carto": [],
+  "ivtile": [
+    "ivtile"
+  ]
+}

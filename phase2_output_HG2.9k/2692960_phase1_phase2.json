@@ -1,0 +1,76 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "urllib.request added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "json": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "json>=1.0.0,<3.0.0",
+      "evidence": [
+        "json.loads introduced in Python 2.7",
+        "json.dumps deprecated in Python 3.6 \u2192 max Python 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "os>=1.0.0,<3.0.0",
+      "evidence": [
+        "os.path.join introduced in Python 2.7",
+        "os.mkdir removed in Python 3.5 \u2192 max Python 3.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "sys>=1.0.0,<3.0.0",
+      "evidence": [
+        "sys.exit introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "time>=1.0.0,<3.0.0",
+      "evidence": [
+        "time.sleep introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "signal": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "signal>=1.0.0,<3.0.0",
+      "evidence": [
+        "signal.signal introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "re>=2.0.0,<3.0.0",
+      "evidence": [
+        "re.sub introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "json>=1.0.0,<3.0.0",
+    "os>=1.0.0,<3.0.0",
+    "sys>=1.0.0,<3.0.0",
+    "time>=1.0.0,<3.0.0",
+    "signal>=1.0.0,<3.0.0",
+    "re>=2.0.0,<3.0.0"
+  ]
+}

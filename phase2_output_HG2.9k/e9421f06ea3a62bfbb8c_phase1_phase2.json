@@ -1,0 +1,89 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame introduced in Python 3.6",
+      "numpy.array introduced in Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "numpy>=1.2,<2.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.2.0",
+        "numpy.random.multivariate_normal introduced in numpy 1.2.0",
+        "numpy.identity introduced in numpy 1.2.0",
+        "numpy.logspace introduced in numpy 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "matplotlib>=3.5,<4.0",
+      "evidence": [
+        "matplotlib.pyplot.scatter introduced in matplotlib 3.5.0",
+        "matplotlib.pyplot.show introduced in matplotlib 3.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "pandas>=1.2,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.0",
+        "pandas.DataFrame.to_numpy introduced in pandas 1.2.0",
+        "pandas.DataFrame.ix introduced in pandas 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "seaborn": {
+      "inferred_version_range": ">=0.11.0,<0.12.0",
+      "recommended_requirements_line": "seaborn>=0.11.0,<0.12.0",
+      "evidence": [
+        "seaborn.set_style introduced in seaborn 0.11.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.24.2,<0.25.0",
+      "recommended_requirements_line": "scikit-learn>=0.24.2,<0.25.0",
+      "evidence": [
+        "sklearn.linear_model.LogisticRegression introduced in scikit-learn 0.24.2",
+        "sklearn.linear_model.LogisticRegressionCV introduced in scikit-learn 0.24.2",
+        "sklearn.metrics.f1_score introduced in scikit-learn 0.24.2",
+        "sklearn.metrics.accuracy_score introduced in scikit-learn 0.24.2",
+        "sklearn.metrics.make_scorer introduced in scikit-learn 0.24.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rbfmodel_wrapper": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence for rbfmodel_wrapper version"
+    },
+    "puwrapper": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence for puwrapper version"
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2,<2.0",
+    "matplotlib>=3.5,<4.0",
+    "pandas>=1.2,<2.0",
+    "seaborn>=0.11.0,<0.12.0",
+    "scikit-learn>=0.24.2,<0.25.0"
+  ]
+}

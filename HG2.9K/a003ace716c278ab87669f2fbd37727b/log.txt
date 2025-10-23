@@ -1,0 +1,11 @@
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+Traceback (most recent call last):
+  File "snippet.py", line 7, in <module>
+    from lasagne import init
+  File "/usr/local/lib/python2.7/site-packages/lasagne/__init__.py", line 19, in <module>
+    from . import layers
+  File "/usr/local/lib/python2.7/site-packages/lasagne/layers/__init__.py", line 7, in <module>
+    from .pool import *
+  File "/usr/local/lib/python2.7/site-packages/lasagne/layers/pool.py", line 6, in <module>
+    from theano.tensor.signal import downsample
+ImportError: cannot import name downsample

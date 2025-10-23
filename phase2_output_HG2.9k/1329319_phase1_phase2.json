@@ -1,0 +1,29 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "null",
+"evidence": ["redis.Redis added in Python 3.6 → min Python 3.6", "sys.argv removed in Python 3.10 → max Python null"],
+"notes": ""
+},
+"dependencies": {
+"pylibmc": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pylibmc>=1.2.0,<2.0.0",
+"evidence": ["pylibmc.Client introduced in v1.2.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"redis": {
+"inferred_version_range": ">=3.5.3,<4.0.0",
+"recommended_requirements_line": "redis>=3.5.3,<4.0.0",
+"evidence": ["redis.Redis introduced in v3.5.3"],
+"confidence": 1,
+"notes": ""
+}
+},
+"requirements.txt": [
+"pylibmc>=1.2.0,<2.0.0",
+"redis>=3.5.3,<4.0.0"
+]
+}
+}

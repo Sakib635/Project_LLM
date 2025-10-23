@@ -1,0 +1,34 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "3.9",
+    "evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10→ max Python 3.10"],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.environ.setdefault added in Python 3.6 → min Python 3.6"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "barrel": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["barrel.cooper.basicauth added in Python 3.6 → min Python 3.6"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["django.core.wsgi.get_wsgi_application added in Python 3.6 → min Python 3.6"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": ["os>=3.6,<4.0", "barrel>=3.6,<4.0", "django>=3.6,<4.0"]
+}
+```

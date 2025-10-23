@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "gflags.DEFINE_integer added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "logging": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "logging>=2.6.0,<3.0.0",
+      "evidence": [
+        "logging.basicConfig introduced in v2.6.0",
+        "logging.info deprecated in v3.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "socket.AF_INET introduced in v2.3",
+        "socket.SOCK_STREAM deprecated in v3.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "logging>=2.6.0,<3.0.0",
+    "socket>=2.3,<3.0"
+  ]
+}

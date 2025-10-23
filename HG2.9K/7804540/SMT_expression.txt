@@ -1,0 +1,5 @@
+(declare-fun Twisted () String)
+(declare-fun psycopg2 () String)
+(assert (and (or (= psycopg2 "2.8.6"))
+     (or (= Twisted "20.3.0") (= Twisted "20.3.0rc1"))))
+(check-sat)

@@ -1,0 +1,5 @@
+(declare-fun pyserial () String)
+(declare-fun pygame () String)
+(assert (and (or (= pygame "2.0.1") (= pygame "2.0.1.dev1"))
+     (or (= pyserial "3.5") (= pyserial "3.5b0"))))
+(check-sat)

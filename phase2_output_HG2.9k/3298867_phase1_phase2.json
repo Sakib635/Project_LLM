@@ -1,0 +1,69 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "os>=1.0,<2.0",
+      "evidence": [
+        "os.environ introduced in version 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "django>=3.2,<4.0",
+      "evidence": [
+        "django.core.wsgi introduced in version 3.2",
+        "django.core.wsgi.get_wsgi_application introduced in version 3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "barrel": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence of API usage in the provided list"
+    },
+    "cooper": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No evidence of API usage in the provided list"
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.read_csv introduced in version 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in version 1.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.0,<2.0",
+    "django>=3.2,<4.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.20,<2.0.0"
+  ]
+}

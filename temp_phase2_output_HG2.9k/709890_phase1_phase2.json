@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "base64": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "base64.b64decode"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": "<3.0",
+      "recommended_requirements_line": "import os; os.path.basename('file.txt')",
+      "evidence": [
+        "os.path.basename"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mimetypes": {
+      "inferred_version_range": "<3.8",
+      "recommended_requirements_line": "import mimetypes; mimetypes.guess_type('file.txt')",
+      "evidence": [
+        "mimetypes.guess_type"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.core.files.uploadedfile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SimpleUploadedFile"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tastypie.fields": {
+      "inferred_version_range": "<2.0",
+      "recommended_requirements_line": "import tastypie.fields; tastypie.fields.FileField()",
+      "evidence": [
+        "FileField"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.DataFrame",
+        "pandas.DataFrame.to_numpy",
+        "pandas.DataFrame.ix"
+      ],
+      "confidence": 0.65,
+      "notes": "Note: Uncertainty due to conflicting APIs (to_numpy and ix)."
+    }
+  },
+  "requirements.txt": [
+    "base64",
+    "os",
+    "mimetypes",
+    "django.core.files.uploadedfile",
+    "tastypie.fields",
+    "pandas"
+  ]
+}

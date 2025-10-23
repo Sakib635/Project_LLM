@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "os.system introduced in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "xcb": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "xcb>=1.2.0,<2.0.0",
+      "evidence": [
+        "xcb.connect introduced in xcb 1.2.0 \u2192 min version 1.2.0",
+        "xcb.core.QueryTree, xcb.core.GetWindowAttributes, xcb.core.GetGeometry introduced in xcb 1.2.0 \u2192 min version 1.2.0"
+      ],
+      "confidence": 0.98,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "PIL.Image introduced in PIL 1.2.0 \u2192 min version 1.2.0",
+        "PIL.ImageFilter introduced in PIL 1.2.0 \u2192 min version 1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "xproto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "xproto.CARD32 introduced in xproto 1.2.0 \u2192 min version 1.2.0",
+        "xproto.RECTANGLE introduced in xproto 1.2.0 \u2192 min version 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "builtins": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "builtins.open introduced in Python 3.6 \u2192 min version 3.6"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "i3lock": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "i3lock.lock_screen introduced in i3lock 1.2.0 \u2192 min version 1.2.0"
+      ],
+      "confidence": 0.98,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "xcb>=1.2.0,<2.0.0",
+    "Pillow>=1.2.0,<2.0.0"
+  ]
+}

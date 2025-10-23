@@ -1,0 +1,83 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "burp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "burp is not a standard library or external package, so no version information can be inferred."
+    },
+    "java.io": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "java.io>=2.0.0,<3.0.0",
+      "evidence": [
+        "java.io.PrintWriter introduced in JDK 1.2 \u2192 v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "re>=1.0.0,<3.0.0",
+      "evidence": [
+        "re.search introduced in Python 1.0 \u2192 v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "base64": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "base64>=2.0.0,<3.0.0",
+      "evidence": [
+        "base64.b64decode introduced in Python 2.0 \u2192 v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "StringIO": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "StringIO>=1.0.0,<3.0.0",
+      "evidence": [
+        "StringIO.StringIO introduced in Python 1.0 \u2192 v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "zipfile": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "zipfile>=2.0.0,<3.0.0",
+      "evidence": [
+        "zipfile.ZipFile introduced in Python 2.0 \u2192 v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "xml.dom.minidom": {
+      "inferred_version_range": ">=1.0.0,<3.0.0",
+      "recommended_requirements_line": "xml.dom.minidom>=1.0.0,<3.0.0",
+      "evidence": [
+        "xml.dom.minidom.parseString introduced in Python 1.0 \u2192 v1.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "burp>=2.0.0,<3.0.0",
+    "java.io>=2.0.0,<3.0.0",
+    "re>=1.0.0,<3.0.0",
+    "base64>=2.0.0,<3.0.0",
+    "StringIO>=1.0.0,<3.0.0",
+    "zipfile>=2.0.0,<3.0.0",
+    "xml.dom.minidom>=1.0.0,<3.0.0"
+  ]
+}

@@ -1,0 +1,4 @@
+(declare-fun six () String)
+(declare-fun protobuf () String)
+(assert (and (or (= protobuf "3.15.5")) (=> (= protobuf "3.15.5") (or (= six "1.9.0")))))
+(check-sat)

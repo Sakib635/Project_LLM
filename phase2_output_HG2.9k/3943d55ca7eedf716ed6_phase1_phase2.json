@@ -1,0 +1,27 @@
+```
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["time.sleep added in Python 3.7 → min Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "concurrent.futures": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "concurrent-futures>=3.0,<4.0",
+      "evidence": ["ProcessPoolExecutor introduced in concurrent.futures v3.0.0 → >=3.0,<4.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tornado": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["ioloop, gen, and gen.coroutine introduced in tornado v6.0 → cannot infer"],
+      "confidence": 0.7,
+      "notes": "Assuming minimum version of tornado is v6.0 based on API introduction."
+    }
+  },
+  "requirements.txt": ["concurrent-futures>=3.0,<4.0"]
+}
+```

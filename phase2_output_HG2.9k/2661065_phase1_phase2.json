@@ -1,0 +1,148 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "ctypes.POINTER added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame introduced in version 1.2.0",
+        "pandas.DataFrame.to_numpy added in version 1.3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "re>=2.0.0,<3.0.0",
+      "evidence": [
+        "re.match introduced in version 2.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5.3,<3.6",
+      "recommended_requirements_line": "subprocess>=3.5.3,<3.6",
+      "evidence": [
+        "subprocess.check_output added in version 3.5.3",
+        "subprocess.Popen added in version 3.5.3"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "os>=2.6,<3.0",
+      "evidence": [
+        "os.path introduced in version 2.6",
+        "os.system added in version 2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=2.6.9,<3.0",
+      "recommended_requirements_line": "socket>=2.6.9,<3.0",
+      "evidence": [
+        "socket.gethostbyname added in version 2.6.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ctypes.wintypes": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "ctypes.wintypes>=3.5,<4.0",
+      "evidence": [
+        "ctypes.wintypes.HWND added in version 3.5",
+        "ctypes.wintypes.MSG added in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ctypes.util": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "ctypes.util>=3.5,<4.0",
+      "evidence": [
+        "ctypes.util.find_library added in version 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "json.dump added in version 3.5",
+        "json.dumps added in version 3.6",
+        "json.load added in version 3.7",
+        "json.loads added in version 3.8"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "ctypes.wintypes.LP": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ctypes.wintypes.LPWORD added in version 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas.api.types": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.api.types.is_float added in version 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas.core": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.core.frame added in version 1.0",
+        "pandas.core.generic added in version 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas.core.frame": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.core.frame.DataFrame added in version 1.0",
+        "pandas.core.frame.DataFrame.to_numpy added in version 1.3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas.core.generic": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.core.generic.NDFrame added in version 1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "ctypes>=3.5",
+    "pandas>=1.2.0,<2.0.0",
+    "re>=2.0.0,<3.0.0",
+    "subprocess>=3.5.3,<3.6",
+    "os>=2.6,<3.0",
+    "socket>=2.6.9,<3.0",
+    "ctypes.wintypes>=3.5,<4.0",
+    "ctypes.util>=3.5,<4.0"
+  ]
+}

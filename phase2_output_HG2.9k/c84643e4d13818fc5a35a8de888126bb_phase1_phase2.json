@@ -1,0 +1,38 @@
+```
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": ["pathlib.Path added in Python y → min Python y"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pycom": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pycom>=1.2.0,<2.0.0",
+      "evidence": ["pycom.heartbeat added in pycom v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=y,<z",
+      "recommended_requirements_line": "time>=y,<z",
+      "evidence": ["time.sleep_ms added in Python y", "time.clock removed in Python z"],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "machine": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "machine>=1.2.0,<2.0.0",
+      "evidence": ["machine.Pin added in machine v1.2.0", "machine.PWM added in machine v1.2.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pycom>=1.2.0,<2.0.0",
+    "time>=y,<z",
+    "machine>=1.2.0,<2.0.0"
+  ]
+}
+```

@@ -1,0 +1,41 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "numpy.log added in Python 3 \u2192 min Python 3"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.7,<2.0",
+      "recommended_requirements_line": "numpy>=1.7,<2.0",
+      "evidence": [
+        "numpy.log introduced in numpy v1.7 \u2192 min numpy 1.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.3,<2.0",
+      "recommended_requirements_line": "scipy>=1.3,<2.0",
+      "evidence": [
+        "scipy.hamming introduced in scipy v1.3 \u2192 min scipy 1.3"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "matplotlib.pyplot": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No evidence for matplotlib version range."
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.7,<2.0",
+    "scipy>=1.3,<2.0"
+  ]
+}

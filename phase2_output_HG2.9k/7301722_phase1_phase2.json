@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pip": {
+      "inferred_version_range": ">=9.0.1,<10.0.0",
+      "recommended_requirements_line": "pip>=9.0.1,<10.0.0",
+      "evidence": [
+        "pip.main introduced in pip 9.0.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet introduced in Twisted 12.0",
+        "twisted.web introduced in Twisted 8.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Cannot determine a reliable upper or lower bound for twisted"
+    },
+    "PIL": {
+      "inferred_version_range": ">=1.1.7,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.1.7,<2.0.0",
+      "evidence": [
+        "PIL.Image introduced in PIL 1.1.7",
+        "PIL.Image.open introduced in PIL 1.1.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pip>=9.0.1,<10.0.0",
+    "twisted>=12.0,<13.0.0",
+    "Pillow>=1.1.7,<2.0.0"
+  ]
+}

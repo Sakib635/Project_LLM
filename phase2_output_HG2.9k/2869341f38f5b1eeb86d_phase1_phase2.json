@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "zip added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.1.0,<3.0.0",
+      "recommended_requirements_line": "django>=2.1.0,<3.0.0",
+      "evidence": [
+        "django.setup introduced in Django 2.1 \u2192 Django v2.1.x",
+        "django.db.migrations.executor.MigrationExecutor deprecated in Django 3.0 \u2192 Django v3.0.x"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "zip introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.1.0,<3.0.0",
+    "python>=3.6"
+  ]
+}

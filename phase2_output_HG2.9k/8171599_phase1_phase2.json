@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "django>=3.2,<4.0",
+      "evidence": [
+        "API added in Django 3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django_facebook": {
+      "inferred_version_range": ">=1.5,<2.0",
+      "recommended_requirements_line": "django-facebook>=1.5,<2.0",
+      "evidence": [
+        "API introduced in Django Facebook 1.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=3.2,<4.0",
+    "django-facebook>=1.5,<2.0"
+  ]
+}

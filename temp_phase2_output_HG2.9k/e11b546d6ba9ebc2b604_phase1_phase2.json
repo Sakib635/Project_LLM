@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "objc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No suitable API found for version inference."
+    },
+    "CoreFoundation": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "CoreFoundation>=1.2.0,<2.0.0",
+      "evidence": [
+        "CoreFoundation.CFURLCreateWithString introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ctypes": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "ctypes>=1.0.0,<2.0.0",
+      "evidence": [
+        "ctypes.c_void_p introduced in v1.0.0",
+        "ctypes.pointer introduced in v1.0.0",
+        "ctypes.cast introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "NetFS": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No suitable API found for version inference."
+    }
+  },
+  "requirements.txt": []
+}

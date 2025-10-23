@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.DataFrame introduced in v0.1.0",
+        "pandas.DataFrame.to_numpy introduced in v0.24.0",
+        "pandas.DataFrame.ix deprecated in v0.24.0"
+      ],
+      "confidence": 0.75,
+      "notes": "Assuming the version range is based on the introduction and deprecation of APIs."
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.log2 introduced in v2.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": "Assuming the version range is based on the introduction of APIs."
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "collections.Counter introduced in v2.0",
+        "collections.defaultdict introduced in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": "Assuming the version range is based on the introduction of APIs."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.stdout introduced in v2.6"
+      ],
+      "confidence": 1.0,
+      "notes": "Assuming the version range is based on the introduction of APIs."
+    }
+  },
+  "requirements.txt": []
+}

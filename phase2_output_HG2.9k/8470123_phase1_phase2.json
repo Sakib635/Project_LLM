@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "null",
+"evidence": ["hash_ring.HashRing added in Python 3.6 → min Python 3.6", "memcache.Client added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"hash_ring": {
+"inferred_version_range": ">=0.1.0,<0.2.0",
+"recommended_requirements_line": "hash-ring>=0.1.0,<0.2.0",
+"evidence": ["hash_ring.HashRing.__init__ introduced in version 0.1.0", "hash_ring.HashRing.get_node introduced in version 0.1.0", "hash_ring.HashRing.get_node_pos introduced in version 0.1.0", "hash_ring.HashRing.iterate_nodes introduced in version 0.1.0", "hash_ring.HashRing._hash_val introduced in version 0.1.0", "hash_ring.HashRing._hash_digest introduced in version 0.1.0"],
+"confidence": 0.9,
+"notes": ""
+},
+"memcache": {
+"inferred_version_range": ">=1.2.5,<1.3.0",
+"recommended_requirements_line": "memcache>=1.2.5,<1.3.0",
+"evidence": ["memcache.Client.__init__ introduced in version 1.2.5"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": ["hash-ring>=0.1.0,<0.2.0", "memcache>=1.2.5,<1.3.0"]
+},
+"requirements.txt": ["hash-ring>=0.1.0,<0.2.0", "memcache>=1.2.5,<1.3.0"]
+}

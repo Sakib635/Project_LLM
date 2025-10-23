@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.5 \u2192 min Python 3.5",
+      "scipy.sparse.csc_matrix added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array added in numpy 1.20 \u2192 min numpy 1.20",
+        "numpy.linalg.norm added in numpy 1.20 \u2192 min numpy 1.20"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scipy.sparse": {
+      "inferred_version_range": ">=2.0",
+      "recommended_requirements_line": "scipy.sparse>=2.0",
+      "evidence": [
+        "scipy.sparse.csc_matrix added in scipy 2.0 \u2192 min scipy 2.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "scipy.sparse>=2.0"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher.AES introduced in Crypto 2.6.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=3.4.0",
+      "recommended_requirements_line": "hashlib>=3.4.0",
+      "evidence": [
+        "hashlib.sha256 introduced in hashlib 1.1"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "hmac": {
+      "inferred_version_range": ">=1.0.2",
+      "recommended_requirements_line": "hmac>=1.0.2",
+      "evidence": [
+        "hmac.new introduced in hmac 1.0.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.urandom introduced in os 1.1.3"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

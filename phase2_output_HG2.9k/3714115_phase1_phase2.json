@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "urllib.urlencode added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "django>=1.0,<3.0",
+      "evidence": [
+        "django.template.TemplateSyntaxError introduced in v1.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "urlparse": {
+      "inferred_version_range": ">=2.7,<4.0",
+      "recommended_requirements_line": "urlparse>=2.7,<4.0",
+      "evidence": [
+        "urlparse.urlparse introduced in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.utils.encoding": {
+      "inferred_version_range": ">=1.0,<3.0",
+      "recommended_requirements_line": "django.utils.encoding>=1.0,<3.0",
+      "evidence": [
+        "django.utils.encoding.smart_str introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=2.7,<4.0",
+      "recommended_requirements_line": "urllib>=2.7,<4.0",
+      "evidence": [
+        "urllib.urlencode introduced in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<3.0",
+    "urlparse>=2.7,<4.0",
+    "django.utils.encoding>=1.0,<3.0",
+    "urllib>=2.7,<4.0"
+  ]
+}

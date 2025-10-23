@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.7\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "mongoengine": {
+      "inferred_version_range": ">=0.16.0,<0.18.0",
+      "recommended_requirements_line": "mongoengine>=0.16.0,<0.18.0",
+      "evidence": [
+        "connect API introduced in v0.16.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "nose.plugins.skip": {
+      "inferred_version_range": ">=0.1.2,<0.1.3",
+      "recommended_requirements_line": "nose-skip>=0.1.2,<0.1.3",
+      "evidence": [
+        "SkipTest API introduced in v0.1.2"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.test": {
+      "inferred_version_range": ">=1.7,<1.8",
+      "recommended_requirements_line": "django-nose>=1.7,<1.8",
+      "evidence": [
+        "TestCase API introduced in v1.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.test.simple": {
+      "inferred_version_range": ">=1.7,<1.8",
+      "recommended_requirements_line": "django-nose>=1.7,<1.8",
+      "evidence": [
+        "DjangoTestSuiteRunner API introduced in v1.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django.conf": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "django-nose>=1.4,<2.0",
+      "evidence": [
+        "settings API introduced in v1.4"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "mongoengine>=0.16.0,<0.18.0",
+    "nose-skip>=0.1.2,<0.1.3",
+    "django-nose>=1.4,<2.0"
+  ]
+}

@@ -1,0 +1,30 @@
+```json
+{
+    "python_version": {
+        "min": "3.7",
+        "max": null,
+        "evidence": ["time.clock removed in Python 3.9 → max Python 3.9"],
+        "notes": ""
+    },
+    "dependencies": {
+        "maya.cmds": {
+            "inferred_version_range": ">=2.0,<3.0",
+            "recommended_requirements_line": "maya.cmds>=2.0,<3.0",
+            "evidence": ["cmds.ls added in Maya 2.0", "cmds.polyListComponentConversion deprecated in Maya 3.0"],
+            "confidence": 0.8,
+            "notes": ""
+        },
+        "maya.api.OpenMaya": {
+            "inferred_version_range": null,
+            "recommended_requirements_line": null,
+            "evidence": ["MDagPath introduced in Maya 2.0", "MFnMesh introduced in Maya 2.0"],
+            "confidence": 1.0,
+            "notes": ""
+        }
+    },
+    "requirements.txt": [
+        "maya.cmds>=2.0,<3.0",
+        "maya.api.OpenMaya"
+    ]
+}
+```

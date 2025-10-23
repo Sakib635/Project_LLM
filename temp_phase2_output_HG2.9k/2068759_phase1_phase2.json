@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Twisted is not a standard library package."
+    },
+    "urlparse": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": "urllib3[secure]>=1.25.10,<2.0.0",
+      "evidence": [
+        "urllib3 added in Python 3.4 \u2192 min Python 3.4",
+        "secure parameter added in urllib3 1.25.10"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "twisted.web": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Twisted is not a standard library package."
+    },
+    "twisted.python": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Twisted is not a standard library package."
+    },
+    "twisted.web.http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Twisted is not a standard library package."
+    }
+  },
+  "requirements.txt": [
+    "urllib3[secure]>=1.25.10,<2.0.0"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "pandas.Series.to_frame added in Python 1.0 \u2192 min Python 1.0",
+      "pandas.read_csv added in Python 0.23.4 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gym": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gym.envs.register added in v0.9.5",
+        "gym.make added in v0.17.0"
+      ],
+      "confidence": 0.25,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18.5,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.5,<2.0.0",
+      "evidence": [
+        "numpy.zeros added in v1.18.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy.linalg": {
+      "inferred_version_range": ">=1.19.0,<2.0.0",
+      "recommended_requirements_line": "numpy.linalg>=1.19.0,<2.0.0",
+      "evidence": [
+        "numpy.linalg.norm added in v1.19.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy.array": {
+      "inferred_version_range": ">=1.18.5,<2.0.0",
+      "recommended_requirements_line": "numpy.array>=1.18.5,<2.0.0",
+      "evidence": [
+        "numpy.array added in v1.18.5"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "gym>=0.9.5",
+    "numpy>=1.18.5",
+    "numpy.linalg>=1.19.0",
+    "numpy.array>=1.18.5"
+  ]
+}

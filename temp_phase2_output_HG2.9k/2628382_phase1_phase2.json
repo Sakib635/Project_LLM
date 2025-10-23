@@ -1,0 +1,97 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "zope.interface": {
+      "inferred_version_range": ">=4.5,<5.0",
+      "recommended_requirements_line": "zope.interface>=4.5,<5.0",
+      "evidence": [
+        "Interface introduced in version 4.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Configurator": {
+      "inferred_version_range": ">=3.2,<4.0",
+      "recommended_requirements_line": "Configurator>=3.2,<4.0",
+      "evidence": [
+        "global_registry introduced in version 3.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "IView": {
+      "inferred_version_range": ">=3.9,<4.0",
+      "recommended_requirements_line": "IView>=3.9,<4.0",
+      "evidence": [
+        "__call__ introduced in version 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "IRenderer": {
+      "inferred_version_range": ">=3.9,<4.0",
+      "recommended_requirements_line": "IRenderer>=3.9,<4.0",
+      "evidence": [
+        "__call__ introduced in version 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "IRequest": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "IRequest>=2.7,<3.0",
+      "evidence": [
+        "registry introduced in version 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "IResponse": {
+      "inferred_version_range": ">=3.9,<4.0",
+      "recommended_requirements_line": "IResponse>=3.9,<4.0",
+      "evidence": [
+        "request introduced in version 3.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "LookUp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "make_request added in version 4.5",
+        "get_view added in version 4.7",
+        "get_renderer added in version 5.0"
+      ],
+      "confidence": 0.8,
+      "notes": "Unable to determine a reliable upper or lower bound due to conflicting APIs and/or uncertainty."
+    },
+    "Router": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "config added in version 4.5",
+        "lookup added in version 4.7",
+        "__call__ added in version 5.0"
+      ],
+      "confidence": 0.8,
+      "notes": "Unable to determine a reliable upper or lower bound due to conflicting APIs and/or uncertainty."
+    }
+  },
+  "requirements.txt": [
+    "zope.interface>=4.5,<5.0",
+    "Configurator>=3.2,<4.0",
+    "IView>=3.9,<4.0",
+    "IRenderer>=3.9,<4.0",
+    "IRequest>=2.7,<3.0",
+    "IResponse>=3.9,<4.0"
+  ]
+}

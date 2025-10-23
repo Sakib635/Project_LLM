@@ -1,0 +1,46 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "pandas.DataFrame.to_numpy added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "django>=1.0,<2.0",
+      "evidence": [
+        "django.template introduced in v1.0"
+      ],
+      "confidence": 0.999,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.0",
+        "numpy.linalg.norm added in v1.6"
+      ],
+      "confidence": 0.99,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=0.23.0,<2.0",
+      "recommended_requirements_line": "pandas>=0.23.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced in v0.23.0",
+        "pandas.DataFrame.ix deprecated in v1.0"
+      ],
+      "confidence": 0.995,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=1.0,<2.0",
+    "numpy>=1.0,<2.0",
+    "pandas>=0.23.0,<2.0"
+  ]
+}

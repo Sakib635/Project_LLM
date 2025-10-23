@@ -1,0 +1,24 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "apscheduler.Scheduler added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "python-dateutil>=1.4,<2.0",
+      "evidence": [
+        "datetime.timedelta introduced in Python 3.0, deprecated in Python 3.9 \u2192 inferred range"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "python-dateutil>=1.4,<2.0"
+  ]
+}

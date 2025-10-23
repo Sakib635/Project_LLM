@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "2.0",
+    "max": null,
+    "evidence": [
+      "socket.socket added in Python 2.0 \u2192 min Python 2.0",
+      "time.clock removed in Python 3.0\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "binascii": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "struct>=2.6.0,<3.0.0",
+      "evidence": [
+        "struct.pack added in Python 2.6 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pcapy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "netifaces": {
+      "inferred_version_range": ">=0.7.0,<1.0.0",
+      "recommended_requirements_line": "netifaces>=0.7.0,<1.0.0",
+      "evidence": [
+        "netifaces.ifaddresses added in Python 0.7 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "netaddr": {
+      "inferred_version_range": ">=0.7.5,<1.0.0",
+      "recommended_requirements_line": "netaddr>=0.7.5,<1.0.0",
+      "evidence": [
+        "netaddr.IPNetwork added in Python 0.7.5 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "struct>=2.6.0,<3.0.0",
+    "netifaces>=0.7.0,<1.0.0",
+    "netaddr>=0.7.5,<1.0.0"
+  ]
+}

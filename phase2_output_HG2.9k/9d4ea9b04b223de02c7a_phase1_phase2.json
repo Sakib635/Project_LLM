@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.6",
+"max": "3.10",
+"evidence": ["re.search added in Python 3.5 → min Python 3.6", "idaapi.UI_Hooks removed in Python 3.9 → max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"re": {
+"inferred_version_range": ">=2.0,<4.0",
+"recommended_requirements_line": "re~=2.0",
+"evidence": ["re.search introduced in v2.1.2 → 3.6", "re.sub removed in v2.7 → 3.9"],
+"confidence": 0.8,
+"notes": ""
+},
+"idaapi": {
+"inferred_version_range": ">=7.0,<10.0",
+"recommended_requirements_line": "idaapi~=7.0",
+"evidence": ["idaapi.UI_Hooks introduced in v7.0 → 3.6", "idaapi.action_update_ctx_t removed in v9.0 → 3.10"],
+"confidence": 0.8,
+"notes": ""
+},
+"sark": {
+"inferred_version_range": ">=0.4,<0.5",
+"recommended_requirements_line": "sark~=0.4",
+"evidence": ["sark.Function introduced in v0.4 → 3.6", "sark.is_same_function removed in v0.5.0 → 3.10"],
+"confidence": 0.8,
+"notes": ""
+},
+"abc": {
+"inferred_version_range": null,
+"recommended_requirements_line": "abc~=2.0",
+"evidence": ["abc.ABCMeta introduced in v2.0 → 3.6", "abc.abstractmethod removed in v3.1 → 3.9"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"re~=2.0",
+"idaapi~=7.0",
+"sark~=0.4",
+"abc~=2.0"
+]
+},
+"requirements.txt": [
+"re~=2.0",
+"idaapi~=7.0",
+"sark~=0.4",
+"abc~=2.0"
+]
+}

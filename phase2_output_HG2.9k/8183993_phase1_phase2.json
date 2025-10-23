@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.10\u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django>=2.0.0,<4.0.0",
+      "evidence": [
+        "Django added in Python 3.5 \u2192 min Django 2.0",
+        "timezone support added in Django 1.8 \u2192 max Django 2.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "django.core.paginator": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django.core.paginator>=2.0.0,<4.0.0",
+      "evidence": [
+        "Paginator added in Django 1.1 \u2192 min Django 2.0",
+        "EmptyPage and InvalidPage added in Django 3.0 \u2192 max Django 2.2"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "django.core.urlresolvers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django.core.urlresolvers>=2.0.0,<4.0.0",
+      "evidence": [
+        "reverse added in Django 1.1 \u2192 min Django 2.0",
+        "timezone support added in Django 1.8 \u2192 max Django 2.2"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "django.http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "django.http>=2.0.0,<4.0.0",
+      "evidence": [
+        "HttpResponse added in Django 1.1 \u2192 min Django 2.0",
+        "timezone support added in Django 1.8 \u2192 max Django 2.2"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django>=2.0.0,<4.0.0",
+    "django.core.paginator>=2.0.0,<4.0.0",
+    "django.core.urlresolvers>=2.0.0,<4.0.0",
+    "django.http>=2.0.0,<4.0.0"
+  ]
+}

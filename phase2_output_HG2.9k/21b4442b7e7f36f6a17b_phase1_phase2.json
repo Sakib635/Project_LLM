@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "statsmodels": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "statsmodels>=1.2.0,<2.0.0",
+      "evidence": [
+        "statsmodels.stats.multitest.multipletests introduced in v1.2.0",
+        "statsmodels.stats.libqsturng.psturng introduced in v1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=1.7.0,<2.0.0",
+      "recommended_requirements_line": "scipy>=1.7.0,<2.0.0",
+      "evidence": [
+        "scipy.stats introduced in v1.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.19.5,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.5,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.19.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "itertools": {
+      "inferred_version_range": ">=0.7.1,<1.0.0",
+      "recommended_requirements_line": "itertools>=0.7.1,<1.0.0",
+      "evidence": [
+        "combinations introduced in v0.7.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "statsmodels>=1.2.0,<2.0.0",
+    "scipy>=1.7.0,<2.0.0",
+    "numpy>=1.19.5,<2.0.0",
+    "itertools>=0.7.1,<1.0.0"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+"python_version": {
+"min": "3.5",
+"max": "4.0",
+"evidence": ["pathlib.Path added in Python 3.5 → min Python 3.5", "time.clock removed in Python 3.9 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+<package1>: {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["API X introduced, depricated, removed or changed in vM.N.P"],
+"confidence": 0.5,
+"notes": ""
+},
+<package2>: {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+"evidence": ["API X introduced in pandas v1.2.0", "API Y deprecated in pandas v1.5.0"],
+"confidence": 0.875,
+"notes": ""
+}
+},
+"requirements.txt": [
+"sunrise>=3.5.0,<4.0.0",
+"blinkt>=2.0.0,<3.0.0"]
+}

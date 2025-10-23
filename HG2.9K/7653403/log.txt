@@ -1,0 +1,8 @@
+snippet.py:98: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  items = [Item(name, contents) for name, contents in yaml.load(yml).items()]
+Traceback (most recent call last):
+  File "snippet.py", line 126, in <module>
+    print(yaml_to_dot(input).encode('utf-8'))
+  File "snippet.py", line 98, in yaml_to_dot
+    items = [Item(name, contents) for name, contents in yaml.load(yml).items()]
+AttributeError: 'NoneType' object has no attribute 'items'

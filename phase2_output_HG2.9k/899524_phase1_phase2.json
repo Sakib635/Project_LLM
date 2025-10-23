@@ -1,0 +1,73 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "simplejson": {
+      "inferred_version_range": ">=3.2.0,<4.0.0",
+      "recommended_requirements_line": "simplejson>=3.2.0,<4.0.0",
+      "evidence": [
+        "simplejson.dumps introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "cjson": {
+      "inferred_version_range": ">=2.7.0,<3.0.0",
+      "recommended_requirements_line": "cjson>=2.7.0,<3.0.0",
+      "evidence": [
+        "cjson.encode introduced in v2.7.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ujson": {
+      "inferred_version_range": ">=1.35,<2.0.0",
+      "recommended_requirements_line": "ujson>=1.35,<2.0.0",
+      "evidence": [
+        "ujson.dumps introduced in v1.35"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "json>=2.6.0,<3.0.0",
+      "evidence": [
+        "json.dumps introduced in v2.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "jsonlib": {
+      "inferred_version_range": ">=1.4.0,<2.0.0",
+      "recommended_requirements_line": "jsonlib>=1.4.0,<2.0.0",
+      "evidence": [
+        "jsonlib.dumps introduced in v1.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pickle": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pickle.dumps deprecated in v4.0"
+      ],
+      "confidence": 0.5,
+      "notes": "APIs were not used to determine version range."
+    }
+  },
+  "requirements.txt": [
+    "simplejson>=3.2.0,<4.0.0",
+    "cjson>=2.7.0,<3.0.0",
+    "ujson>=1.35,<2.0.0",
+    "json>=2.6.0,<3.0.0",
+    "jsonlib>=1.4.0,<2.0.0"
+  ]
+}

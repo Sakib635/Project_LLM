@@ -1,0 +1,78 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "getUtility added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "zope.component": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "zope.component>=4.0,<5.0",
+      "evidence": [
+        "getUtility introduced in version 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "zope.interface": {
+      "inferred_version_range": ">=3.8,<4.1",
+      "recommended_requirements_line": "zope.interface>=3.8,<4.1",
+      "evidence": [
+        "Interface introduced in version 3.8",
+        "alsoProvides introduced in version 3.8"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "plone.registry.interfaces": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "plone.registry.interfaces>=1.0,<2.0",
+      "evidence": [
+        "IRegistry introduced in version 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "plone.app.registry.browser.controlpanel": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "plone.app.registry.browser.controlpanel>=5.0,<6.0",
+      "evidence": [
+        "ControlPanelFormWrapper introduced in version 5.0",
+        "RegistryEditForm introduced in version 5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "z3c.form": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "z3c.form>=1.0,<2.0",
+      "evidence": [
+        "field introduced in version 1.0",
+        "group introduced in version 1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "plone.z3cform": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "layout introduced in version 4.2",
+        "removed in version 5.0"
+      ],
+      "confidence": 0.67,
+      "notes": "layout was removed in version 5.0, but may have been reintroduced in a later version"
+    }
+  },
+  "requirements.txt": [
+    "zope.component>=4.0,<5.0",
+    "zope.interface>=3.8,<4.1",
+    "plone.registry.interfaces>=1.0,<2.0",
+    "plone.app.registry.browser.controlpanel>=5.0,<6.0",
+    "z3c.form>=1.0,<2.0",
+    "plone.z3cform>4.2,<5.0"
+  ]
+}

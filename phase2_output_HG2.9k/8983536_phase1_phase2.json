@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "numpy.array added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.15,<2",
+      "recommended_requirements_line": "numpy>=1.15,<2",
+      "evidence": [
+        "numpy.array introduced in v1.15.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "rasterio": {
+      "inferred_version_range": ">=1.0,<2",
+      "recommended_requirements_line": "rasterio>=1.0,<2",
+      "evidence": [
+        "rasterio.drivers introduced in v1.0.0",
+        "rasterio.open introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.15,<2",
+    "rasterio>=1.0,<2"
+  ]
+}

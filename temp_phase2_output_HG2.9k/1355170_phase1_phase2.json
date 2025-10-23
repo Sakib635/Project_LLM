@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Flask>=1.2.0,<2.0.0",
+      "evidence": [
+        "flask.Flask introduced in Flask 1.2.0 \u2192 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "jinja2": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "Jinja2>=3.0.0,<4.0.0",
+      "evidence": [
+        "jinja2.FileSystemLoader introduced in Jinja2 3.0.0 \u2192 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "my_helpers": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Flask>=1.2.0,<2.0.0",
+    "Jinja2>=3.0.0,<4.0.0"
+  ]
+}

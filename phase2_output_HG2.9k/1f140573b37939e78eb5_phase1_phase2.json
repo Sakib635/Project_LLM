@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "os.path.getsize added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "Crypto>=1.2,<2.0",
+      "evidence": [
+        "Crypto.Cipher._Blowfish added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "struct>=1.2,<2.0",
+      "evidence": [
+        "struct.pack added in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "encryption": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "encryptbytes and decryptbytes not found"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "reversebytes": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "reversebytes not found"
+      ],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Crypto>=1.2,<2.0",
+    "struct>=1.2,<2.0"
+  ]
+}

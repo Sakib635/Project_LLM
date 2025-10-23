@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tornado": {
+      "inferred_version_range": ">=5.0,<6.0",
+      "recommended_requirements_line": "tornado>=5.0,<6.0",
+      "evidence": [
+        "tornado.ioloop added in v5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "tulip": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tulip.events added in v2.5"
+      ],
+      "confidence": 0.75,
+      "notes": "No evidence for version range."
+    }
+  },
+  "requirements.txt": [
+    "tornado>=5.0,<6.0",
+    "tulip>=2.5,<3.0"
+  ]
+}

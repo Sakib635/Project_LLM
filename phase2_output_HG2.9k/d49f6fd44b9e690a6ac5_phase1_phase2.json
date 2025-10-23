@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "cv2>=4.0.0,<5.0.0",
+      "evidence": [
+        "cv2.CascadeClassifier introduced in v4.1.0",
+        "cv2.imread added in v3.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv added in v2.7",
+        "sys.exit removed in v3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "cv2.cv": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "cv2.cv.CV_HAAR_SCALE_IMAGE added in v4.1.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=4.0.0,<5.0.0",
+    "sys>=2.7,<3.5"
+  ]
+}

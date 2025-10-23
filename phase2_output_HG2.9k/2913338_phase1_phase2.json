@@ -1,0 +1,25 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=2.0,<3.0",
+      "recommended_requirements_line": "Django>=2.0,<3.0",
+      "evidence": [
+        "Django.utils.decorators.method_decorator introduced in Django 2.0.0 \u2192 min Django 2.0.0",
+        "Django.views.generic.View introduced in Django 1.8.0 \u2192 min Django 1.8.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Django>=2.0,<3.0"
+  ]
+}

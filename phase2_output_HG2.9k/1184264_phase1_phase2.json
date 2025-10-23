@@ -1,0 +1,94 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "Python 3.6 introduced the `os.getpid` API"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "gevent": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "gevent introduced in v1.0.0",
+        "gevent.greenlet.Greenlet introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pymongo": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: `pymongo.connection._Pool` and `pymongo.connection._CONNECT_TIMEOUT`"
+    },
+    "gevent.hub": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "gevent introduced in v1.0.0",
+        "gevent.hub introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "weakref": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: `weakref.ref`"
+    },
+    "gevent.queue": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "gevent introduced in v1.0.0",
+        "gevent.queue introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gevent.local": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "gevent introduced in v1.0.0",
+        "gevent.local introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gevent.coros": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gevent>=1.0.0,<2.0.0",
+      "evidence": [
+        "gevent introduced in v1.0.0",
+        "gevent.coros introduced in v1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "gevent.greenlet": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: `gevent.greenlet.Greenlet`"
+    },
+    "socket": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: `socket.socket`, `socket.AF_INET`, `socket.setsockopt`, `socket.connect`, `socket.settimeout`, and `socket.gaierror`"
+    }
+  },
+  "requirements.txt": [
+    "gevent>=1.0.0,<2.0.0",
+    "pymongo>=1.0.0,<2.0.0"
+  ]
+}

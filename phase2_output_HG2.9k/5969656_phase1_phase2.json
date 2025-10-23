@@ -1,0 +1,26 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "com.operasoftware.operanext": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "LSSetDefaultHandlerForURLScheme(http) introduced in pandas 1.2.0 \u2192 min Python 1.2.0",
+        "LSSetDefaultHandlerForURLScheme(https) introduced in pandas 1.2.0 \u2192 min Python 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

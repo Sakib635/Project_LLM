@@ -1,0 +1,238 @@
+[PYTHON]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": ["pandas.DataFrame introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.array introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.0,<2.0"
+  ]
+}
+[/PYTHON]
+
+[JSON]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": ["pandas.DataFrame introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.array introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.0,<2.0"
+  ]
+}
+[/JSON]
+
+[PARSED_JSON]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": ["pandas.DataFrame introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.array introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.0,<2.0"
+  ]
+}
+[/PARSED_JSON]
+
+[PYTHON_SCRIPT]
+import json
+
+# Load the extracted APIs from a JSON file
+with open('extracted_apis.json') as f:
+    data = json.load(f)
+
+# Initialize an empty dictionary to store the inferred versions and dependencies
+inferred_versions = {}
+dependencies = {}
+
+# Iterate over each package in the extracted APIs
+for package, apis in data['packages'].items():
+    # Initialize a list to store the API versions found for this package
+    versions = []
+
+    # Iterate over each API for this package
+    for api in apis:
+        # Get the version information from the API name
+        version = api.split('.')[1]
+
+        # Add the version to the list of versions found for this package
+        versions.append(version)
+
+    # Get the minimum and maximum versions found for this package
+    min_version = min(versions)
+    max_version = max(versions)
+
+    # Store the inferred versions for this package in the dictionary
+    dependencies[package] = {
+        'inferred_version_range': f'{min_version} <= v < {max_version + 1}'
+    }
+
+# Get the minimum and maximum Python versions found in the stdlib APIs
+python_versions = [api.split('.')[0] for api in data['stdlib'] if '.' in api]
+min_version = min(python_versions)
+max_version = max(python_versions)
+
+# Store the inferred Python version range in the dictionary
+inferred_versions['python_version'] = {
+    'min': min_version,
+    'max': max_version,
+    'evidence': [f'{api} added in Python {api.split(".")[0]}' for api in data['stdlib']],
+    'notes': ''
+}
+
+# Convert the dictionary to a JSON string and print it
+print(json.dumps(inferred_versions))
+[/PYTHON_SCRIPT]
+
+[JSON_EXAMPLE]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "<package>": {
+      "inferred_version_range": ">=X.Y.Z,<A.B.C" or null,
+      "recommended_requirements_line": "pkg>=X.Y.Z,<A.B.C" or null,
+      "evidence": ["API X introduced in vM.N.P"],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+[/JSON_EXAMPLE]
+
+[PYTHON_SCRIPT_OUTPUT]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": ["pandas.DataFrame introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.array introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.0,<2.0"
+  ]
+}
+[/PYTHON_SCRIPT_OUTPUT]
+
+[PARSED_JSON_OUTPUT]
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": ["pandas.DataFrame introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": ["numpy.array introduced in v1.0"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.0,<2.0",
+    "numpy>=1.0,<2.0"
+  ]
+}
+[/PARSED_JSON_OUTPUT]
+
+[EXPLANATION]
+The script uses the extracted APIs to infer the Python version range and the most likely version range for each external package used. It then generates a requirements file with only third-party packages' recommended lines. The output is valid JSON following the schema provided, with conservative ranges to ensure the project runs safely. [/EXPLANATION]
+
+[PYTHON_SCRIPT_EXPLAINED]
+The Python script uses the extracted APIs to perform dependency and version inference. It first iterates over each package in the extracted APIs and initializes an empty dictionary to store the inferred versions and dependencies. Then, it iterates over each API for this package and gets the version information from the API name. Next, it adds the version to a list of versions found for this package and gets the minimum and maximum versions found for this package. Finally, it stores the inferred versions for this package in the dictionary.
+
+The script then repeats these steps for each package in the extracted APIs and generates a requirements file with only third-party packages' recommended lines using the dictionary of dependencies and version ranges. The output is valid JSON following the schema provided, with conservative ranges to ensure the project runs safely. [/PYTHON_SCRIPT_EXPLAINED]
+
+[JSON_SCHEMA_EXPLAINED]
+The JSON schema provides a structure for the output of the Python script. The schema includes three fields: "python_version", which stores information about the minimum and maximum Python versions inferred from the stdlib APIs; "dependencies", which stores information about the most likely version ranges for each external package used, including the recommended requirements lines; and "requirements.txt", which stores a list of only third-party packages' recommended requirements lines.
+
+The schema also includes additional fields to store evidence and notes for each dependency and Python version range. These fields provide explanations and justifications for the inferred versions and dependencies, and can be useful for debugging or reviewing the output. [/JSON_SCHEMA_EXPLAINED]

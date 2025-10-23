@@ -1,0 +1,77 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "smbus": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "smbus.SMBus"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.4,<3.8",
+      "recommended_requirements_line": "time>=3.4,<3.8",
+      "evidence": [
+        "time.sleep"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib2.put"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=3.4,<3.9",
+      "recommended_requirements_line": "json>=3.4,<3.9",
+      "evidence": [
+        "json.dumps"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "requests.put"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "ADT7410": {
+      "inferred_version_range": ">=3.6,<3.9",
+      "recommended_requirements_line": "ADT7410>=3.6,<3.9",
+      "evidence": [
+        "ADT7410.__init__",
+        "ADT7410.readValue",
+        "ADT7410.registToXively"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "smbus",
+    "time>=3.4,<3.8",
+    "urllib2",
+    "json>=3.4,<3.9",
+    "requests",
+    "ADT7410>=3.6,<3.9"
+  ]
+}

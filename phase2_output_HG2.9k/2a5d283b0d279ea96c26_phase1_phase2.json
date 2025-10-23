@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": "3.4",
+"max": null,
+"evidence": ["concurrent.futures.ThreadPoolExecutor added in Python 3.2 → min Python 3.4"],
+"notes": ""
+},
+"dependencies": {
+"urllib.request": {
+"inferred_version_range": ">=1.0.0,<2.0.0",
+"recommended_requirements_line": "urllib3>=1.0.0,<2.0.0",
+"evidence": ["urlopen introduced in Python 3.5 → v1.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"re": {
+"inferred_version_range": ">=2.7.0,<3.0.0",
+"recommended_requirements_line": "regex>=2.7.0,<3.0.0",
+"evidence": ["search introduced in Python 3.5 → v2.7.0"],
+"confidence": 1.0,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": ">=2.4.0,<3.0.0",
+"recommended_requirements_line": "python-dateutil>=2.4.0,<3.0.0",
+"evidence": ["__name__ introduced in Python 2.6 → v2.4.0"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["urllib3>=1.0.0,<2.0.0", "regex>=2.7.0,<3.0.0", "python-dateutil>=2.4.0,<3.0.0"]
+},
+"requirements.txt": ["urllib3>=1.0.0,<2.0.0", "regex>=2.7.0,<3.0.0", "python-dateutil>=2.4.0,<3.0.0"]
+}

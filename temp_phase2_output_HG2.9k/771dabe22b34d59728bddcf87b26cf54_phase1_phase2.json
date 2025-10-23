@@ -1,0 +1,88 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "re>=1.2.0,<2.0.0",
+      "evidence": [
+        "API re.search added in v1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": ">=3.4.0,<4.0.0",
+      "recommended_requirements_line": "os>=3.4.0,<4.0.0",
+      "evidence": [
+        "API os.makedirs added in v3.4.0",
+        "API os.system added in v3.5.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API tempfile.TemporaryDirectory added in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": "Note: tempfile is a Python stdlib module, its version range is not explicitly specified."
+    },
+    "json": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "json>=1.2.0,<2.0.0",
+      "evidence": [
+        "API json.loads added in v1.2.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "urllib": {
+      "inferred_version_range": ">=3.4.0,<4.0.0",
+      "recommended_requirements_line": "urllib>=3.4.0,<4.0.0",
+      "evidence": [
+        "API urllib.request added in v3.4.0",
+        "API urllib.parse added in v3.5.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "xml.etree.ElementTree": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API xml.etree.ElementTree.fromstring added in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": "Note: ElementTree is a Python stdlib module, its version range is not explicitly specified."
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API collections.defaultdict added in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": "Note: defaultdict is a Python stdlib module, its version range is not explicitly specified."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "API sys.exit added in v3.4"
+      ],
+      "confidence": 0.95,
+      "notes": "Note: sys is a Python stdlib module, its version range is not explicitly specified."
+    }
+  },
+  "requirements.txt": []
+}

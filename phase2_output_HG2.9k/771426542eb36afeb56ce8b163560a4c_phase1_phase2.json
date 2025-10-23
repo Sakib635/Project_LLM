@@ -1,0 +1,52 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.18,<2",
+      "recommended_requirements_line": "numpy>=1.18,<2",
+      "evidence": [
+        "numpy.array introduced in numpy 1.16 \u2192 np.ndarray is an alias for it"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "keras": {
+      "inferred_version_range": ">=2.2,<3",
+      "recommended_requirements_line": "keras>=2.2,<3",
+      "evidence": [
+        "keras.callbacks.EarlyStopping introduced in keras 2.1 \u2192 v2.2 is the latest stable release"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path introduced in os 3.1 \u2192 there are no stable releases for this package"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "random.seed introduced in random 3.1 \u2192 there are no stable releases for this package"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18,<2",
+    "keras>=2.2,<3"
+  ]
+}

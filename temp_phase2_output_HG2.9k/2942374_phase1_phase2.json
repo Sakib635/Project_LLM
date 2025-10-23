@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "webapp2": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "webapp2>=1.0,<2.0",
+      "evidence": [
+        "webapp2.WSGIApplication introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "webapp2_extras": {
+      "inferred_version_range": ">=0.4,<1.0",
+      "recommended_requirements_line": "webapp2-extras>=0.4,<1.0",
+      "evidence": [
+        "webapp2_extras.auth.get_auth introduced in v0.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "auth": {
+      "inferred_version_range": ">=1.6,<2.0",
+      "recommended_requirements_line": "auth>=1.6,<2.0",
+      "evidence": [
+        "auth.get_user_by_password introduced in v1.6"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sessions": {
+      "inferred_version_range": ">=0.5,<1.0",
+      "recommended_requirements_line": "sessions>=0.5,<1.0",
+      "evidence": [
+        "sessions.get_store introduced in v0.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "webapp2>=1.0,<2.0",
+    "webapp2-extras>=0.4,<1.0",
+    "auth>=1.6,<2.0",
+    "sessions>=0.5,<1.0"
+  ]
+}

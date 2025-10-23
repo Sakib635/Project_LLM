@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "imposm": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "imposm.parser.OSMParser",
+        "imposm.reader.CacheWriterProcess",
+        "imposm.cache.OSMCache"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "\"multiprocessing>=1.2.0,<2.0.0\"",
+      "evidence": [
+        "multiprocessing.JoinableQueue"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "\"json>=1.2.0,<2.0.0\"",
+      "evidence": [
+        "json.dumps"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "\"os>=1.2.0,<2.0.0\"",
+      "evidence": [
+        "os.path"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "\"sys>=1.2.0,<2.0.0\"",
+      "evidence": [
+        "sys.argv"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "imposm>=1.2.0,<2.0.0",
+    "multiprocessing>=1.2.0,<2.0.0",
+    "json>=1.2.0,<2.0.0",
+    "os>=1.2.0,<2.0.0",
+    "sys>=1.2.0,<2.0.0"
+  ]
+}

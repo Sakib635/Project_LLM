@@ -1,0 +1,42 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "torch.nn.Conv2d introduced, depricated, removed or changed in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "torch.nn.Conv2d introduced, depricated, removed or changed in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn.functional": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.2.0,<2.0.0",
+      "evidence": [
+        "torch.nn.functional.sigmoid introduced, depricated, removed or changed in v1.2.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.2.0,<2.0.0"
+  ]
+}

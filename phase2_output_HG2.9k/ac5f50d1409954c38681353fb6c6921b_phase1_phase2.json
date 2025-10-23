@@ -1,0 +1,49 @@
+```
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "dbus": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "gobject": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    },
+    "FakeScreenSaver": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}
+```
+This JSON object is the final output, which contains the following information:
+
+* `python_version`: an object that describes the inferred Python version range based on the extracted APIs provided.
+	+ `min`: the minimum Python version required (null if unknown).
+	+ `max`: the maximum Python version allowed (null if none).
+	+ `evidence`: a list of short statements linking stdlib API usage to Python version addition/removal.
+	+ `notes`: optional assumptions.
+* `dependencies`: an object that contains inferred information for each external package used based on the extracted APIs provided.
+	+ `<package>`: an object that describes the inferred version range and recommended requirements line for a specific package.
+		- `inferred_version_range`: a string representing the inferred version range (e.g., ">=1.2.0,<2.0.0") or null if unknown.
+		- `recommended_requirements_line`: a string representing the recommended requirements line for a specific package (e.g., "pkg>=1.2.0,<2.0.0") or null if unknown.
+		- `evidence`: a list of short statements mapping APIs to introduction/deprecation versions.
+		- `confidence`: a number between 0.0 and 1.0 indicating the confidence in the inferred version range and recommended requirements line (higher is better).
+		- `notes`: optional: conflicting APIs, assumptions, or uncertain items.
+* `requirements.txt`: an array of strings representing the required packages and their versions according to the best-effort inference.

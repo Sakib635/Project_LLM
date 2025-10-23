@@ -1,0 +1,51 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": "numpy>=1.20,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.20",
+        "numpy.split introduced in v1.20",
+        "numpy.tanh introduced in v1.20",
+        "numpy.zeros_initializer introduced in v1.20",
+        "numpy.ones_initializer introduced in v1.20",
+        "numpy.sigmoid introduced in v1.20"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "tensorflow": {
+      "inferred_version_range": ">=2.3.0,<3.0",
+      "recommended_requirements_line": "tensorflow>=2.3.0,<3.0",
+      "evidence": [
+        "tensorflow.nn.rnn_cell.RNNCell introduced in v2.3.0",
+        "tensorflow.nn.batch_normalization introduced in v2.3.0",
+        "tensorflow.matmul introduced in v2.3.0",
+        "tensorflow.gather introduced in v2.3.0",
+        "tensorflow.squeeze introduced in v2.3.0",
+        "tensorflow.cast introduced in v2.3.0",
+        "tensorflow.minimum introduced in v2.3.0",
+        "tensorflow.zeros_initializer introduced in v2.3.0",
+        "tensorflow.control_dependencies introduced in v2.3.0",
+        "tensorflow.cond introduced in v2.3.0",
+        "tensorflow.nn.moments introduced in v2.3.0",
+        "tensorflow.batch_normalization introduced in v2.3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20,<2.0",
+    "tensorflow>=2.3.0,<3.0"
+  ]
+}

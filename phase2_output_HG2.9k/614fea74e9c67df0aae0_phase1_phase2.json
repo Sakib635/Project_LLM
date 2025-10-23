@@ -1,0 +1,62 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyspark": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "pyspark>=3.0.0,<4.0.0",
+      "evidence": [
+        "SparkContext and StreamingContext introduced in Python 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyspark.streaming": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "pyspark-streaming>=3.0.0,<4.0.0",
+      "evidence": [
+        "StreamingContext introduced in Python 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyspark.sql": {
+      "inferred_version_range": ">=3.0.0,<4.0.0",
+      "recommended_requirements_line": "pyspark-sql>=3.0.0,<4.0.0",
+      "evidence": [
+        "DataFrame and Column introduced in Python 3.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "DataFrame and Series introduced in Python 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "array and linalg.norm introduced in Python 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyspark>=3.0.0,<4.0.0",
+    "pyspark-streaming>=3.0.0,<4.0.0",
+    "pyspark-sql>=3.0.0,<4.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "sys.argv added in Python 3.5 \u2192 min Python 3.5",
+      "sys.exit removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "numpy>=1.0,<2.0",
+      "evidence": [
+        "numpy.array introduced, depricated, removed or changed in v1.X"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pandas>=1.0,<2.0",
+      "evidence": [
+        "pandas.DataFrame introduced, depricated, removed or changed in v1.X"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "hashlib": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "hashlib>=3.5,<4.0",
+      "evidence": [
+        "hashlib.sha512 introduced, depricated, removed or changed in v3.X"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "OpenSSL.crypto": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "OpenSSL.crypto>=1.0,<2.0",
+      "evidence": [
+        "OpenSSL.crypto.load_privatekey introduced, depricated, removed or changed in v1.X"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0,<2.0",
+    "pandas>=1.0,<2.0",
+    "hashlib>=3.5,<4.0",
+    "OpenSSL.crypto>=1.0,<2.0"
+  ]
+}

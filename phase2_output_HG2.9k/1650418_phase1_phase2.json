@@ -1,0 +1,38 @@
+```json
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["osmnx.ox.config(cache_folder='/Users/alex/Dropbox/workspace/osmnx')"],
+    "notes": ""
+  },
+  "dependencies": {
+    "geopandas": {
+      "inferred_version_range": ">=0.9.0,<1.0.0",
+      "recommended_requirements_line": "geopandas>=0.9.0,<1.0.0",
+      "evidence": ["geopandas.GeoDataFrame introduced in v0.9.0"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "osmnx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "shapely": {
+      "inferred_version_range": ">=1.6.0,<2.0.0",
+      "recommended_requirements_line": "shapely>=1.6.0,<2.0.0",
+      "evidence": ["shapely.geometry.Point introduced in v1.6.0"],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "geopandas>=0.9.0,<1.0.0",
+    "osmnx",
+    "shapely>=1.6.0,<2.0.0"
+  ]
+}
+```

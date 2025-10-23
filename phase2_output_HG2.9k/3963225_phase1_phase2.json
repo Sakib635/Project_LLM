@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Quartz.CoreGraphics": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Quartz.CoreGraphics>=1.2.0,<2.0.0",
+      "evidence": [
+        "CGPDFDocumentCreateWithURL introduced in Quartz.CoreGraphics v1.2.0",
+        "CGPDFPageGetBoxRect introduced in Quartz.CoreGraphics v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.splitext introduced in Python 3.5 \u2192 max Python 3.6",
+        "os.path.basename introduced in Python 2.4 \u2192 min Python 3.7",
+        "os.path.join introduced in Python 2.3 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tempfile.gettempdir introduced in Python 2.4 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in Python 1.4 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Quartz.CoreGraphics>=1.2.0,<2.0.0",
+    "os>=3.5,<4.0",
+    "tempfile>=2.3,<3.0",
+    "sys>=1.4,<4.0"
+  ]
+}

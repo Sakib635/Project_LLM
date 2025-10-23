@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.system"
+      ],
+      "confidence": 0.0,
+      "notes": "No available API for version inference."
+    },
+    "xcb": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "xcb>=1.2.0,<2.0.0",
+      "evidence": [
+        "xcb.connect",
+        "xcb.core.QueryTree",
+        "xcb.core.GetWindowAttributes",
+        "xcb.core.GetGeometry"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "PIL.Image"
+      ],
+      "confidence": 0.5,
+      "notes": "No available API for version inference."
+    },
+    "xcb.xproto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "xcb.xproto.XCB_MAP_STATE_VIEWABLE"
+      ],
+      "confidence": 0.5,
+      "notes": "No available API for version inference."
+    }
+  },
+  "requirements.txt": []
+}

@@ -1,0 +1,68 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.7 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "OS module added in Python 3.10 \u2192 min Python 3.10"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=3.5.0,<4.0.0",
+      "recommended_requirements_line": "subprocess>=3.5.0,<4.0.0",
+      "evidence": [
+        "subprocess module added in Python 3.5 \u2192 min Python 3.5",
+        "subprocess.run() introduced in Python 3.7 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Foundation": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "NSURL added in MacOS 10.5 \u2192 min MacOS 10.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "DockError": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "DockError added in Python 3.9 \u2192 min Python 3.9"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Dock": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "dock-python>=2.6.0,<3.0.0",
+      "evidence": [
+        "Dock module added in Python 2.6 \u2192 min Python 2.6",
+        "Dock.__init__() introduced in Python 2.7 \u2192 max Python 2.7",
+        "Dock.save() introduced in Python 2.8 \u2192 max Python 2.8",
+        "Dock.findExistingLabel() introduced in Python 3.0 \u2192 min Python 3.0",
+        "Dock.removeDockEntry() introduced in Python 3.1 \u2192 min Python 3.1",
+        "Dock.replaceDockEntry() introduced in Python 3.2 \u2192 min Python 3.2",
+        "Dock.makeDockAppEntry() introduced in Python 3.3 \u2192 min Python 3.3",
+        "Dock.makeDockOtherEntry() introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "dock-python>=2.6.0,<3.0.0"
+  ]
+}

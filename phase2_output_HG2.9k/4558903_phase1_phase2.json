@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "GPIO.setmode added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "GPIO": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "GPIO>=1.2.0,<2.0.0",
+      "evidence": [
+        "GPIO.__init__ introduced in version 1.2.0",
+        "GPIO.read_button deprecated in version 1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "RotaryEnc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "RotaryEnc.__init__ introduced in version 1.0.0",
+        "RotaryEnc.read_button deprecated in version 2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "GPIO>=1.2.0,<2.0.0",
+    "RotaryEnc>=1.0.0,<2.0.0"
+  ]
+}

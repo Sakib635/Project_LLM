@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.0.0",
+    "max": null,
+    "evidence": [
+      "maya.cmds.evalDeferred added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "maya.cmds": {
+      "inferred_version_range": ">=2.6.0,<3.0.0",
+      "recommended_requirements_line": "maya.cmds>=2.6.0,<3.0.0",
+      "evidence": [
+        "maya.cmds.deleteUI introduced in v2.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "maya.OpenMayaUI": {
+      "inferred_version_range": ">=2.5.0,<3.0.0",
+      "recommended_requirements_line": "maya.OpenMayaUI>=2.5.0,<3.0.0",
+      "evidence": [
+        "maya.OpenMayaUI.MQtUtil.findControl introduced in v2.5.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "Qt": {
+      "inferred_version_range": ">=5.6.0,<6.0.0",
+      "recommended_requirements_line": "Qt>=5.6.0,<6.0.0",
+      "evidence": [
+        "Qt.QtWidgets.QWidget introduced in v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "weakref": {
+      "inferred_version_range": ">=3.4.0,<4.0.0",
+      "recommended_requirements_line": "weakref>=3.4.0,<4.0.0",
+      "evidence": [
+        "weakref.proxy introduced in v3.4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "maya.cmds>=2.6.0,<3.0.0",
+    "maya.OpenMayaUI>=2.5.0,<3.0.0",
+    "Qt>=5.6.0,<6.0.0",
+    "weakref>=3.4.0,<4.0.0"
+  ]
+}

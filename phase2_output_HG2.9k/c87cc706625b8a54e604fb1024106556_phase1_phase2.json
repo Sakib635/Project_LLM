@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "torch.nn.GRU added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.5.0,<2.0.0",
+      "recommended_requirements_line": "torch>=1.5.0,<2.0.0",
+      "evidence": [
+        "torch.Module introduced in v1.5.0",
+        "torch.nn.GRU added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "torch.autograd": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "torch.Variable introduced in v1.4.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "torch.nn.functional": {
+      "inferred_version_range": ">=1.3.0,<2.0.0",
+      "recommended_requirements_line": "torch.nn.functional>=1.3.0,<2.0.0",
+      "evidence": [
+        "F.tanh introduced in v1.3.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.5.0,<2.0.0",
+    "torch.nn.functional>=1.3.0,<2.0.0"
+  ]
+}

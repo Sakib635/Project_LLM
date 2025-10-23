@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "IPython.frontend.html.notebook.notebookapp added in Python 3.0 \u2192 min Python 3.0",
+      "time.clock removed in Python 2.7 \u2192 max Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.0.0,<2.0.0",
+      "evidence": [
+        "os.walk introduced in version 1.0.0",
+        "os.makedirs introduced in version 1.0.0",
+        "os.symlink introduced in version 1.0.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "shutil": {
+      "inferred_version_range": ">=0.0.0,<2.0.0",
+      "recommended_requirements_line": "shutil>=0.0.0,<2.0.0",
+      "evidence": [
+        "shutil.copytree introduced in version 0.1"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": ">=0.0.0,<2.0.0",
+      "recommended_requirements_line": "tempfile>=0.0.0,<2.0.0",
+      "evidence": [
+        "tempfile.mkdtemp introduced in version 0.1"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.0.0,<2.0.0",
+    "shutil>=0.0.0,<2.0.0",
+    "tempfile>=0.0.0,<2.0.0"
+  ]
+}

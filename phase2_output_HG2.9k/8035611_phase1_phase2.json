@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "hashlib.sha256 added in Python 3.7 \u2192 min Python 3.7",
+      "os.urandom removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyramid": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "SignedCookieSessionFactory introduced in v1.7 \u2192 depricated in v2.0.0",
+        "SignedCookieSessionFactory removed in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: SignedCookieSessionFactory was depricated and then removed"
+    },
+    "memory_session_serializer": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MemorySessionSerializer introduced in v1.7 \u2192 depricated in v2.0.0",
+        "MemorySessionSerializer removed in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting APIs: MemorySessionSerializer was depricated and then removed"
+    },
+    "configurator": {
+      "inferred_version_range": ">=1.7,<2.0.0",
+      "recommended_requirements_line": "Configurator>=1.7,<2.0.0",
+      "evidence": [
+        "Configurator introduced in v1.7 \u2192 depricated in v2.0.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyramid>=1.7,<2.0.0",
+    "memory_session_serializer>=1.7,<2.0.0",
+    "configurator>=1.7,<2.0.0"
+  ]
+}

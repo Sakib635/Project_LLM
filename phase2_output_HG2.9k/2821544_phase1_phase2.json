@@ -1,0 +1,92 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "os.getcwd added in Python 3.5 \u2192 min Python 3.5",
+      "time.sleep added in Python 3.5 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "fabric.contrib.console": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "confirm API added in fabric 1.14 \u2192 min fabric 1.14"
+      ],
+      "confidence": 0.75,
+      "notes": "Assuming that confirm is the only API from fabric.contrib.console"
+    },
+    "fabric.api": {
+      "inferred_version_range": ">=1.23,<2",
+      "recommended_requirements_line": "fabric==1.23",
+      "evidence": [
+        "local API added in fabric 1.14 \u2192 min fabric 1.14",
+        "settings API added in fabric 1.18 \u2192 max fabric 1.22"
+      ],
+      "confidence": 0.9,
+      "notes": "Assuming that local and settings are the only APIs from fabric.api"
+    },
+    "env": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "env.hosts API added in Python 3.5 \u2192 min Python 3.5",
+        "env.user API added in Python 3.6 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "start": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sudo API added in fabric 1.14 \u2192 min fabric 1.14"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "deploy": {
+      "inferred_version_range": ">=2.3,<3",
+      "recommended_requirements_line": "fabric==2.3",
+      "evidence": [
+        "update_code API added in fabric 1.14 \u2192 min fabric 1.14",
+        "collect_static API added in fabric 1.18 \u2192 max fabric 1.22"
+      ],
+      "confidence": 0.9,
+      "notes": "Assuming that update_code and collect_static are the only APIs from deploy"
+    },
+    "update_code": {
+      "inferred_version_range": ">=1.23,<2",
+      "recommended_requirements_line": "fabric==1.23",
+      "evidence": [
+        "run API added in fabric 1.14 \u2192 min fabric 1.14"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "update_database": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "run API added in fabric 1.14 \u2192 min fabric 1.14"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "restart_nginx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sudo API added in fabric 1.14 \u2192 min fabric 1.14"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "fabric==1.23",
+    "env==1.23"
+  ]
+}

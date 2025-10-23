@@ -1,0 +1,69 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Not enough information to infer version range."
+    },
+    "torch": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Not enough information to infer version range."
+    },
+    "torch.nn": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "nn.Linear introduced in torch 1.0 \u2192 min torch 1.0",
+        "nn.BatchNorm2d introduced in torch 1.5.0 \u2192 max torch 1.5.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "torch.optim": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Adam introduced in torch 1.4 \u2192 min torch 1.4",
+        "AdamW introduced in torch 1.6.0 \u2192 max torch 1.6.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "torchvision": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Not enough information to infer version range."
+    },
+    "torchvision.datasets": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Not enough information to infer version range."
+    },
+    "torch.utils.data": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Not enough information to infer version range."
+    }
+  },
+  "requirements.txt": []
+}

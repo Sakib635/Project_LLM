@@ -1,0 +1,75 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Image": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.open introduced in Pillow 1.2.0 \u2192 min Pillow 1.2.0",
+        "Image.load introduced in Pillow 1.2.0 \u2192 max Pillow 1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "math": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "math.log introduced in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.6,
+      "notes": "Requires external package, version range uncertain."
+    },
+    "raw_input": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "raw_input introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 0.6,
+      "notes": "Requires external package, version range uncertain."
+    },
+    "Image.new": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.new introduced in Pillow 1.2.0 \u2192 min Pillow 1.2.0",
+        "Image.new deprecated in Pillow 1.9.0 \u2192 max Pillow 1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image.size": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.size introduced in Pillow 1.2.0 \u2192 min Pillow 1.2.0",
+        "Image.size deprecated in Pillow 1.9.0 \u2192 max Pillow 1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "Image.mode": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image.mode introduced in Pillow 1.2.0 \u2192 min Pillow 1.2.0",
+        "Image.mode deprecated in Pillow 1.9.0 \u2192 max Pillow 1.9.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0",
+    "Pillow>=1.2.0,<2.0.0"
+  ]
+}

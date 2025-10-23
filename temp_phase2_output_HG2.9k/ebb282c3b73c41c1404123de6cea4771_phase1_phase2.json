@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rospy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "rospy.init_node added in ROS1 \u2192 min Python 3.4",
+        "rospy.Publisher added in ROS2 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting API names in ROS1 and ROS2."
+    },
+    "yaml": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "yaml.load added in PyYAML 3.0 \u2192 min Python 2.5",
+        "yaml.dump added in PyYAML 4.0 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting API names in PyYAML 3.0 and PyYAML 4.0."
+    },
+    "sensor_msgs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sensor_msgs.msg.CameraInfo added in ROS1 \u2192 min Python 3.4",
+        "sensor_msgs.msg.CameraInfo removed in ROS2 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.5,
+      "notes": "Conflicting API names in ROS1 and ROS2."
+    }
+  },
+  "requirements.txt": []
+}

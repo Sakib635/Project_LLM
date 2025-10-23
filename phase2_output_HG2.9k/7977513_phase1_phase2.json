@@ -1,0 +1,83 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "4.0",
+    "evidence": [
+      "pathlib.Path added in Python 3.7 \u2192 min Python 3.7",
+      "time.clock removed in Python 3.9\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "keychain": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found that indicate the package version range."
+    },
+    "console": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "console>=3.7,<4.0",
+      "evidence": [
+        "console.alert() introduced in Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "editor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found that indicate the package version range."
+    },
+    "re": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "re>=3.7,<4.0",
+      "evidence": [
+        "re.sub() introduced in Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found that indicate the package version range."
+    },
+    "requests": {
+      "inferred_version_range": ">=2.7,<4.0",
+      "recommended_requirements_line": "requests>=2.7,<4.0",
+      "evidence": [
+        "requests.get() introduced in Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "No APIs found that indicate the package version range."
+    },
+    "base64": {
+      "inferred_version_range": ">=3.5,<4.0",
+      "recommended_requirements_line": "base64>=3.5,<4.0",
+      "evidence": [
+        "base64.b64encode() introduced in Python 3.5"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "console>=3.7,<4.0",
+    "re>=3.7,<4.0",
+    "requests>=2.7,<4.0",
+    "base64>=3.5,<4.0"
+  ]
+}

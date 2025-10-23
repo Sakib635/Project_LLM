@@ -1,0 +1,38 @@
+Here is the final JSON object based on the given extracted APIs:
+```json
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "rasterio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["rasterio.open, rasterio.meta, rasterio.read, rasterio.write"],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": ["numpy.dstack, numpy.ravel, numpy.iinfo, numpy.amin, numpy.amax, numpy.array, numpy.linalg.norm"],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "sklearn>=1.2.0,<2.0.0",
+      "evidence": ["sklearn.decomposition.PCA, sklearn.decomposition.PCA.fit, sklearn.decomposition.PCA.transform, sklearn.decomposition.PCA.explained_variance_ratio_, sklearn.decomposition.PCA.components_"],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.2.0,<2.0.0",
+    "sklearn>=1.2.0,<2.0.0"
+  ]
+}
+```

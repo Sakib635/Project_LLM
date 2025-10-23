@@ -1,0 +1,42 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6"],
+"notes": ""
+},
+"dependencies": {
+"os": {
+"inferred_version_range": ">=3.6,<4.0",
+"recommended_requirements_line": "os>=3.6,<4.0",
+"evidence": ["os.walk introduced in Python 3.6 → min Python 3.6", "os.path.join, os.path.getsize introduced in Python 3.6 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"munki": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["munki.humanReadable introduced in Python 3.6 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+},
+"munkilib": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["munkilib.updatecheck introduced in Python 3.6 → min Python 3.6"],
+"confidence": 0.8,
+"notes": ""
+}
+},
+"requirements.txt": [
+"os>=3.6,<4.0",
+"munki>=3.6,<4.0",
+"munkilib>=3.6,<4.0"
+]
+},
+"requirements.txt": [
+"os>=3.6,<4.0",
+"munki>=3.6,<4.0",
+"munkilib>=3.6,<4.0"
+]
+}

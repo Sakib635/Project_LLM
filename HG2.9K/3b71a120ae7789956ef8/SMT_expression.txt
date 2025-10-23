@@ -1,0 +1,4 @@
+(declare-fun xlrd () String)
+(declare-fun PyPDF2 () String)
+(assert (and (or (= PyPDF2 "1.26.0")) (or (= xlrd "2.0.1"))))
+(check-sat)

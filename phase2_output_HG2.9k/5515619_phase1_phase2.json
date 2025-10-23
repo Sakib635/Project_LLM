@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "eventlet.monkey_patch added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "eventlet": {
+      "inferred_version_range": ">=0.24.1,<0.25.0",
+      "recommended_requirements_line": "eventlet>=0.24.1,<0.25.0",
+      "evidence": [
+        "eventlet.green.zmq.XREP introduced in eventlet 0.24.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=3.6,<3.8",
+      "recommended_requirements_line": "time>=3.6,<3.8",
+      "evidence": [
+        "time.unixtime introduced in Python 3.6 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ordereddict": {
+      "inferred_version_range": ">=4.0,<5.0",
+      "recommended_requirements_line": "ordereddict>=4.0,<5.0",
+      "evidence": [
+        "ordereddict.ordereddict introduced in Python 4.0 \u2192 min Python 4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "collections>=2.6,<3.0",
+      "evidence": [
+        "collections.OrderedDict introduced in Python 2.6 \u2192 min Python 2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "threading": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "threading>=2.7,<3.0",
+      "evidence": [
+        "threading.Eventlet introduced in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "eventlet>=0.24.1,<0.25.0",
+    "time>=3.6,<3.8",
+    "ordereddict>=4.0,<5.0",
+    "collections>=2.6,<3.0",
+    "threading>=2.7,<3.0"
+  ]
+}

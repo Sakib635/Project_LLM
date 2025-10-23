@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "snippet.py", line 46, in <module>
+    decrypted =  encrypt(KEY, 'Hello, world!')
+  File "snippet.py", line 34, in encrypt
+    cipher = AES.new(_pad(secret_key, '@')[:32])
+TypeError: new() takes at least 2 arguments (1 given)

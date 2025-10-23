@@ -1,0 +1,81 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "flask": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Flask introduced in v0.2 \u2192 min Flask 0.2",
+        "redirect introduced in v0.10 \u2192 max Flask 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "httplib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Http introduced in v0.9 \u2192 min Http 0.9",
+        "redirect introduced in v0.10 \u2192 max Http 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google-api-python-client": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "discovery.build introduced in v1.4 \u2192 min discovery 1.4",
+        "redirect introduced in v0.10 \u2192 max discovery 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "oauth2client": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "flow_from_clientsecrets introduced in v1.5 \u2192 min oauth2client 1.5",
+        "redirect introduced in v0.10 \u2192 max oauth2client 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "apiclient.http": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "MediaIoBaseDownload introduced in v1.6 \u2192 min apiclient 1.6",
+        "redirect introduced in v0.10 \u2192 max apiclient 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "oauth2client.file": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Storage introduced in v1.4 \u2192 min oauth2client 1.4",
+        "redirect introduced in v0.10 \u2192 max oauth2client 0.10"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "flask>=0.2,<0.11",
+    "httplib2>=0.9,<0.11",
+    "google-api-python-client>=1.4,<2.0",
+    "oauth2client>=1.5,<2.0",
+    "apiclient>=1.6,<2.0",
+    "oauth2client.file>=1.4,<2.0"
+  ]
+}

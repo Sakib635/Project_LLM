@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "idaapi.doWord added in Python 3.0 \u2192 min Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "idaapi": {
+      "inferred_version_range": ">=7.0,<8.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "idaapi.add_segm introduced in v7.0",
+        "idaapi.doWord deprecated in v6.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "struct": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "struct.calcsize introduced in v3.1",
+        "struct.unpack removed in v3.9"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "idaapi>=7.0,<8.0",
+    "struct>=3.1,<3.9"
+  ]
+}

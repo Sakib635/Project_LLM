@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "snippet.py", line 10, in <module>
+    cnx = mysql.connector.connect(host="localhost", user="glance", passwd="", db="glance")
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/__init__.py", line 45, in Connect
+    return MySQLConnection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/connection.py", line 364, in __init__
+    self.connect(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/connection.py", line 410, in connect
+    ssl=(ssl_ca, ssl_cert, ssl_key))
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/connection.py", line 440, in _open_connection
+    self.protocol.do_handshake()
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/protocol.py", line 326, in do_handshake
+    self.conn.open_connection()
+  File "/usr/local/lib/python2.7/site-packages/mysql/connector/connection.py", line 323, in open_connection
+    values=dict(socketaddr=self.get_address(),errno=m))
+mysql.connector.errors.InterfaceError: 2003: Can't connect to MySQL server on 'localhost:3306' (111)

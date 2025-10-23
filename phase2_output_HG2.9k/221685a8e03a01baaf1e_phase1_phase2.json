@@ -1,0 +1,40 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["os.mkdir added in Python 3.5 → min Python 3.5"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.8.0,<2.0.0",
+"recommended_requirements_line": "numpy>=1.8.0,<2.0.0",
+"evidence": ["numpy.array added in v1.8.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": ">=0.17.0,<2.0.0",
+"recommended_requirements_line": "pandas>=0.17.0,<2.0.0",
+"evidence": ["pandas.DataFrame added in v0.17.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"nbconvert": {
+"inferred_version_range": ">=4.2.0,<5.0.0",
+"recommended_requirements_line": "nbconvert>=4.2.0,<5.0.0",
+"evidence": ["nbconvert.nbconvertapp.NbConvertApp added in v4.2.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+},
+"shutil": {
+"inferred_version_range": ">=2.6.0,<3.0.0",
+"recommended_requirements_line": "shutil>=2.6.0,<3.0.0",
+"evidence": ["shutil.copy2 added in v2.6.0 → inferred version range"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": ["numpy>=1.8.0,<2.0.0", "pandas>=0.17.0,<2.0.0", "nbconvert>=4.2.0,<5.0.0", "shutil>=2.6.0,<3.0.0"]
+}
+}

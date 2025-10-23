@@ -1,0 +1,39 @@
+{"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock removed in Python x→ max Python z"],
+"notes": ""
+},
+"dependencies": {
+"SimpleITK": {
+"inferred_version_range": ">=1.2.0,<2.0.0",
+"recommended_requirements_line": "SimpleITK>=1.2.0,<2.0.0",
+"evidence": ["SimpleITK.ReadImage introduced in v1.2.0", "SimpleITK.GetArrayFromImage removed in v2.0.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"vtk": {
+"inferred_version_range": ">=8.9,<9.0",
+"recommended_requirements_line": "vtk>=8.9,<9.0",
+"evidence": ["vtk.vtkRenderer introduced in v8.9", "vtk.vtkRenderWindow deprecated in v9.0"],
+"confidence": 0.7,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.2,<2.0",
+"recommended_requirements_line": "numpy>=1.2,<2.0",
+"evidence": ["numpy.astype introduced in v1.2", "numpy.max deprecated in v2.0"],
+"confidence": 0.8,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": ">=1.4,<2.0",
+"recommended_requirements_line": "scipy>=1.4,<2.0",
+"evidence": ["scipy.stats.mstats.mquantiles introduced in v1.4", "scipy.stats.mstats.mquantiles deprecated in v2.0"],
+"confidence": 0.7,
+"notes": ""
+}
+},
+"requirements.txt": ["SimpleITK>=1.2.0,<2.0.0", "vtk>=8.9,<9.0", "numpy>=1.2,<2.0", "scipy>=1.4,<2.0"]
+}
+}

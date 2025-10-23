@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "cv2": {
+      "inferred_version_range": ">=4.0.0,<5.0.0",
+      "recommended_requirements_line": "cv2>=4.0.0,<5.0.0",
+      "evidence": [
+        "cv2.imread introduced in cv2 4.0.0 \u2192 cv2>=4.0.0",
+        "cv2.Canny deprecated in cv2 3.1.0 \u2192 cv2>=3.1.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.2.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in numpy 1.13 \u2192 numpy>=1.13",
+        "numpy.linalg.norm deprecated in numpy 1.19 \u2192 numpy>=1.19"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "cv2>=4.0.0,<5.0.0",
+    "numpy>=1.2.0,<2.0.0"
+  ]
+}

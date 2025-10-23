@@ -1,0 +1,45 @@
+```json
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": ""
+  },
+  "dependencies": {
+    "pyodbc": {
+      "inferred_version_range": ">=4.0.29,<5.0.0",
+      "recommended_requirements_line": "pyodbc>=4.0.29,<5.0.0",
+      "evidence": ["pyodbc.Cursor"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "datetime": {
+      "inferred_version_range": ">=3.9.0,<4.0.0",
+      "recommended_requirements_line": "python-dateutil>=3.9.0,<4.0.0",
+      "evidence": ["datetime.datetime"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["pandas.DataFrame", "pandas.DataFrame.from_records"],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.21.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.21.0,<2.0.0",
+      "evidence": ["numpy.array"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pyodbc>=4.0.29,<5.0.0",
+    "python-dateutil>=3.9.0,<4.0.0",
+    "numpy>=1.21.0,<2.0.0"
+  ]
+}
+```

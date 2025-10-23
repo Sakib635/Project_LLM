@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "torch.nn.functional.linear added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "torch": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "torch>=1.0,<2.0",
+      "evidence": [
+        "torch.nn added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "torch.nn>=1.0,<2.0",
+      "evidence": [
+        "torch.nn.Parameter added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.nn.modules.utils": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "torch.nn.modules.utils>=1.0,<2.0",
+      "evidence": [
+        "torch.nn.modules.utils._pair added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "torch.autograd": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "torch.autograd>=1.0,<2.0",
+      "evidence": [
+        "torch.autograd.Variable added in Python 3.7 \u2192 min Python 3.7"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "torch>=1.0,<2.0",
+    "torch.nn>=1.0,<2.0",
+    "torch.nn.modules.utils>=1.0,<2.0",
+    "torch.autograd>=1.0,<2.0"
+  ]
+}

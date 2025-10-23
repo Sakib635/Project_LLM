@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "snippet.py", line 10, in <module>
+    session = cluster.connect('demo')
+  File "cassandra/cluster.py", line 1667, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1703, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 1690, in cassandra.cluster.Cluster.connect
+  File "cassandra/cluster.py", line 3488, in cassandra.cluster.ControlConnection.connect
+  File "cassandra/cluster.py", line 3533, in cassandra.cluster.ControlConnection._reconnect_internal
+cassandra.cluster.NoHostAvailable: ('Unable to connect to any servers', {'127.0.0.1:9042': error(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})

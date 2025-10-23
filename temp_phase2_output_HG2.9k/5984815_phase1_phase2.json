@@ -1,0 +1,33 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PyQt4": {
+      "inferred_version_range": ">=4,<5",
+      "recommended_requirements_line": "PyQt4>=4,<5",
+      "evidence": [
+        "QAbstractTableModel introduced in v4 \u2192 min PyQt4 4",
+        "QItemDelegate introduced in v4 \u2192 min PyQt4 4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "sip": {
+      "inferred_version_range": ">=4.18,<5",
+      "recommended_requirements_line": "sip>=4.18,<5",
+      "evidence": [
+        "setapi introduced in v4.18 \u2192 min sip 4.18"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

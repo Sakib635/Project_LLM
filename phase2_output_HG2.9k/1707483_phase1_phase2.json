@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "boto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "boto.connect_dynamodb"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "django": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.conf.settings"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": ">=2.7,<3",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.time"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "boto>=X.Y.Z,<A.B.C",
+    "django>=X.Y.Z,<A.B.C",
+    "time>=2.7,<3"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "os.listdir added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.20.0",
+      "recommended_requirements_line": "numpy>=1.20.0",
+      "evidence": [
+        "numpy.random.rand introduced in numpy 1.20.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "lightgbm": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "lightgbm.Booster introduced in lightgbm 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain version range due to deprecation of Booster class."
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "pandas.DataFrame introduced in pandas 1.2.4"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain version range due to removal of ix method."
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.20.0",
+    "pandas>=1.2.4"
+  ]
+}

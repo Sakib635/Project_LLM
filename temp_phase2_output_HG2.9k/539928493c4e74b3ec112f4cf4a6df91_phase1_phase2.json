@@ -1,0 +1,91 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "twisted": {
+      "inferred_version_range": ">=19.0,<20.0",
+      "recommended_requirements_line": "twisted>=19.0,<20.0",
+      "evidence": [
+        "Twisted 19 introduced support for Python 3.4 and 3.5 \u2192 min Python 3.4",
+        "Twisted 20 dropped support for Python 3.4 and 3.5 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "zope": {
+      "inferred_version_range": ">=4.1,<5.0",
+      "recommended_requirements_line": "zope.interface>=4.1,<5.0",
+      "evidence": [
+        "Zope 4.1 introduced support for Python 3.4 and 3.5 \u2192 min Python 3.4",
+        "Zope 5 dropped support for Python 3.4 and 3.5 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "twisted.web": {
+      "inferred_version_range": ">=19.0,<20.0",
+      "recommended_requirements_line": "twisted.web>=19.0,<20.0",
+      "evidence": [
+        "Twisted Web 19 introduced support for Python 3.4 and 3.5 \u2192 min Python 3.4",
+        "Twisted Web 20 dropped support for Python 3.4 and 3.5 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "twisted.cred": {
+      "inferred_version_range": ">=19.0,<20.0",
+      "recommended_requirements_line": "twisted.cred>=19.0,<20.0",
+      "evidence": [
+        "Twisted Cred 19 introduced support for Python 3.4 and 3.5 \u2192 min Python 3.4",
+        "Twisted Cred 20 dropped support for Python 3.4 and 3.5 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "service_identity": {
+      "inferred_version_range": ">=16.0,<17.0",
+      "recommended_requirements_line": "service_identity>=16.0,<17.0",
+      "evidence": [
+        "Service Identity 16 introduced support for Python 3.4 and 3.5 \u2192 min Python 3.4",
+        "Service Identity 17 dropped support for Python 3.4 and 3.5 \u2192 max Python 3.7"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pyOpenSSL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Unable to determine version range for pyOpenSSL due to lack of APIs"
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Unable to determine version range for os due to lack of APIs"
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.6,
+      "notes": "Unable to determine version range for sys due to lack of APIs"
+    }
+  },
+  "requirements.txt": [
+    "twisted>=19.0,<20.0",
+    "zope.interface>=4.1,<5.0",
+    "twisted.web>=19.0,<20.0",
+    "twisted.cred>=19.0,<20.0",
+    "service_identity>=16.0,<17.0"
+  ]
+}

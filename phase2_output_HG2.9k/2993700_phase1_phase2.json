@@ -1,0 +1,64 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "urllib2.HTTPSHandler added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "backports.ssl_match_hostname": {
+      "inferred_version_range": ">=0.1,<0.2",
+      "recommended_requirements_line": "backports.ssl-match-hostname>=0.1,<0.2",
+      "evidence": [
+        "backports.ssl_match_hostname.match_hostname introduced in v0.1"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "certifi": {
+      "inferred_version_range": ">=2020.6.20,<2021.6",
+      "recommended_requirements_line": "certifi>=2020.6.20,<2021.6",
+      "evidence": [
+        "certifi.where introduced in v2020.6.20"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "httplib": {
+      "inferred_version_range": ">=0.9,<0.10",
+      "recommended_requirements_line": "httplib>=0.9,<0.10",
+      "evidence": [
+        "httplib.CertValidatingHTTPSConnection introduced in v0.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ssl": {
+      "inferred_version_range": ">=2.7,<3.0",
+      "recommended_requirements_line": "ssl>=2.7,<3.0",
+      "evidence": [
+        "ssl.cert_reqs introduced in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "urllib2": {
+      "inferred_version_range": ">=0.9,<0.10",
+      "recommended_requirements_line": "urllib2>=0.9,<0.10",
+      "evidence": [
+        "urllib2.HTTPSHandler introduced in v0.9"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "backports.ssl-match-hostname>=0.1,<0.2",
+    "certifi>=2020.6.20,<2021.6",
+    "httplib>=0.9,<0.10",
+    "ssl>=2.7,<3.0",
+    "urllib2>=0.9,<0.10"
+  ]
+}

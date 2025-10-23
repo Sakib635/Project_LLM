@@ -1,0 +1,38 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "rx.concurrency.TwistedScheduler added in Python y \u2192 min Python y",
+      "twisted.internet.reactor removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "rx": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "rx.concurrency.TwistedScheduler introduced in rx 1.0 \u2192 min Python y",
+        "rx.disposables.Disposable introduced in rx 1.0 \u2192 min Python y",
+        "rx.subjects.Subject introduced in rx 1.0 \u2192 min Python y"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "twisted": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "twisted.internet.endpoints.TCP4ServerEndpoint introduced in twisted 17.0 \u2192 min Python y",
+        "twisted.internet.reactor introduced in twisted 8.0 \u2192 max Python z"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "rx>=1.0.0,<2.0.0",
+    "twisted>=17.0.0,<20.0.0"
+  ]
+}

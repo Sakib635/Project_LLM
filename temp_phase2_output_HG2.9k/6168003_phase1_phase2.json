@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "datetime.datetime introduced in Python 3.4 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "django.db.models": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "django.db.models.get_app introduced in Django 1.2 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "south.db": {
+      "inferred_version_range": ">=0.7.2,<1.0.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "south.db.execute introduced in South 0.7.2 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "south.v2": {
+      "inferred_version_range": ">=0.8.1,<0.9.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "south.v2.SchemaMigration introduced in South 0.8.1 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.argv introduced in Python 2.5 \u2192 min Python 3.4"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": []
+}

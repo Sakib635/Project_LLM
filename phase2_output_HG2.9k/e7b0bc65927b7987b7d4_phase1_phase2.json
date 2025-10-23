@@ -1,0 +1,24 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": null,
+    "evidence": [
+      "OpenSSL.crypto.load_certificate added in Python 3.4 \u2192 min Python 3.4"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "OpenSSL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "openssl>=1.2.0,<2.0.0",
+      "evidence": [
+        "OpenSSL.crypto.load_certificate introduced in OpenSSL 1.2.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "openssl>=1.2.0,<2.0.0"
+  ]
+}

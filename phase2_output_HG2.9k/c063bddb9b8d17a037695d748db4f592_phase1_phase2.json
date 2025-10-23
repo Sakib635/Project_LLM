@@ -1,0 +1,57 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.GraphDef introduced in v1.2.0",
+        "tensorflow.import_graph_def introduced in v1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.protobuf": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "text_format.Merge introduced in v3.6.1",
+        "text_format.ParseFromString introduced in v3.6.1"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow.python.platform": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "gfile.FastGFile introduced in v1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "tensorflow.train": {
+      "inferred_version_range": ">=1.2.0",
+      "recommended_requirements_line": "tensorflow>=1.2.0",
+      "evidence": [
+        "write_graph introduced in v1.2.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=1.2.0",
+    "google.protobuf>=3.6.1",
+    "tensorflow.python.platform>=1.2.0",
+    "tensorflow.train>=1.2.0"
+  ]
+}

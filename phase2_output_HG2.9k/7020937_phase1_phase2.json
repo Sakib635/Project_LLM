@@ -1,0 +1,59 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "cv2.FeatureDetector_create added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.0.0,<2.0.0",
+      "evidence": [
+        "np.append introduced in numpy 1.0 \u2192 1.0.0",
+        "np.matrix introduced in numpy 1.0 \u2192 1.0.0",
+        "np.vstack introduced in numpy 1.0 \u2192 1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sklearn": {
+      "inferred_version_range": ">=0.0.0,<2.0.0",
+      "recommended_requirements_line": "scikit-learn>=0.0.0,<2.0.0",
+      "evidence": [
+        "svm.SVC introduced in scikit-learn 0.0 \u2192 0.0.0",
+        "cross_validation.cross_val_score introduced in scikit-learn 0.0 \u2192 0.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "BagOfFeatures": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BagOfFeatures.__init__ introduced in v0.0 \u2192 none",
+        "BagOfFeatures.makeHistogram introduced in v0.0 \u2192 none",
+        "BagOfFeatures.train introduced in v0.0 \u2192 none"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "BagOfFeaturesGMM": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BagOfFeaturesGMM.__init__ introduced in v0.0 \u2192 none",
+        "BagOfFeaturesGMM.makeHistogram introduced in v0.0 \u2192 none",
+        "BagOfFeaturesGMM.train introduced in v0.0 \u2192 none"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.0.0,<2.0.0",
+    "scikit-learn>=0.0.0,<2.0.0"
+  ]
+}

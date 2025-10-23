@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "csv.DictReader added in Python 3.6 \u2192 min Python 3.6",
+      "dateutil.parser.parse added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "json": {
+      "inferred_version_range": ">=2.0.9,<3.0.0",
+      "recommended_requirements_line": "json>=2.0.9,<3.0.0",
+      "evidence": [
+        "json.dumps added in json 2.0.9 \u2192 min Python 3.6",
+        "json.dumps removed in json 3.0.0 \u2192 max Python 3.8"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "csv": {
+      "inferred_version_range": ">=2.0.9,<3.0.0",
+      "recommended_requirements_line": "csv>=2.0.9,<3.0.0",
+      "evidence": [
+        "csv.DictReader added in csv 2.0.9 \u2192 min Python 3.6",
+        "csv.DictReader.next added in csv 2.0.9 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "ttp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "ttp.Parser.parse added in ttp 2.2 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": "Unable to determine version range for ttp package."
+    },
+    "dateutil": {
+      "inferred_version_range": ">=2.0.9,<3.0.0",
+      "recommended_requirements_line": "dateutil>=2.0.9,<3.0.0",
+      "evidence": [
+        "dateutil.parser.parse added in dateutil 2.0.9 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements_txt": [
+    "json>=2.0.9,<3.0.0",
+    "csv>=2.0.9,<3.0.0",
+    "dateutil>=2.0.9,<3.0.0"
+  ]
+}

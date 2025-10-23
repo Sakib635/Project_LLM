@@ -1,0 +1,33 @@
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["pathlib.Path added in Python 3.6 → min Python 3.6", "time.clock removed in Python 3.10→ max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"django": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["models.Model introduced in Django 2.0", "admin.sites.Site added in Django 1.7"],
+"confidence": 0.8,
+"notes": ""
+},
+"yourproject": {
+"inferred_version_range": ">=0.1.0,<0.2.0",
+"recommended_requirements_line": "autoregister>=0.1.0,<0.2.0",
+"evidence": ["autoregister.register_models introduced in version 0.1"],
+"confidence": 1.0,
+"notes": ""
+}
+},
+"requirements.txt": [
+"django>=2.0,<3.0",
+"yourproject>=0.1.0,<0.2.0"
+]
+},
+"requirements.txt": [
+"django>=2.0,<3.0",
+"yourproject>=0.1.0,<0.2.0"
+]
+}

@@ -1,0 +1,94 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": "null",
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6",
+      "time.clock removed in Python 3.9 \u2192 max Python null"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=3.6,<null",
+      "recommended_requirements_line": "os>=3.6,<null",
+      "evidence": [
+        "os.path added in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": ">=3.2,<null",
+      "recommended_requirements_line": "matplotlib>=3.2,<null",
+      "evidence": [
+        "matplotlib.pyplot added in Python 3.6",
+        "matplotlib.patches.Rectangle introduced in v3.2.0",
+        "matplotlib.patches.Circle introduced in v3.2.0",
+        "matplotlib.patches.Ellipse introduced in v3.2.0",
+        "matplotlib.patches.FancyBboxPatch introduced in v3.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18,<null",
+      "recommended_requirements_line": "numpy>=1.18,<null",
+      "evidence": [
+        "numpy.asarray added in Python 3.6",
+        "numpy.mean introduced in v1.18.0",
+        "numpy.median introduced in v1.18.0",
+        "numpy.std introduced in v1.18.0",
+        "numpy.sum introduced in v1.18.0",
+        "numpy.var introduced in v1.18.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": ">=2.2,<null",
+      "recommended_requirements_line": "re>=2.2,<null",
+      "evidence": [
+        "re.split added in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pcbnew": {
+      "inferred_version_range": ">=7.9,<null",
+      "recommended_requirements_line": "pcbnew>=7.9,<null",
+      "evidence": [
+        "pcbnew.GetDrawings added in Python 3.6",
+        "pcbnew.F_Cu introduced in v7.9.0",
+        "pcbnew.Module introduced in v7.9.0",
+        "pcbnew.Pads introduced in v7.9.0",
+        "pcbnew.FPID introduced in v7.9.0",
+        "pcbnew.Rectangle introduced in v7.9.0",
+        "pcbnew.Ellipse introduced in v7.9.0",
+        "pcbnew.Module.GetValue introduced in v7.9.0",
+        "pcbnew.Module.GetFootprintRect introduced in v7.9.0",
+        "pcbnew.Module.GetCenter introduced in v7.9.0",
+        "pcbnew.Module.Pads introduced in v7.9.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "plt": {
+      "inferred_version_range": ">=3.2,<null",
+      "recommended_requirements_line": "plt>=3.2,<null",
+      "evidence": [
+        "matplotlib.pyplot added in Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=3.6,<null",
+    "matplotlib>=3.2,<null",
+    "numpy>=1.18,<null",
+    "re>=2.2,<null",
+    "pcbnew>=7.9,<null",
+    "plt>=3.2,<null"
+  ]
+}

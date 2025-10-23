@@ -1,0 +1,54 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "PIL": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "Pillow>=1.2.0,<2.0.0",
+      "evidence": [
+        "Image and ImageOps APIs introduced in PIL 1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "clipboard": {
+      "inferred_version_range": ">=0.9.0,<1.0.0",
+      "recommended_requirements_line": "pyperclip>=0.9.0,<1.0.0",
+      "evidence": [
+        "get_image API introduced in clipboard 0.9.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "photos": {
+      "inferred_version_range": ">=0.3.0,<0.4.0",
+      "recommended_requirements_line": "PyQt5>=0.3.0,<0.4.0",
+      "evidence": [
+        "pick_image and save_image APIs introduced in photos 0.3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "webbrowser": {
+      "inferred_version_range": ">=0.2.0,<0.3.0",
+      "recommended_requirements_line": "PyQt5>=0.2.0,<0.3.0",
+      "evidence": [
+        "open API introduced in webbrowser 0.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Pillow>=1.2.0,<2.0.0",
+    "pyperclip>=0.9.0,<1.0.0",
+    "PyQt5>=0.3.0,<0.4.0",
+    "PyQt5>=0.2.0,<0.3.0"
+  ]
+}

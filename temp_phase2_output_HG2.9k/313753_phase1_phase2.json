@@ -1,0 +1,47 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "google.appengine.api": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "google.appengine.api.urlfetch introduced in Google App Engine API 1.9.70",
+        "google.appengine.api.xmpp introduced in Google App Engine API 1.9.5"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.appengine.ext": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "google.appengine.ext.db introduced in Google App Engine Extension API 1.9.43",
+        "google.appengine.ext.webapp introduced in Google App Engine Extension API 1.9.70"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "google.appengine.ext.webapp": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "google.appengine.ext.webapp.util introduced in Google App Engine Extension API 1.9.43",
+        "google.appengine.ext.webapp.xmpp_handlers introduced in Google App Engine Extension API 1.9.70"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "google-app-engine-python>=1.9.43",
+    "google-app-engine-python>=1.9.70"
+  ]
+}

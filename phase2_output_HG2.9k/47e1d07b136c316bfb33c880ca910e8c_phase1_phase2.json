@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": null,
+    "max": null,
+    "evidence": [],
+    "notes": "Cannot determine a reliable upper or lower bound for Python version."
+  },
+  "dependencies": {
+    "subprocess": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "subprocess.Popen added in Python 3.5"
+      ],
+      "confidence": 0.2,
+      "notes": "Assuming that subprocess.Popen is introduced in Python 3.5."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit added in Python 2.7"
+      ],
+      "confidence": 0.2,
+      "notes": "Assuming that sys.exit is introduced in Python 2.7."
+    },
+    "flake8": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "flake8.hooks added in Python 3.5",
+        "flake8.get_git_param added in Python 2.7"
+      ],
+      "confidence": 0.1,
+      "notes": "Assuming that flake8.hooks and flake8.get_git_param are introduced in Python 3.5."
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "collections.namedtuple added in Python 2.7"
+      ],
+      "confidence": 0.2,
+      "notes": "Assuming that collections.namedtuple is introduced in Python 2.7."
+    }
+  },
+  "requirements.txt": []
+}

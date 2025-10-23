@@ -1,0 +1,37 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "math.log added in Python 3.6 \u2192 min Python 3.6",
+      "numpy.optimize.minimize added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.14.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.14.0,<2.0.0",
+      "evidence": [
+        "numpy.special.gammaln introduced in v1.14.0 \u2192 inferred version range",
+        "numpy.optimize.minimize introduced in v1.14.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "scipy": {
+      "inferred_version_range": ">=0.18.0",
+      "recommended_requirements_line": "scipy>=0.18.0",
+      "evidence": [
+        "scipy.special.gammaln introduced in v0.18.0 \u2192 inferred version range",
+        "scipy.optimize.minimize introduced in v0.18.0 \u2192 inferred version range"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.14.0,<2.0.0",
+    "scipy>=0.18.0"
+  ]
+}

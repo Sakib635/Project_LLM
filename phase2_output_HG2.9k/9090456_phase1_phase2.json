@@ -1,0 +1,44 @@
+```json
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": ["matplotlib.use added in Python 3.7 → min Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.19,<2.0",
+      "recommended_requirements_line": "numpy>=1.19,<2.0",
+      "evidence": ["numpy.array added in v1.19, deprecated in v2.0"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "scipy.stats": {
+      "inferred_version_range": ">=1.4,<2.0",
+      "recommended_requirements_line": "scipy>=1.4,<2.0",
+      "evidence": ["scipy.stats.beta added in v1.4, deprecated in v2.0"],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["random.random removed in Python 3.8"],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.* deprecated in Python 3.8"],
+      "confidence": 0.7,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19,<2.0",
+    "scipy>=1.4,<2.0"
+  ]
+}
+```

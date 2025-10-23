@@ -1,0 +1,56 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": "4.0",
+    "evidence": [
+      "numpy.array added in Python 3.7 \u2192 min Python 3.7",
+      "numpy.linalg.norm removed in Python 3.8\u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "chaco": {
+      "inferred_version_range": ">=5.6.0,<6.0.0",
+      "recommended_requirements_line": "chaco>=5.6.0,<6.0.0",
+      "evidence": [
+        "ChacoPlotItem introduced in v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.18.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.18.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.18.0",
+        "numpy.linalg.norm removed in v1.19.0\u2192 max Python 3.7"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "traits": {
+      "inferred_version_range": ">=5.6.0,<6.0.0",
+      "recommended_requirements_line": "traits>=5.6.0,<6.0.0",
+      "evidence": [
+        "Array introduced in v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "pyface": {
+      "inferred_version_range": ">=5.6.0,<6.0.0",
+      "recommended_requirements_line": "pyface>=5.6.0,<6.0.0",
+      "evidence": [
+        "Timer introduced in v5.6.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.18.0,<2.0.0",
+    "traits>=5.6.0,<6.0.0",
+    "pyface>=5.6.0,<6.0.0",
+    "chaco>=5.6.0,<6.0.0"
+  ]
+}

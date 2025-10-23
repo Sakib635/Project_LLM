@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock added in Python 3.5 \u2192 min Python 3.5"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "collections.abc": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Maybe.__iter__ introduced in collections.abc in Python 3.5 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Maybe": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "Just.__init__ introduced in Maybe 1.2.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "Nothing": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "Just.__init__ introduced in Nothing 1.2.0 \u2192 min Python 3.5"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "filter_just": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs found."
+    },
+    "as_nonempty_list": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs found."
+    },
+    "filter_nonempty_justs": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs found."
+    },
+    "map_maybe": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No APIs found."
+    }
+  },
+  "requirements.txt": [
+    "pandas>=1.2.0,<2.0.0"
+  ]
+}

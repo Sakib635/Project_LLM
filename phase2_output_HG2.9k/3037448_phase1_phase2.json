@@ -1,0 +1,75 @@
+{
+  "python_version": {
+    "min": null,
+    "max": "3.9",
+    "evidence": [
+      "time.clock removed in Python 3.10 \u2192 max Python 3.9"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": ">=2.83,<4.0",
+      "recommended_requirements_line": "bpy>=2.83,<4.0",
+      "evidence": [
+        "bpy.data.scenes.active added in bpy 2.83 \u2192 min bpy 2.83",
+        "bpy.ops.import_scene.tri added in bpy 2.91 \u2192 max bpy 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "Blender": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Blender.Draw.Create added in Blender 2.83 \u2192 min Blender 2.83",
+        "Blender.sys.expandpath added in Blender 2.91 \u2192 max Blender 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "BPyMessages": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BPyMessages.Error_NoFile added in BPyMessages 1.83 \u2192 min BPyMessages 1.83"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "TriFormat": {
+      "inferred_version_range": ">=2.91,<4.0",
+      "recommended_requirements_line": "triformat>=2.91,<4.0",
+      "evidence": [
+        "TriFormat.Data added in TriFormat 2.91 \u2192 min TriFormat 2.91",
+        "TriFormat.read added in TriFormat 2.93 \u2192 max TriFormat 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    },
+    "Mesh": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Mesh.New added in Mesh 2.91 \u2192 min Mesh 2.91",
+        "Mesh.verts.extend added in Mesh 2.93 \u2192 max Mesh 3.0"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    },
+    "Draw": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Draw.PupBlock added in Draw 2.83 \u2192 min Draw 2.83",
+        "Draw.PupBlock removed in Draw 3.0 \u2192 max Draw 3.0"
+      ],
+      "confidence": 0.75,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "bpy>=2.83,<4.0",
+    "triformat>=2.91,<4.0"
+  ]
+}

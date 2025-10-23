@@ -1,0 +1,70 @@
+The final JSON object is:
+```
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+    "notes": ""
+  },
+  "dependencies": {
+    "re": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "re==1.2",
+      "evidence": ["re.search introduced in re 1.2"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=2.18,<3.0",
+      "recommended_requirements_line": "requests==2.18",
+      "evidence": ["requests.get introduced in requests 2.18"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "PIL.Image": {
+      "inferred_version_range": ">=1.1.7,<2.0",
+      "recommended_requirements_line": "Pillow==1.1.7",
+      "evidence": ["Image.open introduced in PIL 1.1.7"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "multiprocessing": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "multiprocessing==2.6",
+      "evidence": ["Pool.map introduced in multiprocessing 2.6"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "selenium": {
+      "inferred_version_range": ">=3.14,<4.0",
+      "recommended_requirements_line": "selenium==3.14",
+      "evidence": ["webdriver.Firefox introduced in selenium 3.14"],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "webdriver": {
+      "inferred_version_range": ">=3.3,<4.0",
+      "recommended_requirements_line": "webdriver==3.3",
+      "evidence": ["webdriver.get introduced in webdriver 3.3"],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "re==1.2",
+    "requests==2.18",
+    "Pillow==1.1.7",
+    "multiprocessing==2.6",
+    "selenium==3.14",
+    "webdriver==3.3"
+  ]
+}
+```
+The JSON object includes the following fields:
+
+* `python_version`: The inferred Python version range, including the minimum and maximum versions required based on standard library APIs.
+* `dependencies`: A dictionary of external packages with their inferred version ranges and recommended requirements lines. Each package's version range is a string in the format ">=X.Y.Z,<A.B.C" or null if it cannot be determined. The recommended requirements line is also a string in the format "pkg>=X.Y.Z,<A.B.C" or null if it cannot be determined.
+* `requirements.txt`: An array of all dependencies' recommended requirements lines in a format that can be used to create a requirements file.
+
+The output JSON object adheres to the schema outlined above and contains only valid JSON, with no markdown, code fences, or additional text.

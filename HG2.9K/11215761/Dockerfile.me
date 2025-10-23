@@ -1,0 +1,7 @@
+FROM python:2.7.13
+COPY . /11215761
+RUN ["pip","install","dj.choices"]
+RUN ["pip","install","Django"]
+RUN ["pip","install","django_db"]
+CMD ["python","/11215761/snippet.py"]
+

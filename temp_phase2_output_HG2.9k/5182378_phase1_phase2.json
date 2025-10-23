@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "clipboard": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0,
+      "notes": "This module does not appear to have any version information."
+    },
+    "urllib2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib2.urlopen(url).read()"
+      ],
+      "confidence": 0.6,
+      "notes": "This module was introduced in Python 2.5 and removed in Python 3.7. However, the function urllib2.urlopen() is still available in later versions."
+    },
+    "editor": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "editor.make_new_file(scriptName[:-3], contents)"
+      ],
+      "confidence": 0.6,
+      "notes": "This module does not appear to have any version information."
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.path.basename(url)"
+      ],
+      "confidence": 0.6,
+      "notes": "This module was introduced in Python 2.3 and removed in Python 3.7. However, the function os.path.basename() is still available in later versions."
+    }
+  },
+  "requirements.txt": []
+}

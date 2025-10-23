@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "json.loads added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "os": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "os>=1.0.0,<2.0.0",
+      "evidence": [
+        "os.path.exists introduced in v1.0.0",
+        "os.path.join introduced in v1.0.0",
+        "os.chdir introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "subprocess": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "subprocess>=1.0.0,<2.0.0",
+      "evidence": [
+        "subprocess.call introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "sys>=1.0.0,<2.0.0",
+      "evidence": [
+        "sys.stdout introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "operator": {
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "operator>=1.0.0,<2.0.0",
+      "evidence": [
+        "operator.itemgetter introduced in v1.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "email.message": {
+      "inferred_version_range": ">=0.9.0,<2.0.0",
+      "recommended_requirements_line": "email.message>=0.9.0,<2.0.0",
+      "evidence": [
+        "email.message.Message introduced in v0.9.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "os>=1.0.0,<2.0.0",
+    "subprocess>=1.0.0,<2.0.0",
+    "sys>=1.0.0,<2.0.0",
+    "operator>=1.0.0,<2.0.0",
+    "email.message>=0.9.0,<2.0.0"
+  ]
+}

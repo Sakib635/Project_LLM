@@ -1,0 +1,72 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "argparse.ArgumentParser added in Python 3.6 \u2192 min Python 3.6",
+      "sys.exit removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "argparse.ArgumentParser introduced in v1.2.0, depricated in v1.4, removed in v1.7"
+      ],
+      "confidence": 0.3,
+      "notes": "Conflicting APIs: argparse.ArgumentParser was removed in Python 3.9."
+    },
+    "collections": {
+      "inferred_version_range": ">=2.6,<3.0",
+      "recommended_requirements_line": "collections>=2.6,<3.0",
+      "evidence": [
+        "collections.defaultdict introduced in v2.4, depricated in v3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "novaclient": {
+      "inferred_version_range": ">=1.8,<2.0",
+      "recommended_requirements_line": "novaclient>=1.8,<2.0",
+      "evidence": [
+        "novaclient.client introduced in v1.8, depricated in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "os.environ introduced in v2.6, depricated in v3.9"
+      ],
+      "confidence": 0.7,
+      "notes": "Conflicting APIs: os.environ was removed in Python 3.9."
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit introduced in v2.6, depricated in v3.9"
+      ],
+      "confidence": 0.7,
+      "notes": "Conflicting APIs: sys.exit was removed in Python 3.9."
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep introduced in v2.6, depricated in v3.9"
+      ],
+      "confidence": 0.7,
+      "notes": "Conflicting APIs: time.sleep was removed in Python 3.9."
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2.0,<1.4",
+    "collections>=2.6,<3.0",
+    "novaclient>=1.8,<2.0"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.7",
+    "max": null,
+    "evidence": [
+      "time.sleep added in Python 3.7 \u2192 min Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=1.20,<2.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "urllib.request.urlretrieve introduced in v1.20 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "requests": {
+      "inferred_version_range": ">=2.18,<3.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "requests.get introduced in v2.18 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "bs4": {
+      "inferred_version_range": ">=4.7,<5.0",
+      "recommended_requirements_line": null,
+      "evidence": [
+        "bs4.BeautifulSoup introduced in v4.7 \u2192 inferred version range"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "time.sleep removed in Python 3.9 \u2192 no inferred version range"
+      ],
+      "confidence": 0.5,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=1.20,<2.0",
+    "requests>=2.18,<3.0",
+    "bs4>=4.7,<5.0"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": null,
+    "evidence": [
+      "os.path added in Python y \u2192 min Python y"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "argparse": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "argparse>=1.2.0,<2.0.0",
+      "evidence": [
+        "ArgumentParser introduced in v1.2.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cv2": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "imwrite and VideoCapture introduced in different versions of cv2"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain due to conflicting APIs"
+    },
+    "rosbag": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "rosbag>=1.2.0,<2.0.0",
+      "evidence": [
+        "Bag and read_messages introduced in different versions of rosbag"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "sensor_msgs.msg": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Image introduced in different versions of sensor_msgs.msg"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain due to conflicting APIs"
+    },
+    "cv_bridge": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "CvBridge and imgmsg_to_cv2 introduced in different versions of cv_bridge"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain due to conflicting APIs"
+    },
+    "desired_encoding": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "desired_encoding introduced in different versions of desired_encoding"
+      ],
+      "confidence": 0.5,
+      "notes": "Uncertain due to conflicting APIs"
+    }
+  },
+  "requirements.txt": [
+    "argparse>=1.2.0,<2.0.0",
+    "rosbag>=1.2.0,<2.0.0"
+  ]
+}

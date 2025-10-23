@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "snippet.py", line 256, in <module>
+    main()
+  File "snippet.py", line 243, in main
+    device = lcd(0x27,1,backlight, initFlag)  
+  File "snippet.py", line 120, in __init__
+    self.lcd_device = i2c_device(addr, port)
+  File "snippet.py", line 18, in __init__
+    self.bus = smbus.SMBus(port)
+IOError: [Errno 2] No such file or directory
+Skipping init ...

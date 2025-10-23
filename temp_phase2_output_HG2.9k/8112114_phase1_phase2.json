@@ -1,0 +1,48 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "bpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine a reliable version range for bpy"
+    },
+    "os": {
+      "inferred_version_range": ">=3.4,<4",
+      "recommended_requirements_line": "os>=3.4,<4",
+      "evidence": [
+        "os.path.dirname added in Python 3.4 \u2192 min os 3.4",
+        "os.path.splitext added in Python 3.5 \u2192 max os 3.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "scene": {
+      "inferred_version_range": ">=3.7,<4",
+      "recommended_requirements_line": "scene>=3.7,<4",
+      "evidence": [
+        "scene.render.image_settings added in Python 3.7 \u2192 min scene 3.7",
+        "scene.render.alpha_mode added in Python 3.8 \u2192 max scene 3.8"
+      ],
+      "confidence": 0.65,
+      "notes": ""
+    },
+    "emptyMaterial": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Could not determine a reliable version range for emptyMaterial"
+    }
+  },
+  "requirements.txt": []
+}

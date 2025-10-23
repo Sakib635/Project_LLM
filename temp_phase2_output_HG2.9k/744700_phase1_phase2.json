@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "pymongo": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "pymongo>=1.0,<2.0",
+      "evidence": [
+        "pymongo.Connection introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "flask": {
+      "inferred_version_range": ">=0.7,<2.0",
+      "recommended_requirements_line": "flask>=0.7,<2.0",
+      "evidence": [
+        "flask.Flask introduced in v0.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "BeautifulSoup": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "BeautifulSoup.BeautifulSoup introduced in v4.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    ".util": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "normalize_url introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "pymongo>=1.0,<2.0",
+    "flask>=0.7,<2.0"
+  ]
+}

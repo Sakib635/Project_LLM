@@ -1,0 +1,55 @@
+{
+  "python_version": {
+    "min": "y",
+    "max": "x",
+    "evidence": [
+      "pathlib.Path added in Python y \u2192 min Python y",
+      "time.clock removed in Python x\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "datetime": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "datetime>=1.2.0,<2.0.0",
+      "evidence": [
+        "datetime.datetime introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "south.db": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "south.db>=1.2.0,<2.0.0",
+      "evidence": [
+        "south.db.execute introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "south.v2": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "south.v2>=1.2.0,<2.0.0",
+      "evidence": [
+        "south.v2.DataMigration introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "django.db": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django.db>=1.2.0,<2.0.0",
+      "evidence": [
+        "django.db.models introduced in v1.2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "datetime>=1.2.0,<2.0.0",
+    "south.db>=1.2.0,<2.0.0",
+    "south.v2>=1.2.0,<2.0.0",
+    "django.db>=1.2.0,<2.0.0"
+  ]
+}

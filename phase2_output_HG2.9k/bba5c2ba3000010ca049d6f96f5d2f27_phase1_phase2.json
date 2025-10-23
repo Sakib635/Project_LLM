@@ -1,0 +1,53 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "sys.stdout added in Python 3.0"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.9.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.9.0,<2.0.0",
+      "evidence": [
+        "numpy.array introduced in v1.9.0",
+        "numpy.linalg.norm deprecated in v1.15.0"
+      ],
+      "confidence": 0.7,
+      "notes": ""
+    },
+    "matplotlib": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "matplotlib.pyplot.plot introduced in v3.0.0"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    },
+    "jr": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "jr.plot.pretty_plot introduced in v0.1.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.stdout introduced in v3.0"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.9.0,<2.0.0",
+    "matplotlib>=3.0.0"
+  ]
+}

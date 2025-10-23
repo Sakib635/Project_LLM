@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "praw.Reddit added in Python 3.5 \u2192 min Python 3.5",
+      "textwrap.wrap introduced in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "praw": {
+      "inferred_version_range": ">=2.6.0,<2.7.0",
+      "recommended_requirements_line": "praw>=2.6.0,<2.7.0",
+      "evidence": [
+        "praw.Reddit introduced in PRAW v2.5.1, depricated and removed in v2.6.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "PIL": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No inferred version range due to lack of information"
+    },
+    "textwrap": {
+      "inferred_version_range": ">=3.10",
+      "recommended_requirements_line": "textwrap>=3.10",
+      "evidence": [
+        "textwrap.wrap introduced in Python 3.10 \u2192 max Python 3.10"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 1.0,
+      "notes": "No inferred version range due to lack of information"
+    }
+  },
+  "requirements.txt": [
+    "praw>=2.6.0,<2.7.0",
+    "textwrap>=3.10"
+  ]
+}

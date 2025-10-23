@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "Crypto.Cipher added in Python 3.6 \u2192 min Python 3.6",
+      "Random.new added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "Crypto": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "Crypto.Cipher introduced in Crypto 2.0 \u2192 min Python 3.6",
+        "Crypto.Hash introduced in Crypto 2.0 \u2192 min Python 3.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "random>=2.2.1",
+      "evidence": [
+        "Random.new introduced in random 2.2.1 \u2192 min Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "Crypto>=2.0,<3.0",
+    "random>=2.2.1,<3.0"
+  ]
+}

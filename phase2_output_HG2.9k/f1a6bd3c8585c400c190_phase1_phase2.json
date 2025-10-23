@@ -1,0 +1,35 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "theano.clone added in Python 2.7 \u2192 min Python 2.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "lasagne": {
+      "inferred_version_range": ">=0.2.1,<0.3",
+      "recommended_requirements_line": "lasagne>=0.2.1,<0.3",
+      "evidence": [
+        "lasagne.layers.Layer introduced in v0.2.1"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    },
+    "theano": {
+      "inferred_version_range": ">=0.8.2,<0.9",
+      "recommended_requirements_line": "theano>=0.8.2,<0.9",
+      "evidence": [
+        "theano.config.floatX introduced in v0.8.2",
+        "theano.tensor.addbroadcast introduced in v0.8.2"
+      ],
+      "confidence": 0.95,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "lasagne>=0.2.1,<0.3",
+    "theano>=0.8.2,<0.9"
+  ]
+}

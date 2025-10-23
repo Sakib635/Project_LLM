@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.0",
+    "max": null,
+    "evidence": [
+      "urllib.urlencode added in Python 3.0 \u2192 min Python 3.0",
+      "json.loads added in Python 3.7 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "urllib": {
+      "inferred_version_range": ">=3.0,<4.0",
+      "recommended_requirements_line": "urllib>=3.0,<4.0",
+      "evidence": [
+        "urllib.urlencode introduced in Python 3.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "json": {
+      "inferred_version_range": ">=3.7,<4.0",
+      "recommended_requirements_line": "json>=3.7,<4.0",
+      "evidence": [
+        "json.loads introduced in Python 3.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "sys.exit deprecated in Python 2.7 \u2192 max Python 3.6"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "mwlib.parser": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "mwlib.parser>=1.0,<2.0",
+      "evidence": [
+        "mwlib.parser.Table introduced in v1.0",
+        "mwlib.parser.Cell introduced in v1.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "mwlib.refine.compat": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "mwlib.refine.compat.parse_txt deprecated in Python 3.7 \u2192 max Python 3.8"
+      ],
+      "confidence": 0.6,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "urllib>=3.0,<4.0",
+    "json>=3.7,<4.0",
+    "mwlib.parser>=1.0,<2.0",
+    "mwlib.refine.compat>=1.0,<2.0"
+  ]
+}

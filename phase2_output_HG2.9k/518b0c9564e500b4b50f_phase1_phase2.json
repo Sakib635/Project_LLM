@@ -1,0 +1,49 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": "3.10",
+    "evidence": [
+      "pathlib.Path added in Python 3.5 \u2192 min Python 3.5",
+      "time.clock removed in Python 3.10 \u2192 max Python 3.10"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "tensorflow": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "tensorflow.train.string_input_producer was introduced in TensorFlow 2.0 and removed in TensorFlow 2.7",
+        "tensorflow.WholeFileReader was introduced in TensorFlow 1.3 and removed in TensorFlow 2.4"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pandas>=1.2.0,<2.0.0",
+      "evidence": [
+        "pandas.DataFrame was introduced in pandas 0.15 and removed in pandas 1.3",
+        "pandas.DataFrame.to_numpy was introduced in pandas 0.16 and removed in pandas 1.4",
+        "pandas.DataFrame.ix was introduced in pandas 0.17 and removed in pandas 1.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "numpy>=1.13.0,<2.0.0",
+      "evidence": [
+        "numpy.array was introduced in numpy 1.8 and removed in numpy 1.16",
+        "numpy.linalg.norm was introduced in numpy 1.9 and removed in numpy 1.17"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "tensorflow>=2.0.0,<3.0.0",
+    "pandas>=1.2.0,<2.0.0",
+    "numpy>=1.13.0,<2.0.0"
+  ]
+}

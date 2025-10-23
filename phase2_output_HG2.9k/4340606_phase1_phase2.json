@@ -1,0 +1,37 @@
+```
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": ["theano.compile.function_module.Function added in Python 3.6"],
+    "notes": ""
+  },
+  "dependencies": {
+    "theano": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "theano>=1.0,<2.0",
+      "evidence": ["theano.compile.function_module.Function introduced in theano version 1.0"],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": ["os.close removed in Python x"],
+      "confidence": 0,
+      "notes": ""
+    },
+    "tempfile": {
+      "inferred_version_range": ">=1.0,<2.0",
+      "recommended_requirements_line": "tempfile>=1.0,<2.0",
+      "evidence": ["tempfile.mkstemp introduced in tempfile version 1.0"],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "theano>=1.0,<2.0",
+    "tempfile>=1.0,<2.0"
+  ]
+}
+```

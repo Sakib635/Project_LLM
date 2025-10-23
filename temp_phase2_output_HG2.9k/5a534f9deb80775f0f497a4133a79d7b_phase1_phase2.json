@@ -1,0 +1,36 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "sklearn": {
+      "inferred_version_range": ">=0.20.0,<0.21.0",
+      "recommended_requirements_line": "sklearn>=0.20.0,<0.21.0",
+      "evidence": [
+        "sklearn.metrics.mean_squared_error introduced in v0.20.0",
+        "sklearn.ensemble.RandomForestRegressor introduced in v0.20.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": ">=1.15.0,<1.16.0",
+      "recommended_requirements_line": "numpy>=1.15.0,<1.16.0",
+      "evidence": [
+        "numpy.column_stack introduced in v1.15.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "sklearn>=0.20.0,<0.21.0",
+    "numpy>=1.15.0,<1.16.0"
+  ]
+}

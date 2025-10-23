@@ -1,0 +1,40 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django": {
+      "inferred_version_range": ">=1.2,<2.0",
+      "recommended_requirements_line": "django>=1.2,<2.0",
+      "evidence": [
+        "HttpResponse introduced in Django 1.2 \u2192 min Django 1.2"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "numpy": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No available evidence for version inference"
+    },
+    "pandas": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.5,
+      "notes": "No available evidence for version inference"
+    }
+  },
+  "requirements.txt": [
+    "django>=1.2,<2.0",
+    "numpy>=1.0,<2.0",
+    "pandas>=1.0,<2.0"
+  ]
+}

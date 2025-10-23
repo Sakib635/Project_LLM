@@ -1,0 +1,48 @@
+```
+{
+"python_version": {
+"min": "3.6",
+"max": null,
+"evidence": ["time.clock removed in Python 3.10 → max Python 3.10"],
+"notes": ""
+},
+"dependencies": {
+"PIL": {
+"inferred_version_range": ">=6.2.1,<7.0.0",
+"recommended_requirements_line": "PIL>=6.2.1,<7.0.0",
+"evidence": ["Image added in PIL 6.2.1 → min PIL 6.2.1"],
+"confidence": 0.8,
+"notes": ""
+},
+"sys": {
+"inferred_version_range": ">=3.5,<4.0",
+"recommended_requirements_line": "sys>=3.5,<4.0",
+"evidence": ["version_info added in sys 3.5 → min sys 3.5"],
+"confidence": 1,
+"notes": ""
+},
+"os": {
+"inferred_version_range": ">=3.0,<4.0",
+"recommended_requirements_line": "os>=3.0,<4.0",
+"evidence": ["path added in os 3.2 → min os 3.2", "exists added in os 3.5 → max os 3.9"],
+"confidence": 0.8,
+"notes": ""
+},
+"math": {
+"inferred_version_range": ">=3.6,<4.0",
+"recommended_requirements_line": "math>=3.6,<4.0",
+"evidence": ["pi added in math 3.1 → min math 3.1"],
+"confidence": 1,
+"notes": ""
+},
+"numpy": {
+"inferred_version_range": ">=1.18,<2.0",
+"recommended_requirements_line": "numpy>=1.18,<2.0",
+"evidence": ["asarray added in numpy 1.16 → min numpy 1.16", "astype added in numpy 1.17 → max numpy 1.19"],
+"confidence": 0.9,
+"notes": ""
+}
+},
+"requirements.txt": ["PIL>=6.2.1,<7.0.0", "sys>=3.5,<4.0", "os>=3.0,<4.0", "math>=3.6,<4.0", "numpy>=1.18,<2.0"]
+}
+```

@@ -1,0 +1,44 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9\u2192 max Python z"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "django.contrib.postgres.fields": {
+      "inferred_version_range": ">=1.2.0,<2.0.0",
+      "recommended_requirements_line": "django.contrib.postgres.fields>=1.2.0,<2.0.0",
+      "evidence": [
+        "ArrayField introduced in Django 1.2"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "forms.MultipleChoiceField": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "forms.MultipleChoiceField>=2.0.0,<3.0.0",
+      "evidence": [
+        "MultipleChoiceField introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "models.CharField": {
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "models.CharField>=2.0.0,<3.0.0",
+      "evidence": [
+        "CharField introduced in Django 2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "django.contrib.postgres.fields>=1.2.0,<2.0.0",
+    "forms.MultipleChoiceField>=2.0.0,<3.0.0",
+    "models.CharField>=2.0.0,<3.0.0"
+  ]
+}

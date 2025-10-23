@@ -1,0 +1,34 @@
+{
+"python_version": {
+"min": null,
+"max": "3.9",
+"evidence": ["time.clock removed in Python 3.10 → max Python 3.9"],
+"notes": ""
+},
+"dependencies": {
+"boto": {
+"inferred_version_range": ">=2.47,<3.0",
+"recommended_requirements_line": "boto>=2.47,<3.0",
+"evidence": ["boto.utils.parse_ts introduced in boto 2.47"],
+"confidence": 0.85,
+"notes": ""
+},
+"django": {
+"inferred_version_range": ">=2.2,<3.1",
+"recommended_requirements_line": "Django>=2.2,<3.1",
+"evidence": ["django.core.files.storage.get_storage_class introduced in Django 2.2"],
+"confidence": 0.85,
+"notes": ""
+},
+"storages": {
+"inferred_version_range": ">=1.6,<3.0",
+"recommended_requirements_line": "django-storages>=1.6,<3.0",
+"evidence": ["django-storages.backends.s3boto.S3BotoStorage introduced in django-storages 1.6"],
+"confidence": 0.85,
+"notes": ""
+}
+},
+"requirements.txt": ["boto>=2.47,<3.0", "Django>=2.2,<3.1", "django-storages>=1.6,<3.0"]
+},
+"requirements.txt": ["boto>=2.47,<3.0", "Django>=2.2,<3.1", "django-storages>=1.6,<3.0"]
+}

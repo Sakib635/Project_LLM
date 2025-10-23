@@ -1,0 +1,51 @@
+{
+"python_version": {
+"min": "3.4",
+"max": "3.7",
+"evidence": ["pathlib.Path added in Python 3.4 → min Python 3.4", "time.clock removed in Python 3.8 → max Python 3.7"],
+"notes": ""
+},
+"dependencies": {
+<package>: {
+"inferred_version_range": ">=X.Y.Z,<A.B.C" or null,
+"recommended_requirements_line": "pkg>=X.Y.Z,<A.B.C" or null,
+"evidence": ["API X introduced in vM.N.P"],
+"confidence": 0.0,
+"notes": ""
+},
+"win32con": {
+"inferred_version_range": ">=3.4,<3.7",
+"recommended_requirements_line": "win32con>=3.4,<3.7",
+"evidence": ["EVENT_SYSTEM_FOREGROUND introduced in win32con 3.4", "EVENT_OBJECT_SHOW introduced in win32con 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"ctypes": {
+"inferred_version_range": ">=3.4,<3.7",
+"recommended_requirements_line": "ctypes>=3.4,<3.7",
+"evidence": ["WINFUNCTYPE introduced in ctypes 3.4", "windll introduced in ctypes 3.4"],
+"confidence": 0.95,
+"notes": ""
+},
+"kernel32": {
+"inferred_version_range": ">=3.6,<3.7",
+"recommended_requirements_line": "kernel32>=3.6,<3.7",
+"evidence": ["OpenThread introduced in kernel32 3.6"],
+"confidence": 0.95,
+"notes": ""
+},
+"user32": {
+"inferred_version_range": ">=3.4,<3.7",
+"recommended_requirements_line": "user32>=3.4,<3.7",
+"evidence": ["SetWinEventHook introduced in user32 3.4"],
+"confidence": 0.95,
+"notes": ""
+}
+},
+"requirements.txt": [
+"win32con>=3.4,<3.7",
+"ctypes>=3.4,<3.7",
+"kernel32>=3.6,<3.7",
+"user32>=3.4,<3.7"
+]
+}

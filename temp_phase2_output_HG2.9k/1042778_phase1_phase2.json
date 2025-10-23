@@ -1,0 +1,66 @@
+{
+  "python_version": {
+    "min": "3.4",
+    "max": "3.7",
+    "evidence": [
+      "pathlib.Path added in Python 3.4 \u2192 min Python 3.4",
+      "time.clock removed in Python 3.8 \u2192 max Python 3.7"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [
+        "JSON added in Python 2.6",
+        "json.dumps and json.loads introduced in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "simplejson": {
+      "inferred_version_range": "<=2.0",
+      "recommended_requirements_line": "simplejson<=2.0",
+      "evidence": [
+        "simplejson introduced in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cjson": {
+      "inferred_version_range": "<=1.5",
+      "recommended_requirements_line": "cjson<=1.5",
+      "evidence": [
+        "cjson introduced in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "ujson": {
+      "inferred_version_range": "<=4.0",
+      "recommended_requirements_line": "ujson<=4.0",
+      "evidence": [
+        "ujson introduced in Python 2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "cPickle": {
+      "inferred_version_range": "<=1.5",
+      "recommended_requirements_line": "cPickle<=1.5",
+      "evidence": [
+        "cPickle introduced in Python 2.6"
+      ],
+      "confidence": 1,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "json>=2.6,<3.0",
+    "simplejson<=2.0",
+    "cjson<=1.5",
+    "ujson<=4.0",
+    "cPickle<=1.5"
+  ]
+}

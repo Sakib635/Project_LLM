@@ -1,0 +1,34 @@
+{
+  "python_version": {
+    "min": "3.6",
+    "max": null,
+    "evidence": [
+      "keras.backend added in Python 3.5 \u2192 min Python 3.6"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.19.2,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.19.2,<2.0.0",
+      "evidence": [
+        "numpy.random.random introduced in numpy v1.17.0 \u2192 max numpy 2.0.0"
+      ],
+      "confidence": 0.85,
+      "notes": ""
+    },
+    "keras": {
+      "inferred_version_range": ">=2.2.4,<3.0.0",
+      "recommended_requirements_line": "keras>=2.2.4,<3.0.0",
+      "evidence": [
+        "keras.layers.LSTM introduced in keras v2.1.1 \u2192 max keras 3.0.0"
+      ],
+      "confidence": 0.9,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.19.2,<2.0.0",
+    "keras>=2.2.4,<3.0.0"
+  ]
+}

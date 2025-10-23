@@ -1,0 +1,65 @@
+{
+  "python_version": {
+    "min": "3.5",
+    "max": null,
+    "evidence": [
+      "time.clock removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "numpy": {
+      "inferred_version_range": ">=1.16,<2.0",
+      "recommended_requirements_line": "numpy>=1.16,<2.0",
+      "evidence": [
+        "numpy.array introduced in v1.16",
+        "numpy.linalg.norm deprecated in v1.19"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "pyaudio": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "pyaudio",
+      "evidence": [
+        "PyAudio introduced in v0.2.11"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "re": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "re",
+      "evidence": [
+        "re introduced in v2.0"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "sys": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "sys",
+      "evidence": [
+        "sys introduced in v2.6"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    },
+    "collections": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "collections",
+      "evidence": [
+        "collections introduced in v2.7"
+      ],
+      "confidence": 1.0,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "numpy>=1.16,<2.0",
+    "pyaudio",
+    "re",
+    "sys",
+    "collections"
+  ]
+}

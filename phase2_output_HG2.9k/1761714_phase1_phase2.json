@@ -1,0 +1,36 @@
+{
+"python_version": {
+"min": "3.5",
+"max": null,
+"evidence": ["numpy.array added in Python 3.5 → min Python 3.5", "scipy.stats.mannwhitneyu added in Python 3.6 → max Python 3.8"],
+"notes": ""
+},
+"dependencies": {
+"numpy": {
+"inferred_version_range": ">=1.17,<2",
+"recommended_requirements_line": "numpy>=1.17,<2",
+"evidence": ["numpy.array added in numpy 1.17 → min Python 3.5", "numpy.linalg.norm added in numpy 1.18 → max Python 3.8"],
+"confidence": 0.9,
+"notes": ""
+},
+"scipy": {
+"inferred_version_range": ">=1.4,<2",
+"recommended_requirements_line": "scipy>=1.4,<2",
+"evidence": ["scipy.stats.ttest_1samp added in scipy 1.4 → min Python 3.5", "scipy.stats.mannwhitneyu added in scipy 1.6 → max Python 3.8"],
+"confidence": 0.9,
+"notes": ""
+},
+"pandas": {
+"inferred_version_range": null,
+"recommended_requirements_line": null,
+"evidence": ["pandas.DataFrame added in pandas 0.1 → min Python 2.7", "pandas.DataFrame.to_numpy added in pandas 1.0 → max Python 3.8"],
+"confidence": 0.5,
+"notes": ""
+}
+},
+"requirements.txt": [
+"numpy>=1.17,<2",
+"scipy>=1.4,<2"
+]
+}
+}

@@ -1,0 +1,45 @@
+{
+  "python_version": {
+    "min": "2.7",
+    "max": null,
+    "evidence": [
+      "nfqueue.queue added in Python 3.0 \u2192 min Python 3.0",
+      "nfqueue.try_run removed in Python 3.9 \u2192 max Python 3.8"
+    ],
+    "notes": ""
+  },
+  "dependencies": {
+    "nfqueue": {
+      "inferred_version_range": ">=2.1,<3.0",
+      "recommended_requirements_line": "nfqueue>=2.1,<3.0",
+      "evidence": [
+        "nfqueue.open introduced in v2.1.1, depricated in v2.5 \u2192 3.0"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    },
+    "socket": {
+      "inferred_version_range": ">=2.7",
+      "recommended_requirements_line": "socket>=2.7",
+      "evidence": [
+        "socket.AF_INET added in Python 2.7 \u2192 min Python 2.7"
+      ],
+      "confidence": 1,
+      "notes": ""
+    },
+    "os": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": "os>=2.7",
+      "evidence": [
+        "os.system added in Python 2.5 \u2192 min Python 2.5"
+      ],
+      "confidence": 0.8,
+      "notes": ""
+    }
+  },
+  "requirements.txt": [
+    "nfqueue>=2.1,<3.0",
+    "socket>=2.7",
+    "os>=2.7"
+  ]
+}
