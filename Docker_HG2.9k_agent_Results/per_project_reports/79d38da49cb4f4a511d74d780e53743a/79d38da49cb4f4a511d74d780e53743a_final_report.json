@@ -1,0 +1,137 @@
+{
+  "project": "79d38da49cb4f4a511d74d780e53743a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:25:40Z",
+      "image_tag": "79d38da49cb4f4a511d74d780e53743a_trial_1_6c01c04a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 9.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 10, in <module>\n    from annoy import AnnoyIndex\nModuleNotFoundError: No module named 'annoy'\n",
+        "time_sec": 1.24
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "annoy>=1.13.0"
+        ],
+        "rationale": [
+          "The 'annoy' module is required for this task."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The 'annoy' module is required for this task."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T12:25:58Z",
+      "image_tag": "79d38da49cb4f4a511d74d780e53743a_trial_2_ee293ebe",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 3.78kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:71a6ffbb326809150767ff0384d2ec9a97d02acdf049c0367436d9446bb2937c 0.0s done\n#10 exporting config sha256:4fc787f96be926831c12f0a35b5b3558a37f0a782cb34ff12c8c028c2b3bc15d 0.0s done\n#10 exporting attestation manifest sha256:4d6361d3731a50d4d906643ee157359ec831e0e476bb5c244a38f5be0f3f68ff\n#10 exporting attestation manifest sha256:4d6361d3731a50d4d906643ee157359ec831e0e476bb5c244a38f5be0f3f68ff 0.1s done\n#10 exporting manifest list sha256:3341858d2c11d69bf3f1be25b8ea39f0fbe744017f1303299a17b6baf4dc9fca 0.0s done\n#10 naming to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_2_ee293ebe:latest\n#10 naming to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_2_ee293ebe:latest done\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_2_ee293ebe:latest\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_2_ee293ebe:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/o4obkbem94ltzf9cgx6sqwrbg\n",
+        "time_sec": 1.85
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 10, in <module>\n    from annoy import AnnoyIndex\nModuleNotFoundError: No module named 'annoy'\n",
+        "time_sec": 1.39
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "annoy==1.14.0"
+        ],
+        "rationale": [
+          "This version of Annoy is known to work well with the provided requirements.txt."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "This version of Annoy is known to work well with the provided requirements.txt."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T12:26:11Z",
+      "image_tag": "79d38da49cb4f4a511d74d780e53743a_trial_3_d10c2f18",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ocker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 3.78kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:71a6ffbb326809150767ff0384d2ec9a97d02acdf049c0367436d9446bb2937c 0.0s done\n#10 exporting config sha256:4fc787f96be926831c12f0a35b5b3558a37f0a782cb34ff12c8c028c2b3bc15d 0.0s done\n#10 exporting attestation manifest sha256:8d1109c0066f09462d166d60681e710f141307b7e1525393b5678c4024fdb9f1\n#10 exporting attestation manifest sha256:8d1109c0066f09462d166d60681e710f141307b7e1525393b5678c4024fdb9f1 0.1s done\n#10 exporting manifest list sha256:0fb1f5ca8ac3482ec36be5e654c721971acf3408ac711c4c69794f87f7ae7083 0.0s done\n#10 naming to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_3_d10c2f18:latest done\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_3_d10c2f18:latest\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_3_d10c2f18:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/w1puq5pgfxoruid5zblr8o4z7\n",
+        "time_sec": 1.84
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 10, in <module>\n    from annoy import AnnoyIndex\nModuleNotFoundError: No module named 'annoy'\n",
+        "time_sec": 1.43
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy>=1.19.4,<2.0.0"
+        ],
+        "rationale": [
+          "The error message mentions 'annoy', which is not a dependency of the current project."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The error message mentions 'annoy', which is not a dependency of the current project."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T12:26:24Z",
+      "image_tag": "79d38da49cb4f4a511d74d780e53743a_trial_4_63ca7f62",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 3.78kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:71a6ffbb326809150767ff0384d2ec9a97d02acdf049c0367436d9446bb2937c 0.0s done\n#10 exporting config sha256:4fc787f96be926831c12f0a35b5b3558a37f0a782cb34ff12c8c028c2b3bc15d 0.0s done\n#10 exporting attestation manifest sha256:07adffbb35e24f38a27928cd944f5af9dac4a5841f6a1b8239929fbab6965961 0.1s done\n#10 exporting manifest list sha256:02f32f35a2a468b8313223c3ceb3d30ee2c390e583432dafbc27000350346cbd\n#10 exporting manifest list sha256:02f32f35a2a468b8313223c3ceb3d30ee2c390e583432dafbc27000350346cbd 0.0s done\n#10 naming to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_4_63ca7f62:latest done\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_4_63ca7f62:latest\n#10 unpacking to docker.io/library/79d38da49cb4f4a511d74d780e53743a_trial_4_63ca7f62:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wv1uwokmavmofr63dcb59r9g6\n",
+        "time_sec": 1.74
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 10, in <module>\n    from annoy import AnnoyIndex\nModuleNotFoundError: No module named 'annoy'\n",
+        "time_sec": 1.43
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 63.3,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 63.3,
+    "avg_build_time_sec": 3.66,
+    "avg_run_time_sec": 1.37,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

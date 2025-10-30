@@ -1,0 +1,170 @@
+{
+  "project": "b87ffb502890909aea2eb449643d5bc7",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:12:17Z",
+      "image_tag": "b87ffb502890909aea2eb449643d5bc7_trial_1_9b7a088a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.61
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pytrends.pyGTrends import pyGTrends\nModuleNotFoundError: No module named 'pytrends'\n",
+        "time_sec": 1.49
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "pytrends is a dependent package of pandas and it is not installed as a separate package."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "pytrends is a dependent package of pandas and it is not installed as a separate package."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:12:41Z",
+      "image_tag": "b87ffb502890909aea2eb449643d5bc7_trial_2_e18b50ad",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ocker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.86kB done\n#4 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:85d5c766007dd4974b515b843ab21e8c59233be7654371296d447763f3c1d8f8 0.0s done\n#10 exporting config sha256:66da4e97b338fe30d4229bed15c6aeded1d57f50c756aad69bf880faaac04c18 0.0s done\n#10 exporting attestation manifest sha256:87c5693c7884797f702fd6ca3d393671104543dc42b3238b3f69a31c5c9f28c2\n#10 exporting attestation manifest sha256:87c5693c7884797f702fd6ca3d393671104543dc42b3238b3f69a31c5c9f28c2 0.1s done\n#10 exporting manifest list sha256:caff4b90d1188e59be82c471f11d58027a53f282fd1200b2b26cea896e241c74 0.0s done\n#10 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_2_e18b50ad:latest done\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_2_e18b50ad:latest\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_2_e18b50ad:latest 1.3s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/2ymnptd0st05tbh14f011joh5\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pytrends.pyGTrends import pyGTrends\nModuleNotFoundError: No module named 'pytrends'\n",
+        "time_sec": 1.54
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "Upgrading pandas to version >=1.2.0,<2.0.0 should fix the 'ModuleNotFoundError: No module named 'pytrends'' issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Upgrading pandas to version >=1.2.0,<2.0.0 should fix the 'ModuleNotFoundError: No module named 'pytrends'' issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T15:12:56Z",
+      "image_tag": "b87ffb502890909aea2eb449643d5bc7_trial_3_9ef3c61d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 2.86kB done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:85d5c766007dd4974b515b843ab21e8c59233be7654371296d447763f3c1d8f8 0.0s done\n#10 exporting config sha256:66da4e97b338fe30d4229bed15c6aeded1d57f50c756aad69bf880faaac04c18 0.0s done\n#10 exporting attestation manifest sha256:42e9e6c4891424c2f4bca020e000d9249fdbfef53db3223d6df77bf458b28925 0.1s done\n#10 exporting manifest list sha256:e585b737bb133448ccfc0081525e7abbd51cd93f49b3c7ebdef71fc984cf6a54 0.0s done\n#10 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_3_9ef3c61d:latest\n#10 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_3_9ef3c61d:latest done\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_3_9ef3c61d:latest\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_3_9ef3c61d:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/mowzh01uq97nnhbj4j2egre99\n",
+        "time_sec": 2.54
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pytrends.pyGTrends import pyGTrends\nModuleNotFoundError: No module named 'pytrends'\n",
+        "time_sec": 1.29
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "The `pytrends` module depends on `pandas` version 1.2.0 or later."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The `pytrends` module depends on `pandas` version 1.2.0 or later."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T15:13:09Z",
+      "image_tag": "b87ffb502890909aea2eb449643d5bc7_trial_4_063a5757",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 2.86kB done\n#6 DONE 0.0s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:85d5c766007dd4974b515b843ab21e8c59233be7654371296d447763f3c1d8f8 0.0s done\n#11 exporting config sha256:66da4e97b338fe30d4229bed15c6aeded1d57f50c756aad69bf880faaac04c18 0.0s done\n#11 exporting attestation manifest sha256:0eee3f8240a76fe94af34cb166d5545f5dc90fe2010462f9d1d6b290ac926364\n#11 exporting attestation manifest sha256:0eee3f8240a76fe94af34cb166d5545f5dc90fe2010462f9d1d6b290ac926364 0.1s done\n#11 exporting manifest list sha256:c797e35a1bb7b94945e44b7619d6ee94a1629665bce0a842d722bb5c0ada775a 0.0s done\n#11 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_4_063a5757:latest\n#11 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_4_063a5757:latest done\n#11 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_4_063a5757:latest\n#11 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_4_063a5757:latest 1.2s done\n#11 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tl9cvdl1xnpwf4o0rs03bgbln\n",
+        "time_sec": 2.57
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pytrends.pyGTrends import pyGTrends\nModuleNotFoundError: No module named 'pytrends'\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "The package 'pytrends' is required by the code snippet but is not installed."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 1.0,
+          "notes": [
+            "The package 'pytrends' is required by the code snippet but is not installed."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T15:13:23Z",
+      "image_tag": "b87ffb502890909aea2eb449643d5bc7_trial_5_bb820425",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.86kB done\n#4 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:85d5c766007dd4974b515b843ab21e8c59233be7654371296d447763f3c1d8f8 0.0s done\n#10 exporting config sha256:66da4e97b338fe30d4229bed15c6aeded1d57f50c756aad69bf880faaac04c18 0.0s done\n#10 exporting attestation manifest sha256:003093104514ebc7eae5b9d56d9540fbaf3b7d4ae99c256604ce1a489b1f1f6d 0.1s done\n#10 exporting manifest list sha256:40c69c01856a8c7984dc3ae196c7574c361d665d4bdf81a8d945d9e6aa4b12bf\n#10 exporting manifest list sha256:40c69c01856a8c7984dc3ae196c7574c361d665d4bdf81a8d945d9e6aa4b12bf 0.0s done\n#10 naming to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_5_bb820425:latest done\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_5_bb820425:latest\n#10 unpacking to docker.io/library/b87ffb502890909aea2eb449643d5bc7_trial_5_bb820425:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/x1z4hw6swfifn78siuny8gvdf\n",
+        "time_sec": 2.49
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pytrends.pyGTrends import pyGTrends\nModuleNotFoundError: No module named 'pytrends'\n",
+        "time_sec": 1.57
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 88.11,
+  "metrics": {
+    "total_attempts": 5,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 88.11,
+    "avg_build_time_sec": 4.94,
+    "avg_run_time_sec": 1.44,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 5
+    }
+  }
+}

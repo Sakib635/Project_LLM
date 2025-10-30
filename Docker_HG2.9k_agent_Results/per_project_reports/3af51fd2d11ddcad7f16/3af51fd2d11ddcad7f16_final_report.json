@@ -1,0 +1,38 @@
+{
+  "project": "3af51fd2d11ddcad7f16",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T06:41:25Z",
+      "image_tag": "3af51fd2d11ddcad7f16_trial_1_6a5782e3",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "or time<3.0.0,>=2.7.0\n#9 1.605 \n#9 1.605 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.605 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.383 Collecting psutil<6.0.0,>=5.0.0 (from -r /app/requirements.txt (line 1))\n1.488   Downloading psutil-5.9.8-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)\n1.534 ERROR: Could not find a version that satisfies the requirement time<3.0.0,>=2.7.0 (from versions: none)\n1.534 ERROR: No matching distribution found for time<3.0.0,>=2.7.0\n1.605 \n1.605 [notice] A new release of pip is available: 24.0 -> 25.3\n1.605 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/krv8x4d3tu5ozvs0iuncsi1hp\n",
+        "time_sec": 2.61
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 15.39,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 15.39,
+    "avg_build_time_sec": 2.61,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

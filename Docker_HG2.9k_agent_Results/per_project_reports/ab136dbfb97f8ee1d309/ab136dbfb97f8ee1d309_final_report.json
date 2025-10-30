@@ -1,0 +1,71 @@
+{
+  "project": "ab136dbfb97f8ee1d309",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:43:50Z",
+      "image_tag": "ab136dbfb97f8ee1d309_trial_1_f94bcf2a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 7.62
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.core.conf import settings\nModuleNotFoundError: No module named 'django.core.conf'\n",
+        "time_sec": 1.27
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "Adding the django package to the requirements.txt file will allow the program to use it."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 1.0,
+          "notes": [
+            "Adding the django package to the requirements.txt file will allow the program to use it."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:44:08Z",
+      "image_tag": "ab136dbfb97f8ee1d309_trial_2_7317a2b0",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 738B done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:0dfa4a75a780c5985cbfb347367e5a91e556e3244b5081ed36a8a9cd56f5d462 0.0s done\n#10 exporting config sha256:3635c44a8342fcedc502e805b413eb00d5defba94c4bf73852eb378d87731a58 0.0s done\n#10 exporting attestation manifest sha256:7f288c7d938bef3aa90f0c00da5561526526090946d8cb6c6e99407243892cbb\n#10 exporting attestation manifest sha256:7f288c7d938bef3aa90f0c00da5561526526090946d8cb6c6e99407243892cbb 0.1s done\n#10 exporting manifest list sha256:8b6adaae310e4561ff111ac9dc514bf7e317751a145a5fb3fd0ab9301e6f12b9 0.0s done\n#10 naming to docker.io/library/ab136dbfb97f8ee1d309_trial_2_7317a2b0:latest done\n#10 unpacking to docker.io/library/ab136dbfb97f8ee1d309_trial_2_7317a2b0:latest\n#10 unpacking to docker.io/library/ab136dbfb97f8ee1d309_trial_2_7317a2b0:latest 1.1s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7sva69hcestfw91a6ibbtyhp1\n",
+        "time_sec": 2.32
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.core.conf import settings\nModuleNotFoundError: No module named 'django.core.conf'\n",
+        "time_sec": 1.23
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 34.94,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 34.94,
+    "avg_build_time_sec": 4.97,
+    "avg_run_time_sec": 1.25,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

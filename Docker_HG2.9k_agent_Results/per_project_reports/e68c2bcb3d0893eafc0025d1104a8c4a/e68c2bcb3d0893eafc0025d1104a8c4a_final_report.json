@@ -1,0 +1,41 @@
+{
+  "project": "e68c2bcb3d0893eafc0025d1104a8c4a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:36:06Z",
+      "image_tag": "e68c2bcb3d0893eafc0025d1104a8c4a_trial_1_b0747cd9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 19.42
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from pylab import *\nModuleNotFoundError: No module named 'pylab'\n",
+        "time_sec": 2.05
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fixes are possible due to the ModuleNotFoundError."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 29.13,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 29.13,
+    "avg_build_time_sec": 19.42,
+    "avg_run_time_sec": 2.05,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

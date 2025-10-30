@@ -1,0 +1,38 @@
+{
+  "project": "29c51b6997c3e3bff568",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:29:29Z",
+      "image_tag": "29c51b6997c3e3bff568_trial_1_86f988a9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.52
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    import matplotlib.pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+        "time_sec": 1.69
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 29.23,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 29.23,
+    "avg_build_time_sec": 16.52,
+    "avg_run_time_sec": 1.69,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

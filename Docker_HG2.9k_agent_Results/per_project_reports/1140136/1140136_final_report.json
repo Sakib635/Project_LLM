@@ -1,0 +1,71 @@
+{
+  "project": "1140136",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:26:11Z",
+      "image_tag": "1140136_trial_1_e8517835",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 8.04
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import urlparse\nModuleNotFoundError: No module named 'urlparse'\n",
+        "time_sec": 1.07
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "urllib3==1.26.7"
+        ],
+        "rationale": [
+          "The 'urlparse' module was removed in Python 3.x and replaced by the 'urllib.parse' module."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The 'urlparse' module was removed in Python 3.x and replaced by the 'urllib.parse' module."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:26:29Z",
+      "image_tag": "1140136_trial_2_d9713bfa",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 3.15kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b6d7c00facdcc618582e37f55370a8fd060f59808684d222fa3b8799d217eb83 0.0s done\n#10 exporting config sha256:3e2263e176b2c20d86793f1cbb1a4a164955968e66ba070e85a3fff28697529d 0.0s done\n#10 exporting attestation manifest sha256:b532cb6b66bcc7797ef6093aaf8c3416391888ae30071514ee93a3e3dde66d75\n#10 exporting attestation manifest sha256:b532cb6b66bcc7797ef6093aaf8c3416391888ae30071514ee93a3e3dde66d75 0.1s done\n#10 exporting manifest list sha256:c944a6606558d3b3af22df7e2b718788f629708965842a55994841e7160f3b22 0.0s done\n#10 naming to docker.io/library/1140136_trial_2_d9713bfa:latest done\n#10 unpacking to docker.io/library/1140136_trial_2_d9713bfa:latest\n#10 unpacking to docker.io/library/1140136_trial_2_d9713bfa:latest 1.1s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/m2gpu86e0mn2ftjt67ruyhs54\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import urlparse\nModuleNotFoundError: No module named 'urlparse'\n",
+        "time_sec": 1.18
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 43.76,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 43.76,
+    "avg_build_time_sec": 5.25,
+    "avg_run_time_sec": 1.12,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "project": "9481236",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:50:42Z",
+      "image_tag": "9481236_trial_1_bfad72b2",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "from versions: 1.1.0, 1.1.1, 1.1.3, 1.1.4, 1.1.5, 1.1.6, 1.1.7, 1.1.8, 1.1.9, 1.1.10, 1.1.12, 1.1.14, 1.1.15, 1.1.16, 1.1.17, 1.1.18, 1.2, 1.3, 1.4, 1.5, 1.5.1, 1.6, 1.6.1, 1.6.2, 1.6.3, 1.6.4, 2.0, 2.0.1, 2.1, 2.3, 2.3.1, 2.3.2, 2.3.4, 2.3.5, 2.3.6, 2.3.7, 2.3.8, 2.3.9, 2.3.11, 2.4.0, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.7, 2.4.8, 2.4.9, 2.5.1, 2.5.2, 2.5.3, 2.6.0, 2.6.1, 2.6.2, 2.7.1, 2.7.2, 2.7.3, 2.7.4, 2.7.5, 2.8, 2.9.0, 2.9.1, 2.9.2, 2.9.3, 2.9.4, 2.9.5, 2.10.0, 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.0.4, 3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.0.9, 3.0.10, 3.0.11, 3.0.12, 3.0.13, 3.0.14, 3.0.15, 3.0.16, 3.0.17, 3.0.18, 4.0.0, 4.0.1, 5.0.0, 5.0.1, 5.0.2, 5.0.3, 5.0.4, 5.1.0, 5.1.1, 5.2.0, 5.2.1, 5.2.4, 5.2.5, 5.2.6, 5.2.8, 5.3.0, 5.3.1, 5.3.2, 5.3.3, 5.3.4, 5.3.5, 5.3.6, 5.3.7, 5.4.0)\n1.426 ERROR: No matching distribution found for solution<x,>=y\n1.505 \n1.505 [notice] A new release of pip is available: 24.0 -> 25.3\n1.505 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/usy2lq3kbs26cyjh68sy4abrx\n",
+        "time_sec": 2.76
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 7.02,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 7.02,
+    "avg_build_time_sec": 2.76,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

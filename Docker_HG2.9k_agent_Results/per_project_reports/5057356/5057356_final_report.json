@@ -1,0 +1,71 @@
+{
+  "project": "5057356",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:16:16Z",
+      "image_tag": "5057356_trial_1_9bd924a2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.12
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from scene import *\nModuleNotFoundError: No module named 'scene'\n",
+        "time_sec": 1.24
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "scene>=1.2.0"
+        ],
+        "rationale": [
+          "Scene is a Python package for data analysis."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Scene is a Python package for data analysis."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T08:16:40Z",
+      "image_tag": "5057356_trial_2_49bbe86d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 896B done\n#6 DONE 0.0s\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [3/5] COPY snippet.py /app/snippet.py\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:44ee03aa5093587eca7b34370529effdc96cd62c159a15b98598fae510b8aed1 0.0s done\n#11 exporting config sha256:230f6c034589e5af2b9d1ea34eb2601cb7441afd0ce871e8e776e15bca142c29 0.0s done\n#11 exporting attestation manifest sha256:751d5de25a6bdc8bcff6cbbcc771f09546d803cafc11544393543d0d7bcd0ab8\n#11 exporting attestation manifest sha256:751d5de25a6bdc8bcff6cbbcc771f09546d803cafc11544393543d0d7bcd0ab8 0.1s done\n#11 exporting manifest list sha256:84b0378af2d7ae5e2981b8d50dc2d2913d8741bd502d4671d8a077c1152e9f34 0.0s done\n#11 naming to docker.io/library/5057356_trial_2_49bbe86d:latest\n#11 naming to docker.io/library/5057356_trial_2_49bbe86d:latest done\n#11 unpacking to docker.io/library/5057356_trial_2_49bbe86d:latest\n#11 unpacking to docker.io/library/5057356_trial_2_49bbe86d:latest 1.3s done\n#11 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/p33hm2i2zms6mytp566syme99\n",
+        "time_sec": 2.93
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from scene import *\nModuleNotFoundError: No module named 'scene'\n",
+        "time_sec": 1.34
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 49.96,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 49.96,
+    "avg_build_time_sec": 9.03,
+    "avg_run_time_sec": 1.29,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

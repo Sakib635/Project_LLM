@@ -1,0 +1,38 @@
+{
+  "project": "1483322",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:19:17Z",
+      "image_tag": "1483322_trial_1_9c062bb2",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.359 ERROR: Could not find a version that satisfies the requirement psycopg2<4.0,>=3.6 (from versions: 2.0.10, 2.0.11, 2.0.12, 2.0.13, 2.0.14, 2.2.0, 2.2.1, 2.2.2, 2.3.0, 2.3.1, 2.3.2, 2.4, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.5, 2.5.1, 2.5.2, 2.5.3, 2.5.4, 2.5.5, 2.6, 2.6.1, 2.6.2, 2.7, 2.7.1, 2.7.2, 2.7.3, 2.7.3.1, 2.7.3.2, 2.7.4, 2.7.5, 2.7.6, 2.7.6.1, 2.7.7, 2.8, 2.8.1, 2.8.2, 2.8.3, 2.8.4, 2.8.5, 2.8.6, 2.9, 2.9.1, 2.9.2, 2.9.3, 2.9.4, 2.9.5, 2.9.6, 2.9.7, 2.9.8, 2.9.9, 2.9.10, 2.9.11)\n1.359 ERROR: No matching distribution found for psycopg2<4.0,>=3.6\n1.450 \n1.450 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.450 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ft3m3k995heezm5luje4prvrt\n",
+        "time_sec": 2.95
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 12.52,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 12.52,
+    "avg_build_time_sec": 2.95,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

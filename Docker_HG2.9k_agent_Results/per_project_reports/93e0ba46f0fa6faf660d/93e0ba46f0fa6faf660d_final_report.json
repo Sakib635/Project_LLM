@@ -1,0 +1,100 @@
+{
+  "project": "93e0ba46f0fa6faf660d",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:46:23Z",
+      "image_tag": "93e0ba46f0fa6faf660d_trial_1_144f01d8",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "ing distribution found for mesos<0.24.0,>=0.23.0\n#9 2.125 \n#9 2.125 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 2.125 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.655 Collecting uuid<2.0,>=1.0\n1.723   Downloading uuid-1.30.tar.gz (5.8 kB)\n1.726   Preparing metadata (setup.py): started\n1.997   Preparing metadata (setup.py): finished with status 'done'\n2.036 ERROR: Could not find a version that satisfies the requirement mesos<0.24.0,>=0.23.0 (from versions: none)\n2.036 ERROR: No matching distribution found for mesos<0.24.0,>=0.23.0\n2.125 \n2.125 [notice] A new release of pip is available: 23.0.1 -> 25.3\n2.125 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/a9kib0t61kclrfjwfbj2v3h7p\n",
+        "time_sec": 3.76
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "mesos==0.23.0"
+        ],
+        "rationale": [
+          "Adding this requirement line ensures that the mesos library is installed with a specific version that is compatible with the other requirements."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Adding this requirement line ensures that the mesos library is installed with a specific version that is compatible with the other requirements."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:46:32Z",
+      "image_tag": "93e0ba46f0fa6faf660d_trial_2_6d995927",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "ing distribution found for mesos<0.24.0,>=0.23.0\n#9 1.773 \n#9 1.773 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.773 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.361 Collecting uuid<2.0,>=1.0\n1.408   Downloading uuid-1.30.tar.gz (5.8 kB)\n1.410   Preparing metadata (setup.py): started\n1.670   Preparing metadata (setup.py): finished with status 'done'\n1.689 ERROR: Could not find a version that satisfies the requirement mesos<0.24.0,>=0.23.0 (from versions: none)\n1.689 ERROR: No matching distribution found for mesos<0.24.0,>=0.23.0\n1.773 \n1.773 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.773 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yvjepydtsh8d2wvfw6ceafemg\n",
+        "time_sec": 2.87
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "mesos==0.23.0"
+        ],
+        "rationale": "This fix is highly likely to resolve the issue as it is a known version of Mesos that has been used in similar cases.",
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": "This fix is highly likely to resolve the issue as it is a known version of Mesos that has been used in similar cases."
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T13:46:40Z",
+      "image_tag": "93e0ba46f0fa6faf660d_trial_3_9720074e",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "ing distribution found for mesos<0.24.0,>=0.23.0\n#9 1.707 \n#9 1.707 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.707 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.285 Collecting uuid<2.0,>=1.0\n1.337   Downloading uuid-1.30.tar.gz (5.8 kB)\n1.340   Preparing metadata (setup.py): started\n1.591   Preparing metadata (setup.py): finished with status 'done'\n1.609 ERROR: Could not find a version that satisfies the requirement mesos<0.24.0,>=0.23.0 (from versions: none)\n1.609 ERROR: No matching distribution found for mesos<0.24.0,>=0.23.0\n1.707 \n1.707 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.707 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/szc6uob6wkh8k2khiuk9f2hlb\n",
+        "time_sec": 2.78
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 32.46,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 32.46,
+    "avg_build_time_sec": 3.14,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

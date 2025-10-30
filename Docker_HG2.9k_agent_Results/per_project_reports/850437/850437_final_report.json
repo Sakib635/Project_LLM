@@ -1,0 +1,137 @@
+{
+  "project": "850437",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:58:12Z",
+      "image_tag": "850437_trial_1_a2d93862",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.89
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 72, in <module>\n    import pylab as pl\nModuleNotFoundError: No module named 'pylab'\n",
+        "time_sec": 1.75
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pylab>=1.2.0"
+        ],
+        "rationale": [
+          "pylab is a popular Python visualization library and is likely to be included in the Anaconda distribution."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "pylab is a popular Python visualization library and is likely to be included in the Anaconda distribution."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T12:58:39Z",
+      "image_tag": "850437_trial_2_e56fe6a3",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "cker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.76kB done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:6dfd8c353eaa4af744071bf8999fe4d0c42822b1e432d827ee8984ebbd3ad894 0.0s done\n#10 exporting config sha256:ac4cce6dbd308d522b1565a0de89f33b859805f44e479785967785e60023e1a1\n#10 exporting config sha256:ac4cce6dbd308d522b1565a0de89f33b859805f44e479785967785e60023e1a1 done\n#10 exporting attestation manifest sha256:75f26bf78f6ccbd11e47213ab0b6374cecb77cb5c41493fdbe61d4ba6cd77ab7 0.0s done\n#10 exporting manifest list sha256:e19236ef2e9d78987ddea80c219488670a71e800cbe569f9f69d17673b9f6917\n#10 exporting manifest list sha256:e19236ef2e9d78987ddea80c219488670a71e800cbe569f9f69d17673b9f6917 0.0s done\n#10 naming to docker.io/library/850437_trial_2_e56fe6a3:latest done\n#10 unpacking to docker.io/library/850437_trial_2_e56fe6a3:latest\n#10 unpacking to docker.io/library/850437_trial_2_e56fe6a3:latest 1.4s done\n#10 DONE 1.6s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lr3l8f2koqybxybrzyvi0ac1a\n",
+        "time_sec": 3.0
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 72, in <module>\n    import pylab as pl\nModuleNotFoundError: No module named 'pylab'\n",
+        "time_sec": 1.67
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy==1.14.0"
+        ],
+        "rationale": [
+          "This version of numpy is compatible with the current environment."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This version of numpy is compatible with the current environment."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T12:58:55Z",
+      "image_tag": "850437_trial_3_a9247815",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.76kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:6dfd8c353eaa4af744071bf8999fe4d0c42822b1e432d827ee8984ebbd3ad894 0.0s done\n#10 exporting config sha256:ac4cce6dbd308d522b1565a0de89f33b859805f44e479785967785e60023e1a1 0.0s done\n#10 exporting attestation manifest sha256:b1064aba1936d4b16e66e89f354b1a7f66adb28949401474f9bc2ea2b2e06442\n#10 exporting attestation manifest sha256:b1064aba1936d4b16e66e89f354b1a7f66adb28949401474f9bc2ea2b2e06442 0.1s done\n#10 exporting manifest list sha256:39c2beab410ef1dd19f782a0c1df936ee918224f3b23b5e41995fdf0d97ff139 0.0s done\n#10 naming to docker.io/library/850437_trial_3_a9247815:latest\n#10 naming to docker.io/library/850437_trial_3_a9247815:latest done\n#10 unpacking to docker.io/library/850437_trial_3_a9247815:latest\n#10 unpacking to docker.io/library/850437_trial_3_a9247815:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rn3nfhhx8077x0kjz25psuw65\n",
+        "time_sec": 2.51
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 72, in <module>\n    import pylab as pl\nModuleNotFoundError: No module named 'pylab'\n",
+        "time_sec": 1.73
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pylab"
+        ],
+        "rationale": [
+          "pylab is not a valid Python package, but it may be what you meant to install."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.2,
+          "notes": [
+            "pylab is not a valid Python package, but it may be what you meant to install."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T12:59:08Z",
+      "image_tag": "850437_trial_4_ce1b3155",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "oad .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 2.76kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:6dfd8c353eaa4af744071bf8999fe4d0c42822b1e432d827ee8984ebbd3ad894 0.0s done\n#10 exporting config sha256:ac4cce6dbd308d522b1565a0de89f33b859805f44e479785967785e60023e1a1 0.0s done\n#10 exporting attestation manifest sha256:1d010b06a97f3aefbc0688631e6b6cab4f9468dedbb98063dabeff9d295710e1\n#10 exporting attestation manifest sha256:1d010b06a97f3aefbc0688631e6b6cab4f9468dedbb98063dabeff9d295710e1 0.1s done\n#10 exporting manifest list sha256:bf8671b3a2e39728bc506e722b9836729959accc3c486f81f3f82991e3d3a5ba 0.0s done\n#10 naming to docker.io/library/850437_trial_4_ce1b3155:latest done\n#10 unpacking to docker.io/library/850437_trial_4_ce1b3155:latest\n#10 unpacking to docker.io/library/850437_trial_4_ce1b3155:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kf2b1yvjylpshgkuc3imdop8s\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 72, in <module>\n    import pylab as pl\nModuleNotFoundError: No module named 'pylab'\n",
+        "time_sec": 1.84
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 71.55,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 71.55,
+    "avg_build_time_sec": 5.97,
+    "avg_run_time_sec": 1.75,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

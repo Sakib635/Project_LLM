@@ -1,0 +1,41 @@
+{
+  "project": "7720207",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:13:18Z",
+      "image_tag": "7720207_trial_1_4a9a08fa",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "sions: none)\n#9 1.542 ERROR: No matching distribution found for github.Gist<2.0.0,>=1.2.0\n#9 1.619 \n#9 1.619 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.619 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.336 Collecting github<2.0.0,>=1.2.0 (from -r /app/requirements.txt (line 1))\n1.444   Downloading github-1.2.7-py3-none-any.whl.metadata (1.7 kB)\n1.542 ERROR: Could not find a version that satisfies the requirement github.Gist<2.0.0,>=1.2.0 (from versions: none)\n1.542 ERROR: No matching distribution found for github.Gist<2.0.0,>=1.2.0\n1.619 \n1.619 [notice] A new release of pip is available: 24.0 -> 25.3\n1.619 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/q7i3lupd43gf473rpicjn9y79\n",
+        "time_sec": 2.86
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No candidate fixes found."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 4.9,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 4.9,
+    "avg_build_time_sec": 2.86,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

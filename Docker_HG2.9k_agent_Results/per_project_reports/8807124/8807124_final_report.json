@@ -1,0 +1,71 @@
+{
+  "project": "8807124",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:09:28Z",
+      "image_tag": "8807124_trial_1_fe1384d5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 9.08
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n",
+        "time_sec": 1.22
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pillow>=6.2.0"
+        ],
+        "rationale": [
+          "PIL has been renamed to Pillow"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "PIL has been renamed to Pillow"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:09:47Z",
+      "image_tag": "8807124_trial_2_4073bf19",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 7.69kB done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:355887a2c575e0b6589e4dace64f787cd58745d90337b042aa258fcea1443498 0.0s done\n#10 exporting config sha256:dea9ee52afc85987fb13d81c1087a62a048a091fa4082507cac66cd790c3f3f0 0.0s done\n#10 exporting attestation manifest sha256:d386f42bd3d36bae6ee78b8536fb97a43d99ebdc3057ffc42bdd2db7e3975884\n#10 exporting attestation manifest sha256:d386f42bd3d36bae6ee78b8536fb97a43d99ebdc3057ffc42bdd2db7e3975884 0.1s done\n#10 exporting manifest list sha256:3ec0551e7449ed1df009448678da048d0b6caeb24ad1e6c7ae549ea45f695e0c 0.0s done\n#10 naming to docker.io/library/8807124_trial_2_4073bf19:latest done\n#10 unpacking to docker.io/library/8807124_trial_2_4073bf19:latest\n#10 unpacking to docker.io/library/8807124_trial_2_4073bf19:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8h5rc5u3rq8mhefxgwqgujb7e\n",
+        "time_sec": 1.74
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n",
+        "time_sec": 1.24
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 29.46,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 29.46,
+    "avg_build_time_sec": 5.41,
+    "avg_run_time_sec": 1.23,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

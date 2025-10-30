@@ -1,0 +1,67 @@
+{
+  "project": "3295631",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T06:00:12Z",
+      "image_tag": "3295631_trial_1_f2ec5935",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "pp/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.440 ERROR: Could not find a version that satisfies the requirement cv2<5.0,>=4.1 (from versions: none)\n#9 1.440 ERROR: No matching distribution found for cv2<5.0,>=4.1\n#9 1.528 \n#9 1.528 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.528 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.440 ERROR: Could not find a version that satisfies the requirement cv2<5.0,>=4.1 (from versions: none)\n1.440 ERROR: No matching distribution found for cv2<5.0,>=4.1\n1.528 \n1.528 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.528 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/qqhp3s5p1l9hy0gzensos5x1w\n",
+        "time_sec": 2.79
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "cv2==4.1"
+        ],
+        "rationale": "The version range for cv2 is too wide, and it's not possible to find a version that satisfies the requirement within the specified range.",
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": "The version range for cv2 is too wide, and it's not possible to find a version that satisfies the requirement within the specified range."
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T06:00:19Z",
+      "image_tag": "3295631_trial_2_2e0a3a5e",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "pp/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.370 ERROR: Could not find a version that satisfies the requirement cv2<5.0,>=4.1 (from versions: none)\n#9 1.370 ERROR: No matching distribution found for cv2<5.0,>=4.1\n#9 1.465 \n#9 1.465 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.465 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.370 ERROR: Could not find a version that satisfies the requirement cv2<5.0,>=4.1 (from versions: none)\n1.370 ERROR: No matching distribution found for cv2<5.0,>=4.1\n1.465 \n1.465 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.465 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/sbnqtl2zcf8g1b50bonmm0pg7\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 15.37,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 15.37,
+    "avg_build_time_sec": 2.63,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

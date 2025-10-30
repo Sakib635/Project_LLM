@@ -1,0 +1,104 @@
+{
+  "project": "a0a5dd7bfcaac3d3e9c18e5ea1080b95",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:19:15Z",
+      "image_tag": "a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_1_bfef44d5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.44
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    from pandas_datareader import data as web\nModuleNotFoundError: No module named 'pandas_datareader'\n",
+        "time_sec": 1.72
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas-datareader>=1.2.0"
+        ],
+        "rationale": [
+          "Adding the 'pandas-datareader' package to the requirements file may resolve the issue with the 'ModuleNotFoundError: No module named 'pandas_datareader''."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.75,
+          "notes": [
+            "Adding the 'pandas-datareader' package to the requirements file may resolve the issue with the 'ModuleNotFoundError: No module named 'pandas_datareader''."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:19:40Z",
+      "image_tag": "a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_2_2d7d1dc2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 1.60kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:f9ada6fea8f5853ee36c4aa6dc3e460c012ad77b1f1b11a2f6cee473356a91c4 0.0s done\n#10 exporting config sha256:c91ef26516cd216b311daef0246230a05bd1eb4bd995c6cd4b301f83ddb70e0a 0.0s done\n#10 exporting attestation manifest sha256:5bcf3487c05734ae66333c89798d48a12bfc2f05be86939506438ff2300f0548\n#10 exporting attestation manifest sha256:5bcf3487c05734ae66333c89798d48a12bfc2f05be86939506438ff2300f0548 0.1s done\n#10 exporting manifest list sha256:ec6bf99ee197a0f990dc7e9931479926b206aedadb0d706c5db86d95e73eef4a 0.0s done\n#10 naming to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_2_2d7d1dc2:latest done\n#10 unpacking to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_2_2d7d1dc2:latest\n#10 unpacking to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_2_2d7d1dc2:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4bmaakj2bvpxs5ubt4yc8mltv\n",
+        "time_sec": 2.31
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    from pandas_datareader import data as web\nModuleNotFoundError: No module named 'pandas_datareader'\n",
+        "time_sec": 1.78
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas-datareader>=1.2.0"
+        ],
+        "rationale": [
+          "The module 'pandas_datareader' is not present in the requirements file, but it is required by the python code in 'snippet.py'. Adding this requirement line should fix the issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The module 'pandas_datareader' is not present in the requirements file, but it is required by the python code in 'snippet.py'. Adding this requirement line should fix the issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T14:19:54Z",
+      "image_tag": "a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_3_5bdbc9bf",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 1.60kB done\n#5 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:f9ada6fea8f5853ee36c4aa6dc3e460c012ad77b1f1b11a2f6cee473356a91c4 0.0s done\n#10 exporting config sha256:c91ef26516cd216b311daef0246230a05bd1eb4bd995c6cd4b301f83ddb70e0a 0.0s done\n#10 exporting attestation manifest sha256:d5695269de3f78b60d5d7b447ec040f37174677bc5fa7f72ed565446b243061a 0.1s done\n#10 exporting manifest list sha256:47a116444d03d001ceae075333ba69f3a9da50d91910ab68299db2dbfb4ef519\n#10 exporting manifest list sha256:47a116444d03d001ceae075333ba69f3a9da50d91910ab68299db2dbfb4ef519 0.0s done\n#10 naming to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_3_5bdbc9bf:latest done\n#10 unpacking to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_3_5bdbc9bf:latest\n#10 unpacking to docker.io/library/a0a5dd7bfcaac3d3e9c18e5ea1080b95_trial_3_5bdbc9bf:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rs2yi74ujw76qmk6d51y88gif\n",
+        "time_sec": 2.37
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    from pandas_datareader import data as web\nModuleNotFoundError: No module named 'pandas_datareader'\n",
+        "time_sec": 1.82
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 55.0,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 55.0,
+    "avg_build_time_sec": 6.37,
+    "avg_run_time_sec": 1.77,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

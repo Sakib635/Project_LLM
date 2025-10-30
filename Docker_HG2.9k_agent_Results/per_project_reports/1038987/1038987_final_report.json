@@ -1,0 +1,41 @@
+{
+  "project": "1038987",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:06:01Z",
+      "image_tag": "1038987_trial_1_5561543d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 13.97
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from django.conf import settings\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.25
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": ""
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 21.12,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 21.12,
+    "avg_build_time_sec": 13.97,
+    "avg_run_time_sec": 1.25,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

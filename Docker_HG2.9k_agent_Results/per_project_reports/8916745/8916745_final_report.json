@@ -1,0 +1,38 @@
+{
+  "project": "8916745",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:22:38Z",
+      "image_tag": "8916745_trial_1_3f52852e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 25.37
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from flask import Flask, Response, request, abort, render_template_string, send_from_directory\nModuleNotFoundError: No module named 'flask'\n",
+        "time_sec": 1.55
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 40.92,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 40.92,
+    "avg_build_time_sec": 25.37,
+    "avg_run_time_sec": 1.55,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

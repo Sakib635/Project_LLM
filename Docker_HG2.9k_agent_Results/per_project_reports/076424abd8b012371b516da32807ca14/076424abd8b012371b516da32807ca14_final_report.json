@@ -1,0 +1,74 @@
+{
+  "project": "076424abd8b012371b516da32807ca14",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T01:41:49Z",
+      "image_tag": "076424abd8b012371b516da32807ca14_trial_1_9a2a60f2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 13.16
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from airflow import DAG\nModuleNotFoundError: No module named 'airflow'\n",
+        "time_sec": 1.09
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "airflow>=2.0.0"
+        ],
+        "rationale": [
+          "This fix is based on the assumption that Airflow 2.0.0 is a more recent version than 1.2.0."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This fix is based on the assumption that Airflow 2.0.0 is a more recent version than 1.2.0."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T01:42:11Z",
+      "image_tag": "076424abd8b012371b516da32807ca14_trial_2_11daa1ea",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 4.34kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:c8c11c2eff76c0ea8650f7c203c428e14862b320d57fd1fb55ae7a28389fd5d9 done\n#10 exporting config sha256:945f08eae8a5452d429b6393631f7e7be06a27f2a28ebc4a048474a9898f783b done\n#10 exporting attestation manifest sha256:5e935e39bcb5ef9d1566682787b7bf703d9ad203c40fc1dcc936e2dbb64f7141 0.0s done\n#10 exporting manifest list sha256:2d21b5144422542a869ab0b85217a2727fc8b5d9a15fa974d699550441b0f225 0.0s done\n#10 naming to docker.io/library/076424abd8b012371b516da32807ca14_trial_2_11daa1ea:latest done\n#10 unpacking to docker.io/library/076424abd8b012371b516da32807ca14_trial_2_11daa1ea:latest\n#10 unpacking to docker.io/library/076424abd8b012371b516da32807ca14_trial_2_11daa1ea:latest 1.1s done\n#10 DONE 1.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/zngeszi4y12xxof0ab1jitja3\n",
+        "time_sec": 2.63
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from airflow import DAG\nModuleNotFoundError: No module named 'airflow'\n",
+        "time_sec": 1.25
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "Note: The confidence level is set to 0.5 as it is based on a heuristic analysis of the input requirements file and build output."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 36.04,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 36.04,
+    "avg_build_time_sec": 7.89,
+    "avg_run_time_sec": 1.17,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

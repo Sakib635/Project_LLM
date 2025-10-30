@@ -1,0 +1,104 @@
+{
+  "project": "1059647",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:13:13Z",
+      "image_tag": "1059647_trial_1_5b2fc177",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.205 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n#9 1.205 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n#9 1.276 \n#9 1.276 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.276 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.205 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n1.205 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n1.276 \n1.276 [notice] A new release of pip is available: 24.0 -> 25.3\n1.276 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9uv1v4bvic4ynge257o0idxic\n",
+        "time_sec": 2.69
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ndb==1.2.0"
+        ],
+        "rationale": [
+          "ndb version is not compatible with the current requirements"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.85,
+          "notes": [
+            "ndb version is not compatible with the current requirements"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:13:19Z",
+      "image_tag": "1059647_trial_2_c9b441c7",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.174 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n#9 1.175 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n#9 1.249 \n#9 1.249 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.249 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.174 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n1.175 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n1.249 \n1.249 [notice] A new release of pip is available: 24.0 -> 25.3\n1.249 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kgk90xqr8tmn7lzqlwshwfh23\n",
+        "time_sec": 2.48
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "google.appengine.api>=1.5.0"
+        ],
+        "rationale": [
+          "This version of the package is known to work with Python 3.11 and it's a good candidate for this project."
+        ],
+        "meta": {
+          "chosen_candidate": 4,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This version of the package is known to work with Python 3.11 and it's a good candidate for this project."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T02:13:46Z",
+      "image_tag": "1059647_trial_3_7bee113c",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.143 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n#9 1.143 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n#9 1.211 \n#9 1.211 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.211 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.143 ERROR: Could not find a version that satisfies the requirement ndb<2.0.0,>=1.2.0 (from versions: 1.0.13b1)\n1.143 ERROR: No matching distribution found for ndb<2.0.0,>=1.2.0\n1.211 \n1.211 [notice] A new release of pip is available: 24.0 -> 25.3\n1.211 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hwhqyh7h8vru3r5r0fi55qxk7\n",
+        "time_sec": 2.35
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 41.44,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 41.44,
+    "avg_build_time_sec": 2.51,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "project": "1486762",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:19:29Z",
+      "image_tag": "1486762_trial_1_0b9c2192",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " (from versions: none)\n#9 1.316 ERROR: No matching distribution found for urllib<0.2.0,>=0.0.1\n#9 1.391 \n#9 1.391 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.391 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.240 Collecting requests<3.0.0,>=2.0.0 (from -r /app/requirements.txt (line 1))\n1.284   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)\n1.315 ERROR: Could not find a version that satisfies the requirement urllib<0.2.0,>=0.0.1 (from versions: none)\n1.316 ERROR: No matching distribution found for urllib<0.2.0,>=0.0.1\n1.391 \n1.391 [notice] A new release of pip is available: 24.0 -> 25.3\n1.391 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/2uf9ie5z67xc049lqc1jzwzll\n",
+        "time_sec": 2.77
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 18.68,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 18.68,
+    "avg_build_time_sec": 2.77,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

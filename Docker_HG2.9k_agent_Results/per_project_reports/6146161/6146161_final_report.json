@@ -1,0 +1,71 @@
+{
+  "project": "6146161",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T09:59:48Z",
+      "image_tag": "6146161_trial_1_6170e4ea",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.421 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.10 (from versions: none)\n#9 1.421 ERROR: No matching distribution found for PyQt4<5.0,>=4.10\n#9 1.519 \n#9 1.519 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.519 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.421 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.10 (from versions: none)\n1.421 ERROR: No matching distribution found for PyQt4<5.0,>=4.10\n1.519 \n1.519 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.519 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7o3mlnhikrhc4owb9f3jne32u\n",
+        "time_sec": 2.89
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "PyQt4>=4.10,<5.0"
+        ],
+        "rationale": [
+          "PyQt4 is not available in the current version of Python."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 1.0,
+          "notes": [
+            "PyQt4 is not available in the current version of Python."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T09:59:58Z",
+      "image_tag": "6146161_trial_2_d42e1173",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.281 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.10 (from versions: none)\n#9 1.281 ERROR: No matching distribution found for PyQt4<5.0,>=4.10\n#9 1.370 \n#9 1.370 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.370 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.281 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.10 (from versions: none)\n1.281 ERROR: No matching distribution found for PyQt4<5.0,>=4.10\n1.370 \n1.370 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.370 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/iukqrfecq4be2se8d0pxuy407\n",
+        "time_sec": 2.4
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 17.59,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 17.59,
+    "avg_build_time_sec": 2.65,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

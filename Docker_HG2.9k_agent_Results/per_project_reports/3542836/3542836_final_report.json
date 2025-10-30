@@ -1,0 +1,105 @@
+{
+  "project": "3542836",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T06:10:34Z",
+      "image_tag": "3542836_trial_1_c867addc",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "hen pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 1.710 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n#10 1.710 ERROR: No matching distribution found for sublime<5.0,>=4.0\n#10 1.809 \n#10 1.809 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#10 1.809 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.710 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n1.710 ERROR: No matching distribution found for sublime<5.0,>=4.0\n1.809 \n1.809 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.809 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wk12gu1uloky8fqc46nybozef\n",
+        "time_sec": 3.01
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "sublime-plugin>=2.0,<3.0"
+        ],
+        "rationale": [
+          "This version constraint is more restrictive than the current requirements file, and it is likely that adding this package will resolve the issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This version constraint is more restrictive than the current requirements file, and it is likely that adding this package will resolve the issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T06:10:48Z",
+      "image_tag": "3542836_trial_2_cb621f8c",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "t ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.349 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n#9 1.349 ERROR: No matching distribution found for sublime<5.0,>=4.0\n#9 1.434 \n#9 1.434 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.434 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.349 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n1.349 ERROR: No matching distribution found for sublime<5.0,>=4.0\n1.434 \n1.434 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.434 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/h70ecxgg5bvqguw2waooa6w2e\n",
+        "time_sec": 2.22
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "sublime>=4.0,<5.0",
+          "sublime-plugin>=2.0,<3.0"
+        ],
+        "rationale": [
+          "This fix is based on the fact that sublime and sublime-plugin are both part of the Sublime Text suite."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This fix is based on the fact that sublime and sublime-plugin are both part of the Sublime Text suite."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T06:10:55Z",
+      "image_tag": "3542836_trial_3_0e36ea9e",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "t ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.333 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n#9 1.333 ERROR: No matching distribution found for sublime<5.0,>=4.0\n#9 1.420 \n#9 1.420 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.420 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.333 ERROR: Could not find a version that satisfies the requirement sublime<5.0,>=4.0 (from versions: 0.1.0)\n1.333 ERROR: No matching distribution found for sublime<5.0,>=4.0\n1.420 \n1.420 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.420 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lp9astmh3gy3ym1eiov5emf7y\n",
+        "time_sec": 2.31
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 29.62,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 29.62,
+    "avg_build_time_sec": 2.51,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

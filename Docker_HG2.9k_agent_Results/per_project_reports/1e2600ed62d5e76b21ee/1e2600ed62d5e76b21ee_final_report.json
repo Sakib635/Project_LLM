@@ -1,0 +1,71 @@
+{
+  "project": "1e2600ed62d5e76b21ee",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:10:53Z",
+      "image_tag": "1e2600ed62d5e76b21ee_trial_1_02b19e39",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 27.34
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    from ggplot import *\nModuleNotFoundError: No module named 'ggplot'\n",
+        "time_sec": 1.8
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ggplot"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T04:11:29Z",
+      "image_tag": "1e2600ed62d5e76b21ee_trial_2_319d66a6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 2.06kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:cf7437a89c652176293d76f882c8605d020ff884722cf4da3265e882bdffa70f 0.0s done\n#10 exporting config sha256:bb0e7161b7ba13c8d5bbbc62699c2eb35d8d7ff15f5250b631f2ad780e9f8428 0.0s done\n#10 exporting attestation manifest sha256:9bab1ffa203a1d1f742e12d09c4a80b9e7d8cc8fb32c136b0c7bf1f2cb975eb6\n#10 exporting attestation manifest sha256:9bab1ffa203a1d1f742e12d09c4a80b9e7d8cc8fb32c136b0c7bf1f2cb975eb6 0.1s done\n#10 exporting manifest list sha256:a2d85da81bc5e1dbfda2708d0f550f69d7e30bf0a6721c6e620da1a587f0697f 0.0s done\n#10 naming to docker.io/library/1e2600ed62d5e76b21ee_trial_2_319d66a6:latest done\n#10 unpacking to docker.io/library/1e2600ed62d5e76b21ee_trial_2_319d66a6:latest\n#10 unpacking to docker.io/library/1e2600ed62d5e76b21ee_trial_2_319d66a6:latest 2.1s done\n#10 DONE 2.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/l9nee47lvs6rgeucjypc363n9\n",
+        "time_sec": 3.5
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    from ggplot import *\nModuleNotFoundError: No module named 'ggplot'\n",
+        "time_sec": 1.89
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 55.39,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 55.39,
+    "avg_build_time_sec": 15.42,
+    "avg_run_time_sec": 1.84,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

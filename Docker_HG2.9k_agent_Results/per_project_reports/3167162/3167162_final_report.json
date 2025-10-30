@@ -1,0 +1,74 @@
+{
+  "project": "3167162",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:53:38Z",
+      "image_tag": "3167162_trial_1_a1199881",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.370 ERROR: Could not find a version that satisfies the requirement hou<2.0,>=1.0 (from versions: 0.1.0)\n#9 1.370 ERROR: No matching distribution found for hou<2.0,>=1.0\n#9 1.461 \n#9 1.461 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.461 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.370 ERROR: Could not find a version that satisfies the requirement hou<2.0,>=1.0 (from versions: 0.1.0)\n1.370 ERROR: No matching distribution found for hou<2.0,>=1.0\n1.461 \n1.461 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.461 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9x594ehy0mpywrgxns83qawq4\n",
+        "time_sec": 2.67
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "hou>=1.0,<2.0"
+        ],
+        "rationale": [
+          "The version range for hou is restricted to >=1.0, <2.0 in the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.85,
+          "notes": [
+            "The version range for hou is restricted to >=1.0, <2.0 in the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:53:46Z",
+      "image_tag": "3167162_trial_2_da43e0b2",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.357 ERROR: Could not find a version that satisfies the requirement hou<2.0,>=1.0 (from versions: 0.1.0)\n#9 1.357 ERROR: No matching distribution found for hou<2.0,>=1.0\n#9 1.443 \n#9 1.443 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.443 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.357 ERROR: Could not find a version that satisfies the requirement hou<2.0,>=1.0 (from versions: 0.1.0)\n1.357 ERROR: No matching distribution found for hou<2.0,>=1.0\n1.443 \n1.443 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.443 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rz2hakt1m8wa3xzjdb9ep534t\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "The error message suggests that the version of the 'hou' package required by the Dockerfile (hou<2.0,>=1.0) is not available in the default PyPI repository. There are no conservative candidate fixes as the package is not available."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 12.45,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 12.45,
+    "avg_build_time_sec": 2.57,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

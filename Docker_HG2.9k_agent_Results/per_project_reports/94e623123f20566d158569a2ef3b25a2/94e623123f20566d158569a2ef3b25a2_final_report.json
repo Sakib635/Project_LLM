@@ -1,0 +1,138 @@
+{
+  "project": "94e623123f20566d158569a2ef3b25a2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:51:41Z",
+      "image_tag": "94e623123f20566d158569a2ef3b25a2_trial_1_4a748da6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.69
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 27, in <module>\n    from gi.repository import Gtk\nModuleNotFoundError: No module named 'gi'\n",
+        "time_sec": 1.48
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "gi==2.34.0"
+        ],
+        "rationale": [
+          "The module 'gi' is required by the application, and its version is not specified in the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The module 'gi' is required by the application, and its version is not specified in the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:52:07Z",
+      "image_tag": "94e623123f20566d158569a2ef3b25a2_trial_2_e144bba5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 6.12kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:47e1b93f8d24fce66e8c029e3fed1dc691302ffd631566b3a4ddba5e6f2766f3 0.0s done\n#10 exporting config sha256:920ab03a9d8d2f61f85a6ce37e7aa8aaf1af32eda0e6327b844334f3ed2cc237 0.0s done\n#10 exporting attestation manifest sha256:a0f03f44e7c0aa1ef81b59fb73b9614f7e179a2990317d66c0bcdf48781a1514\n#10 exporting attestation manifest sha256:a0f03f44e7c0aa1ef81b59fb73b9614f7e179a2990317d66c0bcdf48781a1514 0.1s done\n#10 exporting manifest list sha256:6dac6f5351e522ce141baab6dc0b4a3d9841a78b43828a118c53e4da9d409219 0.0s done\n#10 naming to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_2_e144bba5:latest done\n#10 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_2_e144bba5:latest\n#10 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_2_e144bba5:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/43szt5owb7kdd3thhbs4m2hgp\n",
+        "time_sec": 2.35
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 27, in <module>\n    from gi.repository import Gtk\nModuleNotFoundError: No module named 'gi'\n",
+        "time_sec": 1.32
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.17.0",
+          "numpy>=1.16.2"
+        ],
+        "rationale": [
+          "Pandas and Numpy are core dependencies of the Python ecosystem, and their versions have been used in many other projects."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Pandas and Numpy are core dependencies of the Python ecosystem, and their versions have been used in many other projects."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T13:52:22Z",
+      "image_tag": "94e623123f20566d158569a2ef3b25a2_trial_3_09b3fbf3",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "3f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 6.12kB done\n#6 DONE 0.0s\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [2/5] WORKDIR /app\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:47e1b93f8d24fce66e8c029e3fed1dc691302ffd631566b3a4ddba5e6f2766f3 0.0s done\n#11 exporting config sha256:920ab03a9d8d2f61f85a6ce37e7aa8aaf1af32eda0e6327b844334f3ed2cc237 0.0s done\n#11 exporting attestation manifest sha256:b14598f01699dc1ef5b8b30c8e085947058a7ebb8ff2ad23274fcb77b98a27d7\n#11 exporting attestation manifest sha256:b14598f01699dc1ef5b8b30c8e085947058a7ebb8ff2ad23274fcb77b98a27d7 0.1s done\n#11 exporting manifest list sha256:ebee7bfe54ab0e423ad6bc992598189a7c8bf54b65f9e4a06f44c5d21d3cfd4e 0.0s done\n#11 naming to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_3_09b3fbf3:latest\n#11 naming to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_3_09b3fbf3:latest done\n#11 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_3_09b3fbf3:latest\n#11 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_3_09b3fbf3:latest 1.3s done\n#11 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/1h4njhyss9zdkrlw4uvz7fmy5\n",
+        "time_sec": 2.67
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 27, in <module>\n    from gi.repository import Gtk\nModuleNotFoundError: No module named 'gi'\n",
+        "time_sec": 1.38
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy==1.16.2"
+        ],
+        "rationale": [
+          "This requirement is likely to fix the issue with the missing `gi` module."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "This requirement is likely to fix the issue with the missing `gi` module."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T13:52:37Z",
+      "image_tag": "94e623123f20566d158569a2ef3b25a2_trial_4_8603d34c",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 6.12kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:47e1b93f8d24fce66e8c029e3fed1dc691302ffd631566b3a4ddba5e6f2766f3 0.0s done\n#10 exporting config sha256:920ab03a9d8d2f61f85a6ce37e7aa8aaf1af32eda0e6327b844334f3ed2cc237 0.0s done\n#10 exporting attestation manifest sha256:457276f2fd0621828d4d165abe4185c04afb3fd693b066979008d86d466b27ea 0.0s done\n#10 exporting manifest list sha256:0478d493e02dc8a2035a9fec8f1f8871df051f88c50d31a6213472109f39ef29\n#10 exporting manifest list sha256:0478d493e02dc8a2035a9fec8f1f8871df051f88c50d31a6213472109f39ef29 0.0s done\n#10 naming to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_4_8603d34c:latest done\n#10 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_4_8603d34c:latest\n#10 unpacking to docker.io/library/94e623123f20566d158569a2ef3b25a2_trial_4_8603d34c:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/zhod1vvjnre7ziav07hulycid\n",
+        "time_sec": 2.36
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 27, in <module>\n    from gi.repository import Gtk\nModuleNotFoundError: No module named 'gi'\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 72.56,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 72.56,
+    "avg_build_time_sec": 5.77,
+    "avg_run_time_sec": 1.37,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

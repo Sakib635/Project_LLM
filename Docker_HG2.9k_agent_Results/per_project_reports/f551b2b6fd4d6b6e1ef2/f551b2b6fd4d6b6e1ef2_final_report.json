@@ -1,0 +1,71 @@
+{
+  "project": "f551b2b6fd4d6b6e1ef2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T17:21:56Z",
+      "image_tag": "f551b2b6fd4d6b6e1ef2_trial_1_3f88ec27",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.45
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/app/snippet.py:107: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  path.find(\"examples\") is -1 and path.find(\"extras\") is -1:\n/app/snippet.py:107: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  path.find(\"examples\") is -1 and path.find(\"extras\") is -1:\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    import ycm_core\nModuleNotFoundError: No module named 'ycm_core'\n",
+        "time_sec": 1.38
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ycm-core>=1.2.0"
+        ],
+        "rationale": [
+          "The error message suggests that the 'ycm_core' module is missing, which can be fixed by installing it."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The error message suggests that the 'ycm_core' module is missing, which can be fixed by installing it."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T17:22:21Z",
+      "image_tag": "f551b2b6fd4d6b6e1ef2_trial_2_95676786",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ontext\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 6.45kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:6417d9ac99a9d225c926cb4a3ea6fbdfb123f80c92fbc393fa8e9ba424c5026b 0.0s done\n#10 exporting config sha256:bbf36fdd669afeb10da910bd1a833a539a59beb1d674892e3ef764a65d0b3265 0.0s done\n#10 exporting attestation manifest sha256:4be998601554a5f4cd3e0d2048e733d42c8d276ad11afbe60dbc062d74a0a372\n#10 exporting attestation manifest sha256:4be998601554a5f4cd3e0d2048e733d42c8d276ad11afbe60dbc062d74a0a372 0.1s done\n#10 exporting manifest list sha256:d08bd42825e0cbb128d0272edc36c3bcd42ff776d9d381c32e5c3354a7e1187a 0.0s done\n#10 naming to docker.io/library/f551b2b6fd4d6b6e1ef2_trial_2_95676786:latest done\n#10 unpacking to docker.io/library/f551b2b6fd4d6b6e1ef2_trial_2_95676786:latest\n#10 unpacking to docker.io/library/f551b2b6fd4d6b6e1ef2_trial_2_95676786:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lxyv09qke16v43d5b8n49gd2u\n",
+        "time_sec": 2.48
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/app/snippet.py:107: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  path.find(\"examples\") is -1 and path.find(\"extras\") is -1:\n/app/snippet.py:107: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  path.find(\"examples\") is -1 and path.find(\"extras\") is -1:\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    import ycm_core\nModuleNotFoundError: No module named 'ycm_core'\n",
+        "time_sec": 1.45
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 45.32,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 45.32,
+    "avg_build_time_sec": 8.46,
+    "avg_run_time_sec": 1.42,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

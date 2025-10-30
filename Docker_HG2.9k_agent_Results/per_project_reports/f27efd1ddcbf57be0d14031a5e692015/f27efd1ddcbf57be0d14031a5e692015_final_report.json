@@ -1,0 +1,38 @@
+{
+  "project": "f27efd1ddcbf57be0d14031a5e692015",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T17:19:20Z",
+      "image_tag": "f27efd1ddcbf57be0d14031a5e692015_trial_1_10c63f51",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.87
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 29, in <module>\n    from AppKit import NSNib, NSApp, NSObject, NSLog, NSApplication, NSBundle\nModuleNotFoundError: No module named 'AppKit'\n",
+        "time_sec": 1.34
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 33.23,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 33.23,
+    "avg_build_time_sec": 15.87,
+    "avg_run_time_sec": 1.34,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

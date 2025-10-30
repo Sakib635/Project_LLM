@@ -1,0 +1,38 @@
+{
+  "project": "25d98841e6a82f30ae5cac24e9039856",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:44:42Z",
+      "image_tag": "25d98841e6a82f30ae5cac24e9039856_trial_1_947d9a83",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "2.5.30, 2023.2.7, 2024.8.26)\n#9 1.371 ERROR: No matching distribution found for pefile<2.0.0,>=1.2.0\n#9 1.448 \n#9 1.448 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.448 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.371 ERROR: Could not find a version that satisfies the requirement pefile<2.0.0,>=1.2.0 (from versions: 2016.3.28, 2017.8.1, 2017.9.3, 2017.11.5, 2018.8.8, 2019.4.14, 2019.4.18, 2021.5.13, 2021.5.24, 2021.9.2, 2021.9.3, 2022.5.30, 2023.2.7, 2024.8.26)\n1.371 ERROR: No matching distribution found for pefile<2.0.0,>=1.2.0\n1.448 \n1.448 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.448 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/s7ss2cyhqpxoo1pciz4htkvyp\n",
+        "time_sec": 2.9
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 16.86,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 16.86,
+    "avg_build_time_sec": 2.9,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

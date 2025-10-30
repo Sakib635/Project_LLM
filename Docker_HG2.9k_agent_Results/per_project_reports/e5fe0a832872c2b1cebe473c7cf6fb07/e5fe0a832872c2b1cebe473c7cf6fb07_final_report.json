@@ -1,0 +1,38 @@
+{
+  "project": "e5fe0a832872c2b1cebe473c7cf6fb07",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:32:17Z",
+      "image_tag": "e5fe0a832872c2b1cebe473c7cf6fb07_trial_1_3de85f44",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "ache-dir -r /app/requirements.txt; fi\n#10 1.814 ERROR: Could not find a version that satisfies the requirement GdaxStream<2.0.0,>=1.0.0 (from versions: none)\n#10 1.814 ERROR: No matching distribution found for GdaxStream<2.0.0,>=1.0.0\n#10 1.891 \n#10 1.891 [notice] A new release of pip is available: 24.0 -> 25.3\n#10 1.891 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.814 ERROR: Could not find a version that satisfies the requirement GdaxStream<2.0.0,>=1.0.0 (from versions: none)\n1.814 ERROR: No matching distribution found for GdaxStream<2.0.0,>=1.0.0\n1.891 \n1.891 [notice] A new release of pip is available: 24.0 -> 25.3\n1.891 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/w6n5a694c9r62nxh3k5tgfk0u\n",
+        "time_sec": 3.48
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 17.62,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 17.62,
+    "avg_build_time_sec": 3.48,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

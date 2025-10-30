@@ -1,0 +1,38 @@
+{
+  "project": "b3143dde185cecda7c1dee7ffbce5d2c",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:03:19Z",
+      "image_tag": "b3143dde185cecda7c1dee7ffbce5d2c_trial_1_6dd64ac9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.18
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 25, in <module>\n    import idaapi\nModuleNotFoundError: No module named 'idaapi'\n",
+        "time_sec": 1.35
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 25.29,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 25.29,
+    "avg_build_time_sec": 14.18,
+    "avg_run_time_sec": 1.35,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "project": "5022297",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:14:02Z",
+      "image_tag": "5022297_trial_1_a39b0663",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " distribution found for robot_brain>=0.1.0\n#9 1.889 \n#9 1.889 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.889 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.366 Collecting RPi.GPIO<1.0.0,>=0.7.0\n1.426   Downloading RPi.GPIO-0.7.1.tar.gz (29 kB)\n1.436   Preparing metadata (setup.py): started\n1.704   Preparing metadata (setup.py): finished with status 'done'\n1.798 ERROR: Could not find a version that satisfies the requirement robot_brain>=0.1.0 (from versions: none)\n1.798 ERROR: No matching distribution found for robot_brain>=0.1.0\n1.889 \n1.889 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.889 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/n53ns6usz6r1gt10ov41hityq\n",
+        "time_sec": 3.16
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 17.96,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 17.96,
+    "avg_build_time_sec": 3.16,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

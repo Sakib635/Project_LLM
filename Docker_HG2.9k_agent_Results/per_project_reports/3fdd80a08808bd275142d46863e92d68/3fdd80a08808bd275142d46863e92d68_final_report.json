@@ -1,0 +1,38 @@
+{
+  "project": "3fdd80a08808bd275142d46863e92d68",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T06:50:31Z",
+      "image_tag": "3fdd80a08808bd275142d46863e92d68_trial_1_9e03fb93",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 19.97
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Using TensorFlow backend.\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from keras.models import Sequential\n  File \"/usr/local/lib/python3.11/site-packages/keras/__init__.py\", line 2, in <module>\n    from . import backend\n  File \"/usr/local/lib/python3.11/site-packages/keras/backend/__init__.py\", line 67, in <module>\n    from .tensorflow_backend import *\n  File \"/usr/local/lib/python3.11/site-packages/keras/backend/tensorflow_backend.py\", line 1, in <module>\n    import tensorflow as tf\nModuleNotFoundError: No module named 'tensorflow'\n",
+        "time_sec": 1.45
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 36.9,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 36.9,
+    "avg_build_time_sec": 19.97,
+    "avg_run_time_sec": 1.45,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

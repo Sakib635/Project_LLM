@@ -1,0 +1,107 @@
+{
+  "project": "4076735",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T07:00:09Z",
+      "image_tag": "4076735_trial_1_6ae239ea",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 4.96
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 15, in <module>\n    import clipboard\nModuleNotFoundError: No module named 'clipboard'\n",
+        "time_sec": 1.25
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "clipboard>=2.18.0,<2.19.0"
+        ],
+        "rationale": [
+          "Installing the clipboard package may solve the ModuleNotFoundError issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Installing the clipboard package may solve the ModuleNotFoundError issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T07:00:23Z",
+      "image_tag": "4076735_trial_2_93edf56f",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "l] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 3.29kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:561b7b1724d8dfbe1e8c54a6c8f3efd5ebe62517bf09236ceeb9f5c73af91c4f 0.0s done\n#10 exporting config sha256:035819085af541509d583756027123c92f51efaf24af7c4f91c696b5f334d46e 0.0s done\n#10 exporting attestation manifest sha256:b064c50e0dd0da200685744c019a4a050da3b441d3d553687ca2efd0e68852d7 0.1s done\n#10 exporting manifest list sha256:27bcb25728f66df44847c9f1c4709cdb3240844864ec329797ed70cbf71ec718\n#10 exporting manifest list sha256:27bcb25728f66df44847c9f1c4709cdb3240844864ec329797ed70cbf71ec718 0.0s done\n#10 naming to docker.io/library/4076735_trial_2_93edf56f:latest done\n#10 unpacking to docker.io/library/4076735_trial_2_93edf56f:latest\n#10 unpacking to docker.io/library/4076735_trial_2_93edf56f:latest 0.2s done\n#10 DONE 0.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ikqsp98v0tfdg4100oyfx8b48\n",
+        "time_sec": 1.57
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 15, in <module>\n    import clipboard\nModuleNotFoundError: No module named 'clipboard'\n",
+        "time_sec": 1.14
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "clipboard"
+        ],
+        "rationale": [
+          "The clipboard module is a common requirement for automating tasks on Windows and MacOS, so it's possible that the user is trying to use this module in their code."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The clipboard module is a common requirement for automating tasks on Windows and MacOS, so it's possible that the user is trying to use this module in their code."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T07:00:36Z",
+      "image_tag": "4076735_trial_3_e44d5d6a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ckerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 3.29kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:561b7b1724d8dfbe1e8c54a6c8f3efd5ebe62517bf09236ceeb9f5c73af91c4f 0.0s done\n#10 exporting config sha256:035819085af541509d583756027123c92f51efaf24af7c4f91c696b5f334d46e 0.0s done\n#10 exporting attestation manifest sha256:e54b4927403f5e343272de17371d94156db0fd4e5e845311e3ce1a7991223745 0.1s done\n#10 exporting manifest list sha256:e7304004d4720cdfccabc3dc3b3f7fd994ba73d09a4085320dc203c348d34020 0.0s done\n#10 naming to docker.io/library/4076735_trial_3_e44d5d6a:latest\n#10 naming to docker.io/library/4076735_trial_3_e44d5d6a:latest done\n#10 unpacking to docker.io/library/4076735_trial_3_e44d5d6a:latest\n#10 unpacking to docker.io/library/4076735_trial_3_e44d5d6a:latest 0.3s done\n#10 DONE 0.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/bhflz95uqhe3dxej4483l3o6z\n",
+        "time_sec": 1.51
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 15, in <module>\n    import clipboard\nModuleNotFoundError: No module named 'clipboard'\n",
+        "time_sec": 1.16
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fixes possible."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 37.15,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 37.15,
+    "avg_build_time_sec": 2.68,
+    "avg_run_time_sec": 1.18,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

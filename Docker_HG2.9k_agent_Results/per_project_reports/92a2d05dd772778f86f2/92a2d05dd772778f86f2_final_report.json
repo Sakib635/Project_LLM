@@ -1,0 +1,71 @@
+{
+  "project": "92a2d05dd772778f86f2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:42:42Z",
+      "image_tag": "92a2d05dd772778f86f2_trial_1_0f3a9dba",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.96
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 18, in <module>\n    import ycm_core\nModuleNotFoundError: No module named 'ycm_core'\n",
+        "time_sec": 1.58
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ycm-core>=1.2.0"
+        ],
+        "rationale": [
+          "The import error suggests that the package is missing, so we suggest adding it to the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The import error suggests that the package is missing, so we suggest adding it to the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:43:07Z",
+      "image_tag": "92a2d05dd772778f86f2_trial_2_f3c2e727",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "8b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 9.36kB 0.0s done\n#6 DONE 0.1s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:8fb2fbdb41383f443bd810405fa8422d2f7737d83ec586d90c89feedb3ea0d45 0.0s done\n#11 exporting config sha256:a1ae6a80cdbc8ec9be55ae524e1ca04d1d0fe1be90f978d93f98afd9ec395cc1\n#11 exporting config sha256:a1ae6a80cdbc8ec9be55ae524e1ca04d1d0fe1be90f978d93f98afd9ec395cc1 0.0s done\n#11 exporting attestation manifest sha256:27afa2f7b76a50caf8fd54418419abe3bf04e0b8b8fecdb1d9932daa58daf79c 0.1s done\n#11 exporting manifest list sha256:b046a538f18bb374bfabb77c4368d9dc56e17a730cd579b2f6b51c5a4d233515\n#11 exporting manifest list sha256:b046a538f18bb374bfabb77c4368d9dc56e17a730cd579b2f6b51c5a4d233515 0.0s done\n#11 naming to docker.io/library/92a2d05dd772778f86f2_trial_2_f3c2e727:latest done\n#11 unpacking to docker.io/library/92a2d05dd772778f86f2_trial_2_f3c2e727:latest\n#11 unpacking to docker.io/library/92a2d05dd772778f86f2_trial_2_f3c2e727:latest 1.1s done\n#11 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/99d0kyst04sohg2p28n7lx5rn\n",
+        "time_sec": 2.72
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 18, in <module>\n    import ycm_core\nModuleNotFoundError: No module named 'ycm_core'\n",
+        "time_sec": 1.7
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 50.06,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 50.06,
+    "avg_build_time_sec": 8.84,
+    "avg_run_time_sec": 1.64,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

@@ -1,90 +1,103 @@
 {
   "python_version": {
     "min": "3.6",
-    "max": "3.8",
+    "max": null,
     "evidence": [
-      "pathlib.Path added in Python 3.8 \u2192 min Python 3.8",
-      "time.clock removed in Python 3.9\u2192 max Python 3.10"
+      "pathlib.Path added in Python 3.6 \u2192 min Python 3.6"
     ],
     "notes": ""
   },
   "dependencies": {
     "gym": {
-      "inferred_version_range": null,
-      "recommended_requirements_line": null,
-      "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for gym"
+      "inferred_version_range": ">=1.0.0,<2.0.0",
+      "recommended_requirements_line": "gym>=1.0.0,<2.0.0",
+      "evidence": [
+        "API `gym.make` introduced in v1.0.0"
+      ],
+      "confidence": 0.95,
+      "notes": ""
     },
     "keras": {
-      "inferred_version_range": ">=2.6.0,<3.0.0",
-      "recommended_requirements_line": "keras>=2.6.0,<3.0.0",
+      "inferred_version_range": ">=2.0.0,<3.0.0",
+      "recommended_requirements_line": "keras>=2.0.0,<3.0.0",
       "evidence": [
-        "keras.layers.Dense introduced in Keras 2.6.0",
-        "keras.models.Sequential introduced in Keras 2.6.0"
+        "API `keras.layers.Dense` introduced in v2.0.0"
       ],
       "confidence": 1.0,
       "notes": ""
     },
-    "keras.backend": {
-      "inferred_version_range": null,
-      "recommended_requirements_line": null,
-      "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for keras.backend"
-    },
     "tensorflow": {
-      "inferred_version_range": ">=2.4.1,<3.0.0",
-      "recommended_requirements_line": "tensorflow>=2.4.1,<3.0.0",
+      "inferred_version_range": ">=1.3.0,<2.0.0",
+      "recommended_requirements_line": "tensorflow>=1.3.0,<2.0.0",
       "evidence": [
-        "tensorflow.import introduced in TensorFlow 2.4.1"
+        "API `tensorflow.Session` introduced in v1.3.0"
       ],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "notes": ""
     },
     "collections": {
       "inferred_version_range": null,
       "recommended_requirements_line": null,
       "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for collections"
+      "confidence": 0.0,
+      "notes": "Collections module not included in extracted APIs"
     },
     "numpy": {
-      "inferred_version_range": ">=1.19.4,<2.0.0",
-      "recommended_requirements_line": "numpy>=1.19.4,<2.0.0",
+      "inferred_version_range": ">=1.8.0,<2.0.0",
+      "recommended_requirements_line": "numpy>=1.8.0,<2.0.0",
       "evidence": [
-        "numpy.random.randn introduced in NumPy 1.19.5",
-        "numpy.array introduced in NumPy 1.18.0"
+        "API `numpy.array` introduced in v1.8.0"
       ],
-      "confidence": 1.0,
+      "confidence": 0.95,
       "notes": ""
     },
     "math": {
       "inferred_version_range": null,
       "recommended_requirements_line": null,
       "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for math"
-    },
-    "threading": {
-      "inferred_version_range": null,
-      "recommended_requirements_line": null,
-      "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for threading"
+      "confidence": 0.0,
+      "notes": "Math module not included in extracted APIs"
     },
     "sys": {
       "inferred_version_range": null,
       "recommended_requirements_line": null,
       "evidence": [],
-      "confidence": 0.8,
-      "notes": "No API usage found for sys"
+      "confidence": 0.0,
+      "notes": "Sys module not included in extracted APIs"
+    },
+    "random": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Random module not included in extracted APIs"
+    },
+    "threading": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Threading module not included in extracted APIs"
+    },
+    "time": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "Time module not included in extracted APIs"
+    },
+    "json": {
+      "inferred_version_range": null,
+      "recommended_requirements_line": null,
+      "evidence": [],
+      "confidence": 0.0,
+      "notes": "JSON module not included in extracted APIs"
     }
   },
   "requirements.txt": [
-    "gym>=0.10.9,<0.12",
-    "keras>=2.6.0,<3.0.0",
-    "numpy>=1.19.4,<2.0.0",
-    "tensorflow>=2.4.1,<3.0.0"
+    "gym>=1.0.0,<2.0.0",
+    "keras>=2.0.0,<3.0.0",
+    "tensorflow>=1.3.0,<2.0.0",
+    "numpy>=1.8.0,<2.0.0"
   ]
 }

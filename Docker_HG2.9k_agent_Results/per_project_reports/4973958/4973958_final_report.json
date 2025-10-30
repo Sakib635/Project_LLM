@@ -1,0 +1,71 @@
+{
+  "project": "4973958",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:02:48Z",
+      "image_tag": "4973958_trial_1_290e2127",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.34
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.forms.models import model_to_dict\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.29
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=2.2.0"
+        ],
+        "rationale": [
+          "This is the most recent version of Django that satisfies the range constraints in the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "This is the most recent version of Django that satisfies the range constraints in the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T08:03:14Z",
+      "image_tag": "4973958_trial_2_a9692af0",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " done\n#3 DONE 0.1s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 1.40kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:ccb50615fb2e4be89ab5cc45f8940ae43de17f531edd47ff6723abe4496ac682 0.0s done\n#10 exporting config sha256:23f672c25330c157ba5edd1288e8b7de96ba4eeb98a0c67d1c36c3426992b42b 0.0s done\n#10 exporting attestation manifest sha256:841d7e31737bb053c57b9dcecb3f29c818aa10f92e09e66af9d61efa6b0a4c6b 0.1s done\n#10 exporting manifest list sha256:4e1640218ed2b95518dd310566d63a447f5f90e12ec3cd3ab7fa406f27edad08\n#10 exporting manifest list sha256:4e1640218ed2b95518dd310566d63a447f5f90e12ec3cd3ab7fa406f27edad08 0.0s done\n#10 naming to docker.io/library/4973958_trial_2_a9692af0:latest done\n#10 unpacking to docker.io/library/4973958_trial_2_a9692af0:latest\n#10 unpacking to docker.io/library/4973958_trial_2_a9692af0:latest 1.4s done\n#10 DONE 1.6s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yl3sm68iqfc2o1jqup0h8q1gj\n",
+        "time_sec": 2.7
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.forms.models import model_to_dict\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.33
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 43.51,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 43.51,
+    "avg_build_time_sec": 8.52,
+    "avg_run_time_sec": 1.31,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

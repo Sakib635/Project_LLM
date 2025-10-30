@@ -1,0 +1,71 @@
+{
+  "project": "a52b036424bd9975d719f224ca8cc8d5",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:23:07Z",
+      "image_tag": "a52b036424bd9975d719f224ca8cc8d5_trial_1_8e83931e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.35
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from Foundation import NSWorkspace, NSURL\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.32
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=2.0.0"
+        ],
+        "rationale": [
+          "Upgrade to a more recent version of pandas that is likely to be compatible with the current setup."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "Upgrade to a more recent version of pandas that is likely to be compatible with the current setup."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:23:33Z",
+      "image_tag": "a52b036424bd9975d719f224ca8cc8d5_trial_2_977fca74",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 526B done\n#5 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:a1392aec29790d8659e7c5a823460077fc3302a43b6627b6b8adb5342f7d904b 0.0s done\n#10 exporting config sha256:cb33652d0a00245aa2ab02b968e8dad6bc1b8306afb6474f868fdc30cc408218 0.0s done\n#10 exporting attestation manifest sha256:bbcfc21585b498e08a3fe13d3158a6a9636d5eed4a2882e2fb7804d8d795cda3\n#10 exporting attestation manifest sha256:bbcfc21585b498e08a3fe13d3158a6a9636d5eed4a2882e2fb7804d8d795cda3 0.1s done\n#10 exporting manifest list sha256:e53545d328f91a320e3a0f0a4fd39f924ad4919be535a94dbe2fe908672ff290 0.0s done\n#10 naming to docker.io/library/a52b036424bd9975d719f224ca8cc8d5_trial_2_977fca74:latest done\n#10 unpacking to docker.io/library/a52b036424bd9975d719f224ca8cc8d5_trial_2_977fca74:latest\n#10 unpacking to docker.io/library/a52b036424bd9975d719f224ca8cc8d5_trial_2_977fca74:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/0o1pkgg6g37o08uggw3oh4jmv\n",
+        "time_sec": 2.4
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from Foundation import NSWorkspace, NSURL\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.47
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 40.01,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 40.01,
+    "avg_build_time_sec": 8.38,
+    "avg_run_time_sec": 1.4,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

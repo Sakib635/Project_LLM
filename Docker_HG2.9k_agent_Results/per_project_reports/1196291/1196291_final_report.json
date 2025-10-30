@@ -1,0 +1,71 @@
+{
+  "project": "1196291",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:30:11Z",
+      "image_tag": "1196291_trial_1_b0cd8ffd",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.87
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    import tweets\nModuleNotFoundError: No module named 'tweets'\n",
+        "time_sec": 1.12
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "tweets>=1.2.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:30:34Z",
+      "image_tag": "1196291_trial_2_b6a92cd4",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": ".10-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.10-slim@sha256:e0c4fae70d550834a40f6c3e0326e02cfe239c2351d922e1fb1577a3c6ebde02\n#4 resolve docker.io/library/python:3.10-slim@sha256:e0c4fae70d550834a40f6c3e0326e02cfe239c2351d922e1fb1577a3c6ebde02 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 2.36kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:295ed053a3f5b52f7cab8c14d2fdb038a4cc07c019815de0e04c1acac15e5252 done\n#10 exporting config sha256:05a4ea526582695f4b55f4e1478e270203e4c019af0cf74bad992d47531ce286 0.0s done\n#10 exporting attestation manifest sha256:4dd7af23d4debaf4ae8ade88c4faa6a87adb04b7a34e404531b12b1398fcc562 0.0s done\n#10 exporting manifest list sha256:cf32fabf2740d80d61dffdd2780568ce76ac84202c34abc03397ba22f7d0d2b8 0.0s done\n#10 naming to docker.io/library/1196291_trial_2_b6a92cd4:latest\n#10 naming to docker.io/library/1196291_trial_2_b6a92cd4:latest done\n#10 unpacking to docker.io/library/1196291_trial_2_b6a92cd4:latest\n#10 unpacking to docker.io/library/1196291_trial_2_b6a92cd4:latest 0.9s done\n#10 DONE 1.0s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9whqcu7evuvpf6c81npok0njy\n",
+        "time_sec": 1.98
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    import tweets\nModuleNotFoundError: No module named 'tweets'\n",
+        "time_sec": 1.14
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 39.5,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 39.5,
+    "avg_build_time_sec": 8.42,
+    "avg_run_time_sec": 1.13,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

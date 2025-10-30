@@ -1,0 +1,299 @@
+{
+  "project": "cb5d8157a8fa5a4a046e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:47:18Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_1_fe8c180c",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.784 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.784 \n#9 1.784 note: This is an issue with the package mentioned above, not pip.\n#9 1.784 hint: See above for details.\n#9 1.858 \n#9 1.858 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.858 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.784 error: metadata-generation-failed\n1.784 \n1.784 \u00c3\u2014 Encountered error while generating package metadata.\n1.784 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.784 \n1.784 note: This is an issue with the package mentioned above, not pip.\n1.784 hint: See above for details.\n1.858 \n1.858 [notice] A new release of pip is available: 24.0 -> 25.3\n1.858 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/u4aju2i9qamgd8ju6ispksrtm\n",
+        "time_sec": 3.13
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:47:29Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_2_036efade",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.660 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.660 \n#9 1.660 note: This is an issue with the package mentioned above, not pip.\n#9 1.660 hint: See above for details.\n#9 1.741 \n#9 1.741 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.741 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.660 error: metadata-generation-failed\n1.660 \n1.660 \u00c3\u2014 Encountered error while generating package metadata.\n1.660 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.660 \n1.660 note: This is an issue with the package mentioned above, not pip.\n1.660 hint: See above for details.\n1.741 \n1.741 [notice] A new release of pip is available: 24.0 -> 25.3\n1.741 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/76trusz6ihcat6fh1btwhawjk\n",
+        "time_sec": 2.73
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": "3.10",
+        "python_max": null,
+        "rationale": "The error message indicates that the package 'wsgiref' failed to install due to a syntax error in its setup.py file. This suggests that the issue may be related to Python version compatibility with the package, and the recommended fix is to use Python 3.10 or higher to resolve the problem.",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.7,
+          "notes": "The error message indicates that the package 'wsgiref' failed to install due to a syntax error in its setup.py file. This suggests that the issue may be related to Python version compatibility with the package, and the recommended fix is to use Python 3.10 or higher to resolve the problem."
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T15:47:37Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_3_93802a52",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.562 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.562 \n#9 1.562 note: This is an issue with the package mentioned above, not pip.\n#9 1.562 hint: See above for details.\n#9 1.640 \n#9 1.640 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.640 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.562 error: metadata-generation-failed\n1.562 \n1.562 \u00c3\u2014 Encountered error while generating package metadata.\n1.562 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.562 \n1.562 note: This is an issue with the package mentioned above, not pip.\n1.562 hint: See above for details.\n1.640 \n1.640 [notice] A new release of pip is available: 24.0 -> 25.3\n1.640 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wtwwmqz86w6jnnge9bmp1h1s2\n",
+        "time_sec": 2.8
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T15:47:48Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_4_cb53c24d",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.700 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.700 \n#9 1.700 note: This is an issue with the package mentioned above, not pip.\n#9 1.700 hint: See above for details.\n#9 1.782 \n#9 1.782 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.782 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.700 error: metadata-generation-failed\n1.700 \n1.700 \u00c3\u2014 Encountered error while generating package metadata.\n1.700 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.700 \n1.700 note: This is an issue with the package mentioned above, not pip.\n1.700 hint: See above for details.\n1.782 \n1.782 [notice] A new release of pip is available: 24.0 -> 25.3\n1.782 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kkpji2r0y2n06pszoq7gzun9d\n",
+        "time_sec": 2.88
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T15:48:03Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_5_51d430e7",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.929 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.929 \n#9 1.929 note: This is an issue with the package mentioned above, not pip.\n#9 1.929 hint: See above for details.\n#9 2.021 \n#9 2.021 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 2.021 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.929 error: metadata-generation-failed\n1.929 \n1.929 \u00c3\u2014 Encountered error while generating package metadata.\n1.929 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.929 \n1.929 note: This is an issue with the package mentioned above, not pip.\n1.929 hint: See above for details.\n2.021 \n2.021 [notice] A new release of pip is available: 24.0 -> 25.3\n2.021 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/b59ofrpwpvz159d25pnt2tavp\n",
+        "time_sec": 3.47
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 6,
+      "timestamp": "2025-10-28T15:48:19Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_6_cee7641c",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.786 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.786 \n#9 1.786 note: This is an issue with the package mentioned above, not pip.\n#9 1.786 hint: See above for details.\n#9 1.871 \n#9 1.871 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.871 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.786 error: metadata-generation-failed\n1.786 \n1.786 \u00c3\u2014 Encountered error while generating package metadata.\n1.786 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.786 \n1.786 note: This is an issue with the package mentioned above, not pip.\n1.786 hint: See above for details.\n1.871 \n1.871 [notice] A new release of pip is available: 24.0 -> 25.3\n1.871 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8jt0le2wnqe3x4ks92yffz36d\n",
+        "time_sec": 2.9
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 7,
+      "timestamp": "2025-10-28T15:48:37Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_7_9462628b",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.794 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.794 \n#9 1.794 note: This is an issue with the package mentioned above, not pip.\n#9 1.794 hint: See above for details.\n#9 1.878 \n#9 1.878 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.878 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.794 error: metadata-generation-failed\n1.794 \n1.794 \u00c3\u2014 Encountered error while generating package metadata.\n1.794 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.794 \n1.794 note: This is an issue with the package mentioned above, not pip.\n1.794 hint: See above for details.\n1.878 \n1.878 [notice] A new release of pip is available: 24.0 -> 25.3\n1.878 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/q6vg9ih34o7mgweub1llv1l02\n",
+        "time_sec": 2.99
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 8,
+      "timestamp": "2025-10-28T15:48:57Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_8_35824cb5",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.776 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.776 \n#9 1.776 note: This is an issue with the package mentioned above, not pip.\n#9 1.776 hint: See above for details.\n#9 1.854 \n#9 1.854 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.854 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.776 error: metadata-generation-failed\n1.776 \n1.776 \u00c3\u2014 Encountered error while generating package metadata.\n1.776 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.776 \n1.776 note: This is an issue with the package mentioned above, not pip.\n1.776 hint: See above for details.\n1.854 \n1.854 [notice] A new release of pip is available: 24.0 -> 25.3\n1.854 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7p0y2pdl67d7cfaejvgob6otv\n",
+        "time_sec": 2.92
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 9,
+      "timestamp": "2025-10-28T15:49:11Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_9_4db05003",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.918 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.918 \n#9 1.918 note: This is an issue with the package mentioned above, not pip.\n#9 1.918 hint: See above for details.\n#9 2.002 \n#9 2.002 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 2.002 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.918 error: metadata-generation-failed\n1.918 \n1.918 \u00c3\u2014 Encountered error while generating package metadata.\n1.918 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.918 \n1.918 note: This is an issue with the package mentioned above, not pip.\n1.918 hint: See above for details.\n2.002 \n2.002 [notice] A new release of pip is available: 24.0 -> 25.3\n2.002 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vffq60y56asjpzz2ku9u4amrk\n",
+        "time_sec": 3.19
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 10,
+      "timestamp": "2025-10-28T15:49:24Z",
+      "image_tag": "cb5d8157a8fa5a4a046e_trial_10_ae69ffc9",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "adata.\n#9 1.739 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n#9 1.739 \n#9 1.739 note: This is an issue with the package mentioned above, not pip.\n#9 1.739 hint: See above for details.\n#9 1.818 \n#9 1.818 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.818 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.739 error: metadata-generation-failed\n1.739 \n1.739 \u00c3\u2014 Encountered error while generating package metadata.\n1.739 \u00e2\u2022\u00b0\u00e2\u201d\u20ac> See above for output.\n1.739 \n1.739 note: This is an issue with the package mentioned above, not pip.\n1.739 hint: See above for details.\n1.818 \n1.818 [notice] A new release of pip is available: 24.0 -> 25.3\n1.818 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/e146yyylh4ceiuw8hzcf3v1gh\n",
+        "time_sec": 2.88
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    }
+  ],
+  "final_status": null,
+  "total_time_sec": 137.45,
+  "metrics": {
+    "total_attempts": 10,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 137.45,
+    "avg_build_time_sec": 2.99,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "python": 10
+    }
+  }
+}

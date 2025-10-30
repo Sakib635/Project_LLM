@@ -1,0 +1,38 @@
+{
+  "project": "1288025",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:39:11Z",
+      "image_tag": "1288025_trial_1_1699ba7e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 7.67
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from fallen.models import Casualty, Theater, Branch, HomeState, CauseOfDeath, IncidentProvince\nModuleNotFoundError: No module named 'fallen'\n",
+        "time_sec": 1.5
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 22.57,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 22.57,
+    "avg_build_time_sec": 7.67,
+    "avg_run_time_sec": 1.5,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "project": "e7b0bc65927b7987b7d4",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:38:12Z",
+      "image_tag": "e7b0bc65927b7987b7d4_trial_1_27f36f30",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.352 ERROR: Could not find a version that satisfies the requirement openssl<2.0.0,>=1.2.0 (from versions: none)\n#9 1.352 ERROR: No matching distribution found for openssl<2.0.0,>=1.2.0\n#9 1.441 \n#9 1.441 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.441 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.352 ERROR: Could not find a version that satisfies the requirement openssl<2.0.0,>=1.2.0 (from versions: none)\n1.352 ERROR: No matching distribution found for openssl<2.0.0,>=1.2.0\n1.441 \n1.441 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.441 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ofulbzlc7ji74zrjjaq0fq9k2\n",
+        "time_sec": 2.85
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "openssl>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "The requirement 'openssl<2.0.0' is a conservative candidate fix for the error message 'No matching distribution found for openssl<2.0.0'"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The requirement 'openssl<2.0.0' is a conservative candidate fix for the error message 'No matching distribution found for openssl<2.0.0'"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T16:38:20Z",
+      "image_tag": "e7b0bc65927b7987b7d4_trial_2_49a18700",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.360 ERROR: Could not find a version that satisfies the requirement openssl<2.0.0,>=1.2.0 (from versions: none)\n#9 1.360 ERROR: No matching distribution found for openssl<2.0.0,>=1.2.0\n#9 1.452 \n#9 1.452 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.452 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.360 ERROR: Could not find a version that satisfies the requirement openssl<2.0.0,>=1.2.0 (from versions: none)\n1.360 ERROR: No matching distribution found for openssl<2.0.0,>=1.2.0\n1.452 \n1.452 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.452 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/men7900cnyralu3mxw54oa88r\n",
+        "time_sec": 2.54
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 19.59,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 19.59,
+    "avg_build_time_sec": 2.7,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "project": "4073599",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T06:56:44Z",
+      "image_tag": "4073599_trial_1_93ddfaff",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "i\n#9 1.440 ERROR: Could not find a version that satisfies the requirement email<2.0.0,>=1.2.0 (from versions: 2.5.8, 3.0.1, 4.0.1, 4.0.2, 6.0.0a1)\n#9 1.440 ERROR: No matching distribution found for email<2.0.0,>=1.2.0\n#9 1.525 \n#9 1.525 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.525 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.440 ERROR: Could not find a version that satisfies the requirement email<2.0.0,>=1.2.0 (from versions: 2.5.8, 3.0.1, 4.0.1, 4.0.2, 6.0.0a1)\n1.440 ERROR: No matching distribution found for email<2.0.0,>=1.2.0\n1.525 \n1.525 [notice] A new release of pip is available: 24.0 -> 25.3\n1.525 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/1aekkvluceole3lzrq0dm3hrb\n",
+        "time_sec": 2.9
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "email>=1.2.0,<2.0.0",
+          "smtplib>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "The error message suggests that the specified version of email is not available in the package index, but it may be possible to use an older version that satisfies the requirement."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The error message suggests that the specified version of email is not available in the package index, but it may be possible to use an older version that satisfies the requirement."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T06:56:53Z",
+      "image_tag": "4073599_trial_2_84d842fe",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "i\n#9 1.301 ERROR: Could not find a version that satisfies the requirement email<2.0.0,>=1.2.0 (from versions: 2.5.8, 3.0.1, 4.0.1, 4.0.2, 6.0.0a1)\n#9 1.301 ERROR: No matching distribution found for email<2.0.0,>=1.2.0\n#9 1.383 \n#9 1.383 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.383 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.301 ERROR: Could not find a version that satisfies the requirement email<2.0.0,>=1.2.0 (from versions: 2.5.8, 3.0.1, 4.0.1, 4.0.2, 6.0.0a1)\n1.301 ERROR: No matching distribution found for email<2.0.0,>=1.2.0\n1.383 \n1.383 [notice] A new release of pip is available: 24.0 -> 25.3\n1.383 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/xd1zrjjg9zl42zl8d84k7v4cs\n",
+        "time_sec": 2.41
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 26.74,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 26.74,
+    "avg_build_time_sec": 2.66,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

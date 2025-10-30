@@ -1,0 +1,104 @@
+{
+  "project": "5819145",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T09:28:58Z",
+      "image_tag": "5819145_trial_1_666461d8",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " 1.597 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.425 Collecting django<2.0.0,>=1.2.0 (from -r /app/requirements.txt (line 1))\n1.484   Downloading Django-1.11.29-py2.py3-none-any.whl.metadata (1.5 kB)\n1.519 ERROR: Ignored the following versions that require a different python version: 6.0a1 Requires-Python >=3.12; 6.0b1 Requires-Python >=3.12\n1.519 ERROR: Could not find a version that satisfies the requirement trapeze<2.0.0,>=1.2.0 (from versions: 0.0.22, 0.0.23, 0.0.24, 0.0.25)\n1.519 ERROR: No matching distribution found for trapeze<2.0.0,>=1.2.0\n1.597 \n1.597 [notice] A new release of pip is available: 24.0 -> 25.3\n1.597 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7xtzi5tdeq5bwpb86jfcyv2y6\n",
+        "time_sec": 2.96
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django<2.0.0,>=1.2.0"
+        ],
+        "rationale": [
+          "This version of Django supports Python 3.11 which is not compatible with the current Python version (3.12). Pinning to a specific version of Django that is compatible with Python 3.12 should resolve this issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This version of Django supports Python 3.11 which is not compatible with the current Python version (3.12). Pinning to a specific version of Django that is compatible with Python 3.12 should resolve this issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T09:29:07Z",
+      "image_tag": "5819145_trial_2_908cbf6d",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " 1.419 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.288 Collecting django<2.0.0,>=1.2.0 (from -r /app/requirements.txt (line 1))\n1.328   Downloading Django-1.11.29-py2.py3-none-any.whl.metadata (1.5 kB)\n1.343 ERROR: Ignored the following versions that require a different python version: 6.0a1 Requires-Python >=3.12; 6.0b1 Requires-Python >=3.12\n1.343 ERROR: Could not find a version that satisfies the requirement trapeze<2.0.0,>=1.2.0 (from versions: 0.0.22, 0.0.23, 0.0.24, 0.0.25)\n1.343 ERROR: No matching distribution found for trapeze<2.0.0,>=1.2.0\n1.419 \n1.419 [notice] A new release of pip is available: 24.0 -> 25.3\n1.419 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hyatl7892m97wdgxh0zkli84h\n",
+        "time_sec": 2.53
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=1.2.0,<3.0.0"
+        ],
+        "rationale": [
+          "Adding a specific version of django to the requirements file will ensure that the build process uses this version."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.6,
+          "notes": [
+            "Adding a specific version of django to the requirements file will ensure that the build process uses this version."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T09:29:14Z",
+      "image_tag": "5819145_trial_3_a3993b81",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " 1.532 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.386 Collecting django<2.0.0,>=1.2.0 (from -r /app/requirements.txt (line 1))\n1.432   Downloading Django-1.11.29-py2.py3-none-any.whl.metadata (1.5 kB)\n1.447 ERROR: Ignored the following versions that require a different python version: 6.0a1 Requires-Python >=3.12; 6.0b1 Requires-Python >=3.12\n1.447 ERROR: Could not find a version that satisfies the requirement trapeze<2.0.0,>=1.2.0 (from versions: 0.0.22, 0.0.23, 0.0.24, 0.0.25)\n1.447 ERROR: No matching distribution found for trapeze<2.0.0,>=1.2.0\n1.532 \n1.532 [notice] A new release of pip is available: 24.0 -> 25.3\n1.532 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nby9h2oxdxob99dmcppw24ryo\n",
+        "time_sec": 2.65
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 36.37,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 36.37,
+    "avg_build_time_sec": 2.71,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

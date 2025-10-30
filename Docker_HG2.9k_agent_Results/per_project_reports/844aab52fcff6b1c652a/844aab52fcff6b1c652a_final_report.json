@@ -1,0 +1,71 @@
+{
+  "project": "844aab52fcff6b1c652a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:57:06Z",
+      "image_tag": "844aab52fcff6b1c652a_trial_1_bd81943d",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.325 ERROR: Could not find a version that satisfies the requirement caffe<4.0.0,>=3.4.5 (from versions: 0.1.0)\n#9 1.325 ERROR: No matching distribution found for caffe<4.0.0,>=3.4.5\n#9 1.406 \n#9 1.406 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.406 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.325 ERROR: Could not find a version that satisfies the requirement caffe<4.0.0,>=3.4.5 (from versions: 0.1.0)\n1.325 ERROR: No matching distribution found for caffe<4.0.0,>=3.4.5\n1.406 \n1.406 [notice] A new release of pip is available: 24.0 -> 25.3\n1.406 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/k94g48yj1wr3vxzs0sr9uj6cj\n",
+        "time_sec": 2.77
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "caffe<4.0.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.75,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T12:57:12Z",
+      "image_tag": "844aab52fcff6b1c652a_trial_2_725c1d28",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.247 ERROR: Could not find a version that satisfies the requirement caffe<4.0.0,>=3.4.5 (from versions: 0.1.0)\n#9 1.248 ERROR: No matching distribution found for caffe<4.0.0,>=3.4.5\n#9 1.320 \n#9 1.320 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.320 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.247 ERROR: Could not find a version that satisfies the requirement caffe<4.0.0,>=3.4.5 (from versions: 0.1.0)\n1.248 ERROR: No matching distribution found for caffe<4.0.0,>=3.4.5\n1.320 \n1.320 [notice] A new release of pip is available: 24.0 -> 25.3\n1.320 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/w1u426jm9xo5xwfxnc3cnt9d8\n",
+        "time_sec": 2.47
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 10.46,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 10.46,
+    "avg_build_time_sec": 2.62,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

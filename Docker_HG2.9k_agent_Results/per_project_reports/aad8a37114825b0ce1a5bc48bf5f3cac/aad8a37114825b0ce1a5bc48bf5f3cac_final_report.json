@@ -1,0 +1,38 @@
+{
+  "project": "aad8a37114825b0ce1a5bc48bf5f3cac",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:43:34Z",
+      "image_tag": "aad8a37114825b0ce1a5bc48bf5f3cac_trial_1_4e9c8e0d",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "pp/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 1.706 ERROR: Could not find a version that satisfies the requirement PyMouse>=3.1 (from versions: 1.0)\n#10 1.706 ERROR: No matching distribution found for PyMouse>=3.1\n#10 1.796 \n#10 1.796 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#10 1.796 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.706 ERROR: Could not find a version that satisfies the requirement PyMouse>=3.1 (from versions: 1.0)\n1.706 ERROR: No matching distribution found for PyMouse>=3.1\n1.796 \n1.796 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.796 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/gayqi3l55cq5zz6s7b7k71qp2\n",
+        "time_sec": 3.3
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 16.29,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 16.29,
+    "avg_build_time_sec": 3.3,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

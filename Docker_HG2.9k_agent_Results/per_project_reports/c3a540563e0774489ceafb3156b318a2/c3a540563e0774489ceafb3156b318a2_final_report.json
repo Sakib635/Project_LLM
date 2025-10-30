@@ -1,0 +1,41 @@
+{
+  "project": "c3a540563e0774489ceafb3156b318a2",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:26:15Z",
+      "image_tag": "c3a540563e0774489ceafb3156b318a2_trial_1_63b36a76",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "ir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.587 Collecting futures<4.0.0,>=2.0.0 (from -r /app/requirements.txt (line 1))\n1.665   Downloading futures-3.0.5.tar.gz (25 kB)\n1.675   Preparing metadata (setup.py): started\n1.948   Preparing metadata (setup.py): finished with status 'done'\n2.049 ERROR: Ignored the following versions that require a different python version: 3.1.1.post1 Requires-Python >=2.6, <3; 3.2.0 Requires-Python >=2.6, <3; 3.3.0 Requires-Python >=2.6, <3; 3.4.0 Requires-Python >=2.6, <3\n2.049 ERROR: Could not find a version that satisfies the requirement python-json<4.0.0,>=2.0.0 (from versions: none)\n2.049 ERROR: No matching distribution found for python-json<4.0.0,>=2.0.0\n2.127 \n2.127 [notice] A new release of pip is available: 24.0 -> 25.3\n2.127 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/smbfgh3tsrnux0ewrh3955evu\n",
+        "time_sec": 3.48
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "The issue is caused by the incompatibility between the dependencies `futures` and `python-json`, which have different requirements for Python version. However, there are no compatible versions available. The current setup is not able to install any version of these dependencies."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 6.88,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 6.88,
+    "avg_build_time_sec": 3.48,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

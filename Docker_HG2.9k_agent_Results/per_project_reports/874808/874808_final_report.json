@@ -1,0 +1,71 @@
+{
+  "project": "874808",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:07:07Z",
+      "image_tag": "874808_trial_1_4467189f",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 9.58
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    import pymc as pm\nModuleNotFoundError: No module named 'pymc'\n",
+        "time_sec": 2.38
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pymc>=1.2.0"
+        ],
+        "rationale": [
+          "The error message indicates that the pymc package is not installed or cannot be imported. Proposing to add it to the requirements file with a version constraint of >=1.2.0"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "The error message indicates that the pymc package is not installed or cannot be imported. Proposing to add it to the requirements file with a version constraint of >=1.2.0"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:07:28Z",
+      "image_tag": "874808_trial_2_97a15100",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "al] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 1.25kB done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:a423fda29a2d54434e43bbb7eaf599e38c46d676cb461e95a51a5b771f6336a8 0.0s done\n#10 exporting config sha256:fb0eb176f568483dac613d8a8c260528172da605bf93ecf22b2a73b14bcffe60 0.0s done\n#10 exporting attestation manifest sha256:783fa04d7652f44dfcbb4c628718ff8337f5e757e18b61214f68bcba8185005b 0.1s done\n#10 exporting manifest list sha256:6d7379a8135e7a5d155f99173b84e5f4fd58797bcef913540de3e55d03f3160f\n#10 exporting manifest list sha256:6d7379a8135e7a5d155f99173b84e5f4fd58797bcef913540de3e55d03f3160f 0.0s done\n#10 naming to docker.io/library/874808_trial_2_97a15100:latest done\n#10 unpacking to docker.io/library/874808_trial_2_97a15100:latest\n#10 unpacking to docker.io/library/874808_trial_2_97a15100:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/1h0ww54f5dta66hp87h0ymlwb\n",
+        "time_sec": 1.8
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    import pymc as pm\nModuleNotFoundError: No module named 'pymc'\n",
+        "time_sec": 1.36
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 38.26,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 38.26,
+    "avg_build_time_sec": 5.69,
+    "avg_run_time_sec": 1.87,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

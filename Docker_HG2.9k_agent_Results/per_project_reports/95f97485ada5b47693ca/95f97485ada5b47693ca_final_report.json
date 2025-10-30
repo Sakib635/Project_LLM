@@ -1,0 +1,71 @@
+{
+  "project": "95f97485ada5b47693ca",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:54:03Z",
+      "image_tag": "95f97485ada5b47693ca_trial_1_203b0f30",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " distribution found for time<3.0.0,>=2.6.1\n#9 1.873 \n#9 1.873 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.873 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.373 Collecting RPi.GPIO<1.0.0,>=0.7.0\n1.440   Downloading RPi.GPIO-0.7.1.tar.gz (29 kB)\n1.455   Preparing metadata (setup.py): started\n1.761   Preparing metadata (setup.py): finished with status 'done'\n1.777 ERROR: Could not find a version that satisfies the requirement time<3.0.0,>=2.6.1 (from versions: none)\n1.777 ERROR: No matching distribution found for time<3.0.0,>=2.6.1\n1.873 \n1.873 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.873 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9xy2fk3rkk41nx22rye5uf2o0\n",
+        "time_sec": 3.15
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "time>=2.6.1,<3.0.0"
+        ],
+        "rationale": [
+          "This requirement line is already present in the input requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This requirement line is already present in the input requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:54:11Z",
+      "image_tag": "95f97485ada5b47693ca_trial_2_fa1a4002",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " distribution found for time<3.0.0,>=2.6.1\n#9 1.787 \n#9 1.787 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.787 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.355 Collecting RPi.GPIO<1.0.0,>=0.7.0\n1.406   Downloading RPi.GPIO-0.7.1.tar.gz (29 kB)\n1.418   Preparing metadata (setup.py): started\n1.682   Preparing metadata (setup.py): finished with status 'done'\n1.700 ERROR: Could not find a version that satisfies the requirement time<3.0.0,>=2.6.1 (from versions: none)\n1.700 ERROR: No matching distribution found for time<3.0.0,>=2.6.1\n1.787 \n1.787 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.787 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/mxg8fs89epn256fqd2kdvmstp\n",
+        "time_sec": 2.73
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 17.54,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 17.54,
+    "avg_build_time_sec": 2.94,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "project": "3004168",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:40:36Z",
+      "image_tag": "3004168_trial_1_e9b7539d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 22.97
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.28
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:41:12Z",
+      "image_tag": "3004168_trial_2_047774fc",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "y/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 35.79kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:bf7871001d42490bf9f75dfed085f30c6389c9720879a1b62a4245220ff2fcd7 0.1s done\n#10 exporting manifest list sha256:9189b7eda902103ba2a8689138fcc5956b958833b25e1e4413d0523fe4c0c9b0\n#10 exporting manifest list sha256:9189b7eda902103ba2a8689138fcc5956b958833b25e1e4413d0523fe4c0c9b0 0.0s done\n#10 naming to docker.io/library/3004168_trial_2_047774fc:latest done\n#10 unpacking to docker.io/library/3004168_trial_2_047774fc:latest\n#10 unpacking to docker.io/library/3004168_trial_2_047774fc:latest 1.7s done\n#10 DONE 1.9s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/83t42gxvhagcoo97zaqwe66w5\n",
+        "time_sec": 2.99
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T05:41:32Z",
+      "image_tag": "3004168_trial_3_69b4c571",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "y/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 35.79kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:c687dd12c45b4395582fdc2887ccdd621ab948b93f8efe1e74f82373608fff5e 0.1s done\n#10 exporting manifest list sha256:61f57c70c620eebc95e4566e8d6d6614b6fe048ea006f9957f0b5a053dee1cc5\n#10 exporting manifest list sha256:61f57c70c620eebc95e4566e8d6d6614b6fe048ea006f9957f0b5a053dee1cc5 0.0s done\n#10 naming to docker.io/library/3004168_trial_3_69b4c571:latest done\n#10 unpacking to docker.io/library/3004168_trial_3_69b4c571:latest\n#10 unpacking to docker.io/library/3004168_trial_3_69b4c571:latest 1.8s done\n#10 DONE 2.0s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/5e19d5bu9p1x901povnt12him\n",
+        "time_sec": 3.15
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.23
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T05:41:48Z",
+      "image_tag": "3004168_trial_4_72d64761",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": ":3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:ea5b3cf970d0ce29f3e45d32761afd5eef896b2387a8e1e7326ca11c55f4d04c 0.0s done\n#10 exporting manifest list sha256:4b944132d39686308e81aaf7e602aab94e3e38553192c1a3a9441b2c3b959323 0.0s done\n#10 naming to docker.io/library/3004168_trial_4_72d64761:latest\n#10 naming to docker.io/library/3004168_trial_4_72d64761:latest done\n#10 unpacking to docker.io/library/3004168_trial_4_72d64761:latest\n#10 unpacking to docker.io/library/3004168_trial_4_72d64761:latest 1.7s done\n#10 DONE 1.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/laye5trvtb5ngq0bb0gmyuanu\n",
+        "time_sec": 2.63
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.26
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T05:42:04Z",
+      "image_tag": "3004168_trial_5_717cd46f",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": ":3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 done\n#10 exporting attestation manifest sha256:203233ef9afaa5c7bd09e49aeb178f3a09526d6e32012bfc8411f801284a82ac 0.0s done\n#10 exporting manifest list sha256:608293e1d58416781a68e23765da4020894f59519f9e8356f4bdb0ec8ddd4b05 0.0s done\n#10 naming to docker.io/library/3004168_trial_5_717cd46f:latest\n#10 naming to docker.io/library/3004168_trial_5_717cd46f:latest done\n#10 unpacking to docker.io/library/3004168_trial_5_717cd46f:latest\n#10 unpacking to docker.io/library/3004168_trial_5_717cd46f:latest 1.6s done\n#10 DONE 1.7s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/cjuy7ztqqaza5e21jrwx7shu5\n",
+        "time_sec": 2.61
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.19
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": "3.9-slim",
+        "python_max": null,
+        "rationale": "The syntax error in the snippet.py file suggests that the code is not compatible with Python 3.10 or later versions.",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 1.0,
+          "notes": "The syntax error in the snippet.py file suggests that the code is not compatible with Python 3.10 or later versions."
+        }
+      }
+    },
+    {
+      "attempt": 6,
+      "timestamp": "2025-10-28T05:42:16Z",
+      "image_tag": "3004168_trial_6_7b7e2910",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "erignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:b9be7ea9403f5c6742e7cda60077be969aeffc649c7087382a899d8820ad30ec\n#10 exporting attestation manifest sha256:b9be7ea9403f5c6742e7cda60077be969aeffc649c7087382a899d8820ad30ec 0.0s done\n#10 exporting manifest list sha256:2b5edab2dc9221aafd4232dbb99ea2d4e61bb19d3635771325da297fe3382a80 0.0s done\n#10 naming to docker.io/library/3004168_trial_6_7b7e2910:latest done\n#10 unpacking to docker.io/library/3004168_trial_6_7b7e2910:latest\n#10 unpacking to docker.io/library/3004168_trial_6_7b7e2910:latest 1.7s done\n#10 DONE 1.9s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/skxowep66yp6reezbvpife141\n",
+        "time_sec": 2.78
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.19
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 7,
+      "timestamp": "2025-10-28T05:42:36Z",
+      "image_tag": "3004168_trial_7_5c133e3e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "y/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 35.79kB 0.0s done\n#4 DONE 0.1s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:04f13ea1710a5c26d54753260d023498644aca34e8f9f89e8766cdfa60e0e022 0.1s done\n#10 exporting manifest list sha256:d6bf018d7c043fcf1390eb133de7e92d596e01b97a3a39b13c7886a5684b6f33\n#10 exporting manifest list sha256:d6bf018d7c043fcf1390eb133de7e92d596e01b97a3a39b13c7886a5684b6f33 0.0s done\n#10 naming to docker.io/library/3004168_trial_7_5c133e3e:latest done\n#10 unpacking to docker.io/library/3004168_trial_7_5c133e3e:latest\n#10 unpacking to docker.io/library/3004168_trial_7_5c133e3e:latest 1.8s done\n#10 DONE 2.0s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/xtevvcktxz72emdvwq0nhvjxx\n",
+        "time_sec": 3.17
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.35
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 8,
+      "timestamp": "2025-10-28T05:42:52Z",
+      "image_tag": "3004168_trial_8_e35a70f2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#6 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.1s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#11 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5\n#11 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#11 exporting attestation manifest sha256:319595d5ca463122ea8d6407b055431ce64f9c4cab3457509a19df87dcf49330 0.1s done\n#11 exporting manifest list sha256:66261190985aa3ad2a1e67e8fa51a9652ba35396e43657ad892412877b33c6b6\n#11 exporting manifest list sha256:66261190985aa3ad2a1e67e8fa51a9652ba35396e43657ad892412877b33c6b6 0.0s done\n#11 naming to docker.io/library/3004168_trial_8_e35a70f2:latest done\n#11 unpacking to docker.io/library/3004168_trial_8_e35a70f2:latest\n#11 unpacking to docker.io/library/3004168_trial_8_e35a70f2:latest 1.7s done\n#11 DONE 1.9s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tfqtega8hkiuxbget6714shl0\n",
+        "time_sec": 3.16
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 9,
+      "timestamp": "2025-10-28T05:43:11Z",
+      "image_tag": "3004168_trial_9_5daba1fb",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "erignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:e0af115913a3e8394a9ce63e9c5c2630d334a3b74c31cca8c2bc5b9d28beb432\n#10 exporting attestation manifest sha256:e0af115913a3e8394a9ce63e9c5c2630d334a3b74c31cca8c2bc5b9d28beb432 0.1s done\n#10 exporting manifest list sha256:c48037345c0548ca6b9faa3e92374d50c52ade7471ba2303ed5eaa17ac607c53 0.0s done\n#10 naming to docker.io/library/3004168_trial_9_5daba1fb:latest done\n#10 unpacking to docker.io/library/3004168_trial_9_5daba1fb:latest\n#10 unpacking to docker.io/library/3004168_trial_9_5daba1fb:latest 1.7s done\n#10 DONE 1.9s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/gu3a31qa34myg2smjcmk47dal\n",
+        "time_sec": 2.96
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.43
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 10,
+      "timestamp": "2025-10-28T05:43:30Z",
+      "image_tag": "3004168_trial_10_873e0be0",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 35.79kB 0.0s done\n#5 DONE 0.1s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:5865f7714e33f75f7c7fac913fa33908b688f6d5d7e31810d9dff3687b28ac13 0.0s done\n#10 exporting config sha256:418f38e985b110a6bb27cdd892ccaa23a0b79eb479cfd8cdfe007c78d1aa67c5 0.0s done\n#10 exporting attestation manifest sha256:7f501f9487b8d1d60e560e8da5dc8a36bd903b2d57414890ce6cab8d589512fa 0.1s done\n#10 exporting manifest list sha256:7aa9a19e3ac90e5f3f1f1b45c1080e0abb19158db0dad3572c5a5ea69790a986\n#10 exporting manifest list sha256:7aa9a19e3ac90e5f3f1f1b45c1080e0abb19158db0dad3572c5a5ea69790a986 0.1s done\n#10 naming to docker.io/library/3004168_trial_10_873e0be0:latest\n#10 naming to docker.io/library/3004168_trial_10_873e0be0:latest done\n#10 unpacking to docker.io/library/3004168_trial_10_873e0be0:latest\n#10 unpacking to docker.io/library/3004168_trial_10_873e0be0:latest 1.8s done\n#10 DONE 2.1s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ojzizfxkegcwn1v5vmgpziok3\n",
+        "time_sec": 3.08
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 372\n    s = struct.pack('!L', nameLength | 0x80000000L)\n                                                 ^\nSyntaxError: invalid syntax\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    }
+  ],
+  "final_status": null,
+  "total_time_sec": 192.54,
+  "metrics": {
+    "total_attempts": 10,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 192.54,
+    "avg_build_time_sec": 4.95,
+    "avg_run_time_sec": 1.29,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "python": 10
+    }
+  }
+}

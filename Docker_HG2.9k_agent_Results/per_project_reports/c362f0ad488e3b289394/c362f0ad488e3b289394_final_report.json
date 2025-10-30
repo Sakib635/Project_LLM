@@ -1,0 +1,38 @@
+{
+  "project": "c362f0ad488e3b289394",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:25:48Z",
+      "image_tag": "c362f0ad488e3b289394_trial_1_9564c398",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.09
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 36, in <module>\n    from keras.models import Sequential  \nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.75
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 26.64,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 26.64,
+    "avg_build_time_sec": 14.09,
+    "avg_run_time_sec": 1.75,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

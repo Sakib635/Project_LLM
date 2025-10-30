@@ -1,0 +1,171 @@
+{
+  "project": "14a8d6bf4783f4704c8a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:20:23Z",
+      "image_tag": "14a8d6bf4783f4704c8a_trial_1_21467627",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.7
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from buildbot.status.results import EXCEPTION\nModuleNotFoundError: No module named 'buildbot.status.results'\n",
+        "time_sec": 1.61
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "buildbot>=0.8.2,<1.0.0",
+          "twisted>=14.0.0"
+        ],
+        "rationale": [
+          "The `buildbot` package is required for the code to run, and it is not included in the current requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "The `buildbot` package is required for the code to run, and it is not included in the current requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T03:20:50Z",
+      "image_tag": "14a8d6bf4783f4704c8a_trial_2_092c2e94",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "a for docker.io/library/python:3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 13.40kB 0.0s done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:efa57599a35158b2dee7eb6cb2c8470443730aa783e053679387b8e61dca68b7 done\n#10 exporting config sha256:7a2283691b2f3ef0e66000143e90304f9c4353f0d38bb6fc81a981261c9a993f done\n#10 exporting attestation manifest sha256:ac684b255cf74bd6116d626fa1afb35a516fff5fe0405f9404e88984cd69e298 0.0s done\n#10 exporting manifest list sha256:afc7e48e06f04728a2d92249e9f51978c56dbe729e78da714c73680b5fdf2fe2 0.0s done\n#10 naming to docker.io/library/14a8d6bf4783f4704c8a_trial_2_092c2e94:latest done\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_2_092c2e94:latest\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_2_092c2e94:latest 0.9s done\n#10 DONE 1.0s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/olyqwlb2tl6f6czhq8zgqg6k0\n",
+        "time_sec": 2.0
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from buildbot.status.results import EXCEPTION\nModuleNotFoundError: No module named 'buildbot.status.results'\n",
+        "time_sec": 1.64
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "buildbot>=0.8.2,<1.0.0"
+        ],
+        "rationale": [
+          "This version of buildbot is known to work with this project."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This version of buildbot is known to work with this project."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T03:21:03Z",
+      "image_tag": "14a8d6bf4783f4704c8a_trial_3_2e5b0afa",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ng context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 13.40kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:efa57599a35158b2dee7eb6cb2c8470443730aa783e053679387b8e61dca68b7 done\n#10 exporting config sha256:7a2283691b2f3ef0e66000143e90304f9c4353f0d38bb6fc81a981261c9a993f done\n#10 exporting attestation manifest sha256:5b35918ab0c7cf8b25422efc8960320770cf3fdd13e91b206f01cd4bcb742a0a 0.0s done\n#10 exporting manifest list sha256:1be10cc616f9c0c3d8cb80d74ee5f8210a83cec1ac9282c687de1481d39a32d9\n#10 exporting manifest list sha256:1be10cc616f9c0c3d8cb80d74ee5f8210a83cec1ac9282c687de1481d39a32d9 0.0s done\n#10 naming to docker.io/library/14a8d6bf4783f4704c8a_trial_3_2e5b0afa:latest done\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_3_2e5b0afa:latest\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_3_2e5b0afa:latest 0.9s done\n#10 DONE 1.0s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/muwbqjttnq8la2f4v0jqy1pb5\n",
+        "time_sec": 1.97
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from buildbot.status.results import EXCEPTION\nModuleNotFoundError: No module named 'buildbot.status.results'\n",
+        "time_sec": 1.59
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "buildbot>=0.8.2,<1.0.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T03:21:14Z",
+      "image_tag": "14a8d6bf4783f4704c8a_trial_4_97adee80",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "a for docker.io/library/python:3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 13.40kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:efa57599a35158b2dee7eb6cb2c8470443730aa783e053679387b8e61dca68b7 done\n#10 exporting config sha256:7a2283691b2f3ef0e66000143e90304f9c4353f0d38bb6fc81a981261c9a993f done\n#10 exporting attestation manifest sha256:2b05babad3baa6724ec359332651c430aa333f631b370673c83fbfba8f098e45 0.0s done\n#10 exporting manifest list sha256:87c0ba21b22e75df3197dec5225d37e845263675bf93138164a6494164fe36f1 0.0s done\n#10 naming to docker.io/library/14a8d6bf4783f4704c8a_trial_4_97adee80:latest done\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_4_97adee80:latest\n#10 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_4_97adee80:latest 1.0s done\n#10 DONE 1.1s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/cz8h5c7cvad4sjue0j65uiafc\n",
+        "time_sec": 1.94
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from buildbot.status.results import EXCEPTION\nModuleNotFoundError: No module named 'buildbot.status.results'\n",
+        "time_sec": 1.77
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "buildbot>=0.8.2"
+        ],
+        "rationale": [
+          "This requirement is already present in the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "This requirement is already present in the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T03:21:26Z",
+      "image_tag": "14a8d6bf4783f4704c8a_trial_5_c05f771e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "context\n#5 DONE 0.0s\n\n#6 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#6 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 13.40kB 0.0s done\n#5 DONE 0.1s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:efa57599a35158b2dee7eb6cb2c8470443730aa783e053679387b8e61dca68b7 0.0s done\n#11 exporting config sha256:7a2283691b2f3ef0e66000143e90304f9c4353f0d38bb6fc81a981261c9a993f 0.0s done\n#11 exporting attestation manifest sha256:3af87b6a696143fc59be36871e009bc42a77da8668d84ca636265b322d4118a7 0.1s done\n#11 exporting manifest list sha256:fc98ee08a8523a122e2b165c375506e1a414e2e2334a28dbeac458d9b07872a6\n#11 exporting manifest list sha256:fc98ee08a8523a122e2b165c375506e1a414e2e2334a28dbeac458d9b07872a6 0.0s done\n#11 naming to docker.io/library/14a8d6bf4783f4704c8a_trial_5_c05f771e:latest done\n#11 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_5_c05f771e:latest\n#11 unpacking to docker.io/library/14a8d6bf4783f4704c8a_trial_5_c05f771e:latest 1.0s done\n#11 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7y88t6rk8o5qx92z7be2itilt\n",
+        "time_sec": 2.94
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 7, in <module>\n    from buildbot.status.results import EXCEPTION\nModuleNotFoundError: No module named 'buildbot.status.results'\n",
+        "time_sec": 2.1
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 88.79,
+  "metrics": {
+    "total_attempts": 5,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 88.79,
+    "avg_build_time_sec": 4.91,
+    "avg_run_time_sec": 1.74,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 5
+    }
+  }
+}

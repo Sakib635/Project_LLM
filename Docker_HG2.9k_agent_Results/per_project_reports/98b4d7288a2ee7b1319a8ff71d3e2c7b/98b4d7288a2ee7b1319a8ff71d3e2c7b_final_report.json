@@ -1,0 +1,170 @@
+{
+  "project": "98b4d7288a2ee7b1319a8ff71d3e2c7b",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:05:11Z",
+      "image_tag": "98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_1_04f57e8f",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 10.9
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from google.cloud import vision as GoogleVision\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision/__init__.py\", line 21, in <module>\n    from google.cloud.vision_v1.services.image_annotator.async_client import (\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_v1/__init__.py\", line 21, in <module>\n    from google.cloud.vision_helpers import VisionHelpers\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_helpers/__init__.py\", line 17, in <module>\n    from google.api_core import protobuf_helpers as protobuf\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/__init__.py\", line 20, in <module>\n    from google.api_core import _python_package_support\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/_python_package_support.py\", line 28, in <module>\n    from packaging.version import parse as parse_version\nModuleNotFoundError: No module named 'packaging'\n",
+        "time_sec": 1.45
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "packaging"
+        ],
+        "rationale": [
+          "packaging is a Python package that provides functions for parsing and manipulating version numbers in the format used by PyPI."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "packaging is a Python package that provides functions for parsing and manipulating version numbers in the format used by PyPI."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:05:33Z",
+      "image_tag": "98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_2_b2ae805b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 3.40kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:9c58e1b1674b30c74ce519dd1d846e3f25df2c431add4d3e74cf569bea74860c 0.0s done\n#10 exporting config sha256:aeb777390190693bafcad714f4f69521f3b875babe417b6601e82707cdafae8e 0.0s done\n#10 exporting attestation manifest sha256:c2ab4c05acae6e5298da906897a981f7424327fd2593cbeeacf8e00c96a97c19\n#10 exporting attestation manifest sha256:c2ab4c05acae6e5298da906897a981f7424327fd2593cbeeacf8e00c96a97c19 0.1s done\n#10 exporting manifest list sha256:638826828ea0a14f95f04f81ed6aef630ff4bf2c164077f884826d65499dd484 0.0s done\n#10 naming to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_2_b2ae805b:latest done\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_2_b2ae805b:latest\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_2_b2ae805b:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/2qwm3kpo18jxa59ylcggslw2g\n",
+        "time_sec": 1.99
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from google.cloud import vision as GoogleVision\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision/__init__.py\", line 21, in <module>\n    from google.cloud.vision_v1.services.image_annotator.async_client import (\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_v1/__init__.py\", line 21, in <module>\n    from google.cloud.vision_helpers import VisionHelpers\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_helpers/__init__.py\", line 17, in <module>\n    from google.api_core import protobuf_helpers as protobuf\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/__init__.py\", line 20, in <module>\n    from google.api_core import _python_package_support\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/_python_package_support.py\", line 28, in <module>\n    from packaging.version import parse as parse_version\nModuleNotFoundError: No module named 'packaging'\n",
+        "time_sec": 1.52
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "packaging"
+        ],
+        "rationale": [
+          "This package contains a dependency on 'packaging' which is not listed in the current requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "This package contains a dependency on 'packaging' which is not listed in the current requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T14:05:46Z",
+      "image_tag": "98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_3_bf93133b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 3.40kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:9c58e1b1674b30c74ce519dd1d846e3f25df2c431add4d3e74cf569bea74860c 0.0s done\n#10 exporting config sha256:aeb777390190693bafcad714f4f69521f3b875babe417b6601e82707cdafae8e 0.0s done\n#10 exporting attestation manifest sha256:36d992c3771bc2565d72525977f9b6baa1ad02efaff917dcefdc5e1f8f4c578b\n#10 exporting attestation manifest sha256:36d992c3771bc2565d72525977f9b6baa1ad02efaff917dcefdc5e1f8f4c578b 0.1s done\n#10 exporting manifest list sha256:1634259ba3f6c8af3ff42fc7ef01255f39ac2685398dec83977f0215474efb10 0.0s done\n#10 naming to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_3_bf93133b:latest\n#10 naming to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_3_bf93133b:latest done\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_3_bf93133b:latest\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_3_bf93133b:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/v34qpqnuexbfqoz139l61l9aq\n",
+        "time_sec": 1.81
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from google.cloud import vision as GoogleVision\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision/__init__.py\", line 21, in <module>\n    from google.cloud.vision_v1.services.image_annotator.async_client import (\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_v1/__init__.py\", line 21, in <module>\n    from google.cloud.vision_helpers import VisionHelpers\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_helpers/__init__.py\", line 17, in <module>\n    from google.api_core import protobuf_helpers as protobuf\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/__init__.py\", line 20, in <module>\n    from google.api_core import _python_package_support\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/_python_package_support.py\", line 28, in <module>\n    from packaging.version import parse as parse_version\nModuleNotFoundError: No module named 'packaging'\n",
+        "time_sec": 1.45
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "packaging>=20.0"
+        ],
+        "rationale": [
+          "The 'packaging' package is a dependency of the Google Cloud Vision API and is not included in the requirements file by default."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.6,
+          "notes": [
+            "The 'packaging' package is a dependency of the Google Cloud Vision API and is not included in the requirements file by default."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T14:06:00Z",
+      "image_tag": "98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_4_1587fbb5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 3.40kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:9c58e1b1674b30c74ce519dd1d846e3f25df2c431add4d3e74cf569bea74860c 0.0s done\n#10 exporting config sha256:aeb777390190693bafcad714f4f69521f3b875babe417b6601e82707cdafae8e 0.0s done\n#10 exporting attestation manifest sha256:cf44fcda8b53b1f7e2f45ca9c2613a1e9d1a28eed72c155a40600f75d2fb6329\n#10 exporting attestation manifest sha256:cf44fcda8b53b1f7e2f45ca9c2613a1e9d1a28eed72c155a40600f75d2fb6329 0.1s done\n#10 exporting manifest list sha256:59269473a9a6192ae032a8390a7724fe637770e467aece5ed4581aaa317c989d 0.0s done\n#10 naming to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_4_1587fbb5:latest done\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_4_1587fbb5:latest\n#10 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_4_1587fbb5:latest 0.6s done\n#10 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8twadenszm11wfgdhlu261pt1\n",
+        "time_sec": 1.81
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from google.cloud import vision as GoogleVision\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision/__init__.py\", line 21, in <module>\n    from google.cloud.vision_v1.services.image_annotator.async_client import (\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_v1/__init__.py\", line 21, in <module>\n    from google.cloud.vision_helpers import VisionHelpers\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_helpers/__init__.py\", line 17, in <module>\n    from google.api_core import protobuf_helpers as protobuf\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/__init__.py\", line 20, in <module>\n    from google.api_core import _python_package_support\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/_python_package_support.py\", line 28, in <module>\n    from packaging.version import parse as parse_version\nModuleNotFoundError: No module named 'packaging'\n",
+        "time_sec": 1.55
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "packaging"
+        ],
+        "rationale": [
+          "The 'packaging' package is required by the Google Cloud Vision API."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.75,
+          "notes": [
+            "The 'packaging' package is required by the Google Cloud Vision API."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T14:06:13Z",
+      "image_tag": "98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_5_fb5811ad",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ocker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 3.40kB done\n#6 DONE 0.0s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:9c58e1b1674b30c74ce519dd1d846e3f25df2c431add4d3e74cf569bea74860c 0.0s done\n#11 exporting config sha256:aeb777390190693bafcad714f4f69521f3b875babe417b6601e82707cdafae8e 0.0s done\n#11 exporting attestation manifest sha256:a391898d3638dea9fdb6c7b6daa77b933fef6d0d76aa8e740be098d0f9d9a350\n#11 exporting attestation manifest sha256:a391898d3638dea9fdb6c7b6daa77b933fef6d0d76aa8e740be098d0f9d9a350 0.1s done\n#11 exporting manifest list sha256:b708fabca327e566bf9d65eccdec9b28280513990c05c9e8a704bf0de340ba25 0.0s done\n#11 naming to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_5_fb5811ad:latest done\n#11 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_5_fb5811ad:latest\n#11 unpacking to docker.io/library/98b4d7288a2ee7b1319a8ff71d3e2c7b_trial_5_fb5811ad:latest 0.6s done\n#11 DONE 0.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/a7asgk8cb15owtt2jk3w72d2d\n",
+        "time_sec": 1.95
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 6, in <module>\n    from google.cloud import vision as GoogleVision\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision/__init__.py\", line 21, in <module>\n    from google.cloud.vision_v1.services.image_annotator.async_client import (\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_v1/__init__.py\", line 21, in <module>\n    from google.cloud.vision_helpers import VisionHelpers\n  File \"/usr/local/lib/python3.9/site-packages/google/cloud/vision_helpers/__init__.py\", line 17, in <module>\n    from google.api_core import protobuf_helpers as protobuf\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/__init__.py\", line 20, in <module>\n    from google.api_core import _python_package_support\n  File \"/usr/local/lib/python3.9/site-packages/google/api_core/_python_package_support.py\", line 28, in <module>\n    from packaging.version import parse as parse_version\nModuleNotFoundError: No module named 'packaging'\n",
+        "time_sec": 1.58
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 90.16,
+  "metrics": {
+    "total_attempts": 5,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 90.16,
+    "avg_build_time_sec": 3.69,
+    "avg_run_time_sec": 1.51,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 5
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "project": "831611",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:50:42Z",
+      "image_tag": "831611_trial_1_526c44f6",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.484 ERROR: Could not find a version that satisfies the requirement roslib<2.0.0,>=0.1.0 (from versions: none)\n#9 1.484 ERROR: No matching distribution found for roslib<2.0.0,>=0.1.0\n#9 1.569 \n#9 1.569 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.569 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.484 ERROR: Could not find a version that satisfies the requirement roslib<2.0.0,>=0.1.0 (from versions: none)\n1.484 ERROR: No matching distribution found for roslib<2.0.0,>=0.1.0\n1.569 \n1.569 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.569 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nc9od1oswrb5ewwjltpjcfv23\n",
+        "time_sec": 2.92
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fix is possible because the error message indicates that there is no version of roslib available that satisfies the specified constraints (<2.0.0,>=0.1.0)."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 5.75,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 5.75,
+    "avg_build_time_sec": 2.92,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "project": "d1899f011ae41b26fb6e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:55:34Z",
+      "image_tag": "d1899f011ae41b26fb6e_trial_1_33c78634",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.22
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    import tables\nModuleNotFoundError: No module named 'tables'\n",
+        "time_sec": 1.57
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "tables>=1.2.0"
+        ],
+        "rationale": [
+          "The 'tables' package is a commonly used library for working with tabular data in Python."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "The 'tables' package is a commonly used library for working with tabular data in Python."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:55:59Z",
+      "image_tag": "d1899f011ae41b26fb6e_trial_2_b74105ee",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 9.10kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:858008d7bdd2bff8f51606a1d5734f3f88505744452eefba692089f58a17719f 0.0s done\n#10 exporting config sha256:06926c2901a4f57e2f7625eca266f53ac6fcd813cd8d801138260ab76b4a9103 0.0s done\n#10 exporting attestation manifest sha256:49127def1d05155fe9aa81a8546fadcf7a2feb3ff0cb4e62057c1f3f288380e3 0.1s done\n#10 exporting manifest list sha256:2afc2c9cfbebd02186edf66b6279c88775c4efc7a1be791a542996c9ea846489\n#10 exporting manifest list sha256:2afc2c9cfbebd02186edf66b6279c88775c4efc7a1be791a542996c9ea846489 0.0s done\n#10 naming to docker.io/library/d1899f011ae41b26fb6e_trial_2_b74105ee:latest done\n#10 unpacking to docker.io/library/d1899f011ae41b26fb6e_trial_2_b74105ee:latest\n#10 unpacking to docker.io/library/d1899f011ae41b26fb6e_trial_2_b74105ee:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rbc0g1gv14m5nok0bxoxda1iz\n",
+        "time_sec": 2.55
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    import tables\nModuleNotFoundError: No module named 'tables'\n",
+        "time_sec": 1.75
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 39.54,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 39.54,
+    "avg_build_time_sec": 8.88,
+    "avg_run_time_sec": 1.66,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

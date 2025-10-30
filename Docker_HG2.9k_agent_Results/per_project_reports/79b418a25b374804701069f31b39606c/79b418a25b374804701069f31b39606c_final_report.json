@@ -1,0 +1,71 @@
+{
+  "project": "79b418a25b374804701069f31b39606c",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:24:55Z",
+      "image_tag": "79b418a25b374804701069f31b39606c_trial_1_25f03ec9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.98
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pandas_datareader import data as web\nModuleNotFoundError: No module named 'pandas_datareader'\n",
+        "time_sec": 1.84
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas_datareader>=1.2.0"
+        ],
+        "rationale": [
+          "pandas_datareader is a separate package from pandas."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "pandas_datareader is a separate package from pandas."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T12:25:20Z",
+      "image_tag": "79b418a25b374804701069f31b39606c_trial_2_330d0827",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 1.93kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:fa0008b56e345d8ab7149fa8345dcfa17d71f8281621f8d285bb6e28acb9508a 0.0s done\n#10 exporting config sha256:b886bad20bd73be8f73bc73b3a32801b18d0dca8d29376031e39c6610a0eff45 0.0s done\n#10 exporting attestation manifest sha256:2a0d1d97ed3a8d7c65ec51983db60fa5be225db15a6988a47678d119789416fa\n#10 exporting attestation manifest sha256:2a0d1d97ed3a8d7c65ec51983db60fa5be225db15a6988a47678d119789416fa 0.1s done\n#10 exporting manifest list sha256:8bf8af9c2b23ee38dbd996886aac2016f643991686e5e7c1c871a24940bd684f 0.0s done\n#10 naming to docker.io/library/79b418a25b374804701069f31b39606c_trial_2_330d0827:latest\n#10 naming to docker.io/library/79b418a25b374804701069f31b39606c_trial_2_330d0827:latest done\n#10 unpacking to docker.io/library/79b418a25b374804701069f31b39606c_trial_2_330d0827:latest\n#10 unpacking to docker.io/library/79b418a25b374804701069f31b39606c_trial_2_330d0827:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/z0m2pbhvigqwcaxutdhu2c67j\n",
+        "time_sec": 2.88
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from pandas_datareader import data as web\nModuleNotFoundError: No module named 'pandas_datareader'\n",
+        "time_sec": 1.83
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 45.06,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 45.06,
+    "avg_build_time_sec": 8.93,
+    "avg_run_time_sec": 1.83,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

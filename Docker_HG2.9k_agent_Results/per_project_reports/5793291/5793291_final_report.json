@@ -1,0 +1,38 @@
+{
+  "project": "5793291",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T09:27:43Z",
+      "image_tag": "5793291_trial_1_ed35ec01",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.387 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.5.1 (from versions: none)\n#9 1.387 ERROR: No matching distribution found for PyQt4<5.0,>=4.5.1\n#9 1.475 \n#9 1.475 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.475 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.387 ERROR: Could not find a version that satisfies the requirement PyQt4<5.0,>=4.5.1 (from versions: none)\n1.387 ERROR: No matching distribution found for PyQt4<5.0,>=4.5.1\n1.475 \n1.475 [notice] A new release of pip is available: 24.0 -> 25.3\n1.475 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ohu7i8a2s1r29xa68823zr9x9\n",
+        "time_sec": 2.94
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 6.56,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 6.56,
+    "avg_build_time_sec": 2.94,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

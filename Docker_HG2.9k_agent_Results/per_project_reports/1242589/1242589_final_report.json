@@ -1,0 +1,138 @@
+{
+  "project": "1242589",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:35:21Z",
+      "image_tag": "1242589_trial_1_5c103c83",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 13.47
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    from Foundation import *\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.26
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "Foundation"
+        ],
+        "rationale": [
+          "The requirements.txt file may not be compatible with the current Python version."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "The requirements.txt file may not be compatible with the current Python version."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:35:43Z",
+      "image_tag": "1242589_trial_2_b7249e2c",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "1 DONE 0.0s\n\n#2 [internal] load metadata for docker.io/library/python:3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 13.83kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8ec1aed73b884a119c7dec793f229ba9f297ae4b59c1450efc03eb009d27adf2 done\n#10 exporting config sha256:ea4194ec3d1f9c56d561e12146e7da03aaff4cdcfe44707692e22fb95560708f done\n#10 exporting attestation manifest sha256:5c4c74d8371c5c8c443d9a4141433fbc838dad090baf9114faea4d30a5bdf73b 0.0s done\n#10 exporting manifest list sha256:1ff42e7ecc8b05c162ef83cb5e09b0b9edf542a616351c904c7a0df1f653d85a 0.0s done\n#10 naming to docker.io/library/1242589_trial_2_b7249e2c:latest done\n#10 unpacking to docker.io/library/1242589_trial_2_b7249e2c:latest\n#10 unpacking to docker.io/library/1242589_trial_2_b7249e2c:latest 1.1s done\n#10 DONE 1.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/na3mtqtinknwe9732szutw0dc\n",
+        "time_sec": 2.09
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    from Foundation import *\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.24
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas==1.2.0",
+          "numpy==1.2.0"
+        ],
+        "rationale": [
+          "Both pandas and numpy are required for the snippet to work."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "Both pandas and numpy are required for the snippet to work."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T02:35:55Z",
+      "image_tag": "1242589_trial_3_0c243798",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "y/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 13.83kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8ec1aed73b884a119c7dec793f229ba9f297ae4b59c1450efc03eb009d27adf2 0.0s done\n#10 exporting config sha256:ea4194ec3d1f9c56d561e12146e7da03aaff4cdcfe44707692e22fb95560708f\n#10 exporting config sha256:ea4194ec3d1f9c56d561e12146e7da03aaff4cdcfe44707692e22fb95560708f 0.0s done\n#10 exporting attestation manifest sha256:34a7c462d0d82f0626ce21acd2307ffae7ea2b3e88b751c5ac64283676650395 0.1s done\n#10 exporting manifest list sha256:e308dd2b9c83f84bf33aaf82bc08cbdbeda90cdc9fb6b55acbbc9a4abb68d111\n#10 exporting manifest list sha256:e308dd2b9c83f84bf33aaf82bc08cbdbeda90cdc9fb6b55acbbc9a4abb68d111 0.0s done\n#10 naming to docker.io/library/1242589_trial_3_0c243798:latest done\n#10 unpacking to docker.io/library/1242589_trial_3_0c243798:latest\n#10 unpacking to docker.io/library/1242589_trial_3_0c243798:latest 1.0s done\n#10 DONE 1.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/fd9u6ut5vx99zmpsgah6e7xnm\n",
+        "time_sec": 2.48
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    from Foundation import *\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.39
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy>=1.2.0"
+        ],
+        "rationale": [
+          "The module 'Foundation' is not included in the default Python installation, so it is likely that the user needs to install it as a separate package."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The module 'Foundation' is not included in the default Python installation, so it is likely that the user needs to install it as a separate package."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T02:36:11Z",
+      "image_tag": "1242589_trial_4_4b868ff9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "nore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.0s\n\n#4 [internal] load build context\n#4 transferring context: 13.83kB 0.0s done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8ec1aed73b884a119c7dec793f229ba9f297ae4b59c1450efc03eb009d27adf2 0.0s done\n#10 exporting config sha256:ea4194ec3d1f9c56d561e12146e7da03aaff4cdcfe44707692e22fb95560708f 0.0s done\n#10 exporting attestation manifest sha256:8eace093cc1b9c52fef2e2704257a623db3b387618e13b21d3120e3229a74832 0.1s done\n#10 exporting manifest list sha256:c1cf88765cde72227ca197202b6d19de263d3bda098a8b4345c18fc84533b14e 0.0s done\n#10 naming to docker.io/library/1242589_trial_4_4b868ff9:latest\n#10 naming to docker.io/library/1242589_trial_4_4b868ff9:latest done\n#10 unpacking to docker.io/library/1242589_trial_4_4b868ff9:latest\n#10 unpacking to docker.io/library/1242589_trial_4_4b868ff9:latest 1.0s done\n#10 DONE 1.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tm3989gyrn4qeqjq7sedg54vh\n",
+        "time_sec": 2.5
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    from Foundation import *\nModuleNotFoundError: No module named 'Foundation'\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 67.48,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 67.48,
+    "avg_build_time_sec": 5.13,
+    "avg_run_time_sec": 1.3,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

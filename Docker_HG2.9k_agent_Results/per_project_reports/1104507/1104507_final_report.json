@@ -1,0 +1,74 @@
+{
+  "project": "1104507",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:17:49Z",
+      "image_tag": "1104507_trial_1_d687040d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.48
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from Bio import Entrez\nModuleNotFoundError: No module named 'Bio'\n",
+        "time_sec": 1.3
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "Bio>=2.0.0"
+        ],
+        "rationale": [
+          "Adding Bio>=2.0.0 may resolve ModuleNotFoundError: No module named 'Bio'"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Adding Bio>=2.0.0 may resolve ModuleNotFoundError: No module named 'Bio'"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:18:12Z",
+      "image_tag": "1104507_trial_2_5a0999c8",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 944B done\n#4 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:40da66de5a7d9c87da6cc63f80d61ece759c31b42128556697761e5445b26baa 0.0s done\n#10 exporting config sha256:6fb4b7583eb84a569ac6eb8bd2abc419eddb0aed6232741797f184f423546f49 0.0s done\n#10 exporting attestation manifest sha256:bbd92e54f293a8f5e71674e2c08433f252ceca179118d9742d64e25b28e7c21c\n#10 exporting attestation manifest sha256:bbd92e54f293a8f5e71674e2c08433f252ceca179118d9742d64e25b28e7c21c 0.1s done\n#10 exporting manifest list sha256:29d285499704473d1be258e8016778c0d8945f000466d2a8539de4bbe9243170 0.0s done\n#10 naming to docker.io/library/1104507_trial_2_5a0999c8:latest\n#10 naming to docker.io/library/1104507_trial_2_5a0999c8:latest done\n#10 unpacking to docker.io/library/1104507_trial_2_5a0999c8:latest\n#10 unpacking to docker.io/library/1104507_trial_2_5a0999c8:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/owq553ly6sj1t33ig86ykdp8i\n",
+        "time_sec": 2.55
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from Bio import Entrez\nModuleNotFoundError: No module named 'Bio'\n",
+        "time_sec": 1.39
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": ""
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 36.29,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 36.29,
+    "avg_build_time_sec": 8.52,
+    "avg_run_time_sec": 1.34,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

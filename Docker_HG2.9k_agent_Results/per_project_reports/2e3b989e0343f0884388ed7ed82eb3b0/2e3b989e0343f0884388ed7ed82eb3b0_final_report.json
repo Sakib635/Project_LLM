@@ -1,0 +1,74 @@
+{
+  "project": "2e3b989e0343f0884388ed7ed82eb3b0",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:38:13Z",
+      "image_tag": "2e3b989e0343f0884388ed7ed82eb3b0_trial_1_20ea31b7",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.12
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import scipy\nModuleNotFoundError: No module named 'scipy'\n",
+        "time_sec": 1.13
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "scipy>=1.7.0"
+        ],
+        "rationale": [
+          "scipy is a widely used Python library for scientific computing and math operations."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.6,
+          "notes": [
+            "scipy is a widely used Python library for scientific computing and math operations."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:38:37Z",
+      "image_tag": "2e3b989e0343f0884388ed7ed82eb3b0_trial_2_079c3265",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 15.46kB 0.0s done\n#5 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:d06b76a746e67b0776d680e5714927316bc49e07595b885a6eda50c4ba87cfca done\n#10 exporting config sha256:5d00f080278bc7bd19242de222a2d864af2a67e49dcbaa33525b059366c412b7 done\n#10 exporting attestation manifest sha256:54db61532b1d582ff150598c09ba8d2c763a1b3ae0d0574990dd5fcd07dc2aab 0.0s done\n#10 exporting manifest list sha256:29090ea482c8f52b19225590e1a8dae1d72f68f992887e0c8de000394d187f3a\n#10 exporting manifest list sha256:29090ea482c8f52b19225590e1a8dae1d72f68f992887e0c8de000394d187f3a 0.0s done\n#10 naming to docker.io/library/2e3b989e0343f0884388ed7ed82eb3b0_trial_2_079c3265:latest done\n#10 unpacking to docker.io/library/2e3b989e0343f0884388ed7ed82eb3b0_trial_2_079c3265:latest\n#10 unpacking to docker.io/library/2e3b989e0343f0884388ed7ed82eb3b0_trial_2_079c3265:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/tbqv0e1n2cl9qi1kkbezxmkmi\n",
+        "time_sec": 2.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import scipy\nModuleNotFoundError: No module named 'scipy'\n",
+        "time_sec": 1.39
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fix is possible because the package 'scipy' is not available in the current environment."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 35.0,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 35.0,
+    "avg_build_time_sec": 8.16,
+    "avg_run_time_sec": 1.26,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

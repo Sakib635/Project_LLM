@@ -1,0 +1,107 @@
+{
+  "project": "137653",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:11:04Z",
+      "image_tag": "137653_trial_1_d17a8353",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.293 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n#9 1.294 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n#9 1.369 \n#9 1.369 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.369 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.293 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n1.294 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n1.369 \n1.369 [notice] A new release of pip is available: 24.0 -> 25.3\n1.369 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/npeetj3gfcynw1v5ttpyyvd1x\n",
+        "time_sec": 2.66
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "urllib2>=1.0,<3.0"
+        ],
+        "rationale": [
+          "The version range for urllib2 is already satisfied by the current requirements file"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The version range for urllib2 is already satisfied by the current requirements file"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T03:11:10Z",
+      "image_tag": "137653_trial_2_1693dcd8",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.113 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n#9 1.113 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n#9 1.191 \n#9 1.191 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.191 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.113 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n1.113 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n1.191 \n1.191 [notice] A new release of pip is available: 24.0 -> 25.3\n1.191 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/a3mcqej4t0zpj8cbkengt0ejl\n",
+        "time_sec": 2.25
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "urllib2>=1.0,<3.0"
+        ],
+        "rationale": [
+          "The requirement urllib2 is not present in the current requirements file, but it is mentioned in the phase2_json summary."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The requirement urllib2 is not present in the current requirements file, but it is mentioned in the phase2_json summary."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T03:11:18Z",
+      "image_tag": "137653_trial_3_5d4bbc36",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.092 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n#9 1.092 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n#9 1.162 \n#9 1.162 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.162 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.092 ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)\n1.092 ERROR: No matching distribution found for urllib2<3.0,>=1.0\n1.162 \n1.162 [notice] A new release of pip is available: 24.0 -> 25.3\n1.162 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7adjal5ua6oo12oib24ygnwaf\n",
+        "time_sec": 2.06
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fix possible due to the error message: 'ERROR: Could not find a version that satisfies the requirement urllib2<3.0,>=1.0 (from versions: none)'"
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 18.62,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 18.62,
+    "avg_build_time_sec": 2.32,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

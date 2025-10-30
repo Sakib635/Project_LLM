@@ -1,0 +1,71 @@
+{
+  "project": "ca6ed07e5c8017272701",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:45:25Z",
+      "image_tag": "ca6ed07e5c8017272701_trial_1_74169adc",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.96
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 8, in <module>\n    from django.db.models import Aggregate\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.55
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=1.2.0"
+        ],
+        "rationale": [
+          "Adding the django package to the requirements file should fix the ModuleNotFoundError."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Adding the django package to the requirements file should fix the ModuleNotFoundError."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:45:52Z",
+      "image_tag": "ca6ed07e5c8017272701_trial_2_94297b54",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "c663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#6 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 962B done\n#5 DONE 0.0s\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [3/5] COPY snippet.py /app/snippet.py\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:e109a80d09477b10731ee30939213ef1d58ee40f50a8d15ce76525248c48d21a 0.0s done\n#11 exporting config sha256:de0483c1f51612063f129eaadec2978da5eaeedfe7d7152b8b4a0c3ceb7c983a 0.0s done\n#11 exporting attestation manifest sha256:69fab6cb072321dbad8c8b8f46a3f2f92208ce874047f109f64b08ab5fda3c02\n#11 exporting attestation manifest sha256:69fab6cb072321dbad8c8b8f46a3f2f92208ce874047f109f64b08ab5fda3c02 0.1s done\n#11 exporting manifest list sha256:0b212a7f467738ef320a246c030a1ca293faf331550842c1cd7b40f09cee5c98 0.0s done\n#11 naming to docker.io/library/ca6ed07e5c8017272701_trial_2_94297b54:latest\n#11 naming to docker.io/library/ca6ed07e5c8017272701_trial_2_94297b54:latest 0.0s done\n#11 unpacking to docker.io/library/ca6ed07e5c8017272701_trial_2_94297b54:latest\n#11 unpacking to docker.io/library/ca6ed07e5c8017272701_trial_2_94297b54:latest 1.4s done\n#11 DONE 1.6s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/y1mzelyqry6zlajtqj73stnr0\n",
+        "time_sec": 2.82
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 8, in <module>\n    from django.db.models import Aggregate\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.53
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 43.88,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 43.88,
+    "avg_build_time_sec": 9.89,
+    "avg_run_time_sec": 1.54,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

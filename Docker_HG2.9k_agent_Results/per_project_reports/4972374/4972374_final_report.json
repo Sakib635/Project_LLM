@@ -1,0 +1,38 @@
+{
+  "project": "4972374",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:02:36Z",
+      "image_tag": "4972374_trial_1_069bee89",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "t ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 1.512 ERROR: Could not find a version that satisfies the requirement os<2.0.0,>=1.0.0 (from versions: none)\n#10 1.512 ERROR: No matching distribution found for os<2.0.0,>=1.0.0\n#10 1.600 \n#10 1.600 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#10 1.600 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.512 ERROR: Could not find a version that satisfies the requirement os<2.0.0,>=1.0.0 (from versions: none)\n1.512 ERROR: No matching distribution found for os<2.0.0,>=1.0.0\n1.600 \n1.600 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.600 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8aqc12ukq6o00dx491wqxhyit\n",
+        "time_sec": 3.14
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 12.28,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 12.28,
+    "avg_build_time_sec": 3.14,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

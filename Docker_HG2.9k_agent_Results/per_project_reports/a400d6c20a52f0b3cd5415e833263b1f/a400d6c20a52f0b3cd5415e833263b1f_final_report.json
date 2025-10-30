@@ -1,0 +1,74 @@
+{
+  "project": "a400d6c20a52f0b3cd5415e833263b1f",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:21:23Z",
+      "image_tag": "a400d6c20a52f0b3cd5415e833263b1f_trial_1_739ac058",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.394 ERROR: Could not find a version that satisfies the requirement yaml<2.0.0,>=1.2.0 (from versions: none)\n#9 1.394 ERROR: No matching distribution found for yaml<2.0.0,>=1.2.0\n#9 1.476 \n#9 1.476 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.476 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.394 ERROR: Could not find a version that satisfies the requirement yaml<2.0.0,>=1.2.0 (from versions: none)\n1.394 ERROR: No matching distribution found for yaml<2.0.0,>=1.2.0\n1.476 \n1.476 [notice] A new release of pip is available: 24.0 -> 25.3\n1.476 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rjvm7vp05ft9g34whmf3yz1k1\n",
+        "time_sec": 2.81
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "yaml>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "This requirement is already in the requirements file, so it should be safe to add again."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This requirement is already in the requirements file, so it should be safe to add again."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:21:30Z",
+      "image_tag": "a400d6c20a52f0b3cd5415e833263b1f_trial_2_574f4c3f",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.536 ERROR: Could not find a version that satisfies the requirement yaml<2.0.0,>=1.2.0 (from versions: none)\n#9 1.536 ERROR: No matching distribution found for yaml<2.0.0,>=1.2.0\n#9 1.625 \n#9 1.625 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.625 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.536 ERROR: Could not find a version that satisfies the requirement yaml<2.0.0,>=1.2.0 (from versions: none)\n1.536 ERROR: No matching distribution found for yaml<2.0.0,>=1.2.0\n1.625 \n1.625 [notice] A new release of pip is available: 24.0 -> 25.3\n1.625 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/zvhgjth86hplu69qojfuqx299\n",
+        "time_sec": 2.76
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fix possible due to version conflict."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 12.1,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 12.1,
+    "avg_build_time_sec": 2.79,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

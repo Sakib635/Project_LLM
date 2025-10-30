@@ -1,0 +1,71 @@
+{
+  "project": "c6b3e4d47d933b057aab32c9c29c4221",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:34:16Z",
+      "image_tag": "c6b3e4d47d933b057aab32c9c29c4221_trial_1_95b6c02d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.79
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from keras import backend as K\nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.55
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "keras>=2.5.0"
+        ],
+        "rationale": [
+          "Keras is a popular machine learning library that provides a simple and efficient way to build neural networks in Python."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Keras is a popular machine learning library that provides a simple and efficient way to build neural networks in Python."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:34:41Z",
+      "image_tag": "c6b3e4d47d933b057aab32c9c29c4221_trial_2_3dae8fad",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 18.87kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:e6d46e00c3984c92e3d9e1c29ea5d572655fbe93695e8e2c43d0efe4f24fd705 0.0s done\n#10 exporting config sha256:4fc70934c12d09a173fac3c47d00d5278a7b6c642aff97ee8f5483a45c13a560\n#10 exporting config sha256:4fc70934c12d09a173fac3c47d00d5278a7b6c642aff97ee8f5483a45c13a560 0.0s done\n#10 exporting attestation manifest sha256:5cec7008b67adb08b4fe4489fa1ed130e51923f918a17ab4f2b32f522510b10c 0.1s done\n#10 exporting manifest list sha256:985a9c5a7a1339b49a0255ed94725ce60ac582fc924a271c9ce584c63f2e5e6e\n#10 exporting manifest list sha256:985a9c5a7a1339b49a0255ed94725ce60ac582fc924a271c9ce584c63f2e5e6e 0.0s done\n#10 naming to docker.io/library/c6b3e4d47d933b057aab32c9c29c4221_trial_2_3dae8fad:latest done\n#10 unpacking to docker.io/library/c6b3e4d47d933b057aab32c9c29c4221_trial_2_3dae8fad:latest\n#10 unpacking to docker.io/library/c6b3e4d47d933b057aab32c9c29c4221_trial_2_3dae8fad:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/w41bdhw4dn7w11x4c1lwe6uba\n",
+        "time_sec": 2.6
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from keras import backend as K\nModuleNotFoundError: No module named 'keras'\n",
+        "time_sec": 1.45
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 41.29,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 41.29,
+    "avg_build_time_sec": 8.7,
+    "avg_run_time_sec": 1.5,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

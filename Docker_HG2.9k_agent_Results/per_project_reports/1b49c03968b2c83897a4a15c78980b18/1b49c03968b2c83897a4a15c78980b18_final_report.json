@@ -1,0 +1,71 @@
+{
+  "project": "1b49c03968b2c83897a4a15c78980b18",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:00:35Z",
+      "image_tag": "1b49c03968b2c83897a4a15c78980b18_trial_1_371d23b6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.04
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 22, in <module>\n    import sys, os, progressbar\nModuleNotFoundError: No module named 'progressbar'\n",
+        "time_sec": 1.23
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "progressbar>=2.4.0"
+        ],
+        "rationale": [
+          "The latest version of progressbar is >=2.4.0"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The latest version of progressbar is >=2.4.0"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T04:00:59Z",
+      "image_tag": "1b49c03968b2c83897a4a15c78980b18_trial_2_24ee824c",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 9.27kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:0d52b0cbd9ac0f63e50ac885ba179cfa6c26882e37343babfa62b56c0536418b 0.0s done\n#10 exporting config sha256:ff7d8afdcf5e0f1af8ee0f88a25ddd2558f41cc3942876abd167ded57cdeb469 0.0s done\n#10 exporting attestation manifest sha256:4c9f90fe08a52c4ce40ff24df900fc8d559f15b72c11a7797695a46b7885e000 0.1s done\n#10 exporting manifest list sha256:0bae79a1cd9bfcaa31f339bd394b2ffda33829de9d149059d38e2c471a6c5e13\n#10 exporting manifest list sha256:0bae79a1cd9bfcaa31f339bd394b2ffda33829de9d149059d38e2c471a6c5e13 0.0s done\n#10 naming to docker.io/library/1b49c03968b2c83897a4a15c78980b18_trial_2_24ee824c:latest done\n#10 unpacking to docker.io/library/1b49c03968b2c83897a4a15c78980b18_trial_2_24ee824c:latest\n#10 unpacking to docker.io/library/1b49c03968b2c83897a4a15c78980b18_trial_2_24ee824c:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/6ociy21ke412vfs4t9igtswn9\n",
+        "time_sec": 2.65
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 22, in <module>\n    import sys, os, progressbar\nModuleNotFoundError: No module named 'progressbar'\n",
+        "time_sec": 1.43
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 39.74,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 39.74,
+    "avg_build_time_sec": 8.34,
+    "avg_run_time_sec": 1.33,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

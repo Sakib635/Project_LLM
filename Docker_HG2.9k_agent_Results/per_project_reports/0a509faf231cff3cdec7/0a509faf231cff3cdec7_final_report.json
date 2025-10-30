@@ -1,0 +1,71 @@
+{
+  "project": "0a509faf231cff3cdec7",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T01:45:00Z",
+      "image_tag": "0a509faf231cff3cdec7_trial_1_3d326b22",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 4.48
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from flask.ext.login import LoginManager, UserMixin, login_required\nModuleNotFoundError: No module named 'flask.ext'\n",
+        "time_sec": 1.28
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "flask-login>=0.3.0"
+        ],
+        "rationale": [
+          "Upgrading to flask-login>=0.3.0 is a conservative fix as it will not break the application if it depends on the older version."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Upgrading to flask-login>=0.3.0 is a conservative fix as it will not break the application if it depends on the older version."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T01:45:13Z",
+      "image_tag": "0a509faf231cff3cdec7_trial_2_57ebcfd7",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "gnore\n#3 transferring context: 2B 0.0s done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 1.62kB 0.0s done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:09e8cb3b485e81e73206afcaebdc968cf6503c0b33cff4702a4c2ce5270ce819 done\n#10 exporting config sha256:9145bff7dfef1b1898dd016938286d0dfce00597a1429d9b74a72c3651ab396a done\n#10 exporting attestation manifest sha256:c25e8ff63a4f72a1168982b87f59232f19b88b8ad28a0710f664ceeab8e38abd 0.0s done\n#10 exporting manifest list sha256:a0d6c2c421e0c34911a31f42fc5eba36bb82ea8a86eff0661ff84c9a884a4ef8 0.0s done\n#10 naming to docker.io/library/0a509faf231cff3cdec7_trial_2_57ebcfd7:latest\n#10 naming to docker.io/library/0a509faf231cff3cdec7_trial_2_57ebcfd7:latest done\n#10 unpacking to docker.io/library/0a509faf231cff3cdec7_trial_2_57ebcfd7:latest\n#10 unpacking to docker.io/library/0a509faf231cff3cdec7_trial_2_57ebcfd7:latest 0.2s done\n#10 DONE 0.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/y51h8d5pmkmx2ljm1qo7bguxy\n",
+        "time_sec": 1.16
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from flask.ext.login import LoginManager, UserMixin, login_required\nModuleNotFoundError: No module named 'flask.ext'\n",
+        "time_sec": 1.16
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 34.12,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 34.12,
+    "avg_build_time_sec": 2.82,
+    "avg_run_time_sec": 1.22,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

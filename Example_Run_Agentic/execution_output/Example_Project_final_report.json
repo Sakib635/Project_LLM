@@ -1,0 +1,77 @@
+{
+  "project": "Example_Project",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T00:03:46Z",
+      "image_tag": "example_project_trial_1",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ernal] load metadata for docker.io/library/python:3.11-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 559B done\n#4 DONE 0.0s\n\n#6 [2/4] WORKDIR /app\n#6 CACHED\n\n#7 [3/4] COPY . /app\n#7 DONE 0.1s\n\n#8 [4/4] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#8 DONE 0.3s\n\n#9 exporting to image\n#9 exporting layers\n#9 exporting layers 0.3s done\n#9 exporting manifest sha256:e7cb7ba436ddcbef755410fbe31228cbd17547fc52f45e89ab70a213e745b79e 0.0s done\n#9 exporting config sha256:920bd99ba6718e948758bfdf966dd59a7514715d3272221322deeeab11521ef7 0.0s done\n#9 exporting attestation manifest sha256:3095428bc0c7d945293a73380a5e5954019306d6452e90d480ae3ab3e651e4c6 0.1s done\n#9 exporting manifest list sha256:9dba30cc0bbdf7ffc41fdc860e9280872de09fec928f124d016128591df6ebeb\n#9 exporting manifest list sha256:9dba30cc0bbdf7ffc41fdc860e9280872de09fec928f124d016128591df6ebeb 0.0s done\n#9 naming to docker.io/library/example_project_trial_1:latest done\n#9 unpacking to docker.io/library/example_project_trial_1:latest 0.1s done\n#9 DONE 0.6s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8xcsnh4xsx8lgchvgpughlrys\n",
+        "time_sec": 2.09
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    import requests\nModuleNotFoundError: No module named 'requests'\n",
+        "time_sec": 1.11
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "requests>=2.7.0,<3.0.0"
+        ],
+        "rationale": [
+          "API requests.get introduced in version 2.0.0"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 1.0,
+          "notes": [
+            "API requests.get introduced in version 2.0.0"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T00:03:54Z",
+      "image_tag": "example_project_trial_2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 4.83
+      },
+      "run": {
+        "returncode": 0,
+        "stdout_tail": "Running main program...\nSuccessfully connected to GitHub API!\nResponse status code: 200\n",
+        "stderr_tail": "",
+        "time_sec": 1.33
+      },
+      "applied_agent": null,
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "success",
+  "phase1_json": "C:\\Users\\sadma\\Documents\\Thesis\\Project LLM\\Example_Run_Agentic\\phase1_output\\Example_Project_phase1.json",
+  "phase2_json": "C:\\Users\\sadma\\Documents\\Thesis\\Project LLM\\Example_Run_Agentic\\phase2_output\\Example_Project_phase2.json",
+  "final_requirements": [
+    "requests>=2.7.0,<3.0.0"
+  ],
+  "final_python": {},
+  "total_time_sec": 38.99,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": 2,
+    "attempts_to_success": 2,
+    "total_time_sec": 38.99,
+    "avg_build_time_sec": 3.46,
+    "avg_run_time_sec": 1.22,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

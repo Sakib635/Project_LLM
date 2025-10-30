@@ -1,0 +1,38 @@
+{
+  "project": "1d878d0401b28b281eb75016ed29f2ee",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:08:43Z",
+      "image_tag": "1d878d0401b28b281eb75016ed29f2ee_trial_1_6f56acd1",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 10.55
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    from keras.layers import Convolution1D, Dense, MaxPooling1D, Flatten\n  File \"/usr/local/lib/python3.9/site-packages/keras/__init__.py\", line 3, in <module>\n    from keras import __internal__\n  File \"/usr/local/lib/python3.9/site-packages/keras/__internal__/__init__.py\", line 3, in <module>\n    from keras.__internal__ import backend\n  File \"/usr/local/lib/python3.9/site-packages/keras/__internal__/backend/__init__.py\", line 3, in <module>\n    from keras.src.backend import _initialize_variables as initialize_variables\n  File \"/usr/local/lib/python3.9/site-packages/keras/src/__init__.py\", line 21, in <module>\n    from keras.src import applications\n  File \"/usr/local/lib/python3.9/site-packages/keras/src/applications/__init__.py\", line 18, in <module>\n    from keras.src.applications.convnext import ConvNeXtBase\n  File \"/usr/local/lib/python3.9/site-packages/keras/src/applications/convnext.py\", line 26, in <module>\n    import tensorflow.compat.v2 as tf\nModuleNotFoundError: No module named 'tensorflow'\n",
+        "time_sec": 1.4
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 26.0,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 26.0,
+    "avg_build_time_sec": 10.55,
+    "avg_run_time_sec": 1.4,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

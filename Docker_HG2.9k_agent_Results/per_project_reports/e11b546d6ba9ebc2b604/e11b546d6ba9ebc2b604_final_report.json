@@ -1,0 +1,71 @@
+{
+  "project": "e11b546d6ba9ebc2b604",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:22:21Z",
+      "image_tag": "e11b546d6ba9ebc2b604_trial_1_76f2846c",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.924 ERROR: Could not find a version that satisfies the requirement objc>=1.2.0 (from versions: none)\n#9 1.925 ERROR: No matching distribution found for objc>=1.2.0\n#9 2.051 \n#9 2.051 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 2.051 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.924 ERROR: Could not find a version that satisfies the requirement objc>=1.2.0 (from versions: none)\n1.925 ERROR: No matching distribution found for objc>=1.2.0\n2.051 \n2.051 [notice] A new release of pip is available: 23.0.1 -> 25.3\n2.051 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/urhit793m6kk2kumg6i01hdqk\n",
+        "time_sec": 3.48
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "objc>=1.2.0"
+        ],
+        "rationale": [
+          "The objc package is not available in the PyPI repository and may require manual installation."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The objc package is not available in the PyPI repository and may require manual installation."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T16:22:29Z",
+      "image_tag": "e11b546d6ba9ebc2b604_trial_2_70b3726d",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.332 ERROR: Could not find a version that satisfies the requirement objc>=1.2.0 (from versions: none)\n#9 1.332 ERROR: No matching distribution found for objc>=1.2.0\n#9 1.420 \n#9 1.420 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.420 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.332 ERROR: Could not find a version that satisfies the requirement objc>=1.2.0 (from versions: none)\n1.332 ERROR: No matching distribution found for objc>=1.2.0\n1.420 \n1.420 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.420 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/8lf5vbj2jp9h2p4wy36c7m9ir\n",
+        "time_sec": 2.45
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 21.62,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 21.62,
+    "avg_build_time_sec": 2.96,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

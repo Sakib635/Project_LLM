@@ -1,0 +1,38 @@
+{
+  "project": "654157",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T10:34:34Z",
+      "image_tag": "654157_trial_1_b6552fe9",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "release of pip is available: 24.0 -> 25.3\n#9 1.573 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.405 Collecting django<2.0,>=1.4 (from -r /app/requirements.txt (line 1))\n1.468   Downloading Django-1.11.29-py2.py3-none-any.whl.metadata (1.5 kB)\n1.498 ERROR: Ignored the following versions that require a different python version: 6.0a1 Requires-Python >=3.12; 6.0b1 Requires-Python >=3.12\n1.498 ERROR: Could not find a version that satisfies the requirement json<2.0,>=1.0 (from versions: none)\n1.498 ERROR: No matching distribution found for json<2.0,>=1.0\n1.573 \n1.573 [notice] A new release of pip is available: 24.0 -> 25.3\n1.573 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/b7az6y2qers4c96ckwb5yd2kf\n",
+        "time_sec": 2.86
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 11.05,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 11.05,
+    "avg_build_time_sec": 2.86,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

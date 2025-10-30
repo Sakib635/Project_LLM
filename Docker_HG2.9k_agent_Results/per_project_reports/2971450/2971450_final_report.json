@@ -1,0 +1,104 @@
+{
+  "project": "2971450",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:26:38Z",
+      "image_tag": "2971450_trial_1_f12cf6e4",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.05
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 29, in <module>\n    from django.core.management.base import AppCommand\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.2
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=1.2.0"
+        ],
+        "rationale": [
+          "Adding django to the requirements file may fix the ModuleNotFoundError"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Adding django to the requirements file may fix the ModuleNotFoundError"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:27:02Z",
+      "image_tag": "2971450_trial_2_18428bbd",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 3.57kB done\n#5 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8f3636ed2c92faa75006bb4262cf4dddd69dc6d922024a65c87a87f0cba0ce0b 0.0s done\n#10 exporting config sha256:9b789ca1b4dfe75bd3a061e1c0f952ae7783fbf85d20a0134fb7d3819cdd8cfb\n#10 exporting config sha256:9b789ca1b4dfe75bd3a061e1c0f952ae7783fbf85d20a0134fb7d3819cdd8cfb 0.0s done\n#10 exporting attestation manifest sha256:79d5d4e95a7beb2e002b196b28b69cfbe60fd5ed7183c083fdd25e0833570913 0.1s done\n#10 exporting manifest list sha256:41ec5b0a379a01aadafd8f705488ec053dd114b910305eb245a2053879cbbdd1\n#10 exporting manifest list sha256:41ec5b0a379a01aadafd8f705488ec053dd114b910305eb245a2053879cbbdd1 0.0s done\n#10 naming to docker.io/library/2971450_trial_2_18428bbd:latest done\n#10 unpacking to docker.io/library/2971450_trial_2_18428bbd:latest\n#10 unpacking to docker.io/library/2971450_trial_2_18428bbd:latest 1.1s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/j3uxqrn1sc71w92bq1yv0gbcs\n",
+        "time_sec": 2.52
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 29, in <module>\n    from django.core.management.base import AppCommand\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.35
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django>=2.2.0"
+        ],
+        "rationale": [
+          "This is the most common and widely used web framework for Python."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This is the most common and widely used web framework for Python."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T05:27:15Z",
+      "image_tag": "2971450_trial_3_fad17f83",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 3.57kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8f3636ed2c92faa75006bb4262cf4dddd69dc6d922024a65c87a87f0cba0ce0b 0.0s done\n#10 exporting config sha256:9b789ca1b4dfe75bd3a061e1c0f952ae7783fbf85d20a0134fb7d3819cdd8cfb 0.0s done\n#10 exporting attestation manifest sha256:621cccd6771516a2fe04c3981ecbb6cf7234b202d868793c4b62f06e188079d3\n#10 exporting attestation manifest sha256:621cccd6771516a2fe04c3981ecbb6cf7234b202d868793c4b62f06e188079d3 0.1s done\n#10 exporting manifest list sha256:221fa8fe3adfc4dc722ca467c55f0a114f417c2a4a6fb025e7ac48a4aa50402a 0.0s done\n#10 naming to docker.io/library/2971450_trial_3_fad17f83:latest done\n#10 unpacking to docker.io/library/2971450_trial_3_fad17f83:latest\n#10 unpacking to docker.io/library/2971450_trial_3_fad17f83:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/s9jwne6l0hh87727fc1sttkjf\n",
+        "time_sec": 2.44
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 29, in <module>\n    from django.core.management.base import AppCommand\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 2.37
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 50.15,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 50.15,
+    "avg_build_time_sec": 6.34,
+    "avg_run_time_sec": 1.64,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

@@ -1,8 +1,0 @@
-(declare-fun geographiclib () String)
-(declare-fun geopy () String)
-(assert (and (or (= geopy "2.1.0"))
-     (=> (= geopy "2.1.0")
-         (or (= geographiclib "1.52")
-             (= geographiclib "1.50")
-             (= geographiclib "1.49")))))
-(check-sat)

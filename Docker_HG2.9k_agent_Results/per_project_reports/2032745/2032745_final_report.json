@@ -1,0 +1,170 @@
+{
+  "project": "2032745",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:18:25Z",
+      "image_tag": "2032745_trial_1_0988a4b6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.84
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from sikuli.Sikuli import *\nModuleNotFoundError: No module named 'sikuli'\n",
+        "time_sec": 1.23
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "sikuli>=1.2.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T04:18:49Z",
+      "image_tag": "2032745_trial_2_3be1e105",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 2.89kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:736caf4e80fdee3a8b687ee25d813b87eee5e5bfddd38f40b66ea2765e2aade6 0.0s done\n#10 exporting config sha256:7799417742358684dc8b45227d6f62294c433e3117883412b39d2f15c466da02 0.0s done\n#10 exporting attestation manifest sha256:6d38340a4c4f8c5d675d8d84bb813f348b0f243d3ab761741edeadc3cfdd68a1\n#10 exporting attestation manifest sha256:6d38340a4c4f8c5d675d8d84bb813f348b0f243d3ab761741edeadc3cfdd68a1 0.1s done\n#10 exporting manifest list sha256:94b238e4f55ab888274de375255b199793955cc8f52a2da13005164591c431cd 0.0s done\n#10 naming to docker.io/library/2032745_trial_2_3be1e105:latest done\n#10 unpacking to docker.io/library/2032745_trial_2_3be1e105:latest\n#10 unpacking to docker.io/library/2032745_trial_2_3be1e105:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/sexsjl4hqvhi5z8s3mjbyvrt4\n",
+        "time_sec": 2.45
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from sikuli.Sikuli import *\nModuleNotFoundError: No module named 'sikuli'\n",
+        "time_sec": 1.3
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "sikuli>=1.2.0"
+        ],
+        "rationale": [
+          "Adding sikuli to the requirements.txt file should fix the ModuleNotFoundError for the sikuli module."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Adding sikuli to the requirements.txt file should fix the ModuleNotFoundError for the sikuli module."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T04:19:02Z",
+      "image_tag": "2032745_trial_3_77eeaab2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.89kB 0.0s done\n#4 DONE 0.6s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:736caf4e80fdee3a8b687ee25d813b87eee5e5bfddd38f40b66ea2765e2aade6 0.0s done\n#10 exporting config sha256:7799417742358684dc8b45227d6f62294c433e3117883412b39d2f15c466da02 0.0s done\n#10 exporting attestation manifest sha256:ef6e7547d70ab875782545e5b7d492e003d1906255991c7415b2202665c544b0 0.1s done\n#10 exporting manifest list sha256:3c6412eb2894a98233752eb010c542441f673582369a0c6ff8d89535d203d8bc\n#10 exporting manifest list sha256:3c6412eb2894a98233752eb010c542441f673582369a0c6ff8d89535d203d8bc 0.0s done\n#10 naming to docker.io/library/2032745_trial_3_77eeaab2:latest done\n#10 unpacking to docker.io/library/2032745_trial_3_77eeaab2:latest\n#10 unpacking to docker.io/library/2032745_trial_3_77eeaab2:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/7c257h22wbi6sztyi0ubgzt28\n",
+        "time_sec": 3.23
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from sikuli.Sikuli import *\nModuleNotFoundError: No module named 'sikuli'\n",
+        "time_sec": 1.62
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0"
+        ],
+        "rationale": [
+          "This requirement line is already present in the project's requirements.txt file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This requirement line is already present in the project's requirements.txt file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T04:19:17Z",
+      "image_tag": "2032745_trial_4_c11509a4",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.89kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:736caf4e80fdee3a8b687ee25d813b87eee5e5bfddd38f40b66ea2765e2aade6 0.0s done\n#10 exporting config sha256:7799417742358684dc8b45227d6f62294c433e3117883412b39d2f15c466da02 0.0s done\n#10 exporting attestation manifest sha256:d5bc1ced8a971f445a9ee5725bb88d952856af915c62d964852be4a763f2a7f2\n#10 exporting attestation manifest sha256:d5bc1ced8a971f445a9ee5725bb88d952856af915c62d964852be4a763f2a7f2 0.1s done\n#10 exporting manifest list sha256:64a828e5a94288531ac8a9cb6076f5eaaf0ab48c271b9ef3885fd3f1da36e040 0.0s done\n#10 naming to docker.io/library/2032745_trial_4_c11509a4:latest done\n#10 unpacking to docker.io/library/2032745_trial_4_c11509a4:latest\n#10 unpacking to docker.io/library/2032745_trial_4_c11509a4:latest 1.1s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/laogpq4yp0lafrlvzqfxpr9rz\n",
+        "time_sec": 2.53
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from sikuli.Sikuli import *\nModuleNotFoundError: No module named 'sikuli'\n",
+        "time_sec": 1.46
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pandas>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "The error message indicates that the 'sikuli' module is not installed. The proposed fix adds a requirement for the 'pandas' package to ensure that it is installed."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The error message indicates that the 'sikuli' module is not installed. The proposed fix adds a requirement for the 'pandas' package to ensure that it is installed."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T04:19:32Z",
+      "image_tag": "2032745_trial_5_62e4bc4b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [internal] load build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 2.89kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:736caf4e80fdee3a8b687ee25d813b87eee5e5bfddd38f40b66ea2765e2aade6 0.0s done\n#10 exporting config sha256:7799417742358684dc8b45227d6f62294c433e3117883412b39d2f15c466da02 0.0s done\n#10 exporting attestation manifest sha256:ef16622d1719cfc879ebfa068244d4086bad7b70ceca1382fced99babb1946be 0.1s done\n#10 exporting manifest list sha256:1bf9617e16042852d1cebfc30713fc5337e0580e9092b29bca1371e5b4c465e3 0.0s done\n#10 naming to docker.io/library/2032745_trial_5_62e4bc4b:latest\n#10 naming to docker.io/library/2032745_trial_5_62e4bc4b:latest done\n#10 unpacking to docker.io/library/2032745_trial_5_62e4bc4b:latest\n#10 unpacking to docker.io/library/2032745_trial_5_62e4bc4b:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/xe8v740m3cz3mgn3k8mcp02vg\n",
+        "time_sec": 2.46
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from sikuli.Sikuli import *\nModuleNotFoundError: No module named 'sikuli'\n",
+        "time_sec": 1.42
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 92.85,
+  "metrics": {
+    "total_attempts": 5,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 92.85,
+    "avg_build_time_sec": 5.1,
+    "avg_run_time_sec": 1.41,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 5
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "project": "7466823",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T11:53:06Z",
+      "image_tag": "7466823_trial_1_57da2204",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.73
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import gdb\nModuleNotFoundError: No module named 'gdb'\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "gdb>=1.2.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T11:53:29Z",
+      "image_tag": "7466823_trial_2_ec5b5425",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 3.04kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:de14e0e2cb73737c0d5d7d3ac5e4eb2b895b643657910fce633c9159ee0765f1 0.0s done\n#10 exporting config sha256:7930579961574394f601469c525f44cc06ed41279526931916432bc6ce6bbd4c 0.0s done\n#10 exporting attestation manifest sha256:2510c67c7567c0c344944e717e8beaeca71bd783b326946823958a99c38a3a7b 0.1s done\n#10 exporting manifest list sha256:dcef4476327fb1df403ca271dd4951dde3e0bd5ac38879a1efa67acdbfe64a4e\n#10 exporting manifest list sha256:dcef4476327fb1df403ca271dd4951dde3e0bd5ac38879a1efa67acdbfe64a4e 0.0s done\n#10 naming to docker.io/library/7466823_trial_2_ec5b5425:latest done\n#10 unpacking to docker.io/library/7466823_trial_2_ec5b5425:latest\n#10 unpacking to docker.io/library/7466823_trial_2_ec5b5425:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4yakedesdglf7923ux4xh8zw9\n",
+        "time_sec": 2.33
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import gdb\nModuleNotFoundError: No module named 'gdb'\n",
+        "time_sec": 1.61
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "gdb>=1.2.0"
+        ],
+        "rationale": [
+          "The module 'gdb' is required for the program to run."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The module 'gdb' is required for the program to run."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T11:53:42Z",
+      "image_tag": "7466823_trial_3_69104aee",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 3.04kB done\n#4 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:de14e0e2cb73737c0d5d7d3ac5e4eb2b895b643657910fce633c9159ee0765f1 0.0s done\n#10 exporting config sha256:7930579961574394f601469c525f44cc06ed41279526931916432bc6ce6bbd4c 0.0s done\n#10 exporting attestation manifest sha256:cb855a4a1214d0b8b0e8437fd096c7a5a254aebf6a2b362e8f78219f1893a8d3\n#10 exporting attestation manifest sha256:cb855a4a1214d0b8b0e8437fd096c7a5a254aebf6a2b362e8f78219f1893a8d3 0.1s done\n#10 exporting manifest list sha256:56b5f28da530fc929c900cdde2ef96ef98715e9f6962f304410dae31a80ee972 0.0s done\n#10 naming to docker.io/library/7466823_trial_3_69104aee:latest\n#10 naming to docker.io/library/7466823_trial_3_69104aee:latest done\n#10 unpacking to docker.io/library/7466823_trial_3_69104aee:latest\n#10 unpacking to docker.io/library/7466823_trial_3_69104aee:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ttviycl1n97n07va1pp8j5304\n",
+        "time_sec": 2.43
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import gdb\nModuleNotFoundError: No module named 'gdb'\n",
+        "time_sec": 1.56
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy==1.2.0"
+        ],
+        "rationale": [
+          "The error message suggests that the 'gdb' module is missing from the environment."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The error message suggests that the 'gdb' module is missing from the environment."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T11:53:56Z",
+      "image_tag": "7466823_trial_4_fa2402de",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 3.04kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:de14e0e2cb73737c0d5d7d3ac5e4eb2b895b643657910fce633c9159ee0765f1 0.0s done\n#10 exporting config sha256:7930579961574394f601469c525f44cc06ed41279526931916432bc6ce6bbd4c 0.0s done\n#10 exporting attestation manifest sha256:254f284fb4412984179589632c1b6383ac22dcbce26f94d601a68fb4ddfec774\n#10 exporting attestation manifest sha256:254f284fb4412984179589632c1b6383ac22dcbce26f94d601a68fb4ddfec774 0.1s done\n#10 exporting manifest list sha256:b3b2b0809dea9fddff06343c2c40e8d645a72adef5dc851bbc53eb7e3db2dd3b 0.0s done\n#10 naming to docker.io/library/7466823_trial_4_fa2402de:latest done\n#10 unpacking to docker.io/library/7466823_trial_4_fa2402de:latest\n#10 unpacking to docker.io/library/7466823_trial_4_fa2402de:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wl6hynfj1uyesxg9nu2ey479q\n",
+        "time_sec": 2.57
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    import gdb\nModuleNotFoundError: No module named 'gdb'\n",
+        "time_sec": 1.4
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 64.74,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 64.74,
+    "avg_build_time_sec": 5.52,
+    "avg_run_time_sec": 1.47,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

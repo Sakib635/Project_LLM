@@ -1,0 +1,67 @@
+{
+  "project": "f11258583ffcc4728eb71adc0f38e832",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T17:14:10Z",
+      "image_tag": "f11258583ffcc4728eb71adc0f38e832_trial_1_a9ffc424",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 186.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from graphviz import Digraph\nModuleNotFoundError: No module named 'graphviz'\n",
+        "time_sec": 2.27
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "torch==1.2"
+        ],
+        "rationale": "This version of torch is the latest available for Python 3.7, and it includes a lot of bug fixes and improvements.",
+        "meta": {
+          "chosen_candidate": 3,
+          "chosen_confidence": 0.9,
+          "notes": "This version of torch is the latest available for Python 3.7, and it includes a lot of bug fixes and improvements."
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T17:17:36Z",
+      "image_tag": "f11258583ffcc4728eb71adc0f38e832_trial_2_c9fd2d16",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 1.41kB 0.0s done\n#4 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:6c7ce36027c254598d8fb51d7b9f60be36645ee0ab1e7f0ffe59d9d494bab5fb 0.0s done\n#10 exporting config sha256:659882826599caa90d2bbb873f1ea7846f2fd51b1fa5f3c4a135351debad5806 0.0s done\n#10 exporting attestation manifest sha256:7f0aa9eed50b1f05ff008a97d9f6c057a3695f6d453d4bc8e4b54764e2120c40 0.1s done\n#10 exporting manifest list sha256:498c6b6f99b0938795d5e4047e24debe86c28b68ada05b10d703f43bb6f7d7c7\n#10 exporting manifest list sha256:498c6b6f99b0938795d5e4047e24debe86c28b68ada05b10d703f43bb6f7d7c7 0.0s done\n#10 naming to docker.io/library/f11258583ffcc4728eb71adc0f38e832_trial_2_c9fd2d16:latest done\n#10 unpacking to docker.io/library/f11258583ffcc4728eb71adc0f38e832_trial_2_c9fd2d16:latest\n#10 unpacking to docker.io/library/f11258583ffcc4728eb71adc0f38e832_trial_2_c9fd2d16:latest 19.7s done\n#10 DONE 19.9s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/z56t2fbwoenkbn3a6yaxoqo6c\n",
+        "time_sec": 21.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from graphviz import Digraph\nModuleNotFoundError: No module named 'graphviz'\n",
+        "time_sec": 3.93
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 250.42,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 250.42,
+    "avg_build_time_sec": 103.71,
+    "avg_run_time_sec": 3.1,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

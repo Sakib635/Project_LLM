@@ -1,0 +1,38 @@
+{
+  "project": "1074124",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:15:21Z",
+      "image_tag": "1074124_trial_1_84395a9b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 8.41
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 11, in <module>\n    import txredisapi\n  File \"/usr/local/lib/python3.11/site-packages/txredisapi.py\", line 39, in <module>\n    from twisted.internet import defer, ssl\n  File \"/usr/local/lib/python3.11/site-packages/twisted/internet/ssl.py\", line 61, in <module>\n    from OpenSSL import SSL\nModuleNotFoundError: No module named 'OpenSSL'\n",
+        "time_sec": 1.33
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 28.54,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 28.54,
+    "avg_build_time_sec": 8.41,
+    "avg_run_time_sec": 1.33,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

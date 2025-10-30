@@ -1,0 +1,71 @@
+{
+  "project": "5969656",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T09:48:39Z",
+      "image_tag": "5969656_trial_1_9eddd1e9",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.32
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    from LaunchServices import LSSetDefaultHandlerForURLScheme\nModuleNotFoundError: No module named 'LaunchServices'\n",
+        "time_sec": 1.24
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pkg>=1.2.0"
+        ],
+        "rationale": [
+          "The error message mentions a missing module named 'LaunchServices', which is not present in the requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The error message mentions a missing module named 'LaunchServices', which is not present in the requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T09:49:03Z",
+      "image_tag": "5969656_trial_2_f881b483",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ad .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 784B done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:525f2a3346d5ab03826950615cfcf1721f28f57dbfb71e2b9440dc21fee6a323 0.0s done\n#10 exporting config sha256:9f7152940d06c13ff6a93924caf82bf095d8c5e11bb5e32e9c87357728fdd0f4 0.0s done\n#10 exporting attestation manifest sha256:fe5871689bd77e88ac78eedfc97a0b51958fd157f25edffbc01c893ddbabf247\n#10 exporting attestation manifest sha256:fe5871689bd77e88ac78eedfc97a0b51958fd157f25edffbc01c893ddbabf247 0.1s done\n#10 exporting manifest list sha256:f53b8a0d72fa4bd8fa822953032e679d08bd6629892b64e39d4e0525c02a4328 0.0s done\n#10 naming to docker.io/library/5969656_trial_2_f881b483:latest done\n#10 unpacking to docker.io/library/5969656_trial_2_f881b483:latest\n#10 unpacking to docker.io/library/5969656_trial_2_f881b483:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/six9ex5ao35tk1hzoelpiae66\n",
+        "time_sec": 2.34
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 2, in <module>\n    from LaunchServices import LSSetDefaultHandlerForURLScheme\nModuleNotFoundError: No module named 'LaunchServices'\n",
+        "time_sec": 1.29
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 39.08,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 39.08,
+    "avg_build_time_sec": 8.33,
+    "avg_run_time_sec": 1.27,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

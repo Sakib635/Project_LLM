@@ -1,0 +1,137 @@
+{
+  "project": "6d7c78ea329d4e9e1217",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T11:13:54Z",
+      "image_tag": "6d7c78ea329d4e9e1217_trial_1_023f9653",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 17.95
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/usr/local/lib/python3.9/site-packages/mne/fixes.py:321: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.\n  if LooseVersion(scipy.__version__) >= '1.1':\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from matplotlib import pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+        "time_sec": 2.36
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "matplotlib>=3.0.0"
+        ],
+        "rationale": [
+          "The error message suggests that the 'matplotlib' package is not installed. Adding this line to requirements.txt should install it."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "The error message suggests that the 'matplotlib' package is not installed. Adding this line to requirements.txt should install it."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T11:14:24Z",
+      "image_tag": "6d7c78ea329d4e9e1217_trial_2_18efd575",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "d build context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 4.17kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:51e8c91c05d762210021a503f9b13976eb15d7e360b24bde696b94d7dc661e2b 0.0s done\n#10 exporting config sha256:164ab478f260ef4912fa1c4eeca36327be1d1f8ef3bee8a6403ddfef84d6bc51 0.0s done\n#10 exporting attestation manifest sha256:d331bc6d2433d82f64d2adb21f00592c96418e918232b61bbcba27eec26d557a 0.1s done\n#10 exporting manifest list sha256:6fa4687a9608077d4146c7293f4fa12c0d4d7319093e99680fbf33e1f19c16a1\n#10 exporting manifest list sha256:6fa4687a9608077d4146c7293f4fa12c0d4d7319093e99680fbf33e1f19c16a1 0.0s done\n#10 naming to docker.io/library/6d7c78ea329d4e9e1217_trial_2_18efd575:latest done\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_2_18efd575:latest\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_2_18efd575:latest 1.6s done\n#10 DONE 1.8s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vzfkrmyzk13mq18807g8xvihs\n",
+        "time_sec": 2.96
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/usr/local/lib/python3.9/site-packages/mne/fixes.py:321: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.\n  if LooseVersion(scipy.__version__) >= '1.1':\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from matplotlib import pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+        "time_sec": 2.64
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "matplotlib>=3.0.0"
+        ],
+        "rationale": [
+          "The module is used in the code but is not installed."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "The module is used in the code but is not installed."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T11:14:43Z",
+      "image_tag": "6d7c78ea329d4e9e1217_trial_3_eaad9d1b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": ":545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 4.17kB done\n#5 DONE 0.0s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:51e8c91c05d762210021a503f9b13976eb15d7e360b24bde696b94d7dc661e2b 0.0s done\n#10 exporting config sha256:164ab478f260ef4912fa1c4eeca36327be1d1f8ef3bee8a6403ddfef84d6bc51 0.0s done\n#10 exporting attestation manifest sha256:c7e201b95af80bf8b92a7875c5beda026468647944f5d570b94b8ebfac39ece8\n#10 exporting attestation manifest sha256:c7e201b95af80bf8b92a7875c5beda026468647944f5d570b94b8ebfac39ece8 0.1s done\n#10 exporting manifest list sha256:7ff5df8333c407d633af76288d6dd7e90b25dc58f4067ace34e3ab87cd41be76 0.0s done\n#10 naming to docker.io/library/6d7c78ea329d4e9e1217_trial_3_eaad9d1b:latest\n#10 naming to docker.io/library/6d7c78ea329d4e9e1217_trial_3_eaad9d1b:latest done\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_3_eaad9d1b:latest\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_3_eaad9d1b:latest 1.5s done\n#10 DONE 1.7s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/gopk6cw28zh4r7hybdoqu6qrs\n",
+        "time_sec": 2.81
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/usr/local/lib/python3.9/site-packages/mne/fixes.py:321: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.\n  if LooseVersion(scipy.__version__) >= '1.1':\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from matplotlib import pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+        "time_sec": 2.83
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "matplotlib>=3.4.0"
+        ],
+        "rationale": [
+          "The snippet tries to import the matplotlib module, which is not found in the current requirements.txt file, and the suggested version is greater than or equal to the minimum required version."
+        ],
+        "meta": {
+          "chosen_candidate": 2,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The snippet tries to import the matplotlib module, which is not found in the current requirements.txt file, and the suggested version is greater than or equal to the minimum required version."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T11:15:03Z",
+      "image_tag": "6d7c78ea329d4e9e1217_trial_4_1089b37a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 4.17kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:51e8c91c05d762210021a503f9b13976eb15d7e360b24bde696b94d7dc661e2b 0.0s done\n#10 exporting config sha256:164ab478f260ef4912fa1c4eeca36327be1d1f8ef3bee8a6403ddfef84d6bc51 0.0s done\n#10 exporting attestation manifest sha256:e73865ac008be834967e4636643f277a711cb600900557be0c144d340180dec0\n#10 exporting attestation manifest sha256:e73865ac008be834967e4636643f277a711cb600900557be0c144d340180dec0 0.1s done\n#10 exporting manifest list sha256:e13176ffbc04905f0a717545e39239bae8653498f8365443f9291157e92a1a8b 0.0s done\n#10 naming to docker.io/library/6d7c78ea329d4e9e1217_trial_4_1089b37a:latest done\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_4_1089b37a:latest\n#10 unpacking to docker.io/library/6d7c78ea329d4e9e1217_trial_4_1089b37a:latest 1.5s done\n#10 DONE 1.6s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/el0yqgkhzwoafavbzgkutcceh\n",
+        "time_sec": 2.66
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "/usr/local/lib/python3.9/site-packages/mne/fixes.py:321: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.\n  if LooseVersion(scipy.__version__) >= '1.1':\nTraceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from matplotlib import pyplot as plt\nModuleNotFoundError: No module named 'matplotlib'\n",
+        "time_sec": 2.48
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 85.1,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 85.1,
+    "avg_build_time_sec": 6.59,
+    "avg_run_time_sec": 2.58,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

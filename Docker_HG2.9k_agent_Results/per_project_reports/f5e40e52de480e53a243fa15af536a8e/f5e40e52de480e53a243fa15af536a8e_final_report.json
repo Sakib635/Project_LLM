@@ -1,0 +1,67 @@
+{
+  "project": "f5e40e52de480e53a243fa15af536a8e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T17:23:06Z",
+      "image_tag": "f5e40e52de480e53a243fa15af536a8e_trial_1_8fdbd06f",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " fi\n#9 1.453 ERROR: Could not find a version that satisfies the requirement server-side-cursors<2.0.0,>=1.2.0 (from versions: none)\n#9 1.454 ERROR: No matching distribution found for server-side-cursors<2.0.0,>=1.2.0\n#9 1.549 \n#9 1.549 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.549 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.453 ERROR: Could not find a version that satisfies the requirement server-side-cursors<2.0.0,>=1.2.0 (from versions: none)\n1.454 ERROR: No matching distribution found for server-side-cursors<2.0.0,>=1.2.0\n1.549 \n1.549 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.549 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wfcy1wt9ldungwc1ztv0ckmnh\n",
+        "time_sec": 2.92
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "server-side-cursors>=1.2.0"
+        ],
+        "rationale": "The package 'server-side-cursors' is not present in the current environment, but it is required by the 'snippet.py' script. This candidate fix can be used to add the missing dependency.",
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": "The package 'server-side-cursors' is not present in the current environment, but it is required by the 'snippet.py' script. This candidate fix can be used to add the missing dependency."
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T17:23:14Z",
+      "image_tag": "f5e40e52de480e53a243fa15af536a8e_trial_2_a0de98db",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " fi\n#9 1.307 ERROR: Could not find a version that satisfies the requirement server-side-cursors<2.0.0,>=1.2.0 (from versions: none)\n#9 1.307 ERROR: No matching distribution found for server-side-cursors<2.0.0,>=1.2.0\n#9 1.388 \n#9 1.388 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.388 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.307 ERROR: Could not find a version that satisfies the requirement server-side-cursors<2.0.0,>=1.2.0 (from versions: none)\n1.307 ERROR: No matching distribution found for server-side-cursors<2.0.0,>=1.2.0\n1.388 \n1.388 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.388 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lkcj383vypt6azqy3syb5wrnx\n",
+        "time_sec": 2.42
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 14.3,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 14.3,
+    "avg_build_time_sec": 2.67,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "project": "1372780",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:10:27Z",
+      "image_tag": "1372780_trial_1_23060c67",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 6.36
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from pymongo.dbref import DBRef\nModuleNotFoundError: No module named 'pymongo'\n",
+        "time_sec": 1.13
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pymongo"
+        ],
+        "rationale": [
+          "To resolve the ModuleNotFoundError in snippet.py"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "To resolve the ModuleNotFoundError in snippet.py"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T03:10:42Z",
+      "image_tag": "1372780_trial_2_e194b998",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "done\n#1 DONE 0.0s\n\n#2 [internal] load metadata for docker.io/library/python:3.9-slim\n#2 DONE 0.2s\n\n#3 [internal] load .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 1.31kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:c380cd2cc54168567b103bb91d0a0fc1e7bb6914faa3885f1aca80e56a38fc0b done\n#10 exporting config sha256:5b38c1a97121739ef16372b7bb4f220c9842579fe0d8c4d89df92f69e2dcc4c3 done\n#10 exporting attestation manifest sha256:167c8f08e21f705b02d82d2d2fa2c536ece1ceacf2572be512ca2d456167e513 0.0s done\n#10 exporting manifest list sha256:c8e8a98aad9c112184e89db4379fc8277b009a9d1d24e8c29042af4cb788926f 0.0s done\n#10 naming to docker.io/library/1372780_trial_2_e194b998:latest done\n#10 unpacking to docker.io/library/1372780_trial_2_e194b998:latest\n#10 unpacking to docker.io/library/1372780_trial_2_e194b998:latest 0.3s done\n#10 DONE 0.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lada3aco27sv964tu911gk7gj\n",
+        "time_sec": 1.26
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 4, in <module>\n    from pymongo.dbref import DBRef\nModuleNotFoundError: No module named 'pymongo'\n",
+        "time_sec": 1.0
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 37.03,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 37.03,
+    "avg_build_time_sec": 3.81,
+    "avg_run_time_sec": 1.06,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

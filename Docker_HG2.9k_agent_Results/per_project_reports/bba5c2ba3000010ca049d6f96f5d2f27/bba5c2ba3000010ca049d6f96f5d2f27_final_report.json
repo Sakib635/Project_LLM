@@ -1,0 +1,71 @@
+{
+  "project": "bba5c2ba3000010ca049d6f96f5d2f27",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:15:48Z",
+      "image_tag": "bba5c2ba3000010ca049d6f96f5d2f27_trial_1_cbe4538d",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 17.11
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from jr.plot import pretty_plot, plot_eb  # available @ http://github.com/kingjr/jr-tools\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'jr'\n",
+        "time_sec": 1.89
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "jr>=3.0.0"
+        ],
+        "rationale": [
+          "The error message suggests that the module 'jr' is not installed, and adding it to the requirements file should resolve the issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "The error message suggests that the module 'jr' is not installed, and adding it to the requirements file should resolve the issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:16:15Z",
+      "image_tag": "bba5c2ba3000010ca049d6f96f5d2f27_trial_2_bca1a9f2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": " docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 865B done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b1f171fe9d676399645a1c7e527fa64519e3ebad5b6e9a7722c23d01e32bfd9e 0.0s done\n#10 exporting config sha256:b560aa3db8733b913e6a149cac6b0e1b4509ad7a5fb3ba622ad3f350ea1894ed 0.0s done\n#10 exporting attestation manifest sha256:88f481149c97a67aa3ac2d6210222df323084b4ee65ffa973c50436fefa73ea5\n#10 exporting attestation manifest sha256:88f481149c97a67aa3ac2d6210222df323084b4ee65ffa973c50436fefa73ea5 0.1s done\n#10 exporting manifest list sha256:e0d91daad8920cc75bf371073b37246fdf98242a0089ed10f2e795fedbb61814 0.0s done\n#10 naming to docker.io/library/bba5c2ba3000010ca049d6f96f5d2f27_trial_2_bca1a9f2:latest done\n#10 unpacking to docker.io/library/bba5c2ba3000010ca049d6f96f5d2f27_trial_2_bca1a9f2:latest\n#10 unpacking to docker.io/library/bba5c2ba3000010ca049d6f96f5d2f27_trial_2_bca1a9f2:latest 1.1s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rrubfp1whxnoul1mv64w6jpu1\n",
+        "time_sec": 2.28
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 3, in <module>\n    from jr.plot import pretty_plot, plot_eb  # available @ http://github.com/kingjr/jr-tools\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'jr'\n",
+        "time_sec": 2.08
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 52.62,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 52.62,
+    "avg_build_time_sec": 9.7,
+    "avg_run_time_sec": 1.98,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

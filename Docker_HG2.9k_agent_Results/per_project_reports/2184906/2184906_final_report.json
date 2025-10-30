@@ -1,0 +1,137 @@
+{
+  "project": "2184906",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T04:31:13Z",
+      "image_tag": "2184906_trial_1_e62e5a33",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "hen pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.225 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n#9 1.225 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n#9 1.295 \n#9 1.295 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.295 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.225 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n1.225 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n1.295 \n1.295 [notice] A new release of pip is available: 24.0 -> 25.3\n1.295 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/qo0b223l6hebnbjil26x6dls1\n",
+        "time_sec": 2.75
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pygtk>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "Trying to install pygtk-based packages on a non-GUI Linux system may not work as intended."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.5,
+          "notes": [
+            "Trying to install pygtk-based packages on a non-GUI Linux system may not work as intended."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T04:31:21Z",
+      "image_tag": "2184906_trial_2_f5f22e00",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "p install --no-cache-dir -r /app/requirements.txt; fi\n#10 3.071 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n#10 3.072 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n#10 3.160 \n#10 3.160 [notice] A new release of pip is available: 24.0 -> 25.3\n#10 3.160 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n3.071 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n3.072 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n3.160 \n3.160 [notice] A new release of pip is available: 24.0 -> 25.3\n3.160 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/iuu1lztimppxpi3kh2361ocui\n",
+        "time_sec": 3.02
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pygtk<3.0.0"
+        ],
+        "rationale": [
+          "This version of pygtk is incompatible with Python 3.11."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "This version of pygtk is incompatible with Python 3.11."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T04:31:29Z",
+      "image_tag": "2184906_trial_3_90d3d134",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "hen pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.241 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n#9 1.241 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n#9 1.319 \n#9 1.319 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.319 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.241 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n1.241 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n1.319 \n1.319 [notice] A new release of pip is available: 24.0 -> 25.3\n1.319 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ve9hro6x9kzy05hnutz0ddu3m\n",
+        "time_sec": 2.31
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pygtk>=1.2.0"
+        ],
+        "rationale": [
+          "The version range specified in the requirements file is too narrow and may not allow for an update to a more recent version of pygtk."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The version range specified in the requirements file is too narrow and may not allow for an update to a more recent version of pygtk."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T04:31:35Z",
+      "image_tag": "2184906_trial_4_b405d1f9",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "hen pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.217 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n#9 1.217 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n#9 1.291 \n#9 1.291 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.291 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.217 ERROR: Could not find a version that satisfies the requirement pygtk<2.0.0,>=1.2.0 (from versions: 2.24.0)\n1.217 ERROR: No matching distribution found for pygtk<2.0.0,>=1.2.0\n1.291 \n1.291 [notice] A new release of pip is available: 24.0 -> 25.3\n1.291 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nbrigy9ork2tepz3ryvrwdem2\n",
+        "time_sec": 2.36
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 34.48,
+  "metrics": {
+    "total_attempts": 4,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 34.48,
+    "avg_build_time_sec": 2.61,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 4
+    }
+  }
+}

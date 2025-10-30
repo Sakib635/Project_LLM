@@ -1,0 +1,299 @@
+{
+  "project": "c6936d219db8e6635d25",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T15:31:08Z",
+      "image_tag": "c6936d219db8e6635d25_trial_1_8cc8c63b",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.05
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.37
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T15:31:36Z",
+      "image_tag": "c6936d219db8e6635d25_trial_2_d9a8e370",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ld context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 8.42kB 0.0s done\n#4 DONE 0.1s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:bdeeaa64a76fbfb7ec8915bc205b885a86cba5a17f7dd85b5e4b4e850392665e 0.1s done\n#10 exporting manifest list sha256:f5c718609b7a55166b49688b02efdf5f6a1ff49605d416d37933eab8230dd6c5\n#10 exporting manifest list sha256:f5c718609b7a55166b49688b02efdf5f6a1ff49605d416d37933eab8230dd6c5 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_2_d9a8e370:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_2_d9a8e370:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_2_d9a8e370:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ormesucfvrzoz88hn9d1qjz6o\n",
+        "time_sec": 2.6
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.44
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T15:31:52Z",
+      "image_tag": "c6936d219db8e6635d25_trial_3_1b0e8498",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ransferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 8.42kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:4891aad76827b0f4be1581ce8e99e30d9cf39ab2afb6dc1e63d5e02433eb04b5 0.1s done\n#10 exporting manifest list sha256:6774fa9ac40921b24a957e6015f6bf2008e13f42a51f6376975b22353c9a595e 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_3_1b0e8498:latest\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_3_1b0e8498:latest 0.0s done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_3_1b0e8498:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_3_1b0e8498:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hd8t02ciee4ia1dod0l5dxsgz\n",
+        "time_sec": 2.53
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.32
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 4,
+      "timestamp": "2025-10-28T15:32:08Z",
+      "image_tag": "c6936d219db8e6635d25_trial_4_37ae699a",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "4 transferring context: 2B done\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#6 [internal] load build context\n#6 transferring context: 8.42kB 0.0s done\n#6 DONE 0.1s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#11 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#11 exporting attestation manifest sha256:61a5cb3f9c08a655ec8a5148ae28f5b8c80e0724fca2e741a3162924bd360145 0.1s done\n#11 exporting manifest list sha256:b8d06521aa7d6ab7b63716c882009108c754a83ade5b66349bd33c2294270f33 0.0s done\n#11 naming to docker.io/library/c6936d219db8e6635d25_trial_4_37ae699a:latest\n#11 naming to docker.io/library/c6936d219db8e6635d25_trial_4_37ae699a:latest done\n#11 unpacking to docker.io/library/c6936d219db8e6635d25_trial_4_37ae699a:latest\n#11 unpacking to docker.io/library/c6936d219db8e6635d25_trial_4_37ae699a:latest 1.3s done\n#11 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vxg03r0ejwkpchrsu15qc00lv\n",
+        "time_sec": 2.64
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.44
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "timestamp": "2025-10-28T15:32:25Z",
+      "image_tag": "c6936d219db8e6635d25_trial_5_894ae81c",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "one\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 8.42kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:b113a5052575a37916710781b581191bd44101da0dda94cd828e4e28b2ee52f0\n#10 exporting attestation manifest sha256:b113a5052575a37916710781b581191bd44101da0dda94cd828e4e28b2ee52f0 0.1s done\n#10 exporting manifest list sha256:8d4b51fde7c7dc2d6774eaecdf6b3b60ce765577328160971697552d72fe4901 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_5_894ae81c:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_5_894ae81c:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_5_894ae81c:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kc6irqerzsg03vxqoqcwwt1ym\n",
+        "time_sec": 2.58
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.55
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 6,
+      "timestamp": "2025-10-28T15:32:41Z",
+      "image_tag": "c6936d219db8e6635d25_trial_6_0c27f6c6",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "ld context\n#4 DONE 0.0s\n\n#5 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 8.42kB 0.0s done\n#4 DONE 0.1s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:7a3ec196551402dc70c0da0b8615e189c0fc04a7102445adaf0a0c61aec5b6de 0.1s done\n#10 exporting manifest list sha256:889593792c71c5c8920e644cc75f6065fe0a429f6970e8f72cc2366abda69265\n#10 exporting manifest list sha256:889593792c71c5c8920e644cc75f6065fe0a429f6970e8f72cc2366abda69265 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_6_0c27f6c6:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_6_0c27f6c6:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_6_0c27f6c6:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/h1tjl1s708ask2lmsjzuphjgn\n",
+        "time_sec": 2.56
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.42
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 7,
+      "timestamp": "2025-10-28T15:33:01Z",
+      "image_tag": "c6936d219db8e6635d25_trial_7_0ff3f1e8",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 8.42kB 0.0s done\n#4 DONE 0.1s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:37336806c2d4b3be0c035223c49e9ad9df8a8e5f02b58601a8c0f885a87da344 0.1s done\n#10 exporting manifest list sha256:a88f11abffa0599a6e7cc40540efbcdd6f7d1f7d65efd9f194017af42fa54b31\n#10 exporting manifest list sha256:a88f11abffa0599a6e7cc40540efbcdd6f7d1f7d65efd9f194017af42fa54b31 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_7_0ff3f1e8:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_7_0ff3f1e8:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_7_0ff3f1e8:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/r8d0bcd79zt1hsgu7d1jdx04a\n",
+        "time_sec": 2.58
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.61
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 8,
+      "timestamp": "2025-10-28T15:33:19Z",
+      "image_tag": "c6936d219db8e6635d25_trial_8_ae109576",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "adebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 8.42kB 0.0s done\n#5 DONE 0.1s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:986177f965d90d4ef0ed420813a951136763b56bb329ad491f148fd30dd7984a\n#10 exporting attestation manifest sha256:986177f965d90d4ef0ed420813a951136763b56bb329ad491f148fd30dd7984a 0.1s done\n#10 exporting manifest list sha256:9cd23877437fed95fe5d49a8d47edd45f62321ac217f9894bc6cb45aeba341c5 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_8_ae109576:latest\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_8_ae109576:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_8_ae109576:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_8_ae109576:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lj1kvuzxbvkta6vyzuovkbcbj\n",
+        "time_sec": 2.43
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.6
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 9,
+      "timestamp": "2025-10-28T15:33:40Z",
+      "image_tag": "c6936d219db8e6635d25_trial_9_48768563",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 8.42kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:8b3e0b078fed2ec5fcfa64093eb4374ce2e3b877599fb18d0053cc49cfa636c0 0.1s done\n#10 exporting manifest list sha256:550c29a4a700870ae381afc1c65cf280e78053de2b1e78d848d29b5c3c420ea0\n#10 exporting manifest list sha256:550c29a4a700870ae381afc1c65cf280e78053de2b1e78d848d29b5c3c420ea0 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_9_48768563:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_9_48768563:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_9_48768563:latest 1.3s done\n#10 DONE 1.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ohps4xrihibu6g0am90xkczd1\n",
+        "time_sec": 2.59
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.4
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    },
+    {
+      "attempt": 10,
+      "timestamp": "2025-10-28T15:33:59Z",
+      "image_tag": "c6936d219db8e6635d25_trial_10_be14f547",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 8.42kB 0.0s done\n#5 DONE 0.1s\n\n#6 [4/5] COPY requirements.txt /app/requirements.txt\n#6 CACHED\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:b9f696877a8733fd0fc92f49814de131bf3411077a15b7ae8a1801d00613593e 0.0s done\n#10 exporting config sha256:02e07fecfe210df70124740a07d95b9228440e1e537a521b03366ff8081d56bd 0.0s done\n#10 exporting attestation manifest sha256:f9a940908f8f626596978d93a6b9333f5ba56fab3fa4a73ab79eba26e3cc1bc1\n#10 exporting attestation manifest sha256:f9a940908f8f626596978d93a6b9333f5ba56fab3fa4a73ab79eba26e3cc1bc1 0.1s done\n#10 exporting manifest list sha256:cf45b830634c4c05be113486b5d450dc5282e72be13c9495e57995393e216316 0.0s done\n#10 naming to docker.io/library/c6936d219db8e6635d25_trial_10_be14f547:latest done\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_10_be14f547:latest\n#10 unpacking to docker.io/library/c6936d219db8e6635d25_trial_10_be14f547:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hebg5i0lb0ksrodx9g5zb0rj3\n",
+        "time_sec": 2.38
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "  File \"/app/snippet.py\", line 26\n    print \"cs = %lx\" % cmd.cs\n          ^\nSyntaxError: Missing parentheses in call to 'print'. Did you mean print(\"cs = %lx\" % cmd.cs)?\n",
+        "time_sec": 1.31
+      },
+      "applied_agent": "python",
+      "applied_fixes": {
+        "python_min": null,
+        "python_max": null,
+        "rationale": "",
+        "meta": {
+          "chosen_candidate": null,
+          "chosen_confidence": 0.0,
+          "notes": ""
+        }
+      }
+    }
+  ],
+  "final_status": null,
+  "total_time_sec": 188.3,
+  "metrics": {
+    "total_attempts": 10,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 188.3,
+    "avg_build_time_sec": 3.89,
+    "avg_run_time_sec": 1.45,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "python": 10
+    }
+  }
+}

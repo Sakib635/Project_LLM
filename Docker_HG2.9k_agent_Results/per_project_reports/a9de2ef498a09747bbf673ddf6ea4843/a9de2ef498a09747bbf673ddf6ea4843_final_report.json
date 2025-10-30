@@ -1,0 +1,104 @@
+{
+  "project": "a9de2ef498a09747bbf673ddf6ea4843",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:37:07Z",
+      "image_tag": "a9de2ef498a09747bbf673ddf6ea4843_trial_1_0346df8f",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 98.69
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    import tqdm\nModuleNotFoundError: No module named 'tqdm'\n",
+        "time_sec": 2.31
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "tqdm>=1.2.0"
+        ],
+        "rationale": [
+          "Tqdm is a popular Python library for displaying progress bars while iterating over data."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Tqdm is a popular Python library for displaying progress bars while iterating over data."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:38:58Z",
+      "image_tag": "a9de2ef498a09747bbf673ddf6ea4843_trial_2_3d35f0aa",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "cker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#6 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 10.04kB 0.0s done\n#5 DONE 0.1s\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [2/5] WORKDIR /app\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:3e25b541f3bd9ae39725a2ff0b8cf925928e1c66f6ebe39c86fb5e6008247d3a 0.0s done\n#11 exporting config sha256:447f294c7f25e696f19e3c8cc63fb3d3fea71a89773c6d210e5ce6be2b42ae04 0.0s done\n#11 exporting attestation manifest sha256:c122d2b0648acd18cd30d22319fdcdacba14e4ac92c7d16c43d5f9553e5e0129 0.1s done\n#11 exporting manifest list sha256:91f67e30f9a9db05f1f3338b9c70b8923f36b6c7e22682129367aacae7a02815\n#11 exporting manifest list sha256:91f67e30f9a9db05f1f3338b9c70b8923f36b6c7e22682129367aacae7a02815 0.0s done\n#11 naming to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_2_3d35f0aa:latest done\n#11 unpacking to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_2_3d35f0aa:latest\n#11 unpacking to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_2_3d35f0aa:latest 12.5s done\n#11 DONE 12.7s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/jds80fv9rb5akj6hvxvtlja0x\n",
+        "time_sec": 14.61
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    import tqdm\nModuleNotFoundError: No module named 'tqdm'\n",
+        "time_sec": 2.46
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "tqdm>=4.46.0"
+        ],
+        "rationale": [
+          "This is a common package that provides progress bars for iterators in Python."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This is a common package that provides progress bars for iterators in Python."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T14:39:27Z",
+      "image_tag": "a9de2ef498a09747bbf673ddf6ea4843_trial_3_9638ee3e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "e7b548ce1b6b\n#5 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 10.04kB 0.0s done\n#4 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:3e25b541f3bd9ae39725a2ff0b8cf925928e1c66f6ebe39c86fb5e6008247d3a 0.0s done\n#10 exporting config sha256:447f294c7f25e696f19e3c8cc63fb3d3fea71a89773c6d210e5ce6be2b42ae04\n#10 exporting config sha256:447f294c7f25e696f19e3c8cc63fb3d3fea71a89773c6d210e5ce6be2b42ae04 0.0s done\n#10 exporting attestation manifest sha256:07c9a87c70bce9576b44d52e5b6aa283e82fd513ea7671c9c858f62a14e49094 0.1s done\n#10 exporting manifest list sha256:7ec0860536ab3e6aa87c191ba6eec14715df54ce855ef585d1bfca75dc532af2\n#10 exporting manifest list sha256:7ec0860536ab3e6aa87c191ba6eec14715df54ce855ef585d1bfca75dc532af2 0.0s done\n#10 naming to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_3_9638ee3e:latest done\n#10 unpacking to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_3_9638ee3e:latest\n#10 unpacking to docker.io/library/a9de2ef498a09747bbf673ddf6ea4843_trial_3_9638ee3e:latest 13.0s done\n#10 DONE 13.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/o6w11f850g30viigc0a4nilmx\n",
+        "time_sec": 14.41
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 9, in <module>\n    import tqdm\nModuleNotFoundError: No module named 'tqdm'\n",
+        "time_sec": 2.36
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 170.38,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 170.38,
+    "avg_build_time_sec": 42.57,
+    "avg_run_time_sec": 2.38,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

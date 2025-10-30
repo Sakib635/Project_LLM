@@ -1,0 +1,38 @@
+{
+  "project": "8abd37bf2d60cce6e01d",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:31:24Z",
+      "image_tag": "8abd37bf2d60cce6e01d_trial_1_e50ce265",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "#9 1.557 ERROR: No matching distribution found for itertools<2.0.0,>=1.2.0\n#9 1.635 \n#9 1.635 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.635 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.353 Collecting PyQt5<6.0.0,>=5.0.0 (from -r /app/requirements.txt (line 1))\n1.463   Downloading PyQt5-5.15.11-cp38-abi3-manylinux_2_17_x86_64.whl.metadata (2.1 kB)\n1.557 ERROR: Could not find a version that satisfies the requirement itertools<2.0.0,>=1.2.0 (from versions: none)\n1.557 ERROR: No matching distribution found for itertools<2.0.0,>=1.2.0\n1.635 \n1.635 [notice] A new release of pip is available: 24.0 -> 25.3\n1.635 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lvxih7eg2zimgpimzrdkjksi5\n",
+        "time_sec": 3.23
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 23.23,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 23.23,
+    "avg_build_time_sec": 3.23,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

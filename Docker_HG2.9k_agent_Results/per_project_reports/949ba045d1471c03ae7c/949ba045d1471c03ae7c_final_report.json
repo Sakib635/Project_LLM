@@ -1,0 +1,38 @@
+{
+  "project": "949ba045d1471c03ae7c",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:50:53Z",
+      "image_tag": "949ba045d1471c03ae7c_trial_1_af994cba",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 23.07
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 10, in <module>\n    import theano\nModuleNotFoundError: No module named 'theano'\n",
+        "time_sec": 2.18
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 36.47,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 36.47,
+    "avg_build_time_sec": 23.07,
+    "avg_run_time_sec": 2.18,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

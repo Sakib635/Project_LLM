@@ -1,0 +1,41 @@
+{
+  "project": "1714d2952c09b96ba2d8777f1cbf9de1",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:32:35Z",
+      "image_tag": "1714d2952c09b96ba2d8777f1cbf9de1_trial_1_9bb784bf",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.210 ERROR: Could not find a version that satisfies the requirement dns<3.0.0,>=2.1.0 (from versions: none)\n#9 1.210 ERROR: No matching distribution found for dns<3.0.0,>=2.1.0\n#9 1.300 \n#9 1.300 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.300 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.210 ERROR: Could not find a version that satisfies the requirement dns<3.0.0,>=2.1.0 (from versions: none)\n1.210 ERROR: No matching distribution found for dns<3.0.0,>=2.1.0\n1.300 \n1.300 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.300 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/jhnsg9lv3zo2tvy7zj61p881l\n",
+        "time_sec": 2.43
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fixes are possible due to the error message indicating that a version of the `dns` package with the specified version range cannot be found."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 4.81,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 4.81,
+    "avg_build_time_sec": 2.43,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

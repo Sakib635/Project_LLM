@@ -1,0 +1,38 @@
+{
+  "project": "45ce9f33615a3b24c51f",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T07:38:58Z",
+      "image_tag": "45ce9f33615a3b24c51f_trial_1_1d250217",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "rements.txt; fi\n#9 1.273 Collecting whitenoise<6.0,>=5.2\n#9 1.338   Downloading whitenoise-5.3.0-py2.py3-none-any.whl (19 kB)\n#9 1.392 Installing collected packages: whitenoise\n#9 1.422 Successfully installed whitenoise-5.3.0\n#9 1.422 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv\n#9 1.503 \n#9 1.503 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.503 [notice] To update, run: pip install --upgrade pip\n#9 DONE 1.6s\n\n#10 exporting to image\n#10 exporting layers\n#10 exporting layers 0.7s done\n#10 exporting manifest sha256:e9e1ade51017755d35cac4e58bf2b6ea55714cbf8e20927da4d3294c1b128536 0.0s done\n#10 exporting config sha256:060ef4ef71488c1a4d0aabd2bc197550bfb4ee6bb5e9c28901ea7431d9d6302f 0.0s done\n#10 exporting attestation manifest sha256:96ce777489da85fcffdf64ed2bc0ca4b418ee3b78756bed357deea278cc1e180\n#10 exporting attestation manifest sha256:96ce777489da85fcffdf64ed2bc0ca4b418ee3b78756bed357deea278cc1e180 0.1s done\n#10 exporting manifest list sha256:bf842b99542f0c8d16616b1c2496aefd63cd994f07fc27e042d7df6d4689a223 0.0s done\n#10 naming to docker.io/library/45ce9f33615a3b24c51f_trial_1_1d250217:latest done\n#10 unpacking to docker.io/library/45ce9f33615a3b24c51f_trial_1_1d250217:latest\n#10 unpacking to docker.io/library/45ce9f33615a3b24c51f_trial_1_1d250217:latest 0.3s done\n#10 DONE 1.2s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/llk6jwdlya8umsw5zr5z8ltq0\n",
+        "time_sec": 4.18
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.conf import settings\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.26
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 24.58,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 24.58,
+    "avg_build_time_sec": 4.18,
+    "avg_run_time_sec": 1.26,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

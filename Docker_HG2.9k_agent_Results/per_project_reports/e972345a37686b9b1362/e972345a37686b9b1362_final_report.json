@@ -1,0 +1,41 @@
+{
+  "project": "e972345a37686b9b1362",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:43:18Z",
+      "image_tag": "e972345a37686b9b1362_trial_1_08b08628",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.490 ERROR: Could not find a version that satisfies the requirement urllib<4.0,>=3.0 (from versions: none)\n#9 1.490 ERROR: No matching distribution found for urllib<4.0,>=3.0\n#9 1.589 \n#9 1.589 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.589 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.490 ERROR: Could not find a version that satisfies the requirement urllib<4.0,>=3.0 (from versions: none)\n1.490 ERROR: No matching distribution found for urllib<4.0,>=3.0\n1.589 \n1.589 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.589 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/q5h0mlnv6x7j8qcgvqyzkk5p1\n",
+        "time_sec": 2.93
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No candidate fixes are possible due to the error message: 'Could not find a version that satisfies the requirement urllib<4.0,>=3.0'"
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 5.39,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 5.39,
+    "avg_build_time_sec": 2.93,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

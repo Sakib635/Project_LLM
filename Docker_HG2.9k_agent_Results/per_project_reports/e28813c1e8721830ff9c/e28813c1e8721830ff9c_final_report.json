@@ -1,0 +1,36 @@
+{
+  "project": "e28813c1e8721830ff9c",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:23:30Z",
+      "image_tag": "e28813c1e8721830ff9c_trial_1_ea1a4ea2",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.1
+      },
+      "run": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "/app/snippet.py:2: DeprecationWarning: Please import `map_coordinates` from the `scipy.ndimage` namespace; the `scipy.ndimage.interpolation` namespace is deprecated and will be removed in SciPy 2.0.0.\n  from scipy.ndimage.interpolation import map_coordinates\n/app/snippet.py:3: DeprecationWarning: Please import `gaussian_filter` from the `scipy.ndimage` namespace; the `scipy.ndimage.filters` namespace is deprecated and will be removed in SciPy 2.0.0.\n  from scipy.ndimage.filters import gaussian_filter\n",
+        "time_sec": 1.68
+      },
+      "applied_agent": null,
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "success",
+  "total_time_sec": 22.52,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": 1,
+    "attempts_to_success": 1,
+    "total_time_sec": 22.52,
+    "avg_build_time_sec": 16.1,
+    "avg_run_time_sec": 1.68,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {}
+  }
+}

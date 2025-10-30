@@ -1,0 +1,71 @@
+{
+  "project": "9098744",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:40:27Z",
+      "image_tag": "9098744_trial_1_6039a513",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "distribution found for object<1.0.0,>=0.0.1\n#9 1.820 \n#9 1.820 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.820 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.356 Collecting scene<1.0.0,>=0.0.1\n1.427   Downloading scene-0.0.1.tar.gz (4.3 kB)\n1.432   Preparing metadata (setup.py): started\n1.688   Preparing metadata (setup.py): finished with status 'done'\n1.728 ERROR: Could not find a version that satisfies the requirement object<1.0.0,>=0.0.1 (from versions: none)\n1.728 ERROR: No matching distribution found for object<1.0.0,>=0.0.1\n1.820 \n1.820 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.820 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/h6t78ctd4ds33c4q47wgsgmcj\n",
+        "time_sec": 3.11
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pkg>=1.2.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T13:40:34Z",
+      "image_tag": "9098744_trial_2_7ba44d93",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "distribution found for object<1.0.0,>=0.0.1\n#9 1.818 \n#9 1.818 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.818 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.402 Collecting scene<1.0.0,>=0.0.1\n1.461   Downloading scene-0.0.1.tar.gz (4.3 kB)\n1.465   Preparing metadata (setup.py): started\n1.721   Preparing metadata (setup.py): finished with status 'done'\n1.738 ERROR: Could not find a version that satisfies the requirement object<1.0.0,>=0.0.1 (from versions: none)\n1.738 ERROR: No matching distribution found for object<1.0.0,>=0.0.1\n1.818 \n1.818 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.818 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/n3bxhji5dczdlpfdv3gf7nbhf\n",
+        "time_sec": 2.87
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 14.73,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 14.73,
+    "avg_build_time_sec": 2.99,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

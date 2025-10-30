@@ -1,0 +1,71 @@
+{
+  "project": "989074",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:04:16Z",
+      "image_tag": "989074_trial_1_9bced303",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.371 ERROR: Could not find a version that satisfies the requirement xml.dom.minidom>=3.1.0 (from versions: none)\n#9 1.371 ERROR: No matching distribution found for xml.dom.minidom>=3.1.0\n#9 1.460 \n#9 1.460 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.460 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.371 ERROR: Could not find a version that satisfies the requirement xml.dom.minidom>=3.1.0 (from versions: none)\n1.371 ERROR: No matching distribution found for xml.dom.minidom>=3.1.0\n1.460 \n1.460 [notice] A new release of pip is available: 24.0 -> 25.3\n1.460 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/6xn735l5ky24uxssgmuyfl0sr\n",
+        "time_sec": 2.78
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "xml.dom.minidom>=3.1.0"
+        ],
+        "rationale": [
+          "The specified requirement is not found in the current requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 2,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The specified requirement is not found in the current requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:04:26Z",
+      "image_tag": "989074_trial_2_db4c7321",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.472 ERROR: Could not find a version that satisfies the requirement xml.dom.minidom>=3.1.0 (from versions: none)\n#9 1.472 ERROR: No matching distribution found for xml.dom.minidom>=3.1.0\n#9 1.552 \n#9 1.552 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.552 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.472 ERROR: Could not find a version that satisfies the requirement xml.dom.minidom>=3.1.0 (from versions: none)\n1.472 ERROR: No matching distribution found for xml.dom.minidom>=3.1.0\n1.552 \n1.552 [notice] A new release of pip is available: 24.0 -> 25.3\n1.552 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ijzywz82u3e8ice1lqji9v9gq\n",
+        "time_sec": 2.62
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 23.63,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 23.63,
+    "avg_build_time_sec": 2.7,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

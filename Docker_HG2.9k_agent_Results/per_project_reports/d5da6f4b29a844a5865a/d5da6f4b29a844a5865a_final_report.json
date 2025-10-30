@@ -1,0 +1,71 @@
+{
+  "project": "d5da6f4b29a844a5865a",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:07:46Z",
+      "image_tag": "d5da6f4b29a844a5865a_trial_1_830302d3",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 15.92
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    import ui\nModuleNotFoundError: No module named 'ui'\n",
+        "time_sec": 1.41
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ui"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T16:08:12Z",
+      "image_tag": "d5da6f4b29a844a5865a_trial_2_0b78bb71",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "one\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b\n#4 resolve docker.io/library/python:3.9-slim@sha256:545badebace9a958b98d3e272f0f0d46c0a1a389ac77e24c33f2e7b548ce1b6b 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 2.93kB done\n#5 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:26c2ddd16af86376334c5e9bc92ad9e634393e6ea291fed14bb62322243dd291 0.0s done\n#10 exporting config sha256:9a11c800ed1ed1a3e218414e5ceab8e0cf8f9c4d3f41bce447569d630bbe2d5e 0.0s done\n#10 exporting attestation manifest sha256:5b95e792f65976172818ed5af1f734ee8088f644264c31c289e9424a0e75ec34\n#10 exporting attestation manifest sha256:5b95e792f65976172818ed5af1f734ee8088f644264c31c289e9424a0e75ec34 0.1s done\n#10 exporting manifest list sha256:943bec691b5aa20df18367b327b817290aed81f7c207962c242e6eff12ecc3f7 0.0s done\n#10 naming to docker.io/library/d5da6f4b29a844a5865a_trial_2_0b78bb71:latest 0.0s done\n#10 unpacking to docker.io/library/d5da6f4b29a844a5865a_trial_2_0b78bb71:latest\n#10 unpacking to docker.io/library/d5da6f4b29a844a5865a_trial_2_0b78bb71:latest 1.2s done\n#10 DONE 1.4s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/pgk0gzj9etys3yolglv8kpwf8\n",
+        "time_sec": 2.53
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    import ui\nModuleNotFoundError: No module named 'ui'\n",
+        "time_sec": 1.33
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 50.35,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 50.35,
+    "avg_build_time_sec": 9.22,
+    "avg_run_time_sec": 1.37,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

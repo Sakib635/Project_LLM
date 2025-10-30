@@ -1,0 +1,107 @@
+{
+  "project": "5029885",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:14:30Z",
+      "image_tag": "5029885_trial_1_4243b12a",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "0.5.1)\n#9 1.491 ERROR: No matching distribution found for config>=1.0.0\n#9 1.570 \n#9 1.570 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.570 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.372 Collecting jinja2>=1.0.0 (from -r /app/requirements.txt (line 1))\n1.457   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)\n1.491 ERROR: Could not find a version that satisfies the requirement config>=1.0.0 (from versions: 0.3.9, 0.4.0, 0.4.1, 0.4.2, 0.5.0, 0.5.0.post0, 0.5.1)\n1.491 ERROR: No matching distribution found for config>=1.0.0\n1.570 \n1.570 [notice] A new release of pip is available: 24.0 -> 25.3\n1.570 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4d2kgt554yh6g7zn5lk78gnka\n",
+        "time_sec": 3.05
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "pkg>=1.2.0"
+        ],
+        "rationale": [
+          "..."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "..."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T08:14:57Z",
+      "image_tag": "5029885_trial_2_9130cc24",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "0.5.1)\n#9 1.422 ERROR: No matching distribution found for config>=1.0.0\n#9 1.500 \n#9 1.500 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.500 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.333 Collecting jinja2>=1.0.0 (from -r /app/requirements.txt (line 1))\n1.408   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)\n1.422 ERROR: Could not find a version that satisfies the requirement config>=1.0.0 (from versions: 0.3.9, 0.4.0, 0.4.1, 0.4.2, 0.5.0, 0.5.0.post0, 0.5.1)\n1.422 ERROR: No matching distribution found for config>=1.0.0\n1.500 \n1.500 [notice] A new release of pip is available: 24.0 -> 25.3\n1.500 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/n7kxs7btmd8oezfeub0qswtax\n",
+        "time_sec": 2.53
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "config>=1.0.0"
+        ],
+        "rationale": [
+          "Adding config as a dependency is likely to resolve the error."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "Adding config as a dependency is likely to resolve the error."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T08:15:03Z",
+      "image_tag": "5029885_trial_3_76a21cc4",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "0.5.1)\n#9 1.401 ERROR: No matching distribution found for config>=1.0.0\n#9 1.472 \n#9 1.472 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.472 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.322 Collecting jinja2>=1.0.0 (from -r /app/requirements.txt (line 1))\n1.385   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)\n1.401 ERROR: Could not find a version that satisfies the requirement config>=1.0.0 (from versions: 0.3.9, 0.4.0, 0.4.1, 0.4.2, 0.5.0, 0.5.0.post0, 0.5.1)\n1.401 ERROR: No matching distribution found for config>=1.0.0\n1.472 \n1.472 [notice] A new release of pip is available: 24.0 -> 25.3\n1.472 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/c9wsuwiqvn5664njk47fixmwu\n",
+        "time_sec": 2.49
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No candidate fixes are possible due to the error message indicating that the dependency 'config' cannot be found. The requirements.txt file is likely missing a line that specifies the 'config' package."
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 38.49,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 38.49,
+    "avg_build_time_sec": 2.69,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "project": "2909661",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:20:48Z",
+      "image_tag": "2909661_trial_1_2884061b",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "=1.2\n#9 2.258 \n#9 2.258 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 2.258 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.443 Collecting webapp2<1.0,>=0.4 (from -r /app/requirements.txt (line 1))\n1.816   Downloading webapp2-0.7.zip (20 kB)\n1.821   Preparing metadata (setup.py): started\n2.072   Preparing metadata (setup.py): finished with status 'done'\n2.164 ERROR: Could not find a version that satisfies the requirement webapp2-extras<2.0,>=1.2 (from versions: none)\n2.164 ERROR: No matching distribution found for webapp2-extras<2.0,>=1.2\n2.258 \n2.258 [notice] A new release of pip is available: 24.0 -> 25.3\n2.258 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vsjdosmdcphkobgry1tolq9zw\n",
+        "time_sec": 3.59
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "webapp2-extras>=1.2,<2.0"
+        ],
+        "rationale": [
+          "Adding this requirement line to the project's requirements.txt file should fix the error"
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.7,
+          "notes": [
+            "Adding this requirement line to the project's requirements.txt file should fix the error"
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:20:57Z",
+      "image_tag": "2909661_trial_2_7b5a8745",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "=1.2\n#9 1.671 \n#9 1.671 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.671 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.281 Collecting webapp2<1.0,>=0.4 (from -r /app/requirements.txt (line 1))\n1.345   Downloading webapp2-0.7.zip (20 kB)\n1.351   Preparing metadata (setup.py): started\n1.581   Preparing metadata (setup.py): finished with status 'done'\n1.599 ERROR: Could not find a version that satisfies the requirement webapp2-extras<2.0,>=1.2 (from versions: none)\n1.599 ERROR: No matching distribution found for webapp2-extras<2.0,>=1.2\n1.671 \n1.671 [notice] A new release of pip is available: 24.0 -> 25.3\n1.671 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ru5zszjtieq2wwqcoxks9262b\n",
+        "time_sec": 2.49
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 19.87,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 19.87,
+    "avg_build_time_sec": 3.04,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

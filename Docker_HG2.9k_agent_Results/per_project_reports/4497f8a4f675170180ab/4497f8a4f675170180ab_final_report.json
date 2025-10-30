@@ -1,0 +1,38 @@
+{
+  "project": "4497f8a4f675170180ab",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T07:33:47Z",
+      "image_tag": "4497f8a4f675170180ab_trial_1_86c10efc",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "bution found for utils.mongo_tools<4.0,>=3.8\n#9 1.833 \n#9 1.833 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.833 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.595 Collecting pymongo<4.0,>=3.8 (from -r /app/requirements.txt (line 1))\n1.661   Downloading pymongo-3.13.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.7 kB)\n1.750 ERROR: Could not find a version that satisfies the requirement utils.mongo_tools<4.0,>=3.8 (from versions: none)\n1.750 ERROR: No matching distribution found for utils.mongo_tools<4.0,>=3.8\n1.833 \n1.833 [notice] A new release of pip is available: 24.0 -> 25.3\n1.833 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/n7180yygw3u1t3q02t8i4171b\n",
+        "time_sec": 3.16
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 25.24,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 25.24,
+    "avg_build_time_sec": 3.16,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

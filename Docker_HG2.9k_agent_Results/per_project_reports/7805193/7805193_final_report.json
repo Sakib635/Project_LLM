@@ -1,0 +1,41 @@
+{
+  "project": "7805193",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T12:15:02Z",
+      "image_tag": "7805193_trial_1_c4a68501",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 13.98
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from django.contrib.gis.db import models\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.38
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": ""
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 21.56,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 21.56,
+    "avg_build_time_sec": 13.98,
+    "avg_run_time_sec": 1.38,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

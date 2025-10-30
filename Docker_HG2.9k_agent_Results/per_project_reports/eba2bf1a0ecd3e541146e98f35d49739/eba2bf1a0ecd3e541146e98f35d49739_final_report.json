@@ -1,0 +1,104 @@
+{
+  "project": "eba2bf1a0ecd3e541146e98f35d49739",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T16:50:15Z",
+      "image_tag": "eba2bf1a0ecd3e541146e98f35d49739_trial_1_a1f0f1e8",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 17.01
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from sklearn.cross_validation import train_test_split\nModuleNotFoundError: No module named 'sklearn'\n",
+        "time_sec": 1.8
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "numpy>=1.17.4"
+        ],
+        "rationale": [
+          "Upgrading numpy to version 1.17.4 may resolve the issue with missing sklearn module."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "Upgrading numpy to version 1.17.4 may resolve the issue with missing sklearn module."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T16:50:43Z",
+      "image_tag": "eba2bf1a0ecd3e541146e98f35d49739_trial_2_d6969530",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "s\n\n#5 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 1.85kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:1932b8971e39b7659bc3a1a9e55d74cdd87daf616310256106209a9fc9fa8ce2 0.0s done\n#10 exporting config sha256:a6b88047e595732b838a89dcf8ea93509ddb367b78bea4ad39fa39844488d6e7 0.0s done\n#10 exporting attestation manifest sha256:4f2a8f540d72635974b77bb72d306b26cf7ff46140ae899f4880841ed5fdc535 0.1s done\n#10 exporting manifest list sha256:f0cd83843453084e5c44811cea36f29dfffaf403cdd66ec071dd164e296e5fb6 0.0s done\n#10 naming to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_2_d6969530:latest\n#10 naming to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_2_d6969530:latest done\n#10 unpacking to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_2_d6969530:latest\n#10 unpacking to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_2_d6969530:latest 1.9s done\n#10 DONE 2.1s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/v6rye95n9mzlrjb913x598khu\n",
+        "time_sec": 3.22
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from sklearn.cross_validation import train_test_split\nModuleNotFoundError: No module named 'sklearn'\n",
+        "time_sec": 1.68
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "scikit-learn>=0.23.2"
+        ],
+        "rationale": [
+          "Adding scikit-learn to requirements file should fix the issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "Adding scikit-learn to requirements file should fix the issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T16:51:00Z",
+      "image_tag": "eba2bf1a0ecd3e541146e98f35d49739_trial_3_17ec49bd",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "\n#6 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#6 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#6 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 1.85kB done\n#5 DONE 0.0s\n\n#7 [2/5] WORKDIR /app\n#7 CACHED\n\n#8 [3/5] COPY snippet.py /app/snippet.py\n#8 CACHED\n\n#9 [4/5] COPY requirements.txt /app/requirements.txt\n#9 CACHED\n\n#10 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#10 CACHED\n\n#11 exporting to image\n#11 exporting layers done\n#11 exporting manifest sha256:1932b8971e39b7659bc3a1a9e55d74cdd87daf616310256106209a9fc9fa8ce2 0.0s done\n#11 exporting config sha256:a6b88047e595732b838a89dcf8ea93509ddb367b78bea4ad39fa39844488d6e7 0.0s done\n#11 exporting attestation manifest sha256:ef082d0fd37a2ba1b82fe9971ff3069fff98ea1417501fbfe69790333a791c5c 0.1s done\n#11 exporting manifest list sha256:d2f4e0555a5f1a11311a2ab90bd977efdfd74f9e450bc6824f546209dc294d0f 0.0s done\n#11 naming to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_3_17ec49bd:latest\n#11 naming to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_3_17ec49bd:latest done\n#11 unpacking to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_3_17ec49bd:latest\n#11 unpacking to docker.io/library/eba2bf1a0ecd3e541146e98f35d49739_trial_3_17ec49bd:latest 1.6s done\n#11 DONE 1.7s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vqqbhm3u8iwhgk2bn4drdz8mw\n",
+        "time_sec": 3.01
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 1, in <module>\n    from sklearn.cross_validation import train_test_split\nModuleNotFoundError: No module named 'sklearn'\n",
+        "time_sec": 1.54
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 62.85,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 62.85,
+    "avg_build_time_sec": 7.75,
+    "avg_run_time_sec": 1.67,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

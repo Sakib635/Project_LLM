@@ -1,0 +1,107 @@
+{
+  "project": "1072977",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T02:15:00Z",
+      "image_tag": "1072977_trial_1_98fe511a",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "r /app/requirements.txt; fi\n#9 1.245 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n#9 1.245 ERROR: No matching distribution found for ldap<3.6,>=3.4\n#9 1.323 \n#9 1.323 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.323 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.245 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n1.245 ERROR: No matching distribution found for ldap<3.6,>=3.4\n1.323 \n1.323 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.323 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/gp0pf7besb8e72388e6pbj6we\n",
+        "time_sec": 2.83
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ldap>=3.4"
+        ],
+        "rationale": [
+          "This requirement is already satisfied by the version range specified in the build definition."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This requirement is already satisfied by the version range specified in the build definition."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T02:15:07Z",
+      "image_tag": "1072977_trial_2_978b1dbc",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "r /app/requirements.txt; fi\n#9 1.331 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n#9 1.331 ERROR: No matching distribution found for ldap<3.6,>=3.4\n#9 1.412 \n#9 1.412 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.412 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.331 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n1.331 ERROR: No matching distribution found for ldap<3.6,>=3.4\n1.412 \n1.412 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.412 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lw5yskpubrk4aocln4l0wbbt7\n",
+        "time_sec": 2.49
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ldap>=3.4,<3.6"
+        ],
+        "rationale": [
+          "The requirement `ldap` is not found in the current requirements file, but a version constraint of `<3.6` is provided. This suggests that the package may be required for this project."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The requirement `ldap` is not found in the current requirements file, but a version constraint of `<3.6` is provided. This suggests that the package may be required for this project."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T02:15:17Z",
+      "image_tag": "1072977_trial_3_b9a9b447",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "r /app/requirements.txt; fi\n#9 1.174 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n#9 1.174 ERROR: No matching distribution found for ldap<3.6,>=3.4\n#9 1.249 \n#9 1.249 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.249 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.174 ERROR: Could not find a version that satisfies the requirement ldap<3.6,>=3.4 (from versions: 1.0.0, 1.0.1, 1.0.2, 2.0.0.404)\n1.174 ERROR: No matching distribution found for ldap<3.6,>=3.4\n1.249 \n1.249 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.249 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yigvth752o9vo45fi87uleb03\n",
+        "time_sec": 2.41
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": "No fixes found"
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 21.56,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 21.56,
+    "avg_build_time_sec": 2.58,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

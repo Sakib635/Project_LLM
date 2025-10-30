@@ -1,0 +1,38 @@
+{
+  "project": "6f490f3a0e082ae6592a630bd7abe588",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T11:16:29Z",
+      "image_tag": "6f490f3a0e082ae6592a630bd7abe588_trial_1_3648f345",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": " new release of pip is available: 23.0.1 -> 25.3\n#9 1.531 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.418 ERROR: Could not find a version that satisfies the requirement RPi.GPIO<3.0.0,>=2.0.0 (from versions: 0.0.1a0, 0.0.2a0, 0.0.3a0, 0.1.0, 0.2.0, 0.3.0a0, 0.3.1a0, 0.4.0a0, 0.4.1a0, 0.4.2a0, 0.5.0a0, 0.5.1a0, 0.5.2a0, 0.5.3a0, 0.5.4, 0.5.5, 0.5.6, 0.5.7, 0.5.8, 0.5.9, 0.5.10, 0.5.11, 0.6.1, 0.6.2, 0.6.3, 0.6.4, 0.6.5, 0.7.0a2, 0.7.0, 0.7.1a1, 0.7.1a2, 0.7.1a3, 0.7.1a4, 0.7.1)\n1.418 ERROR: No matching distribution found for RPi.GPIO<3.0.0,>=2.0.0\n1.531 \n1.531 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.531 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/kg3mz3uip1s5zf0f99hki6fap\n",
+        "time_sec": 2.94
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 13.49,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 13.49,
+    "avg_build_time_sec": 2.94,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

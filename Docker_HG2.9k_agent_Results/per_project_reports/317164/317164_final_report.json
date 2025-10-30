@@ -1,0 +1,74 @@
+{
+  "project": "317164",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:53:51Z",
+      "image_tag": "317164_trial_1_64b53ba6",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "equirements.txt; fi\n#9 1.463 ERROR: Could not find a version that satisfies the requirement construct-odict<2.0.0,>=1.2.0 (from versions: none)\n#9 1.463 ERROR: No matching distribution found for construct-odict<2.0.0,>=1.2.0\n#9 1.559 \n#9 1.559 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.559 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.463 ERROR: Could not find a version that satisfies the requirement construct-odict<2.0.0,>=1.2.0 (from versions: none)\n1.463 ERROR: No matching distribution found for construct-odict<2.0.0,>=1.2.0\n1.559 \n1.559 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.559 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/wgifz5o4pfdxpt0a4zdvfxepc\n",
+        "time_sec": 2.78
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "construct-odict>=1.2.0,<2.0.0"
+        ],
+        "rationale": [
+          "Package listed in requirements.txt but not found in specified version range."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.0,
+          "notes": [
+            "Package listed in requirements.txt but not found in specified version range."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:54:02Z",
+      "image_tag": "317164_trial_2_a9f9dcd0",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "equirements.txt; fi\n#9 1.366 ERROR: Could not find a version that satisfies the requirement construct-odict<2.0.0,>=1.2.0 (from versions: none)\n#9 1.366 ERROR: No matching distribution found for construct-odict<2.0.0,>=1.2.0\n#9 1.453 \n#9 1.453 [notice] A new release of pip is available: 23.0.1 -> 25.3\n#9 1.453 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.366 ERROR: Could not find a version that satisfies the requirement construct-odict<2.0.0,>=1.2.0 (from versions: none)\n1.366 ERROR: No matching distribution found for construct-odict<2.0.0,>=1.2.0\n1.453 \n1.453 [notice] A new release of pip is available: 23.0.1 -> 25.3\n1.453 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/5igsmahnajz7ez4kkzxozlli5\n",
+        "time_sec": 2.58
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": ""
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 14.64,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 14.64,
+    "avg_build_time_sec": 2.68,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

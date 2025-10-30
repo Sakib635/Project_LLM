@@ -1,0 +1,71 @@
+{
+  "project": "2a1df455e7643926739e934e910cbf2e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T05:29:58Z",
+      "image_tag": "2a1df455e7643926739e934e910cbf2e_trial_1_ec5c4683",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.473 ERROR: Could not find a version that satisfies the requirement dns.resolver<3.0,>=1.0 (from versions: none)\n#9 1.473 ERROR: No matching distribution found for dns.resolver<3.0,>=1.0\n#9 1.553 \n#9 1.553 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.553 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.473 ERROR: Could not find a version that satisfies the requirement dns.resolver<3.0,>=1.0 (from versions: none)\n1.473 ERROR: No matching distribution found for dns.resolver<3.0,>=1.0\n1.553 \n1.553 [notice] A new release of pip is available: 24.0 -> 25.3\n1.553 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/yai3v0635mgopj1mtla519keh\n",
+        "time_sec": 2.87
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "dns.resolver>=1.0,<3.0"
+        ],
+        "rationale": [
+          "This requirement can be safely added to the existing requirements file."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "This requirement can be safely added to the existing requirements file."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T05:30:05Z",
+      "image_tag": "2a1df455e7643926739e934e910cbf2e_trial_2_1c7b8442",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.225 ERROR: Could not find a version that satisfies the requirement dns.resolver<3.0,>=1.0 (from versions: none)\n#9 1.225 ERROR: No matching distribution found for dns.resolver<3.0,>=1.0\n#9 1.309 \n#9 1.309 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.309 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.225 ERROR: Could not find a version that satisfies the requirement dns.resolver<3.0,>=1.0 (from versions: none)\n1.225 ERROR: No matching distribution found for dns.resolver<3.0,>=1.0\n1.309 \n1.309 [notice] A new release of pip is available: 24.0 -> 25.3\n1.309 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/27x61itziz0v39fnw0xt534ep\n",
+        "time_sec": 2.27
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 10.84,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 10.84,
+    "avg_build_time_sec": 2.57,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

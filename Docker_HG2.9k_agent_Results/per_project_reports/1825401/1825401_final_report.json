@@ -1,0 +1,38 @@
+{
+  "project": "1825401",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T03:40:10Z",
+      "image_tag": "1825401_trial_1_fe0ea79e",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 14.38
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    import sublime, sublime_plugin, os\nModuleNotFoundError: No module named 'sublime'\n",
+        "time_sec": 1.35
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 24.94,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 24.94,
+    "avg_build_time_sec": 14.38,
+    "avg_run_time_sec": 1.35,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

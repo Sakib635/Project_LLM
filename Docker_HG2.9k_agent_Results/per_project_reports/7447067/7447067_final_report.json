@@ -1,0 +1,41 @@
+{
+  "project": "7447067",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T11:52:28Z",
+      "image_tag": "7447067_trial_1_0c95b860",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 17.81
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"snippet.py\", line 2, in <module>\n    from scipy.stats import *\nModuleNotFoundError: No module named 'scipy'\n",
+        "time_sec": 2.15
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "candidates": [],
+        "notes": ""
+      }
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 26.13,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 26.13,
+    "avg_build_time_sec": 17.81,
+    "avg_run_time_sec": 2.15,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

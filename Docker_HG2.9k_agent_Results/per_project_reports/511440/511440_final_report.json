@@ -1,0 +1,104 @@
+{
+  "project": "511440",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:25:27Z",
+      "image_tag": "511440_trial_1_7dce93ad",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 4.35
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from django.contrib.auth.forms import UserCreationForm\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.16
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django-crispy-forms>=1.6.1,<2.0"
+        ],
+        "rationale": [
+          "Adding django-crispy-forms to the requirements file will allow you to use its features in your project."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "Adding django-crispy-forms to the requirements file will allow you to use its features in your project."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T08:25:41Z",
+      "image_tag": "511440_trial_2_38e6e6cc",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "d .dockerignore\n#3 transferring context: 2B done\n#3 DONE 0.0s\n\n#4 [1/5] FROM docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.1s\n\n#5 [internal] load build context\n#5 transferring context: 1.06kB done\n#5 DONE 0.0s\n\n#6 [3/5] COPY snippet.py /app/snippet.py\n#6 CACHED\n\n#7 [4/5] COPY requirements.txt /app/requirements.txt\n#7 CACHED\n\n#8 [2/5] WORKDIR /app\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8fd2392bbe815b49c501835ad63dd3e172739366d7f4bf5bdc9bb63937f9fde2 0.0s done\n#10 exporting config sha256:bc145fc1103431666f2a200d26e6f06b36523ed836f198a69eb0557168b7ea9f 0.0s done\n#10 exporting attestation manifest sha256:fbbdd07f9e50d108ec3d9623f575bcd8a4d2dce27fabc2a7e832a20b63663510\n#10 exporting attestation manifest sha256:fbbdd07f9e50d108ec3d9623f575bcd8a4d2dce27fabc2a7e832a20b63663510 0.1s done\n#10 exporting manifest list sha256:9234d087762f8893f20907804405ebbcfe8147ee4f99ab97a0288b8d5826d60b 0.0s done\n#10 naming to docker.io/library/511440_trial_2_38e6e6cc:latest done\n#10 unpacking to docker.io/library/511440_trial_2_38e6e6cc:latest\n#10 unpacking to docker.io/library/511440_trial_2_38e6e6cc:latest 0.3s done\n#10 DONE 0.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/mrobazdnrc9s0dfamk4mpge4x\n",
+        "time_sec": 1.45
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from django.contrib.auth.forms import UserCreationForm\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.26
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "django-crispy-forms>=1.6.1,<2.0"
+        ],
+        "rationale": [
+          "This is the most likely candidate as it is the only package that has a known version range for django."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.9,
+          "notes": [
+            "This is the most likely candidate as it is the only package that has a known version range for django."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 3,
+      "timestamp": "2025-10-28T08:25:53Z",
+      "image_tag": "511440_trial_3_12a86df5",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": ":8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#5 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.1s done\n#5 DONE 0.1s\n\n#4 [internal] load build context\n#4 transferring context: 1.06kB done\n#4 DONE 0.0s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:8fd2392bbe815b49c501835ad63dd3e172739366d7f4bf5bdc9bb63937f9fde2 0.0s done\n#10 exporting config sha256:bc145fc1103431666f2a200d26e6f06b36523ed836f198a69eb0557168b7ea9f 0.0s done\n#10 exporting attestation manifest sha256:88edd746fb93cb1253683990cf41634ab3b4674b491657660a14ffa01a84b08b\n#10 exporting attestation manifest sha256:88edd746fb93cb1253683990cf41634ab3b4674b491657660a14ffa01a84b08b 0.1s done\n#10 exporting manifest list sha256:d7b2cf00f38ada480139b1ffd7d169bad685073da47e32896a83dfb704cb3189 0.0s done\n#10 naming to docker.io/library/511440_trial_3_12a86df5:latest done\n#10 unpacking to docker.io/library/511440_trial_3_12a86df5:latest\n#10 unpacking to docker.io/library/511440_trial_3_12a86df5:latest 0.3s done\n#10 DONE 0.5s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vnuczi1b2m8fmw4jdmd3h9dxz\n",
+        "time_sec": 1.55
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 5, in <module>\n    from django.contrib.auth.forms import UserCreationForm\nModuleNotFoundError: No module named 'django'\n",
+        "time_sec": 1.2
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 42.96,
+  "metrics": {
+    "total_attempts": 3,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 42.96,
+    "avg_build_time_sec": 2.45,
+    "avg_run_time_sec": 1.21,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 3
+    }
+  }
+}

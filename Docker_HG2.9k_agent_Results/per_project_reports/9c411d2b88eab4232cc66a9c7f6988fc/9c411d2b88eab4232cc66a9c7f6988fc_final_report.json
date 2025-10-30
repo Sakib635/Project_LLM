@@ -1,0 +1,71 @@
+{
+  "project": "9c411d2b88eab4232cc66a9c7f6988fc",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T14:12:54Z",
+      "image_tag": "9c411d2b88eab4232cc66a9c7f6988fc_trial_1_cb67ba30",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 16.21
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 21, in <module>\n    from ibapi.wrapper import EWrapper\nModuleNotFoundError: No module named 'ibapi'\n",
+        "time_sec": 1.57
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "ibapi"
+        ],
+        "rationale": [
+          "The error message indicates that the 'ibapi' package is missing, and adding it to the requirements should resolve the issue."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.8,
+          "notes": [
+            "The error message indicates that the 'ibapi' package is missing, and adding it to the requirements should resolve the issue."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T14:13:21Z",
+      "image_tag": "9c411d2b88eab4232cc66a9c7f6988fc_trial_2_38d80013",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617\n#4 resolve docker.io/library/python:3.11-slim@sha256:8eb5fc663972b871c528fef04be4eaa9ab8ab4539a5316c4b8c133771214a617 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 13.61kB 0.0s done\n#5 DONE 0.1s\n\n#6 [2/5] WORKDIR /app\n#6 CACHED\n\n#7 [3/5] COPY snippet.py /app/snippet.py\n#7 CACHED\n\n#8 [4/5] COPY requirements.txt /app/requirements.txt\n#8 CACHED\n\n#9 [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:2c1187d34b7f54fbfc59c5c99dc34d37e12b0d8fe2756d094aa141b1339fd01a 0.0s done\n#10 exporting config sha256:3646c3397eea19be424d90466731b3278ca9cb13f00c0806801dbb478b8999f8 0.0s done\n#10 exporting attestation manifest sha256:fea3aa2014a92b511e77c6d52817a49e99c5627f36314542b1d44fe8c8ff29db\n#10 exporting attestation manifest sha256:fea3aa2014a92b511e77c6d52817a49e99c5627f36314542b1d44fe8c8ff29db 0.1s done\n#10 exporting manifest list sha256:757405ef44cc9afe8be022efed7dbadedde22643aaff3ee268293464d27b815d 0.0s done\n#10 naming to docker.io/library/9c411d2b88eab4232cc66a9c7f6988fc_trial_2_38d80013:latest done\n#10 unpacking to docker.io/library/9c411d2b88eab4232cc66a9c7f6988fc_trial_2_38d80013:latest\n#10 unpacking to docker.io/library/9c411d2b88eab4232cc66a9c7f6988fc_trial_2_38d80013:latest 1.2s done\n#10 DONE 1.3s\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hyz0t4x29i7gvcacykuvozvaa\n",
+        "time_sec": 2.39
+      },
+      "run": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "Traceback (most recent call last):\n  File \"/app/snippet.py\", line 21, in <module>\n    from ibapi.wrapper import EWrapper\nModuleNotFoundError: No module named 'ibapi'\n",
+        "time_sec": 1.44
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 48.94,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 48.94,
+    "avg_build_time_sec": 9.3,
+    "avg_run_time_sec": 1.5,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

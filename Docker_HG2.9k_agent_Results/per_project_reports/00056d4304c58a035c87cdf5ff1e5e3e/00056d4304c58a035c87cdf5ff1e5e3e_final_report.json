@@ -1,0 +1,38 @@
+{
+  "project": "00056d4304c58a035c87cdf5ff1e5e3e",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T01:25:29Z",
+      "image_tag": "00056d4304c58a035c87cdf5ff1e5e3e_trial_1_7e42dd2e",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "found for models>=1.0\n#10 2.446 \n#10 2.446 [notice] A new release of pip is available: 24.0 -> 25.3\n#10 2.446 [notice] To update, run: pip install --upgrade pip\n#10 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n2.232 Collecting scrapy<2.0,>=1.0 (from -r /app/requirements.txt (line 1))\n2.314   Downloading Scrapy-1.8.4-py2.py3-none-any.whl.metadata (4.4 kB)\n2.350 ERROR: Could not find a version that satisfies the requirement models>=1.0 (from versions: 0.0.3, 0.0.4, 0.0.5, 0.1.0, 0.1.1, 0.2.0, 0.3.0, 0.4.0, 0.7.0, 0.8.0, 0.9.0, 0.9.1, 0.9.2, 0.9.3)\n2.350 ERROR: No matching distribution found for models>=1.0\n2.446 \n2.446 [notice] A new release of pip is available: 24.0 -> 25.3\n2.446 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nmfwzx19xq031kn9tdedgbj1a\n",
+        "time_sec": 4.35
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 19.83,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 19.83,
+    "avg_build_time_sec": 4.35,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 1
+    }
+  }
+}

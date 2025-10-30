@@ -1,0 +1,71 @@
+{
+  "project": "5182378",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T08:27:16Z",
+      "image_tag": "5182378_trial_1_0cf123b8",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.379 ERROR: Could not find a version that satisfies the requirement urllib2<2.0,>=1.0 (from versions: none)\n#9 1.379 ERROR: No matching distribution found for urllib2<2.0,>=1.0\n#9 1.486 \n#9 1.486 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.486 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.379 ERROR: Could not find a version that satisfies the requirement urllib2<2.0,>=1.0 (from versions: none)\n1.379 ERROR: No matching distribution found for urllib2<2.0,>=1.0\n1.486 \n1.486 [notice] A new release of pip is available: 24.0 -> 25.3\n1.486 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4fowy3z8d4hwlp1ryposjsawi\n",
+        "time_sec": 2.74
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": {
+        "requirements": [
+          "urllib2>=1.0,<2.0"
+        ],
+        "rationale": [
+          "urllib2 is a commonly used library in Python and is unlikely to be removed from PyPI in the near future."
+        ],
+        "meta": {
+          "chosen_candidate": 1,
+          "chosen_confidence": 0.95,
+          "notes": [
+            "urllib2 is a commonly used library in Python and is unlikely to be removed from PyPI in the near future."
+          ]
+        }
+      }
+    },
+    {
+      "attempt": 2,
+      "timestamp": "2025-10-28T08:27:23Z",
+      "image_tag": "5182378_trial_2_823b22a9",
+      "build": {
+        "returncode": 1,
+        "stdout_tail": "",
+        "stderr_tail": "nts.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n#9 1.270 ERROR: Could not find a version that satisfies the requirement urllib2<2.0,>=1.0 (from versions: none)\n#9 1.271 ERROR: No matching distribution found for urllib2<2.0,>=1.0\n#9 1.354 \n#9 1.354 [notice] A new release of pip is available: 24.0 -> 25.3\n#9 1.354 [notice] To update, run: pip install --upgrade pip\n#9 ERROR: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n------\n > [5/5] RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi:\n1.270 ERROR: Could not find a version that satisfies the requirement urllib2<2.0,>=1.0 (from versions: none)\n1.271 ERROR: No matching distribution found for urllib2<2.0,>=1.0\n1.354 \n1.354 [notice] A new release of pip is available: 24.0 -> 25.3\n1.354 [notice] To update, run: pip install --upgrade pip\n------\nDockerfile:12\n--------------------\n  10 |     # RUN apt-get update && apt-get install -y --no-install-recommends build-essential gcc\n  11 |     \n  12 | >>> RUN if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\n  13 |     \n  14 |     CMD [\"python\", \"snippet.py\"]\n--------------------\nERROR: failed to solve: process \"/bin/sh -c if [ -s /app/requirements.txt ]; then pip install --no-cache-dir -r /app/requirements.txt; fi\" did not complete successfully: exit code: 1\n\nView build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/p8ieaz51oofbyfl8id22s8kvc\n",
+        "time_sec": 2.5
+      },
+      "run": {
+        "returncode": null,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": null
+      },
+      "applied_agent": "dependency",
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "failed_no_fixes",
+  "total_time_sec": 16.62,
+  "metrics": {
+    "total_attempts": 2,
+    "success_attempt": null,
+    "attempts_to_success": null,
+    "total_time_sec": 16.62,
+    "avg_build_time_sec": 2.62,
+    "avg_run_time_sec": null,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {
+      "dependency": 2
+    }
+  }
+}

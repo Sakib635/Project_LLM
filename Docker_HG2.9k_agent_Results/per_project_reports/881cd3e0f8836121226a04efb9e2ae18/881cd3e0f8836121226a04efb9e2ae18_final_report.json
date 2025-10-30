@@ -1,0 +1,36 @@
+{
+  "project": "881cd3e0f8836121226a04efb9e2ae18",
+  "attempts": [
+    {
+      "attempt": 1,
+      "timestamp": "2025-10-28T13:12:36Z",
+      "image_tag": "881cd3e0f8836121226a04efb9e2ae18_trial_1_71260af3",
+      "build": {
+        "returncode": 0,
+        "stdout_tail": "",
+        "stderr_tail": "",
+        "time_sec": 325.65
+      },
+      "run": {
+        "returncode": 0,
+        "stdout_tail": "ResNeXt(\n  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3))\n  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n  (relu): ReLU(inplace=True)\n  (max_pool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)\n  (conv2): Sequential(\n    (0): Bottleneck(\n      (conv1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1))\n      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu): ReLU(inplace=True)\n      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32)\n      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1))\n      (bn3): Bat",
+        "stderr_tail": "/usr/local/lib/python3.9/site-packages/torch/_subclasses/functional_tensor.py:279: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:81.)\n  cpu = _conversion_method_template(device=torch.device(\"cpu\"))\n",
+        "time_sec": 4.67
+      },
+      "applied_agent": null,
+      "applied_fixes": null
+    }
+  ],
+  "final_status": "success",
+  "total_time_sec": 337.23,
+  "metrics": {
+    "total_attempts": 1,
+    "success_attempt": 1,
+    "attempts_to_success": 1,
+    "total_time_sec": 337.23,
+    "avg_build_time_sec": 325.65,
+    "avg_run_time_sec": 4.67,
+    "avg_chosen_confidence": 0.0,
+    "fix_type_counts": {}
+  }
+}
